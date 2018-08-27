@@ -14,5 +14,5 @@ home = [ "HTML", "RSS", "JSON"]
   description = "K-State CIS 527 Curriculum Repository"
   author = "Russell Feldhausen"
   showVisitedLinks = true
-  themeVariant = "blue"
+  themeVariant = "purple"
   disableLanguageSwitchingButton = true
