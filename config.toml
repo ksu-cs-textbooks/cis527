@@ -10,9 +10,9 @@ theme = "hugo-theme-learn"
 home = [ "HTML", "RSS", "JSON"]
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "Documentation for Hugo Learn Theme"
-  author = "Mathieu Cornic"
+  editURL = "https://gitlab.cs.ksu.edu/russfeld/cis527online/tree/master/content/"
+  description = "K-State CIS 527 Curriculum Repository"
+  author = "Russell Feldhausen"
   showVisitedLinks = true
   themeVariant = "blue"
   disableLanguageSwitchingButton = true
