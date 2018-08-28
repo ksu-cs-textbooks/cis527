@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="800" height="440" viewBox="0 0 800 440" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFDF71;stroke:#000;stroke-linejoin:round;}
+	.st1{fill:url(#SVGID_1_);stroke:#000;stroke-linejoin:round;}
+	.st2{fill:#FFEFAE;stroke:#000;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#f00;}
+	.st4{fill:none;stroke:#000;}
+	.st5{font-family:Liberation Sans,Arial;}
+	.st6{font-size:32px;}
+	.st7{font-size:21px;}
+	.st8{letter-spacing:2pt;}
+</style>
+<g id="cidr">
+	<rect x="292.3" y="1.6" class="st0" width="217" height="36.3"/>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="400.8483" y1="38.8992" x2="400.8483" y2="102.8531">
+		<stop  offset="0" style="stop-color:#AC7F35"/>
+		<stop  offset="0.6366" style="stop-color:#C5A14E"/>
+		<stop  offset="1" style="stop-color:#D4B75D"/>
+	</linearGradient>
+	<polygon class="st1" points="747.8,103 53.8,103 292.3,37.9 509.3,37.9 	"/>
+	<rect x="53.8" y="103" class="st2" width="694" height="43"/>
+	<line class="st3" x1="65" y1="108" x2="65" y2="420.5"/>
+	<line class="st3" x1="292.3" y1="108" x2="292.3" y2="211"/>
+	<line class="st3" x1="527" y1="108" x2="527" y2="283"/>
+	<line class="st3" x1="574" y1="108" x2="574" y2="344"/>
+	<line class="st3" x1="737" y1="108" x2="737" y2="420.5"/>
+	<g>
+		<g>
+			<line class="st4" x1="72.1" y1="197" x2="285.3" y2="197"/>
+			<g>
+				<polygon points="65,197 74.9,201.1 72.6,197 74.9,192.9 				"/>
+			</g>
+			<g>
+				<polygon points="292.3,197 282.4,201.1 284.8,197 282.4,192.9 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st4" x1="72.1" y1="267.8" x2="519.9" y2="267.8"/>
+			<g>
+				<polygon points="65,267.8 74.9,271.9 72.6,267.8 74.9,263.8 				"/>
+			</g>
+			<g>
+				<polygon points="527,267.8 517.1,271.9 519.4,267.8 517.1,263.8 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st4" x1="72.1" y1="338.7" x2="566.9" y2="338.7"/>
+			<g>
+				<polygon points="65,338.7 74.9,342.7 72.6,338.7 74.9,334.6 				"/>
+			</g>
+			<g>
+				<polygon points="574,338.7 564.1,342.7 566.4,338.7 564.1,334.6 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st4" x1="72.1" y1="409.5" x2="729.9" y2="409.5"/>
+			<g>
+				<polygon points="65,409.5 74.9,413.6 72.6,409.5 74.9,405.4 				"/>
+			</g>
+			<g>
+				<polygon points="737,409.5 727.1,413.6 729.4,409.5 727.1,405.4 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="text">
+	<text transform="matrix(1 0 0 1 298.5278 30.3796)" class="st5 st6">208.130.29.33</text>
+	<text transform="matrix(1 0 0 1 108.6084 219.3156)" class="st5 st7">208.128.0.0/11</text>
+	<text transform="matrix(1 0 0 1 149.3451 189.7706)" class="st5 st6">MCI</text>
+	<text transform="matrix(1 0 0 1 220.095 289.105)" class="st5 st7">208.130.28.0/22</text>
+	<text transform="matrix(1 0 0 1 76.3515 260.8157)" class="st5 st6">Automation Research Systems</text>
+	<text transform="matrix(1 0 0 1 243.595 360.4384)" class="st5 st7">208.130.29.0/24</text>
+	<text transform="matrix(1 0 0 1 179.0078 331.149)" class="st5 st6">ARS Public Servers</text>
+	<text transform="matrix(1 0 0 1 319.2559 431.4996)" class="st5 st7">208.130.29.33/32</text>
+	<text transform="matrix(1 0 0 1 280.9843 402.2102)" class="st5 st6">www.freesoft.org</text>
+	<text transform="matrix(1 0 0 1 52.7147 135.1526)" class="st5 st6 st8">11010000.10000010.00011101.00100001</text>
+</g>
+</svg>
