@@ -102,6 +102,7 @@ jQuery(document).ready(function() {
     $('#navigation').hide();
     $('#big-h1').hide();
     $('#disable-menu').hide();
+    $('body').addClass('no-sidebar');
   }else{
     //console.log("------------No iframes for me--------------");
   }

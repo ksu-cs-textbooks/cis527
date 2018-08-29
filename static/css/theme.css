@@ -154,6 +154,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     position: fixed;
     top: 0;
     width: 300px;
+    left: -300px;
     bottom: 0;
     left: 0;
     font-weight: 400;
@@ -1003,6 +1004,7 @@ td {
     padding: 0 0.1rem;
 }
 
+/*
 @media only all and (max-width: 59.938em) {
     #sidebar {
         width: 230px;
@@ -1010,6 +1012,16 @@ td {
     #body {
         margin-left: 230px;
     }
+}
+*/
+
+.no-sidebar #sidebar {
+  left: -300px;
+}
+
+.no-sidebar #body {
+  margin-left: 0;
+  width: 100%;
 }
 
 @media only all and (max-width: 47.938em) {
@@ -1041,7 +1053,7 @@ td {
         background: rgba(255, 255, 255, 0.5);
         cursor: pointer;
     }
-/* } */
+}
 .copy-to-clipboard {
     background-image: url(../images/clippy.svg);
     background-position: 50% 50%;
