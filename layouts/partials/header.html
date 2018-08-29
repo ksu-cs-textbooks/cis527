@@ -43,7 +43,7 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               {{if (and (not .IsHome) (not .Params.disableMenu)) }}
-              <div>
+              <div id="disable-menu">
                 <div id="top-bar">
                 {{ if and (or .IsPage .IsSection) .Site.Params.editURL }}
                   {{ $File := .File }}
@@ -83,7 +83,7 @@
         {{ end }}
         <div id="body-inner">
           {{if and (not .IsHome) (not .Params.chapter) }}
-            <!-- <h1>{{.Title}}</h1> -->
+            <h1 id="big-h1">{{.Title}}</h1>
           {{end}}
 
         {{define "breadcrumb"}}

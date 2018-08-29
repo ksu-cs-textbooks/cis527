@@ -1,8 +1,6 @@
 ---
 title: "3. Network Layer"
 date: 2018-08-24T10:53:26-05:00
-disableToc: true
-disableMenu: true
 ---
 
 {{< youtube  >}}
@@ -61,4 +59,4 @@ IPv6 addresses use a variety of different methods to denote which part of the ad
 
 For this course, I won't go too deep into IPv6 routing, as most organizations still primarily use IPv4 internally. In addition, in many cases the network hardware automatically handles converting between IPv6 and IPv4 addresses, so you'll spend very little time configuring IPv6 unless you are working for an ISP or very large organization.
 
-In the next video, we'll continue this discussion on the transport layer. 
+In the next video, we'll continue this discussion on the transport layer.

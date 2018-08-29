@@ -142,7 +142,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     color: rgba(255, 255, 255, 0.6);
 }
 #sidebar-toggle-span {
-    display: inline;
+    display: none;
 }
 @media only all and (max-width: 47.938em) {
     #sidebar-toggle-span {
@@ -341,14 +341,15 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     margin-top: -1.7rem;
     margin-bottom: 3rem;
 }
-@media only all and (max-width: 59.938em) {
+/* @media only all and (max-width: 59.938em) { */
     #body #navigation {
         position: static;
         margin-right: 0 !important;
         width: 100%;
         display: table;
     }
-}
+/* } */
+/*
 #body .nav {
     position: fixed;
     top: 0;
@@ -366,6 +367,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     text-align: center;
 }
 @media only all and (max-width: 59.938em) {
+*/
     #body .nav {
         display: table-cell;
         position: static;
@@ -375,11 +377,13 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
         height: 100px;
         line-height: 100px;
         padding-top: 0;
+        font-size: 50px;
+        cursor: pointer;
     }
     #body .nav > i {
         display: inline-block;
     }
-}
+/*}*/
 #body .nav:hover {
     background: #F6F6F6;
 }
@@ -390,7 +394,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     right: 0;
 }
 #body-inner {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 #chapter {
     display: flex;
@@ -999,7 +1003,6 @@ td {
     padding: 0 0.1rem;
 }
 
-/*
 @media only all and (max-width: 59.938em) {
     #sidebar {
         width: 230px;
@@ -1008,8 +1011,8 @@ td {
         margin-left: 230px;
     }
 }
-*/
-/* @media only all and (max-width: 47.938em) { */
+
+@media only all and (max-width: 47.938em) {
     #sidebar {
         width: 300px;
         left: -300px;

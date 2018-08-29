@@ -1,8 +1,6 @@
 ---
 title: "4. Transport Layer"
 date: 2018-08-24T10:53:26-05:00
-disableToc: true
-disableMenu: true
 ---
 
 {{< youtube  >}}
@@ -53,4 +51,4 @@ There are over 1000 well known ports that have common usage. Here are just a few
 
  In networking terms, the application creates a packet at layers 5 - 7. Then, the transport layer adds the port, and the network layer adds the IP addresses to the packet. Then, the data link layer puts the packet into one or more frames, and the physical layer transmits those frames between nodes on the network. At some points, the router will look at the addresses from the third layer to help with routing the packet along its path. Finally, once it is received at the intended recipient, the layers can be removed until the packet is presented to the application.
 
- I hope these videos help you better understand how the OSI 7-layer network model works. Next, we'll discuss how to use these concepts to connect your systems to a network, as well as how to troubleshoot things when those connections don't work. 
+ I hope these videos help you better understand how the OSI 7-layer network model works. Next, we'll discuss how to use these concepts to connect your systems to a network, as well as how to troubleshoot things when those connections don't work.
