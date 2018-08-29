@@ -48,6 +48,17 @@ hidden: true
 	<p class="imagecredit">Image Source: <a href="http://en.wikipedia.org/wiki/Ethernet">Wikipedia</a></p>
 </section>
 <section>
+	<h3>Media Access Control (MAC) Address</h3>
+	<ul>
+		<li>Physical Address of a Network Device</li>
+		<li>Identifies Devices at Layer 2</li>
+		<li>48-bit Address</li>
+		<li>Example: 1a:2b:3c:d4:e5:f6</li>
+		<li>Set by Manufacturer</li>
+		<li>Can be Changed by User</li>
+	</ul>
+</section>
+<section>
 	<h3>Routing</h3>
 	<ul>
 		<li>Find Best Path from Point to Point on Network</li>
