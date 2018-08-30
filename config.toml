@@ -14,7 +14,7 @@ page = [ "HTML", "Iframeable"]
   editURL = "https://gitlab.cs.ksu.edu/russfeld/cis527online/tree/master/content/"
   description = "K-State CIS 527 Curriculum Repository"
   author = "Russell Feldhausen"
-  showVisitedLinks = true
+  showVisitedLinks = false
   themeVariant = "purple"
   disableLanguageSwitchingButton = true
 
