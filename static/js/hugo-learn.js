@@ -86,24 +86,3 @@ jQuery(document).ready(function() {
   });
 
 });
-
-function inIframe () {
-    try {
-        return window.self !== window.top;
-    } catch (e) {
-        return true;
-    }
-}
-
-//russfeld
-jQuery(document).ready(function() {
-  if(inIframe()){
-    //console.log("+++++++++++I'm in an iframe!+++++++++++++");
-    $('#navigation').hide();
-    $('#big-h1').hide();
-    $('#disable-menu').hide();
-    $('body').addClass('no-sidebar');
-  }else{
-    $('body').removeClass('no-transition');
-  }
-});

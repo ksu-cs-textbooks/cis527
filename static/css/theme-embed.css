@@ -49,11 +49,13 @@ pre {
 b, strong, label, th {
     font-weight: 600;
 }
+/*
 .default-animation, #header #logo-svg, #header #logo-svg path, #sidebar, #sidebar ul, #body, #body .padding, #body .nav {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+*/
 #grav-logo {
     max-width: 60%;
 }
@@ -301,7 +303,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 #body {
     position: relative;
-    margin-left: 300px;
+    margin-left: 0px;
     min-height: 100%;
 }
 #body img, #body .video-container {
@@ -325,12 +327,13 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     border: 1px solid #ccc;
 }
 #body .padding {
-    padding: 1rem 2rem 1rem;
+    padding: 1rem 1rem 1rem;
 }
+/*
 @media only all and (max-width: 59.938em) {
     #body .padding {
         position: static;
-        padding: 15px 2rem;
+        padding: 15px 3rem;
     }
 }
 @media only all and (max-width: 47.938em) {
@@ -338,6 +341,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
         padding: 5px 1rem;
     }
 }
+*/
 #body h1 + hr {
     margin-top: -1.7rem;
     margin-bottom: 3rem;
@@ -1024,6 +1028,7 @@ td {
   width: 100%;
 }
 
+/*
 @media only all and (max-width: 47.938em) {
     #sidebar {
         width: 300px;
@@ -1054,6 +1059,8 @@ td {
         cursor: pointer;
     }
 }
+*/
+
 .copy-to-clipboard {
     background-image: url(../images/clippy.svg);
     background-position: 50% 50%;
