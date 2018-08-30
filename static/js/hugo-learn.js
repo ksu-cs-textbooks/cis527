@@ -104,6 +104,6 @@ jQuery(document).ready(function() {
     $('#disable-menu').hide();
     $('body').addClass('no-sidebar');
   }else{
-    //console.log("------------No iframes for me--------------");
+    $('body').removeClass('no-transition');
   }
 });
