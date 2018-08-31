@@ -7,7 +7,7 @@ pre: "2. "
 {{< youtube 3yMSgpHMSHg >}}
 
 {{% notice note %}}
-This course is currently using YouTube for video hosting. In general, any references to Mediasite can be replaced with YouTube. The YouTube videos also include captions as described below. Currently, we are able to provide higher quality videos via YouTube than Mediasite, so that is the major reason behind the change. I'll try to update this video at a later date.
+_This course is currently using YouTube for video hosting. In general, any references to Mediasite can be replaced with YouTube. The YouTube videos also include captions as described below. Currently, we are able to provide higher quality videos via YouTube than Mediasite, so that is the major reason behind the change. I'll try to update this video at a later date. --Russ_
 {{% /notice %}}
 
 #### Video Script
