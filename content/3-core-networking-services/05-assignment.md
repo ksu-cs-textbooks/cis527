@@ -11,7 +11,9 @@ Create **three** virtual machines meeting the specifications given below. The be
 
 If you have any questions about these items or are unsure what they mean, please contact the instructor. Remember that part of being a system administrator (and a software developer in general) is working within vague specifications to provide what your client is requesting, so eliciting additional information is a very necessary skill.
 
-*To be more blunt - this specification may be purposefully designed to be vague, and it is your responsibility to ask questions about any vagaries you find. Once you begin the grading process, you cannot go back and change things, so be sure that your machines meet the expected specification regardless of what is written here.*
+{{% notice note %}}
+_To be more blunt - this specification may be purposefully designed to be vague, and it is your responsibility to ask questions about any vagaries you find. Once you begin the grading process, you cannot go back and change things, so be sure that your machines meet the expected specification regardless of what is written here. --Russ_
+{{% /notice %}}
 
 Also, to complete many of these items, you may need to refer to additional materials and references not included in this document. System administrators must learn how to make use of available resources, so this is a good first step toward that. Of course, there's always [Google](http://www.google.com)!
 
@@ -32,16 +34,18 @@ For the second Ubuntu VM, you may either quickly install and configure a new VM 
 3. Make a copy of the entire folder containing the VM.
 4. Open the new VM in VMWare Workstation (look for the .VMX file in the copied folder).
 5. When prompted, select "I copied it" to reinitialize the network interface.
-6. Boot the new VM, and change the hostname to CIS527S-<your eID>. [How to Change Hostname on Ubuntu 18.04](https://linuxize.com/post/how-to-change-hostname-on-ubuntu-18-04/) from Linuxize
+6. Boot the new VM, and change the hostname to CIS527S-\<your eID\>.
+  - [How to Change Hostname on Ubuntu 18.04](https://linuxize.com/post/how-to-change-hostname-on-ubuntu-18-04/) from Linuxize
 
-If you do not follow these instructions carefully, the two VMs may have conflicts on the network since they'll have identical networking hardware and names, making this lab much more difficult or impossible to complete. *You have been warned!*
+{{% notice warning %}}
+_If you do not follow these instructions carefully, the two VMs may have conflicts on the network since they'll have identical networking hardware and names, making this lab much more difficult or impossible to complete. **You have been warned!** --Russ_
+{{% /notice %}}
 
 Clearly label your original Ubuntu VM as **Client** and the new Ubuntu VM as **Server** in VMWare Workstation so you know which is which. For this lab, we'll only be using the **Server** VM.
 
-**VMWare Fusion (Mac) Users** - Before progressing any further, I recommend creating a new NAT virtual network configuration and moving all of your VMs to that network, instead of the default "Share with my Mac" (vmnet8) network. In this lab, you'll need to disable DHCP on the network you are using, which is very difficult to do on the default networks. The instructions to create a new network are linked below.
-
-* [Add a NAT Configuration](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-7D8E5A7D-FF0C-4975-A794-FF5A9AE83234.html) in VMWare Fusion 8 Documentation
-* [Connect and Set Up the Network Adapter](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-84AC2D7D-4A44-4AB6-BAF8-F12C55E71A2F.html) in VMWare Fusion 8 Documentation
+{{% notice note %}}
+**VMWare Fusion (Mac) Users** - Before progressing any further, I recommend creating a new NAT virtual network configuration and moving all of your VMs to that network, instead of the default "Share with my Mac" (vmnet8) network. In this lab, you'll need to disable DHCP on the network you are using, which is very difficult to do on the default networks. You can find relevant instructions in [Add a NAT Configuration](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-7D8E5A7D-FF0C-4975-A794-FF5A9AE83234.html) and [Connect and Set Up the Network Adapter](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-84AC2D7D-4A44-4AB6-BAF8-F12C55E71A2F.html) in the VMWare Fusion 8 Documentation.
+{{% /notice %}}
 
 ---
 
@@ -51,7 +55,9 @@ On your Windows 10 VM, activate the **Remote Desktop** feature to allow remote a
 
 * Both the cis527 and AdminUser accounts should be able to access the system remotely, as well as the default system Administrator account.
 * In addition, **change the port** used by Remote Desktop to be 33389.
-  - *HINT: You'll need to edit the registry and reboot the computer to accomplish this task.*
+{{% notice tip %}}
+_You'll need to edit the registry and reboot the computer to accomplish this task. --Russ_
+{{% /notice %}}
 * You'll also need to make sure appropriate firewall rules are in place to accept these incoming connections.
 * You can test your connection from your Linux VM using the **Remmina** program.
 
@@ -61,7 +67,9 @@ On your Ubuntu 18.04 VM labelled **Server**, install and activate the **OpenSSH 
 * In addition, **change the port** used by the SSH server to 22222.
 * You'll also need to make sure the appropriate firewall rules are in place to accept these incoming connections.
 * You can test your connection from your Windows VM using [PuTTY](http://putty.org) or the Windows Subsystem for Linux.
-  - *See the appropriate pages in the Extras module for more information about WSL and SSH.*
+{{% notice tip %}}
+_See the appropriate pages in the Extras module for more information about WSL and SSH. --Russ_
+{{% /notice %}}
 
 #### Resources
 
@@ -78,20 +86,26 @@ On your Ubuntu 18.04 VM labelled **Server**, install and activate the **OpenSSH 
 
 On your Ubuntu 18.04 VM labelled **Server**, set up a static IP address. The host part of the IP address should be 41, and the network part should remain the same as the one automatically assigned by VMWare.
 
-_So, if your VMWare is configured to give IP addresses in the 192.168.138.0/24 network, you'll set the computer to use the 192.168.138.41 address._
+{{% notice note %}}
+So, if your VMWare is configured to give IP addresses in the 192.168.138.0/24 network, you'll set the computer to use the 192.168.138.41 address.
+{{% /notice %}}
 
 You'll need to set the following settings correctly:
 
 * IP Address
 * Subnet Mask
 * Default Gateway
-  - _VMWare typically uses host 2 as its internal router to avoid conflicts with home routers, which are typically on host 1. So, on the 192.168.138.0/24 network, the default gateway would usually be 192.168.138.2._
+{{% notice note %}}
+VMWare typically uses host 2 as its internal router to avoid conflicts with home routers, which are typically on host 1. So, on the 192.168.138.0/24 network, the default gateway would usually be 192.168.138.2.
+{{% /notice %}}
 * DNS Servers. Use one of the following options:
   - Your Default Gateway Address (Easiest). VMWare's internal router also acts as a DNS resolver for you, just like a home router would
   - Off Campus: [OpenDNS](https://www.opendns.com/setupguide/) (208.67.222.222 and 208.67.220.220) or [Google DNS](https://developers.google.com/speed/public-dns/) (8.8.8.8 and 8.8.4.4)
   - On Campus: [K-State's DNS Servers](https://www.k-state.edu/its/dns/registration.html) (10.130.30.52 and 10.130.30.53)
 
-_HINT: I personally recommend using the graphical tools in Ubuntu to configure a static IP address. There are many resources online that direct you to use netplan or edit configuration files manually, but I've found that those methods aren't as simple and many times lead to an unusable system if done incorrectly. In any case, making a snapshot before this step is recommended, in case you have issues._
+{{% notice tip %}}
+_I personally recommend using the graphical tools in Ubuntu to configure a static IP address. There are many resources online that direct you to use netplan or edit configuration files manually, but I've found that those methods aren't as simple and many times lead to an unusable system if done incorrectly. In any case, making a snapshot before this step is recommended, in case you have issues. --Russ_
+{{% /notice %}}
 
 #### Resources
 
@@ -103,7 +117,7 @@ _HINT: I personally recommend using the graphical tools in Ubuntu to configure a
 
 ### Task 3: DNS Server
 
-For this step, install the **bind9** package on the Ubuntu 18.04 VM labelled **Server**, and configure it to act as a **primary master** and **caching nameserver** for your network. You'll need to include the configuration for both types of uses in your config file. In addition, you'll need to configure both the **zone file** and **reverse zone file**, as well as **forwarders**.
+For this step, install the `bind9` package on the Ubuntu 18.04 VM labelled **Server**, and configure it to act as a **primary master** and **caching nameserver** for your network. You'll need to include the configuration for both types of uses in your config file. In addition, you'll need to configure both the **zone file** and **reverse zone file**, as well as **forwarders**.
 
 In your configuration, include the following items:
 
@@ -114,7 +128,9 @@ In your configuration, include the following items:
 
 Of course, you may need to update your firewall configuration to allow incoming DNS requests to this system!
 
-_HINT: The periods, semicolons, and whitespace in the DNS configuration files are very important! Be very careful about formatting, including the trailing periods after full DNS names such as `win.cis527.ksu.edu.`._
+{{% notice tip %}}
+_HINT: The periods, semicolons, and whitespace in the DNS configuration files are very important! Be very careful about formatting, including the trailing periods after full DNS names such as `win.cis527.ksu.edu.`. --Russ_
+{{% /notice %}}
 
 #### Resources
 
@@ -128,9 +144,11 @@ _HINT: The periods, semicolons, and whitespace in the DNS configuration files ar
 
 ### Task 4: DHCP Server
 
-_**IMPORTANT!** Make ABSOLUTELY sure that the VMWare virtual network you are using is not a "Bridged" or "Shared" network before continuing. It *MUST* be using "NAT". You can check by going to **Edit > Virtual Network Editor** in VMWare Workstation or **VMWare Fusion > Preferences > Network** in VMWare Fusion and looking for the settings of the network each of your VMs is configured to use. Having your network configured incorrectly while performing this step is a great way to break the network your host computer is currently connected to, and in a worst case scenario will earn you a visit from K-State's IT staff (and they won't be happy)!_
+{{% notice warning %}}
+_**IMPORTANT!** Make ABSOLUTELY sure that the VMWare virtual network you are using is not a "Bridged" or "Shared" network before continuing. It *MUST* be using "NAT". You can check by going to **Edit > Virtual Network Editor** in VMWare Workstation or **VMWare Fusion > Preferences > Network** in VMWare Fusion and looking for the settings of the network each of your VMs is configured to use. Having your network configured incorrectly while performing this step is a great way to break the network your host computer is currently connected to, and in a worst case scenario will earn you a visit from K-State's IT staff (and they won't be happy)! --Russ_
+{{% /notice %}}
 
-Next, install the isc-dhcp-server package on the Ubuntu 18.04 VM labelled **Server**, and configure it to act as a DCHP server for your internal VM network.
+Next, install the `isc-dhcp-server` package on the Ubuntu 18.04 VM labelled **Server**, and configure it to act as a DCHP server for your internal VM network.
 
 In your configuration, include the following items:
 
@@ -141,7 +159,9 @@ In your configuration, include the following items:
 * For DNS servers, enter the IP address of your Ubuntu 18.04 VM labelled **Server** ending in 41. This will direct all DCHP clients to use the DNS server configured in Task 3.
   - Alternatively, for testing if your DNS server is not working properly, you can use one of the other DNS options given above in Task 2. However, you must be using the DNS server from Task 3 when graded for full credit.
 
-_HINT: A working solution can be fewer than 20 lines of actual settings (not including comments) in the settings file. If you find that your configuration is becoming much longer than that, you are probably making it too difficult and complex._
+{{% notice tip %}}
+_A working solution can be fewer than 20 lines of actual settings (not including comments) in the settings file. If you find that your configuration is becoming much longer than that, you are probably making it too difficult and complex. --Russ_
+{{% /notice %}}
 
 Of course, you may need to update your firewall configuration to allow incoming DHCP requests to this system!
 
@@ -166,7 +186,9 @@ Then, perform the following quick activity:
 2. Ping a server on the internet at least 10 times. Take a **screenshot** of the output, clearly showing how many pings were sent.
 2. Use SNMP to query the number of ICMP requests sent from this system again. Take a **screenshot** with the result clearly highlighted in the terminal output. It should match the expected output based on the previous two screenshots.
 
-_You'll present those 3 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find._
+{{% notice tip%}}
+_You'll present those 3 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. --Russ_
+{{% /notice %}}
 
 #### Resources
 
@@ -192,7 +214,9 @@ Then, using Wireshark, create **screenshots** showing that you captured and can 
   * *HINT: Visit `http://people.cs.ksu.edu/~russfeld/test/` and use cis527 / cis527_apache to log in*
 1. The entire TCP stream of an HTTP connection to `http://people.cs.ksu.edu/~russfeld/`
 
-_You'll present those 8 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find._
+{{% notice tip%}}
+_You'll present those 3 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. --Russ_
+{{% /notice %}}
 
 #### Resources
 

@@ -23,7 +23,7 @@ Also, to complete many of these items, you may need to refer to additional mater
 
 #### Time Expectation
 
-This lab may take anywhere from 1 - 6 hours to complete, depending on your previous experience working with these tools and the speed of the hardware you are using. Installing virtual machines and operating systems is very time-consuming the first time through the process, but it will be much more familiar by the end of this course.
+This lab may take anywhere from **1 - 6 hours** to complete, depending on your previous experience working with these tools and the speed of the hardware you are using. Installing virtual machines and operating systems is very time-consuming the first time through the process, but it will be much more familiar by the end of this course.
 
 #### Software
 
@@ -53,7 +53,7 @@ Install Windows 10 in that virtual machine to a single partition. You may use th
 
 Configure the Windows 10 Virtual Machine as specified below.
 
-* **Computer Name:** CIS527W-<your eID> (example: CIS527W-russfeld)
+* **Computer Name:** CIS527W-\<your eID\> (example: CIS527W-russfeld)
 {{% notice info %}}
 _This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. --Russ_
 {{% /notice %}}
@@ -122,7 +122,7 @@ The Ubuntu installation will sometimes hang when rebooting after installation in
 
 Configure the Ubuntu 18.04 Virtual Machine as specified below.
 
-* **Computer Name:** CIS527U-<your eID> (example: CIS527U-russfeld)
+* **Computer Name:** CIS527U-\<your eID\> (example: CIS527U-russfeld)
 {{% notice info %}}
 _This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. --Russ_
 {{% /notice %}}

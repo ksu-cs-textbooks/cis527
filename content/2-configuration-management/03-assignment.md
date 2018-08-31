@@ -20,7 +20,7 @@ Also, to complete many of these items, you may need to refer to additional mater
 
 #### Time Expectation
 
-This lab may take anywhere from 1 - 6 hours to complete, depending on your previous experience working with these tools and the speed of the hardware you are using.
+This lab may take anywhere from **1 - 6 hours** to complete, depending on your previous experience working with these tools and the speed of the hardware you are using.
 
 ---
 
