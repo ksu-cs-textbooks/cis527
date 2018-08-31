@@ -1,0 +1,140 @@
+---
+title: "5. Syllabus"
+date: 2018-08-24T10:53:26-05:00
+---
+
+### Instructor Contact Information
+* **Instructor:** Russell Feldhausen (russfeld@ksu.edu)
+* **Office:** DUE 2166, but I mostly work remotely from Kansas City, MO
+* **Phone:** (785) 292-3121 (Call/Text)
+* **Website:** https://russfeld.me
+* **Virtual Office Hours:** TBD or by appointment
+* **Instant Messaging:** #cis527 on ksucis.slack.com
+
+#### Preferred Methods of Communication:
+
+* **Email:** I prefer students contact me via email for most course questions as it allows me to provide a clear and detailed response, as well as easily store and record communication for reference later.
+* **Slack:** Quick questions via Slack are welcomed, but understand that I may ask for a follow-up email if I cannot answer the question briefly. I will try to respond quickly if I am available, but messages sent while I am away may be missed.
+* **Phone/Text:** _Emergencies only!_ I will do my best to respond as quickly as I am able.
+
+### Prerequisites
+
+CIS 308 or both CIS 209 and CIS 300. Students may enroll in CIS courses only if they have earned a grade of C or better for each prerequisite to those courses.
+
+###  Course Structure
+This course is being taught 100% online and self-paced for the first time. There may be some bumps in the road. Students will work at their own pace through several modules, with suggested due dates for completion of each module given. Material will be provided in the form of recorded videos, links to online resources, and discussion prompts. Each module will include a hands-on lab assignment, which will be graded interactively by the instructor. Assignments may also include written portions or presentations, which will be submitted online.
+
+The course will also include a final project and presentation. More information about this will be announced during the semester.
+
+### Course Description
+
+Computer information systems form the backbone of many large organizations, and many students will be called upon in their careers to help create, manage and maintain these large systems. This course will give students knowledge and experience working with enterprise level computer systems including workstation management, file servers, web servers, networking devices, configuration management, monitoring, and more. We will mainly focus on the GNU/Linux and Microsoft Windows server software, and much of the learning will take place in hands-on lab activities working directly with these systems. In addition, students will be responsible for developing some technical documentation and communicating information about their systems in a variety of ways. Finally, throughout the course students will be exposed to a variety of information directly from system administrators across campus.
+
+### Course Objectives
+
+At the end of this course, students should be able to:
+
+* Understand the major components of an enterprise level computer network and server system
+* Design and implement a simple enterprise level server system and network, as well as provision workstations on that network quickly and easily
+* Communicate information about enterprise systems clearly and effectively to users of all skill levels and interests
+* Develop ways to increase efficiency by automating tasks whenever possible using scripting and configuration management tools
+* Understand and describe security risks in any enterprise system and any ways that they can be mitigated
+* Show how to monitor enterprise systems for problems and use that information to locate and fix any issues within the system
+* Work with cloud technologies and describe how they can be integrated into an enterprise information technology setup
+
+### Major Course Topics
+
+* Configuration Management using Puppet
+* Creating Secure Workstations (CIS 225 overview/review)
+* Setting up an Enterprise Directory Service & Single Sign On
+* Enterprise File Sharing
+* Web & Application Servers
+* Core Networking Services (DHCP, DNS, ICMP, etc.)
+* System Monitoring & Maintenance
+* Backup Strategies
+* The Cloud
+
+### Grading
+
+In theory, each student begins the course with an A. As you submit work, you can either maintain your A (for good work) or chip away at it (for less adequate or incomplete work). In practice, each student starts with 0 points in the gradebook and works upward toward a final point total earned out of the possible number of points. In this course, each assignment constitutes a portion of the final grade, as detailed below:
+
+* 70% - Lab Assignments* (7 labs, 10% each lab)
+* 15% - Quizzes (15 quizzes, 1% each)
+* 15% - Final Presentation
+
+All group work will include a **REQUIRED** peer evaluation component which can adjust that portion of the individual’s grade up to 50%. If a student should fail to contribute to a group assignment at all, their grade for that assignment will be reduced to a zero. Failure to complete the peer evaluation will result in a 10% grade deduction for that assignment.
+
+Letter grades will be assigned following the standard scale:
+
+* 90% - 100% &rarr; A
+* 80% - 89.99% &rarr; B
+* 70% - 79.99% &rarr; C
+* 60% - 69.99% &rarr; D
+* 00% - 59.99% &rarr; F
+
+### Late Work
+
+Since this course is online and self-guided, there is no explicit late work policy. Students are expected to follow the suggested course deadlines if possible, and are encouraged to work at their own pace. All course work must be submitted, and all interactively graded materials must be graded with the instructor, on or before **December 14th, 2018**. No late work will be accepted after 11:59 PM on December 14th, 2018.
+
+If you have extenuating circumstances, please discuss them with the instructor as soon as they arise so other arrangements can be made. If you find that you are getting behind in the class, you are encouraged to speak to the instructor for options to make up missed work.
+
+### Recommended Texts & Supplies
+
+Students in this course are expected to have access to a computer with virtual machine software (VMWare, Virtual Box, Parallels, or other) installed and running. The computer should be capable of running multiple VMs simultaneously, which usually means having 8GB of RAM and a moderately powerful processor. Contact the instructor if you have questions or concerns.
+
+Since this class covers such a wide range of material, no single textbook will suffice. Therefore, students who would like a textbook should purchase a subscription to [Safari Books Online](http://www.safaribooksonline.com/) for the duration of the course. It should cost around $100 for each student. This subscription is not required, but highly recommended. The [K-State Library](http://guides.lib.k-state.edu/az.php?a=s) has access for 4 simultaneous users to view books published in the current year and previous 2 years, which may suffice for some users.
+
+We will also use several online resources as needed.
+
+This book contains useful information for anyone thinking about pursuing a career in system administration or information technology in general:
+
+**“The Practice of System and Network Administration”** by Thomas Limoncelli, Christina Hogan and Strata Chalup.  
+ISBN 0321492668 - eBook Editions Available - [Amazon Link](http://www.amazon.com/dp/0321492668)
+
+### Subject to Change
+
+The details in this syllabus are not set in stone. Due to the flexible nature of this class, adjustments may need to be made as the semester progresses, though they will be kept to a minimum. If any changes occur, the changes will be posted on the K-State Online page for this course and emailed to all students.
+
+### Academic Honesty
+
+Kansas State University has an Honor and Integrity System based on personal integrity, which is presumed to be sufficient assurance that, in academic matters, one's work is performed honestly and without unauthorized assistance. Undergraduate and graduate students, by registration, acknowledge the jurisdiction of the Honor and Integrity System. The policies and procedures of the Honor and Integrity System apply to all full and part-time students enrolled in undergraduate and graduate courses on-campus, off-campus, and via distance learning. The Honor and Integrity System website can be reached via the following URL: [http://www.k-state.edu/honor](http://www.k-state.edu/honor). A component vital to the Honor and Integrity System is the inclusion of the Honor Pledge which applies to all assignments, examinations, or other course work undertaken by students. The Honor Pledge is implied, whether or not it is stated: "On my honor, as a student, I have neither given nor received unauthorized aid on this academic work." A grade of XF can result from a breach of academic honesty. The F indicates failure in the course; the X indicates the reason is an Honor Pledge violation.
+
+**For this course, a violation of the Honor Pledge will result in an automatic 0 for the assignment and the violation will be reported to the Honor System.  A second violation will result in an XF in the course.**
+
+### Students with Disabilities
+
+Students with disabilities who need classroom accommodations, access to technology, or information about emergency building/campus evacuation processes should contact the Student Access Center and/or their instructor.  Services are available to students with a wide range of disabilities including, but not limited to, physical disabilities, medical conditions, learning disabilities, attention deficit disorder, depression, and anxiety. If you are a student enrolled in campus/online courses through the Manhattan or Olathe campuses, contact the Student Access Center at accesscenter@k-state.edu, 785-532-6441; for K-State Polytechnic campus, contact Academic and Student Services at polytechnicadvising@ksu.edu or call 785-826-2974.
+
+### Diversity and Inclusion
+
+{{% notice note %}}
+This is my personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://tomprof.stanford.edu/posting/1625) created by two educators at Brown University. I feel that a statement such as this is very powerful and important in today's world, and I'll do my best to live up to it. 
+{{% /notice %}}
+
+In an ideal world, science and technology would be objective. However, much of science and technology is subjective and is historically built on a small subset of privileged voices. In this class, we will reference many materials from a diverse set of sources, but limits still exist on this diversity. I acknowledge that it is possible that there may be both overt and covert biases in the material due to the lens with which it was written, even though the material is primarily of a technical nature.
+
+Please contact me or submit anonymous feedback through the Computer Science department office if you have any concerns or suggestions regarding this course and related materials.
+
+Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) To help accomplish this:
+
+* If you have a name and/or set of pronouns that differ from those that appear in your official K-State records, please let me know!
+* If you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to talk with me. I want to be a resource for you. Remember that you can also submit anonymous feedback (which will lead to me making a general announcement to the class, if necessary to address your concerns).
+* If you prefer to speak with someone outside of the course, your academic advisor or the staff in the College of Engineering Student Services office are excellent resources. <anonymity/confidential>
+
+I, like many people, am still in the process of learning about diverse perspectives and identities. If something was said in class, by anyone, that made you feel uncomfortable, please talk to me about it. Again, anonymous feedback is always an option.
+
+As a participant in course discussions, you should also strive to honor the diversity of your classmates by adhering to the [K-State Principles of Community](https://www.k-state.edu/about/values/community/).
+
+### Expectations for Conduct
+
+All student activities in the University, including this course, are governed by the [Student Judicial Conduct Code](http://www.k-state.edu/sga/judicial/) as outlined in the Student Governing Association [By Laws](http://www.k-state.edu/sga/old_files/sgadocs/ByLaws.pdf), Article V, Section 3, number 2. Students who engage in behavior that disrupts the learning environment may be asked to leave the class.
+
+### Campus Safety
+
+Kansas State University is committed to providing a safe teaching and learning environment for student and faculty members. In order to enhance your safety in the unlikely case of a campus emergency make sure that you know where and how to quickly exit your classroom and how to follow any emergency directives. To view additional campus emergency information go to the University's main page, www.k-state.edu(), and click on the Emergency Information button, located at the bottom of the page.
+
+### Academic Freedom Statement
+
+Kansas State University is a community of students, faculty, and staff who work together to discover new knowledge, create new ideas, and share the results of their scholarly inquiry with the wider public. Although new ideas or research results may be controversial or challenge established views, the health and growth of any society requires frank intellectual exchange. Academic freedom protects this type of free exchange and is thus essential to any university's mission.
+
+Moreover, academic freedom supports collaborative work in the pursuit of truth and the dissemination of knowledge in an environment of inquiry, respectful debate, and professionalism. Academic freedom is not limited to the classroom or to scientific and scholarly research, but extends to the life of the university as well as to larger social and political questions. It is the right and responsibility of the university community to engage with such issues.
