@@ -89,35 +89,35 @@ hidden: true
 </section>
 <section>
 	<h3>Ubiquity</h3>
-	<img class="stretch" src="/assets/images/cis527/computers_rexlibris.jpg">
+	<img class="stretch" src="/images/computers_rexlibris.jpg">
 	<p class="imagecredit">Image Credit: <a href="http://www.flickr.com/photos/rexlibris/755989773/">rex libris on Flickr</a></p>
 </section>
 <section>
 	<h3>Technical Skills</h3>
-	<img class="stretch" src="/assets/images/cis527/datacenter_rizzi.jpg">
+	<img class="stretch" src="/images/datacenter_rizzi.jpg">
 	<p class="imagecredit">Image Credit: <a href="http://www.flickr.com/photos/stars6/4381851322/">Lenonardo Rizzi on Flickr</a></p>
 </section>
 <section>
 	<h3>Technical Skills</h3>
-	<img class="stretch" src="/assets/images/cis527/labs.png">
+	<img class="stretch" src="/images/labs.png">
 </section>
 <section>
 	<h3>Communication Skills</h3>
-	<img class="stretch" src="/assets/images/cis527/communication_p_shanks.jpg">
+	<img class="stretch" src="/images/communication_p_shanks.jpg">
 	<p class="imagecredit">Image Credit: <a href="http://www.flickr.com/photos/pshanks/411196422/">P Shanks on Flickr</a></p>
 </section>
 <section>
 	<h3>Great Careers</h3>
-	<img class="stretch" src="/assets/images/cis527/it_manager_ringcentral.jpg">
+	<img class="stretch" src="/images/it_manager_ringcentral.jpg">
 	<p class="imagecredit">Image Credit: <a href="http://blog.ringcentral.com/2012/06/the-new-it-manager-in-the-era-of-the-cloud/">RingCentral</a></p>
 </section>
 <section>
 	<h3>Train Others</h3>
-	<img class="stretch" src="/assets/images/cis527/teacher_worldbank.jpg">
+	<img class="stretch" src="/images/teacher_worldbank.jpg">
 	<p class="imagecredit">Image Credit: <a href="http://www.flickr.com/photos/worldbank/5321248864/">World Bank on Flickr</a></p>
 </section>
 <section>
 	<h3>Management</h3>
-	<img class="stretch" src="/assets/images/cis527/dt130602.jpg">
+	<img class="stretch" src="/images/dt130602.jpg">
 	<p class="imagecredit">Image Credit: <a href="http://dilbert.com/strip/2013-06-02">Dilbert</a></p>
 </section>

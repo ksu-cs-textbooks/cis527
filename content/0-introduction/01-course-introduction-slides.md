@@ -94,7 +94,7 @@ hidden: true
 </section>
 <section>
 	<h3>Subject to Change</h3>
-	<img class="stretch" src="/assets/images/cis527/dontpanic_vantaj.jpg">
+	<img class="stretch" src="/images/dontpanic_vantaj.jpg">
 	<p class="imagecredit">Image Credit: <a href="http://vantaj.deviantart.com/art/Don-t-Panic-Wallpaper-267836839">Vantaj on DeviantArt</a></p>
 </section>
 <section>

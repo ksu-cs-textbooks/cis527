@@ -1,13 +1,14 @@
 ---
-title: "4. What You'll Learn"
-date: 2018-08-24T10:53:26-05:00
+title: "What You'll Learn"
+weight: 20
+pre: "4. "
 ---
 
 {{< youtube vee_MU5qR1o >}}
 
 #### Resources
 
-* [Slides]({{< relref "04-what-youll-learn-slides.md" >}})
+* [Slides]({{< relref "/0-introduction/04-what-youll-learn-slides.md" >}})
 * [Why Circuit City Busted, While Best Buy Boomed](http://content.time.com/time/business/article/0,8599,1858079,00.html)
 
 #### Video Script

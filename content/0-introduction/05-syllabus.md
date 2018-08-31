@@ -1,6 +1,7 @@
 ---
-title: "5. Syllabus"
-date: 2018-08-24T10:53:26-05:00
+title: "Syllabus"
+weight: 25
+pre: "5. "
 ---
 
 ### Instructor Contact Information
@@ -108,7 +109,7 @@ Students with disabilities who need classroom accommodations, access to technolo
 ### Diversity and Inclusion
 
 {{% notice note %}}
-This is my personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://tomprof.stanford.edu/posting/1625) created by two educators at Brown University. I feel that a statement such as this is very powerful and important in today's world, and I'll do my best to live up to it. 
+This is my personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://tomprof.stanford.edu/posting/1625) created by two educators at Brown University. I feel that a statement such as this is very powerful and important in today's world, and I'll do my best to live up to it.
 {{% /notice %}}
 
 In an ideal world, science and technology would be objective. However, much of science and technology is subjective and is historically built on a small subset of privileged voices. In this class, we will reference many materials from a diverse set of sources, but limits still exist on this diversity. I acknowledge that it is possible that there may be both overt and covert biases in the material due to the lens with which it was written, even though the material is primarily of a technical nature.

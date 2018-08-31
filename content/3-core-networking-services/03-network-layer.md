@@ -7,7 +7,7 @@ date: 2018-08-24T10:53:26-05:00
 
 #### Resources
 
-* **[Slides]({{< relref "03-network-layer-slides.md" >}})**
+* **[Slides]({{< relref "/3-core-networking-services/03-network-layer-slides.md" >}})**
 * [The TCP/IP Guide](http://www.tcpipguide.com/free/index.htm)
 * [Classful Networks](https://en.wikipedia.org/wiki/Classful_network) on Wikipedia
 * [Dot-Decimal Notation](https://en.wikipedia.org/wiki/Dot-decimal_notation) on Wikipedia

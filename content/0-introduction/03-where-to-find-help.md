@@ -1,13 +1,14 @@
 ---
-title: "3. Where to Find Help"
-date: 2018-08-24T10:53:26-05:00
+title: "Where to Find Help"
+weight: 15
+pre: "3. "
 ---
 
 {{< youtube D7oFD48NbSg >}}
 
 #### Resources
 
-* [Slides]({{< relref "03-where-to-find-help-slides.md" >}})
+* [Slides]({{< relref "/0-introduction/03-where-to-find-help-slides.md" >}})
 * [K-State IT Help Desk](https://www.k-state.edu/its/helpdesk/) - Email helpdesk@ksu.edu
 * [Course Discussion Forums](https://k-state.instructure.com/courses/67483/discussion_topics)
 * [Instructor Contact Information](https://russfeld.me/)

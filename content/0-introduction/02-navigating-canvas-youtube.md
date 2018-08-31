@@ -1,6 +1,7 @@
 ---
-title: "2. Navigating Canvas & YouTube"
-date: 2018-08-24T10:53:26-05:00
+title: "Navigating Canvas & YouTube"
+weight: 10
+pre: "2. "
 ---
 
 {{< youtube 3yMSgpHMSHg >}}

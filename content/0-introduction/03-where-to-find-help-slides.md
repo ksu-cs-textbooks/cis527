@@ -20,7 +20,7 @@ hidden: true
   <ul>
     <li>Course Resources</li>
     <li>Course Discussion Forums</li>
-    <li><img class="plain" src="/assets/images/cis527/google_wiki.png" style="height: 1.5em; vertical-align: middle; display: inline-block;"> It!</li>
+    <li><img class="plain" src="/images/google_wiki.png" style="height: 1.5em; vertical-align: middle; display: inline-block;"> It!</li>
     <li>Email Instructor (Last Resort)</li>
   </ul>
 </section>

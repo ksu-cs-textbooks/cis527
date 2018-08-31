@@ -7,7 +7,7 @@ date: 2018-08-24T10:53:26-05:00
 
 #### Resources
 
-* **[Slides]({{< relref "01-introduction-slides.md" >}})**
+* **[Slides]({{< relref "/3-core-networking-services/01-introduction-slides.md" >}})**
 
 #### Video Transcript
 

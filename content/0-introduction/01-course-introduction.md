@@ -1,14 +1,15 @@
 ---
-title: "1. Course Introduction"
-date: 2018-08-24T10:53:26-05:00
+title: "Course Introduction"
+weight: 5
+pre: "1. "
 ---
 
 {{< youtube FQH7eME9krM >}}
 
 #### Resources
 
-* [Slides]({{< relref "01-course-introduction-slides.md" >}})
-* [Syllabus]({{< relref "05-syllabus.md" >}})
+* [Slides]({{< relref "/0-introduction/01-course-introduction-slides.md" >}})
+* [Syllabus]({{< relref "/0-introduction/05-syllabus.md" >}})
 
 #### Video Script
 
