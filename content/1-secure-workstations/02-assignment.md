@@ -95,7 +95,7 @@ _Read the whole task before you start! You have been warned. --Russ_
 When you create a group and add a user to that group, it does not take effect until you reboot the computer.
 {{% /notice %}}
 * No other user should be able to access any other user's folder. For example, EvilUser cannot access GuestUser's folder, but AdminUser and cis527 can, as well as GuestUser, who is also the owner of its own folder.
-* In each subfolder of C:\files, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
+* In each subfolder of `C:\files`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
 {{% notice tip %}}
 Use either the cis527 or AdminUser account to create these files, then modify the owner and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the permissions auditing tab.
 {{% /notice %}}
