@@ -1,6 +1,7 @@
 ---
-title: "6. Windows Network Configuration"
-date: 2018-08-24T10:53:26-05:00
+title: "Windows Network Configuration"
+weight: 30
+pre: "6. "
 ---
 
 {{< youtube  >}}

@@ -1,6 +1,7 @@
 ---
-title: "4. Cron (Linux Scheduled Tasks)"
-date: 2018-08-24T10:53:26-05:00
+title: "Cron (Linux Scheduled Tasks)"
+weight: 20
+pre: "4. "
 ---
 
 {{< youtube OJNPy47YYok >}}

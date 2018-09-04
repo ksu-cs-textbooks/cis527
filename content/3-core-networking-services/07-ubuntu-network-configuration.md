@@ -1,6 +1,7 @@
 ---
-title: "7. Ubuntu Network Configuration"
-date: 2018-08-24T10:53:26-05:00
+title: "Ubuntu Network Configuration"
+weight: 35
+pre: "7. "
 ---
 
 {{< youtube  >}}

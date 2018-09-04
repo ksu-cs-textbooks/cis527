@@ -1,6 +1,7 @@
 ---
-title: "2. Networking Overview"
-date: 2018-08-24T10:53:26-05:00
+title: "Networking Overview"
+weight: 10
+pre: "2. "
 ---
 
 {{< youtube  >}}

@@ -1,6 +1,7 @@
 ---
-title: "5. PowerShell Scripting"
-date: 2018-08-24T10:53:26-05:00
+title: "PowerShell Scripting"
+weight: 25
+pre: "5. "
 ---
 
 {{< youtube j8vDSs2mDeM >}}

@@ -1,6 +1,7 @@
 ---
-title: "3. Bash Scripting"
-date: 2018-08-24T10:53:26-05:00
+title: "Bash Scripting"
+weight: 15
+pre: "3. "
 ---
 
 {{< youtube yMU30kePPP8 >}}

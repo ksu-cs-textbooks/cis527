@@ -1,6 +1,7 @@
 ---
-title: "5. Assignment"
-date: 2018-08-24T10:53:26-05:00
+title: "Assignment"
+weight: 25
+pre: "5. "
 ---
 
 ### Lab 3 - Core Networking Services

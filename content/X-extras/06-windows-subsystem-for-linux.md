@@ -1,6 +1,7 @@
 ---
-title: "6. Windows Subsystem for Linux"
-date: 2018-08-24T10:53:26-05:00
+title: "Windows Subsystem for Linux"
+weight: 30
+pre: "6. "
 ---
 
 {{< youtube f2biSfCC26Q >}}
