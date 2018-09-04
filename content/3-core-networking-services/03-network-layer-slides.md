@@ -118,7 +118,7 @@ Host:   0.  0.  0.  2 --------.--------.--------.--000010
 	<h3>IPv4 vs. IPv6</h3>
 	<p>IPv4: 32-bit Addresses<br>2<sup>32</sup> = 4,294,967,296</p>
 	<br>
-	<p class="fragment">IPv6: 32-bit Addresses<br>2<sup>128</sup> = 340,282,366,920,938,463,463,<br>374,607,431,768,211,456<br>or 340 Undecillion addresses<p>
+	<p class="fragment">IPv6: 128-bit Addresses<br>2<sup>128</sup> = 340,282,366,920,938,463,463,<br>374,607,431,768,211,456<br>or 340 Undecillion addresses<p>
 </section>
 <section>
 	<h3>IPv6 Packet Structure</h3>
