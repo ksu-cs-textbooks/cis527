@@ -8,7 +8,7 @@ pre: "17. "
 
 #### Resources
 
-* [Slides]({{< relref "/1-secure-workstations/17-ubuntu-software-installation-slides.md" >}})
+* **[Slides]({{< relref "/1-secure-workstations/17-ubuntu-software-installation-slides.md" >}})**
 * [Install Additional Applications](https://help.ubuntu.com/lts/ubuntu-help/addremove-install.html) from Ubuntu
 * [Use Synaptic for More Advanced Software Management](https://help.ubuntu.com/lts/ubuntu-help/addremove-install-synaptic.html.en) from Ubuntu
 * [Apt-Get How To](https://help.ubuntu.com/community/AptGet/Howto) from Ubuntu

@@ -8,7 +8,7 @@ pre: "14. "
 
 #### Resources
 
-* [Slides]({{< relref "/1-secure-workstations/14-ubuntu-user-management-slides.md" >}})
+* **[Slides]({{< relref "/1-secure-workstations/14-ubuntu-user-management-slides.md" >}})**
 * [User Accounts](https://help.ubuntu.com/lts/ubuntu-help/user-accounts.html) from Ubuntu
 * [User Management](https://help.ubuntu.com/lts/serverguide/user-management.html) from Ubuntu Server Guide
 * [How to Add and Delete Users on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-16-04) from DigitalOcean (Works for 18.04)

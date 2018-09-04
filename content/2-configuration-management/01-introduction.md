@@ -8,7 +8,7 @@ pre: "1. "
 
 #### Resources
 
-* [Slides]({{< relref "/2-configuration-management/01-introduction-slides.md" >}})
+* **[Slides]({{< relref "/2-configuration-management/01-introduction-slides.md" >}})**
 * [Download the Puppet Learning VM](https://puppet.com/download-learning-vm) from Puppet
 
 #### Video Script

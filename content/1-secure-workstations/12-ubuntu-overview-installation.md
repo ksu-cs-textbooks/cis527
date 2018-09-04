@@ -8,7 +8,7 @@ pre: "12. "
 
 #### Resources
 
-* [Slides]({{< relref "/1-secure-workstations/12-ubuntu-overview-installation-slides.md" >}})
+* **[Slides]({{< relref "/1-secure-workstations/12-ubuntu-overview-installation-slides.md" >}})**
 * [VMWare/Tools](https://help.ubuntu.com/community/VMware/Tools) from Ubuntu
 * [Ubuntu Features](https://www.ubuntu.com/desktop/features) from Ubuntu
 * [Ubuntu Desktop Guide](https://help.ubuntu.com/lts/ubuntu-help/index.html) from Ubuntu

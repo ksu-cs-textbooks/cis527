@@ -8,7 +8,7 @@ pre: "5. "
 
 #### Resources
 
-* [Slides]({{< relref "/1-secure-workstations/05-windows-overview-installation-slides.md" >}})
+* **[Slides]({{< relref "/1-secure-workstations/05-windows-overview-installation-slides.md" >}})**
 * [How to Get Windows 10](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) from Microsoft Imagine Store via CS Support
 * [How to Install VMWare Tools](https://kb.vmware.com/s/article/1014294) from VMWare
 * [Windows 10 Overview](https://www.microsoft.com/en-us/windows/features) from Microsoft
@@ -55,7 +55,7 @@ On the following pages, you can choose the desired disk size and format. You sho
 
 Finally, you can click Finish to create the virtual machine. We'll have to customize the hardware anyway, so we can come back to that once it is finished.
 
-Once your virtual machine is created, you can click on the edit virtual machine settings button to customize the hardware. Again, make sure the hardware specification matches what is defined in the assignment for Lab 1. To install the operating system, we'll have to tell the virtual machine where to find the .ISO file downloaded earlier. Click the CD/DVD option, then select the file and make sure it is enabled. 
+Once your virtual machine is created, you can click on the edit virtual machine settings button to customize the hardware. Again, make sure the hardware specification matches what is defined in the assignment for Lab 1. To install the operating system, we'll have to tell the virtual machine where to find the .ISO file downloaded earlier. Click the CD/DVD option, then select the file and make sure it is enabled.
 
 When you are ready to begin the installation process, click the button to power on the virtual machine.
 

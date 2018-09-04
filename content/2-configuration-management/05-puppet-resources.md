@@ -8,7 +8,7 @@ pre: "5. "
 
 #### Resources
 
-* [Slides]({{< relref "/2-configuration-management/05-puppet-resources-slides.md" >}})
+* **[Slides]({{< relref "/2-configuration-management/05-puppet-resources-slides.md" >}})**
 * [Core Types Cheat Sheet](https://puppet.com/docs/puppet/5.5/cheatsheet_core_types.html) from Puppet
 * [Resource Type Reference](https://puppet.com/docs/puppet/5.5/type.html) from Puppet
 

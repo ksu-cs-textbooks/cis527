@@ -8,7 +8,7 @@ pre: "11. "
 
 #### Resources
 
-* [Slides]({{< relref "/1-secure-workstations/11-windows-security-networking-slides.md" >}})
+* **[Slides]({{< relref "/1-secure-workstations/11-windows-security-networking-slides.md" >}})**
 * [Adjust Windows 10 Firewall Rules & Settings](https://www.online-tech-tips.com/windows-10/adjust-windows-10-firewall-settings/) from Online Tech Tips
 * [Configuring Virtual Network Adapter Settings](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-C82DCB68-2EFA-460A-A765-37225883337D.html) from VMWare
 * [Using the Virtual Network Editor](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-AC956B17-30BA-45F7-9A39-DCCB96B0A713.html) from VMWare

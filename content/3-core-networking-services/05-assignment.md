@@ -205,7 +205,7 @@ Then, using Wireshark, create **screenshots** showing that you captured and can 
 
 1. A DNS standard query for `people.cs.ksu.edu`
 1. A DNS standard query response from `people.cs.ksu.edu`
-  * _HINT: It should respond as `polara.cs.ksu.edu`_
+  * _HINT: It should respond as `invicta.cs.ksu.edu`_
 1. An ICMP Echo (ping) request
 1. An SNMP get-next-request packet for an item within the ICMP MIB section (1.3.6.1.2.1.5.x). Make sure you show the full Object ID in the screenshot
 1. An SNMP get-response packet for an item within the ICMP MIB section (1.3.6.1.2.1.5.x). Make sure you show the full Object ID and the value of the response

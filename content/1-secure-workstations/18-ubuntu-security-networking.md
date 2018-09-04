@@ -8,7 +8,7 @@ pre: "18. "
 
 #### Resources
 
-* [Slides]({{< relref "/1-secure-workstations/18-ubuntu-security-networking-slides.md" >}})
+* **[Slides]({{< relref "/1-secure-workstations/18-ubuntu-security-networking-slides.md" >}})**
 * [Networking, Web & Email](https://help.ubuntu.com/lts/ubuntu-help/net.html) from Ubuntu
 * [Networking](https://help.ubuntu.com/lts/serverguide/networking.html) from Ubuntu Server Guide
 * [Internet and Networking](https://help.ubuntu.com/community/InternetAndNetworking) from Ubuntu
@@ -30,6 +30,6 @@ Let's take a quick look at the firewall, since you'll need to allow an applicati
 
 To test your firewall configuration, you can use your Windows virtual machine created as part of Lab 1. First, make sure they are both on the same network segment in VMWare by looking at the hardware configuration for each virtual machine. Then, you'll need to get the IP address of the Ubuntu computer. There are several ways to do this, but one of the simplest is to go to the Settings application, then choosing Network from the menu on the left. In the Wired section, click the gear icon to see the details. Here you'll find the IPv4 address, usually in form of four numbers separated by decimal points. We'll spend most of Module 3 discussing networking, so I won't go into too much detail here.
 
-Once you have that IP address, switch to your Windows virtual machine, and open up the Firefox web browser. At the top in the address bar, simply input the IP address and press enter. If everything works correctly, you should be presented with the default Apache screen as seen here. If not, you'll need to do some debugging to figure out what is missing. 
+Once you have that IP address, switch to your Windows virtual machine, and open up the Firefox web browser. At the top in the address bar, simply input the IP address and press enter. If everything works correctly, you should be presented with the default Apache screen as seen here. If not, you'll need to do some debugging to figure out what is missing.
 
 With that, you should now have all the information you need to finish the Ubuntu portion of Lab 1. If you have issues, please feel free to post in the course discussion forums or chat with me. Good luck!
