@@ -88,7 +88,7 @@ _See the appropriate pages in the Extras module for more information about WSL a
 On your Ubuntu 18.04 VM labelled **Server**, set up a static IP address. The host part of the IP address should be 41, and the network part should remain the same as the one automatically assigned by VMWare.
 
 {{% notice note %}}
-So, if your VMWare is configured to give IP addresses in the 192.168.138.0/24 network, you'll set the computer to use the 192.168.138.41 address.
+So, if your VMWare is configured to give IP addresses in the `192.168.138.0/24` network, you'll set the computer to use the `192.168.138.41` address.
 {{% /notice %}}
 
 You'll need to set the following settings correctly:
@@ -97,12 +97,12 @@ You'll need to set the following settings correctly:
 * Subnet Mask
 * Default Gateway
 {{% notice note %}}
-VMWare typically uses host 2 as its internal router to avoid conflicts with home routers, which are typically on host 1. So, on the 192.168.138.0/24 network, the default gateway would usually be 192.168.138.2.
+VMWare typically uses host `2` as its internal router to avoid conflicts with home routers, which are typically on host `1`. So, on the `192.168.138.0/24` network, the default gateway would usually be `192.168.138.2`.
 {{% /notice %}}
 * DNS Servers. Use one of the following options:
   - Your Default Gateway Address (Easiest). VMWare's internal router also acts as a DNS resolver for you, just like a home router would
-  - Off Campus: [OpenDNS](https://www.opendns.com/setupguide/) (208.67.222.222 and 208.67.220.220) or [Google DNS](https://developers.google.com/speed/public-dns/) (8.8.8.8 and 8.8.4.4)
-  - On Campus: [K-State's DNS Servers](https://www.k-state.edu/its/dns/registration.html) (10.130.30.52 and 10.130.30.53)
+  - Off Campus: [OpenDNS](https://www.opendns.com/setupguide/) (`208.67.222.222` and `208.67.220.220`) or [Google DNS](https://developers.google.com/speed/public-dns/) (`8.8.8.8` and `8.8.4.4`)
+  - On Campus: [K-State's DNS Servers](https://www.k-state.edu/its/dns/registration.html) (`10.130.30.52` and `10.130.30.53`)
 
 {{% notice tip %}}
 _I personally recommend using the graphical tools in Ubuntu to configure a static IP address. There are many resources online that direct you to use netplan or edit configuration files manually, but I've found that those methods aren't as simple and many times lead to an unusable system if done incorrectly. In any case, making a snapshot before this step is recommended, in case you have issues. --Russ_
@@ -120,18 +120,58 @@ _I personally recommend using the graphical tools in Ubuntu to configure a stati
 
 For this step, install the `bind9` package on the Ubuntu 18.04 VM labelled **Server**, and configure it to act as a **primary master** and **caching nameserver** for your network. You'll need to include the configuration for both types of uses in your config file. In addition, you'll need to configure both the **zone file** and **reverse zone file**, as well as **forwarders**.
 
+{{% notice tip %}}
+_These instructions were built based on the [How To Configure BIND as a Private Network DNS Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-18-04) guide from DigitalOcean. In general, you can follow the first part of that guide to configure a Primary DNS Server, making the necessary substitutions listed below.--Russ_
+{{% /notice %}}
+
 In your configuration, include the following items:
 
-* Use `cis527.cs.ksu.edu` as your fully qualified domain name (FQDN) in your configuration file.
-* Create an A record for `ns.cis527.cs.ksu.edu` that points to your Ubuntu 18.04 VM labelled **Server** using the IP address in your network ending in 41 as described above.
-* Create an A record for `win.cis527.cs.ksu.edu` that points to the IP address in your network ending in 42. _(You'll use that IP address in the next assignment for your Windows server.)_
-* For DNS forwarding, use one of the options given above in Task 2. I recommend using the same option as above, since you have (_hopefully_) already confirmed that it works for your situation.
-
-Of course, you may need to update your firewall configuration to allow incoming DNS requests to this system!
+* All files:
+  * Since you are not creating a Secondary DNS Server, you can leave out any `allow-transfer` entries from all configuration files.
+* `named.conf.options` file:
+  * Create an ACL called `network` that includes your entire VM network in CIDR notation. Do not list individual IP addresses.
+  * Enable recursion, and allow all computers in the `network` ACL to perform recursive queries.
+  * Configure DNS forwarding, using one of the options given above in Task 2. I recommend using the same option as above, since you have (_hopefully_) already confirmed that it works for your situation.
+* `named.conf.local` file:
+  * Create a zone file and reverse zone file, stored in `/etc/bind/zones`.
+{{% notice note %}}
+The DigitalOcean guide uses a `/16` subnet of `10.128.0.0/16`, and includes the `10.128` portion in the reverse zone file name and configuration. For your VM network, you are most likely using a `/24` subnet, such as `192.168.40.0/24`, so you can include the `192.168.40` portion in your zone file name and configuration. In that case, the zone name would be `40.168.192.in-addr.arpa`, and the file could be named accordingly. Similarly, in the reverse zone file itself, you would only need to include the last segment of the IP address for each PTR record, instead of the last two. Either way is correct.
+{{% /notice %}}
+  * List those files by path in this file in the correct zone definitions.
+* Zone files:
+  * Use `cis527.cs.ksu.edu` as your fully qualified domain name (FQDN) in your configuration file.
+  * Use `ns.cis527.cs.ksu.edu` as the name of your authoritative nameserver. You can use `admin.cis527.cs.ksu.edu` for the contact email address.
+{{% notice note %}}
+Since the at symbol `@` has other uses in the DNS Zone file, the email address uses a period `.` instead. So, the email address `admin@cis527.cs.ksu.edu` would be written as `admin.cis527.cs.ksu.edu`.
+{{% /notice %}}
+  * Don't forget to increment the `serial` field in the `SOA` record each time you edit the file.
+  * Create an NS record for `ns.cis527.cs.ksu.edu`.
+{{% notice tip %}}
+_HINT: The DigitalOcean guide does not include an at symbol `@` at the beginning of that record, but I've found that sometimes it is necessary to include it in order to make the `named-checkzone` command happy. See a related post on [ServerFault](https://serverfault.com/questions/802762/reverse-dns-bind-named-checkzone-zone-ns-has-no-address-records-a-or-aaaa-err) for additional ways to solve that common error.--Russ_
+{{% /notice %}}
+  * Forward Zone File:
+  <ul>
+    <li>Create an A record for `ns.cis527.cs.ksu.edu` that points to your Ubuntu 18.04 VM labelled **Server** using the IP address in your network ending in `41` as described above.</li>
+    <li>Create an A record for `win.cis527.cs.ksu.edu` that points to the IP address in your network ending in `42`. _(You'll use that IP address in the next assignment for your Windows server.)_</li>
+    <li>Create a CNAME record for `ubu.cis527.cs.ksu.edu` that redirects to `ns.cis527.cs.ksu.edu`.</li>
+  </ul>
+  * Reverse Zone File:
+  <ul>
+    <li>Create a PTR record for the IP address ending in `41` that points to `ns.cis527.cs.ksu.edu`.</li>
+    <li>Create a PTR record for the IP address ending in `42` that points to `win.cis527.cs.ksu.edu`.</li>
+  </ul>
 
 {{% notice tip %}}
 _HINT: The periods, semicolons, and whitespace in the DNS configuration files are very important! Be very careful about formatting, including the trailing periods after full DNS names such as `win.cis527.ksu.edu.`. --Russ_
 {{% /notice %}}
+
+Once you are done, I recommend checking your configuration using the `named-checkconf` and `named-checkzone` commands. Note that the second argument to the `named-checkzone` command is the full path to your zone file, so you may need to include the file path and not just the name of the file.
+
+Of course, you may need to update your firewall configuration to allow incoming DNS requests to this system!
+
+To test your DNS server, you can set a static DNS address on either your Windows or Ubuntu VM, and use the `dig` or `nslookup` commands to verify that each DNS name and IP address is resolved properly.
+
+
 
 #### Resources
 
@@ -179,7 +219,9 @@ Finally, restart your Windows VM. When it reboots, if everything works correctly
 
 ### Task 5: SNMP Daemon
 
-Install an SNMP Daemon on the Ubuntu 18.04 VM labelled **Server**. When you install it, make sure it has the full MIB available, and configure it to allow anyone on the local system (localhost) to query all available data. You do not have to worry about restrictive security for this exercise (_though you would on an actual enterprise system_).
+Install an SNMP Daemon on the Ubuntu 18.04 VM labelled **Server**. Once it is installed, configure it to allow anyone on the local system (localhost) to query all available data. You'll also need to install and configure the SNMP client and make sure it has all the MIBS available. You do not have to worry about restrictive security for this exercise (_though you would on an actual enterprise system_).
+
+Of course, you may need to update your firewall configuration to allow incoming SNMP requests to this system!
 
 Then, perform the following quick activity:
 
