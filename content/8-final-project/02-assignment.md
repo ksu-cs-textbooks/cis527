@@ -1,0 +1,79 @@
+---
+title: "Assignment"
+weight: 10
+pre: "2. "
+---
+
+### Final Project
+
+#### Instructions
+
+The final project in this course is to demonstrate your knowledge and experience in a variety of areas of system administration. In addition, you'll gain experience communicating about those areas with non-technical users.
+
+#### Audience
+
+For this project, your intended audience is primarily C-suite executives (CEO, CIO, CFO, President, Vice-President etc.) of the organization. Some of them will have a technical background, some will not. So, you'll have to write and present accordingly.
+
+---
+
+### Step 0: Teamwork
+
+If you so choose, you may team up with another student to complete this project. Please let the instructor know via email if you plan on working on a team for this project. Teams will be expected to produce roughly twice the quantity of work described below, so plan to scale the scope of your project accordingly.
+
+{{% notice note %}}
+_For example, a 15 minute presentation becomes a 30 minute presentation. Likewise, your proposal and report should be twice as long as it would be if only one person was working on it. --Russ_
+{{% /notice %}}
+
+---
+
+### Step 1: Proposal
+
+First, you'll need to create and submit a proposal for your project. Your proposal should fit in one of three major topic areas below:
+
+* How would you change a particular aspect of K-State's IT infrastructure? (You may substitute another organization you are more familiar with in place of K-State, such as your current employer or a past internship)
+* How would you architect the technology resources for a new, cloud-based startup in the domain area of your choice? (That is, you must clearly describe what the company does as well as how you'd structure their resources.)
+* How would you build an effective computer support infrastructure for K-State. (You may substitute another organization you are more familiar with in place of K-State, such as your current employer or a past internship. However, it should be of sufficient size to warrant a formal support infrastructure.)
+
+**Submit your 1 page proposal via K-State Canvas for approval**. Once it is approved, you may start working on the project itself. Make sure you have appropriately scaled your proposal to the amount of work below; if the proposal is too simple or too complex it may be difficult to complete everything listed below.
+
+{{% notice warning %}}
+Do not wait until the last minute to submit your proposal! To make that point clear, the proposal is due no later than **Friday, December 7th**, giving you at least finals week to complete the project.
+{{% /notice %}}
+
+---
+
+### Step 2: Design & Analyze
+
+The next step of the project is to design and perform analysis of your proposal. In this phase, you'll clearly describe the proposed solution in as much technical detail as you feel is needed. It should be very clear that you've carefully considered each element of the solution, and have taken steps to make sure it is clear and easy to understand.
+
+If you do any research, make sure you include the relevant links, papers, and resources in your write-up described below. As with any academic work, any information you use that is not of your own creation should be appropriately cited.
+
+In addition, you will perform a [SWOT](https://en.wikipedia.org/wiki/SWOT_analysis) (Strengths, Weaknesses, Opportunities, Threats) analysis of your proposed solution. Be very blunt and honest in each section, as you should be able to show the level of depth and analysis you have performed.
+
+{{% notice tip %}}
+_There are NO proposals without several external threats and internal weaknesses, no matter how good it is. If you can't find any, think harder! :^) --Russ_
+{{% /notice %}}
+
+---
+
+### Step 3: Technical Writeup
+
+Once you feel you have fully designed and analyzed your proposal, you will need to create a formal technical paper detailing your work. It should follow the [Standard Technical Paper Template](http://cse.unl.edu/~goddard/WritingResources/) from Dr. Goddard at UNL. Hopefully the content in each section should be pretty self-explanatory. There is no minimum or maximum length specified; it should be long enough to include everything needed to describe your proposal and analysis, but short and succinct enough that it is still worth reading.
+
+---
+
+### Step 4: Presentation
+
+Once you are ready, you will present your proposal and analysis to your audience. The presentation will be given live, either in-person or via Zoom, to the instructor. It should be **no shorter than 15 minutes**, and **no longer than 30 minutes** for a single presenter. You'll need to clearly explain the relevant background, the proposal, the analysis, and your conclusions based on that analysis. In short, you're trying to sell the audience on this proposal and convince them to consider adopting it, so you'll need to not only focus on presenting the information, but persuading the audience to be in favor of the change. Any slides, graphics, or other elements to make the presentation more persuasive is encouraged.
+
+---
+
+### Step 5: Submit & Schedule
+
+Finally, submit your writeup via Canvas and email the instructor to schedule a time for your presentation.
+
+{{% notice warning %}}
+Do not wait until the last minute! If you try to schedule a presentation on the last day of finals week, it may already be too late to get everything done in time!
+{{% /notice %}}
+
+As with any assignment in this course, if you have any questions at all please post in the course discussion forums on Canvas.

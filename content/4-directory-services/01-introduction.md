@@ -12,8 +12,7 @@ pre: "1. "
 
 #### Video Transcript
 
-
-Welcome to module 4! In this module, we'll discuss how to use directory services to provide consistent user accounts and permissions across a number of systems. Specifically, we'll look at the Windows ActiveDirectory service for Windows, and the OpenLDAP implementation of the Lightweight Directory Access Protocol (LDAP) for Ubuntu Linux.
+Welcome to module 4! In this module, we'll discuss how to use directory services to provide consistent user accounts and permissions across a number of systems. Specifically, we'll look at the Active Directory Domain Services for Windows, and the OpenLDAP implementation of the Lightweight Directory Access Protocol (LDAP) for Ubuntu Linux.
 
 In addition, we'll see how to configure clients to connect to each of those servers. Finally, I'll discuss some implementation concerns for interoperability, for instances where you'll have a heterogeneous network environment.
 
