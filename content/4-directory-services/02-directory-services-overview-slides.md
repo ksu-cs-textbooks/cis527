@@ -102,6 +102,14 @@ objectClass: person
 objectClass: top</code></pre>
 </section>
 <section>
+	<h3>Samba</h3>
+	<ul>
+		<li>Reverse Engineered SMB/CIFS Network Protocol</li>
+		<li>Allows File Sharing between Linux and Windows</li>
+		<li>Can Act as Part of an Active Directory Domain</li>
+	</ul>
+</section>
+<section>
 	<h3>Novell Directory Services</h3>
 	<ul>
 		<li>Released in 1993 by Novell</li>
@@ -152,7 +160,7 @@ objectClass: top</code></pre>
 	<h3>Kerberos Protocol</h3>
 	<ul>
 		<li>Developed by MIT in 1980s</li>
-		<li>Published in 1993 as RCF 1510</li>
+		<li>Published in 1993 as RFC 1510</li>
 		<li>Authentication via 3rd Party Server</li>
 		<li>Used by Many LDAP Servers</li>
 	</ul>
@@ -161,3 +169,13 @@ objectClass: top</code></pre>
 	<img class="stretch plain" src="/images/kerberos_wiki.svg">
 	<p class="imagecredit">Image Source: <a href="http://en.wikipedia.org/wiki/Kerberos_%28protocol%29">Wikipedia</a></p>
 </section>
+<section>
+	<h3>Coming Up</h3>
+	<ul>
+		<li>Install Active Directory on Windows
+			<ul>
+				<li>Configure Group Policy</li>
+			</ul>
+		</li>
+		<li>Install OpenLDAP on Ubuntu</li>
+		<li>Configure Clients</li>
