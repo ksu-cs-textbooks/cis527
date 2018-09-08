@@ -47,13 +47,19 @@ Create a new virtual machine for **Windows Server 2016 Standard**. You can downl
 
 When installing the operating system, configure it as specified below:
 
+* Make sure you choose the **Desktop Experience** option when installing, unless you want a real challenge! It is possible to perform these steps without a GUI, but it is _much_ more difficult.
 * **Computer Name:** CIS527D-\<your eID\> (example: CIS527D-russfeld)
-* **Primary User Account:** cis527 / `cis527_windows` (Administrators & Users group)
 * **Install Software**
   - [VMWare Tools](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-391BE4BF-89A9-4DC3-85E7-3D45F5124BC7.html)
   - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) (_you'll thank me later_)
 * **Install Windows Updates:** Run Windows Update and reboot as necessary until all available updates are installed.
 * **Automatic Updates:** Make sure the system is set to download and install security updates automatically.
+
+Make a **snapshot** of this VM once it is fully configured and updated. You can restore to this snapshot if you have issues installing Active Directory.
+
+{{% notice tip %}}
+You can use <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Insert</kbd> to send a <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to your VM in VMWare without affecting your host OS.
+{{% /notice %}}
 
 ---
 
@@ -72,6 +78,7 @@ Configure your Windows Server as an Active Directory Domain Controller. Follow t
 
 * [Step-By-Step: Setting Up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/) from Microsoft
 * [Add User Accounts on Active Directory](https://www.server-world.info/en/note?os=Windows_Server_2016&p=active_directory&f=3) from Server-World
+* [AD DS Installation and Removal Wizard Page Descriptions](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/ad-ds-installation-and-removal-wizard-page-descriptions) from Microsoft
 
 ---
 
@@ -94,14 +101,17 @@ Join your Windows 10 VM to the Active Directory Domain created in Task 2. Follow
 Install OpenLDAP on your Ubuntu VM labelled **Server**. Follow the steps and configuration details below:
 
 1. First, set a static IP address on your Ubuntu VM labelled **Server**, if it does not have one already. Use the IP address ending in `41` that was reserved for this use in Lab 3. For the static DNS entries, you should use one of the options discussed in Lab 3.
-2. Set up and configure an OpenLDAP server and phpLDAPadmin on this system, following the instructions in the guide linked in the resources section below.
+2. Set up and configure an OpenLDAP server, following the first part of the instructions in the guide linked in the resources section below.
   * **Domain Name:** cis527\<your eID\>.local (example: cis527russfeld.local)
   * **Base DN:** `dc=cis527\<your eID\>,dc=local` (example: `dc=cis527russfeld,dc=local`)
   * **Passwords:** Use `cis527_linux` for all passwords
-  * You **DO NOT** have to perform the last step in this guide, which involves configuring StartTLS Encryption.
-3. Add a User Account to your Active Directory
+  * You **DO NOT** have to perform the other steps in the guide at this point
+3. Install phpLDAPadmin from https://github.com/breisig/phpLDAPadmin. See the video in this module for detailed instructions on how to install and configure phpLDAPadmin.
+4. Add a User Account to your Active Directory
   * Follow the instructions in the guide below to create `ou`s for `users`, `groups`, and create an `admin` group as well.
   * Use your own eID for the username, and `cis527_linux` as the password.
+
+Of course, you may need to modify your firewall configuration to allow incoming connections to the LDAP server!
 
 #### Resources
 
@@ -114,15 +124,15 @@ Install OpenLDAP on your Ubuntu VM labelled **Server**. Follow the steps and con
 
 On your Ubuntu VM labelled **Client**, configure the system to authenticate against the OpenLDAP server created in Task 4.
 
-* To test your configuration, use the command `getent passwd` and confirm that you can see your eID in that list.
+* To test your configuration, use the command `getent passwd <username>` (example: `getent passwd russfeld`) and confirm that it returns an entry for your LDAP user.
 * To log in as the LDAP user, use the `su <username>` command (example: `su russfeld`).
+* Finally, reboot the system, and make sure you can log in graphically by choosing the "Not listed?" option on the login screen and entering your LDAP user's credentials.
 
 #### Resources
 
-* [Configure LDAP Client on Ubuntu 16.04 / Debian 8](https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/configure-ldap-client-on-ubuntu-16-04-debian-8.html) on IT'z Geek (should work on 18.04 as well)
+* [Configure LDAP Client on Ubuntu 16.04 / Debian 8](https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/configure-ldap-client-on-ubuntu-16-04-debian-8.html) on ITz Geek (should work on 18.04 as well)
 * [Configure LDAP Client](https://www.server-world.info/en/note?os=Ubuntu_18.04&p=openldap&f=3) from Server-World
 * [OpenLDAP Server](https://help.ubuntu.com/lts/serverguide/openldap-server.html.en) on Ubuntu Server Guide (look for the LDAP Authentication section)
-* [How to Configure Ubuntu as an LDAP Client](https://askubuntu.com/questions/127389/how-to-configure-ubuntu-as-an-ldap-client) from AskUbuntu (possible solution to graphical login)
 
 ---
 
