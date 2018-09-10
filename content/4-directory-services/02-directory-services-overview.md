@@ -73,4 +73,4 @@ The Kerberos protocol is quite complex, and it uses many different cryptographic
 
 If everything works correctly, both the client and server know they can trust each other, and they have established keys that allow them to communicate privately and share the requested information. Kerberos is a very powerful protocol, and if you'd like to learn more, I highly recommend reading the linked resources below this video. Kerberos is also discussed in several of the cybersecurity courses here at K-State.
 
-That's all the background information you'll need for this module. Next, you'll work on installing Microsoft Active Directory on Windows and OpenLDAP on Ubuntu, as well as configuring clients to use those systems for authentication. 
+That's all the background information you'll need for this module. Next, you'll work on installing Microsoft Active Directory on Windows and OpenLDAP on Ubuntu, as well as configuring clients to use those systems for authentication.
