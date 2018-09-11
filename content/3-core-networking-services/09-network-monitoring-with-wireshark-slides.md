@@ -24,7 +24,7 @@ hidden: true
 </section>
 <section>
 	<h3>Installation</h3>
-	<a href="https://www.wireshark.org/download.html">https://www.wireshark.org/download.html</a>
+	<p style="font-size: .85em !important;"><a href="https://www.wireshark.org/download.html">https://www.wireshark.org/download.html</a></p>
 	<br><br>
 	<pre><code>sudo apt install wireshark</code></pre>
 </section>
