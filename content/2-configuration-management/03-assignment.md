@@ -111,7 +111,7 @@ Create a Puppet Manifest File for Windows 10 that defines the following configur
   - Mozilla Thunderbird
   - Notepad++
 {{% notice note %}}
-_You will need to research the appropriate options to give to the installer through Puppet for them to install silently. --Russ_
+_You will need to research the appropriate options to give to the installer through Puppet for them to install silently. For this lab, you should not use any Windows package managers such as Chocolatey or Ninite. --Russ_
 {{% /notice %}}
 * **Services** - Ensure the following services are running:
   - DHCP Client
