@@ -67,19 +67,19 @@ hidden: true
 </section>
 <section>
 	<h3>Subnet Mask Example</h3>
-	<pre style="font-size: 40px !important;">
+	<pre style="font-size: 40px !important;"><code style="font-size: 40px !important;">
 IP:   192.168.  2.130 11000000.00000000.00000010.10000010
 Mask: 255.255.255.  0 11111111.11111111.11111111.00000000
 Net:  192.168.  2.  0 11000000.00000000.00000010.--------
 Host:   0.  0.  0.130 --------.--------.--------.10000010
-</pre>
+</code></pre>
 <br>
-	<pre style="font-size: 40px !important;" class="fragment">
+	<pre style="font-size: 40px !important;" class="fragment"><code style="font-size: 40px !important;">
 IP:   192.168.  2.130 11000000.00000000.00000010.10000010
 Mask: 255.255.255.192 11111111.11111111.11111111.11000000
 Net:  192.168.  2.128 11000000.00000000.00000010.10------
 Host:   0.  0.  0.  2 --------.--------.--------.--000010
-</pre>
+</code></pre>
 </section>
 <section>
 	<h3>CIDR Notation</h3>
@@ -139,12 +139,12 @@ Host:   0.  0.  0.  2 --------.--------.--------.--000010
 		<li>Omit Leading 0s</li>
 		<li>Combine Consecutive Empty Groups With :: Once Per Address</li>
 	</ul>
-<pre style="font-size: 60px !important;">
+<pre style="font-size: 59px !important;"><code style="font-size: 59px !important;">
 2001:0db8:85a3:0000:0000:8a2e:0370:7334
 2001: db8:85a3:   0:   0:8a2e: 370:7334
 2001: db8:85a3    ::     8a2e: 370:7334
 2001:db8:85a3::8a2e:370:7334
-</pre>
+</code></pre>
 </section>
 <section>
 	<h3>IPv6 Addressing</h3>
