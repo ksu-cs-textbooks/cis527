@@ -14,6 +14,7 @@ pre: "10. "
 * [What is DHCP? (Dynamic Host Configuration Protocol)](https://www.lifewire.com/what-is-dhcp-2625848) from Lifewire
 * [ISC DHCP](https://www.isc.org/downloads/dhcp/) Open Source Software for DHCP Servers
 * [Dynamic Host Configuration Protocol](https://tools.ietf.org/html/rfc2131) (RFC 2131) Standard from IETF
+* [Link-Local Address](https://en.wikipedia.org/wiki/Link-local_address) on Wikipedia
 
 #### Video Transcript
 

@@ -50,6 +50,15 @@ hidden: true
 	<p class="imagecredit">Image Source: <a href="http://people.cs.ksu.edu/~russfeld/cis527spring2017/9dhcpdns/images/dhcp.svg">Seth Galitzer</a></p>
 </section>
 <section>
+	<h3>Automatic Private IP Address (APIPA)</h3>
+	<ul>
+		<li>Used when DHCP Fails</li>
+		<li>Assigns a Link-Local IP Address</li>
+		<li>IPv4: 169.254.0.0/16</li>
+		<li>IPv6: fe80::/10</li>
+	</ul>
+</section>
+<section>
 	<h3>Sample Configuration</h3>
 	<pre style="font-size: .5em"><code>default-lease-time 600;  # in seconds
 max-lease-time 7200;     # in seconds
