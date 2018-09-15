@@ -35,7 +35,7 @@ Following that, it will ask what database format you'd like to use. This would a
 
 The next option is whether you want to have the database removed if you purge the `slapd` package. Selecting `<yes>` on this option would delete your LDAP database if you ever chose to reinstall the `slapd` package. For most uses, you'll always want to select `<no>` here, which is what I'll do.
 
-Since there are some existing configuration files in place, the installer asks if you'd like those to me moved. Unless you are reinstalling `slapd` on an existing server, you can select `<yes>` for this option.
+Since there are some existing configuration files in place, the installer asks if you'd like those to be moved. Unless you are reinstalling `slapd` on an existing server, you can select `<yes>` for this option.
 
 That should complete the configuration for the OpenLDAP server. For this example, I have disabled the firewall on this system, but for your lab assignment you'll need to do a bit of firewall configuration at this point.
 

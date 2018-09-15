@@ -17,3 +17,5 @@ http://techgenix.com/windows-group-policy-settings/
 https://www.lepide.com/blog/top-10-most-important-group-policy-settings-for-preventing-security-breaches/
 
 #### Video Transcript
+
+Coming Soon

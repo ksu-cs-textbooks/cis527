@@ -29,7 +29,7 @@ Once the installation is complete, you'll be prompted to promote the server to a
 
 Next, you'll need to configure the functional level of the domain. If you have older systems in your network, you will want to choose the option here for the oldest domain controller in the domain. Since we're just creating a new system, we can use the latest option here.
 
-You'll also need to input a password here for Directory Services Restore Mode. In an enterprise setting, this is the password that you'll use if you ever have to restore your domain from a backup, or work with a domain controller that will not boot correctly. So, you'd generally make this a unique password, and store it in a safe location. For our example, I'm just going to use the password we've been using for all of our windows systems, but in practice you would make it much more secure.
+You'll also need to input a password here for Directory Services Restore Mode. In an enterprise setting, this is the password that you'll use if you ever have to restore your domain from a backup, or work with a domain controller that will not boot correctly. So, you'd generally make this a unique password, and store it in a safe location. For our example, I'm just going to use the password we've been using for all of our Windows systems, but in practice you would make it much more secure.
 
 Next are the DNS options. If you are running a separate DNS server in your organization, you'll need to checkmark this box to create a DNS delegation. However, for this lab assignment you won't need to do that, since we aren't trying to combine our Windows and Linux environments.
 
