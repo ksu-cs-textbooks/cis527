@@ -4,7 +4,7 @@ weight: 75
 pre: "15. "
 ---
 
-{{< youtube  >}}
+{{< youtube 1NpoTIbiQIo >}}
 
 #### Resources
 
@@ -35,4 +35,4 @@ When a packet is transmitted, the TLS layer will encrypt the packet so that it c
 
 Many protocols today use TLS by default, including HTTP. You've probably seen the `https` protocol in your web browser many times. That simply means that your browser is using TLS to communicate with the web server. In addition, many browsers will show information about the certificate presented by the web server, and will alert you if the certificate is untrusted.
 
-This is a very brief overview of the security concerns involved in a networked world. I encourage you to consider taking additional courses in cyber security if you are interested in learning the details of how these systems are implemented. In any case, you should always be thinking about security as you configure your systems to connect to a network. 
+This is a very brief overview of the security concerns involved in a networked world. I encourage you to consider taking additional courses in cyber security if you are interested in learning the details of how these systems are implemented. In any case, you should always be thinking about security as you configure your systems to connect to a network.
