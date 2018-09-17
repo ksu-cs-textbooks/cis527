@@ -15,7 +15,7 @@ pre: "7. "
 
 As we did earlier with setting up Active Directory on Windows, let's take a look at the steps required to install and configure OpenLDAP on Linux. The goal of this video isn't to show you all the steps of the process, but provide commentary on some of the more confusing steps you'll perform.
 
-For this example, I'm using the Ubuntu VM labelled Server from Lab 3. I have chosen to disable the DHCP server on this system, and instead have replaced it with the VMWare DHCP server. In practice, that change should not affect any of this process. Also, I'll generally be following the guide from DigitalOcean, which is linked in the resources section below the video.
+For this example, I'm using the Ubuntu VM labelled Server from Lab 3. I have chosen to disable the DHCP server on this system, and instead have replaced it with the VMware DHCP server. In practice, that change should not affect any of this process. Also, I'll generally be following the guide from DigitalOcean, which is linked in the resources section below the video.
 
 At this point, I have also already performed the first steps of the guide, which is to install the `slapd` and `ldap-utils` packages on this system. Now, I'll step through the configuration process for `slapd` and discuss the various options it presents.
 

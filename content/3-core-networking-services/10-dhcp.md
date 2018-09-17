@@ -47,7 +47,7 @@ Here we can see an example for a fixed-address configuration. Whenever a compute
 
 Of course, this is not a complete configuration file, nor will any of these settings work for your lab assignment. So, you'll need to read the appropriate documentation as well as discover your own network's settings in order to configure your DHCP server.
 
-Let's look at a quick example of how this would look in practice. Here I have configured an Ubuntu VM as directed in Lab 3 to act as a DHCP and DNS server. I also have a second Ubuntu VM acting as our client. Finally, I have disabled the DHCP server in VMWare on this network segment.
+Let's look at a quick example of how this would look in practice. Here I have configured an Ubuntu VM as directed in Lab 3 to act as a DHCP and DNS server. I also have a second Ubuntu VM acting as our client. Finally, I have disabled the DHCP server in VMware on this network segment.
 
 First, on my server, I'm going to start Wireshark so we can capture these packets. I'll also add a filter for `bootp` to make sure we only see the DHCP server packets. Since BOOTP and DHCP are compatible protocols, this is the way that Wireshark sees the packets.
 

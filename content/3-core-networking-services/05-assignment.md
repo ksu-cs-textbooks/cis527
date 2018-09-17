@@ -31,9 +31,9 @@ For this lab, you'll need to have **ONE Windows 10 VM**, and **TWO Ubuntu 18.04 
 For the second Ubuntu VM, you may either quickly install and configure a new VM from scratch following the Lab 1 guide or using the Puppet Manifest from Lab 2, or you may choose to create a copy of one of your existing Ubuntu VMs. If you choose to copy one, follow these steps:
 
 1. Completely shut down the VM - do not suspend it.
-2. Close VMWare Workstation.
+2. Close VMware Workstation.
 3. Make a copy of the entire folder containing the VM.
-4. Open the new VM in VMWare Workstation (look for the .VMX file in the copied folder).
+4. Open the new VM in VMware Workstation (look for the .VMX file in the copied folder).
 5. When prompted, select "I copied it" to reinitialize the network interface.
 6. Boot the new VM, and change the hostname to CIS527S-\<your eID\>.
   - [How to Change Hostname on Ubuntu 18.04](https://linuxize.com/post/how-to-change-hostname-on-ubuntu-18-04/) from Linuxize
@@ -42,10 +42,10 @@ For the second Ubuntu VM, you may either quickly install and configure a new VM 
 _If you do not follow these instructions carefully, the two VMs may have conflicts on the network since they'll have identical networking hardware and names, making this lab much more difficult or impossible to complete. **You have been warned!** --Russ_
 {{% /notice %}}
 
-Clearly label your original Ubuntu VM as **Client** and the new Ubuntu VM as **Server** in VMWare Workstation so you know which is which. For this lab, we'll only be using the **Server** VM.
+Clearly label your original Ubuntu VM as **Client** and the new Ubuntu VM as **Server** in VMware Workstation so you know which is which. For this lab, we'll only be using the **Server** VM.
 
 {{% notice note %}}
-**VMWare Fusion (Mac) Users** - Before progressing any further, I recommend creating a new NAT virtual network configuration and moving all of your VMs to that network, instead of the default "Share with my Mac" (vmnet8) network. In this lab, you'll need to disable DHCP on the network you are using, which is very difficult to do on the default networks. You can find relevant instructions in [Add a NAT Configuration](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-7D8E5A7D-FF0C-4975-A794-FF5A9AE83234.html) and [Connect and Set Up the Network Adapter](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-84AC2D7D-4A44-4AB6-BAF8-F12C55E71A2F.html) in the VMWare Fusion 8 Documentation.
+**VMware Fusion (Mac) Users** - Before progressing any further, I recommend creating a new NAT virtual network configuration and moving all of your VMs to that network, instead of the default "Share with my Mac" (vmnet8) network. In this lab, you'll need to disable DHCP on the network you are using, which is very difficult to do on the default networks. You can find relevant instructions in [Add a NAT Configuration](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-7D8E5A7D-FF0C-4975-A794-FF5A9AE83234.html) and [Connect and Set Up the Network Adapter](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-84AC2D7D-4A44-4AB6-BAF8-F12C55E71A2F.html) in the VMware Fusion 8 Documentation.
 {{% /notice %}}
 
 ---
@@ -85,10 +85,10 @@ _See the appropriate pages in the Extras module for more information about WSL a
 
 ### Task 2: Ubuntu Static IP Address
 
-On your Ubuntu 18.04 VM labelled **Server**, set up a static IP address. The host part of the IP address should be 41, and the network part should remain the same as the one automatically assigned by VMWare.
+On your Ubuntu 18.04 VM labelled **Server**, set up a static IP address. The host part of the IP address should be 41, and the network part should remain the same as the one automatically assigned by VMware.
 
 {{% notice note %}}
-So, if your VMWare is configured to give IP addresses in the `192.168.138.0/24` network, you'll set the computer to use the `192.168.138.41` address.
+So, if your VMware is configured to give IP addresses in the `192.168.138.0/24` network, you'll set the computer to use the `192.168.138.41` address.
 {{% /notice %}}
 
 You'll need to set the following settings correctly:
@@ -97,10 +97,10 @@ You'll need to set the following settings correctly:
 * Subnet Mask
 * Default Gateway
 {{% notice note %}}
-VMWare typically uses host `2` as its internal router to avoid conflicts with home routers, which are typically on host `1`. So, on the `192.168.138.0/24` network, the default gateway would usually be `192.168.138.2`.
+VMware typically uses host `2` as its internal router to avoid conflicts with home routers, which are typically on host `1`. So, on the `192.168.138.0/24` network, the default gateway would usually be `192.168.138.2`.
 {{% /notice %}}
 * DNS Servers. Use one of the following options:
-  - Your Default Gateway Address (Easiest). VMWare's internal router also acts as a DNS resolver for you, just like a home router would
+  - Your Default Gateway Address (Easiest). VMware's internal router also acts as a DNS resolver for you, just like a home router would
   - Off Campus: [OpenDNS](https://www.opendns.com/setupguide/) (`208.67.222.222` and `208.67.220.220`) or [Google DNS](https://developers.google.com/speed/public-dns/) (`8.8.8.8` and `8.8.4.4`)
   - On Campus: [K-State's DNS Servers](https://www.k-state.edu/its/dns/registration.html) (`10.130.30.52` and `10.130.30.53`)
 
@@ -186,15 +186,15 @@ To test your DNS server, you can set a static DNS address on either your Windows
 ### Task 4: DHCP Server
 
 {{% notice warning %}}
-_**IMPORTANT!** Make ABSOLUTELY sure that the VMWare virtual network you are using is not a "Bridged" or "Shared" network before continuing. It *MUST* be using "NAT". You can check by going to **Edit > Virtual Network Editor** in VMWare Workstation or **VMWare Fusion > Preferences > Network** in VMWare Fusion and looking for the settings of the network each of your VMs is configured to use. Having your network configured incorrectly while performing this step is a great way to break the network your host computer is currently connected to, and in a worst case scenario will earn you a visit from K-State's IT staff (and they won't be happy)! --Russ_
+_**IMPORTANT!** Make ABSOLUTELY sure that the VMware virtual network you are using is not a "Bridged" or "Shared" network before continuing. It *MUST* be using "NAT". You can check by going to **Edit > Virtual Network Editor** in VMware Workstation or **VMware Fusion > Preferences > Network** in VMware Fusion and looking for the settings of the network each of your VMs is configured to use. Having your network configured incorrectly while performing this step is a great way to break the network your host computer is currently connected to, and in a worst case scenario will earn you a visit from K-State's IT staff (and they won't be happy)! --Russ_
 {{% /notice %}}
 
 Next, install the `isc-dhcp-server` package on the Ubuntu 18.04 VM labelled **Server**, and configure it to act as a DCHP server for your internal VM network.
 
 In your configuration, include the following items:
 
-* In general, the network settings used by this DHCP server should match those used by VMWare's internal router.
-  - You can also look at the network settings received by your Windows 10 VM, which at this point are from VMWare's internal router.
+* In general, the network settings used by this DHCP server should match those used by VMware's internal router.
+  - You can also look at the network settings received by your Windows 10 VM, which at this point are from VMware's internal router.
 * Use `cis527.cs.ksu.edu` as the domain name.
 * For the dynamic IP range, use IPs ending in 100-250 in your network.
 * For DNS servers, enter the IP address of your Ubuntu 18.04 VM labelled **Server** ending in 41. This will direct all DCHP clients to use the DNS server configured in Task 3.
@@ -206,7 +206,7 @@ _A working solution can be fewer than 20 lines of actual settings (not including
 
 Of course, you may need to update your firewall configuration to allow incoming DHCP requests to this system!
 
-Once your DHCP server is installed, configured, and running properly, turn off the DHCP server in VMWare. Go to **Edit > Virtual Network Editor** in VMWare Workstation or **VMWare Fusion > Preferences > Network** in VMWare Fusion and look for the NAT network you are using. There should be an option to disable the DHCP server for that network there.
+Once your DHCP server is installed, configured, and running properly, turn off the DHCP server in VMware. Go to **Edit > Virtual Network Editor** in VMware Workstation or **VMware Fusion > Preferences > Network** in VMware Fusion and look for the NAT network you are using. There should be an option to disable the DHCP server for that network there.
 
 Finally, restart your Windows VM. When it reboots, if everything works correctly, it should get an IP address and network information from your DHCP server configured in this step. It should also be able to access the internet with those settings.
 

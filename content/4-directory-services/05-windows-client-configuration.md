@@ -14,7 +14,7 @@ pre: "5. "
 
 Once you have completely set up your Active Directory Domain, you can begin to add Windows clients to the domain. This video will walk through some of that process, and I'll discuss a few of the steps as we go.
 
-For this example, I have my Windows 10 VM from the earlier labs. It is on the same network as the domain controller. Before I begin, I'll need to set some static DNS settings on this computer. First, and most importantly, I'll add a DNS entry for the domain controller first, and the second entry can be any of the other working DNS servers on the network. In this case, I'll just use the VMWare default gateway.
+For this example, I have my Windows 10 VM from the earlier labs. It is on the same network as the domain controller. Before I begin, I'll need to set some static DNS settings on this computer. First, and most importantly, I'll add a DNS entry for the domain controller first, and the second entry can be any of the other working DNS servers on the network. In this case, I'll just use the VMware default gateway.
 
 Next, I'm going to right-click on the Start button and choose the System option. Before adding it to the domain, I need to make sure it is named correctly. If not, I'll need to rename it and reboot before adding it to the domain. Once a computer is on a domain, it is very difficult to rename it.
 

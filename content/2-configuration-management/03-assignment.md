@@ -31,7 +31,7 @@ Create new Windows 10 and Ubuntu 18.04 virtual machines for this lab. When creat
 After installing the operating system, install **ONLY** the following software:
 
 * Puppet Agent ([Windows](https://downloads.puppetlabs.com/windows/puppet5/) & Ubuntu)
-* VMWare Tools (Windows) and either `open-vm-tools-desktop` or VMWare Tools (Ubuntu)
+* VMware Tools (Windows) and either `open-vm-tools-desktop` or VMware Tools (Ubuntu)
 * All System Updates (Windows & Ubuntu)
 
 On the Windows virtual machine only, create a folder at `C:\installers` and download the following installers. Do not change the name of the installers from the default name provided from the website. You may choose to do this step using the [download_file](https://forge.puppet.com/puppet/download_file) Puppet module instead.  

@@ -3,7 +3,7 @@ type: "reveal"
 hidden: true
 ---
 <section>
-	<h2>CIS 527</h2><br><br>Lab 1 - Virtualization & VMWare
+	<h2>CIS 527</h2><br><br>Lab 1 - Virtualization & VMware
 </section>
 <section>
 	<h3>How a Computer Works</h3>
@@ -16,7 +16,7 @@ hidden: true
 </section>
 <section>
 	<img class="stretch" src="/images/vmware-before.png">
-	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMWare</a></p>
+	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMware</a></p>
 </section>
 <section>
   <h3>Virtualization</h3>
@@ -29,7 +29,7 @@ hidden: true
 </section>
 <section>
 	<img class="stretch" src="/images/vmware-after.png">
-	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMWare</a></p>
+	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMware</a></p>
 </section>
 <section>
   <h3>Types of Virtualization</h3>
@@ -44,11 +44,11 @@ hidden: true
 </section>
 <section>
 	<img class="stretch" src="/images//vmware-hosted.png">
-	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMWare</a></p>
+	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMware</a></p>
 </section>
 <section>
 	<img class="stretch" src="/images/vmware-bare.png">
-	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMWare</a></p>
+	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMware</a></p>
 </section>
 <section>
   <h3>Containers</h3>
@@ -85,13 +85,13 @@ hidden: true
   </ul>
 </section>
 <section>
-  <h3>VMWare Workstation</h3>
+  <h3>VMware Workstation</h3>
   <img class="stretch plain" src="/images/vmware.png">
 </section>
 <section>
   <h3>Other VM Software</h3>
   <ul>
-    <li>VMWare ESX</li>
+    <li>VMware ESX</li>
     <li>Oracle VirtualBox</li>
     <li>Hyper-V</li>
     <li>KVM & QEMU</li>

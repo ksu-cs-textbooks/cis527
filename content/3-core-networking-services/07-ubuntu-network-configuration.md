@@ -26,7 +26,7 @@ Now, let's look at how to manage and configure a network connection in Ubuntu 18
 
 To begin, I'm working in the Ubuntu VM I created for Lab 2, with the Puppet Manifest files applied.
 
-First, let's take a quick look at how our networking is configured in VMWare. This information is also covered in the video on Windows networking, but it is relevant here as well, since this will be very important as you complete Lab 3. To view the virtual networks in VMWare Workstation, click the **Edit** menu, then choose **Virtual Network Editor**. On VMWare Fusion, you can find this by going to the **VMWare Fusion** menu, selecting **Preferences**, then the **Network** option.
+First, let's take a quick look at how our networking is configured in VMware. This information is also covered in the video on Windows networking, but it is relevant here as well, since this will be very important as you complete Lab 3. To view the virtual networks in VMware Workstation, click the **Edit** menu, then choose **Virtual Network Editor**. On VMware Fusion, you can find this by going to the **VMware Fusion** menu, selecting **Preferences**, then the **Network** option.
 
 Here, we can see the virtual networks available on your system. Right now, there are two networks on my system, one "Host-only" network, and one "NAT" network. For this lab, we'll be working with the "NAT" network, so let's select it.
 
@@ -42,7 +42,7 @@ You can access the network settings by clicking the **Activities** button and se
 
 Once in the **Settings** menu, click the **Gear** icon next to the connection you'd like to configure. The **Details** tab will show you the details of the current connection, including the IP address, MAC address, default gateway, and any DNS servers. On the **Identity** tab, you'll see that you can edit the name of the connection, as well as the MAC address.
 
-To change the network settings, click the **IPv4** tab. Here, you can choose to input a manual IP address. If I select that option, I'll have to enter an IP address, subnet mask, and default gateway. For the IP address, I'll just make sure that it isn't in use on the network by picking one outside the DHCP range used by VMWare. The subnet mask and default gateway should be the same as the ones you found in the VMWare network settings earlier. Finally, we'll need to enter some DNS servers. Typically, you can just enter the same IP address as your default gateway, as most routers also can act as DNS resolvers as well. You can also use other DNS servers, such as those from OpenDNS or Google, as described in the Lab 3 assignment.
+To change the network settings, click the **IPv4** tab. Here, you can choose to input a manual IP address. If I select that option, I'll have to enter an IP address, subnet mask, and default gateway. For the IP address, I'll just make sure that it isn't in use on the network by picking one outside the DHCP range used by VMware. The subnet mask and default gateway should be the same as the ones you found in the VMware network settings earlier. Finally, we'll need to enter some DNS servers. Typically, you can just enter the same IP address as your default gateway, as most routers also can act as DNS resolvers as well. You can also use other DNS servers, such as those from OpenDNS or Google, as described in the Lab 3 assignment.
 
 Once you have made your changes, click the green Apply button in the upper-right corner to apply your changes. If everything is successful, I should still be able to access the internet. Let's open a web browser, just to be sure.
 

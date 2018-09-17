@@ -1,5 +1,5 @@
 ---
-title: "Virtualization & VMWare"
+title: "Virtualization & VMware"
 weight: 15
 pre: "3. "
 ---
@@ -10,8 +10,8 @@ pre: "3. "
 
 * **[Slides]({{< relref "/1-secure-workstations/03-virtualization-vmware-slides.md" >}})**
 * [Virtualization](https://en.wikipedia.org/wiki/Virtualization) on Wikipedia
-* [Virtualization Whitepaper](https://www.vmware.com/pdf/virtualization.pdf) from VMWare
-* [Accessing VMWare Software](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) on CS Support
+* [Virtualization Whitepaper](https://www.vmware.com/pdf/virtualization.pdf) from VMware
+* [Accessing VMware Software](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) on CS Support
 
 #### Video Script
 
@@ -43,11 +43,11 @@ To quote Men in Black, the "old & busted" way of doing things involved installin
 
 Compare that to the "new hotness" of today, where we can use virtualization to install many operating systems on a single physical server, with each one dedicated to a single application. That results in fewer physical servers, more efficient use of resources, and much simpler redundancy. However, it is up for debate if that truly made management easier, or if it just shifted the management chore from installing and configuring individual systems to installing and configuring deployment and automation tools.
 
-For this course, we'll be primarily working with hosted virtualization using VMWare Workstation. If you are using an Apple computer, you'll be using VMWare Fusion, which is very similar. I highly recommend using this software, as all of the materials in this class have been tested on it, and I am very familiar with it in case you need help. It is available to all K-State CS students for free. A link to the instructions for finding that software is in the resources section below.
+For this course, we'll be primarily working with hosted virtualization using VMware Workstation. If you are using an Apple computer, you'll be using VMware Fusion, which is very similar. I highly recommend using this software, as all of the materials in this class have been tested on it, and I am very familiar with it in case you need help. It is available to all K-State CS students for free. A link to the instructions for finding that software is in the resources section below.
 
-However, you may choose to use a different virtualization software package to meet your needs. The only thing to keep in mind is that I can make no guarantees that it will work, and if you run into major issues that we cannot fix, you may be asked to continue working on the labs in this class using VMWare products instead. Here is a list of a few other software packages that could be used instead of VMWare Workstation or fusion.
+However, you may choose to use a different virtualization software package to meet your needs. The only thing to keep in mind is that I can make no guarantees that it will work, and if you run into major issues that we cannot fix, you may be asked to continue working on the labs in this class using VMware products instead. Here is a list of a few other software packages that could be used instead of VMware Workstation or fusion.
 
-Again, if you do not have access to a computer with sufficient resources to install and use VMWare, please contact me so we can make other arrangements.
+Again, if you do not have access to a computer with sufficient resources to install and use VMware, please contact me so we can make other arrangements.
 
 Finally, beyond just virtualization software, there are many cloud providers that will host virtual machines for you. We'll deal with these more starting in module 5. This list gives a few of the more popular ones out there.
 

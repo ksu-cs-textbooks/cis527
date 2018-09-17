@@ -9,7 +9,7 @@ pre: "12. "
 #### Resources
 
 * **[Slides]({{< relref "/1-secure-workstations/12-ubuntu-overview-installation-slides.md" >}})**
-* [VMWare/Tools](https://help.ubuntu.com/community/VMware/Tools) from Ubuntu
+* [VMware/Tools](https://help.ubuntu.com/community/VMware/Tools) from Ubuntu
 * [Ubuntu Features](https://www.ubuntu.com/desktop/features) from Ubuntu
 * [Ubuntu Desktop Guide](https://help.ubuntu.com/lts/ubuntu-help/index.html) from Ubuntu
 * [Ubuntu Server Guide](https://help.ubuntu.com/lts/serverguide/index.html) from Ubuntu
@@ -46,11 +46,11 @@ The first major release of Ubuntu was known as Ubuntu 4.10 - Warty Warthog. Each
 
 The most recent version, Bionic Beaver, is the current LTS version and the one we'll be using in this class.
 
-Now, let's go through the process of installing Ubuntu in a virtual machine. At this point, I'm assuming you have already installed VMWare Workstation or another virtualization software on your computer. If not, I recommend doing so before continuing.
+Now, let's go through the process of installing Ubuntu in a virtual machine. At this point, I'm assuming you have already installed VMware Workstation or another virtualization software on your computer. If not, I recommend doing so before continuing.
 
 First, you'll need to download the Ubuntu 18.04 installation file. You can find that file on the Ubuntu download page, and also on the K-State CS mirror of the Ubuntu downloads page. For most uses, I recommend using the CS mirror, as it is generally much faster for students on campus. The link is available in the Resources section below the video. On that page, you'll need to download the "64-bit PC (AMD64) desktop image" from the link near the top. It should download a file to your computer in the .ISO format.
 
-Next, let's open VMWare Workstation and create a new virtual machine. For this course, I recommend choosing "I will install the operating system later" to bypass the Easy Install feature of VMWare. This will allow you to directly observe the installation process as it would be performed on a real computer.
+Next, let's open VMware Workstation and create a new virtual machine. For this course, I recommend choosing "I will install the operating system later" to bypass the Easy Install feature of VMware. This will allow you to directly observe the installation process as it would be performed on a real computer.
 
 Next, we will select the type and version of the guest operating system. In this case, it will be "Ubuntu 64-bit." We can then give it a helpful name, and choose where it is stored on the computer. If you'd like to store it on a secondary hard disk, you can do so here. I recommend storing your virtual machines on the largest, fastest storage device you have available, preferably an SSD with at least 60 GB of free space.
 
@@ -64,12 +64,12 @@ When you are ready to begin the installation process, click the button to power 
 
 Once it boots, you'll be given the option to install Ubuntu. Follow the prompts to install Ubuntu using the Lab 1 assignment as needed for configuration information. In general, you can accept the defaults in the installer unless otherwise noted. For the timezone, you can choose Chicago as the nearest city.
 
-Once the installation is complete, you'll be prompted to reboot your computer. In rare instances, the virtual machine may not reboot correctly. If that happens, you can use the VM menu in VMWare to restart the virtual machine. It should not cause any issues as long as the installation process completed.
+Once the installation is complete, you'll be prompted to reboot your computer. In rare instances, the virtual machine may not reboot correctly. If that happens, you can use the VM menu in VMware to restart the virtual machine. It should not cause any issues as long as the installation process completed.
 
 At this point, you are ready to begin Lab 1, Task 4 - Install Ubuntu 18.04. Feel free to get started!
 
 Once that is complete, you'll be ready to move on to configuring Ubuntu. The next several videos will discuss that process.
 
-However, before going too far, I recommend installing either "open-vm-tools-desktop" or VMWare Tools in the Ubuntu virtual machine. This will allow you to have better control over the virtual machine. You can find instructions for doing that in the resources section below the video.
+However, before going too far, I recommend installing either "open-vm-tools-desktop" or VMware Tools in the Ubuntu virtual machine. This will allow you to have better control over the virtual machine. You can find instructions for doing that in the resources section below the video.
 
 Also, I recommend taking a minute to familiarize yourself with the filesystem structure in Ubuntu. You'll learn more about how to navigate this structure in the following videos. This diagram shows the common root-level folders you'll find and the typical usage of each.

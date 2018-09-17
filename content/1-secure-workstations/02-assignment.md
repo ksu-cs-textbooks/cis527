@@ -27,7 +27,7 @@ This lab may take anywhere from **1 - 6 hours** to complete, depending on your p
 
 #### Software
 
-This lab is written with the expectation that most students will be using VMWare Workstation or VMWare Fusion to complete the assignment. That software is available free of charge on the [VMWare Store](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) open to all K-State CS students, and it is highly recommended for students who are new to working with virtual machines, since most of the assignments in this class are tailored to the use of that platform.
+This lab is written with the expectation that most students will be using VMware Workstation or VMware Fusion to complete the assignment. That software is available free of charge on the [VMware Store](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) open to all K-State CS students, and it is highly recommended for students who are new to working with virtual machines, since most of the assignments in this class are tailored to the use of that platform.
 
 If you are using another virtualization platform, you may have to adapt these instructions to fit. If you are unsure about any specification and how it applies to your setup, please contact the instructor.
 
@@ -35,7 +35,7 @@ If you are using another virtualization platform, you may have to adapt these in
 
 ### Task 0: Install Virtualization Software
 
-Install the virtualization software platform of your choice. It must support using Windows 10 and Ubuntu 18.04 as a guest OS. For VMWare Workstation Pro, you'll need version 14.1.2 or newer. For VMWare Fusion, you'll need version 10.1.2 or newer.
+Install the virtualization software platform of your choice. It must support using Windows 10 and Ubuntu 18.04 as a guest OS. For VMware Workstation Pro, you'll need version 14.1.2 or newer. For VMware Fusion, you'll need version 10.1.2 or newer.
 
 {{% notice tip %}}
 You may need to install the latest version available for download and then update it within the software to get to the correct version.
@@ -64,7 +64,7 @@ _This is very important, as it allows us to track your virtual machine on the K-
   - GuestUser / GuestUser123 (Guests group only)
   - EvilUser / EvilUser123 (Users group)
 * **Install Software**
-  - [VMWare Tools](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-391BE4BF-89A9-4DC3-85E7-3D45F5124BC7.html)
+  - [VMware Tools](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-391BE4BF-89A9-4DC3-85E7-3D45F5124BC7.html)
   - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
   - [Mozilla Thunderbird](https://www.thunderbird.net/en-US/)
   - [IIS Web Server](https://www.howtogeek.com/112455/how-to-install-iis-8-on-windows-8/)
@@ -115,7 +115,7 @@ _Ubuntu 18.04 seems to be really RAM hungry right now, so I recommend starting w
 Install Ubuntu 18.04 Desktop in that virtual machine to a single partition. You will be asked to create a user account and set the computer name. Use the information given below.
 
 {{% notice tip %}}
-The Ubuntu installation will sometimes hang when rebooting after installation in a VM. If that happens, wait about 30 seconds, then click **VM > Power > Restart Guest** in VMWare (or similar) to force a restart. It should not harm the VM.
+The Ubuntu installation will sometimes hang when rebooting after installation in a VM. If that happens, wait about 30 seconds, then click **VM > Power > Restart Guest** in VMware (or similar) to force a restart. It should not harm the VM.
 {{% /notice %}}
 
 ### Task 5: Configure Ubuntu 18.04
@@ -133,7 +133,7 @@ _This is very important, as it allows us to track your virtual machine on the K-
   - GuestUser / GuestUser123 (Normal type)
   - EvilUser / EvilUser123 (Normal type)
 * **Install Software**
-  - Open VM Tools (`open-vm-tools-desktop`) (recommended) -OR- [VMWare Tools](https://kb.vmware.com/s/article/1022525) (do not install both)
+  - Open VM Tools (`open-vm-tools-desktop`) (recommended) -OR- [VMware Tools](https://kb.vmware.com/s/article/1022525) (do not install both)
   - Mozilla Firefox (`firefox`)
   - Mozilla Thunderbird (`thunderbird`)
   - Apache Web Server (`apache2`)

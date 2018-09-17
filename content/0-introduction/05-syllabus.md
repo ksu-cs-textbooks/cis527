@@ -81,7 +81,7 @@ If you have extenuating circumstances, please discuss them with the instructor a
 
 ### Recommended Texts & Supplies
 
-Students in this course are expected to have access to a computer with virtual machine software (VMWare, Virtual Box, Parallels, or other) installed and running. The computer should be capable of running multiple VMs simultaneously, which usually means having 8GB of RAM and a moderately powerful processor. Contact the instructor if you have questions or concerns.
+Students in this course are expected to have access to a computer with virtual machine software (VMware, Virtual Box, Parallels, or other) installed and running. The computer should be capable of running multiple VMs simultaneously, which usually means having 8GB of RAM and a moderately powerful processor. Contact the instructor if you have questions or concerns.
 
 Since this class covers such a wide range of material, no single textbook will suffice. Therefore, students who would like a textbook should purchase a subscription to [Safari Books Online](http://www.safaribooksonline.com/) for the duration of the course. It should cost around $100 for each student. This subscription is not required, but highly recommended. The [K-State Library](http://guides.lib.k-state.edu/az.php?a=s) has access for 4 simultaneous users to view books published in the current year and previous 2 years, which may suffice for some users.
 

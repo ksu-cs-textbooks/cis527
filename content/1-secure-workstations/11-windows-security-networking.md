@@ -10,8 +10,8 @@ pre: "11. "
 
 * **[Slides]({{< relref "/1-secure-workstations/11-windows-security-networking-slides.md" >}})**
 * [Adjust Windows 10 Firewall Rules & Settings](https://www.online-tech-tips.com/windows-10/adjust-windows-10-firewall-settings/) from Online Tech Tips
-* [Configuring Virtual Network Adapter Settings](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-C82DCB68-2EFA-460A-A765-37225883337D.html) from VMWare
-* [Using the Virtual Network Editor](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-AC956B17-30BA-45F7-9A39-DCCB96B0A713.html) from VMWare
+* [Configuring Virtual Network Adapter Settings](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-C82DCB68-2EFA-460A-A765-37225883337D.html) from VMware
+* [Using the Virtual Network Editor](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-AC956B17-30BA-45F7-9A39-DCCB96B0A713.html) from VMware
 
 #### Video Script
 
@@ -26,7 +26,7 @@ First, let's talk about security. Whenever you install a new operating system, t
 
 Let's take a quick look at the Windows Firewall, since you'll need to allow an application through the firewall. You can find it by searching for "firewall" on the Start Menu. Lab 1 directs you to install the Internet Information Services (IIS) web server. You'll need to allow it through the firewall somehow. I won't show you how in this video, but I encourage you to review the links in the resources section below the video for documentation showing how to accomplish this task. There are several ways to do it.
 
-To test your firewall configuration, you can use your Ubuntu virtual machine created as part of Lab 1. First, make sure they are both on the same network segment in VMWare by looking at the hardware configuration for each virtual machine. Then, you'll need to get the IP address of the Windows computer. There are several ways to do this, but one of the simplest is to go to the Network Settings by clicking the networking icon in the system tray, near the clock, then choosing the Ethernet adapter. Here you'll find the IPv4 address, usually in form of four numbers separated by decimal points. We'll spend most of Module 3 discussing networking, so I won't go into too much detail here.
+To test your firewall configuration, you can use your Ubuntu virtual machine created as part of Lab 1. First, make sure they are both on the same network segment in VMware by looking at the hardware configuration for each virtual machine. Then, you'll need to get the IP address of the Windows computer. There are several ways to do this, but one of the simplest is to go to the Network Settings by clicking the networking icon in the system tray, near the clock, then choosing the Ethernet adapter. Here you'll find the IPv4 address, usually in form of four numbers separated by decimal points. We'll spend most of Module 3 discussing networking, so I won't go into too much detail here.
 
 Once you have that IP address, switch to your Ubuntu virtual machine, and open up the Firefox web browser. At the top in the address bar, simply input the IP address and press enter. If everything works correctly, you should be presented with the default IIS screen as seen here. If not, you'll need to do some debugging to figure out what is missing.
 

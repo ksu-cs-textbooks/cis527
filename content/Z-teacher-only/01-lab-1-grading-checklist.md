@@ -4,15 +4,15 @@ weight: 5
 pre: "1. "
 ---
 
-- Install VMWare (2)
+- Install VMware (2)
 - Create Windows 10 VM (3)
-  - Install VMWare (2)
+  - Install VMware (2)
   - RAM 2 GB
 - Configure Windows 10 (10)
   - Computer Name
   - Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser)
   - Groups (Administrators, Users, Files)
-  - Software (VMWare Tools, Firefox, Thunderbird, Notepad++, BGInfo)
+  - Software (VMware Tools, Firefox, Thunderbird, Notepad++, BGInfo)
   - Windows Updates
   - Access IIS from Ubuntu (firewall and IIS config)
 - Windows 10 Files (10)

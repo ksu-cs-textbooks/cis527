@@ -10,7 +10,7 @@ pre: "5. "
 
 * **[Slides]({{< relref "/1-secure-workstations/05-windows-overview-installation-slides.md" >}})**
 * [How to Get Windows 10](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) from Microsoft Imagine Store via CS Support
-* [How to Install VMWare Tools](https://kb.vmware.com/s/article/1014294) from VMWare
+* [How to Install VMware Tools](https://kb.vmware.com/s/article/1014294) from VMware
 * [Windows 10 Overview](https://www.microsoft.com/en-us/windows/features) from Microsoft
 * [Microsoft Windows Version History](https://en.wikipedia.org/wiki/Microsoft_Windows_version_history) from Wikipedia
 * [Windows 10 for Windows 7 Users](https://www.howtogeek.com/219034/here%E2%80%99s-what%E2%80%99s-different-about-windows-10-for-windows-7-users/) from How-To Geek
@@ -39,7 +39,7 @@ Windows 10 was released in 2015, and is the most current version of Windows. We'
 
 Here is a diagram showing the various versions of Windows and how they relate to one another. Notice that there are a few major families - the DOS versions at the top in red, starting with 1.0. The NT family near the bottom in blue, beginning with NT 3.1, as well as the server versions starting with Server 2003 in green. Finally, in the middle, there are a few mobile versions of Windows as well in yellow and orange, but they have been discontinued in recent years.
 
-Next, let's see how to install Windows 10 in a virtual machine. At this point, I'm assuming you have already installed VMWare Workstation or another virtualization software on your computer. If not, I recommend doing so before continuing.
+Next, let's see how to install Windows 10 in a virtual machine. At this point, I'm assuming you have already installed VMware Workstation or another virtualization software on your computer. If not, I recommend doing so before continuing.
 
 First, you'll need to download the Windows 10 installation file and obtain a product key. Both of those can be found on the Microsoft Imagine store, which is linked in the resources section below the video. Remember that the username and password on that site is different than your K-State eID or CS username and password.
 
@@ -47,7 +47,7 @@ Once you log in, simply select Windows 10 Education Version and download it. Whe
 
 After you have completed that task, you should have a large installation file in the .ISO file format and a 25 character product key available. You'll need both when installing Windows.
 
-Next, let's open VMWare Workstation and create a new virtual machine. For this course, I recommend choosing "I will install the operating system later" to bypass the Easy Install feature of VMWare. This will allow you to directly observe the installation process as it would be performed on a real computer.
+Next, let's open VMware Workstation and create a new virtual machine. For this course, I recommend choosing "I will install the operating system later" to bypass the Easy Install feature of VMware. This will allow you to directly observe the installation process as it would be performed on a real computer.
 
 Next, we will select the type and version of the guest operating system. In this case, it will be Windows 10 x64. We can then give it a helpful name, and choose where it is stored on the computer. If you'd like to store it on a secondary hard disk, you can do so here. I recommend storing your virtual machines on the largest, fastest storage device you have available, preferably an SSD with at least 60 GB of free space.
 
@@ -65,4 +65,4 @@ If you are prompted to connect to your organization, choose the option to join a
 
 When you have successfully installed Windows 10, you'll be ready to move on to configuring Windows 10. The next several videos will discuss that process.
 
-However, before going too far, I recommend installing VMWare Tools in the Windows 10 virtual machine. This will allow you to have better control over the virtual machine. You can find instructions for doing that in the resources section below the video.
+However, before going too far, I recommend installing VMware Tools in the Windows 10 virtual machine. This will allow you to have better control over the virtual machine. You can find instructions for doing that in the resources section below the video.

@@ -45,7 +45,7 @@ The most commonly used DNS software today is BIND. BIND was originally developed
 
 The DNS specification includes many different types of records. The most commonly used ones are listed here. For example, an `A` record is used to list a specific IPv4 address for a host name, whereas a `CNAME` record is used to provide an alias for another domain name. For this lab assignment, you'll be configuring a DNS server using BIND within your network and using several of these record types, so let's take a look at how that works.
 
-Here I have configured an Ubuntu VM as directed in Lab 3 to act as a DHCP and DNS server. I also have a second Ubuntu VM acting as our client. Finally, I have disabled the DHCP server in VMWare on this network segment.
+Here I have configured an Ubuntu VM as directed in Lab 3 to act as a DHCP and DNS server. I also have a second Ubuntu VM acting as our client. Finally, I have disabled the DHCP server in VMware on this network segment.
 
 First, on my server, I'm going to start Wireshark so we can capture these packets. I'll also add a filter for `dns` to make sure we only see the DNS server packets.
 

@@ -36,8 +36,12 @@ For this lab, you'll need the following VMs:
 2. A Windows Server 2016 Standard VM. See **Task 1** below for configuration details.
 3. An Ubuntu 18.04 VM labelled **Client**. This should be the existing client VM from Lab 3.
 4. An Ubuntu 18.04 VM labelled **Server**. You have two options:
-  * You can create a copy of your existing **Client** from Lab 3, which does not have DHCP and DNS servers installed. Follow the instructions in the Lab 3 assignment to create a copy of that VM. In this case, you'll need to reconfigure the VMWare NAT network to handle DHCP duties. _This is generally the option that is simplest, and causes the least headaches._
-  * You may continue to use your exiting **Server** from Lab 3, with DHCP and DNS servers installed. You may choose to continue to use this server as your primary DNS and DHCP server for your VM network, which would truly mimic what an enterprise network would be like. Remember that you'll need to have this VM running at all times to provide those services to other systems on your network. You may also choose instead to disable them and reconfigure the VMWare NAT network to handle DHCP duties. Either approach is fine. _This option is generally a bit closer to an actual enterprise scenario, but can also cause many headaches, especially if your system doesn't have enough power to run several VMs simultaneously._
+  * You can create a copy of your existing **Client** from Lab 3, which does not have DHCP and DNS servers installed. Follow the instructions in the Lab 3 assignment to create a copy of that VM. In this case, you'll need to reconfigure the VMware NAT network to handle DHCP duties. _This is generally the option that is simplest, and causes the least headaches._
+  * You may continue to use your exiting **Server** from Lab 3, with DHCP and DNS servers installed. You may choose to continue to use this server as your primary DNS and DHCP server for your VM network, which would truly mimic what an enterprise network would be like. Remember that you'll need to have this VM running at all times to provide those services to other systems on your network. You may also choose instead to disable them and reconfigure the VMware NAT network to handle DHCP duties. Either approach is fine. _This option is generally a bit closer to an actual enterprise scenario, but can also cause many headaches, especially if your system doesn't have enough power to run several VMs simultaneously._
+
+{{% notice warning %}}
+Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4" that you can restore to later if you have any issues. In addition, Task 6 below will ask you to restore to a snapshot in at least one VM before starting that step.
+{{% /notice %}}
 
 ---
 
@@ -50,7 +54,7 @@ When installing the operating system, configure it as specified below:
 * Make sure you choose the **Desktop Experience** option when installing, unless you want a real challenge! It is possible to perform these steps without a GUI, but it is _much_ more difficult.
 * **Computer Name:** CIS527D-\<your eID\> (example: CIS527D-russfeld)
 * **Install Software**
-  - [VMWare Tools](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-391BE4BF-89A9-4DC3-85E7-3D45F5124BC7.html)
+  - [VMware Tools](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-391BE4BF-89A9-4DC3-85E7-3D45F5124BC7.html)
   - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) (_you'll thank me later_)
 * **Install Windows Updates:** Run Windows Update and reboot as necessary until all available updates are installed.
 * **Automatic Updates:** Make sure the system is set to download and install security updates automatically.
@@ -58,7 +62,7 @@ When installing the operating system, configure it as specified below:
 Make a **snapshot** of this VM once it is fully configured and updated. You can restore to this snapshot if you have issues installing Active Directory.
 
 {{% notice tip %}}
-You can use <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Insert</kbd> to send a <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to your VM in VMWare without affecting your host OS.
+You can use <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Insert</kbd> to send a <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to your VM in VMware without affecting your host OS.
 {{% /notice %}}
 
 ---
@@ -67,9 +71,9 @@ You can use <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Insert</kbd> to send a <kbd>CTRL
 
 Configure your Windows Server as an Active Directory Domain Controller. Follow the steps and configuration details below:
 
-1. First, set a static IP address on your Windows Server VM. Use the IP address ending in `42` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address or the localhost IP address `127.0.0.1` as the first entry, and then the IP address of your DHCP server (either your Ubuntu Server from Lab 3 or VMWare's default gateway, whichever option you are using) as the second. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with Active Directory Domains, as the Domain Controller is also a DNS server.
+1. First, set a static IP address on your Windows Server VM. Use the IP address ending in `42` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address or the localhost IP address `127.0.0.1` as the first entry, and then the IP address of your DHCP server (either your Ubuntu Server from Lab 3 or VMware's default gateway, whichever option you are using) as the second. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with Active Directory Domains, as the Domain Controller is also a DNS server.
 2. Follow the instructions in the resources section below to install and configure the Active Directory Domain Services role on the server.
-  * **Domain Name:** cis527\<your eID\>.local (example: cis527russfeld.local)
+  * **Domain Name:** ad\<username\>.cis527.cs.ksu.edu (example: `adrussfeld.cis527.cs.ksu.edu`)
   * **Passwords:** Use `cis527_windows` for all passwords
 3. Add a User Account to your Active Directory
   * Use your own eID for the username, and `cis527_windows` as the password.
@@ -86,7 +90,7 @@ Configure your Windows Server as an Active Directory Domain Controller. Follow t
 
 Join your Windows 10 VM to the Active Directory Domain created in Task 2. Follow the steps and configuration details below:
 
-1. First, set static DNS entries on your Windows 10 VM. You **SHOULD NOT** set a static IP, just static DNS entries. Use the Windows Server IP address ending in `42` as the first entry, and the second entry should be the same one used on the server earlier (either your Ubuntu Server from Lab 3 or VMWare's default gateway, whichever option you are using).
+1. First, set static DNS entries on your Windows 10 VM. You **SHOULD NOT** set a static IP, just static DNS entries. Use the Windows Server IP address ending in `42` as the first entry, and the second entry should be the same one used on the server earlier (either your Ubuntu Server from Lab 3 or VMware's default gateway, whichever option you are using).
 2. Join the system to the domain, following the instructions linked in the resources section below.
 3. Once the system reboots, you should be able to log in using the user account you created in Task 2.
 
@@ -136,13 +140,45 @@ On your Ubuntu VM labelled **Client**, configure the system to authenticate agai
 
 ---
 
-### Task 6: Query Servers Using LDAPSearch
+### Task 6: Interoperability
+
+**!! COMPLETE ONE OF THE OPTIONS BELOW !!**
+
+#### Task 6A: Ubuntu Client on Windows Domain
+
+1. On your Ubuntu VM labelled **Client**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
+2. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
+3. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to setting it up as an OpenLDAP client.
+4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM.
+5. Make a **snapshot** labelled "ActiveDirectory" to save your configuration for this task. You can switch between snapshots to have this VM act as a client for either directory service.
+
+#### Task 6B: Windows Client on Ubuntu Domain
+
+1. On your Ubuntu VM labelled **Client**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
+2. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
+3. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to setting it up as an OpenLDAP client.
+4. On your Windows 10 VM, make a **snapshot** labelled "ActiveDirectory" to save your configuration you performed for Task 3.
+5. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
+6. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to adding it to your Active Directory Domain.
+7. Follow the instructions in the video in this module to create a Samba Domain Controller on your Ubuntu VM labelled **Client**, and then add your Windows 10 VM to that domain. For the realm, use `smb<username>.cis527.cs.ksu.edu`. (For example, mine would be `smbrussfeld.cis527.cs.ksu.edu`.)
+8. On both of those VMs, make a **snapshot** labelled "Samba" to save your configuration for this task. You can switch between snapshots on these VMs for each configuration.
+
+#### Resources
+
+* [Join Ubuntu 18.04 to Active Directory](https://bitsofwater.com/2018/05/08/join-ubuntu-18-04-to-active-directory/) by Michael Waterman from Bits of Water
+* [How to Configure Ubuntu Linux Server as a Domain Controller with Samba-tool](https://www.techrepublic.com/article/how-to-configure-ubuntu-linux-server-as-a-domain-controller-with-samba-tool/) by Jack Wallen on TechRepublic
+* [Samba Not Starting on Ubuntu Server 16.10](https://unix.stackexchange.com/questions/341226/samba-not-starting-on-ubuntu-server-16-10) from StackExchange
+* [How to Disable Systemd-resolved in Ubuntu](https://askubuntu.com/questions/907246/how-to-disable-systemd-resolved-in-ubuntu) from AskUbuntu
+
+---
+
+### Task 7: Query Servers Using LDAPSearch
 
 From your Ubuntu VM labelled **Client**, use the `ldapsearch` command (in the `ldap-utils` package) to query your Active Directory and OpenLDAP servers. Take a **screenshot** of the output from each command.
 
 Below are example commands from a working solution. You'll need to adapt them to match your environment. There are also sample screenshots of expected output.
 
-* Active Directory Example: `ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=cis527russfeld,dc=local" -D "cis527russfeld\Administrator" -w "cis527_windows"`
+* Active Directory Example: `ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=adrussfeld,dc=cis527,dc=cs,dc=ksu,dc=edu" -D "adrussfeld\Administrator" -w "cis527_windows"`
   * [Screenshot](/images/lab4_win.png)
 * OpenLDAP Example: `ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=cis527russfeld,dc=local" -D "cn=admin,dc=cis527russfeld,dc=local" -w "cis527_linux"`
   * [Screenshot](/images/lab4_ubu.png)
