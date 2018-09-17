@@ -34,7 +34,7 @@ Some examples of things you can control via Group Policy are shown here. You can
 
 Let's take a look at one quick demonstration, setting a password policy for the domain. This tutorial is from Infoworld, and is linked in the resources section below the video.
 
-Here I have opened by Windows 2016 Server VM as configured for Lab 4. First, I'll open the Group Policy Management Console, which is available on the Tools menu in Windows Server Manager. Next, I'll find my domain, and right-click it to create a GPO in this domain. I'll also give the GPO a helpful name, and click OK to create it.
+Here I have opened my Windows 2016 Server VM as configured for Lab 4. First, I'll open the Group Policy Management Console, which is available on the Tools menu in Windows Server Manager. Next, I'll find my domain, and right-click it to create a GPO in this domain. I'll also give the GPO a helpful name, and click OK to create it.
 
 Next, I can right-click the policy and choose Edit. In the policy editor, I'll need to dig down the following path:
 
@@ -44,4 +44,6 @@ Next, I can right-click the policy and choose Edit. In the policy editor, I'll n
 
 In that window, we'll right-click the "Password Must Meet Complexity Requirements" option, and choose **Properties**. Then, we'll enable the setting by checkmarking the box and clicking Enable. You can find more information about the policy by clicking the **Explain** tab at the top.
 
-That's all there is to it! Now, any new password created on this domain must meet those complexity requirements. While you won't have to work with Group Policy for this lab assignment, we'll come back to it in a later module as we work with application and file servers. 
+Finally, once the policy is configured, you'll need to right-click on it once again, and select the **Enforced** option to enforce it on the domain itself.
+
+That's all there is to it! Now, any new password created on this domain must meet those complexity requirements. While you won't have to work with Group Policy for this lab assignment, we'll come back to it in a later module as we work with application and file servers.

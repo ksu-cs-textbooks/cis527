@@ -8,20 +8,21 @@ pre: "10. "
 
 #### Resources
 
-* **[Slides]({{< relref "/4-directory-services/10-windows-client-on-linux-domain-slides.md" >}})**
 * [How to Configure Ubuntu Linux Server as a Domain Controller with Samba-tool](https://www.techrepublic.com/article/how-to-configure-ubuntu-linux-server-as-a-domain-controller-with-samba-tool/) by Jack Wallen on TechRepublic
 * [Samba Not Starting on Ubuntu Server 16.10](https://unix.stackexchange.com/questions/341226/samba-not-starting-on-ubuntu-server-16-10) from StackExchange
 * [How to Disable Systemd-resolved in Ubuntu](https://askubuntu.com/questions/907246/how-to-disable-systemd-resolved-in-ubuntu) from AskUbuntu
 
 #### Video Transcript
 
-In this video, I'll show you how to set up an Ubuntu VM to act as a Windows Active Directory Domain Controller using Samba. This is a much more complicated process than adding Ubuntu as a client to an existing Active Directory Domain, but I feel that it is important to see that it is indeed possible. This is helpful if your organization is primarily Linux-based, but you wish to include a few Windows clients on the network as well.
+In this video, I'll show you how to set up an Ubuntu VM to act as a Windows Active Directory Domain Controller using Samba. Unfortunately, at this time it is not straightforward at all to use OpenLDAP as the server, hence the decision to use Samba instead. This is a much more complicated process than adding Ubuntu as a client to an existing Active Directory Domain, but I feel that it is important to see that it is indeed possible. This is helpful if your organization is primarily Linux-based, but you wish to include a few Windows clients on the network as well.
 
 For this example, I'm using the Ubuntu VM labelled **Client** from earlier in this lab. I've created a snapshot to store the work done previously to add it to an OpenLDAP domain, but now I've restored the snapshot labelled "Before Lab 4" and will use that snapshot to create a Samba server. The reason I am doing this on the VM labelled **Client** and not the one labelled **Server** is because the Samba installation will directly conflict with Bind9, OpenLDAP, and many other tools we've already installed on the server. So, this allows us to avoid any conflicts with those tools.
 
 For the client, I have restored my Windows 10 VM to a snapshot taken before it was added to my Active Directory Domain. Remember that you'll need to create this snapshot before you start the Lab 4 assignment, or else you may need to create a new VM for this activity.
 
 Finally, I'll generally be following the great guide by Jack Wallen that is linked in the resources section below this video, but I'll be making a few minor changes to match our environment and clarifying a few things that he leaves out.
+
+Before we begin, we'll need to set a static IP on this system, since it will be acting as a server. I'm going to use the IP ending in `45` in my local subnet. For the DNS entries, we'll also need to set the first entry to be this system itself, just like we did with the Windows Domain Controller. The second DNS entry can be the VMware router or any other valid DNS server.
 
 First, we'll need to install Samba as well as a few supporting tools:
 

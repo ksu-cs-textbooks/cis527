@@ -8,7 +8,6 @@ pre: "9. "
 
 #### Resources
 
-* **[Slides]({{< relref "/4-directory-services/09-linux-client-on-windows-domain-slides.md" >}})**
 * [Join Ubuntu 18.04 to Active Directory](https://bitsofwater.com/2018/05/08/join-ubuntu-18-04-to-active-directory/) by Michael Waterman from Bits of Water
 * [Managing sudo using Active Directory](https://bitsofwater.com/2018/07/10/managing-sudo-using-active-directory/) by Michael Waterman from Bits of Water
 
