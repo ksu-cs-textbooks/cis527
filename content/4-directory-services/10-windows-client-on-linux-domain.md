@@ -85,14 +85,14 @@ Next, you can find the locations of all database files using this command:
 smbd -b | egrep "LOCKDIR|STATEDIR|CACHEDIR|PRIVATE_DIR"
 ```
 
-It should give you five different directory paths. So, for each of those directories, you'll need to enter that directory, then delete all files with the `.tdb` and `.ldb` file extensions. So, for the first one, you could use these commands:
+It should give you four different directory paths. So, for each of those directories, you'll need to enter that directory, then delete all files with the `.tdb` and `.ldb` file extensions. So, for the first one, you could use these commands:
 
 ```
 cd /var/run/samba
 sudo rm -f *.tdb *.ldb
 ```
 
-Repeat that process for the other four directories to make sure they are all clear.
+Repeat that process for the other three directories to make sure they are all clear.
 
 Once that is done, it is time to create our new domain. We'll use the `samba-tool` command to do this in interactive mode:
 
