@@ -4,7 +4,7 @@ weight: 40
 pre: "8. "
 ---
 
-{{< youtube  >}}
+{{< youtube jGRXpQekHZc >}}
 
 #### Resources
 
@@ -17,7 +17,7 @@ pre: "8. "
 
 Once we've set up and configured our OpenLDAP server on Linux, we can configure another VM to act as an LDAP client and use that server for authentication. Unfortunately, there are not many good guides online for this process, so I'll walk through most of the process in this video, discussing the process while I do so.
 
-In general, I'm going to follow the first guide linked below this video, which is from ITz Geek. The second guide, from Server-World, is very similar and should work as well. 
+In general, I'm going to follow the first guide linked below this video, which is from ITz Geek. The second guide, from Server-World, is very similar and should work as well.
 
 First, I'll need to install a few packages:
 
