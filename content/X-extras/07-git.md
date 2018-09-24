@@ -43,7 +43,7 @@ Now, let's create a new Git repository on our computer. To do that, I'm going to
 
 ```bash
 mkdir ~/git-test
-chdir ~/git-test
+cd ~/git-test
 echo "File 1" > file1.txt
 echo "File 2" > file2.txt
 ```
