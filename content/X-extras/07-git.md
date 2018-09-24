@@ -70,7 +70,7 @@ git status
 
 Here you'll see that there are two files that are not included in the repository, which are the files we added earlier. To add a file to a Git repository, there are three steps. First, you must create or modify the file on the filesystem inside a git repository, which will cause Git to see the file as modified or "dirty." Then, any changes you'd like to add to the Git repository will need to be "staged" using the `git add` command. Finally, those changes which are staged are "committed" using the `git commit` command.
 
-So, to perform this process on the two files currently in our directory, we'll do these commands to stage them:
+So, to perform this process on the two files currently in our directory, we'll do this command to stage them:
 
 ```bash
 git add file1.txt file2.txt
@@ -85,10 +85,10 @@ git status
 If everything looks correct, we can commit those changes:
 
 ```bash
-git commit -m "First Commit Message"
+git commit -m "First Commit"
 ```
 
-The `-m` flag on the `git commit` command allows us to specify a commit message on the command line. If you omit that option, you'll be taken to your system's default text editor, usually Nano or Vim, and be able to write a commit message there. Once you are done, just save and close the file as you normally would, and the `git command` will proceed to commit the changes.
+The `-m` flag on the `git commit` command allows us to specify a commit message on the command line. If you omit that option, you'll be taken to your system's default text editor, usually Nano or Vim, and be able to write a commit message there. Once you are done, just save and close the file as you normally would, and the `git` command will proceed to commit the changes.
 
 Finally, once you have committed your changes, you can review the status of your repository again:
 
@@ -104,7 +104,7 @@ git log
 
 Now that we've created a Git repository and added our first commit, let's talk about remotes. A remote in Git is a remote copy of a repository, which can be used as a backup for yourself, or as a way to share a repository with other developers. Most commonly, your remote will be an online service such as GitHub or GitLab, but there are many others as well. For this example, I'll show you how to work with the GitLab instance hosted by K-State CS. The instructions are very similar for GitHub as well.
 
-First, you'll need to navigate to [http://gitlab.cs.ksu.edu](http://gitlab.cs.ksu.edu) and sign-in with you K-State CS username and password. Once you've logged in, go to your account settings, and look for the **SSH Keys** option. In order to authenticate your system with GitLab, you'll need to create an SSH key and copy-paste the public key here. See the SSH video in the Extras module for detailed instructions on creating those keys. I'll perform the steps quickly for this example as well. Once you are done, you can click the logo in the upper-left to go back to the dashboard.
+First, you'll need to navigate to [http://gitlab.cs.ksu.edu](http://gitlab.cs.ksu.edu) and sign-in with your K-State CS username and password. Once you've logged in, go to your account settings, and look for the **SSH Keys** option. In order to authenticate your system with GitLab, you'll need to create an SSH key and copy-paste the public key here. See the SSH video in the Extras module for detailed instructions on creating those keys. I'll perform the steps quickly for this example as well. Once you are done, you can click the logo in the upper-left to go back to the dashboard.
 
 On the dashboard, you can click the **New Project** button to create a new project. To make it simple, I'm going to give it the same name as my folder, `git-test`. I can also give it a description, and I'll need to set the visibility level for this project. I'm going to use the **Private** option for now, so I'll be the only one able to see this project.
 
@@ -220,7 +220,7 @@ Now, let's commit those changes:
 ```bash
 git add .
 git commit -m "Branch Commit"
-git push -u <branch_name>
+git push -u origin <branch_name>
 ```
 
 Notice that the first time you push to a new branch, you'll need to provide the `-u <branch_name>` option to tell Git which branch to use. Once you've done that the first time, you can just use `git push` in the future.
