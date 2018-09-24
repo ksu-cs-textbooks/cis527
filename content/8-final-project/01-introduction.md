@@ -4,7 +4,7 @@ weight: 5
 pre: "1. "
 ---
 
-\<video coming soon\>
+{{< youtube xqMwbrgOlvk >}}
 
 #### Resources
 
