@@ -1,7 +1,7 @@
 ---
 title: "Lab 1 Grading Checklist"
 weight: 5
-pre: "1. "
+pre: "1.1 "
 ---
 
 - Install VMware (2)
@@ -16,7 +16,7 @@ pre: "1. "
   - Windows Updates
   - Access IIS from Ubuntu (firewall and IIS config)
 - Windows 10 Files (10)
-  - Run Get-ChildItem -Recurse | Get-Acl | Format-List
+  - Run `Get-ChildItem -Recurse | Get-Acl | Format-List`
   - Check for groups and user on each folder
 - Create Ubuntu VM (3)
   - RAM 1 or 2 GB
@@ -30,7 +30,7 @@ pre: "1. "
   - Updates (apt update & apt upgrade)
   - Configure Automatic Updates
 - Ubuntu Files (10)
-  - Run ls -lR
+  - Run `ls -lR`
   - Check for group and user on each folder
 - Snapshots (2)
   - Windows

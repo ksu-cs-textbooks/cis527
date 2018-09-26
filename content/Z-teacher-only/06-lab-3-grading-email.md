@@ -1,7 +1,7 @@
 ---
-title: "Lab 1 Grading Email"
-weight: 10
-pre: "1.2 "
+title: "Lab 3 Grading Email"
+weight: 30
+pre: "3.2 "
 ---
 
 #### Greetings!
@@ -16,8 +16,17 @@ Here is the information you'll need to know to get your lab graded.
   1. Confirm that all the VMs for this lab are booted and running on your system.
   1. We'll be using the desktop sharing features of Zoom so I can see your VMs. So, make sure you close any windows or programs that are running in the background that shouldn't be shared with me.
 1. **Operations:** <br>Here are a few operations you may be asked to demonstrate:
-  1. PowerShell (in `C:\files`) > `Get-ChildItem -Recurse | Get-Acl | Format-List`
-  1. Terminal (in `/files`) > `ls -lR`
+  1. Connect remotely to Ubuntu via SSH
+  1. Connect remotely to Windows via Remote Desktop
+  1. Show Static IP Address Settings in Ubuntu
+  1. DNS server settings: `/etc/bind/named.conf.options`, `/etc/bind/named.conf.local` and related zone files
+  1. DNS server lookup test: `dig ubu.cis527.cs.ksu.edu` or `nslookup ubu.cis527.cs.ksu.edu`
+  1. DNS server reverse test: `dig -x xxx.xxx.xxx.41` or `nslookup xxx.xxx.xxx.41`
+  1. DHCP server settings: `/etc/dhcp/dhcpd.conf`
+  1. DHCP server test: `ipconfig /release` and `ipconfig /renew` from Windows
+  1. SNMP server test: `snmpwalk -v 1 -c public localhost` from Ubuntu server
+  1. SNMP screenshots (3)
+  1. Wireshark screenshots (8)
 1. **Finality** <br> Once you begin the grading process, no changes may be made to your system to fix any errors encountered. The grade you receive will reflect the state of your VMs at the start of the grading process. This is to ensure that grades are fairly determined and that no special consideration is given.
 
 That should cover everything. Please let me know if you have any questions prior to your scheduled grading time.

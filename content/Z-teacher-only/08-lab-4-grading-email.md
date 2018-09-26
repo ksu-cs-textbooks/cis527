@@ -1,7 +1,7 @@
 ---
-title: "Lab 1 Grading Email"
-weight: 10
-pre: "1.2 "
+title: "Lab 4 Grading Email"
+weight: 40
+pre: "4.2 "
 ---
 
 #### Greetings!
@@ -16,8 +16,13 @@ Here is the information you'll need to know to get your lab graded.
   1. Confirm that all the VMs for this lab are booted and running on your system.
   1. We'll be using the desktop sharing features of Zoom so I can see your VMs. So, make sure you close any windows or programs that are running in the background that shouldn't be shared with me.
 1. **Operations:** <br>Here are a few operations you may be asked to demonstrate:
-  1. PowerShell (in `C:\files`) > `Get-ChildItem -Recurse | Get-Acl | Format-List`
-  1. Terminal (in `/files`) > `ls -lR`
+  1. Static IP address on Windows Server
+  1. Active Directory users
+  1. Windows 10 client on Active Directory
+  1. OpenLDAP OUs, groups & users
+  1. Ubuntu client authenticate via LDAP
+  1. Iteroperability - Ubuntu client on Active Directory, or Windows client on Samba domain
+  1. LDAPSearch screenshots (2)
 1. **Finality** <br> Once you begin the grading process, no changes may be made to your system to fix any errors encountered. The grade you receive will reflect the state of your VMs at the start of the grading process. This is to ensure that grades are fairly determined and that no special consideration is given.
 
 That should cover everything. Please let me know if you have any questions prior to your scheduled grading time.

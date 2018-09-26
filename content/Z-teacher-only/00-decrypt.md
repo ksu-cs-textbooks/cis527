@@ -1,7 +1,7 @@
 ---
 title: "Decryption Example"
 weight: 4
-pre: "A. "
+pre: "B. "
 ---
 
 {{% encrypt encrypted="true" %}}

@@ -258,7 +258,7 @@ Then, using Wireshark, create **screenshots** showing that you captured and can 
 1. The entire TCP stream of an HTTP connection to `http://people.cs.ksu.edu/~russfeld/`
 
 {{% notice tip%}}
-_You'll present those 3 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. --Russ_
+_You'll present those 8 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. --Russ_
 {{% /notice %}}
 
 #### Resources

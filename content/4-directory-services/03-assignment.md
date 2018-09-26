@@ -182,3 +182,7 @@ Below are example commands from a working solution. You'll need to adapt them to
   * [Screenshot](/images/lab4_win.png)
 * OpenLDAP Example: `ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=cis527russfeld,dc=local" -D "cn=admin,dc=cis527russfeld,dc=local" -w "cis527_linux"`
   * [Screenshot](/images/lab4_ubu.png)
+
+{{% notice tip%}}
+_You'll present those 2 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. --Russ_
+{{% /notice %}}
