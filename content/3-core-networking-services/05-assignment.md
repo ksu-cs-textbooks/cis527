@@ -42,7 +42,7 @@ For the second Ubuntu VM, you may either quickly install and configure a new VM 
 _If you do not follow these instructions carefully, the two VMs may have conflicts on the network since they'll have identical networking hardware and names, making this lab much more difficult or impossible to complete. **You have been warned!** --Russ_
 {{% /notice %}}
 
-Clearly label your original Ubuntu VM as **Client** and the new Ubuntu VM as **Server** in VMware Workstation so you know which is which. For this lab, we'll only be using the **Server** VM.
+Clearly label your original Ubuntu VM as **CLIENT** and the new Ubuntu VM as **SERVER** in VMware Workstation so you know which is which. For this lab, we'll only be using the **SERVER** VM.
 
 {{% notice note %}}
 **VMware Fusion (Mac) Users** - Before progressing any further, I recommend creating a new NAT virtual network configuration and moving all of your VMs to that network, instead of the default "Share with my Mac" (vmnet8) network. In this lab, you'll need to disable DHCP on the network you are using, which is very difficult to do on the default networks. You can find relevant instructions in [Add a NAT Configuration](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-7D8E5A7D-FF0C-4975-A794-FF5A9AE83234.html) and [Connect and Set Up the Network Adapter](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-84AC2D7D-4A44-4AB6-BAF8-F12C55E71A2F.html) in the VMware Fusion 8 Documentation.
@@ -62,7 +62,7 @@ _You'll need to edit the registry and reboot the computer to accomplish this tas
 * You'll also need to make sure appropriate firewall rules are in place to accept these incoming connections.
 * You can test your connection from your Linux VM using the **Remmina** program.
 
-On your Ubuntu 18.04 VM labelled **Server**, install and activate the **OpenSSH Server** for remote access.
+On your Ubuntu 18.04 VM labelled **SERVER**, install and activate the **OpenSSH Server** for remote access.
 
 * Both the cis527 and AdminUser accounts should be able to access the system remotely.
 * In addition, **change the port** used by the SSH server to 22222.
@@ -85,7 +85,7 @@ _See the appropriate pages in the Extras module for more information about WSL a
 
 ### Task 2: Ubuntu Static IP Address
 
-On your Ubuntu 18.04 VM labelled **Server**, set up a static IP address. The host part of the IP address should be 41, and the network part should remain the same as the one automatically assigned by VMware.
+On your Ubuntu 18.04 VM labelled **SERVER**, set up a static IP address. The host part of the IP address should be 41, and the network part should remain the same as the one automatically assigned by VMware.
 
 {{% notice note %}}
 So, if your VMware is configured to give IP addresses in the `192.168.138.0/24` network, you'll set the computer to use the `192.168.138.41` address.
@@ -118,7 +118,7 @@ _I personally recommend using the graphical tools in Ubuntu to configure a stati
 
 ### Task 3: DNS Server
 
-For this step, install the `bind9` package on the Ubuntu 18.04 VM labelled **Server**, and configure it to act as a **primary master** and **caching nameserver** for your network. You'll need to include the configuration for both types of uses in your config file. In addition, you'll need to configure both the **zone file** and **reverse zone file**, as well as **forwarders**.
+For this step, install the `bind9` package on the Ubuntu 18.04 VM labelled **SERVER**, and configure it to act as a **primary master** and **caching nameserver** for your network. You'll need to include the configuration for both types of uses in your config file. In addition, you'll need to configure both the **zone file** and **reverse zone file**, as well as **forwarders**.
 
 {{% notice tip %}}
 _These instructions were built based on the [How To Configure BIND as a Private Network DNS Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-18-04) guide from DigitalOcean. In general, you can follow the first part of that guide to configure a Primary DNS Server, making the necessary substitutions listed below.--Russ_
@@ -151,7 +151,7 @@ _HINT: The DigitalOcean guide does not include an at symbol `@` at the beginning
 {{% /notice %}}
   * Forward Zone File:
   <ul>
-    <li>Create an A record for `ns.cis527.cs.ksu.edu` that points to your Ubuntu 18.04 VM labelled **Server** using the IP address in your network ending in `41` as described above.</li>
+    <li>Create an A record for `ns.cis527.cs.ksu.edu` that points to your Ubuntu 18.04 VM labelled **SERVER** using the IP address in your network ending in `41` as described above.</li>
     <li>Create an A record for `win.cis527.cs.ksu.edu` that points to the IP address in your network ending in `42`. _(You'll use that IP address in the next assignment for your Windows server.)_</li>
     <li>Create a CNAME record for `ubu.cis527.cs.ksu.edu` that redirects to `ns.cis527.cs.ksu.edu`.</li>
   </ul>
@@ -189,7 +189,7 @@ To test your DNS server, you can set a static DNS address on either your Windows
 _**IMPORTANT!** Make ABSOLUTELY sure that the VMware virtual network you are using is not a "Bridged" or "Shared" network before continuing. It *MUST* be using "NAT". You can check by going to **Edit > Virtual Network Editor** in VMware Workstation or **VMware Fusion > Preferences > Network** in VMware Fusion and looking for the settings of the network each of your VMs is configured to use. Having your network configured incorrectly while performing this step is a great way to break the network your host computer is currently connected to, and in a worst case scenario will earn you a visit from K-State's IT staff (and they won't be happy)! --Russ_
 {{% /notice %}}
 
-Next, install the `isc-dhcp-server` package on the Ubuntu 18.04 VM labelled **Server**, and configure it to act as a DCHP server for your internal VM network.
+Next, install the `isc-dhcp-server` package on the Ubuntu 18.04 VM labelled **SERVER**, and configure it to act as a DCHP server for your internal VM network.
 
 In your configuration, include the following items:
 
@@ -197,7 +197,7 @@ In your configuration, include the following items:
   - You can also look at the network settings received by your Windows 10 VM, which at this point are from VMware's internal router.
 * Use `cis527.cs.ksu.edu` as the domain name.
 * For the dynamic IP range, use IPs ending in 100-250 in your network.
-* For DNS servers, enter the IP address of your Ubuntu 18.04 VM labelled **Server** ending in 41. This will direct all DCHP clients to use the DNS server configured in Task 3.
+* For DNS servers, enter the IP address of your Ubuntu 18.04 VM labelled **SERVER** ending in 41. This will direct all DCHP clients to use the DNS server configured in Task 3.
   - Alternatively, for testing if your DNS server is not working properly, you can use one of the other DNS options given above in Task 2. However, you must be using the DNS server from Task 3 when graded for full credit.
 
 {{% notice tip %}}
@@ -219,7 +219,7 @@ Finally, restart your Windows VM. When it reboots, if everything works correctly
 
 ### Task 5: SNMP Daemon
 
-Install an SNMP Daemon on the Ubuntu 18.04 VM labelled **Server**. Once it is installed, configure it to allow anyone on the local system (localhost) to query all available data. You'll also need to install and configure the SNMP client and make sure it has all the MIBS available. You do not have to worry about restrictive security for this exercise (_though you would on an actual enterprise system_).
+Install an SNMP Daemon on the Ubuntu 18.04 VM labelled **SERVER**. Once it is installed, configure it to allow anyone on the local system (localhost) to query all available data. You'll also need to install and configure the SNMP client and make sure it has all the MIBS available. You do not have to worry about restrictive security for this exercise (_though you would on an actual enterprise system_).
 
 Of course, you may need to update your firewall configuration to allow incoming SNMP requests to this system!
 
@@ -241,7 +241,7 @@ _You'll present those 3 screenshots as part of the grading process for this lab,
 
 ### Task 6: Wireshark
 
-Install Wireshark on the Ubuntu 18.04 VM labelled **Server**.  
+Install Wireshark on the Ubuntu 18.04 VM labelled **SERVER**.  
 
 Then, using Wireshark, create **screenshots** showing that you captured and can show the packet content of each of the following types of packets:
 

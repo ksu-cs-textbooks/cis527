@@ -34,10 +34,10 @@ For this lab, you'll need the following VMs:
 
 1. A Windows 10 VM. You may reuse your existing Windows 10 VM from a previous lab.
 2. A Windows Server 2016 Standard VM. See **Task 1** below for configuration details.
-3. An Ubuntu 18.04 VM labelled **Client**. This should be the existing client VM from Lab 3.
-4. An Ubuntu 18.04 VM labelled **Server**. You have two options:
-  * You can create a copy of your existing **Client** from Lab 3, which does not have DHCP and DNS servers installed. Follow the instructions in the Lab 3 assignment to create a copy of that VM. In this case, you'll need to reconfigure the VMware NAT network to handle DHCP duties. _This is generally the option that is simplest, and causes the least headaches._
-  * You may continue to use your exiting **Server** from Lab 3, with DHCP and DNS servers installed. You may choose to continue to use this server as your primary DNS and DHCP server for your VM network, which would truly mimic what an enterprise network would be like. Remember that you'll need to have this VM running at all times to provide those services to other systems on your network. You may also choose instead to disable them and reconfigure the VMware NAT network to handle DHCP duties. Either approach is fine. _This option is generally a bit closer to an actual enterprise scenario, but can also cause many headaches, especially if your system doesn't have enough power to run several VMs simultaneously._
+3. An Ubuntu 18.04 VM labelled **CLIENT**. This should be the existing client VM from Lab 3.
+4. An Ubuntu 18.04 VM labelled **SERVER**. You have two options:
+  * You can create a copy of your existing **CLIENT** from Lab 3, which does not have DHCP and DNS servers installed. Follow the instructions in the Lab 3 assignment to create a copy of that VM. In this case, you'll need to reconfigure the VMware NAT network to handle DHCP duties. _This is generally the option that is simplest, and causes the least headaches._
+  * You may continue to use your exiting **SERVER** from Lab 3, with DHCP and DNS servers installed. You may choose to continue to use this server as your primary DNS and DHCP server for your VM network, which would truly mimic what an enterprise network would be like. Remember that you'll need to have this VM running at all times to provide those services to other systems on your network. You may also choose instead to disable them and reconfigure the VMware NAT network to handle DHCP duties. Either approach is fine. _This option is generally a bit closer to an actual enterprise scenario, but can also cause many headaches, especially if your system doesn't have enough power to run several VMs simultaneously._
 
 {{% notice warning %}}
 Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4" that you can restore to later if you have any issues. In addition, Task 6 below will ask you to restore to a snapshot in at least one VM before starting that step.
@@ -102,9 +102,9 @@ Join your Windows 10 VM to the Active Directory Domain created in Task 2. Follow
 
 ### Task 4: Configure an OpenLDAP Server
 
-Install OpenLDAP on your Ubuntu VM labelled **Server**. Follow the steps and configuration details below:
+Install OpenLDAP on your Ubuntu VM labelled **SERVER**. Follow the steps and configuration details below:
 
-1. First, set a static IP address on your Ubuntu VM labelled **Server**, if it does not have one already. Use the IP address ending in `41` that was reserved for this use in Lab 3. For the static DNS entries, you should use one of the options discussed in Lab 3.
+1. First, set a static IP address on your Ubuntu VM labelled **SERVER**, if it does not have one already. Use the IP address ending in `41` that was reserved for this use in Lab 3. For the static DNS entries, you should use one of the options discussed in Lab 3.
 2. Set up and configure an OpenLDAP server, following the first part of the instructions in the guide linked in the resources section below.
   * **Domain Name:** cis527\<your eID\>.local (example: cis527russfeld.local)
   * **Base DN:** `dc=cis527\<your eID\>,dc=local` (example: `dc=cis527russfeld,dc=local`)
@@ -126,7 +126,7 @@ Of course, you may need to modify your firewall configuration to allow incoming 
 
 ### Task 5: Configure Ubuntu to Authenticate via LDAP
 
-On your Ubuntu VM labelled **Client**, configure the system to authenticate against the OpenLDAP server created in Task 4.
+On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate against the OpenLDAP server created in Task 4.
 
 * To test your configuration, use the command `getent passwd <username>` (example: `getent passwd russfeld`) and confirm that it returns an entry for your LDAP user.
 * To log in as the LDAP user, use the `su <username>` command (example: `su russfeld`).
@@ -146,7 +146,7 @@ On your Ubuntu VM labelled **Client**, configure the system to authenticate agai
 
 #### Task 6A: Ubuntu Client on Windows Domain
 
-1. On your Ubuntu VM labelled **Client**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
+1. On your Ubuntu VM labelled **CLIENT**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
 2. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
 3. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to setting it up as an OpenLDAP client.
 4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM.
@@ -154,13 +154,13 @@ On your Ubuntu VM labelled **Client**, configure the system to authenticate agai
 
 #### Task 6B: Windows Client on Ubuntu Domain
 
-1. On your Ubuntu VM labelled **Client**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
+1. On your Ubuntu VM labelled **CLIENT**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
 2. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
 3. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to setting it up as an OpenLDAP client.
 4. On your Windows 10 VM, make a **snapshot** labelled "ActiveDirectory" to save your configuration you performed for Task 3.
 5. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
 6. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to adding it to your Active Directory Domain.
-7. Follow the instructions in the video in this module to create a Samba Domain Controller on your Ubuntu VM labelled **Client**, and then add your Windows 10 VM to that domain. For the realm, use `smb<username>.cis527.cs.ksu.edu`. (For example, mine would be `smbrussfeld.cis527.cs.ksu.edu`.)
+7. Follow the instructions in the video in this module to create a Samba Domain Controller on your Ubuntu VM labelled **CLIENT**, and then add your Windows 10 VM to that domain. For the realm, use `smb<username>.cis527.cs.ksu.edu`. (For example, mine would be `smbrussfeld.cis527.cs.ksu.edu`.)
 8. On both of those VMs, make a **snapshot** labelled "Samba" to save your configuration for this task. You can switch between snapshots on these VMs for each configuration.
 
 #### Resources
@@ -174,7 +174,7 @@ On your Ubuntu VM labelled **Client**, configure the system to authenticate agai
 
 ### Task 7: Query Servers Using LDAPSearch
 
-From your Ubuntu VM labelled **Client**, use the `ldapsearch` command (in the `ldap-utils` package) to query your Active Directory and OpenLDAP servers. Take a **screenshot** of the output from each command.
+From your Ubuntu VM labelled **CLIENT**, use the `ldapsearch` command (in the `ldap-utils` package) to query your Active Directory and OpenLDAP servers. Take a **screenshot** of the output from each command.
 
 Below are example commands from a working solution. You'll need to adapt them to match your environment. There are also sample screenshots of expected output.
 
@@ -186,3 +186,13 @@ Below are example commands from a working solution. You'll need to adapt them to
 {{% notice tip%}}
 _You'll present those 2 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. --Russ_
 {{% /notice %}}
+
+---
+
+### Task 8: Make Snapshots
+
+In each of the virtual machines created above, create a snapshot labelled "Lab 4 Submit" before you submit the assignment. The grading process may require making changes to the VMs, so this gives you a restore point before grading starts. Also, you may have multiple Lab 4 snapshots on some VMs, so feel free to label them accordingly.
+
+### Task 9: Schedule A Grading Time
+
+Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.

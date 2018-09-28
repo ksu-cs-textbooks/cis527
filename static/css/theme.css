@@ -1016,7 +1016,7 @@ td {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 70%;
+    width: 50%;
     display: inline-block;
     float: left;
 }
@@ -1151,6 +1151,10 @@ pre .copy-to-clipboard:hover {
 
 #searchResults {
     text-align: left;
+}
+
+.github-link {
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=theme.css.map */

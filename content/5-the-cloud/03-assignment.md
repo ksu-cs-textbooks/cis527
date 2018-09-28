@@ -179,3 +179,9 @@ Once it is complete, you can test your certificates using the same URLs given in
 #### Resources
 
 * [How To Secure Apache with Let's Encrypt on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04) from DigitalOcean
+
+---
+
+### Task 7: Schedule A Grading Time
+
+Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.

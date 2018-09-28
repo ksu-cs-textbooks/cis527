@@ -9,6 +9,7 @@ theme = "hugo-theme-learn"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 page = [ "HTML", "Iframeable", "Teleprompter"]
+section = [ "HTML", "Iframeable", "Teleprompter"]
 
 [params]
   editURL = "https://gitlab.cs.ksu.edu/russfeld/cis527online/tree/master/content/"
