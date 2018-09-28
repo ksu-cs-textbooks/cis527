@@ -12,8 +12,8 @@ pre: "1. "
 
 #### Video Transcript
 
-Welcome to module 4! In this module, we'll discuss how to use directory services to provide consistent user accounts and permissions across a number of systems. Specifically, we'll look at the Active Directory Domain Services for Windows, and the OpenLDAP implementation of the Lightweight Directory Access Protocol (LDAP) for Ubuntu Linux.
+Welcome to module 6! In this module, we'll discuss the various types of servers that you may come across in a large organization. This could include file servers, web servers, application servers, database servers, and more!
 
-In addition, we'll see how to configure clients to connect to each of those servers. Finally, I'll discuss some implementation concerns for interoperability, for instances where you'll have a heterogeneous network environment.
+In the lab assignment, you'll set up a file server on both Windows and Ubuntu, and deal with automatically providing access to those resources for your users. You'll also configure the IIS and Apache web servers, and learn about installing an application on each. Finally, we'll discuss some of the considerations for configuring a database server, and you'll work with database servers on both operating systems. 
 
-Many students have reported to me that this is one of the most difficult lab assignments in this course, as it can be very frustrating to get everything set up and working correctly the first time. As always, if you have any questions or run into issues, please post in the course discussion forums to get help. Good luck!
+As always, if you have any questions or run into issues, please post in the course discussion forums to get help. Good luck!

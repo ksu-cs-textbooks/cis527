@@ -41,7 +41,7 @@ Create **TWO** droplets on DigitalOcean. As you set up your droplets, use the fo
   * `cis527<username>-frontend`
   * `cis527<username>-backend`
 
-The rest of this assignment will refer to those droplets as **FRONTEND** and **BACKEND**, respecitvely.
+The rest of this assignment will refer to those droplets as **FRONTEND** and **BACKEND**, respectively.
 
 #### Resources
 
@@ -64,7 +64,7 @@ Perform these configuration steps on both droplets, unless otherwise noted:
   1. incoming port 22123 (SSH)
   1. incoming port 80 (HTTP)
   1. incoming port 443 (HTTP via TLS)
-  1. **BACKEND ONLY:** filter connections on port 22123 to only allow SSH connections from FRONTEND via its private networking IP address. You should still allow connections to port 80 and 443 from any address. 
+  1. **BACKEND ONLY:** filter connections on port 22123 to only allow SSH connections from FRONTEND via its private networking IP address. You should still allow connections to port 80 and 443 from any address.
 
 #### Resources
 
