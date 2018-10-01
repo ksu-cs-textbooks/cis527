@@ -179,6 +179,7 @@ Once it is complete, you can test your certificates using the same URLs given in
 
 #### Resources
 
+* [Certbot](https://certbot.eff.org/) from the Electronic Frontier Foundation (EFF)
 * [How To Secure Apache with Let's Encrypt on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04) from DigitalOcean
 
 ---

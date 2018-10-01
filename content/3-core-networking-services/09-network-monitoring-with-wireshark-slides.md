@@ -19,7 +19,7 @@ hidden: true
 	<ul>
 		<li><b>DO NOT USE ON K-STATE'S NETWORK</b></li>
 		<li>Monitoring Network Traffic Violates K-State's IT Policy!</li>
-		<li>Use Withink your VM Network Only!</li>
+		<li>Use Within your VM Network Only!</li>
 	</ul>
 </section>
 <section>

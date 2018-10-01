@@ -77,10 +77,10 @@ sudo echo "foo" > /var/www/foo/index.html
 Now, I'll need to configure a virtual host file for that website:
 
 ```bash
-sudo nano /etc/apache2/sites-available/foo.conf
+sudo nano /etc/apache2/sites-available/foo.russfeld.me.conf
 ```
 
-The `/etc/apache2/sites-available/` directory stores all of the available site configuration files for Apache by convention. In that file, I'll place the following information, which I've adapted from the DigitalOcean guide on installing Apache linked in the resources section below this video:
+The `/etc/apache2/sites-available/` directory stores all of the available site configuration files for Apache by convention. Of course, you'll need to update the filename to match your domain name. In that file, I'll place the following information, which I've adapted from the DigitalOcean guide on installing Apache linked in the resources section below this video:
 
 ```apache
 <VirtualHost foo.russfeld.me:80>
@@ -96,7 +96,7 @@ Then, I'll save and close the file. Finally, I'll need to deactivate the default
 
 ```bash
 sudo a2dissite 000-default
-sudo a2ensite foo
+sudo a2ensite foo.russfeld.me
 ```
 
 Once I've activated it, I can check for any configuration errors:
@@ -111,7 +111,7 @@ If it passes, I can restart the Apache service to reload my changes:
 sudo systemctl restart apache2
 ```
 
-I'll do these same steps for the other site, named `bar`, as well. The DigitalOcean guide for installing Apache includes much more in-depth information about this process, so I encourage you to read it carefully to learn even more about how to configure and work with Apache. 
+I'll do these same steps for the other site, named `bar`, as well. The DigitalOcean guide for installing Apache includes much more in-depth information about this process, so I encourage you to read it carefully to learn even more about how to configure and work with Apache.
 
 Once I've done that, I can test my virtual host configuration and see if it works. To do this, I'll open a web browser and navigate to `http://foo.russfeld.me` and see if it takes me to the correct website. I can also try `http://bar.russfeld.me` to test the other website. As you can see, they both work correctly.
 
