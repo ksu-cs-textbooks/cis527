@@ -69,6 +69,7 @@ Perform these configuration steps on both droplets, unless otherwise noted:
 #### Resources
 
 * [Initial Server Setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04) from DigitalOcean
+* [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) from DigitalOcean
 * [Additional Recommended Steps for New Ubuntu 14.04 Servers](https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-ubuntu-14-04-servers) from DigitalOcean
 
 ---
