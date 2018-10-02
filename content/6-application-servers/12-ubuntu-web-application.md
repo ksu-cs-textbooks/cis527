@@ -8,6 +8,6 @@ pre: "12. "
 
 #### Resources
 
-* **[Slides]({{< relref "/6-application-file-servers/12-ubuntu-web-application-slides.md" >}})**
+* **[Slides]({{< relref "/6-application-servers/12-ubuntu-web-application-slides.md" >}})**
 
 #### Video Transcript

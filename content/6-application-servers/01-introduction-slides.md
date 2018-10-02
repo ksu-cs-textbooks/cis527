@@ -3,10 +3,10 @@ type: "reveal"
 hidden: true
 ---
 <section>
-	<h2>CIS 527</h2><br><br><p>Lab 6 - Application & File Servers</p>
+	<h2>CIS 527</h2><br><br><p>Lab 6 - Application Servers</p>
 </section>
 <section>
-	<h3>Module 6 - Application & File Servers</h3>
+	<h3>Module 6 - Application Servers</h3>
 	<ul>
     <li>File Servers</li>
 		<li>Drive Mappings</li>

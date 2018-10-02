@@ -4,7 +4,7 @@ weight: 15
 pre: "3. "
 ---
 
-### Lab 6 - Application & File Servers
+### Lab 6 - Application Servers
 
 #### Instructions
 

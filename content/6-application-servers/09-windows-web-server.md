@@ -8,6 +8,6 @@ pre: "9. "
 
 #### Resources
 
-* **[Slides]({{< relref "/6-application-file-servers/09-windows-web-server-slides.md" >}})**
+* **[Slides]({{< relref "/6-application-servers/09-windows-web-server-slides.md" >}})**
 
 #### Video Transcript

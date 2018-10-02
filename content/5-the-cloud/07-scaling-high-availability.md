@@ -1,5 +1,5 @@
 ---
-title: "Scaling the Cloud"
+title: "Scaling & High Availability"
 weight: 35
 pre: "7. "
 ---
@@ -8,7 +8,7 @@ pre: "7. "
 
 #### Resources
 
-* **[Slides]({{< relref "/5-the-cloud/07-scaling-the-cloud-slides.md" >}})**
+* **[Slides]({{< relref "/5-the-cloud/07-scaling-high-availability-slides.md" >}})**
 * [An Introduction to Droplet Metadata](https://www.digitalocean.com/docs/droplets/resources/metadata/) from DigitalOcean
 * [How to Resize Droplets](https://www.digitalocean.com/docs/droplets/how-to/resize/) from DigitalOcean
 * [How to Automate the Scaling of Your Web Application on DigitalOcean Ubuntu 16.04 Droplets](https://www.digitalocean.com/community/tutorials/how-to-automate-the-scaling-of-your-web-application-on-digitalocean-1604) from DigitalOcean
