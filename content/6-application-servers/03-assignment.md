@@ -76,6 +76,11 @@ Configure a file server using Samba on your Ubuntu VM labelled **SERVER**. It sh
 
 * A shared folder on the server named `everyone` and stored at `/everyone` that should be accessible by all Samba users
 * Enable shared home directories in Samba using the default `[homes]` share.
+* Enable the `cis527` user in the Samba password database.
+
+{{% notice tip %}}
+_Of course, you may have to allow additional ports or applications through the firewall. --Russ_
+{{% /notice %}}
 
 #### Resources
 
@@ -91,18 +96,19 @@ Configure a file server using Samba on your Ubuntu VM labelled **SERVER**. It sh
 Configure your Ubuntu VM labelled **CLIENT** to automatically access the Samba shares in the following manner:
 
 * Add an entry to `\etc\fstab` to automatically mount the `everyone` folder to `/mnt/everyone` at system boot. It should be readable and writable by all users.
-* Create a Bash script that will mount a user's home folder to `/mnt/home` when the user logs on. You will also need to make sure that script is properly triggered at login using `cron` or some other method. You should also configure a script to unmount the drive when the user logs off. The mounted share should be readable and writable by that user.
+* Use `libpam-mount` to automatically mount a user's `homes` share from the server at login. This only needs to work for the `cis527` user, as that user should be present on both systems and Samba.
 
-{{% notice tip %}}
-_To create the script, first you must figure out how to perform the steps using the terminal. Then, you can simply place those commands in a script file and try to run the script itself. It is sufficient to perform these steps for the cis527 account only. Unfortunately, this approach does not scale well as it must be done on a per-user basis. If you know of a way to get this to work across all users, bug bounty points can be had! --Russ_
+{{% notice note %}}
+_To be honest, this last part can be pretty tricky. I recommend following the instructions in this video in this module very carefully. If you have any issues, you can enable debugging and review `/var/log/syslog` for errors. --Russ_
 {{% /notice %}}
 
 #### Resources
 
-* **[Bash Scripting]({{< relref "/X-extras/03-bash-scripting" >}})**
-* **[Cron (Linux Scheduled Tasks)]({{< relref "/X-extras/04-cron-linux-scheduled-tasks" >}})**
 * [Mount Windows Shares Permanently](https://wiki.ubuntu.com/MountWindowsSharesPermanently) from Ubuntu Wiki
 * [How Do I Access Windows Shares from Bash](https://askubuntu.com/questions/434358/how-do-i-access-windows-shares-from-bash) on Ask Ubuntu Forums
+* [Use of pam-mount to Mount Home from Server](https://ubuntuforums.org/showthread.php?t=1375653) on Ubuntu Forums
+* [pam_mount](http://manpages.ubuntu.com/manpages/bionic/man8/pam_mount.8.html) on Ubuntu Manpages
+* [pam_mount.conf](http://manpages.ubuntu.com/manpages/bionic/man5/pam_mount.conf.5.html) on Ubuntu Manpages
 
 ---
 
