@@ -159,7 +159,7 @@ Once you have selected your application, perform the following configuration ste
 
 1. Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled **BACKEND** and configure an appropriate username and database for your application
 {{% notice tip %}}
-_You may need to configure MySQL to listen on an external network interface. Make sure you use the private network IP address. In addition, you may also have to open ports on the firewall. --Russ_
+_You may need to configure MySQL to listen on an external network interface. Make sure you use the private network IP address. In addition, you will also have to open ports on the firewall, and you should restrict access to those ports to only allow connections from **FRONTEND**, just like the SSH server in Lab 5. --Russ_
 {{% /notice %}}
 2. Configure a new virtual host in Apache for your web application. Also, add an appropriate A record to your domain name created in Lab 5 for this virtual host
 3. Install your web application on your Ubuntu droplet labelled **FRONTEND** following the application's installation instructions. When configuring the database for your application, you should have it use the MySQL database on **BACKEND** via the private network IP address
