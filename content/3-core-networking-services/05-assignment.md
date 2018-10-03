@@ -189,7 +189,7 @@ To test your DNS server, you can set a static DNS address on either your Windows
 _**IMPORTANT!** Make ABSOLUTELY sure that the VMware virtual network you are using is not a "Bridged" or "Shared" network before continuing. It *MUST* be using "NAT". You can check by going to **Edit > Virtual Network Editor** in VMware Workstation or **VMware Fusion > Preferences > Network** in VMware Fusion and looking for the settings of the network each of your VMs is configured to use. Having your network configured incorrectly while performing this step is a great way to break the network your host computer is currently connected to, and in a worst case scenario will earn you a visit from K-State's IT staff (and they won't be happy)! --Russ_
 {{% /notice %}}
 
-Next, install the `isc-dhcp-server` package on the Ubuntu 18.04 VM labelled **SERVER**, and configure it to act as a DCHP server for your internal VM network.
+Next, install the `isc-dhcp-server` package on the Ubuntu 18.04 VM labelled **SERVER**, and configure it to act as a DHCP server for your internal VM network.
 
 In your configuration, include the following items:
 
@@ -197,7 +197,7 @@ In your configuration, include the following items:
   - You can also look at the network settings received by your Windows 10 VM, which at this point are from VMware's internal router.
 * Use `cis527.cs.ksu.edu` as the domain name.
 * For the dynamic IP range, use IPs ending in 100-250 in your network.
-* For DNS servers, enter the IP address of your Ubuntu 18.04 VM labelled **SERVER** ending in 41. This will direct all DCHP clients to use the DNS server configured in Task 3.
+* For DNS servers, enter the IP address of your Ubuntu 18.04 VM labelled **SERVER** ending in 41. This will direct all DHCP clients to use the DNS server configured in Task 3.
   - Alternatively, for testing if your DNS server is not working properly, you can use one of the other DNS options given above in Task 2. However, you must be using the DNS server from Task 3 when graded for full credit.
 
 {{% notice tip %}}

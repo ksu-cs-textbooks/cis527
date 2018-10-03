@@ -17,10 +17,10 @@ hidden: true
 		<li>1985 - BOOTP Developed</li>
 		<li>1987 - 20,000 Hosts on Internet</li>
 		<li>1989 - DHC Working Group</li>
-		<li>1993 - DCHP Defined (RFC 1531)</li>
+		<li>1993 - DHCP Defined (RFC 1531)</li>
 		<li>1996 - ISC Server Released</li>
-		<li>1997 - DCHP Finalized (RFC 2131)</li>
-		<li>2003 - DCHP for IPv6 (RFC 3315)</li>
+		<li>1997 - DHCP Finalized (RFC 2131)</li>
+		<li>2003 - DHCP for IPv6 (RFC 3315)</li>
 	</ul>
 </section>
 <section>

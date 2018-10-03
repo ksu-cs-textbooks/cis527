@@ -45,7 +45,6 @@ hidden: true
 		<li>.NET</li>
 		<li>Java</li>
 		<li>JavaScript</li>
-		<li>Perl</li>
 	</ul>
 </section>
 <section>
