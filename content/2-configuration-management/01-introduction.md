@@ -13,7 +13,7 @@ pre: "1. "
 
 #### Video Script
 
-Welcome to module 2! In this module, we'll be discussing configuration management. The next video will define that concept in detail and give some additional background.
+Welcome to Module 2! In this module, we'll be discussing configuration management. The next video will define that concept in detail and give some additional background.
 
 The lab assignment will have you work with Puppet to completely automate most of the tasks you performed in Lab 1. By doing so, hopefully you'll see the incredible power of using configuration management tools in your workflow as a system administrator.
 

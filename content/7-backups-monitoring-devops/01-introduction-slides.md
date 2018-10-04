@@ -3,15 +3,15 @@ type: "reveal"
 hidden: true
 ---
 <section>
-	<h2>CIS 527</h2><br><br><p>Lab 4 - Introduction</p>
+	<h2>CIS 527</h2><br><br><p>Lab 7 - Backups, Monitoring & DevOps</p>
 </section>
 <section>
-	<h3>Module 4 - Directory Services</h3>
+	<h3>Module 7 - Backups, Monitoring & DevOps</h3>
 	<ul>
-    <li>Single Database of Users</li>
-		<li>Windows ActiveDirectory</li>
-		<li>Lightweight Directory Access Protocol (LDAP)</li>
-		<li>Client Authentication</li>
-		<li>Interoperability</li>
+    <li>Backup & Restore Active Directory</li>
+		<li>Backup & Document Ubuntu Web Application</li>
+		<li>Configure Cloud Monitoring</li>
+		<li>DevOps Hello World</li>
+		<li>ITIL</li>
 	</ul>
 </section>

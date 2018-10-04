@@ -12,7 +12,7 @@ pre: "1. "
 
 #### Video Transcript
 
-Welcome to module 3! In this module, you'll learn all about how to link your systems up using a variety of networking tools and protocols. First, we'll discuss the OSI 7-Layer Networking Model and how each layer impacts your system. Then, we'll look at how to configure various networking options in both Windows and Linux.
+Welcome to Module 3! In this module, you'll learn all about how to link your systems up using a variety of networking tools and protocols. First, we'll discuss the OSI 7-Layer Networking Model and how each layer impacts your system. Then, we'll look at how to configure various networking options in both Windows and Linux.
 
 Following that, you'll learn how to configure a DNS and DHCP server using Ubuntu and connect your VMs to those services to make sure they are working properly. Finally, you'll gain some experience working with some network troubleshooting tools, and you'll use those to explore a few networking protocols such as HTTP and SNMP.
 

@@ -12,8 +12,10 @@ pre: "1. "
 
 #### Video Transcript
 
-Welcome to module 4! In this module, we'll discuss how to use directory services to provide consistent user accounts and permissions across a number of systems. Specifically, we'll look at the Active Directory Domain Services for Windows, and the OpenLDAP implementation of the Lightweight Directory Access Protocol (LDAP) for Ubuntu Linux.
+Welcome to Module 7! In this module, we'll discuss several additional topics related to system administration. Honestly, each of these items probably deserves a module unto themselves, if not an entire course. However, since I am limited in the amount of things I can reasonably cover in a single course, I've chosen to group these items together into this single module.
 
-In addition, we'll see how to configure clients to connect to each of those servers. Finally, I'll discuss some implementation concerns for interoperability, for instances where you'll have a heterogeneous network environment.
+First, we'll discuss DevOps, or development operations, a relatively new field blending the skills of both system administrators and software developers into a single unit. We'll also discuss a bit of the theory related to system administration, including ITIL, formerly the Information Technology Infrastructure Library, a very standard framework for system administrators to follow.
 
-Many students have reported to me that this is one of the most difficult lab assignments in this course, as it can be very frustrating to get everything set up and working correctly the first time. As always, if you have any questions or run into issues, please post in the course discussion forums to get help. Good luck!
+Then, we'll cover information related to monitoring your systems on your network and in the cloud, and how to configure some of those tools in our existing infrastructure from previous lab assignments. Finally, we'll discuss backups, and you'll perform a couple of backup and restore exercises as part of the lab assignment.
+
+As always, if you have any questions or run into issues, please post in the course discussion forums to get help. Good luck!
