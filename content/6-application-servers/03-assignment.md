@@ -118,7 +118,7 @@ For this task, you will install and configure a .NET web application for IIS on 
 
 * [BlogEngine.NET](https://blogengine.io/)
 
-If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages. Any approved application can be added to this list for you to use.
+If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages. Any approved application can be added to this list for you to use. _You are not allowed to use JitBit's .NET Forum, as that was demonstrated in the video in this module._
 
 Once you have selected your application, perform the following configuration steps:
 
@@ -128,7 +128,7 @@ Once you have selected your application, perform the following configuration ste
 _You'll need to add entries to your system's `hosts` file to redirect those domain names to the loopback IP address `127.0.0.1` --Russ_
 {{% /notice %}}
 3. Create a self-signed SSL certificate and attach it to that site
-4. Configure URL redirection to automatically direct users from HTTP to HTTPS for that site
+4. Use the URL Rewrite module to configure URL redirection to automatically direct users from HTTP to HTTPS for that site
 
 Once these steps are complete, visiting `http://mywebsite.local` in your web browser should automatically redirect you to `https://mywebsite.local` and it should be secured using your self-signed certificate. You should also be able to demonstrate that the application is working properly by interacting with it in some meaningful way. Finally, if you visit `http://anothersite.local` you should see the static content from that site.
 
@@ -138,11 +138,12 @@ _I recommend using Firefox for testing. Edge & Internet Explorer on Windows Serv
 
 #### Resources
 
+* **[URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite) from Microsoft**
 * [Add A Website to Windows Server 2016 using Host Headers](https://helpdesk.ssls.com/hc/en-us/articles/115000853911-How-to-install-a-SSL-certificate-on-IIS-10) from 1&1
 * [How to Create a Self Signed Certificate in IIS](https://aboutssl.org/how-to-create-a-self-signed-certificate-in-iis/) from AboutSSL
 * [Microsoft Server 2016 - IIS 10 & 10.5 - SSL Installation](https://www.sslsupportdesk.com/microsoft-server-2016-iis-10-10-5-ssl-installation/) from SSLSupportDesk
 * [How to Install a SSL Certificate on IIS 10](https://helpdesk.ssls.com/hc/en-us/articles/115000853911-How-to-install-a-SSL-certificate-on-IIS-10) from SSLs.com
-* [Redirect from HTTP to HTTPS using the IIS URL Rewrite Module](https://blogs.technet.microsoft.com/dawiese/2016/06/07/redirect-from-http-to-https-using-the-iis-url-rewrite-module/) from Microsoft TechNet
+* [Setting up an HTTP/HTTPS Redirect in IIS](https://www.namecheap.com/support/knowledgebase/article.aspx/9953/38/setting-up-an-httphttps-redirect-in-iis) from Namecheap
 
 ---
 
@@ -153,11 +154,11 @@ For this step, you will install and configure a web application running on Apach
 * [Wordpress](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-18-04)
 * [Booked](https://www.bookedscheduler.com/)
 
-If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages, and must support using a MySQL database on a separate host from the web server. In addition, the application must be installed manually - using pre-built images or Apt packages is not allowed here. Any approved application can be added to this list for you to use.
+If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages, and must support using a MySQL database on a separate host from the web server. In addition, the application must be installed manually - using pre-built images or Apt packages is not allowed here. Any approved application can be added to this list for you to use. _You are not allowed to use phpBB, as that was demonstrated in the video in this module._
 
 Once you have selected your application, perform the following configuration steps:
 
-1. Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled **BACKEND** and configure an appropriate username and database for your application
+1. Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled **BACKEND** and configure an appropriate username and database for your application. You should also enable SSL/TLS encryption on connections to the server.
 {{% notice tip %}}
 _You may need to configure MySQL to listen on an external network interface. Make sure you use the private network IP address. In addition, you will also have to open ports on the firewall, and you should restrict access to those ports to only allow connections from **FRONTEND**, just like the SSH server in Lab 5. --Russ_
 {{% /notice %}}
@@ -170,9 +171,11 @@ Once these steps are complete, you should be able to visit your web application 
 #### Resources
 
 * [Install MySQL on Ubuntu 18.04 Bionic Beaver Linux](https://linuxconfig.org/install-mysql-on-ubuntu-18-04-bionic-beaver-linux) from LinuxConfig.org
+* [How To Configure SSL/TLS for MySQL on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-configure-ssl-tls-for-mysql-on-ubuntu-16-04) from DigitalOcean (works for 18.04)
 * [How To Install and Secure phpMyAdmin on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04) from DigitalOcean
 * [How To Install the Apache Web Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04) from DigitalOcean
 * [How To Secure Apache with Let's Encrypt on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04) from DigitalOcean
+* [How To Set Up A Remote Database to Optimize Site Performance with MySQL on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql-on-ubuntu-16-04) from DigitalOcean (works for 18.04 for the most part)
 
 ---
 

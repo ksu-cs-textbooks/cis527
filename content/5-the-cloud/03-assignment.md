@@ -109,7 +109,7 @@ _You may contact me once you have installed the grading SSH key to confirm that 
 
 On each droplet, install the Apache web server. By default, the webserver should serve files from the `/var/www/html` directory. Place a simple HTML file named `index.html` in that directory on each server. You may use the contents below as an example. Please modify the file appropriately to make it clear which server it is placed on.
 
-Do not configure Virtual Hosts at this time, as that will be covered in Task 5.
+Do not configure virtual hosts at this time, as that will be covered in Task 5.
 
 ```html
 <html>
