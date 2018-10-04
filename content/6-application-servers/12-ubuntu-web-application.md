@@ -8,6 +8,11 @@ pre: "12. "
 
 #### Resources
 
-* **[Slides]({{< relref "/6-application-servers/12-ubuntu-web-application-slides.md" >}})**
+
 
 #### Video Transcript
+
+Create DB and User
+Install Application
+Connect DB
+Verify Working
