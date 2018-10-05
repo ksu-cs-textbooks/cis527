@@ -8,6 +8,5 @@ pre: "10. "
 
 #### Resources
 
-* **[Slides]({{< relref "/7-backups-monitoring-devops/10-ubuntu-backups-slides.md" >}})**
 
 #### Video Transcript

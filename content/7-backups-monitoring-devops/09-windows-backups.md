@@ -8,6 +8,5 @@ pre: "9. "
 
 #### Resources
 
-* **[Slides]({{< relref "/7-backups-monitoring-devops/09-windows-backups-slides.md" >}})**
 
 #### Video Transcript
