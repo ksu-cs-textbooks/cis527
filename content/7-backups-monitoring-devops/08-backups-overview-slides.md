@@ -52,6 +52,19 @@ hidden: true
 	</ul>
 </section>
 <section>
+	<h3>RPO vs. RTO</h3>
+	<ul>
+		<li><b>Recovery Point Objective</b>: How Much Data Might be Lost</li>
+		<li><b>Recovery Point Actual</b>: How Much Data Was Lost</li>
+		<li><b>Recovery Time Objective</b>: How Much Downtime Expected After Error</li>
+		<li><b>Recovery Time Actual</b>: How Long it Actually Took</li>
+	</ul>
+</section>
+<section>
+	<img class="stretch plain" src="/images/rpo_wiki.png">
+	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Recovery_time_objective">Recovery Time Objective</a></p>
+</section>
+<section>
 	<h3>Where</h3>
 	<ul>
 		<li>Hard Disk Drive (HDD)</li>
@@ -94,7 +107,7 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<h3>Backup Types</h3>
+	<h3>How</h3>
 	<ul>
 		<li>Unstructured</li>
 		<li>Full</li>
@@ -121,19 +134,6 @@ hidden: true
 	<p class="imagecredit">Image Source: <a href="https://www.nakivo.com/blog/backup-types-explained-full-incremental-differential-synthetic-and-forever-incremental/">Nakivo</a></p>
 </section>
 <section>
-	<h3>RPO vs. RTO</h3>
-	<ul>
-		<li><b>Recovery Point Objective</b>: How Much Data Might be Lost</li>
-		<li><b>Recovery Point Actual</b>: How Much Data Was Lost</li>
-		<li><b>Recovery Time Objective</b>: How Much Downtime Expected After Error</li>
-		<li><b>Recovery Time Actual</b>: How Long it Actually Took</li>
-	</ul>
-</section>
-<section>
-	<img class="stretch plain" src="/images/rpo_wiki.png">
-	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Recovery_time_objective">Recovery Time Objective</a></p>
-</section>
-<section>
 	<h3>Other Concerns</h3>
 	<ul>
 		<li>Data Security</li>
@@ -141,6 +141,7 @@ hidden: true
 		<li>Backup Window</li>
 		<li>Performance Impact</li>
 		<li>Costs & Resources</li>
+		<li>Storage Capacity</li>
 		<li>Distributed Availability</li>
 	</ul>
 </section>
