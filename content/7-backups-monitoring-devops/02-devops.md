@@ -111,4 +111,6 @@ Now, we can go back to the K-State CS GitLab server and configure our webhook. A
 
 Once it is created, you'll see a **Test** button below the list of existing webhooks. So, we can choose that option, and Select "Push events" to test the webhook. If all works correctly, it should give us a message stating that the hook executed successfully.
 
-However, the real test is to make a change to the repository, then commit and push that change. Once you do, it should automatically cause the webhook to fire, and within a few seconds you should see the change on your server.
+However, the real test is to make a change to the repository, then commit and push that change. Once you do, it should automatically cause the webhook to fire, and within a few seconds you should see the change on your server. I encourage you to test this process for yourself to make sure it is working correctly.
+
+There you go! That should give you a very basic idea of some of the tools and techniques available in the DevOps world. It is a quickly growing field, and it is very useful for both developers and system administrators to understand these concepts. If you are interested in learning more, I encourage you to read some of the materials linked in the resource section below this video, or explore some of the larger projects hosted on GitHub to see what they are doing to automate their processes. 
