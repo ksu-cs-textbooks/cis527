@@ -11,9 +11,6 @@ pre: "5. "
 * **[Slides]({{< relref "/7-backups-monitoring-devops/05-monitoring-overview-slides.md" >}})**
 * [Best System Monitoring Tools for Windows & Linux (Free & Paid)](https://www.comparitech.com/net-admin/system-monitoring-tools/) from Comparitech
 * [Beocat System Monitor](http://ganglia.beocat.ksu.edu)
-* [Seamless Infrastructure Monitoring](https://www.digitalocean.com/products/monitoring/) from DigitalOcean
-* [Monitoring Quickstart](https://www.digitalocean.com/docs/monitoring/quickstart/) from DigitalOcean
-* [How to Set Up Monitoring Alerts](https://www.digitalocean.com/docs/monitoring/how-to/set-up-alerts/) from DigitalOcean
 
 #### Video Transcript
 
@@ -29,4 +26,4 @@ One great example of a system monitoring system is the one from K-State's own Be
 
 Of course, there are many paid tools for this task as well. This is a screenshot of GFI LanGuard, one of many tools available to perform system monitoring and more. Depending on your organization's needs, you may end up reviewing a number of tools such as this for your use.
 
-In the next few videos, I'll discuss some monitoring tools for both Windows and Linux. As part of your lab assignment, you'll install a monitoring system on your cloud servers running on DigitalOcean, giving you some insight into their performance. 
+In the next few videos, I'll discuss some monitoring tools for both Windows and Linux. As part of your lab assignment, you'll install a monitoring system on your cloud servers running on DigitalOcean, giving you some insight into their performance.
