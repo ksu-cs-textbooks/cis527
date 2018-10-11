@@ -169,9 +169,9 @@ Finally, you can test your virtual host configuration using the same URLs given 
 
 ---
 
-### Task 6: SSL Certificates
+### Task 6: Public Key Certificates
 
-Obtain and install an SSL certificate for your Apache server on both **FRONTEND** and **BACKEND**. The simplest way to do so is to use Certbot from Let's Encrypt.
+Obtain and install a public key certificate for your Apache server on both **FRONTEND** and **BACKEND**. The simplest way to do so is to use Certbot from Let's Encrypt.
 
 When you install the certificates, direct Certbot to redirect HTTP traffic to HTTPS for your server.
 
