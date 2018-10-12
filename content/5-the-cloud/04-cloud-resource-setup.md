@@ -28,7 +28,7 @@ pre: "4. "
 
 For the rest of this module, you'll be working with DigitalOcean to create and configure online cloud resources. I chose DigitalOcean primarily because of its ease of use compared to other providers such as AWS, as well as its continuing popularity and great user documentation.
 
-DigitalOcean was first founded in 2011 by Ben on Moisey Uretsky. They felt that most hosting companies of the time were targeting large enterprises, leaving many smaller software developers and startups behind. DigitalOcean was one of the first hosting providers to offer virtual machines exclusively on solid state storage, giving them a performance edge over many of their peers, while often being cheaper overall. Currently, they are the 3rd largest hosting provider in the world, with 12 worldwide datacenters serving over 1 million customers.
+DigitalOcean was first founded in 2011 by Ben and Moisey Uretsky. They felt that most hosting companies of the time were targeting large enterprises, leaving many smaller software developers and startups behind. DigitalOcean was one of the first hosting providers to offer virtual machines exclusively on solid state storage, giving them a performance edge over many of their peers, while often being cheaper overall. Currently, they are the 3rd largest hosting provider in the world, with 12 worldwide datacenters serving over 1 million customers.
 
 In this video, we'll discuss the first steps for getting your first cloud server, referred to as a "droplet" on DigitalOcean, configured and secured. Let's get to it!
 
@@ -54,7 +54,7 @@ The user data option allows you to provide some initial configuration informatio
 
 Finally, DigitalOcean offers advanced droplet monitoring at no extra charge. Let's enable that option here, and later we'll look at the information it collects for us.
 
-You can also add SSH keys directly to your droplet. If you do so, the system will be configured to prevent SSH login via password, and you won't receive the root password via email from DigitalOcean. If you have already configured an SSH key with DigialOcean, you can add it to your droplet here, but if not, I'll walk you through the steps to do that later in this video.
+You can also add SSH keys directly to your droplet. If you do so, the system will be configured to prevent SSH login via password, and you won't receive the root password via email from DigitalOcean. If you have already configured an SSH key with DigitalOcean, you can add it to your droplet here, but if not, I'll walk you through the steps to do that later in this video.
 
 Lastly, you can create multiple droplets with the same settings. For the lab, you'll need to create two droplets, named **FRONTEND** and **BACKEND**. For this example, however, I'm just going to create one, and name it **EXAMPLE**. As part of the lab, you'll have to extrapolate what I demonstrate here on a single droplet to your setup with multiple droplets.
 
@@ -152,4 +152,4 @@ Lastly, you may want to perform steps such as updating the timezone of your serv
 
 One other step that you may come across in many guides is enabling swap. Swap in Linux allows you to effectively use more RAM than what is available on your system. This is especially handy if you are dealing with large datasets that won't fit in RAM. The desktop version of Ubuntu typically does this automatically, but many cloud providers such as DigitalOcean disable this feature. Since they are in the business of providing cloud resources, in general they will just want you to scale your resources accordingly to have enough RAM available instead of using swap. In addition, using swap on a solid-state drive can degrade performance and shorten the life of the drive. So, I don't recommend enabling swap on your DigitalOcean droplets at all, unless you find a particular use case that would make it worthwhile.
 
-With that information, you should be ready to configure and secure your first cloud server. Next, we'll look at how to access a cloud resource using a domain name and configuring that resource accordingly. 
+With that information, you should be ready to configure and secure your first cloud server. Next, we'll look at how to access a cloud resource using a domain name and configuring that resource accordingly.

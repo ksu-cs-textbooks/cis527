@@ -35,7 +35,7 @@ Once you've purchased your domain name, you'll have a choice of how the DNS conf
 
 However, you may want to use this domain name for a variety of uses. In that case, I highly recommend managing your DNS settings yourself. You can choose to use your registrar's built-in DNS hosting, which is what I'll do in this example. Many cloud providers, such as DigitalOcean, also offer a hosted DNS service that you can use for this feature. In general, I've always kept my domain names and cloud hosting separate, just to add a bit more resiliency in case one provider or the other has a problem.
 
-Finally, whenever you register a domain name, you are legally required to provide contact information, including your name, mailing address, and phone number, for the Whois service, public a service that provides information about all registered domains. In many cases, that would be your own personal information, which would be posted publicly along with the domain name by your registrar. For many individuals, that could create a major privacy and identity theft concern.
+Finally, whenever you register a domain name, you are legally required to provide contact information, including your name, mailing address, and phone number, for the Whois service, a public service that provides information about all registered domains. In many cases, that would be your own personal information, which would be posted publicly along with the domain name by your registrar. For many individuals, that could create a major privacy and identity theft concern.
 
 Thankfully, many domain registrars offer a privacy service that will replace your contact information with their own in the Whois database. In essence, they post their information publicly on your behalf, and then they will send any official communication to you directly. It helps prevent your personal information from being publicly available. In the case of Namecheap, their WhoisGuard service does just that, and as of this writing it is available free of charge for any users who register a domain name through their service. I highly recommend using one of these services to protect your private information when you register a domain name for your own personal use.
 
@@ -71,7 +71,7 @@ sudo mkdir -p /var/www/foo/html
 To make it really simple to see which website is which, I'll simply place a file that folder, giving the name of the site:
 
 ```bash
-sudo echo "foo" > /var/www/foo/index.html
+sudo nano /var/www/foo/html/index.html
 ```
 
 Now, I'll need to configure a virtual host file for that website:

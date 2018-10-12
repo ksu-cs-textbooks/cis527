@@ -3,7 +3,7 @@ type: "reveal"
 hidden: true
 ---
 <section>
-	<h2>CIS 527</h2><br><br><p>Lab 5 - SSL Certificates</p>
+	<h2>CIS 527</h2><br><br><p>Lab 5 - Certificates</p>
 </section>
 <section>
 	<img class="stretch plain" src="/images/ssl_sucuri.png">
