@@ -123,6 +123,10 @@ _You will have to find the appropriate name for each service. --Russ_
 
 ---
 
-### Task 3 - Schedule A Grading Time
+### Task 3 - Upload to Canvas & Contact Instructor
 
-Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed. You will be asked to provide the instructor with your manifest files for grading.
+{{% notice note %}}
+Please add comments to your Puppet Manifest Files describing any Puppet Modules that must be installed prior to applying them.
+{{% /notice %}}
+
+Upload your completed Puppet Manifest Files to Canvas and then contact the instructor for grading. You may continue with the next module once grading has been completed. In general, this lab does not require interactive grading, but you are welcome to request a time if you'd prefer.
