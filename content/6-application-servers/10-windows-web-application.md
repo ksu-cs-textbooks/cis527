@@ -27,7 +27,11 @@ First, I'll need to copy all of these files to the folder I created for this web
 
 Next, I'll need to convert the existing website to an application in IIS Manager. To do that, right-click the Example website in IIS Manager and choose **Add Application**. There, you'll give the application an alias, as well as the physical path to the files for this application. In addition, you'll need to choose the application pool. Since this application is using .NET 4.0, I can just use the "DefaultAppPool" here. When you click **OK** you should see your application appear in the menu to the left.
 
+I'll also need to confirm that the website itself is configured to use the same application pool. You can do so by clicking the website in the list on the left, and then clicking the **Basic Settings** option on the far right.
+
 Once you've created your application, you'll need to change some file permissions. The official guide from JitBit recommends that you change the user identity used by your application pool, and then assign that account the permissions needed. So, to do that, I'll click on the **Application Pools** option on the left side of IIS Manager, and then right-click the **DefaultAppPool** and select **Advanced Settings**. In that window, find the **Identity** option, and change it to use the **NetworkService** built-in account. Click **OK** to save that setting.
+
+Once that is done, I'll fully restart my IIS server to make sure the changes take effect. I can do so by right-clicking the server name in the list on the left, and then choosing **Stop**. I can then right-click it again and choose **Start** to start it again. 
 
 Now, navigate to where you stored the files for .NET Forum, and give the **NetworkService** account full control of the files in the `App_Data` folder. This allows your web application to store files in that folder.
 
@@ -39,4 +43,4 @@ However, you should hopefully have noticed that it no longer redirected you to H
 
 Once you do so, you should test it once again. Hopefully this time it should redirect properly. If you'd like, you can also review the contents of the `web.config` file in the web application's directory to see the additional information added to that file by the URL Rewrite module.
 
-That should do it! You've now configured and deployed your first .NET web application in IIS. This example shows some of the details you may have to deal with when deploying a web application in IIS, but each application is different. In short, you'll always have to read the documentation carefully, but use your own knowledge and experience to adapt the instructions to match your own server's configuration. In addition, don't be afraid to search for additional information on the internet. All of those resources will help you to complete your task. 
+That should do it! You've now configured and deployed your first .NET web application in IIS. This example shows some of the details you may have to deal with when deploying a web application in IIS, but each application is different. In short, you'll always have to read the documentation carefully, but use your own knowledge and experience to adapt the instructions to match your own server's configuration. In addition, don't be afraid to search for additional information on the internet. All of those resources will help you to complete your task.
