@@ -111,7 +111,7 @@ Install OpenLDAP on your Ubuntu VM labelled **SERVER**. Follow the steps and con
   * **Passwords:** Use `cis527_linux` for all passwords
   * You **DO NOT** have to perform the other steps in the guide at this point
 3. Install phpLDAPadmin from https://github.com/breisig/phpLDAPadmin. See the video in this module for detailed instructions on how to install and configure phpLDAPadmin.
-4. Add a User Account to your Active Directory
+4. Add a User Account to your OpenLDAP Directory
   * Follow the instructions in the guide below to create `ou`s for `users`, `groups`, and create an `admin` group as well.
   * Use your own eID for the username, and `cis527_linux` as the password.
 

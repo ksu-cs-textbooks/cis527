@@ -53,7 +53,7 @@ Even though we aren't using that version of phpLDAPadmin, it helpfully installs 
 
 ```bash
 sudo a2disconf phpldapadmin
-sudo systemctl reload apache
+sudo systemctl reload apache2
 ```
 
 Next, we'll get a copy of the updated version of phpLDAPadmin using git:
