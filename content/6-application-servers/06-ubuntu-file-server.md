@@ -162,7 +162,7 @@ Next, look for the line:
 and, right below that line, you'll add a line to define the shared folder you'd like to mount automatically. For my example setup, I would use the following definition:
 
 ```xml
-<volume fstype="cifs" server="192.168.40.41" path="homes" mountpoint="/home/$(USER)/server" />
+<volume fstype="cifs" server="192.168.40.41" path="homes" mountpoint="/home/%(USER)/server" />
 ```
 
 You'll have to adjust the options in that line to match your particular environment. Once you've added your information, save and close the file.
@@ -189,4 +189,4 @@ If it doesn't work, you'll want to review any error messages in the system log, 
 cat /var/log/syslog | grep mount
 ```
 
-For the lab assignment, you'll perform these steps for your environment in much the same way. It can be very tricky to get this working the first time, so be very careful as you edit these configuration files. If you aren't able to get it working, please post in the course discussion forums on Canvas to get assistance. 
+For the lab assignment, you'll perform these steps for your environment in much the same way. It can be very tricky to get this working the first time, so be very careful as you edit these configuration files. If you aren't able to get it working, please post in the course discussion forums on Canvas to get assistance.
