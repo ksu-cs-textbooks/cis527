@@ -4,7 +4,7 @@ weight: 10
 pre: "2. "
 ---
 
-{{< youtube  >}}
+{{< youtube Tzo7N-boVJ4 >}}
 
 #### Resources
 
@@ -80,4 +80,4 @@ For me, I like to think of the cloud as just a point of view. From the consumer'
 
 What about you? If you have any thoughts or comments on how you'd define the cloud, I encourage you to post them in the course discussion forums.
 
-In the next videos, we'll dive into how to set up and configure your first cloud resources, using DigitalOcean as our Infrastructure as a Service provider. 
+In the next videos, we'll dive into how to set up and configure your first cloud resources, using DigitalOcean as our Infrastructure as a Service provider.
