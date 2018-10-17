@@ -23,7 +23,7 @@ pre: "2. "
 
 #### Video Transcript
 
-One of the hottest new terms in system administration and software development today is DevOps. DevOps is a shortened form of "Development Operations," and encompasses many different ideas and techniques in a single term. I like to think of it as the application of the Agile software development process to system engineering. Just as software developers are focusing more frequent releases and flexible processes, system administrators have to react to quickly changing needs and environments. In addition, DevOps engineers are responsible for automating much of the software development lifecycle, allowing developers to spend more time coding and less time running builds and tests manually. Finally, to accommodate many of these changes, DevOps engineers have increasingly adapted the concept of "infrastructure as code," allowing them to define their system configurations and more using tools such as Puppet and Ansible in lieu of doing it manually. As we saw in Module 2, that approach can be quite powerful.
+One of the hottest new terms in system administration and software development today is DevOps. DevOps is a shortened form of "Development Operations," and encompasses many different ideas and techniques in a single term. I like to think of it as the application of the Agile software development process to system engineering. Just as software developers are focusing on more frequent releases and flexible processes, system administrators have to react to quickly changing needs and environments. In addition, DevOps engineers are responsible for automating much of the software development lifecycle, allowing developers to spend more time coding and less time running builds and tests manually. Finally, to accommodate many of these changes, DevOps engineers have increasingly adapted the concept of "infrastructure as code," allowing them to define their system configurations and more using tools such as Puppet and Ansible in lieu of doing it manually. As we saw in Module 2, that approach can be quite powerful.
 
 Another way to think of DevOps is the intersection of software development, quality assurance, and operations management. A DevOps engineer would work fluidly with all three of these areas, helping to automate their processes and integrate them tightly together.
 
@@ -49,7 +49,7 @@ First, you'll need to create a project on the K-State CS GitLab server, and push
 
 You will also need to either configure SSH keys for your GitLab repository, or configure the repository to allow public access.
 
-Next, we'll need to install configure the `webhook` project by Adnan Hajdarević on GitHub. It is a simple server that allows you to listen for those incoming webhooks from GitHub and GitLab, and then run a script when they are received. Of course, in practice, many times you'll be responsible for writing this particular piece yourself in your own environment, but this is a good example of what it might look like.
+Next, we'll need to install and configure the `webhook` server on our DigitalOcean droplet. It is a simple server that allows you to listen for those incoming webhooks from GitHub and GitLab, and then run a script when they are received. Of course, in practice, many times you'll be responsible for writing this particular piece yourself in your own environment, but this is a good example of what it might look like.
 
 On my Ubuntu cloud server, I can install `webhook` using APT:
 
@@ -97,13 +97,19 @@ exit 0
 
 This script is a simple script that uses the `git pull` command to get the latest updates from Git. I could also place additional commands here if needed for this project.
 
+Once I create the script, I'll need to modify the permissions to make sure it is executable by all users on the system:
+
+```bash
+chmod a+x bin/cis527online.sh
+```
+
 Once everything is configured, I can restart the `webhook` server using this command:
 
 ```bash
 sudo systemctl restart webhook
 ```
 
-Then, if everything is working correctly, I can test it using my cloud server's external IP address on port 9000, with the correct path for my hook. For the one I created above, I would visit `http://<ip_address>:9000/hooks/cis527online`. You should see the response `Hook rules were not satisfied` displayed. If so, your `webhook` server is up and running.
+Then, if everything is working correctly, I can test it using my cloud server's external IP address on port 9000, with the correct path for my hook. For the one I created above, I would visit `http://<ip_address>:9000/hooks/cis527online`. You should see the response `Hook rules were not satisfied` displayed. If so, your `webhook` server is up and running. Of course, you may need to modify your firewall configuration to allow that port. 
 
 Lastly, if my repository requires SSH keys, I'll need to copy the public and private keys into the root user's `.ssh` folder, which can be found at `/root/.ssh/`. Since `webhook` runs as a service, the Git commands will be run as that user, and it'll need access to that key to log in to the repo. There are more advanced ways of doing this, but this is one way that works.
 
@@ -113,4 +119,4 @@ Once it is created, you'll see a **Test** button below the list of existing webh
 
 However, the real test is to make a change to the repository, then commit and push that change. Once you do, it should automatically cause the webhook to fire, and within a few seconds you should see the change on your server. I encourage you to test this process for yourself to make sure it is working correctly.
 
-There you go! That should give you a very basic idea of some of the tools and techniques available in the DevOps world. It is a quickly growing field, and it is very useful for both developers and system administrators to understand these concepts. If you are interested in learning more, I encourage you to read some of the materials linked in the resource section below this video, or explore some of the larger projects hosted on GitHub to see what they are doing to automate their processes. 
+There you go! That should give you a very basic idea of some of the tools and techniques available in the DevOps world. It is a quickly growing field, and it is very useful for both developers and system administrators to understand these concepts. If you are interested in learning more, I encourage you to read some of the materials linked in the resource section below this video, or explore some of the larger projects hosted on GitHub to see what they are doing to automate their processes.
