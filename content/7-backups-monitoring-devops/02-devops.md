@@ -65,7 +65,7 @@ Next, I'll need to create a file at `/etc/webhook.conf` and add the content need
   {
     "id": "cis527online",
     "execute-command": "/home/cis527/bin/cis527online.sh",
-    "command-working-directory": "/var/www/html/",
+    "command-working-directory": "/var/www/bar/html/",
     "response-message": "Executing checkout script",
     "trigger-rule":
     {
@@ -109,9 +109,16 @@ Once everything is configured, I can restart the `webhook` server using this com
 sudo systemctl restart webhook
 ```
 
-Then, if everything is working correctly, I can test it using my cloud server's external IP address on port 9000, with the correct path for my hook. For the one I created above, I would visit `http://<ip_address>:9000/hooks/cis527online`. You should see the response `Hook rules were not satisfied` displayed. If so, your `webhook` server is up and running. Of course, you may need to modify your firewall configuration to allow that port. 
+Then, if everything is working correctly, I can test it using my cloud server's external IP address on port 9000, with the correct path for my hook. For the one I created above, I would visit `http://<ip_address>:9000/hooks/cis527online`. You should see the response `Hook rules were not satisfied` displayed. If so, your `webhook` server is up and running. Of course, you may need to modify your firewall configuration to allow that port.
 
 Lastly, if my repository requires SSH keys, I'll need to copy the public and private keys into the root user's `.ssh` folder, which can be found at `/root/.ssh/`. Since `webhook` runs as a service, the Git commands will be run as that user, and it'll need access to that key to log in to the repo. There are more advanced ways of doing this, but this is one way that works.
+
+I'll also need to download a copy of the files from my Git repository onto this system in the folder I specified in `webhook.conf`
+
+```bash
+sudo rm /var/www/bar/html/*
+sudo git checkout <repository_url> /var/www/bar/html
+```
 
 Now, we can go back to the K-State CS GitLab server and configure our webhook. After you've opened the project, navigate to **Settings** and then **Integrations** in the menu on the left. There, you can enter the URL for your webhook, which we tested above. You'll also need to provide the token you set in the `webhook.conf` file. Under the **Trigger** heading, I'm going to checkmark the "Push events" option so that all push events to the server will trigger this webhook. In addition, I'll uncheck the option for "Enable SSL verification" since we have not configured an SSL certificate for our `webhook` server. Finally, I'll click **Add webhook** to create it.
 
