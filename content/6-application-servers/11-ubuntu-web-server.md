@@ -27,7 +27,7 @@ sudo apt update
 sudo apt install php libapache2-mod-php
 ```
 
-That will install and configure PHP on your system. To test it, you can create a new file in the web directory of one of your virtual hosts named `index.php` and add the following content:
+That will install and configure PHP on your system. To test it, you can create a new file in the web directory of one of your virtual hosts named `test.php` and add the following content:
 
 ```html
 <?php phpinfo(); ?>
@@ -60,7 +60,7 @@ It should take you to a new prompt that begins with `mysql>`. Once there, we sho
 
 ```mysql
 CREATE USER 'admin'@'localhost' IDENTIFIED BY '<password>';
-GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
 ```
 
 where `<password>` is the password you'd like to use for that account. Once that is done, you can enter:

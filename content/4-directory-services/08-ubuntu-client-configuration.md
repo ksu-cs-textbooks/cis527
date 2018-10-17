@@ -81,3 +81,5 @@ sudo visudo
 If we look through that file, we'll find a line that says members of the `admin` group may gain root privileges. In fact, that's exactly what happened! Just because we chose to name our group `admin` on the LDAP server, our users would automatically gain `sudo` access on any system they log into. The same would happen for a group named `sudo` as well. So, it is very important to make sure your groups on your LDAP server use unique names, otherwise you may inadvertently create a major security hole in your systems.
 
 To test the graphical login, you'll need to fully reboot your computer. Once that is done, you can click the "Not listed?" option at the bottom of the list of users, then enter the credentials for your LDAP user to log in. If everything is configured correctly, it should let you log in directly to the system.
+
+You have now successfully configured your system to allow Ubuntu to use LDAP servers for user accounts. This should be enough information to help you complete that section of Lab 4. As always, if you have any questions, feel free to post in the course discussion forums on Canvas. Good luck!
