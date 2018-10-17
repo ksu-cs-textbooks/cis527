@@ -1,5 +1,5 @@
 ---
-title: "Monitoring Overview"
+title: "Monitoring"
 weight: 25
 pre: "5. "
 ---
@@ -8,7 +8,7 @@ pre: "5. "
 
 #### Resources
 
-* **[Slides]({{< relref "/7-backups-monitoring-devops/05-monitoring-overview-slides.md" >}})**
+* **[Slides]({{< relref "/7-backups-monitoring-devops/05-monitoring-slides.md" >}})**
 * [Best System Monitoring Tools for Windows & Linux (Free & Paid)](https://www.comparitech.com/net-admin/system-monitoring-tools/) from Comparitech
 * [Beocat System Monitor](http://ganglia.beocat.ksu.edu)
 

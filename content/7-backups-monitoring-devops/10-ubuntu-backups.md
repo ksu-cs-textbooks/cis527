@@ -30,4 +30,6 @@ If you are running specific software on your system, such as MySQL for databases
 
 There are also some tools available for Ubuntu to help create backups similar to the System Restore feature of Windows. One such tool is TimeShift. I've linked to a description of the tool in the resources section below the video if you'd like to know more.
 
-Finally, as with Windows, there are a large number of tools, both paid and free, available to help with creating, managing, and restoring backups on Ubuntu and many other Linux distributions. As you work on building a backup strategy for an organization, you'll definitely want to review some of those tools to see if they adequately meet your needs. 
+Finally, as with Windows, there are a large number of tools, both paid and free, available to help with creating, managing, and restoring backups on Ubuntu and many other Linux distributions. As you work on building a backup strategy for an organization, you'll definitely want to review some of those tools to see if they adequately meet your needs.
+
+That concludes Module 7! As you continue to work on the lab assignment, feel free to post any questions you have in the course discussion forum on Canvas. Good luck!

@@ -27,7 +27,7 @@ The Windows Performance Monitor, which can be found by searching for it via the 
 
 Finally, the Windows Reliability Monitor, found on the Control Panel as well as via the Start Menu, provides a combined look at a variety of data sources from your system. Each day, it rates your system's reliability on a scale of 1 to 10, and gives you a quick look at pertinent log entries related to the most recent issues on your system. This is a quick way to correlate related log entries together and possibly determine the source of any system reliability issues.
 
-The Sysinternals Suite of tools available from Microsoft also includes several useful tools for diagnosing and repairing system issues. While I encourage you to become familiar with the entire suite of tools, there are three tools in particular I'd like to review here.
+The Sysinternals Suite of tools available from Microsoft also includes several useful tools for diagnosing and repairing system issues. While I encourage you to become familiar with the entire suite of tools, there are four tools in particular I'd like to review here.
 
 First is Process Explorer. It displays information about running processes on your system, much like the Task Manager. However, it provides much more information about each process, including the threads, TCP ports, and more. Also, Process Explorer includes an option to replace Task Manager with itself, giving you quick and easy access to this tool.
 
