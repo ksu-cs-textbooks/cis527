@@ -21,7 +21,7 @@ Here is the information you'll need to know to get your lab graded.
   1. Windows 10 client on Active Directory
   1. OpenLDAP OUs, groups & users
   1. Ubuntu client authenticate via LDAP
-  1. Iteroperability - Ubuntu client on Active Directory, or Windows client on Samba domain
+  1. Interoperability - Ubuntu client on Active Directory, or Windows client on Samba domain
   1. LDAPSearch screenshots (2)
 1. **Finality** <br> Once you begin the grading process, no changes may be made to your system to fix any errors encountered. The grade you receive will reflect the state of your VMs at the start of the grading process. This is to ensure that grades are fairly determined and that no special consideration is given.
 

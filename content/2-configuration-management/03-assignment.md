@@ -106,12 +106,12 @@ Create a Puppet Manifest File for Windows 10 that defines the following configur
   - In each subfolder of `C:\files`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
   - **Don't remove the SYSTEM account or the built-in Administrator account's access from any of these files.** Usually this is as simple as not modifying their permissions from the defaults.
   - See [this screenshot](/images/lab1-image1.png) for what these permissions may look like in PowerShell.
-* **Software** - Install the latest version of the following software. The installation should be done SILENTLY without any user interaction required.
+* **Software** - Install the latest version of the following software. The installation should be done SILENTLY without any user interaction required. In addition, Puppet should be able to detect if they are already installed, and not attempt to install them again.
   - Mozilla Firefox
   - Mozilla Thunderbird
   - Notepad++
 {{% notice note %}}
-_You will need to research the appropriate options to give to the installer through Puppet for them to install silently. For this lab, you should not use any Windows package managers such as Chocolatey or Ninite. --Russ_
+_You will need to research the appropriate options to give to the installer through Puppet for them to install silently. For this lab, you should not use any Windows package managers such as Chocolatey or Ninite. Also, you'll need to make sure your resource names exactly match the names of the packages after they are installed, or Puppet will attempt to reinstall them each time the manifest file is applied. --Russ_
 {{% /notice %}}
 * **Services** - Ensure the following services are running:
   - DHCP Client
