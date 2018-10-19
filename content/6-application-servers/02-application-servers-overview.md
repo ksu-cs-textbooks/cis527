@@ -4,7 +4,7 @@ weight: 10
 pre: "2. "
 ---
 
-{{< youtube  >}}
+{{< youtube DKCaG4ZUs3Y >}}
 
 #### Resources
 
@@ -32,4 +32,4 @@ Lastly, you'll need to extensively test the software for usability with your use
 
 In addition, you may also want to look at how easy it is to deploy updates to the system. Does it require a large amount of downtime, or is it relatively seamless? You could also look at features such as logging and accountability. Are you able to tell which users are accessing the system, and what they are doing? It could help you diagnose problems, but also detect when users are acting maliciously. In many cases, security issues are the result of insider threats, so having a good idea of what your users are doing is very important. Finally, you should always evaluate the accessibility of the software. Does it work well with assistive devices such as a screen reader or alternative input devices? Would colorblind users have issues interacting with the software? Sometimes this can be as simple as having red and green buttons or icons with no text on them - a colorblind user would not be able to tell the difference between them.
 
-Of course, there are many, many more things you should consider when choosing software for any organization. My hope is that this will give you at least some idea of what that process looks like. The rest of this module will deal primarily with how to configure and work with a variety of application servers, including file servers, web servers, and database servers. 
+Of course, there are many, many more things you should consider when choosing software for any organization. My hope is that this will give you at least some idea of what that process looks like. The rest of this module will deal primarily with how to configure and work with a variety of application servers, including file servers, web servers, and database servers.

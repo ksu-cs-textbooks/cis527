@@ -4,7 +4,7 @@ weight: 25
 pre: "5. "
 ---
 
-{{< youtube  >}}
+{{< youtube kFagxkFgkkY >}}
 
 #### Resources
 
@@ -43,4 +43,4 @@ In the Group Policy editor, there is an option to create drive maps as part of a
 
 Once I've created and enforced that Group Policy on the domain, I can switch back to the client and see if it works. One way to do so is to simply reboot the client and then log in again. When it reboots, it should receive the updated Group Policy Objects for the domain. However, if you'd like to test it immediately, you can open a Command Prompt or PowerShell window, and use the command `gpupdate /force` to force a Group Policy update from the Domain Controller.
 
-Once you've updated the Group Policy, you should now see your newly mapped network drive in Windows Explorer. That's all it takes! From there, you should be able to complete the Windows File Server portion of Lab 6. Make sure you pay special attention to the permissions for each shared folder. You may also want to review the information from Module 5 regarding Windows Group Policy for a quick refresher. 
+Once you've updated the Group Policy, you should now see your newly mapped network drive in Windows Explorer. That's all it takes! From there, you should be able to complete the Windows File Server portion of Lab 6. Make sure you pay special attention to the permissions for each shared folder. You may also want to review the information from Module 5 regarding Windows Group Policy for a quick refresher.

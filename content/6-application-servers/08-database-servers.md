@@ -4,7 +4,7 @@ weight: 40
 pre: "8. "
 ---
 
-{{< youtube  >}}
+{{< youtube ZSkKniJcBl8 >}}
 
 #### Resources
 
@@ -50,4 +50,4 @@ Encrypting the data at rest, unfortunately, does not protect the data if a malic
 
 Lastly, as a system administrator, you may want to keep an eye out for data being copied from your database server in an unexpected way. Typically, when a malicious user gains access to a database server, the first thing she or he will do is try to get a copy of that data on their own systems. This is called "exfiltration," and is a major concern for enterprises. As part of your security and monitoring of your database server, you may want to watch for unexpected network connections leading outside of your organization, especially if they are coupled with an unusually large amount of network traffic. It could be a sign that someone is trying to get a copy of your databases.
 
-As I mentioned earlier, this is just a brief introduction to working with database servers. You'll get a bit of experience with MySQL in this lab assignment, but if you are interested in learning more, I encourage you to take courses in database systems and seek additional resources online. Database administrators are always in demand, and it is a great career path to pursue. 
+As I mentioned earlier, this is just a brief introduction to working with database servers. You'll get a bit of experience with MySQL in this lab assignment, but if you are interested in learning more, I encourage you to take courses in database systems and seek additional resources online. Database administrators are always in demand, and it is a great career path to pursue.

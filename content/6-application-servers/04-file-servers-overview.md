@@ -4,7 +4,7 @@ weight: 20
 pre: "4. "
 ---
 
-{{< youtube  >}}
+{{< youtube BCYgjyywcFU >}}
 
 #### Resources
 
@@ -53,4 +53,4 @@ This graphic shows the major difference between a NAS and a SAN. Network attache
 
 Lastly, I'd like to introduce one major trend in storage, which is the concept of storage virtualization. Just like with hardware virtualization, it is possible to add a virtual layer between the physical storage devices and the systems using those devices. In that way, you could seamlessly migrate storage across multiple physical systems without interrupting access to the data. This diagram does a great job of showing how you could use different disks across a variety of hardware setups to create virtual datastores for your data. However, storage virtualization does come with a downside, being that the virtualization layer could represent a single point of failure in your infrastructure. So, you may have to carefully analyze the risks that such as setup would bring compared to the added flexibility it provides.
 
-That should give you a pretty good overview of some common terms and concepts you'll come across when dealing with file servers. The next two videos will discuss some of the implementation steps for setting up your own file server in both Windows and Samba on Ubuntu. 
+That should give you a pretty good overview of some common terms and concepts you'll come across when dealing with file servers. The next two videos will discuss some of the implementation steps for setting up your own file server in both Windows and Samba on Ubuntu.
