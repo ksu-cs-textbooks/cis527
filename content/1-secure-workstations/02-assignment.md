@@ -90,7 +90,7 @@ _Read the whole task before you start! You have been warned. --Russ_
 * Create the folder `C:\files`. It should be owned by the cis527 account, but make sure all other users can read and write to that folder.
 * Within `C:\files`, create a folder for each user created during task 2 except for cis527, with the folder name matching the user's name.
 * Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
-* Create a group and set permissions on that group to allow both cis527 and AdminUser to have full access to each folder created in `C:\files`.
+* - Create a group containing cis527 and AdminUser, and set permissions on `C:\files` for that group to have full access to each folder created in `C:\files`.
 {{% notice tip %}}
 When you create a group and add a user to that group, it does not take effect until you reboot the computer.
 {{% /notice %}}
