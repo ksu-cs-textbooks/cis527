@@ -38,7 +38,7 @@ By default, any files not present in the top level directories will be read from
 
 The biggest addition is the "iframeable" type. For each content page (but not the chapter index pages nor the homepage), a second version of the page will be created at the same URL with a filename `embed.html` instead of `index.html`. This version of the file does not have any of the navigation elements on it, and it is perfect for embedding in an IFrame for use in an LMS.
 
-Also added is the "teleprompter" type. For each content page (but not the chapter index pages nor the homepage), a third version of the page will be created at the same URL with a filename `tele.html` instead of `index.html`. This version of the file uses a different CSS file, optimized for use on a teleprompter. 
+Also added is the "teleprompter" type. For each content page (but not the chapter index pages nor the homepage), a third version of the page will be created at the same URL with a filename `tele.html` instead of `index.html`. This version of the file uses a different CSS file, optimized for use on a teleprompter.
 
 ## Questions?
 
