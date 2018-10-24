@@ -82,7 +82,7 @@ Configure your SSH servers and SSH keys as described here:
 2. Add the public key from your computer to the cis527 account on **FRONTEND**. This should allow you to log in with that key.
 3. Add the [grading SSH key](/files/id_rsa_grading.pub) to the cis527 account on **FRONTEND** as well.
 4. On the cis527 account on **FRONTEND**, generate a set of SSH keys with no passphrase.
-5. Add the public key from the csi527 account on **FRONTEND** to the cis527 account on **BACKEND**. This should allow you to log in with that key
+5. Add the public key from the cis527 account on **FRONTEND** to the cis527 account on **BACKEND**. This should allow you to log in with that key
 6. On the cis527 account on **FRONTEND**, create an SSH config file such that a user could simply type `ssh backend` to connect to the **BACKEND** droplet.
 {{% notice tip %}}
 Make sure you use the private networking IP address for **BACKEND** in your config file. Otherwise, it will be blocked by the firewall.
