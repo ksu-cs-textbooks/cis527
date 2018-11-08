@@ -109,7 +109,7 @@ Install OpenLDAP on your Ubuntu VM labelled **SERVER**. Follow the steps and con
   * **Domain Name:** cis527\<your eID\>.local (example: cis527russfeld.local)
   * **Base DN:** `dc=cis527\<your eID\>,dc=local` (example: `dc=cis527russfeld,dc=local`)
   * **Passwords:** Use `cis527_linux` for all passwords
-  * You **DO NOT** have to perform the other steps in the guide at this point
+  * You **DO NOT** have to perform the other steps in the guide to configure TLS at this point
 3. Install phpLDAPadmin from https://github.com/breisig/phpLDAPadmin. See the video in this module for detailed instructions on how to install and configure phpLDAPadmin.
 4. Add a User Account to your OpenLDAP Directory
   * Follow the instructions in the guide below to create `ou`s for `users`, `groups`, and create an `admin` group as well.

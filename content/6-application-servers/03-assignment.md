@@ -116,7 +116,7 @@ _To be honest, this last part can be pretty tricky. I recommend following the in
 
 For this task, you will install and configure a .NET web application for IIS on your Windows Server 2016 VM. First, choose an application to install from the following list:
 
-* [BlogEngine.NET](https://blogengine.io/)
+* [BlogEngine.NET](https://blogengine.io/docs/)
 
 If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages. Any approved application can be added to this list for you to use. _You are not allowed to use JitBit's .NET Forum, as that was demonstrated in the video in this module._
 
