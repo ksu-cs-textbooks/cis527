@@ -17,9 +17,7 @@
     <link href="{{"css/auto-complete.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
     <link href="{{"css/theme.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
     <link href="{{"css/hugo-theme.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
-    {{with .Site.Params.themeVariant}}
-      <link href="{{(printf "css/theme-%s.css" .) | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
-    {{end}}
+    <link href="{{ "css/theme-dark.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
 
     <script src="{{"js/jquery-2.x.min.js"| relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}"></script>
 
@@ -44,9 +42,9 @@
               <div>
                 <div id="top-bar">
                   <div id="top-github-link">
-                    <a class="github-link" title='Dark' href="dark.html" target="blank">
-                      <i class="fas fa-moon"></i>
-                      <span id="top-github-link-text">Dark</span>
+                    <a class="github-link" title='Light' href="./" target="blank">
+                      <i class="fas fa-sun"></i>
+                      <span id="top-github-link-text">Light</span>
                     </a>
                     <a class="github-link" title='Tele' href="tele.html" target="blank">
                       <i class="fas fa-tv"></i>
