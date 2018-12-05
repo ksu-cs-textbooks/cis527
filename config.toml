@@ -7,9 +7,9 @@ theme = "hugo-theme-learn"
 
 # For search functionality
 [outputs]
-home = [ "HTML", "RSS", "JSON", "Dark"]
-page = [ "HTML", "Iframeable", "Teleprompter", "Dark"]
-section = [ "HTML", "Iframeable", "Teleprompter", "Dark"]
+home = [ "HTML", "RSS", "JSON"]
+page = [ "HTML", "Iframeable", "Teleprompter"]
+section = [ "HTML", "Iframeable", "Teleprompter"]
 
 [params]
   editURL = "https://gitlab.cs.ksu.edu/russfeld/cis527online/tree/master/content/"
@@ -33,12 +33,6 @@ section = [ "HTML", "Iframeable", "Teleprompter", "Dark"]
   [outputFormats.Teleprompter]
     name = "Teleprompter"
     baseName = "tele"
-    mediaType = "text/html"
-    isPlainText = false
-    isHtml = true
-  [outputFormats.Dark]
-    name = "Dark"
-    baseName = "dark"
     mediaType = "text/html"
     isPlainText = false
     isHtml = true
