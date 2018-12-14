@@ -119,7 +119,7 @@ For this task, you will install and configure a .NET web application for IIS on 
 * [BlogEngine.NET](https://blogengine.io/docs/)
   * **NOTE**: If you choose BlogEngine.NET, make sure you read their site carefully. You don't have to sign up for anything on their site to download the software itself, but the download link tends to be hidden in favor of their hosted options. As a sysadmin, you should definitely get into the habit of carefully reading and considering what you find online before you click!
 
-If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages. Any approved application can be added to this list for you to use. _You are not allowed to use JitBit's .NET Forum, as that was demonstrated in the video in this module._
+If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages. Any approved application can be added to this list for you to use. **_You are not allowed to use JitBit's .NET Forum, as that was demonstrated in the video in this module._**
 
 Once you have selected your application, perform the following configuration steps:
 
@@ -155,7 +155,7 @@ For this step, you will install and configure a web application running on Apach
 * [Wordpress](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-18-04)
 * [Booked](https://www.bookedscheduler.com/)
 
-If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages, and must support using a MySQL database on a separate host from the web server. In addition, the application must be installed manually - using pre-built images or Apt packages is not allowed here. Any approved application can be added to this list for you to use. _You are not allowed to use phpBB, as that was demonstrated in the video in this module._
+If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages, and must support using a MySQL database on a separate host from the web server. In addition, the application must be installed manually - using pre-built images or Apt packages is not allowed here. Any approved application can be added to this list for you to use. **_You are not allowed to use phpBB, as that was demonstrated in the video in this module._**
 
 Once you have selected your application, perform the following configuration steps:
 
