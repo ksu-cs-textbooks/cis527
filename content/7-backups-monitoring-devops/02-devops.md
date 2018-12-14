@@ -10,6 +10,7 @@ pre: "2. "
 
 * **[Slides]({{< relref "/7-backups-monitoring-devops/02-devops-slides.md" >}})**
 * **[Extras - Git]({{< relref "/X-extras/07-git" >}})**
+* **[CS GitLab](https://gitlab.cs.ksu.edu)**
 * [DevOps](https://en.wikipedia.org/wiki/DevOps) on Wikipedia
 * [Infrastructure as Code](https://en.wikipedia.org/wiki/Infrastructure_as_Code) on Wikipedia
 * [What is DevOps?](https://aws.amazon.com/devops/what-is-devops/) from Amazon Web Services
