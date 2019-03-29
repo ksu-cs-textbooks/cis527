@@ -9,13 +9,13 @@ hidden: true
 	<h3>Russell Feldhausen</h3>
 	<p>
 		(785) 292-3121 (Call/Text)<br>
-		2166 Engineering Hall<br>
+		2184 Engineering Hall<br>
 		<i>(working remotely)</i><br>
 		<br>
 		<b>russfeld AT ksu DOT edu</b><br>
 		https://russfeld.me  -  @russfeld<br>
 		<br>
-		<i>Email or Rocket Chat preferred</i>
+		<i>Piazza Preferred</i>
 	</p>
 </section>
 <section>
