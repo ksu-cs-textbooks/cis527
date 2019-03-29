@@ -37,7 +37,7 @@ First, you'll need to create and submit a proposal for your project. Your propos
 **Submit your 1 page proposal via K-State Canvas for approval**. Once it is approved, you may start working on the project itself. Make sure you have appropriately scaled your proposal to the amount of work below; if the proposal is too simple or too complex it may be difficult to complete everything listed below.
 
 {{% notice warning %}}
-Do not wait until the last minute to submit your proposal! To make that point clear, the proposal is due no later than **Wednesday, August 7th**, giving you at least one week to complete the project.
+Do not wait until the last minute to submit your proposal! To make that point clear, the proposal is due no later than **Friday, August 2nd**, giving you at least one week to complete the project.
 {{% /notice %}}
 
 ---

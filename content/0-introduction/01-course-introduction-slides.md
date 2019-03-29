@@ -30,7 +30,7 @@ hidden: true
 		<li>Gated - Must Complete in Order</li>
 		<li>Go at Your Own Pace</li>
 		<li>Interactive Lab Grading</li>
-		<li>Complete by August 14, 2019</li>
+		<li>Complete by August 9, 2019</li>
 	</ul>
 </section>
 <section>
