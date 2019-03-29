@@ -10,12 +10,12 @@ pre: "5. "
 * **Phone:** (785) 292-3121 (Call/Text)
 * **Website:** https://russfeld.me
 * **Virtual Office Hours:** By appointment via Zoom
-* **Instant Messaging:** #cis527 on ksucis.slack.com
+* **Instant Messaging:** #cis527 on https://chat.cs.ksu.edu
 
 #### Preferred Methods of Communication:
 
 * **Email:** I prefer students contact me via email for most course questions as it allows me to provide a clear and detailed response, as well as easily store and record communication for reference later.
-* **Slack:** Quick questions via Slack are welcomed, but understand that I may ask for a follow-up email if I cannot answer the question briefly. I will try to respond quickly if I am available, but messages sent while I am away may be missed.
+* **Slack:** Quick questions via Rocket Chat are welcomed, but understand that I may ask for a follow-up email if I cannot answer the question briefly. I will try to respond quickly if I am available, but messages sent while I am away may be missed.
 * **Phone/Text:** _Emergencies only!_ I will do my best to respond as quickly as I am able.
 
 ### Prerequisites
