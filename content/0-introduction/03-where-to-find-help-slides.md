@@ -11,7 +11,6 @@ hidden: true
     <li>K-State IT Helpdesk - helpdesk@ksu.edu</li>
     <li>K-State Canvas Help</li>
     <li>Instructure Canvas Guides</li>
-    <li>K-State Mediasite Guides</li>
     <li>Email Instructor (Last Resort)</li>
   </ul>
 </section>
@@ -19,7 +18,7 @@ hidden: true
   <h3>Issues Completing Labs</h3>
   <ul>
     <li>Course Resources</li>
-    <li>Course Discussion Forums</li>
+    <li>Piazza</li>
     <li><img class="plain" src="/images/google_wiki.png" style="height: 1.5em; vertical-align: middle; display: inline-block;"> It!</li>
     <li>Email Instructor (Last Resort)</li>
   </ul>
@@ -27,7 +26,7 @@ hidden: true
 <section>
   <h3>Grading, Administrative & Interpersonal Issues</h3>
   <ul>
-    <li>Email Instructor (If Applicable)</li>
+    <li>PM Instructor on Piazza</li>
     <li>Academic Advisor</li>
     <li>College/Dept. Academic Staff</li>
     <li>K-State Office of Student Life</li>
@@ -37,7 +36,7 @@ hidden: true
 <section>
   <h3>Errors, Omissions & Suggestions</h3>
   <ul>
-    <li>Email Instructor (First)</li>
+    <li>PM Instructor on Piazza</li>
     <li>Extra Credit Available!</li>
   </ul>
 </section>
@@ -46,8 +45,8 @@ hidden: true
   <ul>
     <li>Canvas - helpdesk@ksu.edu</li>
     <li>Labs - Canvas Modules & Discussions</li>
-    <li>Grading - Email Instructor</li>
-    <li>Other - Email Instructor or Advisor</li>
-    <li>Errors - Email Instructor</li>
+    <li>Grading - PM Instructor</li>
+    <li>Other - PM Instructor or Advisor</li>
+    <li>Errors - PM Instructor</li>
   </ul>
 </section>

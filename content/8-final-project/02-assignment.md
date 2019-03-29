@@ -37,7 +37,7 @@ First, you'll need to create and submit a proposal for your project. Your propos
 **Submit your 1 page proposal via K-State Canvas for approval**. Once it is approved, you may start working on the project itself. Make sure you have appropriately scaled your proposal to the amount of work below; if the proposal is too simple or too complex it may be difficult to complete everything listed below.
 
 {{% notice warning %}}
-Do not wait until the last minute to submit your proposal! To make that point clear, the proposal is due no later than **Friday, December 7th**, giving you at least finals week to complete the project.
+Do not wait until the last minute to submit your proposal! To make that point clear, the proposal is due no later than **Wednesday, August 7th**, giving you at least one week to complete the project.
 {{% /notice %}}
 
 ---
@@ -73,7 +73,7 @@ Once you are ready, you will present your proposal and analysis to your audience
 Finally, submit your writeup via Canvas and email the instructor to schedule a time for your presentation.
 
 {{% notice warning %}}
-Do not wait until the last minute! If you try to schedule a presentation on the last day of finals week, it may already be too late to get everything done in time!
+Do not wait until the last minute! If you try to schedule a presentation on the last day of the course, it may already be too late to get everything done in time!
 {{% /notice %}}
 
 As with any assignment in this course, if you have any questions at all please post in the course discussion forums on Canvas.

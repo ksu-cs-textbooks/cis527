@@ -75,7 +75,7 @@ Letter grades will be assigned following the standard scale:
 
 ### Late Work
 
-Since this course is online and self-guided, there is no explicit late work policy. Students are expected to follow the suggested course deadlines if possible, and are encouraged to work at their own pace. All course work must be submitted, and all interactively graded materials must be graded with the instructor, on or before **December 14th, 2018**. No late work will be accepted after 11:59 PM on December 14th, 2018.
+Since this course is online and self-guided, there is no explicit late work policy. Students are expected to follow the suggested course deadlines if possible, and are encouraged to work at their own pace. All course work must be submitted, and all interactively graded materials must be graded with the instructor, on or before **August 14, 2019**. No late work will be accepted after 11:59 PM on August 14, 2019.
 
 If you have extenuating circumstances, please discuss them with the instructor as soon as they arise so other arrangements can be made. If you find that you are getting behind in the class, you are encouraged to speak to the instructor for options to make up missed work.
 
@@ -89,7 +89,7 @@ We will also use several online resources as needed.
 
 This book contains useful information for anyone thinking about pursuing a career in system administration or information technology in general:
 
-**“The Practice of System and Network Administration”** by Thomas Limoncelli, Christina Hogan and Strata Chalup.  
+**"The Practice of System and Network Administration"** by Thomas Limoncelli, Christina Hogan and Strata Chalup.  
 ISBN 0321492668 - eBook Editions Available - [Amazon Link](http://www.amazon.com/dp/0321492668)
 
 ### Subject to Change

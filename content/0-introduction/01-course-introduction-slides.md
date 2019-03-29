@@ -15,7 +15,7 @@ hidden: true
 		<b>russfeld AT ksu DOT edu</b><br>
 		https://russfeld.me  -  @russfeld<br>
 		<br>
-		<i>Email or Slack preferred</i>
+		<i>Email or Rocket Chat preferred</i>
 	</p>
 </section>
 <section>
@@ -30,7 +30,7 @@ hidden: true
 		<li>Gated - Must Complete in Order</li>
 		<li>Go at Your Own Pace</li>
 		<li>Interactive Lab Grading</li>
-		<li>Complete by December 14, 2018</li>
+		<li>Complete by August 14, 2019</li>
 	</ul>
 </section>
 <section>
@@ -77,7 +77,7 @@ hidden: true
 	<ul>
 		<li>~6 Hrs. Content per Module</li>
 		<li>1 - 6 Hrs. Lab Work per Module</li>
-		<li>3 Hrs. Content + 3 Hrs. Lab per Week</li>
+		<li>6 Hrs. Content + 6 Hrs. Lab per Week</li>
 		<li>Labs Graded by Instructor</li>
 		<li>Office Hours (Virtual/Campus)</li>
 	</ul>
@@ -100,7 +100,7 @@ hidden: true
 <section>
 	<h3>What's Next?</h3>
 	<ul>
-		<li>Watch Video on Canvas & Mediasite</li>
+		<li>Watch Video on Navigating Canvas</li>
 		<li>Read the Syllabus</li>
 		<li>Post in the <i>Introduce Yourself!</i> Discussion</li>
 		<li>Complete the <i>Course Readiness Quiz</i></li>
