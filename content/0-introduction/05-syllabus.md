@@ -5,7 +5,7 @@ pre: "5. "
 ---
 
 ### Instructor Contact Information
-* **Instructor:** Russell Feldhausen (russfeld@ksu.edu)
+* **Instructor:** Russell Feldhausen (russfeld@ksu.edu)<br> _I use **he/him** pronouns. Feel free to share your own pronouns with me, and I'll do my best to use them!_
 * **Office:** DUE 2184, but I mostly work remotely from Kansas City, MO
 * **Phone:** (785) 292-3121 (Call/Text)
 * **Website:** https://russfeld.me
@@ -119,7 +119,7 @@ Please contact me or submit anonymous feedback through the Computer Science depa
 
 Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) To help accomplish this:
 
-* If you have a name and/or set of pronouns that differ from those that appear in your official K-State records, please let me know!
+* If you have a name and/or use pronouns that differ from those that appear in your official K-State records, please let me know!
 * If you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to talk with me. I want to be a resource for you. Remember that you can also submit anonymous feedback (which will lead to me making a general announcement to the class, if necessary to address your concerns).
 * If you prefer to speak with someone outside of the course, your academic advisor or the staff in the College of Engineering Student Services office are excellent resources. <anonymity/confidential>
 
