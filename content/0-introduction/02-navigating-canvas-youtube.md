@@ -4,11 +4,7 @@ weight: 10
 pre: "2. "
 ---
 
-{{< youtube 3yMSgpHMSHg >}}
-
-{{% notice note %}}
-_This course is currently using YouTube for video hosting. In general, any references to Mediasite can be replaced with YouTube. The YouTube videos also include captions as described below. Currently, we are able to provide higher quality videos via YouTube than Mediasite, so that is the major reason behind the change. I'll try to update this video at a later date. --Russ_
-{{% /notice %}}
+{{< youtube KuwfaigQNZY >}}
 
 #### Video Script
 
@@ -20,7 +16,7 @@ Let's walk through the options in the main menu to the left. First, any course a
 
 The next section is Modules, which is where you'll primarily interact with the course. You'll notice that I've disabled several of the common menu items in this course, such as Files and Assignments. This is to simplify things for you as students, so you remember that all the course content is available in one place.
 
-When you first arrive at the Modules section, you'll see all of the content in the course laid out in order. If you like, you can minimize the modules you aren't working on by clicking the arrow to the left of the module name. I'll do so, leaving the introductory module open.
+When you first arrive at the Modules section, you'll see all of the content in the course laid out in order. If you like, you can minimize the modules you aren't working on by clicking the arrow to the left of the module name.
 
 As you look at each module, you'll see that it gives quite a bit of information about the course. At the top of each module is an item telling you what parts of the module you must complete to continue. In this case, it says "Complete All Items." Likewise, the following modules may list a prerequisite module, which you must complete before you can access it.
 

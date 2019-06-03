@@ -4,7 +4,7 @@ weight: 5
 pre: "1. "
 ---
 
-{{< youtube FQH7eME9krM >}}
+{{< youtube XpN1HmW0jfY >}}
 
 #### Resources
 
@@ -15,7 +15,7 @@ pre: "1. "
 
 Welcome to CIS 527 - Enterprise System Administration.
 
-My name is Russell Feldhausen, and I'll be your instructor for this course. My contact information is shown here, and is also listed on the syllabus, and on the home page of the course on K-State Online. My email address is russfeld@ksu.edu, and it is by far my preferred method of communication for matters outside of this course, since it allows me to have a record of our conversations and respond when I'm available. For the purposes of this course, I prefer that you contact me via Piazza. We'll discuss how to use that tool later in this module. 
+My name is Russell Feldhausen, and I'll be your instructor for this course. My contact information is shown here, and is also listed on the syllabus, and on the home page of the course on K-State Online. My email address is russfeld@ksu.edu, and it is by far my preferred method of communication for matters outside of this course, since it allows me to have a record of our conversations and respond when I'm available. For the purposes of this course, I prefer that you contact me via Piazza. We'll discuss how to use that tool later in this module.
 
 I'll also be on the K-State CS Rocket Chat server, so you can easily chat with me there.
 
