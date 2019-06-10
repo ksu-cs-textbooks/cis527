@@ -4,7 +4,7 @@ weight: 15
 pre: "3. "
 ---
 
-### Lab2 - Configuration Management
+### Lab 2 - Configuration Management
 
 #### Instructions
 

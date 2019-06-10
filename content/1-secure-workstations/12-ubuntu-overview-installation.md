@@ -46,6 +46,10 @@ The first major release of Ubuntu was known as Ubuntu 4.10 - Warty Warthog. Each
 
 The most recent version, Bionic Beaver, is the current LTS version and the one we'll be using in this class.
 
+{{% notice note %}}
+_Of course, many new Ubuntu versions have been released since this video was recorded. The latest as of June 2019 is 19.04 Disco Dingo. However, we'll stick with the 18.04 LTS version, Bionic Beaver, since it will be maintained through April 2028. --Russ_
+{{% /notice %}}
+
 Now, let's go through the process of installing Ubuntu in a virtual machine. At this point, I'm assuming you have already installed VMware Workstation or another virtualization software on your computer. If not, I recommend doing so before continuing.
 
 First, you'll need to download the Ubuntu 18.04 installation file. You can find that file on the Ubuntu download page, and also on the K-State CS mirror of the Ubuntu downloads page. For most uses, I recommend using the CS mirror, as it is generally much faster for students on campus. The link is available in the Resources section below the video. On that page, you'll need to download the "64-bit PC (AMD64) desktop image" from the link near the top. It should download a file to your computer in the .ISO format.
