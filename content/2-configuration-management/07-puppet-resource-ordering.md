@@ -25,7 +25,7 @@ file { '/tmp/test2':
   ensure => 'file'
 }
 
-file { '/tmp/test2':
+file { '/tmp/test3':
   ensure => 'file'
 }
 
