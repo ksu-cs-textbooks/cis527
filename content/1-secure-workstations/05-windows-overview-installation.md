@@ -4,6 +4,10 @@ weight: 25
 pre: "5. "
 ---
 
+{{%notice info %}}
+_The instructions for downloading Windows 10 from the Microsoft Azure portal have been updated on the [CS Support](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) webpage. Please review that site for the latest information. - Russ_
+{{% /notice %}}
+
 {{< youtube 61zhxNooX-4 >}}
 
 #### Resources
