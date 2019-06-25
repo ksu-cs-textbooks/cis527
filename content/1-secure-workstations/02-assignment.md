@@ -150,7 +150,7 @@ You can test this by accessing the Ubuntu VM IP Address from your Windows VM, pr
 * **Install Updates:** Run system updates and reboot as necessary until all available updates are installed.
 * **Automatic Updates:** Configure the system to download and install security updates automatically each day.
 
-### Task 6 - Ubuntu Files & Permissions
+### Task 6: Ubuntu Files & Permissions
 
 {{%notice warning %}}
 _Read the whole task before you start! You have been warned. --Russ_
@@ -172,10 +172,10 @@ Use either the cis527 or AdminUser account to create these files, then modify th
 
 ---
 
-### Task 7 - Make Snapshots
+### Task 7: Make Snapshots
 
 In each of the virtual machines created above, create a snapshot labelled *Lab 1 Submit* before you submit the assignment. The grading process may require making changes to the VMs, so this gives you a restore point before grading starts.
 
-### Task 8 - Schedule A Grading Time
+### Task 8: Schedule A Grading Time
 
 Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.

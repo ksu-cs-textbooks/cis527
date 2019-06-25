@@ -123,7 +123,7 @@ _You will have to find the appropriate name for each service. --Russ_
 
 ---
 
-### Task 3 - Upload to Canvas & Contact Instructor
+### Task 3: Upload to Canvas & Contact Instructor
 
 {{% notice note %}}
 Please add comments to your Puppet Manifest Files describing any Puppet Modules that must be installed prior to applying them.
