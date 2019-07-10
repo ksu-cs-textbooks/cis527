@@ -208,7 +208,7 @@ Of course, you may need to update your firewall configuration to allow incoming 
 
 Once your DHCP server is installed, configured, and running properly, turn off the DHCP server in VMware. Go to **Edit > Virtual Network Editor** in VMware Workstation or **VMware Fusion > Preferences > Network** in VMware Fusion and look for the NAT network you are using. There should be an option to disable the DHCP server for that network there.
 
-Finally, restart your Windows VM. When it reboots, if everything works correctly, it should get an IP address and network information from your DHCP server configured in this step. It should also be able to access the internet with those settings.
+Once that is complete, you can test the DHCP server using the Windows VM. To do so, restart your Windows VM so it will completely forget any current DHCP settings. When it reboots, if everything works correctly, it should get an IP address and network information from your DHCP server configured in this step. It should also be able to access the internet with those settings. An easy way to check is to run the command `ipconfig` in PowerShell and look for the DNS suffix of `cis527.cs.ksu.edu` in the output. 
 
 #### Resources
 
