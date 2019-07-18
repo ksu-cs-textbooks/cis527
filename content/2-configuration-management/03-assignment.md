@@ -22,6 +22,10 @@ Also, to complete many of these items, you may need to refer to additional mater
 
 This lab may take anywhere from **1 - 6 hours** to complete, depending on your previous experience working with these tools and the speed of the hardware you are using.
 
+{{% notice tip %}}
+**Testing Manifest Files** - When testing these manifest files, there is a three step process. First, **apply** the manifest, then **reboot**, then **apply again**. This is because any changes made to group memberships are not applied until after a user logs back in or the system reboots. So, you may get permission issues when creating files or assigning permissions due to incorrect group memberships. Ideally, those permission errors should be eliminated after a reboot. There is no good fix for this in Puppet itself, since it is an operating system issue. Therefore, this is the process that you should use, and it is the process that will be used when your manifest files are graded. Basically, if you get no errors after a reboot, you should be fine!
+{{% /notice %}}
+
 ---
 
 ### Task 0: Create New Virtual Machines & Snapshots
