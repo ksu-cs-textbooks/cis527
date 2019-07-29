@@ -43,7 +43,7 @@ This task requires you to successfully demonstrate a backup and restore procedur
 1. Create a user named `backuptest` on your Active Directory domain
 2. Create a group named `BackupGroup` on your Active Directory domain, and add the new `backuptest` user to that group
 3. Log on to your Windows 10 client VM as `backuptest` and take a **screenshot** showing the successful login and the system time of your host system.
-4. Create a backup of your Active Directory domain using the Windows System State backup tool. You should store this backup on an external hard disk, such as a flash drive, that is mounted in your Windows Server 2016 VM
+4. Create a backup of your Active Directory domain using the Windows System State backup tool. You should store this backup on an external hard disk, such as a flash drive, that is mounted in your Windows Server 2016 VM. Alternatively, you may add a secondary hard disk to your Windows Server 2016 VM and use that location to store the backup. See the video in the resources section for instructions. 
 5. Once the backup is complete, delete the `backuptest` user and `BackupGroup` group from the Active Directory domain.
 6. Reboot your Windows 10 client VM and attempt to log on as `backuptest`. It should fail. Take a **screenshot** showing a failed login and the system time of your host system
 7. Perform an authoritative restore of the Active Directory domain from the backup. This should restore the deleted user and group. Take a **screenshot** showing the successful completion of the authoritative restore process and the system time of your host system.
@@ -59,6 +59,7 @@ _You'll present those 4 screenshots as part of the grading process for this lab,
 * [How to Backup Active Directory Fully in Windows Server 2016](https://www.tactig.com/backup-active-directory-windows-server/) from Tactig
 * [How to perform Authoritative Restore of Active Directory Objects - 2012 R2](http://www.itingredients.com/perform-authoritative-restore-active-directory-objects-2012-r2/) from ITIngredients (should work for 2016)
 * [Windows Server 2012 - Active Directory - Backup and Restore, Part 1: System State](http://davidmtechblog.blogspot.com/2014/01/windows-server-2012-active-directory_10.html) from David M Tech Blog (should work for 2016)
+* [How to Add Additional Virtual Hard Disk Drive in VMWare Workstation Tutorial](https://www.youtube.com/watch?v=WMPd0kF4JLM) by The Teacher on YouTube
 
 ---
 
