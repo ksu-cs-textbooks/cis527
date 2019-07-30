@@ -81,6 +81,10 @@ sudo apt install php-xml php-mysql
 sudo systemctl restart apache2
 ```
 
+{{% notice warning %}}
+_Update 2019-07-30: You may need to install the version of `php-mysql` that matches your PHP version. So, for PHP 7.2, you can install `php7.2-mysql`. -Russ_
+{{% /notice %}}
+
 Once that is done, I should be able to retest the requirements and get to the next step. Here, it will ask for the information to create an Administrator account. I'll enter some default information here.
 
 Next, you'll need to configure the database for this system. I'll enter the information for the database and user I created earlier. I'll also enter the IP address `127.0.0.1` for my server hostname. For the lab assignment, you'll need to use the private network IP address of **BACKEND** here. On the next screens, I'll configure some additional options unique to phpBB, selecting the appropriate options for my environment and how I'd like to use the application. Finally, it will go through the installation procedure. If everything works properly, it should be able to connect to your database and install the application.
