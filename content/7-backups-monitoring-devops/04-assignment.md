@@ -43,11 +43,15 @@ This task requires you to successfully demonstrate a backup and restore procedur
 1. Create a user named `backuptest` on your Active Directory domain
 2. Create a group named `BackupGroup` on your Active Directory domain, and add the new `backuptest` user to that group
 3. Log on to your Windows 10 client VM as `backuptest` and take a **screenshot** showing the successful login and the system time of your host system.
-4. Create a backup of your Active Directory domain using the Windows System State backup tool. You should store this backup on an external hard disk, such as a flash drive, that is mounted in your Windows Server 2016 VM. Alternatively, you may add a secondary hard disk to your Windows Server 2016 VM and use that location to store the backup. See the video in the resources section for instructions. 
+4. Create a backup of your Active Directory domain using the Windows System State backup tool. You should store this backup on an external hard disk, such as a flash drive, that is mounted in your Windows Server 2016 VM. Alternatively, you may add a secondary hard disk to your Windows Server 2016 VM and use that location to store the backup. See the video in the resources section for instructions.
 5. Once the backup is complete, delete the `backuptest` user and `BackupGroup` group from the Active Directory domain.
 6. Reboot your Windows 10 client VM and attempt to log on as `backuptest`. It should fail. Take a **screenshot** showing a failed login and the system time of your host system
 7. Perform an authoritative restore of the Active Directory domain from the backup. This should restore the deleted user and group. Take a **screenshot** showing the successful completion of the authoritative restore process and the system time of your host system.
 8. Reboot your Windows 10 client VM and log on to that system as `backuptest`. Take a **screenshot** showing the successful login and the system time of your host system.
+
+{{% notice tip %}}
+_The documentation for this portion is unclear, so here's a hint: for my sample domain "ad.cis527.cs.ksu.edu" and account "backuptest", I'll need to use the command `restore object "cn=backuptest,cn=Users,dc=ad,dc=cis527,dc=cs,dc=ksu,dc=edu"` to restore the correct account on the domain. --Russ_
+{{% /notice %}}
 
 {{% notice tip %}}
 _You'll present those 4 screenshots as part of the grading process for this lab, so I recommend storing them somewhere memorable so they are easy to find. --Russ_
