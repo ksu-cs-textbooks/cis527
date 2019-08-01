@@ -117,6 +117,10 @@ Setup an automatically deployed Git repository on your Ubuntu droplet. For this 
 
 To test this setup, you should be able to push a change to the GitLab repository, and see that change reflected on the website automatically.
 
+{{% notice tip %}}
+_Since the Webhook process runs as the `root` user on **FRONTEND**, you'll need to make sure a set of SSH keys exist in the `root` user's home folder `/root/.ssh/` and add the public key from that directory to your [GitLab account](https://gitlab.cs.ksu.edu/profile/keys). You should then use the root account (use `sudo su -` to log in as root) to run `git pull` from the appropriate directory on **FRONTEND** at least once so you can accept the SSH fingerprint for the GitLab server. This helps ensure that `root` can properly run the script. --Russ_
+{{% /notice %}}
+
 #### Resources
 
 * **[Extras - Git]({{< relref "/X-extras/07-git" >}})**
