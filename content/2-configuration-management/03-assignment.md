@@ -68,7 +68,7 @@ Create a Puppet Manifest File for Ubuntu 18.04 that defines the following config
   - _Create groups as needed below_
 * **Files & Permissions (Same as Lab 1)**
   - Create a folder `/files` (at the root of the system, not in a user's home folder). Any user may read or write to this folder, and it should be owned by `root:root` (user: root; group: root).
-  - Within `/files`, create a folder for each user created during task 5 except for cis527, with the folder name matching the user's name.
+  - Within `/files`, create a folder for each user created above except for cis527, with the folder name matching the user's name.
   - Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
   - Create a group and set permissions on each folder using that group to allow both cis527 and AdminUser to have full access to each folder created in /files.
   - No other user should be able to access any other user's folder. For example, EvilUser cannot access GuestUser's folder, but AdminUser and cis527 can, as well as GuestUser, who is also the owner of its own folder.
@@ -103,7 +103,7 @@ Create a Puppet Manifest File for Windows 10 that defines the following configur
   - _Create groups as needed below_
 * **Files & Permissions (Same as Lab 1)**
   - Create the folder `C:\files`. It should be owned by the cis527 account, but make sure all other users can read and write to that folder.
-  - Within `C:\files`, create a folder for each user created during task 2 except for cis527, with the folder name matching the user's name.
+  - Within `C:\files`, create a folder for each user created above except for cis527, with the folder name matching the user's name.
   - Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
   - Create a group containing cis527 and AdminUser, and set permissions on `C:\files` for that group to have full access to each folder created in `C:\files`.
   - No other user should be able to access any other user's folder. For example, EvilUser cannot access GuestUser's folder, but AdminUser and cis527 can, as well as GuestUser, who is also the owner of its own folder.
