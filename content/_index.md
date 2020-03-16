@@ -9,6 +9,6 @@ This website contains the course materials for CIS 527: Enterprise Systems Admin
 
 Anyone and everyone is welcome to review the contents on this webpage. However, if you plan on taking the course for credit, you should enroll in the course through K-State before starting, as the course itself includes appropriate assignments and assessments to ensure that you have learned the material.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; display: inline; margin: 0px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a> All contents herein are presented under a Creative Commons license by <a href="https://russfeld.me">Russell Feldhausen</a> unless otherwise stated.</p>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin: .5rem auto" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a>
 
 K-State CS students may also access the source materials for this website on the [K-State CS GitLab](https://gitlab.cs.ksu.edu/russfeld/cis527online/) server.
