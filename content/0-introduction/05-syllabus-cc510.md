@@ -26,7 +26,7 @@ pre: "5.1 "
 
 ### Prerequisites
 
-* CIS 200 or CC 210
+* CIS 300 or CC 310
 
 ### Course Overview
 

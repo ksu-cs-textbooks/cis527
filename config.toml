@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "K-State CIS 527 Online"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "hugo-theme-learn"
+theme = "ksucs-hugo-theme"
 
 # For search functionality
 [outputs]
@@ -13,7 +13,7 @@ section = [ "HTML", "Iframeable", "Teleprompter"]
 
 [params]
   editURL = "https://gitlab.cs.ksu.edu/russfeld/cis527online/tree/master/content/"
-  description = "K-State CIS 527 Curriculum Repository"
+  description = "K-State CIS 527 Curriculum"
   author = "Russell Feldhausen"
   showVisitedLinks = false
   themeVariant = "purple"
@@ -22,6 +22,11 @@ section = [ "HTML", "Iframeable", "Teleprompter"]
 [blackfriday]
   plainIDAnchors = true
   hrefTargetBlank = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [outputFormats]
   [outputFormats.Iframeable]

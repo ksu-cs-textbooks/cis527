@@ -4,24 +4,25 @@ weight: 25
 pre: "5. "
 ---
 
+## CIS 517 - Enterprise Systems Administration
+
 ### Instructor Contact Information
-* **Instructor:** Russell Feldhausen (russfeld@ksu.edu)<br> _I use **he/him** pronouns. Feel free to share your own pronouns with me, and I'll do my best to use them!_
-* **Office:** DUE 2184, but I mostly work remotely from Kansas City, MO
+
+* **Instructor:** Russell Feldhausen (russfeld AT ksu DOT edu)<br> _I use **he/him** pronouns. Feel free to share your own pronouns with me, and I'll do my best to use them!_
+* **Office:** DUE 2184 or DUE 2166, but I mostly work remotely from Kansas City, MO
 * **Phone:** (785) 292-3121 (Call/Text)
 * **Website:** https://russfeld.me
-* **Virtual Office Hours:** By appointment via Zoom
-* **Instant Messaging:** #cis527 on CS Rocket Chat (https://chat.cs.ksu.edu)
+* **Virtual Office Hours:** By appointment via [Zoom](https://ksu.zoom.us/). Schedule a meeting at [https://calendly.com/russfeld](https://calendly.com/russfeld)
 
 #### Preferred Methods of Communication:
 
-* **Piazza:** I prefer students contact me via Piazza for most course questions as it allows me to provide a clear and detailed response, as well as easily store and record communication for reference later.
-* **Chat:** Quick questions via Rocket Chat are welcomed, but understand that I may ask for a follow-up email if I cannot answer the question briefly. I will try to respond quickly if I am available, but messages sent while I am away may be missed.
-* **Email:** For questions outside of this course, email to russfeld@ksu.edu is preferred.
-* **Phone/Text:** _Emergencies only!_ I will do my best to respond as quickly as I am able.
+* **Piazza:** Please use Piazza for all communication regarding these courses as it allows instructors and TAs to provide a clear and detailed response, as well as easily store and record communication for reference later. You should receive a response within one business day, and hopefully much sooner.
+* **Email**: Students are also welcome to email us anytime with questions outside of the scope of these courses. We will try to respond within one business day. Questions related to the course itself may be redirected to Piazza. We're also active on the [K-State CS Rocket.chat](https://chat.cs.ksu.edu).
+* **Phone/Text:** _Emergencies only!_ We will do our best to respond as quickly as we can.
 
 ### Prerequisites
 
-CIS 308 or both CIS 209 and CIS 300. Students may enroll in CIS courses only if they have earned a grade of C or better for each prerequisite to those courses.
+* CIS 300. Students may enroll in CIS courses only if they have earned a grade of C or better for each prerequisite to those courses.
 
 ###  Course Structure
 This course is being taught 100% online and self-paced for the first time. There may be some bumps in the road. Students will work at their own pace through several modules, with suggested due dates for completion of each module given. Material will be provided in the form of recorded videos, links to online resources, and discussion prompts. Each module will include a hands-on lab assignment, which will be graded interactively by the instructor. Assignments may also include written portions or presentations, which will be submitted online.
