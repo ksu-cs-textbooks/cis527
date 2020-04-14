@@ -4,7 +4,7 @@ weight: 25
 pre: "5. "
 ---
 
-## CIS 517 - Enterprise Systems Administration
+## CIS 527 - Enterprise Systems Administration
 
 ### Instructor Contact Information
 
