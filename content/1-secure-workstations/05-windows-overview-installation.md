@@ -4,23 +4,21 @@ weight: 25
 pre: "5. "
 ---
 
-{{%notice info %}}
-_The instructions for downloading Windows 10 from the Microsoft Azure portal have been updated on the [CS Support](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) webpage. Please review that site for the latest information. - Russ_
-{{% /notice %}}
+TODO
 
 {{< youtube 61zhxNooX-4 >}}
 
 #### Resources
 
 * **[Slides]({{< relref "/1-secure-workstations/05-windows-overview-installation-slides.md" >}})**
-* [How to Get Windows 10](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) from Microsoft Imagine Store via CS Support
+* [How to Get Windows 10](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) from Microsoft Azure Portal via CS Support
 * [How to Install VMware Tools](https://kb.vmware.com/s/article/1014294) from VMware
 * [Windows 10 Overview](https://www.microsoft.com/en-us/windows/features) from Microsoft
 * [Microsoft Windows Version History](https://en.wikipedia.org/wiki/Microsoft_Windows_version_history) from Wikipedia
 * [Windows 10 for Windows 7 Users](https://www.howtogeek.com/219034/here%E2%80%99s-what%E2%80%99s-different-about-windows-10-for-windows-7-users/) from How-To Geek
 * [Windows 10 for Windows 8 Users](https://www.howtogeek.com/219098/heres-whats-different-about-windows-10-for-windows-8-users/) from How-To Geek
 * [Windows 10 Help](https://support.microsoft.com/en-us/products/windows?os=windows-10) from Microsoft
-* [Windows 10 Wiki](https://social.technet.microsoft.com/wiki/contents/articles/31032.windows-10-portal.aspx)from Microsoft TechNet
+* [Windows 10 Wiki](https://social.technet.microsoft.com/wiki/contents/articles/31032.windows-10-portal.aspx) from Microsoft TechNet
 * [Windows 10 Architecture](https://social.technet.microsoft.com/wiki/contents/articles/31048.architecture-of-windows-10.aspx) from Microsoft TechNet
 * [Windows 10 ISO Downloads](https://www.microsoft.com/en-us/software-download/windows10) from Microsoft
   - _Warning: May not work with keys from the Microsoft Imagine store! Use the downloads from the store instead._
@@ -31,7 +29,7 @@ _The instructions for downloading Windows 10 from the Microsoft Azure portal hav
 
 This video introduces the Windows 10 operating system, and shows how to install it in a virtual machine.
 
-The Windows family of operating systems has the largest market share of all desktop and laptop operating systems, with an estimated 85% of all personal computer systems using some form of Windows. Surprisingly, Windows 7 currently holds the largest market share overall, mostly due to a high number of enterprises and users who chose to stick with the older operating system due to its stability and the cost of migrating to a new system.
+The Windows family of operating systems has the largest market share of all desktop and laptop operating systems, with an estimated 88% of all personal computer systems using some form of Windows. Unsurprisingly, Windows 10 currently holds the largest market share overall, but there are still a large number of systems using Windows 7. Of those, most are either in enterprise organizations who have chosen not to upgrade or owned by home users who rarely purchase a new computer. 
 
 The Windows operating system has a long history. It originally was developed as a graphical "shell" for the MS-DOS operating system, which was popular in the early 1980s. Windows 1.0 was released in 1985, followed by Windows 2.0 and 3.0.
 
@@ -45,9 +43,9 @@ Here is a diagram showing the various versions of Windows and how they relate to
 
 Next, let's see how to install Windows 10 in a virtual machine. At this point, I'm assuming you have already installed VMware Workstation or another virtualization software on your computer. If not, I recommend doing so before continuing.
 
-First, you'll need to download the Windows 10 installation file and obtain a product key. Both of those can be found on the Microsoft Imagine store, which is linked in the resources section below the video. Remember that the username and password on that site is different than your K-State eID or CS username and password.
+First, you'll need to download the Windows 10 installation file and obtain a product key. Both of those can be found on the Microsoft Azure student portal, which is linked in the resources section below the video. This site now uses your K-State eID and password, making it even easier to access.
 
-Once you log in, simply select Windows 10 Education Version and download it. When prompted, make sure you choose to download the 64-bit edition.
+Once you log in, simply click Software on the left and search for Windows 10. In the list, find the entry for `Windows 10 (consumer editions), version 1903 - DVD` and download it. On the download page, you can also click this button to access your product key, which you'll need to provide when you install it. 
 
 After you have completed that task, you should have a large installation file in the .ISO file format and a 25 character product key available. You'll need both when installing Windows.
 
@@ -61,11 +59,15 @@ Finally, you can click Finish to create the virtual machine. We'll have to custo
 
 Once your virtual machine is created, you can click on the edit virtual machine settings button to customize the hardware. Again, make sure the hardware specification matches what is defined in the assignment for Lab 1. To install the operating system, we'll have to tell the virtual machine where to find the .ISO file downloaded earlier. Click the CD/DVD option, then select the file and make sure it is enabled.
 
-When you are ready to begin the installation process, click the button to power on the virtual machine.
+In addition, we'll disable the network during installation so that we'll be prompted to create a local account. Once we are done installing Windows 10, we can re-enable this option to connect to the internet and download updates. 
+
+When you are ready to begin the installation process, click the button to power on the virtual machine. When it powers on, you may be prompted to press any key to install Windows. You'll need to click somewhere inside of the VMWare window before pressing any key in order for the VM to recognize it.
 
 Once it boots, you'll be given the option to install Windows 10. Follow the prompts to install Windows 10 using the Lab 1 assignment as needed for configuration information. The virtual machine may reboot several times during the process.
 
-If you are prompted to connect to your organization, choose the option to join a local Active Directory domain. That will allow you to create a local user account.
+While installing, you may have to select options to confirm that you don't have access to the internet, and would like to continue with limited setup. This is fine - Windows just _really_ wants us to use a Microsoft account. You may also have to answer some security question - feel free to just make up answers if you want! They won't be needed. 
+
+You can also disable many of the optional features, such as the digital assistant, location data, and targeted advertising. While they are helpful on personal computers, they won't be used in this course. 
 
 When you have successfully installed Windows 10, you'll be ready to move on to configuring Windows 10. The next several videos will discuss that process.
 

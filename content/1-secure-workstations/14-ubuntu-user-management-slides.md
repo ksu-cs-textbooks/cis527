@@ -48,8 +48,8 @@ hidden: true
 <section>
   <h3>Configuring User Accounts</h3>
   <ul>
-    <li>Settings > Details > Users</li>
-    <li>Users and Groups from gnome-system-tools</li>
+    <li>Settings > Users</li>
+    <li>Users and Groups from<br>gnome-system-tools</li>
     <li>Terminal</li>
   </ul>
 </section>
@@ -61,7 +61,7 @@ hidden: true
     <li>userdel - remove a user</li>
     <li>usermod - modify a user
       <ul>
-        <li>usermod -a -G &lt;group> &lt;user> - add user to a group</li>
+        <li>usermod -a -G &lt;group> &lt;user><br>- add user to a group</li>
     </li>
     <li>passwd - change a password</li>
   </ul>
@@ -88,5 +88,5 @@ hidden: true
 <section>
   <h3>Next Step!</h3>
   <p>Start Lab 1, Task 5:</p>
-  <p>Configure Ubuntu 18.04</p>
+  <p>Configure Ubuntu 20.04</p>
 </section>

@@ -9,7 +9,7 @@ pre: "5.1 "
 ### Instructor Contact Information
 
 * **Instructor:** Russell Feldhausen (russfeld AT ksu DOT edu)<br> _I use **he/him** pronouns. Feel free to share your own pronouns with me, and I'll do my best to use them!_
-* **Office:** DUE 2184 or DUE 2166, but I mostly work remotely from Kansas City, MO
+* **Office:** DUE 2184, but I mostly work remotely from Kansas City, MO
 * **Phone:** (785) 292-3121 (Call/Text)
 * **Website:** https://russfeld.me
 * **Virtual Office Hours:** By appointment via [Zoom](https://ksu.zoom.us/). Schedule a meeting at [https://calendly.com/russfeld](https://calendly.com/russfeld)
@@ -20,17 +20,15 @@ pre: "5.1 "
 * **Email**: Students are also welcome to email us anytime with questions outside of the scope of these courses. We will try to respond within one business day. Questions related to the course itself may be redirected to Piazza. We're also active on the [K-State CS Rocket.chat](https://chat.cs.ksu.edu).
 * **Phone/Text:** _Emergencies only!_ We will do our best to respond as quickly as we can.
 
-### Graduate Teaching Assistants
-
-* TBD
-
 ### Prerequisites
 
-* CIS 300 or CC 310
+* CIS 300 or CC 310.
 
-### Course Overview
+###  Course Structure
 
-Administration of the Windows and Linux operating systems, including installation, configuration, distributed file systems, firewalls and security, shell scripting, and user account management. Introduction to cloud computing resources.
+This course is being taught 100% online and mostly asynchronous. There may be some bumps in the road. Students will work at their own pace through several modules, with due dates for completion of each module given. Material will be provided in the form of recorded videos, links to online resources, and discussion prompts. Each module will include a hands-on lab assignment, which will be graded interactively by the instructor or GTAs. Assignments may also include written portions or presentations, which will be submitted online.
+
+The course will also include a final project and presentation. More information about this can be found in the final project module on Canvas.
 
 ### Course Description
 
@@ -58,24 +56,17 @@ At the end of this course, students should be able to:
 * Core Networking Services (DHCP, DNS, ICMP, etc.)
 * System Monitoring & Maintenance
 * Backup Strategies
-* The Cloud
-
-###  Course Structure
-This course is being taught 100% online, and each module is self-paced. There may be some bumps in the road as we refine the overall course structure. Students will work at their own pace through a set of modules, with approximately one module being due each week. Material will be provided in the form of recorded videos, links to online resources, and discussion prompts. Each module will include a hands-on lab assignment, which will be graded interactively by the instructor. Assignments may also include written portions or presentations, which will be submitted online.
-
-The course will also include a final project and presentation. More information about this will be announced during the semester.
+* The Cloud & DevOps
 
 ### Grading
 
 In theory, each student begins the course with an A. As you submit work, you can either maintain your A (for good work) or chip away at it (for less adequate or incomplete work). In practice, each student starts with 0 points in the gradebook and works upward toward a final point total earned out of the possible number of points. In this course, each assignment constitutes a portion of the final grade, as detailed below:
 
-* 70% - Lab Assignments (7 labs, 10% each lab)
+* 70% - Lab Assignments* (7 labs, 10% each lab)
 * 15% - Quizzes (15 quizzes, 1% each)
 * 15% - Final Presentation
 
 All group work will include a **REQUIRED** peer evaluation component which can adjust that portion of the individual’s grade up to 50%. If a student should fail to contribute to a group assignment at all, their grade for that assignment will be reduced to a zero. Failure to complete the peer evaluation will result in a 10% grade deduction for that assignment.
-
-Up to 5% of the total grade in the class is available as extra credit. See the **Extra Credit - Bug Bounty** & **Extra Credit - Helping Hands** assignments for details.
 
 Letter grades will be assigned following the standard scale:
 
@@ -88,20 +79,24 @@ Letter grades will be assigned following the standard scale:
 ### Late Work
 
 {{% notice warning %}}
-Read this late work policy very carefully! If you are unsure how to interpret it, please contact the instructors via Piazza. Not understanding the policy does not mean that it won't apply to you!
+This is an updated late work policy that takes effect for the Summer 2020 semester. While my original intent was to have this course completely asynchronous and self-paced, I've found that students prefer having more strict deadlines than more flexiblity, and many times they will perform better in the course when deadlines are enforced. Therefore, deadlines will be strictly enforced starting in Summer 2020. 
 {{% /notice %}}
 
-Since this course is entirely online, students may work at any time and at their own pace through the modules. However, to keep everyone on track, there will be approximately one module due each week. Each graded item in the module will have a specific due date specified, and all work submitted after the due date will have its grade reduced by 50% of the total points possible on that item. For the purposes of recordkeeping, the time that each lab is graded interactively will be used to establish the completion time of the lab.
+Due to the asynchronous nature of this course, staying on task and keeping up with deadlines is very important. Therefore, all course work must be submitted, and all interactively graded materials must be graded with the instructor or GTA, on or before the posted due date to receive full credit. _For labs, it is not simply enough to contact the instructor/GTA asking to schedule a grading time before the due date; the grading itself must be completed before the due date in order to be considered "on time"._
 
-However, even if a module is not submitted on time, it must still be completed before a student is allowed to begin the next module. So, students should take care not to get too far behind, as it may be very difficult to catch up.
+Any work submitted and graded after the due date is subject to a deduction of 10% of the total points possible on the assignment for each day that the assignment is late. For example, if an assignment is due on a Friday and is submitted the following Tuesday, it will be subject to a reduction of 40% of the total points possible, or 10% for each day it was late (Saturday, Sunday, Monday, and Tuesday in this example). 
 
-Finally, all course work must be submitted on or before the last day of the semester in which the student is enrolled in the course in order for it to be graded. No incompletes will be given in this course for any reason.
+Also, note that several labs in this class require successful completion of previous labs. If you are behind and choose to skip a lab assignment to catch up, you may still have to make up some or all of that work in order to complete a later lab. You may contact the instructor to discuss options for obtaining model solutions to previous labs if needed.  
 
-If you have extenuating circumstances, please discuss them with the instructor as soon as they arise so other arrangements can be made. If you find that you are getting behind in the class, you are encouraged to speak to the instructor for options to make up missed work.
+All course work must be submitted, and all interactively graded materials must be graded with the instructor, on or before **July 31, 2020**. No late work will be accepted after 11:59 PM on July 31, 2020.
+
+If you have extenuating circumstances, please discuss them with the instructor as soon as they arise so other arrangements can be made. If you know you have upcoming events that will prevent you from completing work in this course, you should contact the instructor ASAP and plan on working ahead before your event instead of catching up afterwards. If you find that you are getting behind in the class, you are encouraged to speak to the instructor for options to catch up quickly. 
 
 ### Recommended Texts & Supplies
 
 Students in this course are expected to have access to a computer with virtual machine software (VMware, Virtual Box, Parallels, or other) installed and running. The computer should be capable of running multiple VMs simultaneously, which usually means having 8GB of RAM and a moderately powerful processor. Contact the instructor if you have questions or concerns.
+
+All K-State Computer Science students have access to free software from Microsoft and VMWare. More information can be found on the [K-State CS Support Website](https://support.cs.ksu.edu/CISDocs/wiki/Main_Page).
 
 Since this class covers such a wide range of material, no single textbook will suffice. Therefore, students who would like a textbook should refer to resources available on Safari Books Online. The [K-State Library](http://guides.lib.k-state.edu/az.php?q=Safari) has access to the entire catalog of books published on that platform, and it is a great resource for this course.
 
@@ -114,42 +109,40 @@ ISBN 0321492668 - eBook Editions Available - [Amazon Link](http://www.amazon.com
 
 ### Subject to Change
 
-The details in this syllabus are not set in stone. Due to the flexible nature of this class, adjustments may need to be made as the semester progresses, though they will be kept to a minimum. If any changes occur, the changes will be posted on the K-State Online page for this course and emailed to all students.
+The details in this syllabus are not set in stone. Due to the flexible nature of this class, adjustments may need to be made as the semester progresses, though they will be kept to a minimum. If any changes occur, the changes will be posted on the K-State Canvas page for this course and emailed to all students.
 
 ### Academic Honesty
 
-Kansas State University has an Honor and Integrity System based on personal integrity, which is presumed to be sufficient assurance that, in academic matters, one's work is performed honestly and without unauthorized assistance. Undergraduate and graduate students, by registration, acknowledge the jurisdiction of the Honor and Integrity System. The policies and procedures of the [Honor and Integrity System](https://www.k-state.edu/honor/) apply to all full and part-time students enrolled in undergraduate and graduate courses on-campus, off-campus, and via distance learning. A component vital to the Honor and Integrity System is the inclusion of the Honor Pledge which applies to all assignments, examinations, or other course work undertaken by students. The Honor Pledge is implied, whether or not it is stated: "On my honor, as a student, I have neither given nor received unauthorized aid on this academic work." A grade of XF can result from a breach of academic honesty. The F indicates failure in the course; the X indicates the reason is an Honor Pledge violation.
+Kansas State University has an Honor and Integrity System based on personal integrity, which is presumed to be sufficient assurance that, in academic matters, one's work is performed honestly and without unauthorized assistance. Undergraduate and graduate students, by registration, acknowledge the jurisdiction of the Honor and Integrity System. The policies and procedures of the Honor and Integrity System apply to all full and part-time students enrolled in undergraduate and graduate courses on-campus, off-campus, and via distance learning. The Honor and Integrity System website can be reached via the following URL: [http://www.k-state.edu/honor](http://www.k-state.edu/honor). A component vital to the Honor and Integrity System is the inclusion of the Honor Pledge which applies to all assignments, examinations, or other course work undertaken by students. The Honor Pledge is implied, whether or not it is stated: "On my honor, as a student, I have neither given nor received unauthorized aid on this academic work." A grade of XF can result from a breach of academic honesty. The F indicates failure in the course; the X indicates the reason is an Honor Pledge violation.
 
 **For this course, a violation of the Honor Pledge will result in an automatic 0 for the assignment and the violation will be reported to the Honor System.  A second violation will result in an XF in the course.**
 
-The Codio platform can perform automatic plagiarism detection by comparing submitted projects against other students' submissions and known solutions. That information may be used to determine if plagiarism has taken place.
-
 ### Students with Disabilities
 
-Students with disabilities who need classroom accommodations, access to technology, or information about emergency building/campus evacuation processes should contact the Student Access Center and/or their instructor.  Services are available to students with a wide range of disabilities including, but not limited to, physical disabilities, medical conditions, learning disabilities, attention deficit disorder, depression, and anxiety. If you are a student enrolled in campus/online courses through the Manhattan or Olathe campuses, contact the Student Access Center at accesscenter@k-state.edu, 785-532-6441; for K-State Polytechnic campus, contact Academic and Student Services at polytechnicadvising@ksu.edu or call 785-826-2674.
+Students with disabilities who need classroom accommodations, access to technology, or information about emergency building/campus evacuation processes should contact the Student Access Center and/or their instructor.  Services are available to students with a wide range of disabilities including, but not limited to, physical disabilities, medical conditions, learning disabilities, attention deficit disorder, depression, and anxiety. If you are a student enrolled in campus/online courses through the Manhattan or Olathe campuses, contact the Student Access Center at accesscenter@k-state.edu, 785-532-6441; for K-State Polytechnic campus, contact Academic and Student Services at polytechnicadvising@ksu.edu or call 785-826-2974.
 
 ### Diversity and Inclusion
 
 {{% notice note %}}
-This is our personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://tomprof.stanford.edu/posting/1625) created by two educators at Brown University. We feel that a statement such as this is very powerful and important in today's world, and we'll do our best to live up to it.
+This is my personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://tomprof.stanford.edu/posting/1625) created by two educators at Brown University. I feel that a statement such as this is very powerful and important in today's world, and I'll do my best to live up to it. --Russ
 {{% /notice %}}
 
 In an ideal world, science and technology would be objective. However, much of science and technology is subjective and is historically built on a small subset of privileged voices. In this class, we will reference many materials from a diverse set of sources, but limits still exist on this diversity. I acknowledge that it is possible that there may be both overt and covert biases in the material due to the lens with which it was written, even though the material is primarily of a technical nature.
 
 Please contact me or submit anonymous feedback through the Computer Science department office if you have any concerns or suggestions regarding this course and related materials.
 
-Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.). To help accomplish this:
+Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) To help accomplish this:
 
 * If you have a name and/or use pronouns that differ from those that appear in your official K-State records, please let me know!
-* If you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to talk with me. I want to be a resource for you. Please remember that you can also submit anonymous feedback as described above (which will lead to me making a general announcement to the class, if necessary, to address your concerns).
-* If you prefer to speak with someone outside of the course, your academic advisor or the staff in the College of Engineering Student Services office are excellent resources.
+* If you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to talk with me. I want to be a resource for you. Remember that you can also submit anonymous feedback (which will lead to me making a general announcement to the class, if necessary to address your concerns).
+* If you prefer to speak with someone outside of the course, your academic advisor or the staff in the College of Engineering Student Services office are excellent resources. <anonymity/confidential>
 
 I, like many people, am still in the process of learning about diverse perspectives and identities. If something was said in class, by anyone, that made you feel uncomfortable, please talk to me about it. Again, anonymous feedback is always an option.
 
 ### Netiquette
 
 {{% notice note %}}
-This is our personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://global.k-state.edu/students/courses/netiquette/) from K-State Global Campus, and the [Recurse Center Manual](https://www.recurse.com/manual). We have adapted their ideas to fit this course.
+This is my personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://global.k-state.edu/students/courses/netiquette/) from K-State Global Campus, and the [Recurse Center Manual](https://www.recurse.com/manual). I have adapted their ideas to fit this course. --Russ
 {{% /notice %}}
 
 Online communication is inherently different than in-person communication. When speaking in person, many times we can take advantage of the _context_ and _body language_ of the person speaking to better understand what the speaker _means_, not just what is said. This information is not present when communicating online, so we must be much more careful about what we say and how we say it in order to get our meaning across.
@@ -161,7 +154,7 @@ Here are a few general rules to help us all communicate online in this course, e
 * **Be thorough, concise, and to the point.** Ideally, each message should be a page or less.
 * **Include exact error messages, code snippets, or screenshots, as well as any previous steps taken to fix the problem.** It is much easier to solve a problem when the exact error message or screenshot is provided. If we know what you've tried so far, we can get to the root cause of the issue more quickly.
 * **Consider carefully what you write before you post it.** Once a message is posted, it becomes part of the permanent record of the course and can easily be found by others.
-* **If you are lost, don't know an answer, or don't understand something, speak up!** Piazza allows you to send a message privately to the instructors, or post anonymously so other students don't know your identity. Don't be afraid to ask questions anytime, as you can choose to do so without any fear of being identified by your fellow students.
+* **If you are lost, don't know an answer, or don't understand something, speak up!** Don't be afraid to ask questions anytime.
 * **Class discussions are confidential.** Do not share information from the course with anyone outside of the course without explicit permission.
 * **Do not quote entire message chains; only include the relevant parts.** When replying to a previous message, only quote the relevant lines in your response.
 * **Do not use all caps.** It makes it look like you are shouting. Use appropriate text markup (bold, italics, etc.) to highlight a point if needed.
@@ -179,11 +172,7 @@ All student activities in the University, including this course, are governed by
 
 ### Campus Safety
 
-Kansas State University is committed to providing a safe teaching and learning environment for student and faculty members. In order to enhance your safety in the unlikely case of a campus emergency make sure that you know where and how to quickly exit your classroom and how to follow any emergency directives. To view additional campus emergency information go to the University's main page, [www.k-state.edu](http://www.k-state.edu), and click on the Emergency Information button, located at the bottom of the page.
-
-### Student Resources
-
-K-State has many resources to help contribute to student success. These resources include accommodations for academics, paying for college, student life, health and safety, and others found at [www.k-state.edu/onestop](http://www.k-state.edu/onestop).
+Kansas State University is committed to providing a safe teaching and learning environment for student and faculty members. In order to enhance your safety in the unlikely case of a campus emergency make sure that you know where and how to quickly exit your classroom and how to follow any emergency directives. To view additional campus emergency information go to the University's main page, www.k-state.edu(), and click on the Emergency Information button, located at the bottom of the page.
 
 ### Academic Freedom Statement
 
@@ -195,4 +184,4 @@ Moreover, academic freedom supports collaborative work in the pursuit of truth a
 
 &copy; The materials in this online course fall under the protection of all intellectual property, copyright and trademark laws of the U.S.  The digital materials included here come with the legal permissions and releases of the copyright holders.  These course materials should be used for educational purposes only; the contents should not be distributed electronically or otherwise beyond the confines of this online course.  The URLs listed here do not suggest endorsement of either the site owners or the contents found at the sites.  Likewise, mentioned brands (products and services) do not suggest endorsement.  Students own copyright to what they create.
 
-Original content licensed under a [Creative Commons BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) license by [Russell Feldhausen](https://russfeld.me) unless otherwise stated.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin: .5rem auto" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Original content in this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a>

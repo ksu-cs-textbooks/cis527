@@ -120,6 +120,11 @@ hidden: true
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
 </section>
 <section>
+  <h3>20.04 - Focal Fossa LTS</h3>
+  <img class="stretch" src="/images/ubuntu20.04_wiki.png">
+  <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
+</section>
+<section>
 	<h3>Installing Ubuntu</h3>
 </section>
 <section>
@@ -130,7 +135,7 @@ hidden: true
     </div>
   </section>
   <section>
-    <div style="margin: -950px;">
+    <div style="margin: -1050px;">
       <img class="plain" style="width: 1400px;" src="/images/filesys_geekstuff.png">
 			<p class="imagecredit">Image Source: <a href="http://www.thegeekstuff.com/2010/09/linux-file-system-structure/">Geek Stuff</a></p>
     </div>
@@ -139,5 +144,5 @@ hidden: true
 <section>
   <h3>Get Started!</h3>
   <p>Complete Lab 1, Task 4:</p>
-  <p>Install Ubuntu 18.04</p>
+  <p>Install Ubuntu 20.04</p>
 </section>

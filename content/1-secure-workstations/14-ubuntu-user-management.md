@@ -4,6 +4,8 @@ weight: 70
 pre: "14. "
 ---
 
+TODO
+
 {{< youtube 1m_TT6sUuUw >}}
 
 #### Resources
@@ -33,7 +35,7 @@ As you configure Ubuntu accounts, you'll notice that there are three major accou
 
 The other type of user, System User, is a user account created for a program or service. These are similar to the pseudo accounts on Windows 10, but on Ubuntu there are typically several of them, with a unique account assigned to each service. For example, the Apache web server which will be installed as part of this module creates its own user account, which can be used to determine what files can be accessed or served by the web server.
 
-Now, let's look at the different ways user accounts can be configured on Ubuntu. First, we can go to the Settings application. From there, click the Details button on the left, then Users. Here you can see information about your current user account, and are able to change the password. You cannot change the user account type of the current account. To add a new account, you must click the "Unlock" button at the top of the screen and enter your current password. This is the graphical equivalent of using a `sudo` command. From there, you can create a new user.
+Now, let's look at the different ways user accounts can be configured on Ubuntu. First, we can go to the Settings application. From there, click the Users button on the left. Here you can see information about your current user account, and are able to change the password. You cannot change the user account type of the current account. To add a new account, you must click the "Unlock" button at the top of the screen and enter your current password. This is the graphical equivalent of using a `sudo` command. From there, you can create a new user.
 
 You can also install the `gnome-system-tools` package to get access to a different interface for managing user accounts. Once it is installed, you can search for "Users and Groups" after clicking the activities button to find it. Here, you can add or edit accounts, and you can also manage existing groups. However, you are still unable to add users to groups or do any advanced editing here. To do most of that, you'll need to use the terminal.
 
@@ -53,4 +55,4 @@ Similarly, there are `/etc/group` and `/etc/gshadow` files, serving the same pur
 
 Of course, it should go without saying that it is not recommended to edit those files directly. Instead, use the appropriate terminal commands to modify information about user accounts and groups.
 
-At this point, you should be ready to start working on Lab 1, Task 5 - Configure Ubuntu 18.04. One of the first tasks in that lab is to create several user accounts, so that will be great practice for using some of these tools and commands.
+At this point, you should be ready to start working on Lab 1, Task 5 - Configure Ubuntu 20.04. One of the first tasks in that lab is to create several user accounts, so that will be great practice for using some of these tools and commands.

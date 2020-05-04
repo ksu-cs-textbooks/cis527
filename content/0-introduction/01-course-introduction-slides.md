@@ -19,6 +19,14 @@ hidden: true
 	</p>
 </section>
 <section>
+	<h3>Graduate Teaching Assistant</h3>
+	<p>
+	  <b>BreAnn Anshutz</b><br>
+	  banshutz AT ksu DOT edu<br>
+	  <i>Piazza Preferred</i>
+	</p>
+</section>
+<section>
 	<h3>Content Credits</h3>
 	Seth Galitzer - sgsax AT ksu DOT edu<br>
 	Many Previous TAs & Students
@@ -28,15 +36,16 @@ hidden: true
 	<ul>
 		<li>7 Lab Modules + Final Project</li>
 		<li>Gated - Must Complete in Order</li>
-		<li>Go at Your Own Pace</li>
+		<li><b>==One Module Due Each Week==</b></li>
+		<li>Can Work Ahead At Your Own Pace</li>
 		<li>Interactive Lab Grading</li>
-		<li>Complete by August 9, 2019</li>
+		<li>Complete by July 31, 2020</li>
 	</ul>
 </section>
 <section>
 	<h3>Module 0 - Course Introduction</h3>
 	<ul>
-		<li>Navigating Canvas & Mediasite</li>
+		<li>Navigating Canvas & YouTube</li>
 		<li>Syllabus</li>
 		<li>Introduce Yourself!</li>
 		<li>0 - Course Readiness Quiz</li>
@@ -59,15 +68,14 @@ hidden: true
 		<li>70% Lab Assignments (10% Each)</li>
 		<li>15% Quizzes (1% Each)</li>
 		<li>15% Final Project</li>
-		<li>Some Extra Credit Available (Bug Bounty)</li>
+		<li>Some Extra Credit Available<br>(Bug Bounty)</li>
 	</ul>
 	<p>Standard 90-80-70-60 grading scale</p>
 </section>
 <section>
 	<h3>What's Different?</h3>
 	<ul>
-		<li>No Due Dates</li>
-		<li>No Late Work</li>
+		<li>Can Work Ahead</li>
 		<li><del>Long Lectures</del> Short Videos</li>
 		<li><del>Textbooks</del> Online Resources</li>
 	</ul>
@@ -77,9 +85,9 @@ hidden: true
 	<ul>
 		<li>~6 Hrs. Content per Module</li>
 		<li>1 - 6 Hrs. Lab Work per Module</li>
-		<li>6 Hrs. Content + 6 Hrs. Lab per Week</li>
-		<li>Labs Graded by Instructor</li>
-		<li>Office Hours (Virtual/Campus)</li>
+		<li>6 Hrs. Content +<br>6 Hrs. Lab per Week</li>
+		<li>Labs Graded by Instructor/GTA</li>
+		<li>Office Hours (Virtual)</li>
 	</ul>
 </section>
 <section>

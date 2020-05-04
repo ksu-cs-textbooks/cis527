@@ -9,7 +9,7 @@ pre: "5. "
 ### Instructor Contact Information
 
 * **Instructor:** Russell Feldhausen (russfeld AT ksu DOT edu)<br> _I use **he/him** pronouns. Feel free to share your own pronouns with me, and I'll do my best to use them!_
-* **Office:** DUE 2184 or DUE 2166, but I mostly work remotely from Kansas City, MO
+* **Office:** DUE 2184, but I mostly work remotely from Kansas City, MO
 * **Phone:** (785) 292-3121 (Call/Text)
 * **Website:** https://russfeld.me
 * **Virtual Office Hours:** By appointment via [Zoom](https://ksu.zoom.us/). Schedule a meeting at [https://calendly.com/russfeld](https://calendly.com/russfeld)
@@ -20,14 +20,25 @@ pre: "5. "
 * **Email**: Students are also welcome to email us anytime with questions outside of the scope of these courses. We will try to respond within one business day. Questions related to the course itself may be redirected to Piazza. We're also active on the [K-State CS Rocket.chat](https://chat.cs.ksu.edu).
 * **Phone/Text:** _Emergencies only!_ We will do our best to respond as quickly as we can.
 
+### Graduate Teaching Assistant
+
+#### CIS 527 Summer 2020
+
+To join a GTA's office hours, click the appropriate Zoom link below:
+
+* <big>BreAnn Anshutz</big> - banshutz AT ksu DOT edu <br>**Office Hours:** By Appointment via [Zoom](https://ksu.zoom.us/) 
+
+Email the GTAs or post on Piazza to request GTA office hours by appointment.
+
 ### Prerequisites
 
 * CIS 300. Students may enroll in CIS courses only if they have earned a grade of C or better for each prerequisite to those courses.
 
 ###  Course Structure
-This course is being taught 100% online and self-paced for the first time. There may be some bumps in the road. Students will work at their own pace through several modules, with suggested due dates for completion of each module given. Material will be provided in the form of recorded videos, links to online resources, and discussion prompts. Each module will include a hands-on lab assignment, which will be graded interactively by the instructor. Assignments may also include written portions or presentations, which will be submitted online.
 
-The course will also include a final project and presentation. More information about this will be announced during the semester.
+This course is being taught 100% online and mostly asynchronous. There may be some bumps in the road. Students will work at their own pace through several modules, with due dates for completion of each module given. Material will be provided in the form of recorded videos, links to online resources, and discussion prompts. Each module will include a hands-on lab assignment, which will be graded interactively by the instructor or GTAs. Assignments may also include written portions or presentations, which will be submitted online.
+
+The course will also include a final project and presentation. More information about this can be found in the final project module on Canvas.
 
 ### Course Description
 
@@ -55,7 +66,7 @@ At the end of this course, students should be able to:
 * Core Networking Services (DHCP, DNS, ICMP, etc.)
 * System Monitoring & Maintenance
 * Backup Strategies
-* The Cloud
+* The Cloud & DevOps
 
 ### Grading
 
@@ -77,13 +88,25 @@ Letter grades will be assigned following the standard scale:
 
 ### Late Work
 
-Since this course is online and self-guided, there is no explicit late work policy. Students are expected to follow the suggested course deadlines if possible, and are encouraged to work at their own pace. All course work must be submitted, and all interactively graded materials must be graded with the instructor, on or before **August 9, 2019**. No late work will be accepted after 11:59 PM on August 9, 2019.
+{{% notice warning %}}
+This is an updated late work policy that takes effect for the Summer 2020 semester. While my original intent was to have this course completely asynchronous and self-paced, I've found that students prefer having more strict deadlines than more flexiblity, and many times they will perform better in the course when deadlines are enforced. Therefore, deadlines will be strictly enforced starting in Summer 2020. 
+{{% /notice %}}
 
-If you have extenuating circumstances, please discuss them with the instructor as soon as they arise so other arrangements can be made. If you find that you are getting behind in the class, you are encouraged to speak to the instructor for options to make up missed work.
+Due to the asynchronous nature of this course, staying on task and keeping up with deadlines is very important. Therefore, all course work must be submitted, and all interactively graded materials must be graded with the instructor or GTA, on or before the posted due date to receive full credit. _For labs, it is not simply enough to contact the instructor/GTA asking to schedule a grading time before the due date; the grading itself must be completed before the due date in order to be considered "on time"._
+
+Any work submitted and graded after the due date is subject to a deduction of 10% of the total points possible on the assignment for each day that the assignment is late. For example, if an assignment is due on a Friday and is submitted the following Tuesday, it will be subject to a reduction of 40% of the total points possible, or 10% for each day it was late (Saturday, Sunday, Monday, and Tuesday in this example). 
+
+Also, note that several labs in this class require successful completion of previous labs. If you are behind and choose to skip a lab assignment to catch up, you may still have to make up some or all of that work in order to complete a later lab. You may contact the instructor to discuss options for obtaining model solutions to previous labs if needed.  
+
+All course work must be submitted, and all interactively graded materials must be graded with the instructor, on or before **July 31, 2020**. No late work will be accepted after 11:59 PM on July 31, 2020.
+
+If you have extenuating circumstances, please discuss them with the instructor as soon as they arise so other arrangements can be made. If you know you have upcoming events that will prevent you from completing work in this course, you should contact the instructor ASAP and plan on working ahead before your event instead of catching up afterwards. If you find that you are getting behind in the class, you are encouraged to speak to the instructor for options to catch up quickly. 
 
 ### Recommended Texts & Supplies
 
 Students in this course are expected to have access to a computer with virtual machine software (VMware, Virtual Box, Parallels, or other) installed and running. The computer should be capable of running multiple VMs simultaneously, which usually means having 8GB of RAM and a moderately powerful processor. Contact the instructor if you have questions or concerns.
+
+All K-State Computer Science students have access to free software from Microsoft and VMWare. More information can be found on the [K-State CS Support Website](https://support.cs.ksu.edu/CISDocs/wiki/Main_Page).
 
 Since this class covers such a wide range of material, no single textbook will suffice. Therefore, students who would like a textbook should refer to resources available on Safari Books Online. The [K-State Library](http://guides.lib.k-state.edu/az.php?q=Safari) has access to the entire catalog of books published on that platform, and it is a great resource for this course.
 
@@ -96,7 +119,7 @@ ISBN 0321492668 - eBook Editions Available - [Amazon Link](http://www.amazon.com
 
 ### Subject to Change
 
-The details in this syllabus are not set in stone. Due to the flexible nature of this class, adjustments may need to be made as the semester progresses, though they will be kept to a minimum. If any changes occur, the changes will be posted on the K-State Online page for this course and emailed to all students.
+The details in this syllabus are not set in stone. Due to the flexible nature of this class, adjustments may need to be made as the semester progresses, though they will be kept to a minimum. If any changes occur, the changes will be posted on the K-State Canvas page for this course and emailed to all students.
 
 ### Academic Honesty
 
@@ -111,7 +134,7 @@ Students with disabilities who need classroom accommodations, access to technolo
 ### Diversity and Inclusion
 
 {{% notice note %}}
-This is my personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://tomprof.stanford.edu/posting/1625) created by two educators at Brown University. I feel that a statement such as this is very powerful and important in today's world, and I'll do my best to live up to it.
+This is my personal policy and not a required syllabus statement from K-State. It has been adapted from [this statement](https://tomprof.stanford.edu/posting/1625) created by two educators at Brown University. I feel that a statement such as this is very powerful and important in today's world, and I'll do my best to live up to it. --Russ
 {{% /notice %}}
 
 In an ideal world, science and technology would be objective. However, much of science and technology is subjective and is historically built on a small subset of privileged voices. In this class, we will reference many materials from a diverse set of sources, but limits still exist on this diversity. I acknowledge that it is possible that there may be both overt and covert biases in the material due to the lens with which it was written, even though the material is primarily of a technical nature.
@@ -171,4 +194,4 @@ Moreover, academic freedom supports collaborative work in the pursuit of truth a
 
 &copy; The materials in this online course fall under the protection of all intellectual property, copyright and trademark laws of the U.S.  The digital materials included here come with the legal permissions and releases of the copyright holders.  These course materials should be used for educational purposes only; the contents should not be distributed electronically or otherwise beyond the confines of this online course.  The URLs listed here do not suggest endorsement of either the site owners or the contents found at the sites.  Likewise, mentioned brands (products and services) do not suggest endorsement.  Students own copyright to what they create.
 
-Original content licensed under a [Creative Commons BY-SA](http://creativecommons.org/licenses/by-sa/4.0/) license by [Russell Feldhausen](https://russfeld.me) unless otherwise stated.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin: .5rem auto" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Original content in this work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a>

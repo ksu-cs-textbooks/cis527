@@ -10,13 +10,13 @@ pre: "3. "
 
 * [Slides]({{< relref "/0-introduction/03-where-to-find-help-slides.md" >}})
 * [K-State IT Help Desk](https://www.k-state.edu/its/helpdesk/) - Email helpdesk@ksu.edu
-* [Course Discussion Forums](https://k-state.instructure.com/courses/67483/discussion_topics)
+* [Course Discussion Forums](https://k-state.instructure.com/)
 * [Instructor Contact Information](https://russfeld.me/)
-* [K-State Online Canvas Help](http://public.online.k-state.edu/help/)
+* [K-State Canvas Help](https://canvas.k-state.edu/info/help/)
 * [Instructure Canvas Guides](https://community.canvaslms.com/community/answers/guides)
 * [K-State Libraries](http://www.lib.k-state.edu/)
 * [K-State CS Support](https://support.cs.ksu.edu/)
-* [K-State CS Slack Team](https://ksucis.slack.com/)
+* [K-State CS Rocket Chat](https://chat.cs.ksu.edu/)
 * [K-State CS Advising](https://www.cs.ksu.edu/undergraduate/advising/)
 * [K-State Engineering Student Services](https://www.engg.ksu.edu/studentservices/)
 * [K-State Office of Student Life](https://www.k-state.edu/studentlife/)

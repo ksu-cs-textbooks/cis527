@@ -40,4 +40,4 @@ In addition, you can always install software on Linux by downloading and install
 
 Finally, if you so choose, you can download the source code for most applications built for Linux and compile it yourself. This is very rarely needed for most mainstream software, but often there is specialized software for a specific use that requires this level of work. In general, consult the documentation for that particular software for instructions on how to properly configure, build, install and run that software from source.
 
-You should now be able to continue working on Lab 1, Task 5 - Configure Ubuntu 18.04 by installing the required software. As always, if you have any questions, please post in the course discussion forums to see if others are having the same issue.
+You should now be able to continue working on Lab 1, Task 5 - Configure Ubuntu 20.04 by installing the required software. As always, if you have any questions, please post in the course discussion forums to see if others are having the same issue.

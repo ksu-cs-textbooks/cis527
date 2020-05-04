@@ -4,6 +4,8 @@ weight: 60
 pre: "12. "
 ---
 
+TODO
+
 {{< youtube PLn3N9jYp7s >}}
 
 #### Resources
@@ -15,7 +17,7 @@ pre: "12. "
 * [Ubuntu Server Guide](https://help.ubuntu.com/lts/serverguide/index.html) from Ubuntu
 * [Switching to Ubuntu](https://help.ubuntu.com/community/SwitchingToUbuntu) from Ubuntu
 * [Know Thy Ubuntu](https://help.ubuntu.com/community/KnowThyUbuntu) from Ubuntu
-* [Ubuntu 18.04 LTS (Bionic Beaver) Download](http://mirror.cis.ksu.edu/ubuntu-releases/bionic/) from CS Ubuntu Mirror
+* [Ubuntu 20.04 LTS (Focal Fossa) Download](http://mirror.cis.ksu.edu/ubuntu-releases/focal/) from CS Ubuntu Mirror
 * [Linux Distribution Timeline](https://commons.wikimedia.org/wiki/File:Linux_Distribution_Timeline.svg) from Wikipedia
 * [Desmond Tutu on Ubuntu](https://www.youtube.com/watch?v=ftjdDOfTzbk) from YouTube
 
@@ -35,7 +37,7 @@ For this class, we'll be looking at the Ubuntu software distribution. Ubuntu is 
 
 As a quick aside, here is the current Linux distribution family tree. The full version of it is linked in the resources section below the video. Ubuntu is shown here as a major branch of the Debian family.
 
-The first major release of Ubuntu was known as Ubuntu 4.10 - Warty Warthog. Each Ubuntu release is given a version number based on the month and year of its release, in this case October of 2004, as well as a code name typically consisting of an alliterative adjective and animal combination. The first LTS release was in 2006 as Dapper Drake. Since that time, there have been 6 other LTS releases:
+The first major release of Ubuntu was known as Ubuntu 4.10 - Warty Warthog. Each Ubuntu release is given a version number based on the month and year of its release, in this case October of 2004, as well as a code name typically consisting of an alliterative adjective and animal combination. The first LTS release was in 2006 as Dapper Drake. Since that time, there have been 7 other LTS releases:
 
 * 8.04 - Hardy Heron
 * 10.04 - Lucid Lynx
@@ -43,16 +45,17 @@ The first major release of Ubuntu was known as Ubuntu 4.10 - Warty Warthog. Each
 * 14.04 - Trusty Tahr
 * 16.04 - Xenial Xerus
 * 18.04 - Bionic Beaver
+* 20.04 - Focal Fossa
 
-The most recent version, Bionic Beaver, is the current LTS version and the one we'll be using in this class.
+The most recent version, Focal Fossa, is the current LTS version and the one we'll be using in this class.
 
 {{% notice note %}}
-_Of course, many new Ubuntu versions have been released since this video was recorded. The latest as of June 2019 is 19.04 Disco Dingo. However, we'll stick with the 18.04 LTS version, Bionic Beaver, since it will be maintained through April 2028. --Russ_
+_Of course, many new Ubuntu versions may have been released since this video was recorded. However, we'll stick with the 20.04 LTS version, Focal Fossa, since it will be maintained for many years. --Russ_
 {{% /notice %}}
 
 Now, let's go through the process of installing Ubuntu in a virtual machine. At this point, I'm assuming you have already installed VMware Workstation or another virtualization software on your computer. If not, I recommend doing so before continuing.
 
-First, you'll need to download the Ubuntu 18.04 installation file. You can find that file on the Ubuntu download page, and also on the K-State CS mirror of the Ubuntu downloads page. For most uses, I recommend using the CS mirror, as it is generally much faster for students on campus. The link is available in the Resources section below the video. On that page, you'll need to download the "64-bit PC (AMD64) desktop image" from the link near the top. It should download a file to your computer in the .ISO format.
+First, you'll need to download the Ubuntu 20.04 installation file. You can find that file on the Ubuntu download page, and also on the K-State CS mirror of the Ubuntu downloads page. For most uses, I recommend using the CS mirror, as it is generally much faster for students on campus. The link is available in the Resources section below the video. On that page, you'll need to download the "64-bit PC (AMD64) desktop image" from the link near the top. It should download a file to your computer in the .ISO format.
 
 Next, let's open VMware Workstation and create a new virtual machine. For this course, I recommend choosing "I will install the operating system later" to bypass the Easy Install feature of VMware. This will allow you to directly observe the installation process as it would be performed on a real computer.
 
@@ -70,7 +73,7 @@ Once it boots, you'll be given the option to install Ubuntu. Follow the prompts 
 
 Once the installation is complete, you'll be prompted to reboot your computer. In rare instances, the virtual machine may not reboot correctly. If that happens, you can use the VM menu in VMware to restart the virtual machine. It should not cause any issues as long as the installation process completed.
 
-At this point, you are ready to begin Lab 1, Task 4 - Install Ubuntu 18.04. Feel free to get started!
+At this point, you are ready to begin Lab 1, Task 4 - Install Ubuntu 20.04. Feel free to get started!
 
 Once that is complete, you'll be ready to move on to configuring Ubuntu. The next several videos will discuss that process.
 

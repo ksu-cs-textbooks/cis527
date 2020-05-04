@@ -29,5 +29,5 @@ hidden: true
 <section>
   <h3>Install Things!</h3>
   <p>Continue Lab 1, Task 5:</p>
-  <p>Configure Ubuntu 18.04</p>
+  <p>Configure Ubuntu 20.04</p>
 </section>

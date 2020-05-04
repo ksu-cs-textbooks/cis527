@@ -17,5 +17,5 @@ hidden: true
 <section>
   <h3>Secure It!</h3>
   <p>Finish Lab 1, Task 5:</p>
-  <p>Configure Ubuntu 18.04</p>
+  <p>Configure Ubuntu 20.04</p>
 </section>
