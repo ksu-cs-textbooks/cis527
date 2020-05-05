@@ -10,7 +10,7 @@ pre: "2. "
 
 * **[Slides]({{< relref "/2-configuration-management/02-configuration-management-overview-slides.md" >}})**
 * [Configuration Management](https://en.wikipedia.org/wiki/Configuration_management) on Wikipedia
-* Configuration Management(https://puppet.com/solutions/configuration-management) from Puppet
+* [Configuration Management](https://puppet.com/solutions/configuration-management) from Puppet
 * [Modern Configuration Management: Configuration as Code](https://www.chef.io/configuration-management/) from Chef
 * [Use Case: Configuration Management](https://www.ansible.com/use-cases/configuration-management) from Ansible
 * [Configuration Management](https://www.mitre.org/publications/systems-engineering-guide/acquisition-systems-engineering/configuration-management) from MITRE Systems Engineering Guide

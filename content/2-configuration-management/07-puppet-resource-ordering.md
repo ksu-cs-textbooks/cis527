@@ -8,7 +8,7 @@ pre: "7. "
 
 #### Resources
 
-* [Language: Relationships and Ordering](https://puppet.com/docs/puppet/5.5/lang_relationships.html) from Puppet
+* [Language: Relationships and Ordering](https://puppet.com/docs/puppet/latest/lang_relationships.html) from Puppet
 
 #### Video Script
 

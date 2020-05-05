@@ -8,10 +8,10 @@ pre: "9. "
 
 #### Resources
 
-* [Language: Conditional Statements and Expressions](https://puppet.com/docs/puppet/5.5/lang_conditional.html) from Puppet
-* [Language: Expressions and Operators](https://puppet.com/docs/puppet/5.5/lang_expressions.html) from Puppet
-* [Language: Classes](https://puppet.com/docs/puppet/5.5/lang_classes.html) from Puppet
-* [Puppet Labs Standard Library](https://forge.puppet.com/puppetlabs/stdlib/3.2.1) from Puppet
+* [Conditional Statements and Expressions](https://puppet.com/docs/puppet/latest/lang_conditional.html) from Puppet
+* [Expressions and Operators](https://puppet.com/docs/puppet/latest/lang_expressions.html) from Puppet
+* [Classes](https://puppet.com/docs/puppet/latest/lang_classes.html) from Puppet
+* [Puppet Labs Standard Library](https://forge.puppet.com/puppetlabs/stdlib) from Puppet
 * [Puppet Forge](https://forge.puppet.com/) from Puppet
 
 #### Video Script
@@ -107,7 +107,7 @@ include myclass
 
 Or you may declare it using a resource syntax, allowing you to override default parameter values:
 
-```
+```pp
 class { 'myclass':
   message => "Test"
 }

@@ -8,7 +8,7 @@ pre: "10. "
 
 #### Resources
 
-* [Overview of Puppet's Architecture](https://puppet.com/docs/puppet/5.5/architecture.html) from Puppet
+* [Overview of Puppet's Architecture](https://puppet.com/docs/puppet/latest/architecture.html) from Puppet
 
 #### Video Script
 

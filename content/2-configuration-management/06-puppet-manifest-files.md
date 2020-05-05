@@ -10,8 +10,8 @@ pre: "6. "
 
 * **[Slides]({{< relref "/2-configuration-management/06-puppet-manifest-files-slides.md" >}})**
 * [Configuration Management 101: Writing Puppet Manifests](https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-puppet-manifests) from DigitalOcean
-* [Language: Visual Index](https://puppet.com/docs/puppet/5.5/lang_visual_index.html) from Puppet
-* [Language: Basics](https://puppet.com/docs/puppet/5.5/lang_summary.html) from Puppet
+* [Language: Visual Index](https://puppet.com/docs/puppet/latest/lang_visual_index.html) from Puppet
+* [Language: Basics](https://puppet.com/docs/puppet/latest/puppet_language.html) from Puppet
 
 #### Video Script
 

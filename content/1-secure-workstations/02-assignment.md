@@ -71,16 +71,16 @@ Windows 10 Version 1903 has made it more difficult to create a local account whe
 
 Configure the Windows 10 Virtual Machine as specified below.
 
-* **Computer Name:** CIS527W-\<your eID\> (example: CIS527W-russfeld)
+* **Computer Name:** `cis527w-<your eID>` (example: `cis527w-russfeld`)
 {{% notice info %}}
 _This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. A majority of students have missed this step in previous semesters, so don't forget! --Russ_
 {{% /notice %}}
 * **Primary User Account:** Username: `cis527` |  Password: `cis527_windows` (Member of Administrators & Users groups)
 * **Other User Accounts:**
-  - `AdminUser` | `AdminUser123` (Administrators & Users group)
-  - `NormalUser` | `NormalUser123` (Users group)
-  - `GuestUser` | `GuestUser123` (Guests group only)
-  - `EvilUser` | `EvilUser123` (Users group)
+  - `AdminUser` | `AdminPassword123` (Administrators & Users group)
+  - `NormalUser` | `NormalPassword123` (Users group)
+  - `GuestUser` | `GuestPassword123` (Guests group only)
+  - `EvilUser` | `EvilPassword123` (Users group)
 * **Install Software**
   - [VMware Tools](https://kb.vmware.com/s/article/1014294)
   - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
@@ -117,7 +117,7 @@ When you create a group and add a user to that group, it does not take effect un
 Use either the `cis527` or `AdminUser` account to create these files, then modify the owner and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the permissions auditing tab. Many students neglect this step, leaving the file owner incorrect.
 {{% /notice %}}
 * **Don't remove the SYSTEM account or the built-in Administrator account's access from any of these files.** Usually this is as simple as not modifying their permissions from the defaults.
-* See [this screenshot](/images/lab1-image1.png) for what these permissions may look like in PowerShell.
+* See [this screenshot](/images/lab1-image1.png) and [this screenshot](/images/lab1-image1a.png) for what these permissions should look like in PowerShell.
 
 ---
 
@@ -139,16 +139,16 @@ The Ubuntu installation will sometimes hang when rebooting after installation in
 
 Configure the Ubuntu 20.04 Virtual Machine as specified below.
 
-* **Computer Name:** CIS527U-\<your eID\> (example: CIS527U-russfeld)
+* **Computer Name:** `cis527u-<your eID>` (example: `cis527u-russfeld`)
 {{% notice info %}}
 _This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. A majority of students have missed this step in previous semesters, so don't forget! --Russ_
 {{% /notice %}}
 * **Primary User Account:** Username: `cis527` | Password: `cis527_linux` (Account should have Administrator type or be in the `sudo` group)
 * **Other User Accounts:**
-  - `AdminUser` | `AdminUser123` (Administrator type or `sudo` group)
-  - `NormalUser` | `NormalUser123` (Normal type)
-  - `GuestUser` | `GuestUser123` (Normal type)
-  - `EvilUser` | `EvilUser123` (Normal type)
+  - `adminuser` | `AdminPassword123` (Administrator type or `sudo` group)
+  - `normaluser` | `NormalPassword123` (Normal type)
+  - `guestuser` | `GuestPassword123` (Normal type)
+  - `eviluser` | `EvilPassword123` (Normal type)
 * **Install Software**
   - Open VM Tools (`open-vm-tools-desktop`) (recommended) -OR- [VMware Tools](https://kb.vmware.com/s/article/1022525) (do not install both)
   - Mozilla Firefox (`firefox`)
@@ -173,7 +173,7 @@ You can test this by accessing the Ubuntu VM IP Address from Firefox on your Win
 _Read the whole task before you start! You have been warned. --Russ_
 {{% /notice %}}
 
-* Create a folder `/files` (at the root of the system, not in a user's home folder). Any user may read or write to this folder, and it should be owned by `root:root` (user: `root`; group: `root`).
+* Create a folder `/files` (**at the root of the system, not in a user's home folder**). Any user may read or write to this folder, and it should be owned by `root:root` (user: `root`; group: `root`).
 * Within `/files`, create a folder for each user created during task 5 except for `cis527`, with the folder name matching the user's name.
 * Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
 * Create a group and set permissions on each folder using that group to allow both `cis527` and `AdminUser` to have full access to each folder created in /files.

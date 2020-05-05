@@ -8,15 +8,14 @@ pre: "11. "
 
 #### Resources
 
-* [Resource Type: User](https://puppet.com/docs/puppet/5.5/types/user.html) from Puppet
-* [Resource Tips and Examples: Package on Windows](https://puppet.com/docs/puppet/5.5/resources_package_windows.html) from Puppet
-* [Managing Windows Configurations](https://puppet.com/docs/pe/2018.1/managing_windows_configurations.html#installing-packages---nsclient-example) from Puppet
-* [Managing Windows with Puppet](https://puppet.com/presentations/managing-windows-puppet) Presentation from Puppet
+* [Resource Type: User](https://puppet.com/docs/puppet/latest/types/user.html) from Puppet
+* [Resource Tips and Examples: Package on Windows](https://puppet.com/docs/puppet/latest/resources_package_windows.html) from Puppet
+* [Managing Windows Configurations](https://puppet.com/docs/pe/2018.1/managing_windows_configurations.html) from Puppet
 * [Puppet on Windows Pack](https://forge.puppet.com/puppetlabs/windows) from Puppet Forge
 * [Installing and Using Windows Modules](https://puppet.com/docs/pe/2018.1/installing_and_using_windows_modules.html) from Puppet
 * [download_file Module](https://forge.puppet.com/puppet/download_file) from Puppet Forge
-* [Running Puppet's Commands on Windows](https://puppet.com/docs/puppet/5.5/services_commands_windows.html) from Puppet
-* [Resource Tips and Examples: User and Group on Windows](https://puppet.com/docs/puppet/5.5/resources_user_group_windows.html) from Puppet
+* [Running Puppet's Commands on Windows](https://puppet.com/docs/puppet/latest/services_commands_windows.htmls) from Puppet
+* [Using User and Group on Windows](https://puppet.com/docs/puppet/latest/resources_user_group_windows.html) from Puppet
 * [puppetlabs-acl Module](https://forge.puppet.com/puppetlabs/acl) on Puppet Forge
 
 #### Video Script
