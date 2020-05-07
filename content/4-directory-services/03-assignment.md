@@ -23,7 +23,7 @@ Also, to complete many of these items, you may need to refer to additional mater
 This lab may take anywhere from **1 - 6 hours** to complete, depending on your previous experience working with these tools and the speed of the hardware you are using. Installing virtual machines and operating systems is very time-consuming the first time through the process, but it will be much more familiar by the end of this course.
 
 {{% notice warning %}}
-_Most students in previous semesters have reported that this lab is generally the most frustrating and time-consuming to complete. I recommend setting aside ample amounts of time to work on this lab. However, if you find that you are going in circles and not getting it to work, that would be a great time to ask for help. --Russ_
+_Most students in previous semesters have reported that **this lab is generally the most frustrating and time-consuming** to complete. I recommend setting aside ample amounts of time to work on this lab. This is especially true if the system you are running your VMs on is not very powerful, since running multiple VMs at the same time may slow things down significantly. However, if you find that you are going in circles and not getting it to work, that would be a great time to ask for help. --Russ_
 {{% /notice %}}
 
 ---
@@ -32,12 +32,13 @@ _Most students in previous semesters have reported that this lab is generally th
 
 For this lab, you'll need the following VMs:
 
-1. A Windows 10 VM. You may reuse your existing Windows 10 VM from a previous lab.
-2. A Windows Server 2016 Standard VM. See **Task 1** below for configuration details.
-3. An Ubuntu 18.04 VM labelled **CLIENT**. This should be the existing client VM from Lab 3.
-4. An Ubuntu 18.04 VM labelled **SERVER**. You have two options:
-  * You can create a copy of your existing **CLIENT** from Lab 3, which does not have DHCP and DNS servers installed. Follow the instructions in the Lab 3 assignment to create a copy of that VM. In this case, you'll need to reconfigure the VMware NAT network to handle DHCP duties. _This is generally the option that is simplest, and causes the least headaches._
-  * You may continue to use your exiting **SERVER** from Lab 3, with DHCP and DNS servers installed. You may choose to continue to use this server as your primary DNS and DHCP server for your VM network, which would truly mimic what an enterprise network would be like. Remember that you'll need to have this VM running at all times to provide those services to other systems on your network. You may also choose instead to disable them and reconfigure the VMware NAT network to handle DHCP duties. Either approach is fine. _This option is generally a bit closer to an actual enterprise scenario, but can also cause many headaches, especially if your system doesn't have enough power to run several VMs simultaneously._
+1. A **Windows 10** VM. You may reuse your existing Windows 10 VM from a previous lab.
+2. A **Windows Server 2019 Standard (Updated Sept 2019)** (or newer) VM. See **Task 1** below for configuration details.
+3. An **Ubuntu 20.04** VM labelled **CLIENT**. This should be the existing **CLIENT** VM from Lab 3.
+4. An **Ubuntu 20.04** VM labelled **SERVER**. _You have three options to create this VM:_
+   * You can create a copy of your existing **CLIENT** VM from Lab 3, which does not have DHCP and DNS servers installed. Follow the instructions in the Lab 3 assignment to create a copy of that VM. In this case, you'll need to reconfigure the VMware NAT network to handle DHCP duties. Make sure you label this copy **SERVER** in VMWare. _This is generally the option that is simplest, and causes the least headaches._
+   * You may continue to use your exiting **SERVER** VM from Lab 3, with DHCP and DNS servers installed. You may choose to continue to use this server as your primary DNS and DHCP server for your VM network, which would truly mimic what an enterprise network would be like. Remember that you'll need to have this VM running at all times to provide those services to other systems on your network. You may also choose instead to disable them and reconfigure the VMware NAT network to handle DHCP duties. Either approach is fine. _This option is generally a bit closer to an actual enterprise scenario, but can also cause many headaches, especially if your system doesn't have enough power to run several VMs simultaneously._
+   * You may create a new Ubuntu 20.04 VM from scratch, label it **SERVER**, and configure it as defined either in Lab 1 or using the Puppet manifest files from Lab 2. _This is effectively the same as copying your **CLIENT** VM from Lab 3, but you get additional practice installing and configuring an Ubuntu VM, I guess._
 
 {{% notice warning %}}
 Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4" that you can restore to later if you have any issues. In addition, Task 6 below will ask you to restore to a snapshot in at least one VM before starting that step.
@@ -45,14 +46,19 @@ Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4"
 
 ---
 
-### Task 1: Install Windows Server 2016 Standard
+### Task 1: Install Windows Server 2019 Standard
 
-Create a new virtual machine for **Windows Server 2016 Standard**. You can download the installation files and obtain a product key from the [Microsoft Imagine Web Store](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) discussed in Module 1. For this system, I recommend giving the VM ample resources, usually at least 2 GB RAM and multiple processor cores if you can spare them. You may need to adjust the VM settings as needed to balance the performance of this VM against the available resources on your system.
+Create a new virtual machine for **Windows Server 2019 Standard** using the "Windows Server 2019 Standard (Updated Sept 2019)" installation media (you may choose a newer option if available, but this lab was tested on that specific version). You can download the installation files and obtain a product key from the [Microsoft Azure Student Portal](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) discussed in Module 1. 
+
+{{% notice tip %}}
+For this system, I recommend giving the VM ample resources, usually at least 2 GB RAM and multiple processor cores if you can spare them. You may need to adjust the VM settings as needed to balance the performance of this VM against the available resources on your system. You may also have to choose "Windows Server 2016" as the operating system type in VMWare, as Windows Server 2019 may not be listed. 
+{{% /notice %}}
 
 When installing the operating system, configure it as specified below:
 
 * Make sure you choose the **Desktop Experience** option when installing, unless you want a real challenge! It is possible to perform these steps without a GUI, but it is _much_ more difficult.
-* **Computer Name:** CIS527D-\<your eID\> (example: CIS527D-russfeld)
+* **Computer Name:** `cis527d-<your eID>` (example: `cis527d-russfeld`)
+* **Passwords:** Use `cis527_windows` as the password for the built-in Administrator account
 * **Install Software**
   - [VMware Tools](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-391BE4BF-89A9-4DC3-85E7-3D45F5124BC7.html)
   - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) (_you'll thank me later_)
@@ -71,12 +77,12 @@ You can use <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Insert</kbd> to send a <kbd>CTRL
 
 Configure your Windows Server as an Active Directory Domain Controller. Follow the steps and configuration details below:
 
-1. First, set a static IP address on your Windows Server VM. Use the IP address ending in `42` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address or the localhost IP address `127.0.0.1` as the first entry, and then the IP address of your DHCP server (either your Ubuntu Server from Lab 3 or VMware's default gateway, whichever option you are using) as the second. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with Active Directory Domains, as the Domain Controller is also a DNS server.
+1. First, set a static IP address on your Windows Server VM. Use the IP address ending in `42` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address or the localhost IP address (`127.0.0.1`) as the first entry, and then use the IP address of your DNS server (either your Ubuntu Server from Lab 3 or VMware's default gateway address, whichever option you are using) as the second DNS entry. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with Active Directory Domains, as the Domain Controller is also a DNS server.
 2. Follow the instructions in the resources section below to install and configure the Active Directory Domain Services role on the server.
-  * **Domain Name:** ad\<username\>.cis527.cs.ksu.edu (example: `adrussfeld.cis527.cs.ksu.edu`)
-  * **Passwords:** Use `cis527_windows` for all passwords
+   * **Domain Name:** `ad<your eID>.cis527.cs.ksu.edu` (example: `adrussfeld.cis527.cs.ksu.edu`)
+   * **Passwords:** Use `cis527_windows` for all passwords
 3. Add a User Account to your Active Directory
-  * Use your own eID for the username, and `cis527_windows` as the password.
+   * Use your own eID for the username here, and `cis527_windows` as the password.
 
 #### Resources
 

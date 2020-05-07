@@ -9,7 +9,7 @@ pre: "2. "
 #### Resources
 
 * **[Slides]({{< relref "/4-directory-services/02-directory-services-overview-slides.md" >}})**
-* [X.500 Standard](http://www.x500standard.com/)
+* X.500 Standard (http://www.x500standard.com/) - defunct as of May 7, 2020
 * [Active Directory](https://en.wikipedia.org/wiki/Active_Directory) on Wikipedia
 * [Lightweight Directory Access Protocol (LDAP)](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol) on Wikipedia
 * [Samba (Software)](https://en.wikipedia.org/wiki/Samba_(software)) on Wikipedia
