@@ -4,6 +4,10 @@ weight: 55
 pre: "11. "
 ---
 
+{{% notice note %}}
+The examples in this video are for an old version of Lab 3, but should be instructive enough to be useful. Read the new Lab 3 assignment carefully and follow its instructions when configuring your system for grading. --Russ
+{{% /notice %}}
+
 {{< youtube CN8YPR_X1eU >}}
 
 #### Resources
@@ -16,9 +20,9 @@ pre: "11. "
 * [HOSTS.TXT](https://jim.rees.org/apollo-archive/hosts.txt) from March 22, 1985
 * [Root Name Server](https://en.wikipedia.org/wiki/Root_name_server) on Wikipedia
 * [Root Files](https://www.iana.org/domains/root/files) from IANA
-* [How To Configure BIND as a Private Network DNS Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-18-04) from DigitalOcean
+* [How To Configure BIND as a Private Network DNS Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-18-04) from DigitalOcean (works for 20.04 as well)
 * [Bind9 Server How-To](https://help.ubuntu.com/community/BIND9ServerHowto) from Ubuntu Community Help Wiki
-* [DNS Configuration](https://help.ubuntu.com/lts/serverguide/dns-configuration.html) from Ubuntu Server Guide
+* [DNS Configuration](https://ubuntu.com/server/docs/service-domain-name-service-dns) from Ubuntu Server Guide
 * [BIND Manuals](http://www.bind9.net/manuals) from bind9.net
 
 #### Video Transcript

@@ -4,6 +4,8 @@ weight: 60
 pre: "12. "
 ---
 
+TODO
+
 {{< youtube 1y5_IR54yb4 >}}
 
 #### Resources
@@ -12,7 +14,8 @@ pre: "12. "
 * [Simple Network Management Protocol (SNMP)](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol) on Wikipedia
 * [MIB Reference](http://www.simpleweb.org/ietf/mibs/) from SimpleWeb
 * [SNMPv2 MIB Reference](https://www.alvestrand.no/objectid/1.3.6.1.2.1.html) from Harald T. Alvestrand
-* [An Introduction to SNMP (Simple Network Management Protocol)](https://www.digitalocean.com/community/tutorials/an-introduction-to-snmp-simple-network-management-protocol) from DigitalOcean
+* [How to Install and Configure an SNMP Daemon and Client on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-an-snmp-daemon-and-client-on-ubuntu-18-04) from DigitalOcean (works for 20.04 as well)
+* [How to Use The Net-SNMP Tool Suite to Manage and Monitor Servers](https://www.digitalocean.com/community/tutorials/how-to-use-the-net-snmp-tool-suite-to-manage-and-monitor-servers) from DigitalOcean (works for 20.04)
 * [SNMP Agent](https://help.ubuntu.com/community/SNMPAgent) from Ubuntu Community Help Wiki
 
 #### Video Transcript
@@ -29,40 +32,40 @@ To help make the variables more readable, SNMP includes a Management Information
 
 The SNMP protocol itself lists many different types of protocol data units, or PDUs, as part of the standard. For example, the `GetRequest` PDU is used to query a particular variable on a device, and the `Response` PDU would be sent back from the device. You'll be able to see several of these PDUs a bit later in the video when we use Wireshark to caputre some SNMP packets.
 
-As mentioned earlier, one feature of SNMP is the use of a "community string" for authentication. In SNMPv1, the community string is a simple text identifier that you can provide along with your request. The server then determines if that community string has access to the variable it requested, and if so, it will return the appropriate response. However, since community strings are sent as plain-text, anyone who was able intercept a packet could find the community string, so it wasn't very secure. In later versions of SNMP, additional security features were added to resolve this issue.
+As mentioned earlier, one feature of SNMP is the use of a "community string" for authentication. In SNMPv1, the community string is a simple text identifier that you can provide along with your request. The server then determines if that community string has access to the variable it requested, and if so, it will return the appropriate response. However, since community strings are sent as plain-text, anyone who was able intercept a packet could find the community string, so it wasn't very secure. In later versions of SNMP, additional security features were added to resolve this issue. In this video, we will see an example of using SNMPv3 with proper security and encryption. 
 
-Now that you know a bit about SNMP, let's see a quick example of how it works. Once again, I have configured an Ubuntu VM as directed in Lab 3 to act as an SNMP server and client.
+Now that you know a bit about SNMP, let's see a quick example of how it works. Once again, I have configured an Ubuntu VM as directed in Lab 3 to act as an SNMP server, and I've also configured a second Ubuntu VM to act as an SNMP manager or client.
 
-First, on my server, I'm going to start Wireshark so we can capture these packets. Notice that I'm capturing packets on the loopback adapter, since I'll be using `localhost` as the server address. I'll also add a filter for `snmp` to make sure we only see the SNMP server packets.
+First, on my server, I'm going to start Wireshark so we can capture these packets. Notice that I'm capturing packets on the ethernet adapter, since I'll be accessing it from another system. I'll also add a filter for `snmp` to make sure we only see the SNMP server packets.
 
-Next, still on the server, we can query the data available via SNMP using a couple of different commands. First, I'm going to use the simple `snmpget` command to query a single variable. I'll tell the system to use SNMPv1 with the `-v 1` option, and the "public" community string with `-c public`. In this case, I'll query the system's uptime:
+Next, on the client system, we can query the data available via SNMP using a couple of different commands. First, I'm going to use the simple `snmpget` command to query a single variable. I've already configured this system to use a set of authentication credentials stored in a configuration file, which you can do as part of Lab 3's assignment. In this case, I'll query the system's uptime:
 
 ```bash
-snmpget -v 1 -c public localhost SNMPv2-MIB::sysUpTime.0
+snmpget 192.168.40.41 sysUpTime.0
 ```
 
-In the response, we can clearly see the system's uptime. If we switch back to Wireshark, we can see that it captured an SNMP `GetRequest` PDU, followed by an SNMP `GetResponse` PDU. If you examine the packet, you'll see that it requested the variable `1.3.6.1.2.1.1.3.0`. You can refer to the MIB reference links below this video to confirm that it is indeed the correct variable. Since we installed the MIBs on this system, it will automatically translate those numerical variable names to their standard paths and vice-versa.
+In the response, we can clearly see the system's uptime. If we switch back to Wireshark, we can see that it captured some SNMP packets. If we were using SNMP v1, they would be plaintext and we could read the information here clearly. However, since we are now using SNMPv3
 
 To see all the available SNMP variables on your system, you can try the following:
 
 ```bash
-snmpwalk -v 1 -c public localhost
+snmpwalk 192.168.40.41
 ```
 
-This command will result in thousands of lines of output, giving all of the variables available on the system. Looking at Wireshark, you can see each of those packets consist of a `GetNextRequest` PDU, followed by a `GetResponse` PDU with the answer.
+This command will result in thousands of lines of output, giving all of the variables available on the system. Looking at Wireshark, there are lots of SNMP packets being transmitted. In fact, each data item in SNMP is sent via its own packet. 
 
-Since it can be very difficult to find exactly what you are looking for using the `snmpwalk` command, you can use `grep` to search the output for a particular item. For example, to see all of the variables related to ICMP, I could do the following:
+Since it can be very difficult to find exactly what you are looking for using the `snmpwalk` command, you can use `grep` to search the output for a particular item. For example, to see all of the variables related to TCP, I could do the following:
 
 ```bash
-snmpwalk -v 1 -c public localhost | grep icmp
+snmpwalk 192.168.40.41 | grep TCP-MIB
 ```
 
 If I know the set of variables I'd like to query, I can also include them in the `snmpwalk` command, such as this example:
 
 ```bash
-snmpwalk -v  1 -c public localhost IP-MIB::icmp
+snmpwalk 192.168.40.41 TCP-MIB::tcp
 ```
 
-Either way, you should see the variables related to ICMP, which would be very helpful for the SNMP portion of this lab assignment.
+Either way, you should see the variables related to TCP. In the lab assignment, you'll need to query some information about a different set of variables, so you'll have to do some digging on your own to find the right ones. 
 
 That's a quick overview of how to use SNMP to query information about your system across the network. If you have any questions about getting it configured on your system, use the course discussion forums on Canvas to ask a question anytime!

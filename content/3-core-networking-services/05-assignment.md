@@ -42,7 +42,7 @@ For the second Ubuntu VM, you may either quickly install and configure a new VM 
 _If you do not follow these instructions carefully, the two VMs may have conflicts on the network since they'll have identical networking hardware and names, making this lab much more difficult or impossible to complete. **You have been warned!** --Russ_
 {{% /notice %}}
 
-Clearly label your original Ubuntu VM as **CLIENT** and the new Ubuntu VM as **SERVER** in VMware Workstation so you know which is which. For this lab, we'll only be using the **SERVER** VM.
+Clearly label your original Ubuntu VM as **CLIENT** and the new Ubuntu VM as **SERVER** in VMware Workstation so you know which is which. For this lab, we'll mostly be using the **SERVER** VM, but will use the **CLIENT** VM for some testing and as part of the SNMP example in Task 5. 
 
 {{% notice note %}}
 **VMware Fusion (Mac) Users** - Before progressing any further, I recommend creating a new NAT virtual network configuration and moving all of your VMs to that network, instead of the default "Share with my Mac" (vmnet8) network. In this lab, you'll need to disable DHCP on the network you are using, which is very difficult to do on the default networks. You can find relevant instructions in [Add a NAT Configuration](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-7D8E5A7D-FF0C-4975-A794-FF5A9AE83234.html) and [Connect and Set Up the Network Adapter](https://docs.vmware.com/en/VMware-Fusion/8.0/com.vmware.fusion.using.doc/GUID-84AC2D7D-4A44-4AB6-BAF8-F12C55E71A2F.html) in the VMware Fusion 8 Documentation.
@@ -197,7 +197,8 @@ In your configuration, include the following items:
   - You can also look at the network settings received by your Windows 10 VM, which at this point are from VMware's internal router.
 * Use `cis527<your eID>.cs.ksu.edu` as the domain name. (Example: `cis527russfeld.cs.ksu.edu`)
 * For the dynamic IP range, use IPs ending in `.100`-`.250` in your network.
-* For DNS servers, enter the IP address of your Ubuntu 20.04 VM labelled **SERVER** ending in `.41`. This will direct all DHCP clients to use the DNS server configured in Task 3.
+* For DNS servers, enter the **IP address** of your Ubuntu 20.04 VM labelled **SERVER** ending in `.41`. This will direct all DHCP clients to use the DNS server configured in Task 3.
+  - Do not use the domain name of your DNS server in your DHCP config file. While it _can_ work, it depends on your DNS server being properly configured in Task 3. 
   - Alternatively, for testing if your DNS server is not working properly, you can use one of the other DNS options given above in Task 2. However, you must be using the DNS server from Task 3 when graded for full credit.
 
 {{% notice tip %}}
@@ -219,22 +220,27 @@ Once that is complete, you can test the DHCP server using the Windows VM. To do 
 
 ### Task 5: SNMP Daemon
 
-Install an SNMP Daemon on the Ubuntu 20.04 VM labelled **SERVER**. Once it is installed, configure it to allow anyone on the local system (localhost) to query all available data. You'll also need to install and configure the SNMP client and make sure it has all the MIBS available. You do not have to worry about restrictive security for this exercise (_though you would on an actual enterprise system_).
+Install an SNMP Daemon on the Ubuntu 20.04 VM labelled **SERVER**, and connect to it from your Ubuntu 20.04 VM labelled **CLIENT**. The DigitalOcean tutorial linked below is a very good resource to follow for this part of the assignment. In that tutorial, the **agent server** will be your **SERVER** VM, and the **manager server** will be your **CLIENT** VM.
 
-Of course, you may need to update your firewall configuration to allow incoming SNMP requests to this system!
+1. In the tutorial, configure a user `cis527` using the password `cis527_snmp` for both the authentication and encryption passphrases. 
+   - This user **should not** be created in the `snmpd.conf` file, and any "bootstrap" users should be removed. 
 
 Then, perform the following quick activity:
 
-1. Use SNMP to query the number of ICMP requests sent from this system. Take a **screenshot** with the result clearly highlighted in the terminal output.
-2. Ping a server on the internet at least 10 times. Take a **screenshot** of the output, clearly showing how many pings were sent.
-2. Use SNMP to query the number of ICMP requests sent from this system again. Take a **screenshot** with the result clearly highlighted in the terminal output. It should match the expected output based on the previous two screenshots.
+1. While logged into the **CLIENT** VM, use the SNMP tools to query the number of ICMP Echos (pings) that have been received by the **SERVER** VM. Take a **screenshot** with the command used and the result clearly highlighted in the terminal output.
+   - You may use either `snmpget` and the OID number or name, or use `snmpwalk` and `grep` to find the requested information. 
+2. Sent at least 10 ICMP Echos (pings) from the **CLIENT** VM to the **SERVER** VM and make sure they were properly received. Take a **screenshot** of the output, clearly showing how many pings were sent.
+   - If they weren't received, check your firewall settings. 
+3. Once again, use the SNMP tools from the **CLIENT** VM to query the number of ICMP Echos (pings) that have been received by the **SERVER** VM. It should clearly show that it has increased by the number sent during the previous command. Take a **screenshot** with the command used and the result clearly highlighted in the terminal output. It should match the expected output based on the previous two screenshots.
 
-{{% notice tip%}}
-_You'll present those 3 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. --Russ_
+{{% notice note%}}
+_Be prepared to duplicate this activity during the interactive grading process! If you are unable to duplicate it, you can present the screenshots as proof that it worked before for partial credit. You may preform all three commands in a single screenshot if desired. See [this example](/images/lab3-hint.png) for an idea of what the output should look like. --Russ_
 {{% /notice %}}
 
 #### Resources
 
+* [How to Install and Configure an SNMP Daemon and Client on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-an-snmp-daemon-and-client-on-ubuntu-18-04) from DigitalOcean (works for 20.04 as well)
+* [How to Use The Net-SNMP Tool Suite to Manage and Monitor Servers](https://www.digitalocean.com/community/tutorials/how-to-use-the-net-snmp-tool-suite-to-manage-and-monitor-servers) from DigitalOcean (works for 20.04)
 * [SNMP Agent](https://help.ubuntu.com/community/SNMPAgent) from Ubuntu Community Help Wiki
 
 ---
@@ -245,28 +251,29 @@ Install Wireshark on the Ubuntu 20.04 VM labelled **SERVER**.
 
 Then, using Wireshark, create **screenshots** showing that you captured and can show the packet content of each of the following types of packets:
 
-1. A DNS standard query for `people.cs.ksu.edu`
-1. A DNS standard query response from `people.cs.ksu.edu`
-   * _HINT: It should respond as `invicta.cs.ksu.edu`_
+1. A DNS standard query for an A record for `people.cs.ksu.edu`
+1. A DNS standard query response for `people.cs.ksu.edu`
+   * _HINT: It should respond with a CNAME record pointing to `invicta.cs.ksu.edu`_
+1. A DNS standard query response for a PTR record for `208.67.222.222` (it will look like `222.222.67.208.in-addr.arpa`)
+   * _HINT: It should respond with a PTR record for `resolver1.opendns.com`_
 1. An ICMP Echo (ping) request
-1. An SNMP get-next-request packet for an item within the ICMP MIB section (1.3.6.1.2.1.5.x). Make sure you show the full Object ID in the screenshot
-1. An SNMP get-response packet for an item within the ICMP MIB section (1.3.6.1.2.1.5.x). Make sure you show the full Object ID and the value of the response
-   * _HINT: You may have to listen on the `localhost` or `loopback` interface to see these packets._
+1. An encrypted SNMP packet showing `cis527` as the username (look for the `msgUserName` field)
+   * _HINT: Use the commands from Task 5_
+1. A DHCP Offer packet showing the Domain Name of `cis527<your ID>.cs.ksu.edu`
+   * _HINT: Reboot one of your other VMs to force it to request a new IP address, or use the `ipconfig` (Windows) or `dhclient` (Ubuntu) commands to renew the IP address_
 1. An HTTP 301: Moved Permanently redirect response
    * _HINT: Clear the cache in your web browser, then navigate to `http://people.cs.ksu.edu/~russfeld` (without a trailing slash). It should redirect to `http://people.cs.ksu.edu/~russfeld/` (with a trailing slash)._
-1. An HTTP Basic Authentication request, clearly showing the username and password in plaintext
-   * *HINT: Visit `http://people.cs.ksu.edu/~russfeld/test/` and use cis527 / cis527_apache to log in*
-1. The entire TCP stream of an HTTP connection to `http://people.cs.ksu.edu/~russfeld/`
+1. An HTTP Basic Authentication request, **clearly showing the username and password in plaintext** (expand the entries in the middle pane to find it)
+   * *HINT: Visit `http://people.cs.ksu.edu/~russfeld/test/` and use `cis527` | `cis527_apache` to log in*
 
 {{% notice tip%}}
-_You'll present those 8 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. --Russ_
+_You'll present those 8 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. Make sure your screenshot clearly shows the data requested. --Russ_
 {{% /notice %}}
 
 #### Resources
 
 * [Install and Use Wireshark on Ubuntu Linux](https://itsfoss.com/install-wireshark-ubuntu/) from It's FOSS
-* [How to install Wireshark on Ubuntu 18.04 / Ubuntu 16.04 Desktop](https://computingforgeeks.com/how-to-install-wireshark-on-ubuntu-18-04-ubuntu-16-04-desktop/) from Computing for Geeks (should work for 20.04)
-* [Wireshark 2.6 Available to Install in Ubuntu 18.04, 16.04 via PPA](http://ubuntuhandbook.org/index.php/2018/07/wireshark-2-6-available-install-ubuntu-18-04-ppa/) from UbuntuHandbook (should work for 20.04)
+   * As of May 7, 2020, the Wireshark PPA does not include packages for Ubuntu 20.04 Focal Fossa. Feel free to use the older Wireshark package in the Ubuntu Universe repository. 
 
 ---
 

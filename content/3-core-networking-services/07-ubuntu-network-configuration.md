@@ -4,13 +4,17 @@ weight: 35
 pre: "7. "
 ---
 
+{{% notice note %}}
+_This video was recorded on Ubuntu 18.04, but nothing significant has changed in Ubuntu 20.04. --Russ_
+{{% /notice %}}
+
 {{< youtube pI4kp3R7ZfU >}}
 
 #### Resources
 
-* [How to Configure Static IP Address on Ubuntu 18.04 Bionic Beaver Linux](https://linuxconfig.org/how-to-configure-static-ip-address-on-ubuntu-18-04-bionic-beaver-linux) from LinuxConfig.org
-* [How to Configure Static IP Address on Ubuntu 18.04](https://linoxide.com/linux-how-to/configure-static-ip-address-ubuntu/) from LinOxide
-* [Network Configuration](https://help.ubuntu.com/lts/serverguide/network-configuration.html) from Ubuntu Server Guide.
+* [How to Configure Static IP Address on Ubuntu 20.04 Focal Fossa Desktop/Server](https://linuxconfig.org/how-to-configure-static-ip-address-on-ubuntu-20-04-focal-fossa-desktop-server) from LinuxConfig.org
+* [How to Configure Static IP Address on Ubuntu 18.04](https://linoxide.com/linux-how-to/configure-static-ip-address-ubuntu/) from LinOxide (should work for 20.04 as well)
+* [Network Configuration](https://ubuntu.com/server/docs/network-configuration) from Ubuntu Server Guide
 * ['ip' Command Cheat Sheet (Command Line Reference)](https://www.thegeekdiary.com/ip-command-cheat-sheet-command-line-reference/) from The Geek Diary
 * [ip Command Cheat Sheet](https://access.redhat.com/sites/default/files/attachments/rh_ip_command_cheatsheet_1214_jcs_print.pdf) from Red Hat
   - _Even though it is for Red Hat, most of these commands should also work in Ubuntu, and honestly, it is just a really handy cheat sheet to have!_

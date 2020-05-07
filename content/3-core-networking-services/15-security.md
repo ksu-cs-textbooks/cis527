@@ -11,7 +11,7 @@ pre: "15. "
 * **[Slides]({{< relref "/3-core-networking-services/15-security-slides.md" >}})**
 * [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security) on Wikipedia
 * [Transport Layer Security (TLS)](https://hpbn.co/transport-layer-security-tls/) from High Performance Browser Networking on O'Reilly
-* [Firewall](https://help.ubuntu.com/lts/serverguide/firewall.html.en) on Ubuntu Server Guide
+* [Firewall](https://ubuntu.com/server/docs/security-firewall) on Ubuntu Server Guide
 * [Uncomplicated Firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) on Ubuntu Wiki
 * [Fine-tuning Firewall Rules: 10 Best Practices](https://www.esecurityplanet.com/network-security/finetune-and-optimize-firewall-rules.html) from eSecurity Planet
 

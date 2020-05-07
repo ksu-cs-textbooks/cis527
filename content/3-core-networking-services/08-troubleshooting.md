@@ -42,6 +42,7 @@ If you are able to successfully ping yourself, the next step is to determine if 
 ipconfig /release
 ipconfig /renew
 ```
+
 On Linux, it is a little less straightforward, but the best way to accomplish the same task is by using these commands:
 
 ```bash
