@@ -151,8 +151,10 @@ Since the at symbol `@` has other uses in the DNS Zone file, the email address u
 _HINT: The DigitalOcean guide does not include an at symbol `@` at the beginning of that record, but I've found that sometimes it is necessary to include it in order to make the `named-checkzone` command happy. See a related post on [ServerFault](https://serverfault.com/questions/802762/reverse-dns-bind-named-checkzone-zone-ns-has-no-address-records-a-or-aaaa-err) for additional ways to solve that common error.--Russ_
 {{% /notice %}}
 * Forward Zone File:
-  * Create an A record for `ns.cis527<your eID>.cs.ksu.edu` that points to your Ubuntu 18.04 VM labelled **SERVER** using the IP address in your network ending in `41` as described above.
+  * Create an A record for `ns.cis527<your eID>.cs.ksu.edu` that points to your Ubuntu 20.04 VM labelled **SERVER** using the IP address in your network ending in `41` as described above.
   * Create an A record for `windows.cis527<your eID>.cs.ksu.edu` that points to the IP address in your network ending in `42`. _(You'll use that IP address in the next assignment for your Windows server.)_
+  * Create an A record for `ldap.cis527<your eID>.cs.ksu.edu` that points to your Ubuntu 20.04 VM labelled **SERVER** using the IP address in your network ending in `41` as described above. This record will be for the LDAP server in Lab 4.
+  * Create an A record for `ad.cis527<your eID>.cs.ksu.edu` that points to the IP address in your network ending in `42`. _(You'll use that IP address in the next assignment for your Windows server.)_ This record will be for the Active Directory server in Lab 4
   * Create a CNAME record for `ubuntu.cis527<your eID>.cs.ksu.edu` that redirects to `ns.cis527<your eID>.cs.ksu.edu`.
 * Reverse Zone File:
   * Create a PTR record for the IP address ending in `41` that points to `ns.cis527<your eID>.cs.ksu.edu`.

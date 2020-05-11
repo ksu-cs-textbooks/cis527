@@ -8,7 +8,7 @@ pre: "5. "
 
 #### Resources
 
-* [How to Join a Windows 10 PC to a Domain](https://www.groovypost.com/howto/join-a-windows-10-client-domain/) from groovyPost
+* [Join Windows 10 PC to a Domain](https://www.tenforums.com/tutorials/90045-join-windows-10-pc-domain.html) from Windows 10 Forums
 
 #### Video Transcript
 

@@ -4,6 +4,10 @@ weight: 20
 pre: "4. "
 ---
 
+{{% notice note %}}
+_This video uses Windows Server 2016, but the process should be functionally identical in Windows Server 2019. Also make sure you refer to the Lab 4 assignment for the correct root domain name. --Russ_
+{{% /notice %}}
+
 {{< youtube mXcbSisLVao >}}
 
 #### Resources

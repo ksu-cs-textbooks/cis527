@@ -79,7 +79,7 @@ Configure your Windows Server as an Active Directory Domain Controller. Follow t
 
 1. First, set a static IP address on your Windows Server VM. Use the IP address ending in `42` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address or the localhost IP address (`127.0.0.1`) as the first entry, and then use the IP address of your DNS server (either your Ubuntu Server from Lab 3 or VMware's default gateway address, whichever option you are using) as the second DNS entry. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with Active Directory Domains, as the Domain Controller is also a DNS server.
 2. Follow the instructions in the resources section below to install and configure the Active Directory Domain Services role on the server.
-   * **Domain Name:** `ad<your eID>.cis527.cs.ksu.edu` (example: `adrussfeld.cis527.cs.ksu.edu`)
+   * **Domain Name:** `ad.cis527<your eID>.cs.ksu.edu` (example: `ad.cis527russfeld.cs.ksu.edu`)
    * **Passwords:** Use `cis527_windows` for all passwords
 3. Add a User Account to your Active Directory
    * Use your own eID for the username here, and `cis527_windows` as the password.
@@ -102,7 +102,7 @@ Join your Windows 10 VM to the Active Directory Domain created in Task 2. Follow
 
 #### Resources
 
-* [How to Join a Windows 10 PC to a Domain](https://www.groovypost.com/howto/join-a-windows-10-client-domain/) from groovyPost
+* [Join Windows 10 PC to a Domain](https://www.tenforums.com/tutorials/90045-join-windows-10-pc-domain.html) from Windows 10 Forums
 
 ---
 
@@ -112,21 +112,24 @@ Install OpenLDAP on your Ubuntu VM labelled **SERVER**. Follow the steps and con
 
 1. First, set a static IP address on your Ubuntu VM labelled **SERVER**, if it does not have one already. Use the IP address ending in `41` that was reserved for this use in Lab 3. For the static DNS entries, you should use one of the options discussed in Lab 3.
 2. Set up and configure an OpenLDAP server, following the first part of the instructions in the guide linked in the resources section below.
-  * **Domain Name:** cis527\<your eID\>.local (example: cis527russfeld.local)
-  * **Base DN:** `dc=cis527\<your eID\>,dc=local` (example: `dc=cis527russfeld,dc=local`)
-  * **Passwords:** Use `cis527_linux` for all passwords
-  * You **DO NOT** have to perform the other steps in the guide to configure TLS at this point
-3. Install phpLDAPadmin from https://github.com/breisig/phpLDAPadmin. See the video in this module for detailed instructions on how to install and configure phpLDAPadmin.
+   * **Domain Name:** `ldap.cis527<your eID>.cs.ksu.edu` (example: `ldap.cis527russfeld.cs.ksu.edu`)
+   * **Base DN:** `dc=ldap,dc=cis527<your eID>,dc=cs,dc=ksu,dc=edu` (example: `dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu`)
+   * **Passwords:** Use `cis527_linux` for all passwords
+   * You **DO NOT** have to perform the other steps in the guide to configure TLS at this point
+3. Install phpLDAPadmin. See the video in this module for detailed instructions on how to install and configure phpLDAPadmin.
 4. Add a User Account to your OpenLDAP Directory
-  * Follow the instructions in the guide below to create `ou`s for `users`, `groups`, and create an `admin` group as well.
-  * Use your own eID for the username, and `cis527_linux` as the password.
+   * Follow the instructions in the guide below to create `ou`s for `users`, `groups`, and create an `admin` group as well.
+   * Use your own eID for the username, and `cis527_linux` as the password.
+5. Configure the server to use TLS. You should follow the Ubuntu Server Guide to create and sign your own certificates. Make sure you use the correct domain name!
+   * At the end of the process, copy the certificate at `/usr/local/share/ca-certificates/mycacert.crt` to the home directory of the `cis527` user for the next step.
 
 Of course, you may need to modify your firewall configuration to allow incoming connections to the LDAP server!
 
 #### Resources
 
-* [How To Install and Configure OpenLDAP and phpLDAPadmin on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04) from DigitalOcean (works for 18.04 as well)
+* [How To Install and Configure OpenLDAP and phpLDAPadmin on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04) from DigitalOcean (works for 18.04 and 20.04 as well)
 * [Add Organizational Units, Groups and Users](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-a-basic-ldap-server-on-an-ubuntu-12-04-vps#add-organizational-units-groups-and-users) from DigitalOcean
+* [LDAP & TLS](https://ubuntu.com/server/docs/service-ldap-with-tls) from the Ubuntu Server Guide
 
 ---
 
@@ -134,23 +137,18 @@ Of course, you may need to modify your firewall configuration to allow incoming 
 
 On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate against the OpenLDAP server created in Task 4.
 
-* To test your configuration, use the command `getent passwd <username>` (example: `getent passwd russfeld`) and confirm that it returns an entry for your LDAP user.
+* First, make sure that you can connect to the LDAP server using TLS. You can use `ldapwhoami -x -ZZ -h ldap.cis527<your eID>.cs.ksu.edu` and it should return `anonymous` if it works. 
+* To test your SSSD configuration, use the command `getent passwd <username>` (example: `getent passwd russfeld`) and confirm that it returns an entry for your LDAP user.
 * To log in as the LDAP user, use the `su <username>` command (example: `su russfeld`).
-* Finally, reboot the system, and make sure you can log in graphically by choosing the "Not listed?" option on the login screen and entering your LDAP user's credentials.
+* Finally, **reboot the system**, and make sure you can log in graphically by choosing the "Not listed?" option on the login screen and entering your LDAP user's credentials.
 
 #### Resources
 
-* [Configure LDAP Client on Ubuntu 16.04 / Debian 8](https://www.itzgeek.com/how-tos/linux/ubuntu-how-tos/configure-ldap-client-on-ubuntu-16-04-debian-8.html) on ITz Geek (should work on 18.04 as well)
-* [Configure LDAP Client](https://www.server-world.info/en/note?os=Ubuntu_18.04&p=openldap&f=3) from Server-World
-* [OpenLDAP Server](https://help.ubuntu.com/lts/serverguide/openldap-server.html.en) on Ubuntu Server Guide (look for the LDAP Authentication section)
+* [SSSD](https://ubuntu.com/server/docs/service-sssd) on Ubuntu Server Guide (look for the "SSSD and LDAP" section)
 
 ---
 
-### Task 6: Interoperability
-
-**!! COMPLETE ONE OF THE OPTIONS BELOW !!**
-
-#### Task 6A: Ubuntu Client on Windows Domain
+### Task 6: Interoperability - Ubuntu Client on Windows Domain
 
 1. On your Ubuntu VM labelled **CLIENT**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
 2. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
@@ -158,23 +156,10 @@ On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate agai
 4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM.
 5. Make a **snapshot** labelled "ActiveDirectory" to save your configuration for this task. You can switch between snapshots to have this VM act as a client for either directory service.
 
-#### Task 6B: Windows Client on Ubuntu Domain
-
-1. On your Ubuntu VM labelled **CLIENT**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
-2. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
-3. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to setting it up as an OpenLDAP client.
-4. On your Windows 10 VM, make a **snapshot** labelled "ActiveDirectory" to save your configuration you performed for Task 3.
-5. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
-6. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to adding it to your Active Directory Domain.
-7. Follow the instructions in the video in this module to create a Samba Domain Controller on your Ubuntu VM labelled **CLIENT**, and then add your Windows 10 VM to that domain. For the realm, use `smb<username>.cis527.cs.ksu.edu`. (For example, mine would be `smbrussfeld.cis527.cs.ksu.edu`.)
-8. On both of those VMs, make a **snapshot** labelled "Samba" to save your configuration for this task. You can switch between snapshots on these VMs for each configuration.
-
 #### Resources
 
-* [How to Configure Ubuntu Linux Server as a Domain Controller with Samba-tool](https://www.techrepublic.com/article/how-to-configure-ubuntu-linux-server-as-a-domain-controller-with-samba-tool/) by Jack Wallen on TechRepublic
-* [Samba Not Starting on Ubuntu Server 16.10](https://unix.stackexchange.com/questions/341226/samba-not-starting-on-ubuntu-server-16-10) from StackExchange
-* [How to Disable Systemd-resolved in Ubuntu](https://askubuntu.com/questions/907246/how-to-disable-systemd-resolved-in-ubuntu) from AskUbuntu
-* <s>[Join Ubuntu 18.04 to Active Directory](https://bitsofwater.com/2018/05/08/join-ubuntu-18-04-to-active-directory/) by Michael Waterman from Bits of Water</s> _Website down 2019-7-16_
+* [Join in Active Directory Domain](https://www.server-world.info/en/note?os=Ubuntu_20.04&p=realmd) from Server-World
+* [How to Join Ubuntu 18.04 / Debian 10 To Active Directory (AD) Domain](https://computingforgeeks.com/join-ubuntu-debian-to-active-directory-ad-domain/) from Computingforgeeks (works for 20.04)
 
 ---
 
@@ -184,13 +169,13 @@ From your Ubuntu VM labelled **CLIENT**, use the `ldapsearch` command (in the `l
 
 Below are example commands from a working solution. You'll need to adapt them to match your environment. There are also sample screenshots of expected output.
 
-* Active Directory Example: `ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=adrussfeld,dc=cis527,dc=cs,dc=ksu,dc=edu" -D "adrussfeld\Administrator" -w "cis527_windows"`
-  * [Screenshot](/images/lab4_win.png)
-* OpenLDAP Example: `ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=cis527russfeld,dc=local" -D "cn=admin,dc=cis527russfeld,dc=local" -w "cis527_linux"`
-  * [Screenshot](/images/lab4_ubu.png)
+* Active Directory Example: `ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=ad,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -D "ad\Administrator" -w "cis527_windows"`
+   * [Screenshot](/images/lab4_win.png) (instructive, but using old data)
+* OpenLDAP Example: `ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -D "cn=admin,dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -w "cis527_linux"`
+   * [Screenshot](/images/lab4_ubu.png) (instructive, but using old data)
 
 {{% notice tip%}}
-_You'll present those 2 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. --Russ_
+_You'll be asked to perform each of these commands as part of the grading process, but the screenshots provide good insurance in case you aren't able to get them to work --Russ_
 {{% /notice %}}
 
 ---

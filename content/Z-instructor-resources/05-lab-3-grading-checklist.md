@@ -23,14 +23,14 @@ pre: "3.1 "
   - Range
   - Authoritative
 - Ubuntu SNMP Daemon (4)
-  - `snmpwalk -v 1 -c public localhost`
+  - `snmp` demonstration
   - 3 Screenshots - before ping, pinging, after ping
 - Wireshark (8)
   - DNS query `people.cs.ksu.edu`
   - DNS Response `people.cs.ksu.edu`
+  - DNS PRT `208.67.222.222`
   - ICMP Echo
-  - SNMP get-next-request
-  - SNMP get-response
+  - SNMP Packet
+  - DHCP Offer
   - HTTP 301: Moved Permanently
   - HTTP Basic Authentication showing username and password
-  - TCP Stream

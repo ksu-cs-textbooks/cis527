@@ -20,11 +20,11 @@ Here is the information you'll need to know to get your lab graded.
   1. Connect remotely to Windows via Remote Desktop
   1. Show Static IP Address Settings in Ubuntu
   1. DNS server settings: `/etc/bind/named.conf.options`, `/etc/bind/named.conf.local` and related zone files
-  1. DNS server lookup test: `dig ubu.cis527.cs.ksu.edu` or `nslookup ubu.cis527.cs.ksu.edu`
+  1. DNS server lookup test: `dig ubuntu.cis527<your eID>.cs.ksu.edu` or `nslookup ubuntu.cis527<your eID>.cs.ksu.edu`
   1. DNS server reverse test: `dig -x xxx.xxx.xxx.41` or `nslookup xxx.xxx.xxx.41`
   1. DHCP server settings: `/etc/dhcp/dhcpd.conf`
   1. DHCP server test: `ipconfig /release` and `ipconfig /renew` from Windows
-  1. SNMP server test: `snmpwalk -v 1 -c public localhost` from Ubuntu server
+  1. SNMP server test: `snmp` demonstration from Ubuntu Client
   1. SNMP screenshots (3)
   1. Wireshark screenshots (8)
 1. **Finality** <br> Once you begin the grading process, no changes may be made to your system to fix any errors encountered. The grade you receive will reflect the state of your VMs at the start of the grading process. This is to ensure that grades are fairly determined and that no special consideration is given.

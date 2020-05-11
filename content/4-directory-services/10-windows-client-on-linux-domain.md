@@ -4,6 +4,12 @@ weight: 50
 pre: "10. "
 ---
 
+{{% notice note %}}
+
+_This portion is no longer part of the Lab 4 assignment, but I left it here because it is interesting to know that it can be done. --Russ_
+
+{{% /notice %}}
+
 {{< youtube t3ESN_EXGGw >}}
 
 #### Resources

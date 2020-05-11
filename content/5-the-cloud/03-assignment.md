@@ -32,14 +32,14 @@ _This lab involves working with resources on the cloud, and will require you to 
 
 Create **TWO** droplets on DigitalOcean. As you set up your droplets, use the following settings:
 
-* Choose the Ubuntu 18.04 x64 distribution as the droplet image
+* Choose the Ubuntu 20.04 x64 distribution as the droplet image
 * Select the smallest droplet size ($5/mo)
 * Select any United States region
 * Enable Private Networking and Monitoring
 * You may add any existing SSH keys you've already configured with DigitalOcean during droplet creation
 * Droplet names:
-  * `cis527<username>-frontend`
-  * `cis527<username>-backend`
+  * `cis527<your eID>-frontend`
+  * `cis527<your eID>-backend`
 
 The rest of this assignment will refer to those droplets as **FRONTEND** and **BACKEND**, respectively.
 
@@ -58,19 +58,25 @@ Perform these configuration steps on both droplets, unless otherwise noted:
 **DO NOT REUSE THE USUAL PASSWORD ON THIS ACCOUNT!** Any system running in the cloud should have a very secure password on each account. Make sure it is a strong yet memorable password, as you'll need it to run any commands using `sudo`.
 {{% /notice %}}
 1. Change the SSH port to 22123
-1. Set the timezone on the server to US Central Time
+1. Set the timezone on the server to GMT
 1. Install the NTP service to ensure the time is properly synchronized
 1. Enable the firewall. Configure the firewall on both systems to allow connections to the following:
   1. incoming port 22123 (SSH)
   1. incoming port 80 (HTTP)
   1. incoming port 443 (HTTP via TLS)
-  1. **BACKEND ONLY:** filter connections on port 22123 to only allow SSH connections from **FRONTEND** via its private networking IP address. You should still allow connections to port 80 and 443 from any address.
+  1. **BACKEND ONLY:** filter connections on port 22123 to only allow SSH connections from **FRONTEND** via its **private networking** IP address. You should still allow connections to port 80 and 443 from any address.
+
+{{% notice warning %}}
+
+_Many students misconfigure the firewall on the **BACKEND** server to allow connections from the wrong IP addresses or ranges. I will be picky about this from now on. --Russ_
+
+{{% /notice %}}
 
 #### Resources
 
-* [Initial Server Setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04) from DigitalOcean
+* [Initial Server Setup with Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04) from DigitalOcean
 * [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) from DigitalOcean
-* [Additional Recommended Steps for New Ubuntu 14.04 Servers](https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-ubuntu-14-04-servers) from DigitalOcean
+* [How To Set Up Time Synchronization on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-18-04) from DigitalOcean (works on Ubuntu 20.04)
 
 ---
 
@@ -89,7 +95,7 @@ Make sure you use the private networking IP address for **BACKEND** in your conf
 {{% /notice %}}
 7. Once all of the keys are in place, disable password authentication and root login via SSH on both systems.
 
-After doing these steps, you should only be able to access the cis527 account **FRONTEND** via SSH using your SSH key or the grading SSH key, and you should only be able to access **BACKEND** using the SSH key present on the cis527 account on **FRONTEND**.
+After doing these steps, you should only be able to access the cis527 account on **FRONTEND** via SSH using your SSH key or the grading SSH key, and you should only be able to access **BACKEND** using the SSH key present on the cis527 account on **FRONTEND**.
 
 {{% notice note %}}
 _You may contact me once you have installed the grading SSH key to confirm that it works correctly. I'd be happy to test it before grading. --Russ_
@@ -100,7 +106,7 @@ _You may contact me once you have installed the grading SSH key to confirm that 
 * **[Extras - SSH]({{< relref "/X-extras/02-ssh" >}})**
 * [How Does SSH Work](https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work) from Hostinger
 * [SSH Essentials: Working with SSH Servers, Clients and Keys](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) from DigitalOcean
-* [How to Set Up SSH Keys on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804) from DigitalOcean
+* [How to Set Up SSH Keys on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04) from DigitalOcean
 * [Simplify Your Life With an SSH Config File](https://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/) from Nerderati
 
 ---
@@ -126,7 +132,7 @@ To test your system, you should be able to enter the public IP address of each o
 
 #### Resources
 
-* [How To Install the Apache Web Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04) from DigitalOcean
+* [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04) from DigitalOcean
 
 ---
 
@@ -165,7 +171,7 @@ Finally, you can test your virtual host configuration using the same URLs given 
 
 #### Resources
 
-* [How To Install the Apache Web Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04) from DigitalOcean
+* [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04) from DigitalOcean
 
 ---
 
@@ -180,7 +186,7 @@ Once it is complete, you can test your certificates using the same URLs given in
 #### Resources
 
 * [Certbot](https://certbot.eff.org/) from the Electronic Frontier Foundation (EFF)
-* [How To Secure Apache with Let's Encrypt on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04) from DigitalOcean
+* [How To Secure Apache with Let's Encrypt on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04) from DigitalOcean
 
 ---
 
