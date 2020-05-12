@@ -8,10 +8,10 @@ pre: "6. "
 
 #### Resources
 
-* [File Server](https://help.ubuntu.com/lts/serverguide/samba-fileserver.html.en) from Ubuntu Documentation
+* [File Server](https://ubuntu.com/server/docs/samba-file-server) from Ubuntu Documentation
 * [Samba Server Guide](https://help.ubuntu.com/community/Samba/SambaServerGuide) from Ubuntu Community Help Wiki
-* [How to Set Up a Samba Share for a Small Organization on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04) from DigitalOcean (works for 18.04)
-* [Access User's Home Folders via Samba on Ubuntu 17.04](https://websiteforstudents.com/access-user-home-folders-via-samba-on-ubuntu-17-04-17-10/) from Website for Students (works for 18.04)
+* [How to Set Up a Samba Share for a Small Organization on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04) from DigitalOcean (works for 20.04)
+* [Access User's Home Folders via Samba on Ubuntu 17.04](https://websiteforstudents.com/access-user-home-folders-via-samba-on-ubuntu-17-04-17-10/) from Website for Students (works for 20.04)
 * [Mount Windows Shares Permanently](https://wiki.ubuntu.com/MountWindowsSharesPermanently) from Ubuntu Wiki
 * [How Do I Access Windows Shares from Bash](https://askubuntu.com/questions/434358/how-do-i-access-windows-shares-from-bash) on Ask Ubuntu Forums
 * [Use of pam-mount to Mount Home from Server](https://ubuntuforums.org/showthread.php?t=1375653) on Ubuntu Forums

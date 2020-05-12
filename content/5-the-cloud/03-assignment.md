@@ -35,7 +35,7 @@ Create **TWO** droplets on DigitalOcean. As you set up your droplets, use the fo
 * Choose the Ubuntu 20.04 x64 distribution as the droplet image
 * Select the smallest droplet size ($5/mo)
 * Select any United States region
-* Enable Private Networking and Monitoring
+* Enable Virtual Private Cloud (VPC) Networking and Monitoring
 * You may add any existing SSH keys you've already configured with DigitalOcean during droplet creation
 * Droplet names:
   * `cis527<your eID>-frontend`
@@ -46,7 +46,7 @@ The rest of this assignment will refer to those droplets as **FRONTEND** and **B
 #### Resources
 
 * [How to Create a Droplet from the DigitalOcean Control Panel](https://www.digitalocean.com/docs/droplets/how-to/create/) from DigitalOcean
-
+* [Virtual Private Cloud (VPC)](https://www.digitalocean.com/docs/networking/vpc/) from DigitalOcean (replaced private networking)
 ---
 
 ### Task 1: Configure Droplets
@@ -58,17 +58,17 @@ Perform these configuration steps on both droplets, unless otherwise noted:
 **DO NOT REUSE THE USUAL PASSWORD ON THIS ACCOUNT!** Any system running in the cloud should have a very secure password on each account. Make sure it is a strong yet memorable password, as you'll need it to run any commands using `sudo`.
 {{% /notice %}}
 1. Change the SSH port to 22123
-1. Set the timezone on the server to GMT
-1. Install the NTP service to ensure the time is properly synchronized
+1. Ensure the timezone is set to UTC
 1. Enable the firewall. Configure the firewall on both systems to allow connections to the following:
-  1. incoming port 22123 (SSH)
-  1. incoming port 80 (HTTP)
-  1. incoming port 443 (HTTP via TLS)
-  1. **BACKEND ONLY:** filter connections on port 22123 to only allow SSH connections from **FRONTEND** via its **private networking** IP address. You should still allow connections to port 80 and 443 from any address.
+   * incoming port 22123 (SSH)
+       * **BACKEND ONLY:** filter connections on port 22123 to only allow SSH connections from **FRONTEND** via its **private networking** IP address. You should still allow connections to port 80 and 443 from any address.
+   * incoming port 80 (HTTP)
+   * incoming port 443 (HTTP via TLS)
+
 
 {{% notice warning %}}
 
-_Many students misconfigure the firewall on the **BACKEND** server to allow connections from the wrong IP addresses or ranges. I will be picky about this from now on. --Russ_
+_Many students misconfigure the firewall on the **BACKEND** server to allow SSH connections from the wrong IP addresses or ranges, or include a rule to allow connections from any address. I will be picky about this from now on. --Russ_
 
 {{% /notice %}}
 
@@ -190,6 +190,22 @@ Once it is complete, you can test your certificates using the same URLs given in
 
 ---
 
-### Task 7: Schedule A Grading Time
+### Task 7: Load Balancer
+
+Create a load balancer in DigitalOcean to distribute HTTP traffic between your **FRONTEND** and **BACKEND** droplets on port 80 using the "Round Robin" algorithm. It does not have to handle SSL traffic or have a domain name assigned. When a user visits the IP address of the load balancer repeatedly, they should clearly see both the frontend and backend server homepages as the load balancer swaps between the two servers. 
+
+{{% notice info %}}
+
+_The DigitalOcean load balancers are a bit more expensive than the droplets we are using. Because of this, I recommend creating your load balancer last, and then immediately scheduling a grading time. Once your Lab 5 assignment has been graded, you are welcome to destroy the load balancer to avoid paying for it for very long. It will not be used beyond this assignment. --Russ_
+
+{{% /notice %}}
+
+#### Resources
+
+* [Load Balancers](https://www.digitalocean.com/products/load-balancer/) from DigitalOcean
+
+---
+
+### Task 8: Schedule A Grading Time
 
 Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.

@@ -4,6 +4,8 @@ weight: 35
 pre: "7. "
 ---
 
+TODO
+
 {{< youtube tzgMTxh24pY >}}
 
 #### Resources
@@ -37,6 +39,14 @@ One major feature that sets Amazon Web Services apart from DigitalOcean is the a
 Finally, beyond scaling, you should also consider how to design your systems for high availability when dealing with the cloud. In many organizations, your overall goal is to make your cloud resources available all of the time, without any noticeable errors or downtime. To do that, however, requires quite a bit of planning and an advanced architecture to make it all work properly. Here is a simple example setup from DigitalOcean, showing how you can use six cloud resources to build a simple, highly available system.
 
 First, there are two load balancers. One is acting as the primary, and is assigned to a floating IP address. The secondary load balancer has a connection to the primary, allowing it to monitor the health of the system. If the secondary load balancer detects an error with the primary, it will switch the floating IP to point to itself to handle incoming requests. This change can happen almost automatically, so the users will not experience much downtime at all. Behind the load balancer is two application servers. The load balancers can forward requests to either application server, but they will, of course, detect if one server is down and route all requests to the other server instead. Finally, each application server is attached to a backend database server, each of which are replicated from the other to maintain data consistency. With this setup, as long as both systems of the same type don't fail at the same time, the application should always be available to the users.
+
+---
+
+In the updated assignment for Lab 5, you are asked to create a load balancer between your DigitalOcean droplets to split HTTP traffic between the frontend and backend droplets. Once that is properly set up and configured, you should be able to visit the IP address of the load balancer and see the homepage of one of the two droplets. Then, if you constantly refresh that page, it should swap between the two servers as shown here.
+
+Unfortunately, due to the way we have configured other parts of this lab, it is prohibitively difficult to configure this load balancer to properly handle HTTPS traffic. This is mainly because we are using an external registrar for our domain name so that DigitalOcean cannot manage the domain, and the certificates we are getting from certbot are tied to the actual domain name and not a wildcard. In a production system, we would probably change one of these two things to allow us to send properly secured HTTPS traffic through the load balancer. But, for now, we won't worry about that. 
+
+---
 
 To put it all together, let's look at a quick case study for how to build an effective computing architecture in the cloud. Netflix is one of the pioneers in this area, and arguably has one of the most advanced and robust cloud infrastructures on the internet today.
 

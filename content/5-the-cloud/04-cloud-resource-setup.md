@@ -15,14 +15,14 @@ pre: "4. "
 * **[Extras - Windows Subsystem for Linux]({{< relref "/X-extras/06-windows-subsystem-for-linux" >}})**
 * [How to Create a Droplet from the DigitalOcean Control Panel](https://www.digitalocean.com/docs/droplets/how-to/create/) from DigitalOcean
 * [An Introduction to Cloud-Config Scripting](https://www.digitalocean.com/community/tutorials/an-introduction-to-cloud-config-scripting) from DigitalOcean
-* [Initial Server Setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04) from DigitalOcean
+* [Initial Server Setup with Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04) from DigitalOcean
+* [Virtual Private Cloud (VPC)](https://www.digitalocean.com/docs/networking/vpc/) from DigitalOcean (replaced private networking)
 * [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) from DigitalOcean
-* [Additional Recommended Steps for New Ubuntu 14.04 Servers](https://www.digitalocean.com/community/tutorials/additional-recommended-steps-for-new-ubuntu-14-04-servers) from DigitalOcean
 * [How Does SSH Work](https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work) from Hostinger
 * [SSH Essentials: Working with SSH Servers, Clients and Keys](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) from DigitalOcean
-* [How to Set Up SSH Keys on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804) from DigitalOcean
+* [How to Set Up SSH Keys on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04) from DigitalOcean
 * [Simplify Your Life With an SSH Config File](https://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/) from Nerderati
-* [How To Add Swap Space on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04) from DigitalOcean _(not recommended)_
+* [How To Add Swap Space on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04) from DigitalOcean _(not recommended)_
 
 #### Video Transcript
 
@@ -47,6 +47,12 @@ Similarly, they also offer the ability to have your storage volumes separate fro
 Below that, you'll be able to choose your datacenter region. In general, it is best to select a region close to you and where you'll be accessing these droplets. So, I'd recommend selecting one of the New York or San Francisco options. If you are creating multiple droplets, as you will for this class, make sure they are in the same datacenter region so they are able to communicate with one another internally.
 
 There are a few other options you can enable. The first is private networking, which allows droplets in the same datacenter region to communicate on a private network that is internal to DigitalOcean's datacenter. This is great if you'll be storing data on one droplet and accessing it via another, as you use the private network to protect that connection from eavesdropping.
+
+{{% notice note %}}
+
+Private networking has been replaced by Virtual Private Cloud (VPC) networking, but it works effectively the same.
+
+{{% /notice %}}
 
 Next, you can enable IPv6 access to the droplet. Depending on your network infrastructure, you may or may not find this useful. We won't be enabling it in this course.
 

@@ -9,7 +9,7 @@ pre: "9. "
 #### Resources
 
 * **[URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite) from Microsoft**
-* [Add A Website to Windows Server 2016 using Host Headers](https://www.1and1.com/cloud-community/learn/web-server/iis/add-a-website-to-windows-server-2016-using-host-headers/) from 1&1
+* [Add A Website to Windows Server 2016 using Host Headers](https://www.ionos.com/community/server-cloud-infrastructure/windows-server/add-a-website-to-windows-server-2016-using-host-headers/) from Ionos by 1&1
 * [How to Create a Self Signed Certificate in IIS](https://aboutssl.org/how-to-create-a-self-signed-certificate-in-iis/) from AboutSSL
 * [Microsoft Server 2016 - IIS 10 & 10.5 - SSL Installation](https://www.sslsupportdesk.com/microsoft-server-2016-iis-10-10-5-ssl-installation/) from SSLSupportDesk
 * [How to Install a SSL Certificate on IIS 10](https://helpdesk.ssls.com/hc/en-us/articles/115000853911-How-to-install-a-SSL-certificate-on-IIS-10) from SSLs.com

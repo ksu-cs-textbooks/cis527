@@ -14,6 +14,8 @@ TODO
 * [Add Organizational Units, Groups and Users](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-a-basic-ldap-server-on-an-ubuntu-12-04-vps#add-organizational-units-groups-and-users) from DigitalOcean
 * [LDAP & TLS](https://ubuntu.com/server/docs/service-ldap-with-tls) from the Ubuntu Server Guide
 * [How Does HTTPS Work](https://www.youtube.com/watch?v=T4Df5_cojAs) from kubucation on YouTube (a good overview of CAs and certificates)
+* **[Core Networking Services - Security]({{< relref "/3-core-networking-services/15-security" >}})**
+* **[The Cloud - Certificates]({{< relref "/5-the-cloud/06-certificates" >}})**
 
 #### Video Transcript
 
@@ -88,7 +90,7 @@ sudo apt install gnutls-bin ssl-cert
 
 Next, we need to create our own certificate authority, or CA. In a production system, you would instead work with an actual CA to obtain a security certificate from them, but that can be time consuming and expensive. So, for this example, we'll just create our own. Also, contrary to what your browser may lead you to believe, using your own CA certificates will result in an encrypted connection, it just may not be "trusted" since your browser doesn't recognize the CA certificate. 
 
-If you want to know more about CAs and certificates, check out the handy YouTube video I've linked below this video. It gives a great description of how certificates work in much more detail.
+If you want to know more about CAs and certificates, check out the handy YouTube video I've linked below this video. It gives a great description of how certificates work in much more detail. I've also included links to the lectures in Module 3 and Module 5 that deal with TLS certificates. 
 
 So, we'll first create a private key for our CA:
 

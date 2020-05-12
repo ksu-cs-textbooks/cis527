@@ -32,7 +32,7 @@ _This lab involves working with resources on the cloud, and will require you to 
 
 For this lab, you will continue to use the two DigitalOcean droplets from Lab 5, labelled **FRONTEND** and **BACKEND**, respectively. This assignment assumes you have completed all steps in Lab 5 successfully; if not, you should consult with the instructor to resolve any existing issues before continuing.
 
-You will also need a Windows Server 2016 VM configured as an Active Directory Domain Controller, along with a Windows 10 VM added as a client computer on that domain. In general, you may continue to use the resources created in Lab 4, but you may choose to recreate them as directed in Lab 4 if desired.
+You will also need a Windows Server 2019 VM configured as an Active Directory Domain Controller, along with a Windows 10 VM added as a client computer on that domain. In general, you may continue to use the resources created in Lab 4, but you may choose to recreate them as directed in Lab 4 if desired.
 
 In addition, you will need two Ubuntu VMs, one labelled **SERVER** and the other labelled **CLIENT**. You may continue to use the Ubuntu VMs from Labs 3 and 4, or create new VMs for this lab. This lab does not assume any existing setup on these VMs beyond what is specified in Labs 1 and 2. You should also make sure your Ubuntu VM labelled **SERVER** has a static IP address.  
 
@@ -40,14 +40,14 @@ In addition, you will need two Ubuntu VMs, one labelled **SERVER** and the other
 
 ### Task 1: Windows File Server
 
-Configure a file server on your Windows Server 2016 VM. It should have the following features:
+Configure a file server on your Windows Server 2019 VM. It should have the following features:
 
 * A shared folder on the server named `everyone` and stored at `C:\everyone` that should be accessible by all users on your domain
 * A shared folder on the server named `restricted` and stored at `C:\restricted` that should only be accessible to users in the Domain Admins group in your domain
 
 #### Resources
 
-* [How to Share Files and Folders in Windows Server 2016](https://www.tactig.com/share-files-folders-windows-server-2016/) from Tactig
+* [How to Share Files and Folders in Windows Server 2016](https://www.tactig.com/share-files-folders-windows-server-2016/) from Tactig (should work for Server 2019)
 
 ---
 
@@ -56,10 +56,11 @@ Configure a file server on your Windows Server 2016 VM. It should have the follo
 Configure group policy objects (GPOs) on your Windows Active Directory domain to perform the following tasks:
 
 * All domain users should get the `everyone` folder automatically mapped to the `Z:\` drive on any system they log into.
-* Users in the Domain Admins group should also get the `restricted` folder automatically mapped to the `Y:\` drive on any system they log into.  
+* Users in the ``Domain Admins`` group should also get the `restricted` folder automatically mapped to the `Y:\` drive on any system they log into. 
+   * That drive **should not** be mapped for any user that is not a member of the `Domain Admins` group. 
 
 {{% notice tip %}}
-_Pay close attention to which OUs in the domain you attach these GPOs to. You can use the domain Administrator account and the other domain account created in Lab 4 to test these on your Windows 10 client. --Russ_
+_Pay close attention to how you attach and target these GPOs in the domain. You can use the domain Administrator account and the other domain account created in Lab 4 to test these on your Windows 10 client. --Russ_
 {{% /notice %}}
 
 #### Resources
@@ -76,7 +77,7 @@ Configure a file server using Samba on your Ubuntu VM labelled **SERVER**. It sh
 
 * A shared folder on the server named `everyone` and stored at `/everyone` that should be accessible by all Samba users
 * Enable shared home directories in Samba using the default `[homes]` share.
-* Enable the `cis527` user in the Samba password database.
+* Enable the `cis527` user in the Samba password database. It should use the same `cis527_linux` password as the actual `cis527` account.
 
 {{% notice tip %}}
 _Of course, you may have to allow additional ports or applications through the firewall. --Russ_
@@ -84,10 +85,11 @@ _Of course, you may have to allow additional ports or applications through the f
 
 #### Resources
 
-* [File Server](https://help.ubuntu.com/lts/serverguide/samba-fileserver.html.en) from Ubuntu Documentation
+* [File Server](https://ubuntu.com/server/docs/samba-file-server) from Ubuntu Documentation
 * [Samba Server Guide](https://help.ubuntu.com/community/Samba/SambaServerGuide) from Ubuntu Community Help Wiki
-* [How to Set Up a Samba Share for a Small Organization on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04) from DigitalOcean (works for 18.04)
-* [Access User's Home Folders via Samba on Ubuntu 17.04](https://websiteforstudents.com/access-user-home-folders-via-samba-on-ubuntu-17-04-17-10/) from Website for Students (works for 18.04)
+* [How to Set Up a Samba Share for a Small Organization on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04) from DigitalOcean (works for 20.04)
+* [Access User's Home Folders via Samba on Ubuntu 17.04](https://websiteforstudents.com/access-user-home-folders-via-samba-on-ubuntu-17-04-17-10/) from Website for Students (works for 20.04)
+* [How to Configure Samba Server Share on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/how-to-configure-samba-server-share-on-ubuntu-20-04-focal-fossa-linux) from LinuxConfig.org
 
 ---
 
@@ -140,7 +142,7 @@ _I recommend using Firefox for testing. Edge & Internet Explorer on Windows Serv
 #### Resources
 
 * **[URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite) from Microsoft**
-* [Add A Website to Windows Server 2016 using Host Headers](https://helpdesk.ssls.com/hc/en-us/articles/115000853911-How-to-install-a-SSL-certificate-on-IIS-10) from 1&1
+* [Add A Website to Windows Server 2016 using Host Headers](https://www.ionos.com/community/server-cloud-infrastructure/windows-server/add-a-website-to-windows-server-2016-using-host-headers/) from Ionos by 1&1
 * [How to Create a Self Signed Certificate in IIS](https://aboutssl.org/how-to-create-a-self-signed-certificate-in-iis/) from AboutSSL
 * [Microsoft Server 2016 - IIS 10 & 10.5 - SSL Installation](https://www.sslsupportdesk.com/microsoft-server-2016-iis-10-10-5-ssl-installation/) from SSLSupportDesk
 * [How to Install a SSL Certificate on IIS 10](https://helpdesk.ssls.com/hc/en-us/articles/115000853911-How-to-install-a-SSL-certificate-on-IIS-10) from SSLs.com
@@ -171,12 +173,12 @@ Once these steps are complete, you should be able to visit your web application 
 
 #### Resources
 
-* [Install MySQL on Ubuntu 18.04 Bionic Beaver Linux](https://linuxconfig.org/install-mysql-on-ubuntu-18-04-bionic-beaver-linux) from LinuxConfig.org
-* [How To Configure SSL/TLS for MySQL on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-configure-ssl-tls-for-mysql-on-ubuntu-16-04) from DigitalOcean (works for 18.04)
-* [How To Install and Secure phpMyAdmin on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04) from DigitalOcean
-* [How To Install the Apache Web Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04) from DigitalOcean
-* [How To Secure Apache with Let's Encrypt on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04) from DigitalOcean
-* [How To Set Up A Remote Database to Optimize Site Performance with MySQL on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql-on-ubuntu-16-04) from DigitalOcean (works for 18.04 for the most part)
+* [Install MySQL on Ubuntu 20.04 LTS Linux](https://linuxconfig.org/install-mysql-on-ubuntu-20-04-lts-linux) from LinuxConfig.org
+* [How To Configure SSL/TLS for MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-ssl-tls-for-mysql-on-ubuntu-18-04) from DigitalOcean (works for 20.04)
+* [How To Install and Secure phpMyAdmin on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04) from DigitalOcean (works for 20.04)
+* [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04) from DigitalOcean
+* [How To Secure Apache with Let's Encrypt on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04) from DigitalOcean
+* [How To Set Up A Remote Database to Optimize Site Performance with MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql-on-ubuntu-18-04) from DigitalOcean (works for 20.04)
 
 ---
 
