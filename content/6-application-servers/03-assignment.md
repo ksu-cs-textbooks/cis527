@@ -118,22 +118,21 @@ _To be honest, this last part can be pretty tricky. I recommend following the in
 
 For this task, you will install and configure a .NET web application for IIS on your Windows Server 2016 VM. First, choose an application to install from the following list:
 
-* [BlogEngine.NET](https://blogengine.io/docs/)
+* [BlogEngine.NET](https://blogengine.io/support/get-started/)
   * **NOTE**: If you choose BlogEngine.NET, make sure you read their site carefully. You don't have to sign up for anything on their site to download the software itself, but the download link tends to be hidden in favor of their hosted options. As a sysadmin, you should definitely get into the habit of carefully reading and considering what you find online before you click!
 
 If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages. Any approved application can be added to this list for you to use. **_You are not allowed to use JitBit's .NET Forum, as that was demonstrated in the video in this module._**
 
 Once you have selected your application, perform the following configuration steps:
 
-1. Follow the application's instructions to install and configure the application. Make sure you can access it at `http://localhost` before continuing
-2. Configure the host header for that site to be `mywebsite.local`. To test this configuration, create a second website with static content that has a host header of `anothersite.local`
-{{% notice tip %}}
-_You'll need to add entries to your system's `hosts` file to redirect those domain names to the loopback IP address `127.0.0.1` --Russ_
-{{% /notice %}}
-3. Create a self-signed SSL certificate and attach it to that site
-4. Use the URL Rewrite module to configure URL redirection to automatically direct users from HTTP to HTTPS for that site
+1. Create two websites in IIS: `blog.cis527<your eID>.cs.ksu.edu` and `site.cis527<your eID>.cs.ksu.edu`. They should be stored in `C:\inetpub\blog` and `C:\intepub\site`, respectively. For the `blog` site, make sure you choose the `.NET v4.5` Application Pool!
+2. Add a DNS forward lookup zone for `cis527<your eID>.cs.ksu.edu` to the Windows DNS server, and then add A records for the two sites described above. They should both point to the Windows Server's IP address ending in `.42`.
+3. Place a static HTML file inside of the `C:\intepub\site` folder and confirm that you can access it using Firefox at `http://site.cis527<your eID>.cs.ksu.edu`
+4. Follow the instructions to install and configure your chosen application in `C:\inetpub\blog`. Pay special attention to any file permissions required. Use the `IIS_IUSRS` group. You should be able to access it at `http://blog.cis527<your eID>.cs.ksu.edu` using Firefox. 
+5. Create a self-signed SSL certificate and attach it to both websites by adding an additional binding for HTTPS. Make sure you can access both websites using `https://`. 
+6. Use the URL Rewrite module to configure URL redirection to automatically direct users from HTTP to HTTPS for both websites.
 
-Once these steps are complete, visiting `http://mywebsite.local` in your web browser should automatically redirect you to `https://mywebsite.local` and it should be secured using your self-signed certificate. You should also be able to demonstrate that the application is working properly by interacting with it in some meaningful way. Finally, if you visit `http://anothersite.local` you should see the static content from that site.
+Once these steps are complete, visiting `http://blog.cis527<your eID>.cs.ksu.edu` in your web browser should automatically redirect you to `https://blog.cis527<your eID>.cs.ksu.edu` and it should be secured using your self-signed certificate. You should also be able to demonstrate that the application is working properly by interacting with it in some meaningful way, such as logging in and making a new post on a blog. Finally, if you visit `http://site.cis527<your eID>.cs.ksu.edu` you should see the static content from that site instead of the blog, and it should also properly redirect to HTTPS.
 
 {{% notice note %}}
 _I recommend using Firefox for testing. Edge & Internet Explorer on Windows Server are locked-down by default and can be very frustrating to work with. --Russ_
@@ -143,6 +142,8 @@ _I recommend using Firefox for testing. Edge & Internet Explorer on Windows Serv
 
 * **[URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite) from Microsoft**
 * [Add A Website to Windows Server 2016 using Host Headers](https://www.ionos.com/community/server-cloud-infrastructure/windows-server/add-a-website-to-windows-server-2016-using-host-headers/) from Ionos by 1&1
+* [How to add DNS Forward Lookup Zone in Windows Server 2019](https://computingforgeeks.com/how-to-add-dns-forward-lookup-zone-in-windows-server/) from Computingforgeeks
+* [How to add DNS A/PTR Record in Windows Server 2019](https://computingforgeeks.com/how-to-add-dns-a-ptr-record-in-windows-server/) from Computingforgeeks
 * [How to Create a Self Signed Certificate in IIS](https://aboutssl.org/how-to-create-a-self-signed-certificate-in-iis/) from AboutSSL
 * [Microsoft Server 2016 - IIS 10 & 10.5 - SSL Installation](https://www.sslsupportdesk.com/microsoft-server-2016-iis-10-10-5-ssl-installation/) from SSLSupportDesk
 * [How to Install a SSL Certificate on IIS 10](https://helpdesk.ssls.com/hc/en-us/articles/115000853911-How-to-install-a-SSL-certificate-on-IIS-10) from SSLs.com
@@ -154,31 +155,33 @@ _I recommend using Firefox for testing. Edge & Internet Explorer on Windows Serv
 
 For this step, you will install and configure a web application running on Apache in Ubuntu on your DigitalOcean droplets. First, choose an application to install from the following list:
 
-* [Wordpress](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-18-04)
+* [Wordpress](https://wordpress.org/download/)
 * [Booked](https://www.bookedscheduler.com/)
 
 If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages, and must support using a MySQL database on a separate host from the web server. In addition, the application must be installed manually - using pre-built images or Apt packages is not allowed here. Any approved application can be added to this list for you to use. **_You are not allowed to use phpBB, as that was demonstrated in the video in this module._**
 
 Once you have selected your application, perform the following configuration steps:
 
-1. Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled **BACKEND** and configure an appropriate username and database for your application. You should also enable SSL/TLS encryption on connections to the server.
+1. Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled **BACKEND** and configure an appropriate username and database for your application. You should also enable SSL/TLS encryption on connections to the server if it is not already enabled in MySQL. When creating the user account in MySQL, make sure it is set to log in from the private network IP address of **FRONTEND**.
 {{% notice tip %}}
-_You may need to configure MySQL to listen on an external network interface. Make sure you use the private network IP address. In addition, you will also have to open ports on the firewall, and you should restrict access to those ports to only allow connections from **FRONTEND**, just like the SSH server in Lab 5. --Russ_
+_You may need to configure MySQL to listen on an external network interface. Make sure you use the private network IP address only - it should not be listening on all network interfaces. In addition, you will also have to open ports on the firewall, and you should restrict access to those ports to only allow connections from the private network IP address of **FRONTEND**, just like the SSH server in Lab 5. Points will be deducted for having a MySQL server open to the internet! --Russ_
 {{% /notice %}}
 2. Configure a new virtual host in Apache for your web application. Also, add an appropriate A record to your domain name created in Lab 5 for this virtual host
-3. Install your web application on your Ubuntu droplet labelled **FRONTEND** following the application's installation instructions. When configuring the database for your application, you should have it use the MySQL database on **BACKEND** via the private network IP address
-4. Use CertBot to obtain an SSL certificate for your new application, and have it automatically configure redirection from HTTP to HTTPS
+3. Install your web application on your Ubuntu droplet labelled **FRONTEND** following the application's installation instructions. When configuring the database for your application, you should have it use the MySQL database on **BACKEND** via the private network IP address. 
+4. Use CertBot to obtain an SSL certificate for your new application, and have it automatically configure redirection from HTTP to HTTPS.
 
 Once these steps are complete, you should be able to visit your web application via HTTP, see it automatically redirect you to HTTPS, confirm that the SSL certificate is installed and valid, and then interact with the application in some meaningful way to confirm that the database connection is working. Of course, the two virtual hosts configured in Lab 5 should continue to work as well.
 
 #### Resources
 
 * [Install MySQL on Ubuntu 20.04 LTS Linux](https://linuxconfig.org/install-mysql-on-ubuntu-20-04-lts-linux) from LinuxConfig.org
-* [How To Configure SSL/TLS for MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-ssl-tls-for-mysql-on-ubuntu-18-04) from DigitalOcean (works for 20.04)
 * [How To Install and Secure phpMyAdmin on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04) from DigitalOcean (works for 20.04)
 * [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04) from DigitalOcean
 * [How To Secure Apache with Let's Encrypt on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04) from DigitalOcean
 * [How To Set Up A Remote Database to Optimize Site Performance with MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql-on-ubuntu-18-04) from DigitalOcean (works for 20.04)
+* [How To Install WordPress with LAMP on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-18-04) from DigitalOcean (a very detailed guide)
+* [How To Configure SSL/TLS for MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-ssl-tls-for-mysql-on-ubuntu-18-04) from DigitalOcean (not required for 20.04)
+
 
 ---
 

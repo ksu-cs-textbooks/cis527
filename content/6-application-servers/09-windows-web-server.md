@@ -4,12 +4,22 @@ weight: 45
 pre: "9. "
 ---
 
+TODO
+
+{{% notice note %}}
+
+The first part of this video references ASP.NET 4.6, which has been replaced by ASP.NET 4.7 in Windows Server 2019.
+
+{{% /notice %}}
+
 {{< youtube iJr9Q_cR_lg >}}
 
 #### Resources
 
 * **[URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite) from Microsoft**
 * [Add A Website to Windows Server 2016 using Host Headers](https://www.ionos.com/community/server-cloud-infrastructure/windows-server/add-a-website-to-windows-server-2016-using-host-headers/) from Ionos by 1&1
+* [How to add DNS Forward Lookup Zone in Windows Server 2019](https://computingforgeeks.com/how-to-add-dns-forward-lookup-zone-in-windows-server/) from Computingforgeeks
+* [How to add DNS A/PTR Record in Windows Server 2019](https://computingforgeeks.com/how-to-add-dns-a-ptr-record-in-windows-server/) from Computingforgeeks
 * [How to Create a Self Signed Certificate in IIS](https://aboutssl.org/how-to-create-a-self-signed-certificate-in-iis/) from AboutSSL
 * [Microsoft Server 2016 - IIS 10 & 10.5 - SSL Installation](https://www.sslsupportdesk.com/microsoft-server-2016-iis-10-10-5-ssl-installation/) from SSLSupportDesk
 * [How to Install a SSL Certificate on IIS 10](https://helpdesk.ssls.com/hc/en-us/articles/115000853911-How-to-install-a-SSL-certificate-on-IIS-10) from SSLs.com
@@ -29,19 +39,23 @@ First, let's create the directory for our new site. I'm going to create a new fo
 
 In the list on the left side of IIS Manager, expand the entry for your server, and then right-click the **Sites** folder and select **Add Website**. In the window that appears, give your website a name and a path. I'm going to point it at the folder I created at `C:\inetpub\example` for this website. Lastly, I'm going to configure the binding for the site by entering the host name I'd like to use for this website. I'm going to use `example.local` for this website. Finally, I'll click **OK** to create the site.
 
-Once the site is created, I can open up a web browser and navigate to `http://localhost` to see what the web server shows. Unfortunately, right now it just shows the default IIS page that we've seen before. This is because we still have the default site enabled on our system. If we try to navigate to `http://example.local` to access our site, that doesn't work either. This is because our web browser will try to use DNS to look up that website, but currently `.local` is not a valid TLD. So, to test this website, we'll need to edit our `hosts` file on Windows to include an entry for our test website.
+Once the site is created, I can open up a web browser and navigate to `http://localhost` to see what the web server shows. Unfortunately, right now it just shows the default IIS page that we've seen before. This is because we still have the default site enabled on our system. If we try to navigate to `http://example.local` to access our site, that doesn't work either. This is because our web browser will try to use DNS to look up that website, but currently `.local` is not a valid TLD. 
 
-The simplest way to edit the `hosts` file on Windows is to first open **Notepad** as administrator. Next, click **File** and then **Open**, and navigate to `C:\Windows\System32\drivers\etc` and change the view to show all files. You should see a file named `hosts` in that directory. As a quick sidenote, this directory's name, `etc`, is directly related to the `etc` folder on Linux-based systems that stores many of these same files.
+---
 
-In that file, simply add a new line at the bottom for our new website:
+So, to test this website, we'll need to add a few entries to our DNS server. 
 
-```
-127.0.0.1   example.local
-```
+Since our Windows server is a domain controller, it also includes a built-in DNS server. So, we can add a few A records to our DNS server to point to our websites. To access the DNS information in Windows Server, we'll go to the Server Manager, and then look for the DNS entry on the left side. This will show information about the DNS servers in our domain. Right now there is just one, our domain controller. To modify the DNS information, we can right-click on that server and choose the **DNS Manager** option.
 
-Then, save and close the file. Finally, in your web browser, try once again to visit `http://example.local`. This should take you directly to your new website.
+In this window, we can expand the entry for our server on the left, and then we should see some information that looks familiar to us based on what we learned in Lab 3. The Windows DNS server uses the same concept of forward and reverse zones, just like we saw in Bind. So, let's go to the **Forward Lookup Zones** option. 
 
-In effect, what the `hosts` file does is override the DNS system on your computer. Before looking up an address via DNS, your computer will check the hosts file for any entries matching that domain name. This is a direct throwback to the `hosts.txt` file discussed in Module 3 when we first introduced DNS. Then, just like Apache does with virtual hosts, IIS will examine an incoming request and determine which domain name is requested. It will then compare that to the bindings for the various websites on the server, and respond with the appropriate site that matches the request. This is a great way to test these features without having to set up a full DNS server in our development system.
+Here, we can see a couple of zones for our Active Directory, which are automatically maintained by the Active Directory Server. So, we will just leave these alone. Instead, let's create a new forward zone. In the wizard, we want to create a new primary zone, but we don't want to store that information in the Active Directory. If we don't uncheck this option, we are limited to only creating zones within our AD domain, which we don't want. In the next page, we'll use the zone name `local` to allow us to create DNS entries with the `.local` suffix. Of course, for the lab assignment, you may have to modify this to fit your environment. Finally, we'll choose to create a new zone file, and we'll disable dynamic updates to this DNS zone. Then, we can click Finish to create the zone.
+
+Once the zone is created, we can open it and choose to add a **New Host (A or AAAA)** record. This is pretty simple - we'll just give it a host name and an IP address, just like we would expect. So, I'll use `example` as the host name, and `192.168.40.42` as the IP address to match my example. 
+
+There we go! No, we can open Firefox and navigate to `http://example.local` and it should open our webpage! This works because our Windows server was set to use itself as its primary DNS server way back in Lab 4, so it will look up these DNS names using the DNS server we just configured. 
+
+---
 
 Next, let's configure this website to use a secure connection and a public key certificate. Back in IIS Manager, select the server in the list of items on the left side, then open the **Server Certificates** option to the right. Here, I can click the **Create Self-Signed Certificate** option on the right-hand side to create a new certificate for our server. In the window that appears, I can give the certificate a name. In this case, I'll just use the name of my website, `example.local`. That's all it takes! We now have certificate we can use.
 
