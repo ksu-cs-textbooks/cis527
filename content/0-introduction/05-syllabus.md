@@ -73,8 +73,9 @@ At the end of this course, students should be able to:
 In theory, each student begins the course with an A. As you submit work, you can either maintain your A (for good work) or chip away at it (for less adequate or incomplete work). In practice, each student starts with 0 points in the gradebook and works upward toward a final point total earned out of the possible number of points. In this course, each assignment constitutes a portion of the final grade, as detailed below:
 
 * 70% - Lab Assignments* (7 labs, 10% each lab)
-* 15% - Quizzes (15 quizzes, 1% each)
-* 15% - Final Presentation
+* 10% - Quizzes (15 quizzes, 0.66% each)
+* 10% - Discussions (5 discussions, 2% each)
+* 10% - Final Project
 
 All group work will include a **REQUIRED** peer evaluation component which can adjust that portion of the individual’s grade up to 50%. If a student should fail to contribute to a group assignment at all, their grade for that assignment will be reduced to a zero. Failure to complete the peer evaluation will result in a 10% grade deduction for that assignment.
 

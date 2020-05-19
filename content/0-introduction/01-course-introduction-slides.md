@@ -66,8 +66,9 @@ hidden: true
 	<h3>Grading</h3>
 	<ul>
 		<li>70% Lab Assignments (10% Each)</li>
-		<li>15% Quizzes (1% Each)</li>
-		<li>15% Final Project</li>
+		<li>10% Quizzes (0.66% Each)</li>
+		<li>10% Discussions (2% Each)
+		<li>10% Final Project</li>
 		<li>Some Extra Credit Available<br>(Bug Bounty)</li>
 	</ul>
 	<p>Standard 90-80-70-60 grading scale</p>

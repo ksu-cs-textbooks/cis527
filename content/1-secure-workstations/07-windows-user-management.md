@@ -4,8 +4,6 @@ weight: 35
 pre: "7. "
 ---
 
-TODO
-
 {{< youtube pWGMXjMZM7w >}}
 
 #### Resources
