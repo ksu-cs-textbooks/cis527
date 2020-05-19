@@ -77,7 +77,7 @@ _See the appropriate pages in the Extras module for more information about WSL a
 * [How to Set Up and Use Remote Desktop for Windows 10](https://www.groovypost.com/howto/setup-use-remote-desktop-windows-10/) from groovyPost
 * [How to Change the Listening Port for Remote Desktop](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/change-listening-port) from Microsoft Support
 * [Change Remote Desktop RDP Port](https://tweaks.com/windows/50743/change-remote-desktop-rdp-port/) from Tweaks.com
-* [OpenSSH Server](https://help.ubuntu.com/18.04/serverguide/openssh-server.html) from the Ubuntu Server Guide
+* [OpenSSH Server](https://ubuntu.com/server/docs/service-openssh) from the Ubuntu Server Guide
 * [Configuring OpenSSH](https://help.ubuntu.com/community/SSH/OpenSSH/Configuring) from Ubuntu Community Help Wiki
 * [Ubuntu 20.04 SSH Server](https://linuxconfig.org/ubuntu-20-04-ssh-server) from LinuxConfig.org
 

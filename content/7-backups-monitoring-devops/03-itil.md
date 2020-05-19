@@ -4,6 +4,8 @@ weight: 15
 pre: "3. "
 ---
 
+TODO
+
 {{< youtube df5VhDPq3ig >}}
 
 #### Resources
@@ -13,6 +15,8 @@ pre: "3. "
 * [ITIL](https://www.axelos.com/best-practice-solutions/itil) from Axelos
 * [ISO/IEC 20000](https://en.wikipedia.org/wiki/ISO/IEC_20000) on Wikipedia
 * [ISO/IEC 20000-1:2018](https://www.iso.org/standard/70636.html) from ISO
+* [What is IT Service Management (ITSM)](https://www.atlassian.com/itsm) from Atlassian
+* [What is ITSM? Managing IT to serve business needs](https://www.cio.com/article/3228122/what-is-itsm-managing-it-to-serve-business-needs.html) from CIO
 
 #### Video Transcript
 
@@ -51,3 +55,13 @@ There are a variety of factors that can limit and organization's ITIL maturity l
 Consider the recent events at K-State with the Hale Library fire. If K-State was truly operating at Level 5, there would most likely have to be a backup site or distributed recovery center, such that all systems could be back online in a matter of hours or minutes after a failure. However, that would be an astronomical cost to the university, and often it is still cheaper to deal with a few days of downtime instead of paying the additional cost to maintain such a system.
 
 So, in summary, why should an IT organization use ITIL? First, IT is a very complex area, and it is constantly changing. At the same time, user satisfaction is very important, and IT organizations must do their best to keep customers happy. Even though it is a very technical field, IT can easily be seen as a service organization, just like any restaurant. Because of that, many IT organizations can adopt some of the same techniques and processes that come from those more mature fields, and ITIL is a great reference that brings all of that industry knowledge and experience to one place. Lastly, poor management can be very expensive, so even though it may be expensive to maintain your IT systems at a high ITIL maturity level, that expense may end up saving money in the long run by preventing catastrophic errors. If you'd like to know more, feel free to check out some of the resources linked below the video in the resources section. Unfortunately, the ITIL volumes are not freely available, but many additional resources are.
+
+---
+
+I wanted to come back to this lecture and add a bit more information at the end to clarify a few things regarding the relationship between ITIL and a different term, IT Service Management or ITSM. I added a couple of links below this video that provide very good discussions of what ITSM is and how it relates to ITIL.
+
+In short, IT service management is the catch-all term for how an IT organization handles its work. It could deal with everything from the design of systems to the operational details of keeping it up and running and even the management of changes that need to be applied. 
+
+Within the world of ITSM, one of the most common frameworks for IT Service Management is ITIL. So, while I focus on ITIL in this video as the most common framework, it is far from the only one out there, and it has definite pros and cons. 
+
+So, as you move into the world of IT, I recommend looking a bit broader at IT Service Management as a practice, and then evaluate the many frameworks that exist for implementing that in your organization. 

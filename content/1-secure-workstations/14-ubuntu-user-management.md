@@ -13,7 +13,7 @@ TODO
 * **[Slides]({{< relref "/1-secure-workstations/14-ubuntu-user-management-slides.md" >}})**
 * [User Accounts](https://help.ubuntu.com/lts/ubuntu-help/user-accounts.html) from Ubuntu
 * [User Management](https://help.ubuntu.com/lts/serverguide/user-management.html) from Ubuntu Server Guide
-* [How to Add and Delete Users on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-16-04) from DigitalOcean (Works for 18.04)
+* [How to Add and Delete Users on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-18-04) from DigitalOcean (Works for 20.04)
 * [Gnome System Tools Package](https://launchpad.net/ubuntu/bionic/+package/gnome-system-tools) from Launchpad
   - Install this package to get the GUI to manage Users and Groups
 * [The Beginner's Guide to Managing Users and Groups in Linux](https://www.howtogeek.com/howto/36845/the-beginners-guide-to-managing-users-and-groups-in-linux/) from How-To Geek

@@ -4,6 +4,8 @@ weight: 5
 pre: "1. "
 ---
 
+TODO
+
 {{< youtube b4KNVv8zZag >}}
 
 #### Resources
@@ -26,27 +28,30 @@ Greetings! This video describes the final project in this class. You can also fi
 
 Also, you may choose to work with a partner on this assignment. If you do, please email me and let me know. Teams will be expected to produce roughly twice the quantity of work described here, so plan to scale the scope of your project accordingly.
 
-In essence, the goal of this project is to demonstrate your knowledge and experience in system administration by proposing and analyzing some type of information technology project. The audience for your proposal will be the typical C-suite executives in your organization. So, some of them will have a technical background, and others may not. You'll have to design and write about your project accordingly.
+In essence, the goal of this project is to demonstrate your knowledge and experience in system administration by proposing, prototyping, and analyzing some type of information technology project. The audience for your proposal will be the typical C-suite executives in your organization. So, some of them will have a technical background, and others may not. You'll have to design and write about your project accordingly.
 
-There are three types of projects I've highlighted for this assignment:
+There are several types of projects I've highlighted for this assignment:
 
 * A change to K-State's IT infrastructure
 * Building a new cloud-based startup in a particular domain area
 * Building an effective computer support infrastructure for K-State
+* Designing and configuring a devops stack for a programming project
 
 With all of those options, you may substitute K-State for another organization you are more familiar with. However, it should be of an appropriate size to make the project worthwhile. If you'd like to get some examples for each type of project, feel free to ask me to provide them.
 
-For this assignment, you will create three parts. The first is a 1-page proposal describing the background and your proposed change. You may also include a brief analysis and justification for the change, but it is not necessary at this point. The proposal should also be in a professional format. The linked article from wikiHow gives some great examples. You'll submit the proposal online via Canvas, and I'll approve it, usually within a working day. Once it is approved, you can start working on the project itself.
+For this assignment, you will create **four** parts. 
 
-The bulk of the project consists of designing your proposed infrastructure and analyzing it. The design should be consistent with what we've learned in the class, as well as industry best practices. You'll probably need to do some outside research and reading for this part. Make sure you keep track of all the resources you use, since you'll need to properly cite those in your report.
+The first is a 1-page proposal describing the background and your proposed change. You may also include a brief analysis and justification for the change, but it is not necessary at this point. The proposal should also be in a professional format. The linked article from wikiHow gives some great examples. You'll submit the proposal online via Canvas, and I'll approve it, usually within a working day. Once it is approved, you can start working on the project itself.
 
-In addition, I'd like you to perform a SWOT analysis of your proposal. A SWOT analysis looks at the internal strengths and weaknesses of a proposal, as well as the external opportunities and threats that are implied by that project. Many businesses use this type of analysis for self-reflection, and I feel that it is a very valuable skill to learn. As an aside, in previous semesters many students simply reported that their proposal didn't have any weaknesses or threats, but that simply isn't the case. Any proposal has trade-offs and weaknesses, and it is your job to find them.
+The second part, and bulk of the project, consists of designing your proposed infrastructure. As part of the design, you should select some portion that you believe should be prototyped, and build that prototype using either virtual machines or cloud resources, whichever is appropriate. For example, if building a new cloud startup, you might prototype what a server for that company would look like, or explore systems for automatically provisioning cloud resources to match the scaling needs of the company. You don't have to build the whole thing, but I expect you to build some smaller portion that demonstrates your ability to use what you've learned in this class in some practical way.
 
-Once you are comfortable with your proposed design and analysis, you'll need to write a technical paper describing what you did. I've included a link to the Standard Technical Paper Template, which I highly encourage you to use for your paper. I have not given any specific minimum or maximum length, but it should adequately describe your project without being so long that it is difficult to read. Feel free to include any helpful graphics or diagrams to help describe your project. In addition, make sure you properly cite any resources or references you used while working on this project.
+For the third part, as you are developing your proposed infrastructure, I would also like you to spend some time analyzing it. The design should be consistent with what we've learned in the class, as well as industry best practices. You'll probably need to do some outside research and reading for this part. Make sure you keep track of all the resources you use, since you'll need to properly cite those in your report. I'd like you to perform a SWOT analysis of your proposed structure. A SWOT analysis looks at the internal strengths and weaknesses of a proposal, as well as the external opportunities and threats that are implied by that project. Many businesses use this type of analysis for self-reflection, and I feel that it is a very valuable skill to learn. As an aside, in previous semesters many students simply reported that their proposal didn't have any weaknesses or threats, but that simply isn't the case. Any proposal has trade-offs and weaknesses, and it is your job to find them.
 
-Following that, you should prepare a presentation to share your findings with your audience. The presentation should be 15-30 minutes in length. You may use any style of presentation you choose, as long as it would be appropriate for this project. Again, make sure you keep your intended audience in mind as you create the presentation.
+Once you are comfortable with your proposed design, prototype, and analysis, you'll need to write a technical paper describing what you did. I've included a link to the Standard Technical Paper Template, which I highly encourage you to use for your paper. I have not given any specific minimum or maximum length, but it should adequately describe your project without being so long that it is difficult to read. Feel free to include any helpful graphics or diagrams to help describe your project. In addition, make sure you properly cite any resources or references you used while working on this project.
 
-When you are ready, you'll submit your write-up and presentation materials via Canvas. At that time, you'll also contact me to schedule a time to give your presentation, either in-person or via Zoom.
+Following that, you should prepare a presentation to share your findings with your audience. The presentation should be 15-30 minutes in length. You may use any style of presentation you choose, as long as it would be appropriate for this project. Again, make sure you keep your intended audience in mind as you create the presentation. During your presentation, be prepared to describe your proposal, demonstrate the prototype, and present your analysis in order to convince your audience that it is a good proposal that should be implemented.
+
+When you are ready, you'll submit your write-up and presentation materials via Canvas. At that time, you'll also contact me to schedule a time to give your presentation, either in-person or via Zoom. You won't submit your prototype, but will demonstrate it during your presentation.
 
 That's all! Hopefully it all makes sense, but if not, feel free to post your questions on the course discussion forums on Canvas.
 

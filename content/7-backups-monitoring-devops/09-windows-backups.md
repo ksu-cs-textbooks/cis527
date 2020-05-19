@@ -11,6 +11,9 @@ pre: "9. "
 * [How to Back Up Windows 10](https://www.techadvisor.co.uk/how-to/windows/how-back-up-windows-10-3635397/) from Tech Advisor
 * [How to Use All of Windows 10's Backup and Recovery Tools](https://www.howtogeek.com/220986/how-to-use-all-of-windows-10%E2%80%99s-backup-and-recovery-tools/) from HowTo Geek
 * [How to Make a Full Backup of your Windows 10 PC](https://www.windowscentral.com/how-make-full-backup-windows-10) from Windows Central
+
+These resources mostly refer to Windows Server 2012 or 2016, but should work for 2019 as well. 
+
 * [AD Forest Recovery - Backing up a full server](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-forest-recovery-backing-up-a-full-server) from Microsoft Windows IT Pro Center
 * [How to Backup Active Directory Fully in Windows Server 2016](https://www.tactig.com/backup-active-directory-windows-server/) from Tactig
 * [How to perform Authoritative Restore of Active Directory Objects - 2012 R2](http://www.itingredients.com/perform-authoritative-restore-active-directory-objects-2012-r2/) from ITIngredients (should work for 2016)

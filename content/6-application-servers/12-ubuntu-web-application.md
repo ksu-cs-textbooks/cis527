@@ -10,7 +10,7 @@ pre: "12. "
 
 * [phpBB](https://www.phpbb.com/)
 * [Installation](https://www.phpbb.com/support/docs/en/3.2/ug/quickstart/installation/) from phpBB
-* [How To Set Up A Remote Database to Optimize Site Performance with MySQL on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql-on-ubuntu-16-04) from DigitalOcean (works for 18.04 for the most part)
+* [How To Set Up A Remote Database to Optimize Site Performance with MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql-on-ubuntu-18-04) from DigitalOcean (works for 20.04)
 
 #### Video Transcript
 

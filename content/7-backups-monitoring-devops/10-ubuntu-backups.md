@@ -9,12 +9,12 @@ pre: "10. "
 #### Resources
 
 * [Backing Up Files](https://help.ubuntu.com/stable/ubuntu-help/files.html.en#backup) from Ubuntu Documentation
-* [Backups](https://help.ubuntu.com/lts/serverguide/backups.html.en) from Ubuntu Server Guide
+* [Backups](https://ubuntu.com/server/docs/backups-introduction) from Ubuntu Server Guide
 * [How to Backup your Ubuntu Desktop with Déjà Dup](https://www.howtoforge.com/tutorial/ubuntu-backup-deja-dup/) from HowToForge
-* [How to Create 'System Restore' Points in Ubuntu 18.04](http://tipsonubuntu.com/2018/03/17/create-system-restore-points-ubuntu-18-04/) from Tips on Ubuntu
+* [Ubuntu 20.04 System Backup and Restore](https://linuxconfig.org/ubuntu-20-04-system-backup-and-restore) from Linuxconfig.org
 * [How to Compress and Extract Files using the tar Command on Linux](https://www.howtogeek.com/248780/how-to-compress-and-extract-files-using-the-tar-command-on-linux/) from How-To Geek
 * [How to Import and Export Databases and Reset a Root Password in MySQL](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-and-reset-a-root-password-in-mysql) from DigitalOcean
-* [How To Backup MySQL Databases on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-backup-mysql-databases-on-an-ubuntu-vps) from DigitalOcean (steps should still be valid for 18.04)
+* [How To Backup MySQL Databases on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-backup-mysql-databases-on-an-ubuntu-vps) from DigitalOcean (steps should still be valid for 20.04)
 
 #### Video Transcript
 

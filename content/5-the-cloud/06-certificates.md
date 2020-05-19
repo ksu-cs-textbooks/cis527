@@ -19,7 +19,7 @@ _The video below installs certbot from a PPA, but Ubuntu 20.04 includes certbot 
 * [Public Key Certificate](https://en.wikipedia.org/wiki/Public_key_certificate) from Wikipedia
 * [Certbot](https://certbot.eff.org/) from the Electronic Frontier Foundation (EFF)
 * [Certbot: Apache on Ubuntu 20.04](https://certbot.eff.org/lets-encrypt/ubuntufocal-apache) from the Electronic Frontier Foundation (EFF)
-* [How To Secure Apache with Let's Encrypt on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04) from DigitalOcean
+* [How To Secure Apache with Let's Encrypt on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04) from DigitalOcean
 
 #### Video Transcript
 

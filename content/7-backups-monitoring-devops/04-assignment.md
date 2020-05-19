@@ -8,7 +8,7 @@ pre: "4. "
 
 #### Instructions
 
-Create **two** cloud systems and **two** virtual machines meeting the specifications given below. The best way to accomplish this is to treat this assignment like a checklist and check things off as you complete them.
+Create **two** cloud systems and **four** virtual machines meeting the specifications given below. The best way to accomplish this is to treat this assignment like a checklist and check things off as you complete them.
 
 If you have any questions about these items or are unsure what they mean, please contact the instructor. Remember that part of being a system administrator (and a software developer in general) is working within vague specifications to provide what your client is requesting, so eliciting additional information is a very necessary skill.
 
@@ -32,7 +32,9 @@ _This lab involves working with resources on the cloud, and will require you to 
 
 For this lab, you will continue to use the two DigitalOcean droplets from Labs 5 and 6, labelled **FRONTEND** and **BACKEND**, respectively. This assignment assumes you have completed all steps in the previous labs successfully; if not, you should consult with the instructor to resolve any existing issues before continuing.
 
-You will also need a Windows Server 2016 VM configured as an Active Directory Domain Controller, along with a Windows 10 VM added as a client computer on that domain. You should continue to use the systems from Lab 6.
+You will also need a Windows Server 2019 VM configured as an Active Directory Domain Controller, along with a Windows 10 VM added as a client computer on that domain. You should continue to use the systems from Lab 6.
+
+Finally, you will need two Ubuntu 20.04 VMs, but they don't need any particular configuration beyond what is specified in Lab 1 or Lab 2. You may continue to use your Ubuntu VMs from Lab 6. 
 
 ---
 
@@ -43,21 +45,24 @@ This task requires you to successfully demonstrate a backup and restore procedur
 1. Create a user named `backuptest` on your Active Directory domain
 2. Create a group named `BackupGroup` on your Active Directory domain, and add the new `backuptest` user to that group
 3. Log on to your Windows 10 client VM as `backuptest` and take a **screenshot** showing the successful login and the system time of your host system.
-4. Create a backup of your Active Directory domain using the Windows System State backup tool. You should store this backup on an external hard disk, such as a flash drive, that is mounted in your Windows Server 2016 VM. Alternatively, you may add a secondary hard disk to your Windows Server 2016 VM and use that location to store the backup. See the video in the resources section for instructions.
+4. Create a backup of your Active Directory domain using the Windows System State backup tool. You should store this backup on an external hard disk, such as a flash drive, that is mounted in your Windows Server 2019 VM. Alternatively, you may add a secondary hard disk to your Windows Server 2019 VM and use that location to store the backup. See the video in the resources section for instructions.
 5. Once the backup is complete, delete the `backuptest` user and `BackupGroup` group from the Active Directory domain.
 6. Reboot your Windows 10 client VM and attempt to log on as `backuptest`. It should fail. Take a **screenshot** showing a failed login and the system time of your host system
-7. Perform an authoritative restore of the Active Directory domain from the backup. This should restore the deleted user and group. Take a **screenshot** showing the successful completion of the authoritative restore process and the system time of your host system.
-8. Reboot your Windows 10 client VM and log on to that system as `backuptest`. Take a **screenshot** showing the successful login and the system time of your host system.
+7. Perform an authoritative restore of the Active Directory domain from the backup. This should restore the deleted user and group. Take a **screenshot** showing the successful completion of the authoritative restore process and the system time of your host system. 
 
-{{% notice tip %}}
-_The documentation for this portion is unclear, so here's a hint: for my sample domain "ad.cis527.cs.ksu.edu" and account "backuptest", I'll need to use the command `restore object "cn=backuptest,cn=Users,dc=ad,dc=cis527,dc=cs,dc=ksu,dc=edu"` to restore the correct account on the domain. --Russ_
+{{% notice info %}}
+_The documentation for this portion is unclear. In my testing, you may be able to just checkmark the "Perform an authoritative restore of Active Directory files" option when restoring the backup and avoid any command-line work. However, if that doesn't work or you choose to do the authoritative restore via command-line, you need to get the path correct. To help with that, here's a hint: for my sample domain `ad.cis527russfeld.cs.ksu.edu` and account `backuptest`, I'll need to use the command `restore object "cn=backuptest,cn=Users,dc=ad,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu"` to restore the correct account on the domain. --Russ_
 {{% /notice %}}
+
+8. Reboot your Windows 10 client VM and log on to that system as `backuptest`. Take a **screenshot** showing the successful login and the system time of your host system.
 
 {{% notice tip %}}
 _You'll present those 4 screenshots as part of the grading process for this lab, so I recommend storing them somewhere memorable so they are easy to find. --Russ_
 {{% /notice %}}
 
 #### Resources
+
+These resources mostly refer to Windows Server 2012 or 2016, but should work for 2019 as well. 
 
 * [AD Forest Recovery - Backing up a full server](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-forest-recovery-backing-up-a-full-server) from Microsoft Windows IT Pro Center
 * [How to Backup Active Directory Fully in Windows Server 2016](https://www.tactig.com/backup-active-directory-windows-server/) from Tactig
@@ -80,11 +85,11 @@ For this task, you will perform the steps to create a backup of the web applicat
 
 * [How to Compress and Extract Files using the tar Command on Linux](https://www.howtogeek.com/248780/how-to-compress-and-extract-files-using-the-tar-command-on-linux/) from How-To Geek
 * [How to Import and Export Databases and Reset a Root Password in MySQL](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-and-reset-a-root-password-in-mysql) from DigitalOcean
-* [How To Backup MySQL Databases on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-backup-mysql-databases-on-an-ubuntu-vps) from DigitalOcean (steps should still be valid for 18.04)
+* [How To Backup MySQL Databases on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-backup-mysql-databases-on-an-ubuntu-vps) from DigitalOcean (steps should still be valid for 20.04)
 
 ---
 
-### Task 3: Ubuntu Monitoring
+### Task 3: Ubuntu Monitoring Part 1
 
 For this task, you will set up either Munin or Ganglia on your Ubuntu droplets from Lab 6. To complete this item, follow these steps:
 
@@ -97,14 +102,37 @@ _As always, you may have to deal with Apache virtual hosts and firewalls for thi
 
 #### Resources
 
-* [Server Monitoring with Munin and Monit on Ubuntu 16.04 LTS (Xenial Xerus)](https://www.howtoforge.com/tutorial/server-monitoring-with-munin-and-monit-on-ubuntu-16-04-lts/) from HowtoForge (should work on 18.04)
-* [How to Install the Munin Monitoring Tool on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-munin-monitoring-tool-on-ubuntu-14-04) from DigitalOcean (should work on 18.04)
-* [How to Install and Configure Ganglia Monitor on Ubuntu 16.04](https://hostpresto.com/community/tutorials/how-to-install-and-configure-ganglia-monitor-on-ubuntu-16-04/) from HostPresto (should work on 18.04)
-* [Introduction to Ganglia on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/introduction-to-ganglia-on-ubuntu-14-04) from DigitalOcean (should work on 18.04)
+* [Server Monitoring with Munin and Monit on Ubuntu 16.04 LTS (Xenial Xerus)](https://www.howtoforge.com/tutorial/server-monitoring-with-munin-and-monit-on-ubuntu-16-04-lts/) from HowtoForge (should work on 20.04)
+* [How to Install the Munin Monitoring Tool on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-munin-monitoring-tool-on-ubuntu-14-04) from DigitalOcean (should work on 20.04)
+* [How to Install and Configure Ganglia Monitor on Ubuntu 16.04](https://hostpresto.com/community/tutorials/how-to-install-and-configure-ganglia-monitor-on-ubuntu-16-04/) from HostPresto (should work on 20.04)
+* [Introduction to Ganglia on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/introduction-to-ganglia-on-ubuntu-14-04) from DigitalOcean (should work on 20.04)
 
 ---
 
-### Task 4: DevOps
+### Task 4: Ubuntu Monitoring Part 2
+
+For this task, you will install Elasticsearch, Logstash, and Kibana (a.k.a. the Elastic Stack, sometimes known as the ELK stack) on your Ubuntu 20.04 VMs, and configure both Filebeat and Metricbeat to collect inforamtion about those hosts. 
+
+1. On the Ubuntu VM you'll be using as the server, make sure you have **at least 4GB of RAM** assigned to the VM. Unfortunately, Elasticsearch and Kibana won't run properly with less than 4GB of RAM available. 
+2. Follow the instructions in the DigitalOcean guide to install the Elastic stack on one of your Ubuntu VMs. 
+    * If you already have Apache installed on this system, I recommend changing the port for nginx to something other than 80, such as 8080. This can be done in the nginx configuration file for the site that is created in the guide.
+3. Install Filebeat on that VM, and configure it to send data through Logstash following the instructions on the DigitalOcean guide. 
+4. Confirm that you can access data from Filebeat/Logstash in Kibana before continuing. 
+5. Using the other DigitalOcean guide, install Metricbeat on both Ubuntu VMs. 
+    * Metricbeat should be configured to directly send data to Elasticsearch, without going through Logstash 
+    * Don't forget to allow the appropriate ports through the firewall
+    * You'll need to configure Elastic Search for [Single-node discovery](https://www.elastic.co/guide/en/elasticsearch/reference/master/bootstrap-checks.html#single-node-discovery) or else it won't start
+6. Verify that you can see metric data such as CPU usage in Kibana (look for the **[Metricbeat System] Overview ECS** dashboard). You will be asked to show these dashboards during grading.
+
+#### Resources
+
+* [How to Install Elasticsearch, Logstash, and Kibana (Elastic Stack) on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-18-04) from DigitalOcean (should work on 20.04 as well)
+* [How to Gather Infrastructure Metrics with Metricbeat on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-gather-infrastructure-metrics-with-metricbeat-on-ubuntu-18-04) from DigitalOcean (should work on 20.04 as well)
+* [Install ELK on Ubuntu 20.04 Focal Fossa LInux](https://linuxconfig.org/install-elk-on-ubuntu-20-04-focal-fossa-linux) from Linuxconfig.org
+* [Elasticsearch Boostrap Checks](https://www.elastic.co/guide/en/elasticsearch/reference/master/bootstrap-checks.html#single-node-discovery) from Elastic.co (for configuring single-node discovery)
+---
+
+### Task 5: DevOps
 
 Setup an automatically deployed Git repository on your Ubuntu droplet. For this task, perform the following:
 
@@ -130,10 +158,10 @@ _Since the Webhook process runs as the `root` user on **FRONTEND**, you'll need 
 
 ---
 
-### Task 5: Submit Files
+### Task 7: Submit Files
 
 Submit your screenshots from Task 1 and your archive file from Task 2 via Canvas for offline grading.
 
-### Task 6: Schedule A Grading Time
+### Task 7: Schedule A Grading Time
 
 Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.

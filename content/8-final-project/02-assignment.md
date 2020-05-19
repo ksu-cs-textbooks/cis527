@@ -28,11 +28,12 @@ _For example, a 15 minute presentation becomes a 30 minute presentation. Likewis
 
 ### Step 1: Proposal
 
-First, you'll need to create and submit a proposal for your project. Your proposal should fit in one of three major topic areas below:
+First, you'll need to create and submit a proposal for your project. Your proposal should fit in one of the major topic areas below:
 
 * How would you change a particular aspect of K-State's IT infrastructure? (You may substitute another organization you are more familiar with in place of K-State, such as your current employer or a past internship)
 * How would you architect the technology resources for a new, cloud-based startup in the domain area of your choice? (That is, you must clearly describe what the company does as well as how you'd structure their resources.)
 * How would you build an effective computer support infrastructure for K-State. (You may substitute another organization you are more familiar with in place of K-State, such as your current employer or a past internship. However, it should be of sufficient size to warrant a formal support infrastructure.)
+* How would you develop an automated devops stack for a particular programming project or organization? 
 
 **Submit your 1 page proposal via K-State Canvas for approval**. Once it is approved, you may start working on the project itself. Make sure you have appropriately scaled your proposal to the amount of work below; if the proposal is too simple or too complex it may be difficult to complete everything listed below.
 
@@ -42,13 +43,19 @@ Do not wait until the last minute to submit your proposal! To make that point cl
 
 ---
 
-### Step 2: Design & Analyze
+### Step 2: Design & Prototype
 
-The next step of the project is to design and perform analysis of your proposal. In this phase, you'll clearly describe the proposed solution in as much technical detail as you feel is needed. It should be very clear that you've carefully considered each element of the solution, and have taken steps to make sure it is clear and easy to understand.
+The next step of the project is to design your proposed system and develop a small prototype showing some aspect of it in practice. In this phase, you'll clearly describe the proposed solution in as much technical detail as you feel is needed. It should be very clear that you've carefully considered each element of the solution, and have taken steps to make sure it is clear and easy to understand.
 
 If you do any research, make sure you include the relevant links, papers, and resources in your write-up described below. As with any academic work, any information you use that is not of your own creation should be appropriately cited.
 
-In addition, you will perform a [SWOT](https://en.wikipedia.org/wiki/SWOT_analysis) (Strengths, Weaknesses, Opportunities, Threats) analysis of your proposed solution. Be very blunt and honest in each section, as you should be able to show the level of depth and analysis you have performed.
+You may develop your prototype using virtual machines, cloud resources, or any other infrastructure available to you. If you are unsure of the appropriate scope of the prototype, please contact the instructor to discuss your options.
+
+---
+
+### Step 3: SWOT Analysis
+
+In addition, you will perform a [SWOT](https://en.wikipedia.org/wiki/SWOT_analysis) (Strengths, Weaknesses, Opportunities, Threats) analysis of your proposed solution and associated prototype. Be very blunt and honest in each section, as you should be able to show the level of depth of your technical expertise, the lessons learned through building the prototypes, and any analysis you have performed.
 
 {{% notice tip %}}
 _There are NO proposals without several external threats and internal weaknesses, no matter how good it is. If you can't find any, think harder! :^) --Russ_
@@ -56,19 +63,19 @@ _There are NO proposals without several external threats and internal weaknesses
 
 ---
 
-### Step 3: Technical Writeup
+### Step 4: Technical Writeup
 
-Once you feel you have fully designed and analyzed your proposal, you will need to create a formal technical paper detailing your work. It should follow the [Standard Technical Paper Template](http://cse.unl.edu/~goddard/WritingResources/) from Dr. Goddard at UNL. Hopefully the content in each section should be pretty self-explanatory. There is no minimum or maximum length specified; it should be long enough to include everything needed to describe your proposal and analysis, but short and succinct enough that it is still worth reading.
-
----
-
-### Step 4: Presentation
-
-Once you are ready, you will present your proposal and analysis to your audience. The presentation will be given live, either in-person or via Zoom, to the instructor. It should be **no shorter than 15 minutes**, and **no longer than 30 minutes** for a single presenter. You'll need to clearly explain the relevant background, the proposal, the analysis, and your conclusions based on that analysis. In short, you're trying to sell the audience on this proposal and convince them to consider adopting it, so you'll need to not only focus on presenting the information, but persuading the audience to be in favor of the change. Any slides, graphics, or other elements to make the presentation more persuasive is encouraged.
+Once you feel you have fully designed and analyzed your proposal and prototype, you will need to create a formal technical paper detailing your work. It should follow the [Standard Technical Paper Template](http://cse.unl.edu/~goddard/WritingResources/) from Dr. Goddard at UNL. Hopefully the content in each section should be pretty self-explanatory. There is no minimum or maximum length specified; it should be long enough to include everything needed to describe your proposal and analysis, but short and succinct enough that it is still worth reading.
 
 ---
 
-### Step 5: Submit & Schedule
+### Step 5: Presentation
+
+Once you are ready, you will present your proposal, prototype, and analysis to your audience. The presentation will be given live, either in-person or via Zoom, to the instructor. It should be **no shorter than 15 minutes**, and **no longer than 30 minutes** for a single presenter. You'll need to clearly explain the relevant background, the proposal, the analysis, and your conclusions based on that analysis. In short, you're trying to sell the audience on this proposal and convince them to consider adopting it, so you'll need to not only focus on presenting the information, but persuading the audience to be in favor of the change. Any slides, graphics, or other elements to make the presentation more persuasive is encouraged.
+
+---
+
+### Step 6: Submit & Schedule
 
 Finally, submit your writeup via Canvas and email the instructor to schedule a time for your presentation.
 

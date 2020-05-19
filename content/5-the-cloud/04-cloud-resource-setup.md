@@ -4,6 +4,10 @@ weight: 20
 pre: "4. "
 ---
 
+{{% notice note %}}
+_This video was recorded for Ubuntu 18.04, but works for Ubuntu 20.04 as well. When creating a droplet, simply select the newest version of Ubuntu LTS. --Russ_
+{{% /notice %}}
+
 {{< youtube UfqT889Vp2I >}}
 
 #### Resources
@@ -36,7 +40,7 @@ First, if you haven't signed up for the GitHub Education Student Developer Pack,
 
 Once you are logged in, you'll be ready to create your first droplet. I'm going to walk through the steps here and talk through some of the options, just so you know what is available here.
 
-First, you'll be prompted to select an image. DigitalOcean offers many different types of images, including Linux distributions, containers, and one-click applications. The last two options are really handy if you need just a particular service or type of machine, but in our case, we'll select the Ubuntu distribution. Currently, DigitalOcean offers all LTS versions of Ubuntu that are still supported. We'll choose the "Ubuntu 18.04 x64" option.
+First, you'll be prompted to select an image. DigitalOcean offers many different types of images, including Linux distributions, containers, and one-click applications. The last two options are really handy if you need just a particular service or type of machine, but in our case, we'll select the Ubuntu distribution. Currently, DigitalOcean offers all LTS versions of Ubuntu that are still supported. We'll choose the "Ubuntu 20.04 x64" option.
 
 Next, you'll need to select a droplet size. Droplets on DigitalOcean are sized by the amount of memory they offer, as well as the number of virtual CPUs available and the size of the storage disk. There are many different options to fit a variety of needs. For this class, we'll select the cheapest option, which has 1 GB of memory, 1 virtual CPU, and 25 GB of storage space. It is more than enough for our needs, and only costs $5/month.
 
