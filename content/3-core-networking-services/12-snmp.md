@@ -32,6 +32,8 @@ To help make the variables more readable, SNMP includes a Management Information
 
 The SNMP protocol itself lists many different types of protocol data units, or PDUs, as part of the standard. For example, the `GetRequest` PDU is used to query a particular variable on a device, and the `Response` PDU would be sent back from the device. You'll be able to see several of these PDUs a bit later in the video when we use Wireshark to caputre some SNMP packets.
 
+---
+
 As mentioned earlier, one feature of SNMP is the use of a "community string" for authentication. In SNMPv1, the community string is a simple text identifier that you can provide along with your request. The server then determines if that community string has access to the variable it requested, and if so, it will return the appropriate response. However, since community strings are sent as plain-text, anyone who was able intercept a packet could find the community string, so it wasn't very secure. In later versions of SNMP, additional security features were added to resolve this issue. In this video, we will see an example of using SNMPv3 with proper security and encryption. 
 
 Now that you know a bit about SNMP, let's see a quick example of how it works. Once again, I have configured an Ubuntu VM as directed in Lab 3 to act as an SNMP server, and I've also configured a second Ubuntu VM to act as an SNMP manager or client.
