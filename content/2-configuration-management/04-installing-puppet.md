@@ -4,9 +4,9 @@ weight: 20
 pre: "4. "
 ---
 
-TODO
+{{< youtube brfUIda9IPc >}}
 
-{{< youtube F12XwpusumA >}}
+<!-- F12XwpusumA -->
 
 #### Resources
 * [Puppet Agent Windows Downloads](https://downloads.puppetlabs.com/windows/puppet6/) from Puppet (look for puppet-agent-x64-latest.msi)
