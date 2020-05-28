@@ -4,9 +4,9 @@ weight: 5
 pre: "1. "
 ---
 
-TODO
+{{< youtube Cg2dkqFTM0c >}}
 
-{{< youtube b4KNVv8zZag >}}
+<!-- b4KNVv8zZag -->
 
 #### Resources
 
