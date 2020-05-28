@@ -24,11 +24,9 @@ pre: "5. "
 
 #### CIS 527 Summer 2020
 
-To join a GTA's office hours, click the appropriate Zoom link below:
+* <big>BreAnn Anshutz</big> - banshutz AT ksu DOT edu <br>**Office Hours:** [By Appointment - Click to Schedule](https://calendly.com/banshutz)
 
-* <big>BreAnn Anshutz</big> - banshutz AT ksu DOT edu <br>**Office Hours:** By Appointment via [Zoom](https://ksu.zoom.us/) 
-
-Email the GTAs or post on Piazza to request GTA office hours by appointment.
+Click the link to schedule office hours. You may also contact the GTA via Piazza.
 
 ### Prerequisites
 
