@@ -158,7 +158,7 @@ _Since the Webhook process runs as the `root` user on **FRONTEND**, you'll need 
 
 ---
 
-### Task 7: Submit Files
+### Task 6: Submit Files
 
 Submit your screenshots from Task 1 and your archive file from Task 2 via Canvas for offline grading.
 
