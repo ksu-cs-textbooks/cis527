@@ -169,10 +169,16 @@ From your Ubuntu VM labelled **CLIENT**, use the `ldapsearch` command (in the `l
 
 Below are example commands from a working solution. You'll need to adapt them to match your environment. There are also sample screenshots of expected output.
 
-* Active Directory Example: `ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=ad,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -D "ad\Administrator" -w "cis527_windows"`
-   * [Screenshot](/images/lab4_win.png) (instructive, but using old data)
-* OpenLDAP Example: `ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -D "cn=admin,dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -w "cis527_linux"`
-   * [Screenshot](/images/lab4_ubu.png) (instructive, but using old data)
+* Active Directory Example [Screenshot](/images/lab4_win.png) (instructive, but using old data)
+
+```bash
+ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=ad,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -D "ad\Administrator" -w "cis527_windows"
+```
+* OpenLDAP Example [Screenshot](/images/lab4_ubu.png) (instructive, but using old data)
+
+ ```bash
+ ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -D "cn=admin,dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -w "cis527_linux"
+ ```   
 
 {{% notice tip%}}
 _You'll be asked to perform each of these commands as part of the grading process, but the screenshots provide good insurance in case you aren't able to get them to work --Russ_
