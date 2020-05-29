@@ -4,9 +4,9 @@ weight: 40
 pre: "8. "
 ---
 
-TODO
+{{< youtube sTDsiX90KCQ >}}
 
-{{< youtube 9aOZ-qy_KKc >}}
+<!-- 9aOZ-qy_KKc -->
 
 #### Resources
 
