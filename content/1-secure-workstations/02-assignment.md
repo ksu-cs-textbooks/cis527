@@ -98,6 +98,10 @@ You can test this by accessing the Windows VM IP Address from Firefox running on
 * **Install Windows Updates:** Run Windows Update and reboot as necessary until all available updates are installed.
 * **Automatic Updates:** Make sure the system is set to download and install security updates automatically.
 
+{{% notice note %}}
+Even though you may have installed a particular version of Windows, such as 1903, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. 
+{{% /notice %}}
+
 ### Task 3: Windows Files & Permissions
 
 {{%notice warning %}}
