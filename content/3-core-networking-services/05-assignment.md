@@ -169,7 +169,7 @@ Once you are done, I recommend checking your configuration using the `named-chec
 
 Of course, you may need to update your firewall configuration to allow incoming DNS requests to this system!
 
-To test your DNS server, you can set a static DNS address on either your Windows or Ubuntu VM, and use the `dig` or `nslookup` commands to verify that each DNS name and IP address is resolved properly.
+To test your DNS server, you can set a static DNS address on either your Windows or Ubuntu VM labelled **CLIENT**, and use the `dig` or `nslookup` commands to verify that each DNS name and IP address is resolved properly.
 
 {{% notice note %}}
 See the [Bind Troubleshooting]({{< relref "/3-core-networking-services/17-bind-troubleshooting.md" >}}) page for some helpful screenshots of using `dig` to debug DNS server configuration. 
