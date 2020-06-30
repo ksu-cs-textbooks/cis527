@@ -227,6 +227,11 @@ Install an SNMP Daemon on the Ubuntu 20.04 VM labelled **SERVER**, and connect t
 1. In the tutorial, configure a user `cis527` using the password `cis527_snmp` for both the authentication and encryption passphrases. 
    - This user **should not** be created in the `snmpd.conf` file, and any "bootstrap" users should be removed. 
 
+{{% notice warning }}
+For Summer 2020, if you run into an error creating the `cis527` user or setting the password using `snmpusm`, you may continue to do the rest of this task using the `bootstrap` user created through the tutorial, and can just leave the entries in the `snmpd.conf` file. We will accept this for full credit. You are still expected to complete the activity below. 
+{{% /notice }}
+
+
 Then, perform the following quick activity:
 
 1. While logged into the **CLIENT** VM, use the SNMP tools to query the number of ICMP Echos (pings) that have been received by the **SERVER** VM. Take a **screenshot** with the command used and the result clearly highlighted in the terminal output.
@@ -259,7 +264,7 @@ Then, using Wireshark, create **screenshots** showing that you captured and can 
 1. A DNS standard query response for a PTR record for `208.67.222.222` (it will look like `222.222.67.208.in-addr.arpa`)
    * _HINT: It should respond with a PTR record for `resolver1.opendns.com`_
 1. An ICMP Echo (ping) request
-1. An encrypted SNMP packet showing `cis527` as the username (look for the `msgUserName` field)
+1. An encrypted SNMP packet showing `cis527` or `bootstrap` as the username (look for the `msgUserName` field)
    * _HINT: Use the commands from Task 5_
 1. A DHCP Offer packet showing the Domain Name of `cis527<your ID>.cs.ksu.edu`
    * _HINT: Reboot one of your other VMs to force it to request a new IP address, or use the `ipconfig` (Windows) or `dhclient` (Ubuntu) commands to renew the IP address_
