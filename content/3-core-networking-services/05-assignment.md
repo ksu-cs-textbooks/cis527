@@ -227,9 +227,9 @@ Install an SNMP Daemon on the Ubuntu 20.04 VM labelled **SERVER**, and connect t
 1. In the tutorial, configure a user `cis527` using the password `cis527_snmp` for both the authentication and encryption passphrases. 
    - This user **should not** be created in the `snmpd.conf` file, and any "bootstrap" users should be removed. 
 
-{{% notice warning }}
+{{% notice warning %}}
 For Summer 2020, if you run into an error creating the `cis527` user or setting the password using `snmpusm`, you may continue to do the rest of this task using the `bootstrap` user created through the tutorial, and can just leave the entries in the `snmpd.conf` file. We will accept this for full credit. You are still expected to complete the activity below. 
-{{% /notice }}
+{{% /notice %}}
 
 
 Then, perform the following quick activity:
