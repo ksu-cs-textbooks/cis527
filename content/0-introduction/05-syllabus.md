@@ -88,12 +88,14 @@ Letter grades will be assigned following the standard scale:
 ### Late Work
 
 {{% notice warning %}}
-This is an updated late work policy that takes effect for the Summer 2020 semester. While my original intent was to have this course completely asynchronous and self-paced, I've found that students prefer having more strict deadlines than more flexiblity, and many times they will perform better in the course when deadlines are enforced. Therefore, deadlines will be strictly enforced starting in Summer 2020. 
+This is an updated late work policy that takes effect for the Summer 2020 semester. While my original intent was to have this course completely asynchronous and self-paced, I've found that students prefer having more strict deadlines than more flexibility, and many times they will perform better in the course when deadlines are enforced. Therefore, deadlines will be strictly enforced starting in Summer 2020. 
 {{% /notice %}}
 
 Due to the asynchronous nature of this course, staying on task and keeping up with deadlines is very important. Therefore, all course work must be submitted, and all interactively graded materials must be graded with the instructor or GTA, on or before the posted due date to receive full credit. _For labs, it is not simply enough to contact the instructor/GTA asking to schedule a grading time before the due date; the grading itself must be completed before the due date in order to be considered "on time"._
 
-Any work submitted and graded after the due date is subject to a deduction of 10% of the total points possible on the assignment for each class day that the assignment is late. For example, if an assignment is due on a Friday and is submitted the following Tuesday, it will be subject to a reduction of 20% of the total points possible, or 10% for each class day it was late (Monday and Tuesday in this example). Grading done on non-class days will be considered to have been submitted on the next available class day. 
+Any work submitted and graded after the due date is subject to a deduction of **10% of the total points possible on the assignment for each class day** that the assignment is late. For example, if an assignment is due on a Friday and is submitted the following Tuesday, it will be subject to a reduction of 20% of the total points possible, or 10% for each class day it was late (Monday and Tuesday in this example). Grading done on non-class days will be considered to have been submitted on the next available class day. 
+
+**These deductions will only be applied to grades above 60%** of the total points on the assignment. So, if you scored higher than 60%, your grade will be reduced by the late penalty down to a minimum grade of 60%. If you scored lower than 60% on the assignment, no deductions will be applied. 
 
 Also, note that several labs in this class require successful completion of previous labs. If you are behind and choose to skip a lab assignment to catch up, you may still have to make up some or all of that work in order to complete a later lab. You may contact the instructor to discuss options for obtaining model solutions to previous labs if needed.  
 

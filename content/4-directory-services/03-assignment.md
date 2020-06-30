@@ -41,7 +41,7 @@ For this lab, you'll need the following VMs:
    * You may create a new Ubuntu 20.04 VM from scratch, label it **SERVER**, and configure it as defined either in Lab 1 or using the Puppet manifest files from Lab 2. _This is effectively the same as copying your **CLIENT** VM from Lab 3, but you get additional practice installing and configuring an Ubuntu VM, I guess._
 
 {{% notice warning %}}
-Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4" that you can restore to later if you have any issues. In addition, Task 6 below will ask you to restore to a snapshot in at least one VM before starting that step.
+Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4" that you can restore to later if you have any issues. In most cases, it is simpler to restore a snapshot and try again instead of debugging an error when setting up an LDAP or AD server. In addition, Task 6 below will ask you to restore to a snapshot in at least one VM before starting that step.
 {{% /notice %}}
 
 ---
@@ -111,6 +111,7 @@ Join your Windows 10 VM to the Active Directory Domain created in Task 2. Follow
 Install OpenLDAP on your Ubuntu VM labelled **SERVER**. Follow the steps and configuration details below:
 
 1. First, set a static IP address on your Ubuntu VM labelled **SERVER**, if it does not have one already. Use the IP address ending in `41` that was reserved for this use in Lab 3. For the static DNS entries, you should use one of the options discussed in Lab 3.
+2. If you haven't already, make a **snapshot** of this VM that you can restore if you run into issues setting up an OpenLDAP server.
 2. Set up and configure an OpenLDAP server, following the first part of the instructions in the guide linked in the resources section below.
    * **Domain Name:** `ldap.cis527<your eID>.cs.ksu.edu` (example: `ldap.cis527russfeld.cs.ksu.edu`)
    * **Base DN:** `dc=ldap,dc=cis527<your eID>,dc=cs,dc=ksu,dc=edu` (example: `dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu`)
@@ -138,6 +139,7 @@ Of course, you may need to modify your firewall configuration to allow incoming 
 On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate against the OpenLDAP server created in Task 4.
 
 * First, make sure that you can connect to the LDAP server using TLS. You can use `ldapwhoami -x -ZZ -h ldap.cis527<your eID>.cs.ksu.edu` and it should return `anonymous` if it works. 
+* Before you configure SSSD, make a **snapshot** of this VM. If your SSSD configuration does not work, you can restore this snapshot and try again.
 * To test your SSSD configuration, use the command `getent passwd <username>` (example: `getent passwd russfeld`) and confirm that it returns an entry for your LDAP user.
 * To log in as the LDAP user, use the `su <username>` command (example: `su russfeld`).
 * Finally, **reboot the system**, and make sure you can log in graphically by choosing the "Not listed?" option on the login screen and entering your LDAP user's credentials.
