@@ -138,11 +138,12 @@ Of course, you may need to modify your firewall configuration to allow incoming 
 
 On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate against the OpenLDAP server created in Task 4.
 
-* First, make sure that you can connect to the LDAP server using TLS. You can use `ldapwhoami -x -ZZ -h ldap.cis527<your eID>.cs.ksu.edu` and it should return `anonymous` if it works. 
-* Before you configure SSSD, make a **snapshot** of this VM. If your SSSD configuration does not work, you can restore this snapshot and try again.
-* To test your SSSD configuration, use the command `getent passwd <username>` (example: `getent passwd russfeld`) and confirm that it returns an entry for your LDAP user.
-* To log in as the LDAP user, use the `su <username>` command (example: `su russfeld`).
-* Finally, **reboot the system**, and make sure you can log in graphically by choosing the "Not listed?" option on the login screen and entering your LDAP user's credentials.
+1. First, confirm that you are able to resolve `ldap.cis527<your eID>.cs.ksu.edu` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Ubuntu VM labelled **SERVER** as configured in Lab 3, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
+1. Then, make sure that you can connect to the LDAP server using TLS. You can use `ldapwhoami -x -ZZ -h ldap.cis527<your eID>.cs.ksu.edu` and it should return `anonymous` if it works. 
+1. Before you configure SSSD, make a **snapshot** of this VM. If your SSSD configuration does not work, you can restore this snapshot and try again.
+1. To test your SSSD configuration, use the command `getent passwd <username>` (example: `getent passwd russfeld`) and confirm that it returns an entry for your LDAP user.
+1. To log in as the LDAP user, use the `su <username>` command (example: `su russfeld`).
+1. Finally, **reboot the system**, and make sure you can log in graphically by choosing the "Not listed?" option on the login screen and entering your LDAP user's credentials.
 
 #### Resources
 
@@ -155,7 +156,7 @@ On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate agai
 1. On your Ubuntu VM labelled **CLIENT**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
 2. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
 3. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to setting it up as an OpenLDAP client.
-4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM.
+4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM. You'll want to confirm that you are able to resolve `ad.cis527<your eID>.cs.ksu.edu` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Windows 10 server as configured in Lab 3, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
 5. Make a **snapshot** labelled "ActiveDirectory" to save your configuration for this task. You can switch between snapshots to have this VM act as a client for either directory service.
 
 #### Resources
