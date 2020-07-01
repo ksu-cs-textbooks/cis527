@@ -256,6 +256,10 @@ _Be prepared to duplicate this activity during the interactive grading process! 
 
 Install Wireshark on the Ubuntu 20.04 VM labelled **SERVER**.  
 
+{{% notice warning %}}
+Firefox recently released an update the enables [DNS over HTTPS](https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/) by default. So, in order to use Firefox to request DNS packets that can be captured, you'll need to [disable DNS over HTTPS](https://support.mozilla.org/en-US/kb/firefox-dns-over-https) in Firefox. Alternatively, you can use `dig` to query DNS and capture the desired packets. 
+{{% /notice %}}
+
 Then, using Wireshark, create **screenshots** showing that you captured and can show the packet content of each of the following types of packets:
 
 1. A DNS standard query for an A record for `people.cs.ksu.edu`
