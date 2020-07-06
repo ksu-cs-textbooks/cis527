@@ -18,11 +18,10 @@ pre: "4.1 "
   - LDAP OUs: `users` and `groups`
   - LDAP groups: `admin`
   - LDAP user
-  - TLS (test client side with `ldapwhoami -x -Z ldap.cis527<eID>.cs.ksu.edu` returning `anonymous`
+  - TLS (test client side with `ldapwhoami -x -Z ldap.cis527<eID>.cs.ksu.edu` returning `anonymous`)
 - Ubuntu Client on LDAP (5)
   - Log in with LDAP user
 - Interoperability (10)
   - Add Ubuntu to Windows AD
-
 - LDAPSearch (2)
   - Screenshots
