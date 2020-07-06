@@ -111,7 +111,7 @@ Join your Windows 10 VM to the Active Directory Domain created in Task 2. Follow
 
 Install OpenLDAP on your Ubuntu VM labelled **SERVER**. Follow the steps and configuration details below:
 
-1. First, set a static IP address on your Ubuntu VM labelled **SERVER**, if it does not have one already. Use the IP address ending in `41` that was reserved for this use in Lab 3. For the static DNS entries, you should use one of the options discussed in Lab 3.
+1. First, set a static IP address on your Ubuntu VM labelled **SERVER**, if it does not have one already. Use the IP address ending in `41` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address as the first entry to reference your DNS server from Lab 3 (see the provided model solutions if your server was not working in Lab 3), and then use the IP address for VMware's default gateway address as the second DNS entry. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with LDAP domains, so that the server can properly resolve the `ldap.cis527<your eID>.cs.ksu.edu` address.
 2. If you haven't already, make a **snapshot** of this VM that you can restore if you run into issues setting up an OpenLDAP server.
 2. Set up and configure an OpenLDAP server, following the first part of the instructions in the guide linked in the resources section below.
    * **Domain Name:** `ldap.cis527<your eID>.cs.ksu.edu` (example: `ldap.cis527russfeld.cs.ksu.edu`)
