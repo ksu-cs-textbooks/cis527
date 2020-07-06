@@ -80,6 +80,7 @@ Configure your Windows Server as an Active Directory Domain Controller. Follow t
 1. First, set a static IP address on your Windows Server VM. Use the IP address ending in `42` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address or the localhost IP address (`127.0.0.1`) as the first entry, and then use the IP address of your DNS server (either your Ubuntu Server from Lab 3 or VMware's default gateway address, whichever option you are using) as the second DNS entry. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with Active Directory Domains, as the Domain Controller is also a DNS server.
 2. Follow the instructions in the resources section below to install and configure the Active Directory Domain Services role on the server.
    * **Domain Name:** `ad.cis527<your eID>.cs.ksu.edu` (example: `ad.cis527russfeld.cs.ksu.edu`)
+   * **NETBIOS Domain Name:** `AD` (this should be the default that is presented by the wizard)
    * **Passwords:** Use `cis527_windows` for all passwords
 3. Add a User Account to your Active Directory
    * Use your own eID for the username here, and `cis527_windows` as the password.
