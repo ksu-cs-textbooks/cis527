@@ -5,7 +5,7 @@ pre: "2. "
 ---
 
 {{% notice note %}}
-[TODO] As of 2020, both KSIS and HRIS have moved to the cloud, leaving very few K-State resources hosted directly on campus. This video will be updated in future semesters to reflect that change.
+[TODO] _As of 2020, both KSIS and HRIS have moved to the cloud, leaving very few K-State resources hosted directly on campus. This video will be updated in future semesters to reflect that change. -Russ_
 {{% /notice %}}
 
 {{< youtube Tzo7N-boVJ4 >}}
