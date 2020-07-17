@@ -93,8 +93,9 @@ For this task, you will perform the steps to create a backup of the web applicat
 
 For this task, you will set up either Munin or Ganglia on your Ubuntu droplets from Lab 6. To complete this item, follow these steps:
 
-1. Configure the Ubuntu droplet named **FRONTEND** as the master server for either Munin or Ganglia.
+1. Configure the Ubuntu droplet named **FRONTEND** as the primary server for either Munin or Ganglia.
 2. Add the Ubuntu droplet named **BACKEND** as a client on either Munin or Ganglia
+3. Send the URL of the Munin or Ganglia server in your grading packet. Make sure that both **FRONTEND** and **BACKEND** are appearing in the data. 
 
 {{% notice tip %}}
 _As always, you may have to deal with Apache virtual hosts and firewalls for this setup. In addition, you may want to add a new A record to your domain name for this site, and request an SSL certificate via CertBot. --Russ_
@@ -122,7 +123,8 @@ For this task, you will install Elasticsearch, Logstash, and Kibana (a.k.a. the 
     * Metricbeat should be configured to directly send data to Elasticsearch, without going through Logstash 
     * Don't forget to allow the appropriate ports through the firewall
     * You'll need to configure Elastic Search for [Single-node discovery](https://www.elastic.co/guide/en/elasticsearch/reference/master/bootstrap-checks.html#single-node-discovery) or else it won't start
-6. Verify that you can see metric data such as CPU usage in Kibana (look for the **[Metricbeat System] Overview ECS** dashboard). You will be asked to show these dashboards during grading.
+6. Verify that you can see metric data such as CPU usage in Kibana (look for the **[Metricbeat System] Overview ECS** dashboard). 
+7. Take a screenshot of the **[Metricbeat System] Overview ECS** and add it to your grading packet. Alternatively, schedule a time for grading to review this part of the lab.
 
 #### Resources
 
@@ -142,8 +144,8 @@ Setup an automatically deployed Git repository on your Ubuntu droplet. For this 
 4. Create a Bash script that will simply use the `git pull` command to get the latest content from the Git repository in the current directory.
 5. Install and configure [webhook](https://github.com/adnanh/webhook) on your Ubuntu droplet named **FRONTEND**. It should listen for all incoming webhooks from GitLab that match a secret key you choose. When a hook is received, it should run the Bash script created earlier.
 6. Configure a webhook in your GitLab repository for all Push events using that same secret key and the URL of webhook on your server. You may need to make sure your domain name has an A record for the default hostname `@` pointing to your **FRONTEND** server.
-
-To test this setup, you should be able to push a change to the GitLab repository, and see that change reflected on the website automatically.
+7. To test this setup, you should be able to push a change to the GitLab repository, and see that change reflected on the website automatically.
+8. For offline grading, add the instructor and GTA to the repository as maintainers, and submit the repository and URL where the files can be found in your grading packet. Provided the webhook works correctly, they should be able to see a pushed change to the repository update the website. 
 
 {{% notice tip %}}
 _Since the Webhook process runs as the `root` user on **FRONTEND**, you'll need to make sure a set of SSH keys exist in the `root` user's home folder `/root/.ssh/` and add the public key from that directory to your [GitLab account](https://gitlab.cs.ksu.edu/profile/keys). You should then use the root account (use `sudo su -` to log in as root) to run `git pull` from the appropriate directory on **FRONTEND** at least once so you can accept the SSH fingerprint for the GitLab server. This helps ensure that `root` can properly run the script. --Russ_
@@ -160,8 +162,18 @@ _Since the Webhook process runs as the `root` user on **FRONTEND**, you'll need 
 
 ### Task 6: Submit Files
 
-Submit your screenshots from Task 1 and your archive file from Task 2 via Canvas for offline grading.
+This lab may be graded completely offline. To do this, submit the following items via Canvas:
+
+1. **Task 1**: 4 screenshots clearly showing the system time, showing a successful login before the test user is deleted, an unsuccessful login after the user was deleted, a successful restoration of the AD, and a successful login showing that the user was restored.
+2. **Task 2**: An archive file containing a README document as well as any files or information needed as part of the backup of the Ubuntu web application installed in Lab 6.
+3. **Task 3**: The URL of your Munin or Ganglia instance, clearly showing data from both **FRONTEND** and **BACKEND**. 
+4. **Task 4**: A screenshot of the **[Metricbeat System] Overview ECS** dashboard showing data from both Ubuntu VMs
+5. **Task 5**: A GitLab repository URL and a URL of the website containing those files. Make sure the instructor and GTA are added to the repository as maintainers. They should be able to push to the repository and automatically see the website get updated. 
+
+If you are able to submit all 5 of the items above, you do not need to schedule a grading time. The instructor or GTA will contact you for clarification if there are any questions on your submission.
+
+For Tasks 3 - 5, you may also choose to do interactive grading, especially if you were unable to complete it and would like to receive partial credit. 
 
 ### Task 7: Schedule A Grading Time
 
-Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.
+If you are not able to submit information for all 5 tasks for offline grading, you may contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.
