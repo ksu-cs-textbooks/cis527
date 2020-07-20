@@ -5,7 +5,7 @@ pre: "4. "
 ---
 
 {{% notice note %}}
-_This video was recorded for Ubuntu 18.04, but works for Ubuntu 20.04 as well. When creating a droplet, simply select the newest version of Ubuntu LTS. --Russ_
+[TODO] _This video was recorded for Ubuntu 18.04, but works for Ubuntu 20.04 as well. When creating a droplet, simply select the newest version of Ubuntu LTS. This video shows an older version of the DigitalOcean UI, but should be similar to what you see today. --Russ_
 {{% /notice %}}
 
 {{< youtube UfqT889Vp2I >}}
