@@ -112,7 +112,7 @@ _As always, you may have to deal with Apache virtual hosts and firewalls for thi
 
 ### Task 4: Ubuntu Monitoring Part 2
 
-For this task, you will install Elasticsearch, Logstash, and Kibana (a.k.a. the Elastic Stack, sometimes known as the ELK stack) on your Ubuntu 20.04 VMs, and configure both Filebeat and Metricbeat to collect inforamtion about those hosts. 
+For this task, you will install Elasticsearch, Logstash, and Kibana (a.k.a. the Elastic Stack, sometimes known as the ELK stack) on your Ubuntu 20.04 VMs, and configure both Filebeat and Metricbeat to collect information about those hosts. 
 
 1. On the Ubuntu VM you'll be using as the server, make sure you have **at least 4GB of RAM** assigned to the VM. Unfortunately, Elasticsearch and Kibana won't run properly with less than 4GB of RAM available. 
 2. Follow the instructions in the DigitalOcean guide to install the Elastic stack on one of your Ubuntu VMs. 
