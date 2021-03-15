@@ -4,7 +4,7 @@ This is a [Hugo](https://gohugo.io/)-based web framework for K-State CS lecture 
 
 Major added features are the addition of [Reveal.js](https://github.com/hakimel/reveal.js/) slideshow framework, and the creation of an embeddable version of content pages for use with IFrames in [Canvas](https://www.instructure.com/) and other learning management systems.
 
-**[Live Site](https://cis527.russfeld.me)**
+**[Live Site](https://textbooks.cs.ksu.edu/cis527)**
 
 #### Relevant Documentation
 

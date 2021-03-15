@@ -1,6 +1,6 @@
-baseURL = "https://cis527.russfeld.me/"
+baseURL = "https://textbooks.cs.ksu.edu/cis527/"
 languageCode = "en-us"
-title = "K-State CIS 527 Online"
+title = "CIS 527 - System Administration"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "ksucs-hugo-theme"
