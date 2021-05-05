@@ -26,22 +26,22 @@ hidden: true
 </section>
 <section>
 	<h3>File List</h3>
-  <img class="stretch plain" src="/images/ls_digitalocean.png">
+  <img class="stretch plain" src="../../images/ls_digitalocean.png">
   <p class="imagecredit">Image Credit: <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-permissions">Digital Ocean</a></p>
 </section>
 <section>
 	<h3>File Modes</h3>
-  <img class="stretch plain" src="/images/mode_digitalocean.png">
+  <img class="stretch plain" src="../../images/mode_digitalocean.png">
   <p class="imagecredit">Image Credit: <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-permissions">Digital Ocean</a></p>
 </section>
 <section>
 	<h3>Octal Permissions</h3>
-  <img class="stretch plain" src="/images/octal_jelinux.png">
+  <img class="stretch plain" src="../../images/octal_jelinux.png">
   <p class="imagecredit">Image Credit: <a href="https://leanpub.com/jelinux/read">Just Enough Linux</a></p>
 </section>
 <section>
 	<h3>Common Octal Values</h3>
-  <img class="stretch plain" src="/images/octal_linode.png">
+  <img class="stretch plain" src="../../images/octal_linode.png">
   <p class="imagecredit">Image Credit: <a href="https://www.linode.com/docs/tools-reference/linux-users-and-groups/">Linode</a></p>
 </section>
 <section>

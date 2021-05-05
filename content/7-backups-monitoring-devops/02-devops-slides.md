@@ -15,12 +15,12 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/devops_wiki.svg">
+	<img class="stretch plain" src="../../images/devops_wiki.svg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/DevOps">Wikipedia</a></p>
 </section>
 <section>
 	<h3>Toolchain</h3>
-	<img class="stretch plain" src="/images/devopstools_wiki.svg">
+	<img class="stretch plain" src="../../images/devopstools_wiki.svg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/DevOps">Wikipedia</a></p>
 </section>
 <section>
@@ -37,33 +37,33 @@ hidden: true
 </section>
 <section>
 	<h3>Code</h3>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/github_logo.png"></p>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/vagrant_logo.svg"></p>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/puppet_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/github_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/vagrant_logo.svg"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/puppet_logo.png"></p>
 </section>
 <section>
 	<h3>Build & Test</h3>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/travis_logo.png"></p>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/jenkins_logo.png"></p>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/codeship_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/travis_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/jenkins_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/codeship_logo.png"></p>
 </section>
 <section>
 	<h3>Package & Release</h3>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/heroku_logo.svg"></p>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/aws_logo.svg"></p>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/azure_logo.svg"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/heroku_logo.svg"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/aws_logo.svg"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/azure_logo.svg"></p>
 </section>
 <section>
 	<h3>Configure</h3>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/ansible.png"></p>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/salt_logo.png"></p>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/docker_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/ansible.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/salt_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/docker_logo.png"></p>
 </section>
 <section>
 	<h3>Monitor</h3>
-  <p><img class="plain imgcenter" style="height: 2em;" src="/images/nagios_logo.png"></p>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/zabbix_logo.png"></p>
-	<p><img class="plain imgcenter" style="height: 2em;" src="/images/munin_logo.png"></p>
+  <p><img class="plain imgcenter" style="height: 2em;" src="../../images/nagios_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/zabbix_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/munin_logo.png"></p>
 </section>
 <section>
 	<h3>Why DevOps?</h3>

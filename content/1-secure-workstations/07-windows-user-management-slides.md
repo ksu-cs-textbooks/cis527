@@ -34,7 +34,7 @@ hidden: true
 </section>
 <section>
   <h3>User Account Control (UAC)</h3>
-  <img class="stretch plain" src="/images/win10uac.png">
+  <img class="stretch plain" src="../../images/win10uac.png">
   <ul>
     <li>Protect System from Unwanted Changes</li>
     <li>Allow Administrators to Use Non-Admin Accounts Easily</li>

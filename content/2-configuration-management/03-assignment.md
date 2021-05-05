@@ -75,7 +75,7 @@ Create a Puppet Manifest File for Ubuntu 20.04 that defines the following config
   - Create a group and set permissions on each folder using that group to allow both `cis527` and `adminuser` to have full access to each folder created in `/files`.
   - No other user should be able to access any other user's folder. For example, `eviluser` cannot access `guestuser`'s folder, but `adminuser` and `cis527` can, as well as `guestuser`, who is also the owner of its own folder.
   - In each subfolder of `/files`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
-  - See [this screenshot](/images/lab1-image2.png) for what these permissions may look like in Terminal.
+  - See [this screenshot](../../images/lab1-image2.png) for what these permissions may look like in Terminal.
 * **Software (Same as Lab 1)**
   - Mozilla Firefox (`firefox`)
   - Mozilla Thunderbird (`thunderbird`)
@@ -111,7 +111,7 @@ Create a Puppet Manifest File for Windows 10 that defines the following configur
   - No other user should be able to access any other user's folder. For example, `EvilUser` cannot access `GuestUser`'s folder, but `AdminUser` and `cis527` can, as well as `GuestUser`, who is also the owner of its own folder.
   - In each subfolder of `C:\files`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
   - **Don't remove the SYSTEM account or the built-in Administrator account's access from any of these files.** Usually this is as simple as not modifying their permissions from the defaults.
-  - See [this screenshot](/images/lab1-image1.png) and [this screenshot](/images/lab1-image1a.png) for what these permissions may look like in PowerShell.
+  - See [this screenshot](../../images/lab1-image1.png) and [this screenshot](../../images/lab1-image1a.png) for what these permissions may look like in PowerShell.
 * **Software** - Install the latest version of the following software. The installation should be done SILENTLY without any user interaction required. In addition, Puppet should be able to detect if they are already installed, and not attempt to install them again.
   - Mozilla Firefox
   - Mozilla Thunderbird

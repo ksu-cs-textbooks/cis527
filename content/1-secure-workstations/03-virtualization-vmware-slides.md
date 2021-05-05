@@ -15,7 +15,7 @@ hidden: true
   </ul>
 </section>
 <section>
-	<img class="stretch" src="/images/vmware-before.png">
+	<img class="stretch" src="../../images/vmware-before.png">
 	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMware</a></p>
 </section>
 <section>
@@ -28,7 +28,7 @@ hidden: true
   </ul>
 </section>
 <section>
-	<img class="stretch" src="/images/vmware-after.png">
+	<img class="stretch" src="../../images/vmware-after.png">
 	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMware</a></p>
 </section>
 <section>
@@ -43,21 +43,21 @@ hidden: true
   </ul>
 </section>
 <section>
-	<img class="stretch" src="/images//vmware-hosted.png">
+	<img class="stretch" src="../../images//vmware-hosted.png">
 	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMware</a></p>
 </section>
 <section>
-	<img class="stretch" src="/images/vmware-bare.png">
+	<img class="stretch" src="../../images/vmware-bare.png">
 	<p class="imagecredit">Image Source: <a href="https://www.vmware.com/pdf/virtualization.pdf">VMware</a></p>
 </section>
 <section>
   <h3>Containers</h3>
-	<img class="stretch" src="/images/docker_juniper.png">
+	<img class="stretch" src="../../images/docker_juniper.png">
 	<p class="imagecredit">Image Source: <a href="https://www.juniper.net/us/en/products-services/what-is/docker-container/">Juniper Networks</a></p>
 </section>
 <section>
   <h3>Sandboxing</h3>
-	<img class="stretch" src="/images/sandbox_orhanobut_github.png">
+	<img class="stretch" src="../../images/sandbox_orhanobut_github.png">
 	<p class="imagecredit">Image Source: <a href="https://orhanobut.github.io/effective-android-security/">Effective Android by orhanobut on Github</a></p>
 </section>
 <section>
@@ -86,7 +86,7 @@ hidden: true
 </section>
 <section>
   <h3>VMware Workstation</h3>
-  <img class="stretch plain" src="/images/vmware.png">
+  <img class="stretch plain" src="../../images/vmware.png">
 </section>
 <section>
   <h3>Other VM Software</h3>

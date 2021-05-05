@@ -7,7 +7,7 @@ hidden: true
 </section>
 <section>
 	<h3>Hypertext Transfer Protocol (HTTP)</h3>
-	<img class="stretch plain" src="/images/http_wiki.jpg">
+	<img class="stretch plain" src="../../images/http_wiki.jpg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">Wikipedia</a></p>
 </section>
 <section>
@@ -41,6 +41,6 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/http_telnet_wiki.png">
+	<img class="stretch plain" src="../../images/http_telnet_wiki.png">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">Wikipedia</a></p>
 </section>

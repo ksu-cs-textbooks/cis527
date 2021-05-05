@@ -61,7 +61,7 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/rpo_wiki.png">
+	<img class="stretch plain" src="../../images/rpo_wiki.png">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Recovery_time_objective">Recovery Time Objective</a></p>
 </section>
 <section>
@@ -118,19 +118,19 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/full_nakivo.png">
+	<img class="stretch plain" src="../../images/full_nakivo.png">
 	<p class="imagecredit">Image Source: <a href="https://www.nakivo.com/blog/backup-types-explained-full-incremental-differential-synthetic-and-forever-incremental/">Nakivo</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/incremental_nakivo.png">
+	<img class="stretch plain" src="../../images/incremental_nakivo.png">
 	<p class="imagecredit">Image Source: <a href="https://www.nakivo.com/blog/backup-types-explained-full-incremental-differential-synthetic-and-forever-incremental/">Nakivo</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/differential_nakivo.png">
+	<img class="stretch plain" src="../../images/differential_nakivo.png">
 	<p class="imagecredit">Image Source: <a href="https://www.nakivo.com/blog/backup-types-explained-full-incremental-differential-synthetic-and-forever-incremental/">Nakivo</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/reverse_nakivo.png">
+	<img class="stretch plain" src="../../images/reverse_nakivo.png">
 	<p class="imagecredit">Image Source: <a href="https://www.nakivo.com/blog/backup-types-explained-full-incremental-differential-synthetic-and-forever-incremental/">Nakivo</a></p>
 </section>
 <section>
@@ -147,6 +147,6 @@ hidden: true
 </section>
 <section>
 	<h3>High Availability</h3>
-	<img class="stretch plain" src="/images/high_available_do.gif">
+	<img class="stretch plain" src="../../images/high_available_do.gif">
 	<p class="imagecredit">Image Source: <a href="https://www.digitalocean.com/community/tutorials/what-is-high-availability">DigitalOcean</a></p>
 </section>

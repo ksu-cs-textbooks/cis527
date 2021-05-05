@@ -15,6 +15,6 @@ hidden: true
 </section>
 <section>
   <h3>Manifest Compilation</h3>
-	<img class="stretch plain" src="/images/compile_puppet.png">
+	<img class="stretch plain" src="../../images/compile_puppet.png">
   <p class="imagecredit">Image Credit: <a href="http://docs.puppetlabs.com/learning/manifests.html">Puppet</a></p>
 </section>

@@ -173,12 +173,12 @@ From your Ubuntu VM labelled **CLIENT**, use the `ldapsearch` command (in the `l
 
 Below are example commands from a working solution. You'll need to adapt them to match your environment. There are also sample screenshots of expected output.
 
-* Active Directory Example [Screenshot](/images/lab4_win.png) (instructive, but using old data)
+* Active Directory Example [Screenshot](../../images/lab4_win.png) (instructive, but using old data)
 
 ```bash
 ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=ad,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -D "ad\Administrator" -w "cis527_windows"
 ```
-* OpenLDAP Example [Screenshot](/images/lab4_ubu.png) (instructive, but using old data)
+* OpenLDAP Example [Screenshot](../../images/lab4_ubu.png) (instructive, but using old data)
 
  ```bash
  ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -D "cn=admin,dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -w "cis527_linux"

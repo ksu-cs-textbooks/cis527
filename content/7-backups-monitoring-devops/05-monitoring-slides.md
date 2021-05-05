@@ -39,9 +39,9 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/beocat.png">
+	<img class="stretch plain" src="../../images/beocat.png">
 </section>
 <section>
-	<img class="stretch plain" src="/images/languard_gfi.png">
+	<img class="stretch plain" src="../../images/languard_gfi.png">
 	<p class="imagecredit">Image Source: <a href="https://techtalk.gfi.com/the-top-20-free-network-monitoring-and-analysis-tools-for-sys-admins/">GFI Tech Talk</a></p>
 </section>

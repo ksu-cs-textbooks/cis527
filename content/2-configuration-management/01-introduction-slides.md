@@ -14,7 +14,7 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/puppet_logo.png">
+	<img class="stretch plain" src="../../images/puppet_logo.png">
   <p class="imagecredit">Image Credit: <a href="https://puppet.com/company/press-room/media-kit">Puppet</a></p>
 </section>
 <section>

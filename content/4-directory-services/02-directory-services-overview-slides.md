@@ -20,7 +20,7 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/dns_wiki.png">
+	<img class="stretch plain" src="../../images/dns_wiki.png">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Domain_Name_System">Wikipedia</a></p>
 </section>
 <section>
@@ -63,17 +63,17 @@ hidden: true
 </section>
 <section>
 	<h3>LDAP vs. X.500</h3>
-	<img class="stretch plain" src="/images/x500ldap_x500standard.png">
+	<img class="stretch plain" src="../../images/x500ldap_x500standard.png">
 	<p class="imagecredit">Image Source: <a href="http://www.x500standard.com/index.php?n=X500.LDAPRelation">x500standard.com</a></p>
 </section>
 <section>
 	<h3>LDAP Uses</h3>
-	<img class="stretch plain" src="/images/ldap2_apache.png">
+	<img class="stretch plain" src="../../images/ldap2_apache.png">
 	<p class="imagecredit">Image Source: <a href="https://directory.apache.org/apacheds/basic-ug/1.2-some-background.html">Apache</a></p>
 </section>
 <section>
 	<h3>LDAP Tree Structure</h3>
-	<img class="stretch plain" src="/images/ldap_tree_openldap.gif">
+	<img class="stretch plain" src="../../images/ldap_tree_openldap.gif">
 	<p class="imagecredit">Image Source: <a href="http://www.openldap.org/doc/admin22/intro.html">Apache</a></p>
 </section>
 <section>
@@ -120,7 +120,7 @@ objectClass: top</code></pre>
 </section>
 <section>
 	<h3>NDS Example</h3>
-	<img class="stretch plain" src="/images/nds_novell.gif">
+	<img class="stretch plain" src="../../images/nds_novell.gif">
 	<p class="imagecredit">Image Source: <a href="http://support.novell.com/techcenter/articles/dnd19970304.html">Novell</a></p>
 </section>
 <section>
@@ -134,7 +134,7 @@ objectClass: top</code></pre>
 </section>
 <section>
 	<h3>Workgroup</h3>
-	<img class="stretch plain" src="/images/workgroup_etutorials.jpg">
+	<img class="stretch plain" src="../../images/workgroup_etutorials.jpg">
 	<p class="imagecredit">Image Source: <a href="http://etutorials.org/Microsoft+Products/microsoft+windows+xp+professional+training+kit/Chapter+1+-+Introduction+to+Windows+XP+Professional/Lesson+3nbspUnderstanding+Workgroups+and+Domains/">eTutorials.org</a></p>
 </section>
 <section>
@@ -148,12 +148,12 @@ objectClass: top</code></pre>
 </section>
 <section>
 	<h3>Domain</h3>
-	<img class="stretch plain" src="/images/domain_etutorials.jpg">
+	<img class="stretch plain" src="../../images/domain_etutorials.jpg">
 	<p class="imagecredit">Image Source: <a href="http://etutorials.org/Microsoft+Products/microsoft+windows+xp+professional+training+kit/Chapter+1+-+Introduction+to+Windows+XP+Professional/Lesson+3nbspUnderstanding+Workgroups+and+Domains/">eTutorials.org</a></p>
 </section>
 <section>
 	<h3>Kerberos</h3>
-	<img class="stretch plain" src="/images/cerberus_wiki.jpg">
+	<img class="stretch plain" src="../../images/cerberus_wiki.jpg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Cerberus">Wikipedia</a></p>
 </section>
 <section>
@@ -166,7 +166,7 @@ objectClass: top</code></pre>
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/kerberos_wiki.svg">
+	<img class="stretch plain" src="../../images/kerberos_wiki.svg">
 	<p class="imagecredit">Image Source: <a href="http://en.wikipedia.org/wiki/Kerberos_%28protocol%29">Wikipedia</a></p>
 </section>
 <section>

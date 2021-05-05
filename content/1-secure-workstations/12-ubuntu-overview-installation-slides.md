@@ -4,7 +4,7 @@ hidden: true
 ---
 <section>
 	<h2>CIS 527</h2><br><p>Lab 1</p>
-  <img class="plain stretch" src="/images/ubuntu_logo_wiki.png">
+  <img class="plain stretch" src="../../images/ubuntu_logo_wiki.png">
   <p class="imagecredit">Image Source: <a href="http://en.wikipedia.org/wiki/Ubuntu_(operating_system)">Wikipedia</a></p>
 </section>
 <section>
@@ -17,11 +17,11 @@ hidden: true
   </ul>
 </section>
 <section>
-  <img class="stretch plain" src="/images/unix_timeline_wiki.svg">
+  <img class="stretch plain" src="../../images/unix_timeline_wiki.svg">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Linux">Wikipedia</a></p>
 </section>
 <section>
-  <img class="stretch plain" src="/images/linux_distro_wiki.svg">
+  <img class="stretch plain" src="../../images/linux_distro_wiki.svg">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Linux">Wikipedia</a></p>
 </section>
 <section>
@@ -38,90 +38,90 @@ hidden: true
 <section>
   <section>
     <div>
-      <img class="plain" style="width: 1400px;" src="/images/linux_timeline_wiki.svg">
+      <img class="plain" style="width: 1400px;" src="../../images/linux_timeline_wiki.svg">
       <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Linux_distribution">Wikipedia</a></p>
     </div>
   </section>
   <section>
     <div style="margin: -950px;">
-      <img class="plain" style="width: 1400px;" src="/images/linux_timeline_wiki.svg">
+      <img class="plain" style="width: 1400px;" src="../../images/linux_timeline_wiki.svg">
       <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Linux_distribution">Wikipedia</a></p>
     </div>
   </section>
   <section>
     <div style="margin: -1900px;">
-      <img class="plain" style="width: 1400px;" src="/images/linux_timeline_wiki.svg">
+      <img class="plain" style="width: 1400px;" src="../../images/linux_timeline_wiki.svg">
       <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Linux_distribution">Wikipedia</a></p>
     </div>
   </section>
   <section>
     <div style="margin: -2850px;">
-      <img class="plain" style="width: 1400px;" src="/images/linux_timeline_wiki.svg">
+      <img class="plain" style="width: 1400px;" src="../../images/linux_timeline_wiki.svg">
       <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Linux_distribution">Wikipedia</a></p>
     </div>
   </section>
   <section>
     <div style="margin: -3800px;">
-      <img class="plain" style="width: 1400px;" src="/images/linux_timeline_wiki.svg">
+      <img class="plain" style="width: 1400px;" src="../../images/linux_timeline_wiki.svg">
       <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Linux_distribution">Wikipedia</a></p>
     </div>
   </section>
   <section>
     <div style="margin: -4750px;">
-      <img class="plain" style="width: 1400px;" src="/images/linux_timeline_wiki.svg">
+      <img class="plain" style="width: 1400px;" src="../../images/linux_timeline_wiki.svg">
       <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Linux_distribution">Wikipedia</a></p>
     </div>
   </section>
   <section>
     <div style="margin: -5700px;">
-      <img class="plain" style="width: 1400px;" src="/images/linux_timeline_wiki.svg">
+      <img class="plain" style="width: 1400px;" src="../../images/linux_timeline_wiki.svg">
       <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Linux_distribution">Wikipedia</a></p>
     </div>
   </section>
 </section>
 <section>
   <h3>4.10 - Warty Warthog</h3>
-  <img class="stretch" src="/images/ubuntu4.10_wiki.png">
+  <img class="stretch" src="../../images/ubuntu4.10_wiki.png">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
 </section>
 <section>
   <h3>6.06 - Dapper Drake LTS</h3>
-  <img class="stretch" src="/images/ubuntu6.06_wiki.png">
+  <img class="stretch" src="../../images/ubuntu6.06_wiki.png">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
 </section>
 <section>
   <h3>8.04 - Hardy Heron LTS</h3>
-  <img class="stretch" src="/images/ubuntu8.04_wiki.png">
+  <img class="stretch" src="../../images/ubuntu8.04_wiki.png">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
 </section>
 <section>
   <h3>10.04 - Lucid Lynx LTS</h3>
-  <img class="stretch" src="/images/ubuntu10.04_wiki.png">
+  <img class="stretch" src="../../images/ubuntu10.04_wiki.png">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
 </section>
 <section>
   <h3>12.04 - Precise Pangolin LTS</h3>
-  <img class="stretch" src="/images/ubuntu12.04_wiki.png">
+  <img class="stretch" src="../../images/ubuntu12.04_wiki.png">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
 </section>
 <section>
   <h3>14.04 - Trusty Tahr LTS</h3>
-  <img class="stretch" src="/images/ubuntu14.04_wiki.png">
+  <img class="stretch" src="../../images/ubuntu14.04_wiki.png">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
 </section>
 <section>
   <h3>16.04 - Xenial Xerus LTS</h3>
-  <img class="stretch" src="/images/ubuntu16.04_wiki.png">
+  <img class="stretch" src="../../images/ubuntu16.04_wiki.png">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
 </section>
 <section>
   <h3>18.04 - Bionic Beaver LTS</h3>
-  <img class="stretch" src="/images/ubuntu18.04_wiki.png">
+  <img class="stretch" src="../../images/ubuntu18.04_wiki.png">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
 </section>
 <section>
   <h3>20.04 - Focal Fossa LTS</h3>
-  <img class="stretch" src="/images/ubuntu20.04_wiki.png">
+  <img class="stretch" src="../../images/ubuntu20.04_wiki.png">
   <p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Ubuntu_version_history">Wikipedia</a></p>
 </section>
 <section>
@@ -130,13 +130,13 @@ hidden: true
 <section>
   <section>
     <div>
-      <img class="plain" style="width: 1400px;" src="/images/filesys_geekstuff.png">
+      <img class="plain" style="width: 1400px;" src="../../images/filesys_geekstuff.png">
 			<p class="imagecredit">Image Source: <a href="http://www.thegeekstuff.com/2010/09/linux-file-system-structure/">Geek Stuff</a></p>
     </div>
   </section>
   <section>
     <div style="margin: -1050px;">
-      <img class="plain" style="width: 1400px;" src="/images/filesys_geekstuff.png">
+      <img class="plain" style="width: 1400px;" src="../../images/filesys_geekstuff.png">
 			<p class="imagecredit">Image Source: <a href="http://www.thegeekstuff.com/2010/09/linux-file-system-structure/">Geek Stuff</a></p>
     </div>
   </section>

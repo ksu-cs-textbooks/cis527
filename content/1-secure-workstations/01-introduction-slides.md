@@ -16,18 +16,18 @@ hidden: true
 </section>
 <section>
 	<h3>Operating Systems</h3>
-	<img class="plain" style="width: 1000px;" src="/images/windows_logo_wiki.png">
-	<img class="plain" style="width: 1000px;" src="/images/ubuntu_logo_wiki.png">
+	<img class="plain" style="width: 1000px;" src="../../images/windows_logo_wiki.png">
+	<img class="plain" style="width: 1000px;" src="../../images/ubuntu_logo_wiki.png">
   <p class="imagecredit">Image Source: <a href="http://en.wikipedia.org/wiki/Microsoft_Windows">Wikipedia</a> and <a href="http://en.wikipedia.org/wiki/Ubuntu_(operating_system)">Wikipedia</a></p>
 </section>
 <section>
 	<h3>Architecture</h3>
-	<img class="stretch" src="/images/os_diagram1_wiki.png">
+	<img class="stretch" src="../../images/os_diagram1_wiki.png">
 	<p class="imagecredit">Image Source: <a href="http://en.wikipedia.org/wiki/Operating_system">Wikipedia</a></p>
 </section>
 <section>
 	<h3>Kernel</h3>
-	<img class="stretch plain" src="/images/kernel_diagram_wiki.png">
+	<img class="stretch plain" src="../../images/kernel_diagram_wiki.png">
 	<p class="imagecredit">Image Source: <a href="http://en.wikipedia.org/wiki/Operating_system">Wikipedia</a></p>
 </section>
 <section>

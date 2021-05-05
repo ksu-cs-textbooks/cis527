@@ -121,7 +121,7 @@ When you create a group and add a user to that group, it does not take effect un
 Use either the `cis527` or `AdminUser` account to create these files, then modify the owner and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the permissions auditing tab. Many students neglect this step, leaving the file owner incorrect.
 {{% /notice %}}
 * **Don't remove the SYSTEM account or the built-in Administrator account's access from any of these files.** Usually this is as simple as not modifying their permissions from the defaults.
-* See [this screenshot](/images/lab1-image1.png) and [this screenshot](/images/lab1-image1a.png) for what these permissions should look like in PowerShell.
+* See [this screenshot](../../images/lab1-image1.png) and [this screenshot](../../images/lab1-image1a.png) for what these permissions should look like in PowerShell.
 
 ---
 
@@ -189,7 +189,7 @@ When you create a group and add a user to that group, it does not take effect un
 {{% notice tip %}}
 Use either the `cis527` or `AdminUser` account to create these files, then modify the owner, group, and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the `su` command to become that user in the terminal. Many students neglect this step, leaving the file owner incorrect.
 {{% /notice %}}
-* See [this screenshot](/images/lab1-image2.png) for what these permissions may look like in Terminal.
+* See [this screenshot](../../images/lab1-image2.png) for what these permissions may look like in Terminal.
 
 ---
 

@@ -33,7 +33,7 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/ipv4address_wiki.svg">
+	<img class="stretch plain" src="../../images/ipv4address_wiki.svg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Dot-decimal_notation">Wikipedia</a></p>
 </section>
 <section>
@@ -50,11 +50,11 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/ipclasses_tcpip.png">
+	<img class="stretch plain" src="../../images/ipclasses_tcpip.png">
 	<p class="imagecredit">Image Source: <a href="http://www.tcpipguide.com/free/t_IPClassfulAddressingNetworkandHostIdentificationan-3.htm">TCP/IP Guide</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/map_of_the_internet_xkcd.jpg">
+	<img class="stretch plain" src="../../images/map_of_the_internet_xkcd.jpg">
 	<p class="imagecredit">Image Source: <a href="http://xkcd.com/195/">XKCD</a></p>
 </section>
 <section>
@@ -95,7 +95,7 @@ Host:   0.  0.  0.  2 --------.--------.--------.--000010
 </section>
 <section>
 	<h3>CIDR Routing</h3>
-	<img class="stretch plain" src="/images/cidrroute_wiki.svg">
+	<img class="stretch plain" src="../../images/cidrroute_wiki.svg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">Wikipedia</a></p>
 </section>
 <section>
@@ -111,7 +111,7 @@ Host:   0.  0.  0.  2 --------.--------.--------.--000010
 </section>
 <section>
 	<h3>Network Address Translation (NAT)</h3>
-	<img class="stretch plain" src="/images/nat_tcpip.png">
+	<img class="stretch plain" src="../../images/nat_tcpip.png">
 	<p class="imagecredit">Image Source: <a href="http://www.tcpipguide.com/free/t_IPNATUnidirectionalTraditionalOutboundOperation.htm">TCP/IP Guide</a></p>
 </section>
 <section>
@@ -122,7 +122,7 @@ Host:   0.  0.  0.  2 --------.--------.--------.--000010
 </section>
 <section>
 	<h3>IPv6 Packet Structure</h3>
-	<img class="stretch plain" src="/images/ipv6_wiki.png">
+	<img class="stretch plain" src="../../images/ipv6_wiki.png">
 	<p class="imagecredit">Image Source: <a href="http://en.wikipedia.org/wiki/Ipv6">Wikipedia</a></p>
 </section>
 <section>

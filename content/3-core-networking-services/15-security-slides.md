@@ -20,11 +20,11 @@ hidden: true
 </section>
 <section>
 	<h3>Transport Layer Security (TLS)</h3>
-	<img class="stretch plain" src="/images/tls_hpbn.svg">
+	<img class="stretch plain" src="../../images/tls_hpbn.svg">
 	<p class="imagecredit">Image Source: <a href="https://hpbn.co/transport-layer-security-tls/">High Performance Browser Networking from O'Reilly</a></p>
 </section>
 <section>
 	<h3>TLS Handshake</h3>
-	<img class="stretch plain" src="/images/tls_handshake_hpbn.svg">
+	<img class="stretch plain" src="../../images/tls_handshake_hpbn.svg">
 	<p class="imagecredit">Image Source: <a href="https://hpbn.co/transport-layer-security-tls/">High Performance Browser Networking from O'Reilly</a></p>
 </section>

@@ -42,11 +42,11 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/dns_wiki.png">
+	<img class="stretch plain" src="../../images/dns_wiki.png">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Domain_Name_System">Wikipedia</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/dns_lookup.png">
+	<img class="stretch plain" src="../../images/dns_lookup.png">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Domain_Name_System">Wikipedia</a></p>
 </section>
 <section>

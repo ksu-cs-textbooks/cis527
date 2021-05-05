@@ -6,7 +6,7 @@ hidden: true
 	<h2>CIS 527</h2><br><br><p>Lab 5 - Cloud Resource Setup</p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/digitaloceanlogo_wiki.svg">
+	<img class="stretch plain" src="../../images/digitaloceanlogo_wiki.svg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/DigitalOcean">Wikipedia</a></p>
 </section>
 <section>

@@ -16,25 +16,25 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="plain" style="height: 40%" src="/images/mysql_wiki.svg">
+	<img class="plain" style="height: 40%" src="../../images/mysql_wiki.svg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/MySQL">Wikimedia Commons</a></p>
-	<img class="plain" style="height: 40%" src="/images/maria_wiki.svg">
+	<img class="plain" style="height: 40%" src="../../images/maria_wiki.svg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/MariaDB">Wikimedia Commons</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/postgres_logo.png">
+	<img class="stretch plain" src="../../images/postgres_logo.png">
 	<p class="imagecredit">Image Source: <a href="https://www.unixmen.com/postgresql-replication-tutorial/">Unixmen</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/mssql_logo.png">
+	<img class="stretch plain" src="../../images/mssql_logo.png">
 	<p class="imagecredit">Image Source: <a href="https://clipart.info/microsoft-sql-server-logo-png-4966">Clipart.info</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/oracle_logo.png">
+	<img class="stretch plain" src="../../images/oracle_logo.png">
 	<p class="imagecredit">Image Source: <a href="http://allvectorlogo.com/oracle-database-logo/">All Vector Logo</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/mongo_logo.jpg">
+	<img class="stretch plain" src="../../images/mongo_logo.jpg">
 	<p class="imagecredit">Image Source: <a href="https://www.mongodb.com/brand-resources">MongoDB</a></p>
 </section>
 <section>

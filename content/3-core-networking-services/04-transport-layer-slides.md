@@ -28,7 +28,7 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/tcp_state_wiki.svg">
+	<img class="stretch plain" src="../../images/tcp_state_wiki.svg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">Wikipedia</a></p>
 </section>
 <section>

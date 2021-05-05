@@ -42,11 +42,11 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/dhcp_fossbytes.jpg">
+	<img class="stretch plain" src="../../images/dhcp_fossbytes.jpg">
 	<p class="imagecredit">Image Source: <a href="https://fossbytes.com/dhcp-how-does-it-work/">Fossbytes</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/dhcp_multiple.png">
+	<img class="stretch plain" src="../../images/dhcp_multiple.png">
 	<p class="imagecredit">Image Source: <a href="http://people.cs.ksu.edu/~russfeld/cis527spring2017/9dhcpdns/images/dhcp.svg">Seth Galitzer</a></p>
 </section>
 <section>

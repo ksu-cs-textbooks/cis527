@@ -65,17 +65,17 @@ hidden: true
 </section>
 <section>
   <h3>Tools</h3>
-  <p><img class="plain imgcenter" style="height: 2em;" src="/images/puppet_logo.png"></p>
+  <p><img class="plain imgcenter" style="height: 2em;" src="../../images/puppet_logo.png"></p>
   <div class="container">
     <div class="col">
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/cfengine_wiki.svg"></p>
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/chef_logo.svg"></p>
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/bcfg2_logo.png"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/cfengine_wiki.svg"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/chef_logo.svg"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/bcfg2_logo.png"></p>
     </div>
     <div class="col">
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/ansible.png"></p>
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/salt_logo.png"></p>
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/vagrant_logo.svg"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/ansible.png"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/salt_logo.png"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/vagrant_logo.svg"></p>
     </div>
   </div>
 </section>
@@ -94,14 +94,14 @@ hidden: true
   <h3>DevOps Tools</h3>
   <div class="container">
     <div class="col">
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/jenkins_logo.png"></p>
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/docker_logo.png"></p>
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/nagios_logo.png"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/jenkins_logo.png"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/docker_logo.png"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/nagios_logo.png"></p>
     </div>
     <div class="col">
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/travis_logo.png"></p>
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/github_logo.png"></p>
-      <p><img class="plain imgcenter" style="height: 2em;" src="/images/heroku_logo.svg"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/travis_logo.png"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/github_logo.png"></p>
+      <p><img class="plain imgcenter" style="height: 2em;" src="../../images/heroku_logo.svg"></p>
     </div>
   </div>
 </section>

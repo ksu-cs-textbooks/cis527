@@ -41,11 +41,11 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/itil_axelos.png">
+	<img class="stretch plain" src="../../images/itil_axelos.png">
 	<p class="imagecredit">Image Source: <a href="https://www.axelos.com/Corporate/media/Files/Brochures/ITIL_Product_Brochure_Conference_Version_v1.pdf">Axelos</a></p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/itilstructure_wiki.png">
+	<img class="stretch plain" src="../../images/itilstructure_wiki.png">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/ITIL">Wikipedia</a></p>
 </section>
 <section>
