@@ -83,4 +83,4 @@ Finally, submit your writeup via Canvas and email the instructor to schedule a t
 Do not wait until the last minute! If you try to schedule a presentation on the last day of the course, it may already be too late to get everything done in time!
 {{% /notice %}}
 
-As with any assignment in this course, if you have any questions at all please post in the course discussion forums on Canvas.
+As with any assignment in this course, if you have any questions at all please contact the instructor or post in the course discussion channel.
