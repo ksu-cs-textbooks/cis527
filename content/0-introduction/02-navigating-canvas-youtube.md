@@ -4,6 +4,14 @@ weight: 10
 pre: "2. "
 ---
 
+TODO
+
+{{% notice warning %}}
+
+Previous versions of this course used Piazza for discussions. We now use Discord and email. Not all videos have been updated to reflect this change. 
+
+{{% /notice %}}
+
 {{< youtube KuwfaigQNZY >}}
 
 #### Video Script
@@ -44,6 +52,9 @@ In addition, I will attempt to speak as clearly as possible when creating the vi
 
 Finally, you are welcome to download the videos from YouTube if desired, based on your internet connection or other factors. If you are interested in getting these videos in another format, please contact me.
 
+<!--
+Old Piazza Information
+
 Now, let's click the Piazza link to look at the Piazza boards for this course. Piazza is an online discussion board specifically tailored for college classes. It supports many cool features such as custom markup for code and math snippets, as well as the ability to directly message all instructors in a course. We'll be using Piazza as the primary communication method in this class. In addition to hosting course discussions, we'll also use Piazza to make general announcements to the class.
 
 Piazza's interface is very simple. On the left, you'll see a list of all current topics in the course. During the course, this is the best place to catch up on what's new. At the top, you can also click on one of several folders or options to add a filter to the list. Piazza also has a section to post course resources, but for this course we'll be using Canvas for all course materials.
@@ -61,5 +72,7 @@ Before posting in Piazza, you should read the information in the Syllabus regard
 To manage your Piazza account & notification settings, click the gear icon in the upper left. Here you can post a profile picture and update your personal information. In addition, you can manage your email settings. I usually recommend turning on the *Smart Digest* option for new questions and notes, but selecting *Real Time* for any questions or notes you follow. Don't worry, any important course announcements will be sent via email directly from Piazza so you won't miss a thing. You can also download the Piazza app for iPhone and Android to stay connected to the course anytime.
 
 Finally, Piazza also has a very active career and recruiting interface. It is a great way to make yourself available to companies interested in hiring students who have a particular set of skills, such as programming. You can find more information about those features by clicking the links in the upper-right of the window.
+
+-->
 
 Hopefully this gives you a good idea of the different resources available in this course. To complete the first module, click the next button below to continue with the next item.

@@ -4,6 +4,7 @@ hidden: true
 ---
 <section>
 	<h2>Welcome to CIS 527</h2><br><br>Enterprise Systems Administration
+	<h2>Welcome to CC 510</h2><br><br>Computer Systems Administration
 </section>
 <section>
 	<h3>Russell Feldhausen</h3>
@@ -15,15 +16,7 @@ hidden: true
 		<br>
 		<b>russfeld AT ksu DOT edu</b><br>
 		https://russfeld.me  -  @russfeld<br>
-		<i>Piazza Preferred</i>
-	</p>
-</section>
-<section>
-	<h3>Graduate Teaching Assistant</h3>
-	<p>
-	  <b>BreAnn Anshutz</b><br>
-	  banshutz AT ksu DOT edu<br>
-	  <i>Piazza Preferred</i>
+		<i>Email Preferred</i>
 	</p>
 </section>
 <section>
@@ -39,7 +32,7 @@ hidden: true
 		<li><b>==One Module Due Each Week==</b></li>
 		<li>Can Work Ahead At Your Own Pace</li>
 		<li>Interactive Lab Grading</li>
-		<li>Complete by July 31, 2020</li>
+		<li>Complete by July 30, 2021</li>
 	</ul>
 </section>
 <section>
