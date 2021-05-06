@@ -39,10 +39,10 @@ You will also need installation media for the following operating systems:
 * **Ubuntu 20.04 LTS** - Download from [Ubuntu](https://ubuntu.com/download) or the [K-State CS Mirror](http://mirror.cs.ksu.edu/ubuntu-releases/focal/)
   * File Name: `ubuntu-20.04-desktop-amd64.iso`
   * MD5 Hash: `ea28c4fd933be55f9f01a5fa9e868490`
-  * _If a point release is avialble (ex: 20.04.1), feel free to us that version._
+  * _If a point release is available (ex: 20.04.1), feel free to us that version._
 
 {{% notice note %}}
-The original course materials were developed for Windows 10 Version 1803 and Ubuntu 18.04 LTS. Some course materials may still show the older versions. Students should use the software versions listed in bold above if at all possible. If not, please contact the instructor for alternative options. If you find any errors or issues using the updated versions of these systems, please post on Piazza.    
+The original course materials were developed for Windows 10 Version 1803 and Ubuntu 18.04 LTS. Some course materials may still show the older versions. Students should use the software versions listed in bold above if at all possible. If not, please contact the instructor for alternative options. If you find any errors or issues using the updated versions of these systems, please let me know. --Russ    
 {{% /notice %}}
 
 ---
