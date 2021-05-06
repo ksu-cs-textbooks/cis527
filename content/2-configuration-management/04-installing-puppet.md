@@ -4,12 +4,18 @@ weight: 20
 pre: "4. "
 ---
 
+{{% notice note %}}
+
+The video refers to Puppet version 6, but Puppet 7 is now the latest version. For the lab assignment, you'll want to install Puppet 7 and not Puppet 6. The basic process is the same.
+
+{{% /notice %}}
+
 {{< youtube brfUIda9IPc >}}
 
 <!-- F12XwpusumA -->
 
 #### Resources
-* [Puppet Agent Windows Downloads](https://downloads.puppetlabs.com/windows/puppet6/) from Puppet (look for puppet-agent-x64-latest.msi)
+* [Puppet Agent Windows Downloads](https://downloads.puppetlabs.com/windows/puppet7/) from Puppet (look for puppet-agent-x64-latest.msi)
 * [About Puppet Platform and Its Packages](https://puppet.com/docs/puppet/latest/puppet_platform.html) from Puppet
 * [Puppet Learning VM](https://puppet.com/download-learning-vm) from Puppet
 * [Puppet System Requirements](https://puppet.com/docs/pe/latest/system_requirements.html) from Puppet

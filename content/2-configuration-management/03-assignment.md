@@ -34,20 +34,20 @@ Create new Windows 10 and Ubuntu 20.04 virtual machines for this lab. When creat
 
 After installing the operating system, install **ONLY** the following software:
 
-* Puppet Agent 6 ([Windows](https://downloads.puppetlabs.com/windows/puppet6/) & Ubuntu)
-  * See [Installing Agents](https://puppet.com/docs/puppet/latest/install_agents.html) and [Enable the Puppet Platform on Apt](https://puppet.com/docs/puppet/latest/puppet_platform.html#task-8943) from Puppet Documentation
-  * Recall that Ubuntu 20.04 is codenamed "Focal Fossa", so use the url `https://apt.puppetlabs.com/puppet6-release-focal.deb` to get the correct version on Ubuntu. 
+* Puppet Agent 7 ([Windows](https://downloads.puppetlabs.com/windows/puppet7/) & Ubuntu)
+  * See [Installing Agents](https://puppet.com/docs/puppet/latest/install_agents.html) and [Enable the Puppet Platform on Apt](https://puppet.com/docs/puppet/7.6/install_puppet.html#enable_the_puppet_platform_repository) from Puppet Documentation
+  * Recall that Ubuntu 20.04 is codenamed "Focal Fossa", so use the url `https://apt.puppetlabs.com/puppet7-release-focal.deb` to get the correct version on Ubuntu. 
 * VMware Tools (Windows) and either `open-vm-tools-desktop` or VMware Tools (Ubuntu)
 * All System Updates (Windows & Ubuntu)
 
-On the Windows virtual machine only, create a folder at `C:\Installers` and download the following installers. Do not change the name of the installers from the default name provided from the website. You may choose to do this step using the [download_file](https://forge.puppet.com/puppet/download_file) Puppet module instead.  
+On the Windows virtual machine only, create a folder at `C:\install` and download the following installers. Do not change the name of the installers from the default name provided from the website. You may choose to do this step using the [download_file](https://forge.puppet.com/puppet/download_file) Puppet module instead.  
 
-* [Firefox](https://www.mozilla.org/en-US/firefox/all/) (`Firefox Setup 76.exe` as of 5/5/2020)
-* [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 68.7.0.exe` as of 5/5/2020)
-* [Notepad++](https://notepad-plus-plus.org/download/) (`npp.7.8.6.Installer.exe` as of 5/5/2020)
+* [Firefox](https://www.mozilla.org/en-US/firefox/all/) (`Firefox Setup 88.0.1.exe` as of 5/6/2021)
+* [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 78.10.1.exe` as of 5/6/2021)
+* [Notepad++](https://notepad-plus-plus.org/download/) (`npp.7.9.5.Installer.x64.exe` as of 5/6/2021)
 
 {{% notice note %}}
-_I have listed sample names of the installers as of this writing; however, you may receive newer versions with slightly different names. That is fine. Just be sure that you don't get the default stub or web-only installers, which is what Firefox typically gives you unless you follow the links below. They will not work properly for this lab. --Russ_
+_I have listed sample names of the installers as of this writing; however, you may receive newer versions with slightly different names. That is fine. Just be sure that you don't get the default stub or web-only installers, which is what Firefox typically gives you unless you follow the links above. They will not work properly for this lab. --Russ_
 {{% /notice %}}
 
 Once you have your virtual machines configured, make a snapshot of each called "Puppet Testing" for your use. As you test your Puppet manifest files, you'll reset to this snapshot to undo any changes made by Puppet so you can test on a clean VM. The VMs used for grading will be configured as described here.
@@ -69,12 +69,12 @@ Create a Puppet Manifest File for Ubuntu 20.04 that defines the following config
   - `eviluser` | `EvilPassword123` (Normal type)
   - _Create groups as needed below_
 * **Files & Permissions (Same as Lab 1)**
-  - Create a folder `/files` (**at the root of the system, not in a user's home folder**). Any user may read or write to this folder, and it should be owned by `root:root` (user: `root`; group: `root`).
-  - Within `/files`, create a folder for each user created above except for `cis527`, with the folder name matching the user's name.
+  - Create a folder `/docs` (**at the root of the system, not in a user's home folder**). Any user may read or write to this folder, and it should be owned by `root:root` (user: `root`; group: `root`).
+  - Within `/docs`, create a folder for each user created above except for `cis527`, with the folder name matching the user's name.
   - Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
-  - Create a group and set permissions on each folder using that group to allow both `cis527` and `adminuser` to have full access to each folder created in `/files`.
+  - Create a group and set permissions on each folder using that group to allow both `cis527` and `adminuser` to have full access to each folder created in `/docs`.
   - No other user should be able to access any other user's folder. For example, `eviluser` cannot access `guestuser`'s folder, but `adminuser` and `cis527` can, as well as `guestuser`, who is also the owner of its own folder.
-  - In each subfolder of `/files`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
+  - In each subfolder of `/docs`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
   - See [this screenshot](../../images/lab1-image2.png) for what these permissions may look like in Terminal.
 * **Software (Same as Lab 1)**
   - Mozilla Firefox (`firefox`)
@@ -104,12 +104,12 @@ Create a Puppet Manifest File for Windows 10 that defines the following configur
   - `EvilUser` | `EvilPassword123` (Users group)
   - _Create groups as needed below_
 * **Files & Permissions (Same as Lab 1)**
-  - Create the folder `C:\files`. It should be owned by the `cis527` account, but make sure all other users can read and write to that folder.
-  - Within `C:\files`, create a folder for each user created above except for `cis527`, with the folder name matching the user's name.
+  - Create the folder `C:\docs`. It should be owned by the `cis527` account, but make sure all other users can read and write to that folder.
+  - Within `C:\docs`, create a folder for each user created above except for `cis527`, with the folder name matching the user's name.
   - Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
-  - Create a group containing `cis527` and `AdminUser`, and set permissions on `C:\files` for that group to have full access to each folder created in `C:\files`.
+  - Create a group containing `cis527` and `AdminUser`, and set permissions on `C:\docs` for that group to have full access to each folder created in `C:\docs`.
   - No other user should be able to access any other user's folder. For example, `EvilUser` cannot access `GuestUser`'s folder, but `AdminUser` and `cis527` can, as well as `GuestUser`, who is also the owner of its own folder.
-  - In each subfolder of `C:\files`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
+  - In each subfolder of `C:\docs`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
   - **Don't remove the SYSTEM account or the built-in Administrator account's access from any of these files.** Usually this is as simple as not modifying their permissions from the defaults.
   - See [this screenshot](../../images/lab1-image1.png) and [this screenshot](../../images/lab1-image1a.png) for what these permissions may look like in PowerShell.
 * **Software** - Install the latest version of the following software. The installation should be done SILENTLY without any user interaction required. In addition, Puppet should be able to detect if they are already installed, and not attempt to install them again.
@@ -117,7 +117,7 @@ Create a Puppet Manifest File for Windows 10 that defines the following configur
   - Mozilla Thunderbird
   - Notepad++
 {{% notice note %}}
-_You will need to research the appropriate options to give to the installer through Puppet for them to install silently. For this lab, you should not use any Windows package managers such as Chocolatey or Ninite. The installation files will be already downloaded and stored in `C:\installers`. Also, you'll need to make sure your resource names exactly match the names of the packages after they are installed, or Puppet will attempt to reinstall them each time the manifest file is applied. --Russ_
+_You will need to research the appropriate options to give to the installer through Puppet for them to install silently. For this lab, you should not use any Windows package managers such as Chocolatey or Ninite. The installation files will be already downloaded and stored in `C:\install`. Also, you'll need to make sure your resource names exactly match the names of the packages after they are installed, or Puppet will attempt to reinstall them each time the manifest file is applied. --Russ_
 {{% /notice %}}
 * **Services** - Ensure the following services are running:
   - DHCP Client

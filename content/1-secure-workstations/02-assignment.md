@@ -32,17 +32,18 @@ This lab is written with the expectation that most students will be using **VMwa
 If you are using another virtualization platform, you may have to adapt these instructions to fit. If you are unsure about any specification and how it applies to your setup, please contact the instructor.
 
 You will also need installation media for the following operating systems:
-* **Windows 10 Version 1903** - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
-  * File Name: `en_windows_10_consumer_editions_version_1903_x64_dvd_b980e68c.iso`
-  * MD5 Hash: `8ba0e81b276d9052e8538deb0cf6c7d0`
+* **Windows 10 Version 2004** or later - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
+  * File Name: `en_windows_10_consumer_editions_version_2004_x64_dvd_36d61c40.iso`
+  * SHA 256 Hash: `a9efd2329ed805a6a58e0e0101f9b22ad4031e80e2c663c571cd004db26d2f31`
   * _Your file may vary as Microsoft constantly updates these installers._
-* **Ubuntu 20.04 LTS** - Download from [Ubuntu](https://ubuntu.com/download) or the [K-State CS Mirror](http://mirror.cs.ksu.edu/ubuntu-releases/focal/)
-  * File Name: `ubuntu-20.04-desktop-amd64.iso`
-  * MD5 Hash: `ea28c4fd933be55f9f01a5fa9e868490`
-  * _If a point release is available (ex: 20.04.1), feel free to us that version._
+  * _You may choose to upgrade to Windows 10 Version 20H2 while installing updates._
+* **Ubuntu 20.04 LTS** or later - Download from [Ubuntu](https://ubuntu.com/download) or the [K-State CS Mirror](http://mirror.cs.ksu.edu/ubuntu-releases/focal/)
+  * File Name: `ubuntu-20.04.2.0-desktop-amd64.iso`
+  * SHA 256 Hash: `93bdab204067321ff131f560879db46bee3b994bf24836bb78538640f689e58f`
+  * _If a point release is available (ex: 20.04.x.x), feel free to us that version. **Do not upgrade to a non-LTS release** such as Ubuntu 21.04, as those versions may have significant changes that are not covered int these assignments._
 
 {{% notice note %}}
-The original course materials were developed for Windows 10 Version 1803 and Ubuntu 18.04 LTS. Some course materials may still show the older versions. Students should use the software versions listed in bold above if at all possible. If not, please contact the instructor for alternative options. If you find any errors or issues using the updated versions of these systems, please let me know. --Russ    
+The original course materials were developed for Windows 10 Version 1803 and Ubuntu 18.04 LTS. Some course materials may still show the older versions. Students should use the software versions listed in bold above if at all possible, as these assignments have been verified using those versions. If not, please contact the instructor for alternative options. If you find any errors or issues using the updated versions of these systems, please contact the instructor. 
 {{% /notice %}}
 
 ---
@@ -99,7 +100,7 @@ You can test this by accessing the Windows VM IP Address from Firefox running on
 * **Automatic Updates:** Make sure the system is set to download and install security updates automatically.
 
 {{% notice note %}}
-Even though you may have installed a particular version of Windows, such as 1903, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. 
+Even though you may have installed a particular version of Windows, such as 2004, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. 
 {{% /notice %}}
 
 ### Task 3: Windows Files & Permissions
@@ -108,15 +109,15 @@ Even though you may have installed a particular version of Windows, such as 1903
 _Read the whole task before you start! You have been warned. --Russ_
 {{% /notice %}}
 
-* Create the folder `C:\files`. It should be owned by the `cis527` account, but make sure all other users can read and write to that folder.
-* Within `C:\files`, create a folder for each user created during task 2 except for `cis527`, with the folder name matching the user's name.
+* Create the folder `C:\docs`. It should be owned by the `cis527` account, but make sure all other users can read and write to that folder.
+* Within `C:\docs`, create a folder for each user created during task 2 except for `cis527`, with the folder name matching the user's name.
 * Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
-* - Create a group containing `cis527` and `AdminUser`, and set permissions on `C:\files` for that group to have full access to each folder created in `C:\files`.
+* - Create a group containing `cis527` and `AdminUser`, and set permissions on `C:\docs` for that group to have full access to each folder created in `C:\docs`.
 {{% notice tip %}}
 When you create a group and add a user to that group, it does not take effect until you reboot the computer.
 {{% /notice %}}
 * No other user should be able to access any other user's folder. For example, `EvilUser` cannot access `GuestUser`'s folder, but `AdminUser` and `cis527` can, as well as `GuestUser`, who is also the owner of its own folder.
-* In each subfolder of `C:\files`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
+* In each subfolder of `C:\docs`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
 {{% notice tip %}}
 Use either the `cis527` or `AdminUser` account to create these files, then modify the owner and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the permissions auditing tab. Many students neglect this step, leaving the file owner incorrect.
 {{% /notice %}}
@@ -177,17 +178,17 @@ You can test this by accessing the Ubuntu VM IP Address from Firefox on your Win
 _Read the whole task before you start! You have been warned. --Russ_
 {{% /notice %}}
 
-* Create a folder `/files` (**at the root of the system, not in a user's home folder**). Any user may read or write to this folder, and it should be owned by `root:root` (user: `root`; group: `root`).
-* Within `/files`, create a folder for each user created during task 5 except for `cis527`, with the folder name matching the user's name.
+* Create a folder `/docs` (**at the root of the system, not in a user's home folder**). Any user may read or write to this folder, and it should be owned by `root:root` (user: `root`; group: `root`).
+* Within `/docs`, create a folder for each user created during task 5 except for `cis527`, with the folder name matching the user's name.
 * Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
-* Create a group and set permissions on each folder using that group to allow both `cis527` and `AdminUser` to have full access to each folder created in /files.
+* Create a group and set permissions on each folder using that group to allow both `cis527` and `adminuser` to have full access to each folder created in `/docs`.
 {{% notice tip %}}
 When you create a group and add a user to that group, it does not take effect until you reboot the computer.
 {{% /notice %}}
-* No other user should be able to access any other user's folder. For example, `EvilUser` cannot access `GuestUser`'s folder, but `AdminUser` and `cis527` can, as well as `GuestUser`, who is also the owner of its own folder.
-* In each subfolder of `/files`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
+* No other user should be able to access any other user's folder. For example, `eviluser` cannot access `guestuser`'s folder, but `adminuser` and `cis527` can, as well as `guestuser`, who is also the owner of its own folder.
+* In each subfolder of `/docs`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
 {{% notice tip %}}
-Use either the `cis527` or `AdminUser` account to create these files, then modify the owner, group, and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the `su` command to become that user in the terminal. Many students neglect this step, leaving the file owner incorrect.
+Use either the `cis527` or `adminuser` account to create these files, then modify the owner, group, and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the `su` command to become that user in the terminal. Many students neglect this step, leaving the file owner incorrect.
 {{% /notice %}}
 * See [this screenshot](../../images/lab1-image2.png) for what these permissions may look like in Terminal.
 
