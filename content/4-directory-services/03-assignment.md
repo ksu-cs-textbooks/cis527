@@ -51,7 +51,7 @@ Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4"
 Create a new virtual machine for **Windows Server 2019 Standard** using the "Windows Server 2019 Standard (Updated Sept 2019)" installation media (you may choose a newer option if available, but this lab was tested on that specific version). You can download the installation files and obtain a product key from the [Microsoft Azure Student Portal](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) discussed in Module 1. 
 
 {{% notice tip %}}
-For this system, I recommend giving the VM ample resources, usually at least 2 GB RAM and multiple processor cores if you can spare them. You may need to adjust the VM settings as needed to balance the performance of this VM against the available resources on your system. You may also have to choose "Windows Server 2016" as the operating system type in VMWare, as Windows Server 2019 may not be listed. 
+For this system, I recommend giving the VM ample resources, usually at least 2 GB RAM and multiple processor cores if you can spare them. You may need to adjust the VM settings as needed to balance the performance of this VM against the available resources on your system. You may also have to choose "Windows Server 2016" as the operating system type in VMWare if Windows Server 2019 is not listed. 
 {{% /notice %}}
 
 When installing the operating system, configure it as specified below:
@@ -79,7 +79,7 @@ Configure your Windows Server as an Active Directory Domain Controller. Follow t
 
 1. First, set a static IP address on your Windows Server VM. Use the IP address ending in `42` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address or the localhost IP address (`127.0.0.1`) as the first entry, and then use the IP address of your DNS server (either your Ubuntu Server from Lab 3 or VMware's default gateway address, whichever option you are using) as the second DNS entry. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with Active Directory Domains, as the Domain Controller is also a DNS server.
 2. Follow the instructions in the resources section below to install and configure the Active Directory Domain Services role on the server.
-   * **Domain Name:** `ad.cis527<your eID>.cs.ksu.edu` (example: `ad.cis527russfeld.cs.ksu.edu`)
+   * **Domain Name:** `ad.<your eID>.cis527.cs.ksu.edu` (example: `ad.russfeld.cis527.cs.ksu.edu`)
    * **NETBIOS Domain Name:** `AD` (this should be the default that is presented by the wizard)
    * **Passwords:** Use `cis527_windows` for all passwords
 3. Add a User Account to your Active Directory
@@ -111,11 +111,11 @@ Join your Windows 10 VM to the Active Directory Domain created in Task 2. Follow
 
 Install OpenLDAP on your Ubuntu VM labelled **SERVER**. Follow the steps and configuration details below:
 
-1. First, set a static IP address on your Ubuntu VM labelled **SERVER**, if it does not have one already. Use the IP address ending in `41` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address as the first entry to reference your DNS server from Lab 3 (see the provided model solutions if your server was not working in Lab 3), and then use the IP address for VMware's default gateway address as the second DNS entry. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with LDAP domains, so that the server can properly resolve the `ldap.cis527<your eID>.cs.ksu.edu` address.
+1. First, set a static IP address on your Ubuntu VM labelled **SERVER**, if it does not have one already. Use the IP address ending in `41` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address as the first entry to reference your DNS server from Lab 3 (see the provided model solutions if your server was not working in Lab 3), and then use the IP address for VMware's default gateway address as the second DNS entry. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with LDAP domains, so that the server can properly resolve the `ldap.<your eID>.cis527.cs.ksu.edu` address.
 2. If you haven't already, make a **snapshot** of this VM that you can restore if you run into issues setting up an OpenLDAP server.
 2. Set up and configure an OpenLDAP server, following the first part of the instructions in the guide linked in the resources section below.
-   * **Domain Name:** `ldap.cis527<your eID>.cs.ksu.edu` (example: `ldap.cis527russfeld.cs.ksu.edu`)
-   * **Base DN:** `dc=ldap,dc=cis527<your eID>,dc=cs,dc=ksu,dc=edu` (example: `dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu`)
+   * **Domain Name:** `ldap.<your eID>.cis527.cs.ksu.edu` (example: `ldap.russfeld.cis527.cs.ksu.edu`)
+   * **Base DN:** `dc=ldap,dc=<your eID>,dc=cis527,dc=cs,dc=ksu,dc=edu` (example: `dc=ldap,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu`)
    * **Passwords:** Use `cis527_linux` for all passwords
    * You **DO NOT** have to perform the other steps in the guide to configure TLS at this point
 3. Install phpLDAPadmin. See the video in this module for detailed instructions on how to install and configure phpLDAPadmin.
@@ -139,8 +139,8 @@ Of course, you may need to modify your firewall configuration to allow incoming 
 
 On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate against the OpenLDAP server created in Task 4.
 
-1. First, confirm that you are able to resolve `ldap.cis527<your eID>.cs.ksu.edu` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Ubuntu VM labelled **SERVER** as configured in Lab 3, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
-1. Then, make sure that you can connect to the LDAP server using TLS. You can use `ldapwhoami -x -ZZ -h ldap.cis527<your eID>.cs.ksu.edu` and it should return `anonymous` if it works. 
+1. First, confirm that you are able to resolve `ldap.<your eID>.cis527.cs.ksu.edu` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Ubuntu VM labelled **SERVER** as configured in Lab 3, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
+1. Then, make sure that you can connect to the LDAP server using TLS. You can use `ldapwhoami -x -ZZ -h ldap.<your eID>.cis527.cs.ksu.edu` and it should return `anonymous` if it works. 
 1. Before you configure SSSD, make a **snapshot** of this VM. If your SSSD configuration does not work, you can restore this snapshot and try again.
 1. To test your SSSD configuration, use the command `getent passwd <username>` (example: `getent passwd russfeld`) and confirm that it returns an entry for your LDAP user.
 1. To log in as the LDAP user, use the `su <username>` command (example: `su russfeld`).
@@ -157,7 +157,12 @@ On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate agai
 1. On your Ubuntu VM labelled **CLIENT**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
 2. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
 3. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to setting it up as an OpenLDAP client.
-4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM. You'll want to confirm that you are able to resolve `ad.cis527<your eID>.cs.ksu.edu` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Windows 10 server as configured in Lab 3, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
+4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM. You'll want to confirm that you are able to resolve `ad.<your eID>.cis527.cs.ksu.edu` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Windows 10 server as configured in Lab 3, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
+{{% notice warning %}}
+
+If you get errors like "Insufficient permissions to join the domain", you may need to install `krb5-user` and then add `rdns=false` to the `[libdefaults]` section of the `/etc/krb5.conf` file, as described in [this thread](https://access.redhat.com/discussions/3370851). That seemed to fix the error for me.
+
+{{% /notice %}}
 5. Make a **snapshot** labelled "ActiveDirectory" to save your configuration for this task. You can switch between snapshots to have this VM act as a client for either directory service.
 
 #### Resources
@@ -176,12 +181,12 @@ Below are example commands from a working solution. You'll need to adapt them to
 * Active Directory Example [Screenshot](../../images/lab4_win.png) (instructive, but using old data)
 
 ```bash
-ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=ad,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -D "ad\Administrator" -w "cis527_windows"
+ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=ad,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu" -D "ad\Administrator" -w "cis527_windows"
 ```
 * OpenLDAP Example [Screenshot](../../images/lab4_ubu.png) (instructive, but using old data)
 
  ```bash
- ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -D "cn=admin,dc=ldap,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu" -w "cis527_linux"
+ ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=ldap,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu" -D "cn=admin,dc=ldap,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu" -w "cis527_linux"
  ```   
 
 {{% notice tip%}}
