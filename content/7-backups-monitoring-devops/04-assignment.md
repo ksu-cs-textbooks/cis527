@@ -42,19 +42,19 @@ Finally, you will need two Ubuntu 20.04 VMs, but they don't need any particular 
 
 This task requires you to successfully demonstrate a backup and restore procedure for your Windows Server 2016 Active Directory domain. To complete this item, follow these steps:
 
-1. Create a user named `backuptest` on your Active Directory domain
-2. Create a group named `BackupGroup` on your Active Directory domain, and add the new `backuptest` user to that group
-3. Log on to your Windows 10 client VM as `backuptest` and take a **screenshot** showing the successful login and the system time of your host system.
+1. Create a user named `backupuser` on your Active Directory domain
+2. Create a group named `BackupGroup` on your Active Directory domain, and add the new `backupuser` user to that group
+3. Log on to your Windows 10 client VM as `backupuser` and take a **screenshot** showing the successful login and the system time of your host system.
 4. Create a backup of your Active Directory domain using the Windows System State backup tool. You should store this backup on an external hard disk, such as a flash drive, that is mounted in your Windows Server 2019 VM. Alternatively, you may add a secondary hard disk to your Windows Server 2019 VM and use that location to store the backup. See the video in the resources section for instructions.
-5. Once the backup is complete, delete the `backuptest` user and `BackupGroup` group from the Active Directory domain.
-6. Reboot your Windows 10 client VM and attempt to log on as `backuptest`. It should fail. Take a **screenshot** showing a failed login and the system time of your host system
+5. Once the backup is complete, delete the `backupuser` user and `BackupGroup` group from the Active Directory domain.
+6. Reboot your Windows 10 client VM and attempt to log on as `backupuser`. It should fail. Take a **screenshot** showing a failed login and the system time of your host system
 7. Perform an authoritative restore of the Active Directory domain from the backup. This should restore the deleted user and group. Take a **screenshot** showing the successful completion of the authoritative restore process and the system time of your host system. 
 
 {{% notice info %}}
-_The documentation for this portion is unclear. In my testing, you may be able to just checkmark the "Perform an authoritative restore of Active Directory files" option when restoring the backup and avoid any command-line work. However, if that doesn't work or you choose to do the authoritative restore via command-line, you need to get the path correct. To help with that, here's a hint: for my sample domain `ad.cis527russfeld.cs.ksu.edu` and account `backuptest`, I'll need to use the command `restore object "cn=backuptest,cn=Users,dc=ad,dc=cis527russfeld,dc=cs,dc=ksu,dc=edu"` to restore the correct account on the domain. --Russ_
+_The documentation for this portion is unclear. In my testing, you may be able to just checkmark the "Perform an authoritative restore of Active Directory files" option when restoring the backup and avoid any command-line work. However, if that doesn't work or you choose to do the authoritative restore via command-line, you need to get the path correct. To help with that, here's a hint: for my sample domain `ad.russfeld.cis527.cs.ksu.edu` and account `backupuser`, I'll need to use the command `restore object "cn=backupuser,cn=Users,dc=ad,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu"` to restore the correct account on the domain. --Russ_
 {{% /notice %}}
 
-8. Reboot your Windows 10 client VM and log on to that system as `backuptest`. Take a **screenshot** showing the successful login and the system time of your host system.
+8. Reboot your Windows 10 client VM and log on to that system as `backupuser`. Take a **screenshot** showing the successful login and the system time of your host system.
 
 {{% notice tip %}}
 _You'll present those 4 screenshots as part of the grading process for this lab, so I recommend storing them somewhere memorable so they are easy to find. --Russ_
@@ -66,8 +66,8 @@ These resources mostly refer to Windows Server 2012 or 2016, but should work for
 
 * [AD Forest Recovery - Backing up a full server](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-forest-recovery-backing-up-a-full-server) from Microsoft Windows IT Pro Center
 * [How to Backup Active Directory Fully in Windows Server 2016](https://www.tactig.com/backup-active-directory-windows-server/) from Tactig
-* [How to perform Authoritative Restore of Active Directory Objects - 2012 R2](http://www.itingredients.com/perform-authoritative-restore-active-directory-objects-2012-r2/) from ITIngredients (should work for 2016)
-* [Windows Server 2012 - Active Directory - Backup and Restore, Part 1: System State](http://davidmtechblog.blogspot.com/2014/01/windows-server-2012-active-directory_10.html) from David M Tech Blog (should work for 2016)
+* [How to perform Authoritative Restore of Active Directory Objects - 2012 R2](http://www.itingredients.com/perform-authoritative-restore-active-directory-objects-2012-r2/) from ITIngredients (should work for 2019)
+* [Windows Server 2012 - Active Directory - Backup and Restore, Part 1: System State](http://davidmtechblog.blogspot.com/2014/01/windows-server-2012-active-directory_10.html) from David M Tech Blog (should work for 2019)
 * [How to Add Additional Virtual Hard Disk Drive in VMWare Workstation Tutorial](https://www.youtube.com/watch?v=WMPd0kF4JLM) by The Teacher on YouTube
 
 ---
@@ -128,10 +128,11 @@ For this task, you will install Elasticsearch, Logstash, and Kibana (a.k.a. the 
 
 #### Resources
 
-* [How to Install Elasticsearch, Logstash, and Kibana (Elastic Stack) on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-18-04) from DigitalOcean (should work on 20.04 as well)
+* [How to Install Elasticsearch, Logstash, and Kibana (Elastic Stack) on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-20-04) from DigitalOcean
 * [How to Gather Infrastructure Metrics with Metricbeat on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-gather-infrastructure-metrics-with-metricbeat-on-ubuntu-18-04) from DigitalOcean (should work on 20.04 as well)
-* [Install ELK on Ubuntu 20.04 Focal Fossa LInux](https://linuxconfig.org/install-elk-on-ubuntu-20-04-focal-fossa-linux) from Linuxconfig.org
+* [Install ELK on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/install-elk-on-ubuntu-20-04-focal-fossa-linux) from Linuxconfig.org
 * [Elasticsearch Boostrap Checks](https://www.elastic.co/guide/en/elasticsearch/reference/master/bootstrap-checks.html#single-node-discovery) from Elastic.co (for configuring single-node discovery)
+
 ---
 
 ### Task 5: DevOps

@@ -42,8 +42,8 @@ In addition, you will need two Ubuntu VMs, one labelled **SERVER** and the other
 
 Configure a file server on your Windows Server 2019 VM. It should have the following features:
 
-* A shared folder on the server named `everyone` and stored at `C:\everyone` that should be accessible by all users on your domain
-* A shared folder on the server named `restricted` and stored at `C:\restricted` that should only be accessible to users in the Domain Admins group in your domain
+* A shared folder on the server named `public` and stored at `C:\public` that should be accessible by all users on your domain
+* A shared folder on the server named `admins` and stored at `C:\admins` that should only be accessible to users in the Domain Admins group in your domain
 
 #### Resources
 
@@ -55,8 +55,8 @@ Configure a file server on your Windows Server 2019 VM. It should have the follo
 
 Configure group policy objects (GPOs) on your Windows Active Directory domain to perform the following tasks:
 
-* All domain users should get the `everyone` folder automatically mapped to the `Z:\` drive on any system they log into.
-* Users in the ``Domain Admins`` group should also get the `restricted` folder automatically mapped to the `Y:\` drive on any system they log into. 
+* All domain users should get the `public` folder automatically mapped to the `Z:\` drive on any system they log into.
+* Users in the ``Domain Admins`` group should also get the `admins` folder automatically mapped to the `Y:\` drive on any system they log into. 
    * That drive **should not** be mapped for any user that is not a member of the `Domain Admins` group. 
 
 {{% notice tip %}}
@@ -75,7 +75,7 @@ _Pay close attention to how you attach and target these GPOs in the domain. You 
 
 Configure a file server using Samba on your Ubuntu VM labelled **SERVER**. It should have the following features:
 
-* A shared folder on the server named `everyone` and stored at `/everyone` that should be accessible by all Samba users
+* A shared folder on the server named `public` and stored at `/public` that should be accessible by all Samba users
 * Enable shared home directories in Samba using the default `[homes]` share.
 * Enable the `cis527` user in the Samba password database. It should use the same `cis527_linux` password as the actual `cis527` account.
 
@@ -125,14 +125,14 @@ If you would like to work with an application not listed here, please contact th
 
 Once you have selected your application, perform the following configuration steps:
 
-1. Create two websites in IIS: `blog.cis527<your eID>.cs.ksu.edu` and `site.cis527<your eID>.cs.ksu.edu`. They should be stored in `C:\inetpub\blog` and `C:\intepub\site`, respectively. For the `blog` site, make sure you choose the `.NET v4.5` Application Pool!
-2. Add a DNS forward lookup zone for `cis527<your eID>.cs.ksu.edu` to the Windows DNS server, and then add A records for the two sites described above. They should both point to the Windows Server's IP address ending in `.42`.
-3. Place a static HTML file inside of the `C:\intepub\site` folder and confirm that you can access it using Firefox at `http://site.cis527<your eID>.cs.ksu.edu`
-4. Follow the instructions to install and configure your chosen application in `C:\inetpub\blog`. Pay special attention to any file permissions required. Use the `IIS_IUSRS` group. You should be able to access it at `http://blog.cis527<your eID>.cs.ksu.edu` using Firefox. 
+1. Create two websites in IIS: `blog.<your eID>.cis527.cs.ksu.edu` and `site.<your eID>.cis527.cs.ksu.edu`. They should be stored in `C:\inetpub\blog` and `C:\intepub\site`, respectively. For the `blog` site, make sure you choose the `.NET v4.5` Application Pool!
+2. Add a DNS forward lookup zone for `<your eID>.cis527.cs.ksu.edu` to the Windows DNS server, and then add A records for the two sites described above. They should both point to the Windows Server's IP address ending in `.42`.
+3. Place a static HTML file inside of the `C:\intepub\site` folder and confirm that you can access it using Firefox at `http://site.<your eID>.cis527.cs.ksu.edu`
+4. Follow the instructions to install and configure your chosen application in `C:\inetpub\blog`. Pay special attention to any file permissions required. Use the `IIS_IUSRS` group. You should be able to access it at `http://blog.<your eID>.cis527.cs.ksu.edu` using Firefox. 
 5. Create a self-signed SSL certificate and attach it to both websites by adding an additional binding for HTTPS. Make sure you can access both websites using `https://`. 
 6. Use the URL Rewrite module to configure URL redirection to automatically direct users from HTTP to HTTPS for both websites.
 
-Once these steps are complete, visiting `http://blog.cis527<your eID>.cs.ksu.edu` in your web browser should automatically redirect you to `https://blog.cis527<your eID>.cs.ksu.edu` and it should be secured using your self-signed certificate. You should also be able to demonstrate that the application is working properly by interacting with it in some meaningful way, such as logging in and making a new post on a blog. Finally, if you visit `http://site.cis527<your eID>.cs.ksu.edu` you should see the static content from that site instead of the blog, and it should also properly redirect to HTTPS.
+Once these steps are complete, visiting `http://blog.<your eID>.cis527.cs.ksu.edu` in your web browser should automatically redirect you to `https://blog.<your eID>.cis527.cs.ksu.edu` and it should be secured using your self-signed certificate. You should also be able to demonstrate that the application is working properly by interacting with it in some meaningful way, such as logging in and making a new post on a blog. Finally, if you visit `http://site.<your eID>.cis527.cs.ksu.edu` you should see the static content from that site instead of the blog, and it should also properly redirect to HTTPS.
 
 {{% notice note %}}
 _I recommend using Firefox for testing. Edge & Internet Explorer on Windows Server are locked-down by default and can be very frustrating to work with. --Russ_
