@@ -156,7 +156,6 @@ _I recommend using Firefox for testing. Edge & Internet Explorer on Windows Serv
 For this step, you will install and configure a web application running on Apache in Ubuntu on your DigitalOcean droplets. First, choose an application to install from the following list:
 
 * [Wordpress](https://wordpress.org/download/)
-* [Booked](https://www.bookedscheduler.com/)
 
 If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages, and must support using a MySQL database on a separate host from the web server. In addition, the application must be installed manually - using pre-built images or Apt packages is not allowed here. Any approved application can be added to this list for you to use. **_You are not allowed to use phpBB, as that was demonstrated in the video in this module._**
 
@@ -175,12 +174,14 @@ Once these steps are complete, you should be able to visit your web application 
 #### Resources
 
 * [Install MySQL on Ubuntu 20.04 LTS Linux](https://linuxconfig.org/install-mysql-on-ubuntu-20-04-lts-linux) from LinuxConfig.org
+* [How To Install MySQL on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04) from DigitalOcean (follow instructions in guide above to configure  MySQL to listen on all network interfaces)
 * [How To Install and Secure phpMyAdmin on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04) from DigitalOcean (works for 20.04)
 * [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04) from DigitalOcean
 * [How To Secure Apache with Let's Encrypt on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04) from DigitalOcean
 * [How To Set Up A Remote Database to Optimize Site Performance with MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql-on-ubuntu-18-04) from DigitalOcean (works for 20.04)
 * [How To Install WordPress with LAMP on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-18-04) from DigitalOcean (a very detailed guide)
 * [How To Configure SSL/TLS for MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-ssl-tls-for-mysql-on-ubuntu-18-04) from DigitalOcean (not required for 20.04)
+* [How to Install LAMP Stack on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04) from DigitalOcean
 
 
 ---

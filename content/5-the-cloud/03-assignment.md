@@ -57,11 +57,11 @@ Perform these configuration steps on both droplets, unless otherwise noted:
 {{% notice warning %}}
 **DO NOT REUSE THE USUAL PASSWORD ON THIS ACCOUNT!** Any system running in the cloud should have a very secure password on each account. Make sure it is a strong yet memorable password, as you'll need it to run any commands using `sudo`.
 {{% /notice %}}
-1. Change the SSH port to 22123
+1. Change the SSH port to 54321
 1. Ensure the timezone is set to UTC
 1. Enable the firewall. Configure the firewall on both systems to allow connections to the following:
-   * incoming port 22123 (SSH)
-       * **BACKEND ONLY:** filter connections on port 22123 to only allow SSH connections from **FRONTEND** via its **private networking** IP address. You should still allow connections to port 80 and 443 from any address.
+   * incoming port 54321 (SSH)
+       * **BACKEND ONLY:** filter connections on port 54321 to only allow SSH connections from **FRONTEND** via its **private networking** IP address. You should still allow connections to port 80 and 443 from any address.
    * incoming port 80 (HTTP)
    * incoming port 443 (HTTP via TLS)
 
@@ -86,7 +86,7 @@ Configure your SSH servers and SSH keys as described here:
 
 1. On your own computer, generate a set of SSH keys if you have not already.
 2. Add the public key from your computer to the cis527 account on **FRONTEND**. This should allow you to log in with that key.
-3. Add the [grading SSH key](/files/id_rsa_grading.pub) to the cis527 account on **FRONTEND** as well.
+3. Add the [grading SSH key](../../files/id_rsa_grading.pub) to the cis527 account on **FRONTEND** as well.
 4. On the cis527 account on **FRONTEND**, generate a set of SSH keys with no passphrase.
 5. Add the public key from the cis527 account on **FRONTEND** to the cis527 account on **BACKEND**. This should allow you to log in with that key
 6. On the cis527 account on **FRONTEND**, create an SSH config file such that a user could simply type `ssh backend` to connect to the **BACKEND** droplet.
