@@ -3,8 +3,8 @@ type: "reveal"
 hidden: true
 ---
 <section>
-	<h2>Welcome to CIS 527</h2><br><br>Enterprise Systems Administration
-	<h2>Welcome to CC 510</h2><br><br>Computer Systems Administration
+	<h2>Welcome to CIS 527</h2><br>Enterprise Systems Administration<br>
+	<h2>Welcome to CC 510</h2><br>Computer Systems Administration
 </section>
 <section>
 	<h3>Russell Feldhausen</h3>
