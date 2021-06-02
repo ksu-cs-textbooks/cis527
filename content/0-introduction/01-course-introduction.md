@@ -23,7 +23,7 @@ Welcome to CIS 527 - Enterprise System Administration and CC 510 - Computer Syst
 
 My name is Russell Feldhausen, and I'll be your instructor for this course. My contact information is shown here, and is also listed on the syllabus, and on the home page of the course on K-State Online. My email address is russfeld@ksu.edu, and it is by far my preferred method of communication for matters outside of this course, since it allows me to have a record of our conversations and respond when I'm available. I'll also be on the K-State CS Discord server, so you can easily chat with me there. There is a channel already created for this course that I encourage you to make use of throughout this course.
 
-I am working remotely out of my home in Kansas City, so I won't be available on campus regularly during the Spring 2021 semester. I do have an office, and I will be there from time to time when I can during the summer to meet with folks on campus and hold office hours. I'll be sure to announce those times as they are scheduled.
+I am working remotely out of my home in Kansas City, so I won't be available on campus regularly during the Summer 2021 semester. I do have an office, and I will be there from time to time when I can during the summer to meet with folks on campus and hold office hours. I'll be sure to announce those times as they are scheduled.
 
 In addition, I must give credit to several people for helping me develop the content in this course. First and foremost is [Seth Galitzer](http://people.cs.ksu.edu/~sgsax/), the CS system administrator, as well as several of my former students and teaching assistants.
 
