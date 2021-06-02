@@ -6,7 +6,7 @@ pre: "6. "
 
 {{% notice note %}}
 
-_TODO The video below installs certbot from a PPA, but Ubuntu 20.04 includes certbot in the universe repositories. Refer to the instructions on the [certbot website](https://certbot.eff.org/lets-encrypt/ubuntufocal-apache) for updated instructions. --Russ_
+TODO _The video below installs certbot from a PPA, but Ubuntu 20.04 includes certbot in the universe repositories. Refer to the instructions on the [certbot website](https://certbot.eff.org/lets-encrypt/ubuntufocal-apache) for updated instructions. --Russ_
 
 {{% /notice %}}
 
