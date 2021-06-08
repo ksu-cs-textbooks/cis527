@@ -32,11 +32,11 @@ This lab is written with the expectation that most students will be using **VMwa
 If you are using another virtualization platform, you may have to adapt these instructions to fit. If you are unsure about any specification and how it applies to your setup, please contact the instructor.
 
 You will also need installation media for the following operating systems:
-* **Windows 10 Version 2004** or later - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
-  * File Name: `en_windows_10_consumer_editions_version_2004_x64_dvd_36d61c40.iso`
-  * SHA 256 Hash: `a9efd2329ed805a6a58e0e0101f9b22ad4031e80e2c663c571cd004db26d2f31`
+* **Windows 10 Version 20H2** or later - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
+  * File Name: `en_windows_10_consumer_editions_version_20h2_updated_nov_2020_x64_dvd_7727be28.iso`
+  * SHA 256 Hash: `6c6856405dbc7674eda21bc5f7094f5a18af5c9bacc67ed111e8f53f02e7d13d`
   * _Your file may vary as Microsoft constantly updates these installers._
-  * _You may choose to upgrade to Windows 10 Version 20H2 while installing updates._
+  * _You may choose to upgrade to Windows 10 Version 21H1 or later while installing updates._
 * **Ubuntu 20.04 LTS** or later - Download from [Ubuntu](https://ubuntu.com/download) or the [K-State CS Mirror](http://mirror.cs.ksu.edu/ubuntu-releases/focal/)
   * File Name: `ubuntu-20.04.2.0-desktop-amd64.iso`
   * SHA 256 Hash: `93bdab204067321ff131f560879db46bee3b994bf24836bb78538640f689e58f`
