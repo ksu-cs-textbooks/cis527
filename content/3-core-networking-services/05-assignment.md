@@ -276,7 +276,7 @@ Then, using Wireshark, create **screenshots** showing that you captured and can 
 1. A DHCP Offer packet showing the Domain Name of `<your ID>.cis527.cs.ksu.edu`
    * _HINT: Reboot one of your other VMs to force it to request a new IP address, or use the `ipconfig` (Windows) or `dhclient` (Ubuntu) commands to renew the IP address_
 1. An HTTP 301: Moved Permanently redirect response
-   * _HINT: Clear the cache in your web browser, then navigate to `http://people.cs.ksu.edu/~russfeld` (without a trailing slash). It should redirect to `http://people.cs.ksu.edu/~russfeld/` (with a trailing slash)._
+   * _HINT: Clear the cache in your web browser, then navigate to `http://people.cs.ksu.edu/~sgsax` (without a trailing slash). It should redirect to `http://people.cs.ksu.edu/~sgsax/` (with a trailing slash)._
 1. An HTTP Basic Authentication request, **clearly showing the username and password in plaintext** (expand the entries in the middle pane to find it)
    * *HINT: Visit `http://people.cs.ksu.edu/~russfeld/test/` and use `cis527` | `cis527_apache` to log in*
 
