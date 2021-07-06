@@ -277,8 +277,8 @@ Then, using Wireshark, create **screenshots** showing that you captured and can 
    * _HINT: Reboot one of your other VMs to force it to request a new IP address, or use the `ipconfig` (Windows) or `dhclient` (Ubuntu) commands to renew the IP address_
 1. An HTTP 301: Moved Permanently redirect response
    * _HINT: Clear the cache in your web browser, then navigate to `http://people.cs.ksu.edu/~sgsax` (without a trailing slash). It should redirect to `http://people.cs.ksu.edu/~sgsax/` (with a trailing slash)._
-1. An HTTP Basic Authentication request, **clearly showing the username and password in plaintext** (expand the entries in the middle pane to find it)
-   * *HINT: Visit `http://people.cs.ksu.edu/~russfeld/test/` and use `cis527` | `cis527_apache` to log in*
+1. ~~An HTTP Basic Authentication request, **clearly showing the username and password in plaintext** (expand the entries in the middle pane to find it)~~ _This is not working due to a recent reconfiguration of the CS web server. So, this one is a freebie for now! -Russ_
+   * ~~*HINT: Visit `http://people.cs.ksu.edu/~russfeld/test/` and use `cis527` | `cis527_apache` to log in*~~
 
 {{% notice tip%}}
 _You'll present those 8 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. Make sure your screenshot clearly shows the data requested. --Russ_
