@@ -97,7 +97,7 @@ _Of course, you may have to allow additional ports or applications through the f
 
 Configure your Ubuntu VM labelled **CLIENT** to automatically access the Samba shares in the following manner:
 
-* Add an entry to `\etc\fstab` to automatically mount the `everyone` folder to `/mnt/everyone` at system boot. It should be readable and writable by all users.
+* Add an entry to `\etc\fstab` to automatically mount the `public` folder to `/mnt/public` at system boot. It should be readable and writable by all users.
 * Use `libpam-mount` to automatically mount a user's `homes` share from the server at login. This only needs to work for the `cis527` user, as that user should be present on both systems and Samba.
 
 {{% notice note %}}
