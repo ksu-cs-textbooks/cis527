@@ -110,32 +110,7 @@ _As always, you may have to deal with Apache virtual hosts and firewalls for thi
 
 ---
 
-### Task 4: Ubuntu Monitoring Part 2
-
-For this task, you will install Elasticsearch, Logstash, and Kibana (a.k.a. the Elastic Stack, sometimes known as the ELK stack) on your Ubuntu 20.04 VMs, and configure both Filebeat and Metricbeat to collect information about those hosts. 
-
-1. On the Ubuntu VM you'll be using as the server, make sure you have **at least 4GB of RAM** assigned to the VM. Unfortunately, Elasticsearch and Kibana won't run properly with less than 4GB of RAM available. 
-2. Follow the instructions in the DigitalOcean guide to install the Elastic stack on one of your Ubuntu VMs. 
-    * If you already have Apache installed on this system, I recommend changing the port for nginx to something other than 80, such as 8080. This can be done in the nginx configuration file for the site that is created in the guide.
-3. Install Filebeat on that VM, and configure it to send data through Logstash following the instructions on the DigitalOcean guide. 
-4. Confirm that you can access data from Filebeat/Logstash in Kibana before continuing. 
-5. Using the other DigitalOcean guide, install Metricbeat on both Ubuntu VMs. 
-    * Metricbeat should be configured to directly send data to Elasticsearch, without going through Logstash 
-    * Don't forget to allow the appropriate ports through the firewall
-    * You'll need to configure Elastic Search for [Single-node discovery](https://www.elastic.co/guide/en/elasticsearch/reference/master/bootstrap-checks.html#single-node-discovery) or else it won't start
-6. Verify that you can see metric data such as CPU usage in Kibana (look for the **[Metricbeat System] Overview ECS** dashboard). 
-7. Take a screenshot of the **[Metricbeat System] Overview ECS** and add it to your grading packet. Alternatively, schedule a time for grading to review this part of the lab.
-
-#### Resources
-
-* [How to Install Elasticsearch, Logstash, and Kibana (Elastic Stack) on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-20-04) from DigitalOcean
-* [How to Gather Infrastructure Metrics with Metricbeat on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-gather-infrastructure-metrics-with-metricbeat-on-ubuntu-18-04) from DigitalOcean (should work on 20.04 as well)
-* [Install ELK on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/install-elk-on-ubuntu-20-04-focal-fossa-linux) from Linuxconfig.org
-* [Elasticsearch Boostrap Checks](https://www.elastic.co/guide/en/elasticsearch/reference/master/bootstrap-checks.html#single-node-discovery) from Elastic.co (for configuring single-node discovery)
-
----
-
-### Task 5: DevOps
+### Task 4: DevOps
 
 Setup an automatically deployed Git repository on your Ubuntu droplet. For this task, perform the following:
 
@@ -161,6 +136,37 @@ _Since the Webhook process runs as the `root` user on **FRONTEND**, you'll need 
 
 ---
 
+### EXTRA CREDIT TASK: Ubuntu Monitoring Part 2
+
+{{% notice note %}}
+
+This task is worth 10 points extra credit toward your overall lab grade. It can be tricky to perform, since you need to provide significant amounts of RAM to your Ubuntu system for it to work. Don't worry too much if you can't get it to work - I struggle with this one sometimes! -Russ
+
+{{% /notice %}}
+
+For this task, you will install Elasticsearch, Logstash, and Kibana (a.k.a. the Elastic Stack, sometimes known as the ELK stack) on your Ubuntu 20.04 VMs, and configure both Filebeat and Metricbeat to collect information about those hosts. 
+
+1. On the Ubuntu VM you'll be using as the server, make sure you have **at least 4GB of RAM** assigned to the VM. Unfortunately, Elasticsearch and Kibana won't run properly with less than 4GB of RAM available. 
+2. Follow the instructions in the DigitalOcean guide to install the Elastic stack on one of your Ubuntu VMs. 
+    * If you already have Apache installed on this system, I recommend changing the port for nginx to something other than 80, such as 8080. This can be done in the nginx configuration file for the site that is created in the guide.
+3. Install Filebeat on that VM, and configure it to send data through Logstash following the instructions on the DigitalOcean guide. 
+4. Confirm that you can access data from Filebeat/Logstash in Kibana before continuing. 
+5. Using the other DigitalOcean guide, install Metricbeat on both Ubuntu VMs. 
+    * Metricbeat should be configured to directly send data to Elasticsearch, without going through Logstash 
+    * Don't forget to allow the appropriate ports through the firewall
+    * You'll need to configure Elastic Search for [Single-node discovery](https://www.elastic.co/guide/en/elasticsearch/reference/master/bootstrap-checks.html#single-node-discovery) or else it won't start
+6. Verify that you can see metric data such as CPU usage in Kibana (look for the **[Metricbeat System] Overview ECS** dashboard). 
+7. Take a screenshot of the **[Metricbeat System] Overview ECS** and add it to your grading packet. Alternatively, schedule a time for grading to review this part of the lab.
+
+#### Resources
+
+* [How to Install Elasticsearch, Logstash, and Kibana (Elastic Stack) on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-20-04) from DigitalOcean
+* [How to Gather Infrastructure Metrics with Metricbeat on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-gather-infrastructure-metrics-with-metricbeat-on-ubuntu-18-04) from DigitalOcean (should work on 20.04 as well)
+* [Install ELK on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/install-elk-on-ubuntu-20-04-focal-fossa-linux) from Linuxconfig.org
+* [Elasticsearch Boostrap Checks](https://www.elastic.co/guide/en/elasticsearch/reference/master/bootstrap-checks.html#single-node-discovery) from Elastic.co (for configuring single-node discovery)
+
+---
+
 ### Task 6: Submit Files
 
 This lab may be graded completely offline. To do this, submit the following items via Canvas:
@@ -168,8 +174,8 @@ This lab may be graded completely offline. To do this, submit the following item
 1. **Task 1**: 4 screenshots clearly showing the system time, showing a successful login before the test user is deleted, an unsuccessful login after the user was deleted, a successful restoration of the AD, and a successful login showing that the user was restored.
 2. **Task 2**: An archive file containing a README document as well as any files or information needed as part of the backup of the Ubuntu web application installed in Lab 6.
 3. **Task 3**: The URL of your Munin or Ganglia instance, clearly showing data from both **FRONTEND** and **BACKEND**. 
-4. **Task 4**: A screenshot of the **[Metricbeat System] Overview ECS** dashboard showing data from both Ubuntu VMs
-5. **Task 5**: A GitLab repository URL and a URL of the website containing those files. Make sure the instructor and GTA are added to the repository as maintainers. They should be able to push to the repository and automatically see the website get updated. 
+4. **Task 4**: A GitLab repository URL and a URL of the website containing those files. Make sure the instructor and GTA are added to the repository as maintainers. They should be able to push to the repository and automatically see the website get updated. 
+5. **Extra Credit Task**: A screenshot of the **[Metricbeat System] Overview ECS** dashboard showing data from both Ubuntu VMs
 
 If you are able to submit all 5 of the items above, you do not need to schedule a grading time. The instructor or GTA will contact you for clarification if there are any questions on your submission.
 
