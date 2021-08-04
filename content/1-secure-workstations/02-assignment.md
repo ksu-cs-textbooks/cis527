@@ -74,7 +74,7 @@ Configure the Windows 10 Virtual Machine as specified below.
 
 * **Computer Name:** `cis527w-<your eID>` (example: `cis527w-russfeld`)
 {{% notice info %}}
-_This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. A majority of students have missed this step in previous semesters, so don't forget! --Russ_
+_This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. A majority of students have missed this step in previous semesters, so don't forget! The computer name must be changed **after** the Windows installation is complete --Russ_
 {{% /notice %}}
 * **Primary User Account:** Username: `cis527` |  Password: `cis527_windows` (Member of Administrators & Users groups)
 * **Other User Accounts:**
@@ -146,7 +146,7 @@ Configure the Ubuntu 20.04 Virtual Machine as specified below.
 
 * **Computer Name:** `cis527u-<your eID>` (example: `cis527u-russfeld`)
 {{% notice info %}}
-_This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. A majority of students have missed this step in previous semesters, so don't forget! --Russ_
+_This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. A majority of students have missed this step in previous semesters, so don't forget! You should be prompted for a computer name as part of the installation process, but it will try to auto-complete it based on the chosen username and must be changed. --Russ_
 {{% /notice %}}
 * **Primary User Account:** Username: `cis527` | Password: `cis527_linux` (Account should have Administrator type or be in the `sudo` group)
 * **Other User Accounts:**
@@ -161,7 +161,6 @@ _This is very important, as it allows us to track your virtual machine on the K-
   - Apache Web Server (`apache2`)
   - Synaptic Package Manager (`synaptic`)
   - GUFW Firewall Management Utility (`gufw`)
-  - Conky (`conky`)
   - ClamAV (`clamav`)
 * **Configure Firewall**
   - Make sure Ubuntu Firewall (use `ufw`, not `iptables`) is enabled

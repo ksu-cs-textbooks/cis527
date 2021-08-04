@@ -167,7 +167,7 @@ _HINT: The periods, semicolons, and whitespace in the DNS configuration files ar
 
 Once you are done, I recommend checking your configuration using the `named-checkconf` and `named-checkzone` commands. Note that the second argument to the `named-checkzone` command is the full path to your zone file, so you may need to include the file path and not just the name of the file. Example: `named-checkzone russfeld.cis527.cs.ksu.edu /etc/bind/zones/db.russfeld.cis527.cs.ksu.edu`
 
-Of course, you may need to update your firewall configuration to allow incoming DNS requests to this system!
+Of course, you may need to update your firewall configuration to allow incoming DNS requests to this system! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
 To test your DNS server, you can set a static DNS address on either your Windows or Ubuntu VM labelled **CLIENT**, and use the `dig` or `nslookup` commands to verify that each DNS name and IP address is resolved properly.
 
@@ -207,7 +207,7 @@ In your configuration, include the following items:
 _A working solution can be fewer than 20 lines of actual settings (not including comments) in the settings file. If you find that your configuration is becoming much longer than that, you are probably making it too difficult and complex. --Russ_
 {{% /notice %}}
 
-Of course, you may need to update your firewall configuration to allow incoming DHCP requests to this system!
+Of course, you may need to update your firewall configuration to allow incoming DHCP requests to this system! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
 Once your DHCP server is installed, configured, and running properly, turn off the DHCP server in VMware. Go to **Edit > Virtual Network Editor** in VMware Workstation or **VMware Fusion > Preferences > Network** in VMware Fusion and look for the NAT network you are using. There should be an option to disable the DHCP server for that network there.
 
@@ -233,6 +233,7 @@ There is currently an issue using the `snmpusm` command to set passwords as show
 
 {{% /notice %}}
 
+Of course, you may need to update your firewall configuration to allow incoming SNMP requests to this system! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
 Then, perform the following quick activity:
 
@@ -260,7 +261,7 @@ _Be prepared to duplicate this activity during the interactive grading process! 
 Install Wireshark on the Ubuntu 20.04 VM labelled **SERVER**.  
 
 {{% notice warning %}}
-Firefox recently released an update the enables [DNS over HTTPS](https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/) by default. So, in order to use Firefox to request DNS packets that can be captured, you'll need to [disable DNS over HTTPS](https://support.mozilla.org/en-US/kb/firefox-dns-over-https) in Firefox. Alternatively, you can use `dig` to query DNS and capture the desired packets. 
+Firefox recently released an update the enables [DNS over HTTPS](https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/) by default. So, in order to use Firefox to request DNS packets that can be captured, you'll need to [disable DNS over HTTPS](https://support.mozilla.org/en-US/kb/firefox-dns-over-https) in Firefox. Alternatively, you can use `dig` to query DNS and capture the desired packets - this seems to be much easier to replicate easily. 
 {{% /notice %}}
 
 Then, using Wireshark, create **screenshots** showing that you captured and can show the packet content of each of the following types of packets:

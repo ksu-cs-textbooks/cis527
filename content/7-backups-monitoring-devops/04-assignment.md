@@ -51,7 +51,7 @@ This task requires you to successfully demonstrate a backup and restore procedur
 7. Perform an authoritative restore of the Active Directory domain from the backup. This should restore the deleted user and group. Take a **screenshot** showing the successful completion of the authoritative restore process and the system time of your host system. 
 
 {{% notice info %}}
-_The documentation for this portion is unclear. In my testing, you may be able to just checkmark the "Perform an authoritative restore of Active Directory files" option when restoring the backup and avoid any command-line work. However, if that doesn't work or you choose to do the authoritative restore via command-line, you need to get the path correct. To help with that, here's a hint: for my sample domain `ad.russfeld.cis527.cs.ksu.edu` and account `backupuser`, I'll need to use the command `restore object "cn=backupuser,cn=Users,dc=ad,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu"` to restore the correct account on the domain. --Russ_
+_The documentation for this portion is unclear. In my testing, you may be able to just checkmark the "Perform an authoritative restore of Active Directory files" option when restoring the backup and avoid any command-line work. That seems to be working correctly as of Summer 2021. However, if that doesn't work or you choose to do the authoritative restore via command-line, you need to get the path correct. To help with that, here's a hint: for my sample domain `ad.russfeld.cis527.cs.ksu.edu` and account `backupuser`, I'll need to use the command `restore object "cn=backupuser,cn=Users,dc=ad,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu"` to restore the correct account on the domain. --Russ_
 {{% /notice %}}
 
 8. Reboot your Windows 10 client VM and log on to that system as `backupuser`. Take a **screenshot** showing the successful login and the system time of your host system.
@@ -97,6 +97,9 @@ For this task, you will set up either Munin or Ganglia on your Ubuntu droplets f
 2. Add the Ubuntu droplet named **BACKEND** as a client on either Munin or Ganglia
 3. Send the URL of the Munin or Ganglia server in your grading packet. Make sure that both **FRONTEND** and **BACKEND** are appearing in the data. 
 
+
+Of course, you may need to modify your firewall configuration to allow incoming connections for Munin! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
+
 {{% notice tip %}}
 _As always, you may have to deal with Apache virtual hosts and firewalls for this setup. In addition, you may want to add a new A record to your domain name for this site, and request an SSL certificate via CertBot. --Russ_
 {{% /notice %}}
@@ -122,6 +125,8 @@ Setup an automatically deployed Git repository on your Ubuntu droplet. For this 
 6. Configure a webhook in your GitLab repository for all Push events using that same secret key and the URL of webhook on your server. You may need to make sure your domain name has an A record for the default hostname `@` pointing to your **FRONTEND** server.
 7. To test this setup, you should be able to push a change to the GitLab repository, and see that change reflected on the website automatically.
 8. For offline grading, add the instructor and GTA to the repository as maintainers, and submit the repository and URL where the files can be found in your grading packet. Provided the webhook works correctly, they should be able to see a pushed change to the repository update the website. 
+
+Of course, you may need to modify your firewall configuration to allow incoming connections for Webhook! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
 {{% notice tip %}}
 _Since the Webhook process runs as the `root` user on **FRONTEND**, you'll need to make sure a set of SSH keys exist in the `root` user's home folder `/root/.ssh/` and add the public key from that directory to your [GitLab account](https://gitlab.cs.ksu.edu/profile/keys). You should then use the root account (use `sudo su -` to log in as root) to run `git pull` from the appropriate directory on **FRONTEND** at least once so you can accept the SSH fingerprint for the GitLab server. This helps ensure that `root` can properly run the script. --Russ_

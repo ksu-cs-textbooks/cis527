@@ -25,6 +25,7 @@ pre: "3.1 "
 - Ubuntu SNMP Daemon (4)
   - `snmp` demonstration
   - 3 Screenshots - before ping, pinging, after ping
+- Ubuntu Firewall (-5 if not enabled or configured)
 - Wireshark (8)
   - DNS query `people.cs.ksu.edu`
   - DNS Response `people.cs.ksu.edu`

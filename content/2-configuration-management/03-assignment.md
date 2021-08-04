@@ -82,7 +82,6 @@ Create a Puppet Manifest File for Ubuntu 20.04 that defines the following config
   - Apache Web Server (`apache2`)
   - Synaptic Package Manager (`synaptic`)
   - GUFW Firewall Management Utility (`gufw`)
-  - Conky (`conky`)
   - ClamAV (`clamav`)
 * **Services** - Ensure the following services are running:
   - Apache Web Server

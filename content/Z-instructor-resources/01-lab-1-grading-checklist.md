@@ -24,7 +24,7 @@ pre: "1.1 "
   - Computer Name (terminal)
   - User Accounts (cat /etc/passwd)
   - Groups (cat /etc/group)
-  - Software (vm tools, Synaptic, GUFW, Conky, ClamAV)
+  - Software (vm tools, Synaptic, GUFW, ClamAV)
   - Firewall (enabled?)
   - Access Apache from Windows (firewall and Apache config)
   - Updates (apt update & apt upgrade)

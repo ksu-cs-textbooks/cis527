@@ -45,6 +45,12 @@ Configure a file server on your Windows Server 2019 VM. It should have the follo
 * A shared folder on the server named `public` and stored at `C:\public` that should be accessible by all users on your domain
 * A shared folder on the server named `admins` and stored at `C:\admins` that should only be accessible to users in the Domain Admins group in your domain
 
+{{% notice tip %}}
+
+As of Summer 2021, there was a bug in Windows Server that prevented the built-in Administrator account from changing some settings, specifically network settings, once the server is promoted to a domain controller. This can make it difficult to fix networking issues in this or future labs. The easy fix for this is to copy the Administrator account in the Active Directory User and Computers tool and give the new copy a different name, such as "Admin", and then use that account to log on to the server. 
+
+{{% /notice %}}
+
 #### Resources
 
 * [How to Share Files and Folders in Windows Server 2016](https://www.tactig.com/share-files-folders-windows-server-2016/) from Tactig (should work for Server 2019)
@@ -79,9 +85,7 @@ Configure a file server using Samba on your Ubuntu VM labelled **SERVER**. It sh
 * Enable shared home directories in Samba using the default `[homes]` share.
 * Enable the `cis527` user in the Samba password database. It should use the same `cis527_linux` password as the actual `cis527` account.
 
-{{% notice tip %}}
-_Of course, you may have to allow additional ports or applications through the firewall. --Russ_
-{{% /notice %}}
+Of course, you may need to modify your firewall configuration to allow incoming connections to the file server! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
 #### Resources
 
@@ -128,14 +132,14 @@ Once you have selected your application, perform the following configuration ste
 1. Create two websites in IIS: `blog.<your eID>.cis527.cs.ksu.edu` and `site.<your eID>.cis527.cs.ksu.edu`. They should be stored in `C:\inetpub\blog` and `C:\intepub\site`, respectively. For the `blog` site, make sure you choose the `.NET v4.5` Application Pool!
 2. Add a DNS forward lookup zone for `<your eID>.cis527.cs.ksu.edu` to the Windows DNS server, and then add A records for the two sites described above. They should both point to the Windows Server's IP address ending in `.42`.
 3. Place a static HTML file inside of the `C:\intepub\site` folder and confirm that you can access it using Firefox at `http://site.<your eID>.cis527.cs.ksu.edu`
-4. Follow the instructions to install and configure your chosen application in `C:\inetpub\blog`. Pay special attention to any file permissions required. Use the `IIS_IUSRS` group. You should be able to access it at `http://blog.<your eID>.cis527.cs.ksu.edu` using Firefox. 
+4. Follow the instructions to install and configure your chosen application in `C:\inetpub\blog`. Pay special attention to any file permissions required. Use the `IIS_IUSRS` group when adding write permissions to any folders as described in the instructions. You should be able to access it at `http://blog.<your eID>.cis527.cs.ksu.edu` using Firefox. 
 5. Create a self-signed SSL certificate and attach it to both websites by adding an additional binding for HTTPS. Make sure you can access both websites using `https://`. 
 6. Use the URL Rewrite module to configure URL redirection to automatically direct users from HTTP to HTTPS for both websites.
 
 Once these steps are complete, visiting `http://blog.<your eID>.cis527.cs.ksu.edu` in your web browser should automatically redirect you to `https://blog.<your eID>.cis527.cs.ksu.edu` and it should be secured using your self-signed certificate. You should also be able to demonstrate that the application is working properly by interacting with it in some meaningful way, such as logging in and making a new post on a blog. Finally, if you visit `http://site.<your eID>.cis527.cs.ksu.edu` you should see the static content from that site instead of the blog, and it should also properly redirect to HTTPS.
 
 {{% notice note %}}
-_I recommend using Firefox for testing. Edge & Internet Explorer on Windows Server are locked-down by default and can be very frustrating to work with. --Russ_
+_I recommend using Firefox for testing. Edge & Internet Explorer on Windows Server are locked-down by default and can be very frustrating to work with. See, I knew you'd appreciate having Firefox installed on your Windows server! --Russ_
 {{% /notice %}}
 
 #### Resources
@@ -161,13 +165,15 @@ If you would like to work with an application not listed here, please contact th
 
 Once you have selected your application, perform the following configuration steps:
 
-1. Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled **BACKEND** and configure an appropriate username and database for your application. You should also enable SSL/TLS encryption on connections to the server if it is not already enabled in MySQL. When creating the user account in MySQL, make sure it is set to log in from the private network IP address of **FRONTEND**.
+1. Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled **BACKEND** and configure an appropriate username and database for your application. You should also enable SSL/TLS encryption on connections to the server if it is not already enabled in MySQL (this should be enabled by default in Ubuntu 20.04). When creating the user account in MySQL, make sure it is set to log in from the private network IP address of **FRONTEND**.
 {{% notice tip %}}
 _You may need to configure MySQL to listen on an external network interface. Make sure you use the private network IP address only - it should not be listening on all network interfaces. In addition, you will also have to open ports on the firewall, and you should restrict access to those ports to only allow connections from the private network IP address of **FRONTEND**, just like the SSH server in Lab 5. Points will be deducted for having a MySQL server open to the internet! --Russ_
 {{% /notice %}}
 2. Configure a new virtual host in Apache for your web application. Also, add an appropriate A record to your domain name created in Lab 5 for this virtual host
 3. Install your web application on your Ubuntu droplet labelled **FRONTEND** following the application's installation instructions. When configuring the database for your application, you should have it use the MySQL database on **BACKEND** via the private network IP address. 
 4. Use CertBot to obtain an SSL certificate for your new application, and have it automatically configure redirection from HTTP to HTTPS.
+
+Of course, you may need to modify your firewall configuration to allow incoming connections to the database server! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
 Once these steps are complete, you should be able to visit your web application via HTTP, see it automatically redirect you to HTTPS, confirm that the SSL certificate is installed and valid, and then interact with the application in some meaningful way to confirm that the database connection is working. Of course, the two virtual hosts configured in Lab 5 should continue to work as well.
 

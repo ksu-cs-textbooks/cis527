@@ -58,6 +58,9 @@ When installing the operating system, configure it as specified below:
 
 * Make sure you choose the **Desktop Experience** option when installing, unless you want a real challenge! It is possible to perform these steps without a GUI, but it is _much_ more difficult.
 * **Computer Name:** `cis527d-<your eID>` (example: `cis527d-russfeld`)
+{{% notice info %}}
+_This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. A majority of students have missed this step in previous semesters, so don't forget! The computer name must be changed **after** the Windows installation is complete --Russ_
+{{% /notice %}}
 * **Passwords:** Use `cis527_windows` as the password for the built-in Administrator account
 * **Install Software**
   - [VMware Tools](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-391BE4BF-89A9-4DC3-85E7-3D45F5124BC7.html)
@@ -84,6 +87,12 @@ Configure your Windows Server as an Active Directory Domain Controller. Follow t
    * **Passwords:** Use `cis527_windows` for all passwords
 3. Add a User Account to your Active Directory
    * Use your own eID for the username here, and `cis527_windows` as the password.
+
+{{% notice tip %}}
+
+As of Summer 2021, there was a bug in Windows Server that prevented the built-in Administrator account from changing some settings, specifically network settings, once the server is promoted to a domain controller. This can make it difficult to fix networking issues in this or future labs. The easy fix for this is to copy the Administrator account in the Active Directory User and Computers tool and give the new copy a different name, such as "Admin", and then use that account to log on to the server. 
+
+{{% /notice %}}
 
 #### Resources
 
@@ -125,7 +134,7 @@ Install OpenLDAP on your Ubuntu VM labelled **SERVER**. Follow the steps and con
 5. Configure the server to use TLS. You should follow the Ubuntu Server Guide to create and sign your own certificates. Make sure you use the correct domain name!
    * At the end of the process, copy the certificate at `/usr/local/share/ca-certificates/mycacert.crt` to the home directory of the `cis527` user for the next step.
 
-Of course, you may need to modify your firewall configuration to allow incoming connections to the LDAP server!
+Of course, you may need to modify your firewall configuration to allow incoming connections to the LDAP server! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
 #### Resources
 

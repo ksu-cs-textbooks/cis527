@@ -28,3 +28,4 @@ pre: "6.1 "
   - Virtual Host
   - SSL Certificate
   - SSL Redirect
+- Ubuntu firewall (-5 points if not enabled or configured)

@@ -25,3 +25,4 @@ pre: "4.1 "
   - Add Ubuntu to Windows AD
 - LDAPSearch (2)
   - Screenshots
+- Ubuntu Firewall enabled and configured (-5 if not)
