@@ -13,7 +13,7 @@ pre: "1. "
 #### Resources
 
 * [Slides]({{< relref "/0-introduction/01-course-introduction-slides.md" >}})
-* [Syllabus]({{< relref "/0-introduction/05-syllabus.md" >}})
+* [Syllabus]({{< relref "/0-introduction/05-syllabus" >}})
 
 #### Video Script
 

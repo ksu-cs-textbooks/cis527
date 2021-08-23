@@ -10,4 +10,6 @@ pre = "<b>Y. </b>"
 
 # Announcements
 
-Video Announcements During the Class.
+Information for Current Students!
+
+[Previous Semesters Are Here](old)
