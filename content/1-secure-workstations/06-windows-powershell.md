@@ -8,11 +8,12 @@ pre: "6. "
 
 #### Resources
 
-* [Getting Started with Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-6) from Microsoft
-* [PowerShell Owner's Manual](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ee221100(v=msdn.10)) from Microsoft
-* [What Can I Do with Microsoft PowerShell](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ee332526(v=msdn.10)) from Microsoft
-* [PowerShell Scripting](https://docs.microsoft.com/en-us/powershell/scripting/powershell-scripting?view=powershell-6) from Microsoft
-* [Hey, Scripting Guy! Blog](https://blogs.technet.microsoft.com/heyscriptingguy/) from Microsoft
+* [Getting Started with Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1) from Microsoft
+* [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/) from Microsoft
+* [What is PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1) from Microsoft
+* [Sample PowerShell Scripts](https://docs.microsoft.com/en-us/powershell/scripting/samples/sample-scripts-for-administration?view=powershell-7.1) from Microsoft
+* [PowerShell Community Blog](https://devblogs.microsoft.com/powershell-community/) from Microsoft
+* [Hey, Scripting Guy! Blog](https://blogs.technet.microsoft.com/heyscriptingguy/) from Microsoft (older content)
 
 #### Video Script
 
