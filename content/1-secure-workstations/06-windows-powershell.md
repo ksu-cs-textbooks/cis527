@@ -10,7 +10,6 @@ pre: "6. "
 
 * [Getting Started with Windows PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1) from Microsoft
 * [PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/) from Microsoft
-* [What is PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.1) from Microsoft
 * [Sample PowerShell Scripts](https://docs.microsoft.com/en-us/powershell/scripting/samples/sample-scripts-for-administration?view=powershell-7.1) from Microsoft
 * [PowerShell Community Blog](https://devblogs.microsoft.com/powershell-community/) from Microsoft
 * [Hey, Scripting Guy! Blog](https://blogs.technet.microsoft.com/heyscriptingguy/) from Microsoft (older content)
