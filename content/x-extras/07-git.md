@@ -4,6 +4,8 @@ weight: 35
 pre: "7. "
 ---
 
+Cache Test
+
 {{< youtube j7m-zC8KpO4 >}}
 
 #### Resources
