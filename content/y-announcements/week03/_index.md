@@ -1,6 +1,6 @@
 ---
 title: "Fall '21 Week 3"
-weight: 5
+weight: 10
 pre: ""
 ---
 
