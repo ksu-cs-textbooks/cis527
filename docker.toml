@@ -1,4 +1,4 @@
-baseURL = "https://textbooks.cs.ksu.edu/cis527"
+baseURL = "https://cis527.textbooks.cs.ksu.edu"
 languageCode = "en-us"
 title = "CIS 527 Textbook"
 canonifyURLs = true
