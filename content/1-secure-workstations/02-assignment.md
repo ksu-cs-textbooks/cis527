@@ -56,6 +56,12 @@ Install the virtualization software platform of your choice. It must support usi
 
 You may need to install the latest version available for download and then update it within the software to get to the absolute latest version that supports the latest guest OS versions.
 
+{{% notice info info-123 "VMWare Licenses" %}}
+
+_Unfortunately, the process for getting VMWare licenses changed in 2022, so we have to manually request access for a class. If you have issues accessing this site and getting a license, it is likely that I forgot to send in that request. Please email me and remind me so I can get that done! - Russ_
+
+{{% /notice %}}
+
 ---
 
 ### Task 1: Create a Windows 10 Virtual Machine
