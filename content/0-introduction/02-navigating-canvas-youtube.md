@@ -1,5 +1,5 @@
 ---
-title: "Navigating Canvas & Piazza"
+title: "Navigating Canvas & YouTube"
 weight: 10
 pre: "2. "
 ---

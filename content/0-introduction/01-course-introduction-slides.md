@@ -11,12 +11,12 @@ hidden: true
 	<p>
 	  <i>Pronouns: he/him</i><br>
 		(785) 292-3121 (Call/Text)<br>
-		2184 Engineering Hall<br>
+		2213 Engineering Hall<br>
 		<i>(working remotely)</i><br>
 		<br>
 		<b>russfeld AT ksu DOT edu</b><br>
 		https://russfeld.me  -  @russfeld<br>
-		<i>Email Preferred</i>
+		<i>Email & Discord Preferred</i>
 	</p>
 </section>
 <section>
@@ -32,7 +32,7 @@ hidden: true
 		<li><b>==One Module Due Each Week==</b></li>
 		<li>Can Work Ahead At Your Own Pace</li>
 		<li>Interactive Lab Grading</li>
-		<li>Complete by July 30, 2021</li>
+		<li>Complete by July 29, 2022</li>
 	</ul>
 </section>
 <section>
@@ -92,6 +92,16 @@ hidden: true
 		<li>Virtual Machine Software</li>
 		<li>High-Speed Internet Connection</li>
 		<li><i>Concerns? Ask Instructor</i></li>
+	</ul>
+</section>
+<section>
+	<h3>Under Construction</h3>
+	<ul>
+		<li>Modules 5-7</li>
+		<li>Adding Docker, Kubernetes</li>
+		<li>More DevOps and CI/CD Concepts</li>
+		<li>More containerization, less bare hardware</li>
+		<li>Closer to real-world deployments</li>
 	</ul>
 </section>
 <section>

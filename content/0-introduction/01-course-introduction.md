@@ -6,6 +6,8 @@ pre: "1. "
 
 {{< youtube fKqeaX4XBtc >}}
 
+<!-- TODO Rerecord Video -->
+
 <!-- K3cMUbxxbBw -->
 
 <!-- XpN1HmW0jfY -->
@@ -19,13 +21,13 @@ pre: "1. "
 
 Welcome to CIS 527 - Enterprise System Administration and CC 510 - Computer Systems Administration. Even though these are two different courses in the catalog, they teach the same content and will use the same Canvas course. So, anywhere you see CIS 527 in this course, you can also mentally substitute CC 510 in its place.
 
-My name is Russell Feldhausen, and I'll be your instructor for this course. My contact information is shown here, and is also listed on the syllabus, and on the home page of the course on K-State Online. My email address is russfeld@ksu.edu, and it is by far my preferred method of communication for matters outside of this course, since it allows me to have a record of our conversations and respond when I'm available. I'll also be on the K-State CS Discord server, so you can easily chat with me there. There is a channel already created for this course that I encourage you to make use of throughout this course.
+My name is Russell Feldhausen, and I'll be your instructor for this course. My contact information is shown here, and is also listed on the syllabus, and on the home page of the course on K-State Online. My email address is russfeld@ksu.edu, and it is the official method of communication for matters outside of this course, since it allows me to have a record of our conversations and respond when I'm available. However, I'll also be available via the K-State CS Discord server, so you can easily chat with me there. There is a channel already created for this course that I encourage you to make use of throughout this course.
 
-I am working remotely out of my home in Kansas City, so I won't be available on campus regularly during the Summer 2021 semester. I do have an office, and I will be there from time to time when I can during the summer to meet with folks on campus and hold office hours. I'll be sure to announce those times as they are scheduled.
+I am working remotely out of my home in Kansas City, so I won't be available on campus regularly during the Summer 2022 semester. I do have an office, and I will be there from time to time when I can during the summer to meet with folks on campus and hold office hours. I'll be sure to announce those times as they are scheduled.
 
 In addition, I must give credit to several people for helping me develop the content in this course. First and foremost is [Seth Galitzer](http://people.cs.ksu.edu/~sgsax/), the CS system administrator, as well as several of my former students and teaching assistants.
 
-For a brief overview of the course, there are 7 lab modules, plus a final project, that you'll be responsible for completing. The modules are configured in K-State Online as gated modules, meaning that you must complete each item in the module in order before continuing. There will be one module due each week, and you may work ahead at your own pace. When you are ready to have a lab graded, you'll schedule a time to meet interactively with me either in person or remotely. Finally, all work in this course must be completed and all labs graded by no later than July 30th, 2021.
+For a brief overview of the course, there are 7 lab modules, plus a final project, that you'll be responsible for completing. The modules are configured in K-State Canvas as gated modules, meaning that you must complete each item in the module in order before continuing. There will be one module due each week, and you may work ahead at your own pace. When you are ready to have a lab graded, you'll schedule a time to meet interactively with me either in person or remotely. Finally, all work in this course must be completed and all labs graded by no later than July 29th, 2022.
 
 Looking ahead to the rest of this first module, you'll see that there are a few more items to be completed before you can move on. In the next video, I'll discuss a bit more information about navigating through this course on Canvas and using the videos posted on YouTube.
 
@@ -42,6 +44,8 @@ What hasn't changed, though, is the basic concept of a college course. You'll st
 Also, while some of the quizzes will be graded automatically, much of the grading will still be done directly by me or my GTA. This includes the lab assignments. For each lab assignment, you'll schedule a time to meet with us either in person or remotely to review your work for that lab. Finally, we'll still be available to meet with you online for virtual office hours as needed. Of course, you can always contact me via email if you have any questions. In fact, since I regularly work from home anyway, I'll probably be easier to contact than some of my fellow faculty!
 
 For this class, each student is required to have access to a personal computer. It should have plenty of RAM and CPU power to host several virtual machines concurrently. In addition, you'll need some virtual machine software, which is available for free to K-State CS students. I'll discuss how to acquire and install that software in the first lab module. Finally, you'll also need access to a high-speed connection capable of web conferencing with video. If you have any concerns about meeting these requirements, please contact me ASAP! We may have options available through some on-campus resources to help you out.
+
+This summer, I'll be working on several updates to this course. These updates will mainly affect the second half of the course, starting with lab 5. My goals is to add more content about tools such as Docker and Kubernetes, and move the focus of the course from installing and running tools directly on bare hardware in the cloud, and instead focus more on containerization and orchestration, which is closer to how things are done in industry today. So, stay tuned as I get those updates made and published in the course. 
 
 Finally, as you are aware, this course is always subject to change. While we have taught this class several times before, there may be a few hiccups as we get started due to new software and situations. The best advice I have is to look upon this graphic with the words "Don't Panic" written in large, friendly letters, and remember that it'll all work out in the end as long as you know where your towel is.
 

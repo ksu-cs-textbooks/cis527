@@ -5,8 +5,6 @@ date = 2018-08-24T10:53:05-05:00
 
 ### Welcome
 
-Hi CIS 640!
-
 This website contains the course materials for CIS 527: Enterprise Systems Administration at Kansas State University.
 
 Anyone and everyone is welcome to review the contents on this webpage. However, if you plan on taking the course for credit, you should enroll in the course through K-State before starting, as the course itself includes appropriate assignments and assessments to ensure that you have learned the material.
