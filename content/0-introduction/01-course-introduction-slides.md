@@ -42,7 +42,7 @@ hidden: true
 		<li>Syllabus</li>
 		<li>Introduce Yourself!</li>
 		<li>0 - Course Readiness Quiz</li>
-		<li>Extra Credit - Bug Bounty</li>
+		<li>Extra Credit - Bug Bounty & Helping Hands</li>
 	</ul>
 </section>
 <section>
@@ -116,7 +116,7 @@ hidden: true
 		<li>Read the Syllabus</li>
 		<li>Post in the <i>Introduce Yourself!</i> Discussion</li>
 		<li>Complete the <i>Course Readiness Quiz</i></li>
-		<li>Read the <i>Extra Credit - Bug Bounty</i> Assignment</li>
+		<li>Read the <i>Extra Credit</i> Assignments</li>
 	</ul>
 </section>
 <section>
