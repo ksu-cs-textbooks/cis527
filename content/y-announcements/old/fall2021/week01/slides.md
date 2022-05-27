@@ -20,33 +20,18 @@ hidden: true
 	</p>
 </section>
 <section>
-	<h3>The Course</h3>
+	<h3>What's New?</h3>
 	<ul>
-		<li>Gated Modules on Canvas</li>
-		<li>1 Module Per Week</li>
-		<li><b>Check Due Dates</b></li>
-		<li>Lab Assignment - Live Grading</li>
-		<li>Discussions - Video & Questions</li>
-		<li>Final Project</li>
+	  <li>1 Module Due Every Two Weeks</li>
+	  <li>Late Work Penalty - 10% / Day</li>
+	  <li>Prototype Portion in Final Project</li>
+	  <li>Minor Changes in Each Lab</li>
+	  <li>5 Interactive Discussions</li>
 	</ul>
 </section>
 <section>
-	<h3>Communication</h3>
-	<ul>
-		<li>Discord - Course Questions, Discussions, etc</li>
-		<li>Email - Personal Issues, Grading Questions, To-dos, etc</li>
-		<li><i>Email is official, Discord is more flexible</i></li>
-	</ul>
-</section>
-<section>
-	<h3>Success</h3>
-	<ul>
-		<li>Growth Mindset</li>
-		<li>Don't just read/watch, <i>engage</i></li>
-		<li>Work Iteratively</li>
-		<li>Save Early & Often</li>
-		<li><i>Ask for Help</i></li>
-	</ul>
+	<h3>Beta Labs</h3>
+	<p>I may develop some new labs this semester. You may opt to help "beta test" them for some sort of credit. More details later.</p>
 </section>
 <section>
 	<h3>Lab Grading</h3>

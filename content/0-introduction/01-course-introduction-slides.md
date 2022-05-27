@@ -20,6 +20,14 @@ hidden: true
 	</p>
 </section>
 <section>
+	<h3>Communication</h3>
+	<ul>
+		<li>Discord - Course Questions, Discussions, etc</li>
+		<li>Email - Personal Issues, Grading Questions, To-dos, etc</li>
+		<li><i>Email is official, Discord is more flexible</i></li>
+	</ul>
+</section>
+<section>
 	<h3>Content Credits</h3>
 	Seth Galitzer - sgsax AT ksu DOT edu<br>
 	Many Previous TAs & Students
