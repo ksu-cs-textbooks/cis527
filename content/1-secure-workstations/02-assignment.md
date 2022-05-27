@@ -32,15 +32,18 @@ This lab is written with the expectation that most students will be using **VMwa
 If you are using another virtualization platform, you may have to adapt these instructions to fit. If you are unsure about any specification and how it applies to your setup, please contact the instructor.
 
 You will also need installation media for the following operating systems:
-* **Windows 10 Version 20H2** or later - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
-  * File Name: `en_windows_10_consumer_editions_version_20h2_updated_nov_2020_x64_dvd_7727be28.iso`
-  * SHA 256 Hash: `6c6856405dbc7674eda21bc5f7094f5a18af5c9bacc67ed111e8f53f02e7d13d`
+* **Windows 10 Version 21H2** or later - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
+  * Look for **Windows 10 Education, version 21H2 - DVD** on the list of software available on the Azure Dev Tools site.
+  * File Name: `en-us_windows_10_consumer_editions_version_21h2_x64_dvd_6cfdb144.iso`
+  * SHA 256 Hash: `7f6538f0eb33c30f0a5cbbf2f39973d4c8dea0d64f69bd18e406012f17a8234f`
   * _Your file may vary as Microsoft constantly updates these installers._
-  * _You may choose to upgrade to Windows 10 Version 21H1 or later while installing updates._
-* **Ubuntu 20.04 LTS** or later - Download from [Ubuntu](https://ubuntu.com/download) or the [K-State CS Mirror](http://mirror.cs.ksu.edu/ubuntu-releases/focal/)
-  * File Name: `ubuntu-20.04.2.0-desktop-amd64.iso`
-  * SHA 256 Hash: `93bdab204067321ff131f560879db46bee3b994bf24836bb78538640f689e58f`
-  * _If a point release is available (ex: 20.04.x.x), feel free to us that version. **Do not upgrade to a non-LTS release** such as Ubuntu 21.04, as those versions may have significant changes that are not covered int these assignments._
+  * _You may choose to upgrade to a later version of Windows 10 while installing updates._
+  * _You may choose to use Windows 11 for this course. The instructions shown in the course may not exactly match Windows 11 so adaptation may be necessary. Contact the instructor if you have any questions or run into issues._
+* **Ubuntu 20.04 LTS (Focal Fossa)** or later - Download from [Ubuntu](https://ubuntu.com/download) or the [K-State CS Mirror](http://mirror.cs.ksu.edu/ubuntu-releases/focal/)
+  * File Name: `ubuntu-20.04.4-desktop-amd64.iso`
+  * SHA 256 Hash: `f92f7dca5bb6690e1af0052687ead49376281c7b64fbe4179cc44025965b7d1c`
+  * _If a point release is available (ex: 20.04.x.x), feel free to us that version. **Do not upgrade to a newer LTS or non-LTS release** such as Ubuntu 21.04, as those versions may have significant changes that are not covered in these assignments._
+  * _Lab 2 **will not work** with Ubuntu 22.04 LTS (Jammy Jellyfish) at this time. Please use Ubuntu 20.04 LTS for the time being._
 
 {{% notice note %}}
 The original course materials were developed for Windows 10 Version 1803 and Ubuntu 18.04 LTS. Some course materials may still show the older versions. Students should use the software versions listed in bold above if at all possible, as these assignments have been verified using those versions. If not, please contact the instructor for alternative options. If you find any errors or issues using the updated versions of these systems, please contact the instructor. 
@@ -106,7 +109,7 @@ You can test this by accessing the Windows VM IP Address from Firefox running on
 * **Automatic Updates:** Make sure the system is set to download and install security updates automatically.
 
 {{% notice note %}}
-Even though you may have installed a particular version of Windows, such as 2004, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. 
+Even though you may have installed a particular version of Windows, such as 21H2, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. 
 {{% /notice %}}
 
 ### Task 3: Windows Files & Permissions

@@ -42,9 +42,9 @@ After installing the operating system, install **ONLY** the following software:
 
 On the Windows virtual machine only, create a folder at `C:\install` and download the following installers. Do not change the name of the installers from the default name provided from the website. You may choose to do this step using the [download_file](https://forge.puppet.com/puppet/download_file) Puppet module instead.  
 
-* [Firefox](https://www.mozilla.org/en-US/firefox/all/) (`Firefox Setup 88.0.1.exe` as of 5/6/2021)
-* [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 78.10.1.exe` as of 5/6/2021)
-* [Notepad++](https://notepad-plus-plus.org/download/) (`npp.7.9.5.Installer.x64.exe` as of 5/6/2021)
+* [Firefox](https://www.mozilla.org/en-US/firefox/all/) (`Firefox Setup 100.0.2.exe` as of 5/26/2022)
+* [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 91.9.1.exe` as of 5/26/2022)
+* [Notepad++](https://notepad-plus-plus.org/download/) (`npp.8.4.1.Installer.x64.exe` as of 5/26/2022)
 
 {{% notice note %}}
 _I have listed sample names of the installers as of this writing; however, you may receive newer versions with slightly different names. That is fine. Just be sure that you don't get the default stub or web-only installers, which is what Firefox typically gives you unless you follow the links above. They will not work properly for this lab. --Russ_
@@ -60,7 +60,7 @@ When you reset back to a snapshot, any new or modified files on the VM will be l
 
 ### Task 1: Puppet Manifest File for Ubuntu
 
-Create a Puppet Manifest File for Ubuntu 20.04 that defines the following configuration. This configuration is very similar to, but not exactly the same as, Lab 1, so read through it carefully. Assume that the machine you are applying the manifest file on is configured as described above in Task 0.
+Create a Puppet Manifest File for Ubuntu 22.04 that defines the following configuration. This configuration is very similar to, but not exactly the same as, Lab 1, so read through it carefully. Assume that the machine you are applying the manifest file on is configured as described above in Task 0.
 
 * **Users (Same as Lab 1)**
   - `adminuser` | `AdminPassword123` (Administrator type or `sudo` group)
