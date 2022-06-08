@@ -181,10 +181,10 @@ networks:
 </section>
 <section>
     <h3>Bind Mount</h3>
-    <pre><code class="bash">mkdir /home/youboon2/mysql
+    <pre><code class="bash">mkdir /home/cis527/mysql
 docker run -d --name mysql1 --network mysql_network 
         -e MYSQL_ROOT_PASSWORD=password 
-        -v /home/youboon2/mysql:/var/lib/mysql
+        -v /home/cis527/mysql:/var/lib/mysql
         mysql:latest</code></pre>
     <pre class="stretch"><code style="font-size: 35px; line-height: 40px" class="yml">services:
   mysql:
@@ -195,7 +195,7 @@ docker run -d --name mysql1 --network mysql_network
     environment:
       MYSQL_ROOT_PASSWORD: password
     volumes:
-      - /home/youboon2/mysql:/var/lib/mysql
+      - /home/cis527/mysql:/var/lib/mysql
   # ...</code></pre>
 </section>
 <section>
