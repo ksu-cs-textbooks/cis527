@@ -64,11 +64,11 @@ hidden: true
 	<ul>
 		<li><code>docker pull hello-world</code></li>
 		<li><code>docker run hello-world</code></li>
-		<li><code>docker run -d nginx:alpine</code></li>
+		<li><code>docker run --name nginx -d nginx:alpine</code></li>
 		<li><code>docker ps</code></li>
-		<li><code>docker exec -it <nginx> /bin/sh</code></li>
+		<li><code>docker exec -it nginx /bin/sh</code></li>
 		<li><code>curl localhost:80</code></li>
-		<li><code>docker stop [container]</code></li>
+		<li><code>docker stop nginx</code></li>
 		<li><code>docker container prune</code></li>
 	</ul>
 </section>

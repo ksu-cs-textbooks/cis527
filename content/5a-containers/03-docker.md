@@ -71,6 +71,8 @@ Finally, if we scroll back to the top of the page, you'll see that the Nginx ima
 
 For this example, we're going to use another Docker Official Image called [Hello World](https://hub.docker.com/_/hello-world). This image is a great example of a minimal container, making it an easy place to get started with Docker. So, now that we've found the image we want to use, let's go back to the terminal and learn how to create and run some containers. 
 
+Before you begin, you'll need to install the Docker platform on your system. At the top of this page are links directly to the Docker instructions for installing Docker on various systems. If you are working on your local system or in a virtual machine, you will probably want to install Docker Desktop, since that handles everything for you. For installations in the cloud, you'll need to install the Docker engine and client directly, and you may also want to add the Docker Compose plugin as well. 
+
 [Demo Here]
 
 ---

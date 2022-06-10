@@ -34,10 +34,10 @@ hidden: true
 	<pre><code class="yml">services:                   # top level item
   nginx:                    # name of service
     image: nginx:alpine     # image to use
-    container_name: nginx1  # name of container</code></pre>
+    container_name: nginx1  # name of container
   mysql:
     image: mysql:latest
-	container_name: mysql
+    container_name: mysql</code></pre>
 </section>
 <section>
 	<h3>Docker Compose Commands</h3>
