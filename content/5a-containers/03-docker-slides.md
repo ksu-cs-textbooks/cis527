@@ -26,7 +26,7 @@ hidden: true
 		</ul></li>
 		<li><i>Docker Desktop</i></li>
 		<li>Docker Compose</li>
-		<li><i>Container Registry</i></li>
+		<li><i>Registry</i></li>
 	</ul>
 </section>
 <section>
@@ -68,6 +68,7 @@ hidden: true
 		<li><code>docker ps</code></li>
 		<li><code>docker exec -it <nginx> /bin/sh</code></li>
 		<li><code>curl localhost:80</code></li>
+		<li><code>docker stop [container]</code></li>
 		<li><code>docker container prune</code></li>
 	</ul>
 </section>
