@@ -3,10 +3,10 @@ type: "reveal"
 hidden: true
 ---
 <section>
-	<h2>CIS 527</h2><br><br><p>Lab 5.A - Building Containers</p>
+	<h2>CIS 527</h2><br><br><p>Lab 5.A - Building Images</p>
 </section>
 <section>
-	<h3>Building Containers</h3>
+	<h3>Building Images</h3>
 	<ul>
 		<li>Create <code>Dockerfile</code></li>
 		<li>Choose base image</li>
@@ -59,7 +59,7 @@ docker run -d -p 3000:3000 getting-started</code></pre>
 	</ul>
 </section>
 <section>
-	<h3>Step 6 - Scan Container</h3>
+	<h3>Step 6 - Scan Image</h3>
 	<pre><code class="bash">docker scan getting-started</code></pre>
     <img class="stretch plain" src="/images/5a/docker-vuln.png">
 </section>
