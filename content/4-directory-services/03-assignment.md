@@ -51,7 +51,7 @@ Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4"
 Create a new virtual machine for **Windows Server 2019 Standard** using the "Windows Server 2019 Standard (Updated Sept 2019)" installation media (you may choose a newer option if available, but this lab was tested on that specific version). You can download the installation files and obtain a product key from the [Microsoft Azure Student Portal](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) discussed in Module 1. 
 
 {{% notice tip %}}
-For this system, I recommend giving the VM ample resources, usually at least 2 GB RAM and multiple processor cores if you can spare them. You may need to adjust the VM settings as needed to balance the performance of this VM against the available resources on your system. You may also have to choose "Windows Server 2016" as the operating system type in VMWare if Windows Server 2019 is not listed. 
+For this system, I recommend giving the VM ample resources, usually at least 2 GB RAM and multiple processor cores if you can spare them. You may need to adjust the VM settings as needed to balance the performance of this VM against the available resources on your system. 
 {{% /notice %}}
 
 When installing the operating system, configure it as specified below:
@@ -96,7 +96,7 @@ As of Summer 2021, there was a bug in Windows Server that prevented the built-in
 
 #### Resources
 
-* [Step-By-Step: Setting Up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/) from Microsoft
+* [Install Active Directory Domain Services (Level 100)](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-) from Microsoft
 * [Add User Accounts on Active Directory](https://www.server-world.info/en/note?os=Windows_Server_2016&p=active_directory&f=3) from Server-World
 * [AD DS Installation and Removal Wizard Page Descriptions](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/ad-ds-installation-and-removal-wizard-page-descriptions) from Microsoft
 
@@ -132,6 +132,7 @@ Install OpenLDAP on your Ubuntu VM labelled **SERVER**. Follow the steps and con
    * Follow the instructions in the guide below to create `ou`s for `users`, `groups`, and create an `admin` group as well.
    * Use your own eID for the username, and `cis527_linux` as the password.
 5. Configure the server to use TLS. You should follow the Ubuntu Server Guide to create and sign your own certificates. Make sure you use the correct domain name!
+   * You should make a **snapshot** of your Ubuntu Server VM before attempting to add TLS. It is _very_ difficult to undo any errors in this process, therefore it is much easier to just roll back to a previous snapshot and try again.
    * At the end of the process, copy the certificate at `/usr/local/share/ca-certificates/mycacert.crt` to the home directory of the `cis527` user for the next step.
 
 Of course, you may need to modify your firewall configuration to allow incoming connections to the LDAP server! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
@@ -149,6 +150,8 @@ Of course, you may need to modify your firewall configuration to allow incoming 
 On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate against the OpenLDAP server created in Task 4.
 
 1. First, confirm that you are able to resolve `ldap.<your eID>.cis527.cs.ksu.edu` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Ubuntu VM labelled **SERVER** as configured in Lab 3, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
+1. Next, copy the `mycacert.crt` file from the home directory on your **SERVER** to the `/usr/local/share/ca-certificates/` directory on the **CLIENT**, and then run `sudo update-ca-certificates` to install it. 
+   1. If you have configured SSH properly, you can copy the file from one server to another using `scp`. The command may be something like `scp -P 23456 ldap.<your eID>.cis527.cs.ksu.edu:~/mycacert.crt ./`.
 1. Then, make sure that you can connect to the LDAP server using TLS. You can use `ldapwhoami -x -ZZ -h ldap.<your eID>.cis527.cs.ksu.edu` and it should return `anonymous` if it works. 
 1. Before you configure SSSD, make a **snapshot** of this VM. If your SSSD configuration does not work, you can restore this snapshot and try again.
 1. To test your SSSD configuration, use the command `getent passwd <username>` (example: `getent passwd russfeld`) and confirm that it returns an entry for your LDAP user.
@@ -157,7 +160,7 @@ On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate agai
 
 #### Resources
 
-* [SSSD](https://ubuntu.com/server/docs/service-sssd) on Ubuntu Server Guide (look for the "SSSD and LDAP" section)
+* [SSSD and LDAP](https://ubuntu.com/server/docs/service-sssd-ldap) on Ubuntu Server Guide (look for the "SSSD and LDAP" section)
 
 ---
 
@@ -176,6 +179,7 @@ If you get errors like "Insufficient permissions to join the domain", you may ne
 
 #### Resources
 
+* [SSSD and Active Directory](https://ubuntu.com/server/docs/service-sssd-ad) from Ubuntu
 * [Join in Active Directory Domain](https://www.server-world.info/en/note?os=Ubuntu_20.04&p=realmd) from Server-World
 * [How to Join Ubuntu 18.04 / Debian 10 To Active Directory (AD) Domain](https://computingforgeeks.com/join-ubuntu-debian-to-active-directory-ad-domain/) from Computingforgeeks (works for 20.04)
 

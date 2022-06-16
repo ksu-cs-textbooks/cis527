@@ -229,7 +229,7 @@ Install an SNMP Daemon on the Ubuntu 20.04 VM labelled **SERVER**, and connect t
 
 {{% notice warning %}}
 
-There is currently an issue using the `snmpusm` command to set passwords as shown in the DigitalOcean guide. I believe it is a known and unfixed bug in `snmp` itself. So, you may instead follow the steps in the "Configure SNMP Version 3 on Ubuntu 20.04" portion of the Kifarunix guide linked below to create the `cis527` user. You'll need to install the `libsnmp-dev` package, and make sure you stop the `snmpd` daemon before creating the account using the `net-snmp-create-v3-user` command. Unfortunately, when creating an account using this method, I was unable to use stored credentials on my **CLIENT** VM using a configuration file as shown in the DigitalOcean guide. When typing the full command, it did work correctly. I am not sure why that does not work - bug bounty point are available for anyone who does get it to work!
+There is currently an issue using the `snmpusm` command to set passwords as shown in the DigitalOcean guide. I believe it is a known and unfixed bug in `snmp` itself. So, you may instead follow the steps in the "Configure SNMP Version 3 on Ubuntu 20.04" portion of the Kifarunix guide linked below to create the `cis527` user. You'll need to install the `libsnmp-dev` package, and make sure you stop the `snmpd` daemon before creating the account using the `net-snmp-create-v3-user` command. Notice that this guide uses different encryption schemes (the `-a` and `-x` parameters) than the DigitalOcean guide, so you will have to adapt one set of commands or the other so they match. 
 
 {{% /notice %}}
 
@@ -278,8 +278,8 @@ Then, using Wireshark, create **screenshots** showing that you captured and can 
    * _HINT: Reboot one of your other VMs to force it to request a new IP address, or use the `ipconfig` (Windows) or `dhclient` (Ubuntu) commands to renew the IP address_
 1. An HTTP 301: Moved Permanently redirect response
    * _HINT: Clear the cache in your web browser, then navigate to `http://people.cs.ksu.edu/~sgsax` (without a trailing slash). It should redirect to `http://people.cs.ksu.edu/~sgsax/` (with a trailing slash)._
-1. ~~An HTTP Basic Authentication request, **clearly showing the username and password in plaintext** (expand the entries in the middle pane to find it)~~ _This is not working due to a recent reconfiguration of the CS web server. So, this one is a freebie for now! -Russ_
-   * ~~*HINT: Visit `http://people.cs.ksu.edu/~russfeld/test/` and use `cis527` | `cis527_apache` to log in*~~
+1. An HTTP Basic Authentication request, **clearly showing the username and password in plaintext** (expand the entries in the middle pane to find it).
+   * *HINT: Visit `http://httpbin.org/basic-auth/testuser/testpass` and use `testuser` | `testpass` to log in*
 
 {{% notice tip%}}
 _You'll present those 8 screenshots as part of the grading process for this lab, so I recommend storing them on the desktop of that VM so they are easy to find. Make sure your screenshot clearly shows the data requested. --Russ_
