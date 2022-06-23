@@ -23,7 +23,13 @@ Also, to complete many of these items, you may need to refer to additional mater
 This lab may take anywhere from **1 - 6 hours** to complete, depending on your previous experience working with these tools and the speed of the hardware you are using. Configuring cloud systems is very time-consuming the first time through the process, but it will be much more familiar by the end of this course.
 
 {{% notice info %}}
-_This lab involves working with resources on the cloud, and will require you to sign up and pay for those services. In general, your total cost should be low, usually around $20 total. If you haven't already, you can sign up for the [GitHub Student Developer Pack](https://education.github.com/pack) to get discounts on most of these items. If you have any concerns about using these services, please contact me to make alternative arrangements! --Russ_
+_This lab involves working with resources on the cloud, and will require you to sign up and pay for those services. In general, your total cost should be low, usually around $20 total. If you haven't already, you can sign up for the [GitHub Student Developer Pack](https://education.github.com/pack) to get discounts on most of these items. 
+
+_You can get $100 credit at DigitalOcean using this link: [https://try.digitalocean.com/freetrialoffer/](https://try.digitalocean.com/freetrialoffer/)_
+
+_You can register a .me domain name for free using Namecheap at this link: [https://nc.me/](https://nc.me/)_
+
+_If you have any concerns about using these services, please contact me to make alternative arrangements! --Russ_
 {{% /notice %}}
 
 ---
@@ -33,7 +39,7 @@ _This lab involves working with resources on the cloud, and will require you to 
 Create **TWO** droplets on DigitalOcean. As you set up your droplets, use the following settings:
 
 * Choose the Ubuntu 20.04 x64 distribution as the droplet image
-* Select the smallest droplet size ($5/mo)
+* Select the smallest droplet size ($4-6/mo)
 * Select any United States region
 * Enable Virtual Private Cloud (VPC) Networking and Monitoring
 * You may add any existing SSH keys you've already configured with DigitalOcean during droplet creation
@@ -57,6 +63,7 @@ Perform these configuration steps on both droplets, unless otherwise noted:
 {{% notice warning %}}
 **DO NOT REUSE THE USUAL PASSWORD ON THIS ACCOUNT!** Any system running in the cloud should have a very secure password on each account. Make sure it is a strong yet memorable password, as you'll need it to run any commands using `sudo`.
 {{% /notice %}}
+1. Install all system updates
 1. Change the SSH port to 54321
 1. Ensure the timezone is set to UTC
 1. Enable the firewall. Configure the firewall on both systems to allow connections to the following:
@@ -111,28 +118,39 @@ _You may contact me once you have installed the grading SSH key to confirm that 
 
 ---
 
-### Task 3: Install Apache
+### Task 3A: Install Apache on **BACKEND**
 
-On each droplet, install the Apache web server. By default, the webserver should serve files from the `/var/www/html` directory. Place a simple HTML file named `index.html` in that directory on each server. You may use the contents below as an example. Please modify the file appropriately to make it clear which server it is placed on.
+Install the Apache web server on **BACKEND**. By default, the webserver should serve files from the `/var/www/html` directory. Place a simple HTML file named `index.html` in that directory on **BACKEND**. You may use the contents below as an example. Please modify the file appropriately to make it clear which server it is placed on.
 
 Do not configure virtual hosts at this time, as that will be covered in Task 5.
 
 ```html
 <html>
     <head>
-        <title>CIS 527 Frontend</title>
+        <title>CIS 527 Backend</title>
     </head>
     <body>
-        <h1>This is my CIS 527 Frontend Server!</h1>
+        <h1>This is my CIS 527 Backend Server!</h1>
     </body>
 </html>
 ```
 
-To test your system, you should be able to enter the public IP address of each of your droplets in a web browser and be presented with the appropriate file.
+To test your system, you should be able to enter the public IP address of your **BACKEND** droplet in a web browser and be presented with the appropriate file.
 
 #### Resources
 
 * [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04) from DigitalOcean
+
+---
+
+### Task 3B: Install Docker on **FRONTEND**
+
+Install the Docker client, Docker engine, and Docker compose on the droplet named **FRONTEND**. Make sure you test your setup using the [Hello World](https://hub.docker.com/_/hello-world) image to confirm it is working.
+
+#### Resources
+
+* [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/) from Docker
+* [Install Docker Compose Plugin](https://docs.docker.com/compose/install/compose-plugin/) from Docker
 
 ---
 
@@ -141,20 +159,21 @@ To test your system, you should be able to enter the public IP address of each o
 Register and configure a domain name, and add your new droplets to that domain.
 
 {{% notice info %}}
-_If you already have your own domain name, you are welcome to use it for this portion of the lab. It should not conflict with any existing configuration, as long as you are managing your own DNS records. If not, you may need to perform some additional configuration. If you don't have a domain name yet, this would be a great chance to get one registered. The [GitHub Student Developer Pack](https://education.github.com/pack) allows you to register a `.me` domain with Namecheap free for one year. If you register a domain name, I highly recommend enrolling in WhoisGuard to protect your personal information. It should be enabled for you automatically through Namecheap. If you have any concerns about registering a domain name, or would like to explore options for completing this portion without registering or using a public domain name, please contact me. --Russ_
+_If you already have your own domain name, you are welcome to use it for this portion of the lab. It should not conflict with any existing configuration, as long as you are managing your own DNS records. If not, you may need to perform some additional configuration. If you don't have a domain name yet, this would be a great chance to get one registered. [Namecheap](https://nc.me) will allow you to register a `.me` domain for free for one year as a student. If you register a domain name, I highly recommend enrolling in WhoisGuard to protect your personal information. It should be enabled for you automatically through Namecheap. If you have any concerns about registering a domain name, or would like to explore options for completing this portion without registering or using a public domain name, please contact me. --Russ_
 {{% /notice %}}
 
 Configure the DNS settings for your domain name as follows:
 
 1. If you are using a new domain, make sure it is configured to use your registrar's DNS servers. You may also configure it to use DigitalOcean's nameservers, and configure your DNS settings through DigitalOcean.
-1. Add an A record for host `cis527frontend` that points to the public IP address of **FRONTEND**.
-1. Add an A record for host `cis527backend` that points to the public IP address of **BACKEND**.
+1. Add an A record for host `cis527alpha` that points to the public IP address of **FRONTEND**.
+1. Add an A record for host `cis527bravo` that points to the public IP address of **FRONTEND**.
+1. Add an A record for host `cis527charlie` that points to the public IP address of **BACKEND**.
 
 {{% notice tip %}}
 _After updating your domain's DNS settings, you may have to wait up to 24 hours for the changes to propagate across the internet due to DNS caching. You may be able to speed this up by restarting your computer and network devices, or by using 3rd party DNS services such as OpenDNS or Google DNS instead of your ISP's DNS servers. However, in most cases it is better to just be patient and wait than to try and get around it. --Russ_
 {{% /notice %}}
 
-To test your new DNS settings, you should be able to enter `http://cis527frontend.<yourdomain>.<tld>` in a web browser to access your frontend server, and similarly `http://cis527backend.<yourdomain>.<tld>` should take you to your backend server. For example, if your domain name is `cis527.me`, you would visit `http://cis527frontend.cis527.me` and `http://cis527backend.cis527.me`.
+To test your new DNS settings, you should be able to enter `http://cis527charlie.<yourdomain>.<tld>` in a web browser to access your backend server running Apache. For example, if your domain name is `cis527.me`, you would visit `http://cis527charlie.cis527.me`. Since we haven't configured a server for frontend yet, we aren't able to test it at this time.
 
 #### Resources
 
@@ -163,11 +182,11 @@ To test your new DNS settings, you should be able to enter `http://cis527fronten
 
 ---
 
-### Task 5: Configure Apache Virtual Hosts
+### Task 5A: Configure Apache Virtual Hosts
 
-Now that your domain name is working, configure an appropriate virtual host in Apache on each system. In general, you can follow Step 5 of the guide linked below, but replace `example.com` with your server's full domain name, such as `cis527frontend.cis527.me` or `cis527backend.cis527.me` in the example from Task 4. You'll also need to copy the sample HTML file from Task 3 to the appropriate directory as configured in your virtual host. Make sure you disable the default site configuration when you enable the new site.
+Now that your domain name is working, configure an appropriate virtual host in Apache on **BACKEND**. In general, you can follow Step 5 of the guide linked below, but replace `example.com` with your server's full domain name, such as `cis527charlie.cis527.me` in the example from Task 4. You'll also need to copy the sample HTML file from Task 3 to the appropriate directory as configured in your virtual host. Make sure you disable the default site configuration when you enable the new site.
 
-Finally, you can test your virtual host configuration using the same URLs given in Task 4 above.
+Finally, you can test your virtual host configuration using the same URL given in Task 4 above.
 
 #### Resources
 
@@ -175,34 +194,39 @@ Finally, you can test your virtual host configuration using the same URLs given 
 
 ---
 
+### Task 5B: Configure Docker Reverse Proxy
+
+On **FRONTEND**, create a `docker-compose.yml` file in the home directory of the `cis527` user that will create the following infrastructure in Docker:
+
+* Set up two Docker containers running simple web servers.
+   * You may either use the [whoami](https://hub.docker.com/r/jwilder/whoami) image from the example, or set up two [Nginx](https://hub.docker.com/_/nginx) containers. If you use Nginx, you'll need to configure it to host different static content in each container (so it is easy to tell which one is which). See the documentation for how to set this up. Basically, there needs to be an obvious way to tell that you are reaching the correct container.
+   * These containers should only be connected to an internal Docker network. They should **NOT** have direct access to the internet, nor should they have any mapped ports.
+* Set up a reverse proxy in Docker to handle connections from the outside world (on port 80) to the appropriate containers.
+   * You may use either [Nginx](https://hub.docker.com/_/nginx), [Nginx-proxy](https://hub.docker.com/r/nginxproxy/nginx-proxy), or [Traefik Proxy](https://hub.docker.com/_/traefik) as shown in the lab module.
+   * This container should be connected to both the default Docker network as well as the internal network that is connected to the other two containers.
+   * You should configure one web server container to have hostname `cis527alpha.<yourdomain>.<tld>` and the other should have `cis527bravo.<yourdomain>.<tld>`. 
+   * Once configured, you should be able to visit those URLs in a browser and clearly see information coming from the correct Docker container.
+
+#### Resources
+
+* [Reverse Proxy]({{< relref "/5a-containers/08-reverse-proxy" >}})
+
+---
+
 ### Task 6: Public Key Certificates
 
-Obtain and install a public key certificate for your Apache server on both **FRONTEND** and **BACKEND**. The simplest way to do so is to use Certbot from Let's Encrypt.
+Obtain and install a public key certificate for your Apache server on **BACKEND**. The simplest way to do so is to use Certbot from Let's Encrypt.
 
 When you install the certificates, direct Certbot to redirect HTTP traffic to HTTPS for your server.
 
-Once it is complete, you can test your certificates using the same URLs given in Task 4 above. It should automatically redirect you from HTTP to HTTPS. You may have to clear the cache in your web browser if it does not work correctly. When you access the site, use your web browser to verify that the SSL certificate is present and valid.
+Once it is complete, you can test your certificates using the same URL given in Task 4 above. It should automatically redirect you from HTTP to HTTPS. You may have to clear the cache in your web browser if it does not work correctly. When you access the site, use your web browser to verify that the SSL certificate is present and valid.
+
+You **DO NOT** have to configure public key certificates on **FRONTEND** using a reverse proxy. This can be done, but it is a bit more difficult than using Certbot since it requires manual steps or additional configuration. Feel free to attempt it on your own!
 
 #### Resources
 
 * [Certbot](https://certbot.eff.org/) from the Electronic Frontier Foundation (EFF)
 * [How To Secure Apache with Let's Encrypt on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04) from DigitalOcean
-
----
-
-### Task 7: Load Balancer
-
-Create a load balancer in DigitalOcean to distribute HTTP traffic between your **FRONTEND** and **BACKEND** droplets on port 80 using the "Round Robin" algorithm. It does not have to handle SSL traffic or have a domain name assigned. When a user visits the IP address of the load balancer repeatedly, they should clearly see both the frontend and backend server homepages as the load balancer swaps between the two servers. 
-
-{{% notice info %}}
-
-_The DigitalOcean load balancers are a bit more expensive than the droplets we are using. Because of this, I recommend creating your load balancer last, and then immediately scheduling a grading time. Once your Lab 5 assignment has been graded, you are welcome to destroy the load balancer to avoid paying for it for very long. It will not be used beyond this assignment. --Russ_
-
-{{% /notice %}}
-
-#### Resources
-
-* [Load Balancers](https://www.digitalocean.com/products/load-balancer/) from DigitalOcean
 
 ---
 
