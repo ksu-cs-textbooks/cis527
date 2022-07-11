@@ -23,7 +23,7 @@ Also, to complete many of these items, you may need to refer to additional mater
 This lab may take anywhere from **1 - 6 hours** to complete, depending on your previous experience working with these tools and the speed of the hardware you are using. Configuring cloud systems is very time-consuming the first time through the process, but it will be much more familiar by the end of this course.
 
 {{% notice info %}}
-_This lab involves working with resources on the cloud, and will require you to sign up and pay for those services. In general, your total cost should be low, usually around $20 total. If you haven't already, you can sign up for the [GitHub Student Developer Pack](https://education.github.com/pack) to get discounts on most of these items. 
+_This lab involves working with resources on the cloud, and will require you to sign up and pay for those services. In general, your total cost should be low, usually around $20 total. If you haven't already, you can sign up for the [GitHub Student Developer Pack](https://education.github.com/pack) to get discounts on most of these items._
 
 _You can get $100 credit at DigitalOcean using this link: [https://try.digitalocean.com/freetrialoffer/](https://try.digitalocean.com/freetrialoffer/)_
 

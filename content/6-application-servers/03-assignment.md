@@ -163,22 +163,29 @@ For this step, you will install and configure a web application running on Apach
 
 If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages, and must support using a MySQL database on a separate host from the web server. In addition, the application must be installed manually - using pre-built images or Apt packages is not allowed here. Any approved application can be added to this list for you to use. **_You are not allowed to use phpBB, as that was demonstrated in the video in this module._**
 
-Once you have selected your application, perform the following configuration steps:
+Once you have selected your application, choose **ONE** of the following configuration options:
+
+##### Bare Hardware
 
 1. Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled **BACKEND** and configure an appropriate username and database for your application. You should also enable SSL/TLS encryption on connections to the server if it is not already enabled in MySQL (this should be enabled by default in Ubuntu 20.04). When creating the user account in MySQL, make sure it is set to log in from the private network IP address of **FRONTEND**.
 {{% notice tip %}}
 _You may need to configure MySQL to listen on an external network interface. Make sure you use the private network IP address only - it should not be listening on all network interfaces. In addition, you will also have to open ports on the firewall, and you should restrict access to those ports to only allow connections from the private network IP address of **FRONTEND**, just like the SSH server in Lab 5. Points will be deducted for having a MySQL server open to the internet! --Russ_
 {{% /notice %}}
-2. Configure a new virtual host in Apache for your web application. Also, add an appropriate A record to your domain name created in Lab 5 for this virtual host
+2. Install Apache and configure a new virtual host in Apache for your web application on **FRONTEND**. Also, add an appropriate A record to your domain name created in Lab 5 for this virtual host. You may shut down any Docker containers from Lab 5 that interfere with this configuration. 
 3. Install your web application on your Ubuntu droplet labelled **FRONTEND** following the application's installation instructions. When configuring the database for your application, you should have it use the MySQL database on **BACKEND** via the private network IP address. 
-4. Use CertBot to obtain an SSL certificate for your new application, and have it automatically configure redirection from HTTP to HTTPS.
+4. Of course, you may need to modify your firewall configuration to allow incoming connections to the database server! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
-Of course, you may need to modify your firewall configuration to allow incoming connections to the database server! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
+##### Docker
 
-Once these steps are complete, you should be able to visit your web application via HTTP, see it automatically redirect you to HTTPS, confirm that the SSL certificate is installed and valid, and then interact with the application in some meaningful way to confirm that the database connection is working. Of course, the two virtual hosts configured in Lab 5 should continue to work as well.
+1. Create two Docker containers on **FRONTEND**, one containing MySQL and another containing Wordpress. You may optionally add a container running phpMyAdmin if desired. The MySQL container must be isolated on its own internal network that cannot access the outside internet. 
+2. Add an appropriate A record to your domain name created in Lab 5 for this docker container. You will also need to update your reverse proxy to properly route traffic to the Wordpress container. 
+3. Make sure that Wordpress is properly configured via environment variables in Docker.
+
+Once these steps are complete, you should be able to visit your web application via HTTP and then interact with the application in some meaningful way to confirm that the database connection is working.
 
 #### Resources
 
+* [Docker Wordpress Image](https://hub.docker.com/_/wordpress)
 * [Install MySQL on Ubuntu 20.04 LTS Linux](https://linuxconfig.org/install-mysql-on-ubuntu-20-04-lts-linux) from LinuxConfig.org
 * [How To Install MySQL on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04) from DigitalOcean (follow instructions in guide above to configure  MySQL to listen on all network interfaces)
 * [How To Install and Secure phpMyAdmin on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04) from DigitalOcean (works for 20.04)
