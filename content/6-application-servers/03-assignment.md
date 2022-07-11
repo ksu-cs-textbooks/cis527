@@ -165,7 +165,7 @@ If you would like to work with an application not listed here, please contact th
 
 Once you have selected your application, choose **ONE** of the following configuration options:
 
-##### Bare Hardware
+##### Option 1: Bare Hardware
 
 1. Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled **BACKEND** and configure an appropriate username and database for your application. You should also enable SSL/TLS encryption on connections to the server if it is not already enabled in MySQL (this should be enabled by default in Ubuntu 20.04). When creating the user account in MySQL, make sure it is set to log in from the private network IP address of **FRONTEND**.
 {{% notice tip %}}
@@ -175,7 +175,7 @@ _You may need to configure MySQL to listen on an external network interface. Mak
 3. Install your web application on your Ubuntu droplet labelled **FRONTEND** following the application's installation instructions. When configuring the database for your application, you should have it use the MySQL database on **BACKEND** via the private network IP address. 
 4. Of course, you may need to modify your firewall configuration to allow incoming connections to the database server! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
-##### Docker
+##### Option 2: Docker
 
 1. Create two Docker containers on **FRONTEND**, one containing MySQL and another containing Wordpress. You may optionally add a container running phpMyAdmin if desired. The MySQL container must be isolated on its own internal network that cannot access the outside internet. 
 2. Add an appropriate A record to your domain name created in Lab 5 for this docker container. You will also need to update your reverse proxy to properly route traffic to the Wordpress container. 
