@@ -1,0 +1,47 @@
+baseURL = "https://ksu-cs-textbooks.github.io/cis527/"
+languageCode = "en-us"
+title = "CIS 527 Textbook"
+canonifyURLs = true
+
+# Change the default theme to be use when building the site with Hugo
+theme = "ksucs-hugo-theme"
+
+# googleAnalytics = "UA-72698101-1"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+page = [ "HTML", "Iframeable", "Teleprompter"]
+section = [ "HTML", "Iframeable", "Teleprompter"]
+
+[params]
+  editURL = "https://gitlab.cs.ksu.edu/cis-527/cis527online/-/tree/master/content"
+  description = "CIS 527 Textbook"
+  author = "Russell Feldhausen"
+  showVisitedLinks = false
+  themeVariant = "purple"
+  disableLanguageSwitchingButton = true
+  landingPageURL = "/"
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputFormats]
+  [outputFormats.Iframeable]
+    name = "Iframeable"
+    baseName = "embed"
+    mediaType = "text/html"
+    isPlainText = false
+    isHTML = true
+  [outputFormats.Teleprompter]
+    name = "Teleprompter"
+    baseName = "tele"
+    mediaType = "text/html"
+    isPlainText = false
+    isHtml = true
