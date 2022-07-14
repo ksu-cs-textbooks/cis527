@@ -1,0 +1,3784 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="CIS 527 Textbook">
+<meta name="author" content="Russell Feldhausen">
+
+    <link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/png">
+
+    <title>PowerShell Scripting :: CIS 527 Textbook</title>
+
+    
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/nucleus.css?1657816653" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/fontawesome-all.min.css?1657816653" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/hybrid.css?1657816653" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/featherlight.min.css?1657816653" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/perfect-scrollbar.min.css?1657816653" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/auto-complete.css?1657816653" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css?1657816653" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/theme.css?1657816653" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/tabs.css?1657816653" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/hugo-theme.css?1657816653" rel="stylesheet">
+    
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/theme-purple.css?1657816653" rel="stylesheet">
+    
+    
+    
+      <link href="https://textbooks.cs.ksu.edu/cis527/css/theme-iframe.css?1657816653" rel="stylesheet">
+    
+    
+
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/jquery-3.3.1.min.js?1657816653"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+
+     
+    
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body class="" data-url="https://textbooks.cs.ksu.edu/cis527/x-extras/05-powershell-scripting/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+CIS 527 | CC 510<br>System Administration<br><br>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="https://textbooks.cs.ksu.edu/cis527/js/lunr.min.js?1657816653"></script>
+<script type="text/javascript" src="https://textbooks.cs.ksu.edu/cis527/js/auto-complete.js?1657816653"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/textbooks.cs.ksu.edu\/cis527";
+    
+</script>
+<script type="text/javascript" src="https://textbooks.cs.ksu.edu/cis527/js/search.js?1657816653"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='https://textbooks.cs.ksu.edu/cis527/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/0-introduction/" title="Course Information" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/0-introduction/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>0. </b>Course Information
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-secure-workstations/" title="Secure Workstations" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/1-secure-workstations/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>1. </b>Secure Workstations
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-configuration-management/" title="Configuration Management" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/2-configuration-management/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>2. </b>Configuration Management
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-core-networking-services/" title="Core Networking Services" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/3-core-networking-services/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>3. </b>Core Networking Services
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-directory-services/" title="Directory Services" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/4-directory-services/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>4. </b>Directory Services
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-the-cloud/" title="The Cloud" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/5-the-cloud/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>5. </b>The Cloud
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5a-containers/" title="Containers" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/5a-containers/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>5.A </b>Containers
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-application-servers/" title="Application Servers" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>6. </b>Application Servers
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-backups-monitoring-devops/" title="Backups, Monitoring &amp; DevOps" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/7-backups-monitoring-devops/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>7. </b>Backups, Monitoring &amp; DevOps
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/8-final-project/" title="Final Project" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/8-final-project/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>8. </b>Final Project
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/9-wrap-up/" title="Wrap Up" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/9-wrap-up/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>9. </b>Wrap Up
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/x-extras/" title="Extras" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/x-extras/">
+        
+        
+          
+          <i class="fas fa-angle-down fa-fw"></i>
+          
+        
+          <b>X. </b>Extras
+          
+
+      </a>
+    
+      
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/x-extras/01-introduction/" title="Introduction" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/x-extras/01-introduction/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        1. Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/x-extras/02-ssh/" title="SSH" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/x-extras/02-ssh/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        2. SSH
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/x-extras/03-bash-scripting/" title="Bash Scripting" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/x-extras/03-bash-scripting/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        3. Bash Scripting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/x-extras/04-cron-linux-scheduled-tasks/" title="Cron (Linux Scheduled Tasks)" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/x-extras/04-cron-linux-scheduled-tasks/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        4. Cron (Linux Scheduled Tasks)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/x-extras/05-powershell-scripting/" title="PowerShell Scripting" class="dd-item active">
+        <a href="https://textbooks.cs.ksu.edu/cis527/x-extras/05-powershell-scripting/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        5. PowerShell Scripting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/x-extras/06-windows-subsystem-for-linux/" title="Windows Subsystem for Linux" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/x-extras/06-windows-subsystem-for-linux/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        6. Windows Subsystem for Linux
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/x-extras/07-git/" title="Git" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/x-extras/07-git/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        7. Git
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/y-announcements/" title="Announcements" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/y-announcements/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>Y. </b>Announcements
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/z-instructor-resources/" title="Instructor Resources" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/z-instructor-resources/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>Z. </b>Instructor Resources
+          
+
+      </a>
+    
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built using <a href="http://gohugo.io/">Hugo</a> and <a href="https://github.com/russfeld/ksucs-hugo-theme">ksucs-hugo-theme</a>.</p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin: .5rem auto" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                  <div id="top-github-link">
+                    <a id="themelink" class="github-link" title='Toggle Light or Dark Mode' href="#">
+                      <i class="fas fa-moon"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                    <a class="github-link" title='Teleprompter View' href="tele.html" target="blank">
+                      <i class="fas fa-tv"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                    <a class="github-link" title='Embed this page' href="embed.html" target="blank">
+                      <i class="fas fa-expand-arrows-alt"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                
+                  
+                  
+                  
+                    <a class="github-link" title='Edit this page' href="https://gitlab.cs.ksu.edu/cis-527/cis527online/-/tree/master/contentx-extras/05-powershell-scripting.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                  
+                
+                  </div>
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://textbooks.cs.ksu.edu/cis527/'>Homepage</a> > <a href='https://textbooks.cs.ksu.edu/cis527/x-extras/'>Extras</a> > PowerShell Scripting
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/j8vDSs2mDeM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h4 id="resources">Resources</h4>
+<ul>
+<li><a href="https://technet.microsoft.com/en-us/library/hh551144.aspx" target="_blank">Windows PowerShell: Scripting Crash Course</a> from Microsoft TechNet</li>
+<li><a href="https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/ise/how-to-write-and-run-scripts-in-the-windows-powershell-ise?view=powershell-6" target="_blank">How to Write and Run Scripts in the Windows PowerShell ISE</a> from Microsoft</li>
+<li><a href="https://blog.netwrix.com/2018/02/21/windows-powershell-scripting-tutorial-for-beginners/" target="_blank">Windows PowerShell Scripting Tutorial for Beginners</a> from Netwrix</li>
+</ul>
+<h4 id="video-transcript">Video Transcript</h4>
+<p>This video introduces the Windows PowerShell Integrated Scripting Environment (ISE) and covers the basics for creating and running your own scripts in Windows PowerShell.</p>
+<p>Before we begin, we must change one system setting to allow unsigned PowerShell scripts to run. To do this, you&rsquo;ll need to open a PowerShell window using the Run as Administrator option, and then enter the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Set-ExecutionPolicy Unrestricted
+</span></span></code></pre></div><p>However, be aware that this makes your system a bit more vulnerable. If you or a malicious program tries to run a malicious PowerShell script that is unsigned, the system will not try to stop you. It would be a very rare occurrence, but it is something to be aware of.</p>
+<p>Now, let&rsquo;s open the PowerShell ISE to start writing scripts. To find it, simply search for PowerShell ISE on your Start Menu. It should be included by default on all versions of Windows 10.</p>
+<p>When you first open the PowerShell ISE, you may have to click the Script button in the upper-right corner of the window to view both the scripting pane and the command window. To write your scripts, you can simply write the text in the upper window, then save the file and run the program using the Run script button on the top toolbar. You can also run the script in the command window below.</p>
+<p>To begin, let&rsquo;s take a look at a simple Hello World script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Write-Host <span style="color:#e6db74">&#34;Hello World&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span>
+</span></span></code></pre></div><p>This script should be pretty self-explanatory. The <code>Write-Host</code> command simply displays text on the terminal, and the return line ends the script. As with any programming language, it is good practice to include a return at the end of your script, but it is not necessarily required.</p>
+<p>Let&rsquo;s look at a more advanced script to see more features of the Windows PowerShell scripting language.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">Param</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">[string]</span>$user
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ( <span style="color:#f92672">-not</span> ($user)){
+</span></span><span style="display:flex;"><span>    Write-Host <span style="color:#e6db74">&#34;Usage: batman.ps1 &lt;name&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ($user.CompareTo(<span style="color:#e6db74">&#34;Batman&#34;</span>) <span style="color:#f92672">-eq</span> 0){
+</span></span><span style="display:flex;"><span>    Write-Host <span style="color:#e6db74">&#34;Hello Mr. Wayne&#34;</span>
+</span></span><span style="display:flex;"><span>}<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> ($user.CompareTo(<span style="color:#e6db74">&#34;Robin&#34;</span>) <span style="color:#f92672">-eq</span> 0){
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;Welcome back Mr. Grayson&#34;</span>
+</span></span><span style="display:flex;"><span>    }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;Intruder alert!&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span>
+</span></span></code></pre></div><p>At the top of this script, there is a special <code>Param</code> section. In PowerShell, any parameters expected from the user must be declared here, with the data type in square brackets (<code>[</code> and <code>]</code>), followed by the variable name prefixed with a dollar sign <code>$</code>. In this script, we have declared one command line parameter <code>$user</code> of type string.</p>
+<p>Below that, we have the first if statement:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ( <span style="color:#f92672">-not</span> ($user)){
+</span></span><span style="display:flex;"><span>    Write-Host <span style="color:#e6db74">&#34;Usage: batman.ps1 &lt;name&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This will check to see if the <code>$user</code> parameter was provided. If it was not, it will print an error message and return to end the script.</p>
+<p>The next if statement:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ($user.CompareTo(<span style="color:#e6db74">&#34;Batman&#34;</span>) <span style="color:#f92672">-eq</span> 0){
+</span></span><span style="display:flex;"><span>    Write-Host <span style="color:#e6db74">&#34;Hello Mr. Wayne&#34;</span>
+</span></span><span style="display:flex;"><span>}<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> ($user.CompareTo(<span style="color:#e6db74">&#34;Robin&#34;</span>) <span style="color:#f92672">-eq</span> 0){
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;Welcome back Mr. Grayson&#34;</span>
+</span></span><span style="display:flex;"><span>    }<span style="color:#66d9ef">else</span>{
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;Intruder alert!&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>performs a string comparison between the <code>$user</code> parameter and the string &ldquo;Batman&rdquo;, if the comparison returns <code>0</code>, they are equal. This is very similar to other string comparison functions in C# and Java. One interesting item to note here is the use of <code>-eq</code> to denote equality. For some reason, PowerShell uses short textual comparison operators instead of the common symbols for boolean comparisons. I really don&rsquo;t know why that particular design decision was made, but I encourage you to look at the documentation to see what options are available for comparison.</p>
+<p>Here is another simple script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">Param</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">[string]</span>$path
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$files = Get-ChildItem $path
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">foreach</span>($file <span style="color:#66d9ef">in</span> $files){
+</span></span><span style="display:flex;"><span>    Write-Host $file.name
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This is an example of a simple looping script. In this script, it will get a path from the user as an argument, then store a list of all the child items on that path in <code>$files</code> variable. Then, it will use a &ldquo;foreach&rdquo; loop to print out the name of each of those files. Thankfully, if you&rsquo;ve done any programming in the .NET family of languages, most of this syntax will be very familiar to you.</p>
+<p>You can also use PowerShell to create a simple menu for your script. This is a bit more involved than the example from the Linux Bash scripting video, but it is pretty straightforward:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$title = <span style="color:#e6db74">&#34;Select Options&#34;</span>
+</span></span><span style="display:flex;"><span>$message = <span style="color:#e6db74">&#34;Choose an option to perform&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$build = New-Object System.Management.Automation.Host.ChoiceDescription <span style="color:#e6db74">&#34;&amp;Build&#34;</span>, <span style="color:#e6db74">&#34;Build the project&#34;</span>
+</span></span><span style="display:flex;"><span>$run = New-Object System.Management.Automation.Host.ChoiceDescription <span style="color:#e6db74">&#34;&amp;Run&#34;</span>, <span style="color:#e6db74">&#34;Run the project&#34;</span>
+</span></span><span style="display:flex;"><span>$clean = New-Object System.Management.Automation.Host.ChoiceDescription <span style="color:#e6db74">&#34;&amp;Clean&#34;</span>, <span style="color:#e6db74">&#34;Clean the project&#34;</span>
+</span></span><span style="display:flex;"><span>$quit = New-Object System.Management.Automation.Host.ChoiceDescription <span style="color:#e6db74">&#34;&amp;Quit&#34;</span>, <span style="color:#e6db74">&#34;Quit&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$options = <span style="color:#66d9ef">[System.Management.Automation.Host.ChoiceDescription[]]</span>($build, $run, $clean, $quit)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$result = $host.ui.PromptForChoice($title, $message, $options, 0)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">switch</span> ($result)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    0 {
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;You selected Build&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    1 {
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;You selected Run&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    2 {
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;You selected Clean&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    3 {
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;You selected Quit&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>At the top of the script, the first two variables define the text that will be shown as the title of the menu and the message displayed to the user before the menu options. The next four variables define the menu choices available. Looking at the first one, the <code>&amp;Build</code> gives the title of the option, with the ampersand <code>&amp;</code> before the &lsquo;B&rsquo; indicating which letter should be the shortcut to choose that option. The next string gives a longer description of the option. Finally, we put it all together in the <code>$options</code> variable as an array of available options, then use the PromptForChoice function to display the menu to the user, storing the user&rsquo;s choice in the <code>$result</code> variable. Finally, we use a simple &ldquo;switch&rdquo; statement to determine which option the user chose and then perform that task.</p>
+<p>If you are having trouble understanding what each part does, I recommend just running the script once and then matching up the text displayed in the menu with the script&rsquo;s code. It may seem a bit daunting at first, but it is actually pretty simple overall. As a quick aside, if you run this on a system with a GUI, you may get an actual pop-up menu instead of a textual menu, but rest assured that it will display the textual version on system&rsquo;s without a GUI.</p>
+<p>Finally, here is a quick script demonstrating how to get user input directly within the script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$name = Read-Host <span style="color:#e6db74">&#34;Input your name and press [ENTER]&#34;</span>
+</span></span><span style="display:flex;"><span>Write-Host <span style="color:#e6db74">&#34;Welcome $name!&#34;</span>
+</span></span></code></pre></div><p>It&rsquo;s as simple as that! Of course, that is just a very small taste of what PowerShell is capable of. Hopefully this introduction gives you some idea of what is available, but I encourage you to consult the online documentation for PowerShell to learn even more about it.</p>
+
+
+<script>
+
+	 
+
+	iframeString = (height, uri) => `<iframe style="width: 100%; height: ${height}px; border: none;" src="${uri}"></iframe>`
+
+
+	function updateClipboard(newClip) {
+		navigator.clipboard.writeText(newClip).then(function() {
+		}, function() {
+			alert("clipboard failed");
+		});
+	  }	  
+
+	function onLoad() {
+		navigator.permissions.query({name: "clipboard-write"}).then(result => {
+			let uri = window.location.href;
+			let height = document.documentElement.scrollHeight;
+			if (result.state == "granted" || result.state == "prompt") {
+				updateClipboard(iframeString(height, uri));
+			}
+			else{
+				navigator.permissions.query({name:'clipboard-write'}).then(function(result) {
+					if (result.state == "granted" || result.state == "prompt") {
+						updateClipboard(iframeString(height, uri));
+					}
+				  });
+			}
+		  });
+	}
+	window.onload = onLoad();
+
+</script>
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="https://textbooks.cs.ksu.edu/cis527/x-extras/04-cron-linux-scheduled-tasks/" title="Cron (Linux Scheduled Tasks)"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="https://textbooks.cs.ksu.edu/cis527/x-extras/06-windows-subsystem-for-linux/" title="Windows Subsystem for Linux" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/clipboard.min.js?1657816653"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/perfect-scrollbar.min.js?1657816653"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/perfect-scrollbar.jquery.min.js?1657816653"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/jquery.sticky.js?1657816653"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/featherlight.min.js?1657816653"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js?1657816653"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/modernizr.custom-3.6.0.js?1657816653"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/learn.js?1657816653"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/hugo-learn.js?1657816653"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/themer.js?1657816653"></script>
+
+    
+        
+            <script src="https://textbooks.cs.ksu.edu/cis527/mermaid/mermaid.js?1657816653"></script>
+        
+        <script>
+            var mer_theme = localStorage.getItem('theme');
+            if(mer_theme !== 'dark'){
+                mer_theme = 'neutral'
+            }
+            mermaid.initialize({ 
+                startOnLoad: true,
+                'securityLevel': 'loose', 
+                'theme': mer_theme });
+        </script>
+    
+
+    
+
+    
+    
+
+    
+<script 
+src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js">
+</script>
+<script 
+src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownKatex.js">
+</script>
+<script 
+src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownHighlight.js">
+</script>
+<script>quizdown.register(quizdownHighlight).register(quizdownKatex).init()</script> 
+  </body>
+</html>
+
+
+
+

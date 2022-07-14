@@ -1,0 +1,101 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 6 - Database Servers</p>
+</section>
+<section>
+	<h3>Database Server</h3>
+	<ul>
+		<li>aka Database Management System (DBMS)</li>
+		<li>Stores & Retrieves Data</li>
+		<li>May Use Blocks or Files for Storage</li>
+		<li>Unique Performance & Storage Needs</li>
+		<li>Backups & Replication</li>
+	</ul>
+</section>
+<section>
+	<img class="plain" style="height: 40%" src="../../images/mysql_wiki.svg">
+	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/MySQL">Wikimedia Commons</a></p>
+	<img class="plain" style="height: 40%" src="../../images/maria_wiki.svg">
+	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/MariaDB">Wikimedia Commons</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/postgres_logo.png">
+	<p class="imagecredit">Image Source: <a href="https://www.unixmen.com/postgresql-replication-tutorial/">Unixmen</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/mssql_logo.png">
+	<p class="imagecredit">Image Source: <a href="https://clipart.info/microsoft-sql-server-logo-png-4966">Clipart.info</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/oracle_logo.png">
+	<p class="imagecredit">Image Source: <a href="http://allvectorlogo.com/oracle-database-logo/">All Vector Logo</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/mongo_logo.jpg">
+	<p class="imagecredit">Image Source: <a href="https://www.mongodb.com/brand-resources">MongoDB</a></p>
+</section>
+<section>
+	<h3>Performance Considerations</h3>
+	<ul>
+		<li>RAM Size - Prevent Paging</li>
+		<li>CPU Speed - Indexing & Querying</li>
+		<li>File System - Read & Write</li>
+		<li>Network Throughput</li>
+		<li>Log File Location</li>
+		<li>Monitoring</li>
+	</ul>
+</section>
+<section>
+	<h3>Security</h3>
+	<ul>
+		<li>Network Connection</li>
+		<li>External Access</li>
+		<li>Encrypt Data At Rest</li>
+		<li>Encrypt Live Data</li>
+		<li>Exfiltration</li>
+	</ul>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

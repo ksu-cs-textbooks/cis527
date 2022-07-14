@@ -1,0 +1,96 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 1 - Windows 10 Processes & Services</p>
+</section>
+<section>
+  <h3>Process</h3>
+  <ul>
+    <li>Any Program being Executed is a Process</li>
+    <li>Processes Can Have Multiple <b>Threads</b> of Execution</li>
+    <li>Consumes System Resources (RAM, CPU Time)</li>
+  </ul>
+</section>
+<section>
+  <h3>Process Information</h3>
+  <ul>
+    <li><b>PID</b> - Process Identifier</li>
+    <li><b>Memory Usage</b></li>
+    <li><b>Image Path</b> - Location of Executable File</li>
+    <li><b>Command Line</b> - Options and Flags</li>
+    <li><b>Ports</b> - Networking Information</li>
+    <li><b>Description</b></li>
+  </ul>
+</section>
+<section>
+  <h3>Service</h3>
+  <ul>
+    <li>Program that Runs in the Background</li>
+    <li>Managed by the Operating System, not the User</li>
+    <li>Performs Important Functions Automatically</li>
+    <li>Consumes System Resources</li>
+  </ul>
+</section>
+<section>
+  <h3>Pseudo Accounts</h3>
+  <ul>
+    <li><b>LocalSystem</b> - System-Level Tasks & Services</li>
+    <li><b>LocalService</b> - Fewer Permissions than LocalSystem</li>
+    <li><b>NetworkService</b> - Fewer Permissions than LocalService, but has Network Access</li>
+  </ul>
+</section>
+<section>
+  <h3>Service Host Process</h3>
+  <h5>svchost.exe</h5>
+  <ul>
+    <li>Host Process for Many Services</li>
+    <li>Conserve System Resources</li>
+    <li>Targeted by Malware & Viruses</li>
+  </ul>
+</section>
+<section>
+  <h3>Next: Installing Software</h3>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

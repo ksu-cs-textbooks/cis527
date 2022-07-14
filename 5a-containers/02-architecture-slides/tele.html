@@ -1,0 +1,88 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 5.A - Container Architecture</p>
+</section>
+<section>
+	<img class="stretch plain" src="https://textbooks.cs.ksu.edu/cis527/images/5a/netapp-containers-vms.avif">
+	<p class="imagecredit">Image Source: <a href="https://www.netapp.com/blog/containers-vs-vms/">NetApp</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="https://textbooks.cs.ksu.edu/cis527/images/5a/docker_logo.svg">
+	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/File:Docker_logo.svg">Wikipedia</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="https://textbooks.cs.ksu.edu/cis527/images/5a/docker_architecture.svg">
+	<p class="imagecredit">Image Source: <a href="https://docs.docker.com/get-started/overview/">Docker</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="https://textbooks.cs.ksu.edu/cis527/images/5a/container-layers.jpg">
+	<p class="imagecredit">Image Source: <a href="https://docs.docker.com/storage/storagedriver/">Docker</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="https://textbooks.cs.ksu.edu/cis527/images/5a/sharing-layers.jpg">
+	<p class="imagecredit">Image Source: <a href="https://docs.docker.com/storage/storagedriver/">Docker</a></p>
+</section>
+<section>
+	<h3>Why Containers?</h3>
+	<ul>
+		<li>Smaller Images</li>
+		<li>Decouple Software from OS</li>
+		<li>Portability</li>
+		<li>Scalability</li>
+		<li>Orchestration</li>
+		<li>Sandboxing</li>
+	</ul>
+</section>
+<section>
+	<h3>As of April 2021:</h3>
+	<img class="stretch plain" src="https://textbooks.cs.ksu.edu/cis527/images/5a/docker-stats-2021.webp">
+	<p class="imagecredit">Image Source: <a href="https://www.docker.com/blog/docker-index-shows-continued-massive-developer-adoption-and-activity-to-build-and-share-apps-with-docker/">Docker</a></p>
+</section>
+<section>
+	<h3>As of October 2021:</h3>
+	<img class="stretch plain" src="https://textbooks.cs.ksu.edu/cis527/images/5a/2021-top-containers-datadog.avif">
+	<p class="imagecredit">Image Source: <a href="https://www.datadoghq.com/container-report/">Datadog</a></p>
+</section>
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

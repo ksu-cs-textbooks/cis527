@@ -1,0 +1,117 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 5 - Scaling & High Availability</p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/scaling_so.png">
+	<p class="imagecredit">Image Source: <a href="https://stackoverflow.com/questions/11707879/difference-between-scaling-horizontally-and-vertically-for-databases">Nati Shalom on Stack Overflow</a></p>
+</section>
+<section>
+	<h3>Scaling</h3>
+	<ul>
+		<li><b>Horizontal</b> - Add More Droplets & Load Balancer</li>
+		<li><b>Vertical</b> - Resize Droplet; Requires Downtime or Existing Infrastructure</li>
+	</ul>
+</section>
+<section>
+	<h3>Horizontal Scaling</h3>
+	<img class="stretch plain" src="../../images/doproxy_do.png">
+	<p class="imagecredit">Image Source: <a href="https://www.digitalocean.com/community/tutorials/how-to-automate-the-scaling-of-your-web-application-on-digitalocean-1604">DigitalOcean</a></p>
+</section>
+<section>
+	<h3>AWS Auto Scaling</h3>
+	<img class="stretch plain" src="../../images/scaling_aws.png">
+	<p class="imagecredit">Image Source: <a href="https://aws.amazon.com/autoscaling/">Amazon Web Services</a></p>
+</section>
+<section>
+	<h3>High Availability</h3>
+	<img class="stretch plain" src="../../images/high_available_do.gif">
+	<p class="imagecredit">Image Source: <a href="https://www.digitalocean.com/community/tutorials/what-is-high-availability">DigitalOcean</a></p>
+</section>
+<section>
+	<h3>Case Study</h3>
+	<img class="stretch plain" src="../../images/netflix_logo.png">
+	<p class="imagecredit">Image Source: <a href="https://www.netflix.com">Netflix</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/netflix_hours.png">
+	<p class="imagecredit">Image Source: <a href="https://media.netflix.com/en/company-blog/completing-the-netflix-cloud-migration">Netflix</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/netflix_daily.png">
+	<p class="imagecredit">Image Source: <a href="https://medium.com/netflix-techblog/scryer-netflixs-predictive-auto-scaling-engine-a3f8fc922270">Netflix Tech Blog</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/netflix_scryer.png">
+	<p class="imagecredit">Image Source: <a href="https://medium.com/netflix-techblog/scryer-netflixs-predictive-auto-scaling-engine-a3f8fc922270">Netflix Tech Blog</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/netflix_scaled.png">
+	<p class="imagecredit">Image Source: <a href="https://medium.com/netflix-techblog/scryer-netflixs-predictive-auto-scaling-engine-a3f8fc922270">Netflix Tech Blog</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/netflix_cache.jpg">
+	<p class="imagecredit">Image Source: <a href="http://highscalability.com/blog/2017/12/11/netflix-what-happens-when-you-press-play.html">High Scalability</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/netflix_simian.png">
+	<p class="imagecredit">Image Source: <a href="http://brookscanavesi.com/blog/mobile-app-development/technology-trends/chaos-engineering-breaking-things-purpose/">Brooks Canavesi</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/netflix_chaos.png">
+	<p class="imagecredit">Image Source: <a href="https://medium.com/netflix-techblog/chaos-engineering-upgraded-878d341f15fa">Netflix Tech Blog</a></p>
+</section>
+<section>
+	<h3>Cloud Design Considerations</h3>
+	<ul>
+		<li>Scale Up or Scale Out?</li>
+		<li>Build Capacity Predictively or Reactively?</li>
+		<li>Design for High Availability?</li>
+		<li>Plan for Failures and Outages</li>
+		<li>Test Failover Procedures</li>
+	</ul>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

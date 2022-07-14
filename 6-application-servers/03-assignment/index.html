@@ -1,0 +1,3946 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.101.0" />
+    <meta name="description" content="CIS 527 Textbook">
+<meta name="author" content="Russell Feldhausen">
+
+    <link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/png">
+
+    <title>Assignment :: CIS 527 Textbook</title>
+
+    
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/nucleus.css?1657816652" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/fontawesome-all.min.css?1657816652" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/hybrid.css?1657816652" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/featherlight.min.css?1657816652" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/perfect-scrollbar.min.css?1657816652" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/auto-complete.css?1657816652" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css?1657816652" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/theme.css?1657816652" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/tabs.css?1657816652" rel="stylesheet">
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/hugo-theme.css?1657816652" rel="stylesheet">
+    
+    <link href="https://textbooks.cs.ksu.edu/cis527/css/theme-purple.css?1657816652" rel="stylesheet">
+    
+    
+    
+    
+
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/jquery-3.3.1.min.js?1657816652"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+
+     
+    
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+  
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body class="" data-url="https://textbooks.cs.ksu.edu/cis527/6-application-servers/03-assignment/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+
+CIS 527 | CC 510<br>System Administration<br><br>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="https://textbooks.cs.ksu.edu/cis527/js/lunr.min.js?1657816652"></script>
+<script type="text/javascript" src="https://textbooks.cs.ksu.edu/cis527/js/auto-complete.js?1657816652"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/textbooks.cs.ksu.edu\/cis527";
+    
+</script>
+<script type="text/javascript" src="https://textbooks.cs.ksu.edu/cis527/js/search.js?1657816652"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='https://textbooks.cs.ksu.edu/cis527/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/0-introduction/" title="Course Information" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/0-introduction/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>0. </b>Course Information
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-secure-workstations/" title="Secure Workstations" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/1-secure-workstations/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>1. </b>Secure Workstations
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-configuration-management/" title="Configuration Management" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/2-configuration-management/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>2. </b>Configuration Management
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-core-networking-services/" title="Core Networking Services" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/3-core-networking-services/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>3. </b>Core Networking Services
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-directory-services/" title="Directory Services" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/4-directory-services/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>4. </b>Directory Services
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-the-cloud/" title="The Cloud" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/5-the-cloud/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>5. </b>The Cloud
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5a-containers/" title="Containers" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/5a-containers/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>5.A </b>Containers
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-application-servers/" title="Application Servers" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/">
+        
+        
+          
+          <i class="fas fa-angle-down fa-fw"></i>
+          
+        
+          <b>6. </b>Application Servers
+          
+
+      </a>
+    
+      
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/01-introduction/" title="Introduction" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/01-introduction/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        1. Introduction
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/02-application-servers-overview/" title="Application Servers Overview" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/02-application-servers-overview/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        2. Application Servers Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/03-assignment/" title="Assignment" class="dd-item active">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/03-assignment/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        3. Assignment
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/04-file-servers-overview/" title="File Servers Overview" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/04-file-servers-overview/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        4. File Servers Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/05-windows-file-server/" title="Windows File Server" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/05-windows-file-server/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        5. Windows File Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/06-ubuntu-file-server/" title="Ubuntu File Server" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/06-ubuntu-file-server/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        6. Ubuntu File Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/07-web-servers-overview/" title="Web Servers Overview" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/07-web-servers-overview/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        7. Web Servers Overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/08-database-servers/" title="Database Servers" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/08-database-servers/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        8. Database Servers
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/09-windows-web-server/" title="Windows Web Server" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/09-windows-web-server/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        9. Windows Web Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/10-windows-web-application/" title="Windows Web Application" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/10-windows-web-application/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        10. Windows Web Application
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/11-ubuntu-web-server/" title="Ubuntu Web Server" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/11-ubuntu-web-server/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        11. Ubuntu Web Server
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/6-application-servers/12-ubuntu-web-application/" title="Ubuntu Web Application" class="dd-item ">
+        <a href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/12-ubuntu-web-application/">
+        <i class="fas fa-angle-down fa-fw" style="color: transparent;"></i>
+        12. Ubuntu Web Application
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        
+        </ul>
+      
+    </li>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-backups-monitoring-devops/" title="Backups, Monitoring &amp; DevOps" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/7-backups-monitoring-devops/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>7. </b>Backups, Monitoring &amp; DevOps
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/8-final-project/" title="Final Project" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/8-final-project/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>8. </b>Final Project
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/9-wrap-up/" title="Wrap Up" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/9-wrap-up/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>9. </b>Wrap Up
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/x-extras/" title="Extras" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/x-extras/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>X. </b>Extras
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/y-announcements/" title="Announcements" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/y-announcements/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>Y. </b>Announcements
+          
+
+      </a>
+    
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/z-instructor-resources/" title="Instructor Resources" class="dd-item
+        
+        
+        
+        ">
+      <a href="https://textbooks.cs.ksu.edu/cis527/z-instructor-resources/">
+        
+        
+          
+          <i class="fas fa-angle-right fa-fw"></i>
+          
+        
+          <b>Z. </b>Instructor Resources
+          
+
+      </a>
+    
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built using <a href="http://gohugo.io/">Hugo</a> and <a href="https://github.com/russfeld/ksucs-hugo-theme">ksucs-hugo-theme</a>.</p>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; margin: .5rem auto" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a>
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                  <div id="top-github-link">
+                    <a id="themelink" class="github-link" title='Toggle Light or Dark Mode' href="#">
+                      <i class="fas fa-moon"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                    <a class="github-link" title='Teleprompter View' href="tele.html" target="blank">
+                      <i class="fas fa-tv"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                    <a class="github-link" title='Embed this page' href="embed.html" target="blank">
+                      <i class="fas fa-expand-arrows-alt"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                
+                  
+                  
+                  
+                    <a class="github-link" title='Edit this page' href="https://gitlab.cs.ksu.edu/cis-527/cis527online/-/tree/master/content6-application-servers/03-assignment.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text"></span>
+                    </a>
+                  
+                
+                  </div>
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://textbooks.cs.ksu.edu/cis527/'>Homepage</a> > <a href='https://textbooks.cs.ksu.edu/cis527/6-application-servers/'>Application Servers</a> > Assignment
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#lab-6---application-servers">Lab 6 - Application Servers</a></li>
+        <li><a href="#task-0-droplets--virtual-machines">Task 0: Droplets &amp; Virtual Machines</a></li>
+        <li><a href="#task-1-windows-file-server">Task 1: Windows File Server</a></li>
+        <li><a href="#task-2-windows-group-policy">Task 2: Windows Group Policy</a></li>
+        <li><a href="#task-3-ubuntu-file-server">Task 3: Ubuntu File Server</a></li>
+        <li><a href="#task-4-ubuntu-drive-mapping">Task 4: Ubuntu Drive Mapping</a></li>
+        <li><a href="#task-5-windows-web-application-server">Task 5: Windows Web Application Server</a></li>
+        <li><a href="#task-6-ubuntu-web-application-server">Task 6: Ubuntu Web Application Server</a></li>
+        <li><a href="#task-7-make-snapshots">Task 7: Make Snapshots</a></li>
+        <li><a href="#task-8-schedule-a-grading-time">Task 8: Schedule A Grading Time</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Assignment
+            </h1>
+          
+
+        
+
+
+<h3 id="lab-6---application-servers">Lab 6 - Application Servers</h3>
+<h4 id="instructions">Instructions</h4>
+<p>Create <strong>two</strong> cloud systems and <strong>four</strong> virtual machines meeting the specifications given below. The best way to accomplish this is to treat this assignment like a checklist and check things off as you complete them.</p>
+<p>If you have any questions about these items or are unsure what they mean, please contact the instructor. Remember that part of being a system administrator (and a software developer in general) is working within vague specifications to provide what your client is requesting, so eliciting additional information is a very necessary skill.</p>
+
+<div class="notices note" ><p>Note</p><p><em>To be more blunt - this specification may be purposefully designed to be vague, and it is your responsibility to ask questions about any vagaries you find. Once you begin the grading process, you cannot go back and change things, so be sure that your machines meet the expected specification regardless of what is written here. &ndash;Russ</em></p>
+</div>
+
+<p>Also, to complete many of these items, you may need to refer to additional materials and references not included in this document. System administrators must learn how to make use of available resources, so this is a good first step toward that. Of course, there&rsquo;s always <a href="http://www.google.com" target="_blank">Google</a>!</p>
+<h4 id="time-expectation">Time Expectation</h4>
+<p>This lab may take anywhere from <strong>1 - 6 hours</strong> to complete, depending on your previous experience working with these tools and the speed of the hardware you are using. Configuring application servers is very time-consuming the first time through the process, but it will be much more familiar by the end of this course.</p>
+
+<div class="notices info" ><p>Info</p><p><em>This lab involves working with resources on the cloud, and will require you to sign up and pay for those services. In general, your total cost should be low, usually around $20 total. If you haven&rsquo;t already, you can sign up for the <a href="https://education.github.com/pack" target="_blank">GitHub Student Developer Pack</a> to get discounts on most of these items. If you have any concerns about using these services, please contact me to make alternative arrangements! &ndash;Russ</em></p>
+</div>
+
+<hr>
+<h3 id="task-0-droplets--virtual-machines">Task 0: Droplets &amp; Virtual Machines</h3>
+<p>For this lab, you will continue to use the two DigitalOcean droplets from Lab 5, labelled <strong>FRONTEND</strong> and <strong>BACKEND</strong>, respectively. This assignment assumes you have completed all steps in Lab 5 successfully; if not, you should consult with the instructor to resolve any existing issues before continuing.</p>
+<p>You will also need a Windows Server 2019 VM configured as an Active Directory Domain Controller, along with a Windows 10 VM added as a client computer on that domain. In general, you may continue to use the resources created in Lab 4, but you may choose to recreate them as directed in Lab 4 if desired.</p>
+<p>In addition, you will need two Ubuntu VMs, one labelled <strong>SERVER</strong> and the other labelled <strong>CLIENT</strong>. You may continue to use the Ubuntu VMs from Labs 3 and 4, or create new VMs for this lab. This lab does not assume any existing setup on these VMs beyond what is specified in Labs 1 and 2. You should also make sure your Ubuntu VM labelled <strong>SERVER</strong> has a static IP address.</p>
+<hr>
+<h3 id="task-1-windows-file-server">Task 1: Windows File Server</h3>
+<p>Configure a file server on your Windows Server 2019 VM. It should have the following features:</p>
+<ul>
+<li>A shared folder on the server named <code>public</code> and stored at <code>C:\public</code> that should be accessible by all users on your domain</li>
+<li>A shared folder on the server named <code>admins</code> and stored at <code>C:\admins</code> that should only be accessible to users in the Domain Admins group in your domain</li>
+</ul>
+
+<div class="notices tip" ><p>Tip</p><p>As of Summer 2021, there was a bug in Windows Server that prevented the built-in Administrator account from changing some settings, specifically network settings, once the server is promoted to a domain controller. This can make it difficult to fix networking issues in this or future labs. The easy fix for this is to copy the Administrator account in the Active Directory User and Computers tool and give the new copy a different name, such as &ldquo;Admin&rdquo;, and then use that account to log on to the server.</p>
+</div>
+
+<h4 id="resources">Resources</h4>
+<ul>
+<li><a href="https://www.tactig.com/share-files-folders-windows-server-2016/" target="_blank">How to Share Files and Folders in Windows Server 2016</a> from Tactig (should work for Server 2019)</li>
+</ul>
+<hr>
+<h3 id="task-2-windows-group-policy">Task 2: Windows Group Policy</h3>
+<p>Configure group policy objects (GPOs) on your Windows Active Directory domain to perform the following tasks:</p>
+<ul>
+<li>All domain users should get the <code>public</code> folder automatically mapped to the <code>Z:\</code> drive on any system they log into.</li>
+<li>Users in the <code>Domain Admins</code> group should also get the <code>admins</code> folder automatically mapped to the <code>Y:\</code> drive on any system they log into.
+<ul>
+<li>That drive <strong>should not</strong> be mapped for any user that is not a member of the <code>Domain Admins</code> group.</li>
+</ul>
+</li>
+</ul>
+
+<div class="notices tip" ><p>Tip</p><p><em>Pay close attention to how you attach and target these GPOs in the domain. You can use the domain Administrator account and the other domain account created in Lab 4 to test these on your Windows 10 client. &ndash;Russ</em></p>
+</div>
+
+<h4 id="resources-1">Resources</h4>
+<ul>
+<li><strong><a href="https://textbooks.cs.ksu.edu/cis527/4-directory-services/06-windows-group-policy/">Windows Group Policy</a></strong></li>
+<li><a href="https://activedirectorypro.com/map-network-drives-with-group-policy/" target="_blank">How to Map Network Drives with Group Policy (Complete Guide)</a> by Robert Allen on Active Directory Pro</li>
+<li><a href="https://community.spiceworks.com/how_to/79280-mapping-network-drives-folders-via-group-policy" target="_blank">How to: Mapping Network Drives/Folders via Group Policy</a> on Spiceworks Community</li>
+</ul>
+<hr>
+<h3 id="task-3-ubuntu-file-server">Task 3: Ubuntu File Server</h3>
+<p>Configure a file server using Samba on your Ubuntu VM labelled <strong>SERVER</strong>. It should have the following features:</p>
+<ul>
+<li>A shared folder on the server named <code>public</code> and stored at <code>/public</code> that should be accessible by all Samba users</li>
+<li>Enable shared home directories in Samba using the default <code>[homes]</code> share.</li>
+<li>Enable the <code>cis527</code> user in the Samba password database. It should use the same <code>cis527_linux</code> password as the actual <code>cis527</code> account.</li>
+</ul>
+<p>Of course, you may need to modify your firewall configuration to allow incoming connections to the file server! <strong>If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab</strong></p>
+<h4 id="resources-2">Resources</h4>
+<ul>
+<li><a href="https://ubuntu.com/server/docs/samba-file-server" target="_blank">File Server</a> from Ubuntu Documentation</li>
+<li><a href="https://help.ubuntu.com/community/Samba/SambaServerGuide" target="_blank">Samba Server Guide</a> from Ubuntu Community Help Wiki</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04" target="_blank">How to Set Up a Samba Share for a Small Organization on Ubuntu 16.04</a> from DigitalOcean (works for 20.04)</li>
+<li><a href="https://websiteforstudents.com/access-user-home-folders-via-samba-on-ubuntu-17-04-17-10/" target="_blank">Access User&rsquo;s Home Folders via Samba on Ubuntu 17.04</a> from Website for Students (works for 20.04)</li>
+<li><a href="https://linuxconfig.org/how-to-configure-samba-server-share-on-ubuntu-20-04-focal-fossa-linux" target="_blank">How to Configure Samba Server Share on Ubuntu 20.04 Focal Fossa Linux</a> from LinuxConfig.org</li>
+</ul>
+<hr>
+<h3 id="task-4-ubuntu-drive-mapping">Task 4: Ubuntu Drive Mapping</h3>
+<p>Configure your Ubuntu VM labelled <strong>CLIENT</strong> to automatically access the Samba shares in the following manner:</p>
+<ul>
+<li>Add an entry to <code>\etc\fstab</code> to automatically mount the <code>public</code> folder to <code>/mnt/public</code> at system boot. It should be readable and writable by all users.</li>
+<li>Use <code>libpam-mount</code> to automatically mount a user&rsquo;s <code>homes</code> share from the server at login. This only needs to work for the <code>cis527</code> user, as that user should be present on both systems and Samba.</li>
+</ul>
+
+<div class="notices note" ><p>Note</p><p><em>To be honest, this last part can be pretty tricky. I recommend following the instructions in this video in this module very carefully. If you have any issues, you can enable debugging and review <code>/var/log/syslog</code> for errors. &ndash;Russ</em></p>
+</div>
+
+<h4 id="resources-3">Resources</h4>
+<ul>
+<li><a href="https://wiki.ubuntu.com/MountWindowsSharesPermanently" target="_blank">Mount Windows Shares Permanently</a> from Ubuntu Wiki</li>
+<li><a href="https://askubuntu.com/questions/434358/how-do-i-access-windows-shares-from-bash" target="_blank">How Do I Access Windows Shares from Bash</a> on Ask Ubuntu Forums</li>
+<li><a href="https://ubuntuforums.org/showthread.php?t=1375653" target="_blank">Use of pam-mount to Mount Home from Server</a> on Ubuntu Forums</li>
+<li><a href="http://manpages.ubuntu.com/manpages/bionic/man8/pam_mount.8.html" target="_blank">pam_mount</a> on Ubuntu Manpages</li>
+<li><a href="http://manpages.ubuntu.com/manpages/bionic/man5/pam_mount.conf.5.html" target="_blank">pam_mount.conf</a> on Ubuntu Manpages</li>
+</ul>
+<hr>
+<h3 id="task-5-windows-web-application-server">Task 5: Windows Web Application Server</h3>
+<p>For this task, you will install and configure a .NET web application for IIS on your Windows Server 2016 VM. First, choose an application to install from the following list:</p>
+<ul>
+<li><a href="https://blogengine.io/support/get-started/" target="_blank">BlogEngine.NET</a>
+<ul>
+<li><strong>NOTE</strong>: If you choose BlogEngine.NET, make sure you read their site carefully. You don&rsquo;t have to sign up for anything on their site to download the software itself, but the download link tends to be hidden in favor of their hosted options. As a sysadmin, you should definitely get into the habit of carefully reading and considering what you find online before you click!</li>
+</ul>
+</li>
+</ul>
+<p>If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages. Any approved application can be added to this list for you to use. <strong><em>You are not allowed to use JitBit&rsquo;s .NET Forum, as that was demonstrated in the video in this module.</em></strong></p>
+<p>Once you have selected your application, perform the following configuration steps:</p>
+<ol>
+<li>Create two websites in IIS: <code>blog.&lt;your eID&gt;.cis527.cs.ksu.edu</code> and <code>site.&lt;your eID&gt;.cis527.cs.ksu.edu</code>. They should be stored in <code>C:\inetpub\blog</code> and <code>C:\intepub\site</code>, respectively. For the <code>blog</code> site, make sure you choose the <code>.NET v4.5</code> Application Pool!</li>
+<li>Add a DNS forward lookup zone for <code>&lt;your eID&gt;.cis527.cs.ksu.edu</code> to the Windows DNS server, and then add A records for the two sites described above. They should both point to the Windows Server&rsquo;s IP address ending in <code>.42</code>.</li>
+<li>Place a static HTML file inside of the <code>C:\intepub\site</code> folder and confirm that you can access it using Firefox at <code>http://site.&lt;your eID&gt;.cis527.cs.ksu.edu</code></li>
+<li>Follow the instructions to install and configure your chosen application in <code>C:\inetpub\blog</code>. Pay special attention to any file permissions required. Use the <code>IIS_IUSRS</code> group when adding write permissions to any folders as described in the instructions. You should be able to access it at <code>http://blog.&lt;your eID&gt;.cis527.cs.ksu.edu</code> using Firefox.</li>
+<li>Create a self-signed SSL certificate and attach it to both websites by adding an additional binding for HTTPS. Make sure you can access both websites using <code>https://</code>.</li>
+<li>Use the URL Rewrite module to configure URL redirection to automatically direct users from HTTP to HTTPS for both websites.</li>
+</ol>
+<p>Once these steps are complete, visiting <code>http://blog.&lt;your eID&gt;.cis527.cs.ksu.edu</code> in your web browser should automatically redirect you to <code>https://blog.&lt;your eID&gt;.cis527.cs.ksu.edu</code> and it should be secured using your self-signed certificate. You should also be able to demonstrate that the application is working properly by interacting with it in some meaningful way, such as logging in and making a new post on a blog. Finally, if you visit <code>http://site.&lt;your eID&gt;.cis527.cs.ksu.edu</code> you should see the static content from that site instead of the blog, and it should also properly redirect to HTTPS.</p>
+
+<div class="notices note" ><p>Note</p><p><em>I recommend using Firefox for testing. Edge &amp; Internet Explorer on Windows Server are locked-down by default and can be very frustrating to work with. See, I knew you&rsquo;d appreciate having Firefox installed on your Windows server! &ndash;Russ</em></p>
+</div>
+
+<h4 id="resources-4">Resources</h4>
+<ul>
+<li><strong><a href="https://www.iis.net/downloads/microsoft/url-rewrite" target="_blank">URL Rewrite</a> from Microsoft</strong></li>
+<li><a href="https://www.ionos.com/community/server-cloud-infrastructure/windows-server/add-a-website-to-windows-server-2016-using-host-headers/" target="_blank">Add A Website to Windows Server 2016 using Host Headers</a> from Ionos by 1&amp;1</li>
+<li><a href="https://computingforgeeks.com/how-to-add-dns-forward-lookup-zone-in-windows-server/" target="_blank">How to add DNS Forward Lookup Zone in Windows Server 2019</a> from Computingforgeeks</li>
+<li><a href="https://computingforgeeks.com/how-to-add-dns-a-ptr-record-in-windows-server/" target="_blank">How to add DNS A/PTR Record in Windows Server 2019</a> from Computingforgeeks</li>
+<li><a href="https://aboutssl.org/how-to-create-a-self-signed-certificate-in-iis/" target="_blank">How to Create a Self Signed Certificate in IIS</a> from AboutSSL</li>
+<li><a href="https://www.sslsupportdesk.com/microsoft-server-2016-iis-10-10-5-ssl-installation/" target="_blank">Microsoft Server 2016 - IIS 10 &amp; 10.5 - SSL Installation</a> from SSLSupportDesk</li>
+<li><a href="https://helpdesk.ssls.com/hc/en-us/articles/115000853911-How-to-install-a-SSL-certificate-on-IIS-10" target="_blank">How to Install a SSL Certificate on IIS 10</a> from SSLs.com</li>
+<li><a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9953/38/setting-up-an-httphttps-redirect-in-iis" target="_blank">Setting up an HTTP/HTTPS Redirect in IIS</a> from Namecheap</li>
+</ul>
+<hr>
+<h3 id="task-6-ubuntu-web-application-server">Task 6: Ubuntu Web Application Server</h3>
+<p>For this step, you will install and configure a web application running on Apache in Ubuntu on your DigitalOcean droplets. First, choose an application to install from the following list:</p>
+<ul>
+<li><a href="https://wordpress.org/download/" target="_blank">Wordpress</a></li>
+</ul>
+<p>If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages, and must support using a MySQL database on a separate host from the web server. In addition, the application must be installed manually - using pre-built images or Apt packages is not allowed here. Any approved application can be added to this list for you to use. <strong><em>You are not allowed to use phpBB, as that was demonstrated in the video in this module.</em></strong></p>
+<p>Once you have selected your application, choose <strong>ONE</strong> of the following configuration options:</p>
+<h5 id="option-1-bare-hardware">Option 1: Bare Hardware</h5>
+<ol>
+<li>Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled <strong>BACKEND</strong> and configure an appropriate username and database for your application. You should also enable SSL/TLS encryption on connections to the server if it is not already enabled in MySQL (this should be enabled by default in Ubuntu 20.04). When creating the user account in MySQL, make sure it is set to log in from the private network IP address of <strong>FRONTEND</strong>.
+
+<div class="notices tip" ><p>Tip</p><p><em>You may need to configure MySQL to listen on an external network interface. Make sure you use the private network IP address only - it should not be listening on all network interfaces. In addition, you will also have to open ports on the firewall, and you should restrict access to those ports to only allow connections from the private network IP address of <strong>FRONTEND</strong>, just like the SSH server in Lab 5. Points will be deducted for having a MySQL server open to the internet! &ndash;Russ</em></p>
+</div>
+</li>
+<li>Install Apache and configure a new virtual host in Apache for your web application on <strong>FRONTEND</strong>. Also, add an appropriate A record to your domain name created in Lab 5 for this virtual host. You may shut down any Docker containers from Lab 5 that interfere with this configuration.</li>
+<li>Install your web application on your Ubuntu droplet labelled <strong>FRONTEND</strong> following the application&rsquo;s installation instructions. When configuring the database for your application, you should have it use the MySQL database on <strong>BACKEND</strong> via the private network IP address.</li>
+<li>Of course, you may need to modify your firewall configuration to allow incoming connections to the database server! <strong>If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab</strong></li>
+</ol>
+<h5 id="option-2-docker">Option 2: Docker</h5>
+<ol>
+<li>Create two Docker containers on <strong>FRONTEND</strong>, one containing MySQL and another containing Wordpress. You may optionally add a container running phpMyAdmin if desired. The MySQL container must be isolated on its own internal network that cannot access the outside internet.</li>
+<li>Add an appropriate A record to your domain name created in Lab 5 for this docker container. You will also need to update your reverse proxy to properly route traffic to the Wordpress container.</li>
+<li>Make sure that Wordpress is properly configured via environment variables in Docker.</li>
+</ol>
+<p>Once these steps are complete, you should be able to visit your web application via HTTP and then interact with the application in some meaningful way to confirm that the database connection is working.</p>
+<h4 id="resources-5">Resources</h4>
+<ul>
+<li><a href="https://hub.docker.com/_/wordpress" target="_blank">Docker Wordpress Image</a></li>
+<li><a href="https://linuxconfig.org/install-mysql-on-ubuntu-20-04-lts-linux" target="_blank">Install MySQL on Ubuntu 20.04 LTS Linux</a> from LinuxConfig.org</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04" target="_blank">How To Install MySQL on Ubuntu 20.04</a> from DigitalOcean (follow instructions in guide above to configure  MySQL to listen on all network interfaces)</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04" target="_blank">How To Install and Secure phpMyAdmin on Ubuntu 18.04</a> from DigitalOcean (works for 20.04)</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04" target="_blank">How To Install the Apache Web Server on Ubuntu 20.04</a> from DigitalOcean</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04" target="_blank">How To Secure Apache with Let&rsquo;s Encrypt on Ubuntu 20.04</a> from DigitalOcean</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-remote-database-to-optimize-site-performance-with-mysql-on-ubuntu-18-04" target="_blank">How To Set Up A Remote Database to Optimize Site Performance with MySQL on Ubuntu 18.04</a> from DigitalOcean (works for 20.04)</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-18-04" target="_blank">How To Install WordPress with LAMP on Ubuntu 18.04</a> from DigitalOcean (a very detailed guide)</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-configure-ssl-tls-for-mysql-on-ubuntu-18-04" target="_blank">How To Configure SSL/TLS for MySQL on Ubuntu 18.04</a> from DigitalOcean (not required for 20.04)</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04" target="_blank">How to Install LAMP Stack on Ubuntu 20.04</a> from DigitalOcean</li>
+</ul>
+<hr>
+<h3 id="task-7-make-snapshots">Task 7: Make Snapshots</h3>
+<p>In each of the virtual machines created above, create a snapshot labelled &ldquo;Lab 6 Submit&rdquo; before you submit the assignment. The grading process may require making changes to the VMs, so this gives you a restore point before grading starts.</p>
+<h3 id="task-8-schedule-a-grading-time">Task 8: Schedule A Grading Time</h3>
+<p>Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/02-application-servers-overview/" title="Application Servers Overview"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="https://textbooks.cs.ksu.edu/cis527/6-application-servers/04-file-servers-overview/" title="File Servers Overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/clipboard.min.js?1657816652"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/perfect-scrollbar.min.js?1657816652"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/perfect-scrollbar.jquery.min.js?1657816652"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/jquery.sticky.js?1657816652"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/featherlight.min.js?1657816652"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js?1657816652"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/modernizr.custom-3.6.0.js?1657816652"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/learn.js?1657816652"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/hugo-learn.js?1657816652"></script>
+    <script src="https://textbooks.cs.ksu.edu/cis527/js/themer.js?1657816652"></script>
+
+    
+        
+            <script src="https://textbooks.cs.ksu.edu/cis527/mermaid/mermaid.js?1657816652"></script>
+        
+        <script>
+            var mer_theme = localStorage.getItem('theme');
+            if(mer_theme !== 'dark'){
+                mer_theme = 'neutral'
+            }
+            mermaid.initialize({ 
+                startOnLoad: true,
+                'securityLevel': 'loose', 
+                'theme': mer_theme });
+        </script>
+    
+
+    
+
+    
+    
+
+    
+<script 
+src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js">
+</script>
+<script 
+src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownKatex.js">
+</script>
+<script 
+src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownHighlight.js">
+</script>
+<script>quizdown.register(quizdownHighlight).register(quizdownKatex).init()</script> 
+  </body>
+</html>
+

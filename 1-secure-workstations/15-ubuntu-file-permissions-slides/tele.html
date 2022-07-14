@@ -1,0 +1,123 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 1 - Ubuntu File Permissions</p>
+</section>
+<section>
+  <h3>Linux File Permissions</h3>
+  <ul>
+    <li>Classes
+      <ul>
+        <li>User - owner of the file</li>
+        <li>Group - group assigned to file</li>
+        <li>Others - other users</li>
+      </ul>
+    </li>
+    <li>Permissions
+      <ul>
+        <li>Read - read file contents</li>
+        <li>Write - change/delete file</li>
+        <li>Execute - run program or script & list folder contents</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+<section>
+	<h3>File List</h3>
+  <img class="stretch plain" src="../../images/ls_digitalocean.png">
+  <p class="imagecredit">Image Credit: <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-permissions">Digital Ocean</a></p>
+</section>
+<section>
+	<h3>File Modes</h3>
+  <img class="stretch plain" src="../../images/mode_digitalocean.png">
+  <p class="imagecredit">Image Credit: <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-permissions">Digital Ocean</a></p>
+</section>
+<section>
+	<h3>Octal Permissions</h3>
+  <img class="stretch plain" src="../../images/octal_jelinux.png">
+  <p class="imagecredit">Image Credit: <a href="https://leanpub.com/jelinux/read">Just Enough Linux</a></p>
+</section>
+<section>
+	<h3>Common Octal Values</h3>
+  <img class="stretch plain" src="../../images/octal_linode.png">
+  <p class="imagecredit">Image Credit: <a href="https://www.linode.com/docs/tools-reference/linux-users-and-groups/">Linode</a></p>
+</section>
+<section>
+  <h3>Modifying Permissions</h3>
+  <ul>
+    <li>File Browser (Nautilus)</li>
+    <li>Edit as Administrator (Using "nautilus-admin")</li>
+    <li>Terminal</li>
+  </ul>
+</section>
+<section>
+  <h3>Terminal Commands</h3>
+  <ul>
+    <li>chmod - Change Permissions (Mode)
+      <ul>
+        <li>chmod [class][op][mode] &lt;path></li>
+        <li>chmod [ugoa][+-=][rwx] &lt;path></li>
+        <li>chmod [octal_mode] &lt;path></li>
+      </ul>
+    </li>
+    <li>chown - Change Owner
+      <ul>
+        <li>chown [user]:[group] &lt;path></li>
+      </ul>
+    </li>
+    <li>chgrp - Change Group
+      <ul>
+        <li>chgrp [group] &lt;path></li>
+        <li>Must Own File</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+<section>
+  <h3>Next Step!</h3>
+  <p>Start Lab 1, Task 6:</p>
+  <p>Ubuntu Files & Permissions</p>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

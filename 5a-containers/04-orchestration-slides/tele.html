@@ -1,0 +1,107 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 5.A - Orchestration</p>
+</section>
+<section>
+	<h3>Container Orchestration</h3>
+	<ul>
+		<li>Deploy Containers at Scale</li>
+		<li>Multiple Copies, Multiple Nodes</li>
+		<li>Handle Routing, Restarting</li>
+		<li>Lab 2 - Automate!</li>
+	</ul>
+</section>
+<section>
+	<img class="stretch plain" src="https://textbooks.cs.ksu.edu/cis527/images/5a/docker-swarm.png.webp">
+	<p class="imagecredit">Image Source: <a href="https://devopscube.com/docker-container-clustering-tools/">DevopsCube</a></p>
+</section>
+<section>
+	<h3>Docker Compose</h3>
+	<ul>
+		<li>Isolated Environments</li>
+		<li>Preserve Data</li>
+		<li>Infrastructure as Code</li>
+		<li>Easily Apply Changes</li>
+		<li>Portability</li>
+	</ul>
+</section>
+<section>
+	<h3>Docker Compose File</h3>
+	<p>Filename: <code>docker-compose.yml</code></p>
+	<pre><code class="yml">services:                   # top level item
+  nginx:                    # name of service
+    image: nginx:alpine     # image to use
+    container_name: nginx1  # name of container
+  mysql:
+    image: mysql:latest
+    container_name: mysql</code></pre>
+</section>
+<section>
+	<h3>Docker Compose Commands</h3>
+	<ul>
+		<li><code>docker compose up [-d]</code></li>
+		<li><code>docker compose down</code></li>
+		<li><code>docker compose start</code></li>
+		<li><code>docker compose run [service]</code></li>
+	</ul>
+</section>
+<section>
+	<h3>Composability</h3>
+	<pre><code class="yml"># docker-compose.yml
+services:
+  webserver:
+    container_name: webserver
+    extends:
+      file: nginx.yml
+      service: nginx
+    # custom configuration here</code></pre>
+	<pre><code class="yml"># nginx.yml
+services:
+  nginx:
+    image: nginx:alpine
+    # default configuration here</code></pre>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

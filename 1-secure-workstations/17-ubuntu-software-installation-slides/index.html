@@ -1,0 +1,74 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 1 - Ubuntu Software Installation</p>
+</section>
+<section>
+  <h3>Software Components</h3>
+  <ul>
+    <li>Binary Executable (/usr/bin or /usr/lib)</li>
+    <li>Libraries & Shared Objects (/usr/lib)</li>
+    <li>Configuration Files (/etc or dotfiles)</li>
+    <li>Documentation (/usr/share)</li>
+    <li><i>systemd Scripts</i></li>
+  </ul>
+</section>
+<section>
+  <h3>Software Installation Methods</h3>
+  <ul>
+    <li>Ubuntu Software Center</li>
+    <li>Synaptic Package Manager</li>
+    <li>apt</li>
+    <li>snap</li>
+    <li>Download Packages</li>
+    <li><i>Compile from Source</i></li>
+  </ul>
+</section>
+<section>
+  <h3>Install Things!</h3>
+  <p>Continue Lab 1, Task 5:</p>
+  <p>Configure Ubuntu 20.04</p>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

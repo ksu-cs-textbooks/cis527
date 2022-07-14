@@ -1,0 +1,126 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 7 - DevOps</p>
+</section>
+<section>
+	<h3>DevOps</h3>
+	<ul>
+		<li>Development Operations</li>
+		<li>Agile System Engineering</li>
+		<li>SDLC Automation</li>
+		<li>Infrastructure as Code</li>
+	</ul>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/devops_wiki.svg">
+	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/DevOps">Wikipedia</a></p>
+</section>
+<section>
+	<h3>Toolchain</h3>
+	<img class="stretch plain" src="../../images/devopstools_wiki.svg">
+	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/DevOps">Wikipedia</a></p>
+</section>
+<section>
+	<h3>DevOps Processes</h3>
+	<ul>
+		<li>Code</li>
+		<li>Build</li>
+		<li>Test</li>
+		<li>Package</li>
+		<li>Release</li>
+		<li>Configure</li>
+		<li>Monitor</li>
+	</ul>
+</section>
+<section>
+	<h3>Code</h3>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/github_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/vagrant_logo.svg"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/puppet_logo.png"></p>
+</section>
+<section>
+	<h3>Build & Test</h3>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/travis_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/jenkins_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/codeship_logo.png"></p>
+</section>
+<section>
+	<h3>Package & Release</h3>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/heroku_logo.svg"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/aws_logo.svg"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/azure_logo.svg"></p>
+</section>
+<section>
+	<h3>Configure</h3>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/ansible.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/salt_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/docker_logo.png"></p>
+</section>
+<section>
+	<h3>Monitor</h3>
+  <p><img class="plain imgcenter" style="height: 2em;" src="../../images/nagios_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/zabbix_logo.png"></p>
+	<p><img class="plain imgcenter" style="height: 2em;" src="../../images/munin_logo.png"></p>
+</section>
+<section>
+	<h3>Why DevOps?</h3>
+	<ul>
+		<li>Faster Releases</li>
+		<li>More Flexible</li>
+		<li>Automation</li>
+		<li>Virtualization</li>
+		<li>Scalable</li>
+	</ul>
+</section>
+<section>
+	<h3>DevOps Hello World</h3>
+	<ul>
+		<li>Write Code</li>
+		<li>Push to GitLab</li>
+		<li>Automatically Deploy to Server</li>
+	</ul>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

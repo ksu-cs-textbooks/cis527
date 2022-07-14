@@ -1,0 +1,104 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 6 - Application Servers Overview</p>
+</section>
+<section>
+	<h3>Application Server</h3>
+	<ul>
+		<li>Platform for Enterprise Applications</li>
+		<li>Backend Processing & Storage</li>
+		<li>Frontend User Interface & Websites</li>
+		<li>Always On, Always Available</li>
+		<li>Backbone of Most Enterprises</li>
+	</ul>
+</section>
+<section>
+	<h3>Types of Application Servers</h3>
+	<ul>
+		<li><b>Web</b>: Apache, IIS, nginx, Tomcat</li>
+		<li><b>Database</b>: MySQL/Maria, Microsoft SQL, PostgreSQL, Mongo</li>
+		<li><b>Email</b>: Exchange, Postfix, Exim</li>
+		<li><b>File</b>: Windows, Samba, ownCloud/Nextcloud</li>
+		<li><b>CRM</b>: Salesforce, Zoho</li>
+		<li>Inventory, Accounting, Finance, Project Managment, etc.</li>
+	</ul>
+</section>
+<section>
+	<h3>How do I evaluate software for my organization?</h3>
+</section>
+<section>
+	<h3>Evaluating Software</h3>
+	<ul>
+		<li>Reputable Source</li>
+		<li>Available Support</li>
+		<li>Company History</li>
+		<li>Company Coding Practices</li>
+		<li>Extensibility</li>
+		<li>Reviews & Recommendations</li>
+	</ul>
+</section>
+<section>
+	<h3>Installation Test</h3>
+	<ul>
+		<li>Other Software & Tools Needed</li>
+		<li>System Requirements</li>
+		<li>Data Migration Process (In & Out)</li>
+		<li>Ease of Configuration</li>
+		<li>Network Traffic</li>
+	</ul>
+</section>
+<section>
+	<h3>Usability Test</h3>
+	<ul>
+		<li>User Beta Test</li>
+		<li>System Load & Load Balancing</li>
+		<li>Network Security & Encryption</li>
+		<li>Ease of Updates</li>
+		<li>Logging & Accountability</li>
+		<li>Accessibility</li>
+	</ul>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

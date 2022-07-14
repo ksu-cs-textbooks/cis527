@@ -1,0 +1,107 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 3 - SNMP</p>
+</section>
+<section>
+	<h3>Simple Network Management Protocol (SNMP)</h3>
+	<ul>
+		<li>Proposed in 1988</li>
+		<li>Query Information from Network Devices</li>
+		<li>Update Configuration Remotely</li>
+		<li>Used in Network Monitoring</li>
+		<li>Port 161</li>
+	</ul>
+</section>
+<section>
+	<h3>SNMP Versions</h3>
+	<ul>
+		<li>1.0 - Plain-text, No Security</li>
+		<li>2.0 - Some Security, but Controversial</li>
+		<li>2.0c "Community" - Without Controversial Security</li>
+		<li>3.0 - Better Security & Authentication</li>
+	</ul>
+	<p>Most Devices Support Multiple Versions</p>
+</section>
+<section>
+	<h3>SNMP Data</h3>
+	<ul>
+		<li>Data Presented as Variables</li>
+		<li>Some Allow Write Access</li>
+		<li>Hierarchical Structure</li>
+		<li>Difficult to Read Directly</li>
+	</ul>
+</section>
+<section>
+	<h3>Management Information Base (MIB)</h3>
+	<ul>
+		<li>SNMP Does Not Define Variables</li>
+		<li>MIB Defines Available Variables</li>
+		<li>MIBs Vary by Device</li>
+		<li>Standards Exist</li>
+	</ul>
+</section>
+<section>
+	<h3>Protocol Data Units (PDU)</h3>
+	<ul>
+		<li>GetRequest</li>
+		<li>SetRequest</li>
+		<li>GetNextRequest</li>
+		<li>GetBulkRequest</li>
+		<li>Response</li>
+		<li>Trap</li>
+		<li>InformRequest</li>
+	</ul>
+</section>
+<section>
+	<h3>Community String</h3>
+	<ul>
+		<li>Rudimentary Password</li>
+		<li>Plaintext in SNMPv1</li>
+		<li>Easily Sniffed via Wireshark</li>
+		<li>Security was not a Concern Initially</li>
+	</ul>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

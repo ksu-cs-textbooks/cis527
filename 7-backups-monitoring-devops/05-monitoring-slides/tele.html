@@ -1,0 +1,88 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 7 - Monitoring</p>
+</section>
+<section>
+	<h3>Why Monitor?</h3>
+	<ul>
+		<li>Uptime</li>
+		<li>Detect & Prevent Errors</li>
+		<li>Respond to Emergencies</li>
+		<li>Cyber Threats</li>
+		<li>Save Money</li>
+	</ul>
+</section>
+<section>
+	<h3>System Monitoring</h3>
+	<ul>
+		<li>CPU Usage</li>
+		<li>Memory Usage</li>
+		<li>Disk Usage</li>
+		<li>Network Usage</li>
+		<li>Software</li>
+		<li>Log Files</li>
+		<li>Inventory</li>
+	</ul>
+</section>
+<section>
+	<h3>Layers</h3>
+	<ul>
+		<li>System</li>
+		<li>Network</li>
+		<li>Physical</li>
+		<li>External</li>
+		<li>Aggregation</li>
+		<li>Alerts</li>
+	</ul>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/beocat.png">
+</section>
+<section>
+	<img class="stretch plain" src="../../images/languard_gfi.png">
+	<p class="imagecredit">Image Source: <a href="https://techtalk.gfi.com/the-top-20-free-network-monitoring-and-analysis-tools-for-sys-admins/">GFI Tech Talk</a></p>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,99 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h2>CIS 527</h2><br><br><p>Lab 6 - Web Servers</p>
+</section>
+<section>
+	<h3>Web Server</h3>
+	<ul>
+		<li>Listen For & Respond to HTTP Requests</li>
+		<li>Handle Many Simultaneous Connections</li>
+		<li>Multiple Websites</li>
+		<li>Server-Side Scripting</li>
+		<li>Caching</li>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/asf_logo.svg">
+	<p class="imagecredit">Image Source: <a href="https://www.apache.org/foundation/press/kit/">Apache Software Foundation</a></p>
+	<h3>23% Sites / 34% Domains</h3>
+	<p class="imagecredit">Source: <a href="https://news.netcraft.com/archives/2018/09/24/september-2018-web-server-survey.html">Netcraft</a></p>
+</section>
+<section>
+	<h3>LAMP Stack</h3>
+	<img class="stretch plain" src="../../images/lamp_wiki.svg">
+	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">Wikipedia</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/nginx_logo_wiki.svg">
+	<p class="imagecredit">Image Source: <a href="https://commons.wikimedia.org/wiki/File:Nginx_logo.svg">Wikimedia Commons</a></p>
+	<h3>19% Sites / 23% Domains</h3>
+	<p class="imagecredit">Source: <a href="https://news.netcraft.com/archives/2018/09/24/september-2018-web-server-survey.html">Netcraft</a></p>
+</section>
+<section>
+	<img class="stretch plain" src="../../images/iis_logo.png">
+	<p class="imagecredit">Image Source: <a href="https://www.saotn.org/remove-iis-server-version-http-response-header/">Sysadmins of the North</a></p>
+	<h3>36% Sites / 26% Domains</h3>
+	<p class="imagecredit">Source: <a href="https://news.netcraft.com/archives/2018/09/24/september-2018-web-server-survey.html">Netcraft</a></p>
+</section>
+<section>
+	<h3>Scripting Languages</h3>
+	<ul>
+		<li>PHP</li>
+		<li>Python</li>
+		<li>.NET</li>
+		<li>Java</li>
+		<li>JavaScript</li>
+	</ul>
+</section>
+<section>
+	<h3>Lab Assignment</h3>
+	<ul>
+		<li>Set up Web Server</li>
+		<li>Configure Domain</li>
+		<li>Configure Security</li>
+		<li>Install Application</li>
+	</ul>
+</section>
+
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/reveal.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/reveal/css/theme/black.css">
+		<link rel="stylesheet" href="https://textbooks.cs.ksu.edu/cis527/css/atom-one-dark-reasonable.css">
+		<link rel="shortcut icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<link rel="icon" href="https://textbooks.cs.ksu.edu/cis527/images/favicon.png" type="image/x-icon" />
+		<script type="text/javascript" async src="https://textbooks.cs.ksu.edu/cis527/mathjax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<meta charset="utf-8" >
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				  <section>
+	<h3>Week 5 Announcements</h3>
+</section>
+<section>
+	<h3>Where we Are</h3>
+	<ul>
+		<li>Lab 4 Due Tomorrow</li>
+		<li>Week 3 Response <b>Due Today!</b></li>
+		<li>Week 4 Today 4 PM - CDC Infrastructure!</li>
+		<li>Lab 5 & 6 Week from Friday</li>
+	</ul>
+</section>
+<section>
+	<h3>Up Next</h3>
+	<p>Lab 4 Tips:</p>
+	<ul>
+		<li>4 or 5 VMs - Snapshots</li>
+		<li>Windows AD -> Windows 10</li>
+		<li>Ubuntu LDAP -> Ubuntu
+		<ul>
+			<li>Now with TLS Certificates!</li>
+		</ul></li>
+		<li>Windows AD -> Ubuntu
+		<ul>
+			<li>Super Simple!</li>
+		</ul></li>
+	</ul>
+</section>
+<section>
+    <h3>Lab 5</h3>
+	<ul>
+	<li>Create Cloud Resources</li>
+	<li>Configure SSH</li>
+	<li>Domain Name</li>
+	<li>TLS Certificates</li>
+	<li>Virtual Hosts</li>
+	<li>Load Balancer</li>
+	</ul>
+</section>
+<section>
+	<h3>Cloud Resources</h3>
+	<ul>
+	<li>https://education.github.com/pack</li>
+	<li>DO Droplet - 2 x $5/month</li>
+	<li>DO Load Balancer - $10/month (used very little)</li>
+	<li>Namecheap Domain https://nc.me/ - Free for first year</li>
+	<li>Let's Encrypt Certificates - Free</li>
+	<li>Total Cost ~ $15 or less</li>
+	</ul>
+</section>
+<section>
+	<h3>Lab 6</h3>
+	<ul>
+		<li>File Servers</li>
+		<li>Automatically Map Resources</li>
+		<li>Application Servers</li>
+		<li>Frontend/Backend</li>
+	</ul>
+</section>
+<section>
+	<h3>Keep in Touch!</h3>
+	<ul>
+	  <li>Discussions on Piazza</li>
+	  <li>Zoom Discussions</li>
+	  <li>"Tea Time" Office Hours</li>
+	  <li>One-on-One Office Hours</li>
+	  <li>Rocket.chat</li>
+	</ul>
+</section>
+<section>
+  <img class="stretch" src="https://media.giphy.com/media/11F0d3IVhQbreE/giphy.gif">
+</section>
+			</div>
+		</div>
+		<script src="https://textbooks.cs.ksu.edu/cis527/js/highlight.pack.js"></script>"/js/highlight.pack.js"
+		<script>
+		  hljs.initHighlightingOnLoad();
+	  </script>
+		<script src="https://textbooks.cs.ksu.edu/cis527/reveal/js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        controls: false,
+        controlsTutorial: false,
+        progress: false,
+        transition: 'fade',
+				width: 1440,
+				height: 1080,
+				history: true,
+      });
+
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next();
+				if(e.button === 2) Reveal.prev();
+			}
+		</script>
+	</body>
+</html>
