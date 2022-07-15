@@ -1215,7 +1215,7 @@
 	"title": "Homepage",
 	"tags": [],
 	"description": "",
-	"content": "Welcome This website contains the course materials for CIS 527: Enterprise Systems Administration at Kansas State University.\nAnyone and everyone is welcome to review the contents on this webpage. However, if you plan on taking the course for credit, you should enroll in the course through K-State before starting, as the course itself includes appropriate assignments and assessments to ensure that you have learned the material.\nThis work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.\nThe source materials for this website are available on the K-State CS GitLab server.\n"
+	"content": "Welcome This website contains the course materials for CIS 527: Enterprise Systems Administration at Kansas State University.\nAnyone and everyone is welcome to review the contents on this webpage. However, if you plan on taking the course for credit, you should enroll in the course through K-State before starting, as the course itself includes appropriate assignments and assessments to ensure that you have learned the material.\nThis work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.\nThe source materials for this website are available on the K-State CS GitLab server.\nTesting GitLab Sync\u0026hellip;\n"
 },
 {
 	"uri": "https://ksu-cs-textbooks.github.io/cis527/0-introduction/01-course-introduction-slides/",
