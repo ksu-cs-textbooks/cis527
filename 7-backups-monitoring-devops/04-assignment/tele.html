@@ -18,26 +18,26 @@
     <title>Assignment :: CIS 527 Textbook</title>
 
     
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/nucleus.css?1658161123" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/fontawesome-all.min.css?1658161123" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/hybrid.css?1658161123" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/featherlight.min.css?1658161123" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/perfect-scrollbar.min.css?1658161123" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/auto-complete.css?1658161123" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/atom-one-dark-reasonable.css?1658161123" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/theme.css?1658161123" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/tabs.css?1658161123" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/hugo-theme.css?1658161123" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/nucleus.css?1658411805" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/fontawesome-all.min.css?1658411805" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/hybrid.css?1658411805" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/featherlight.min.css?1658411805" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/perfect-scrollbar.min.css?1658411805" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/auto-complete.css?1658411805" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/atom-one-dark-reasonable.css?1658411805" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/theme.css?1658411805" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/tabs.css?1658411805" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/hugo-theme.css?1658411805" rel="stylesheet">
     
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/theme-purple.css?1658161123" rel="stylesheet">
-    
-    
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/theme-purple.css?1658411805" rel="stylesheet">
     
     
-      <link href="https://ksu-cs-textbooks.github.io/cis527/css/theme-tele.css?1658161123" rel="stylesheet">
+    
+    
+      <link href="https://ksu-cs-textbooks.github.io/cis527/css/theme-tele.css?1658411805" rel="stylesheet">
     
 
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/jquery-3.3.1.min.js?1658161123"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/jquery-3.3.1.min.js?1658411805"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -92,14 +92,14 @@ CIS 527 | CC 510<br>System Administration<br><br>
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://ksu-cs-textbooks.github.io/cis527/js/lunr.min.js?1658161123"></script>
-<script type="text/javascript" src="https://ksu-cs-textbooks.github.io/cis527/js/auto-complete.js?1658161123"></script>
+<script type="text/javascript" src="https://ksu-cs-textbooks.github.io/cis527/js/lunr.min.js?1658411805"></script>
+<script type="text/javascript" src="https://ksu-cs-textbooks.github.io/cis527/js/auto-complete.js?1658411805"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/ksu-cs-textbooks.github.io\/cis527\/";
     
 </script>
-<script type="text/javascript" src="https://ksu-cs-textbooks.github.io/cis527/js/search.js?1658161123"></script>
+<script type="text/javascript" src="https://ksu-cs-textbooks.github.io/cis527/js/search.js?1658411805"></script>
 
     
   </div>
@@ -954,8 +954,8 @@ CIS 527 | CC 510<br>System Administration<br><br>
 <h3 id="task-2-backup-ubuntu-web-application">Task 2: Backup Ubuntu Web Application</h3>
 <p>For this task, you will perform the steps to create a backup of the web application installed on your Ubuntu droplet in Lab 6. To complete this item, prepare an archive file (<code>.zip</code>, <code>.tar</code>, <code>.tgz</code> or equivalent) containing the following items:</p>
 <ol>
-<li>Website data and configuration files for the web application (this should NOT include the entire application, just the relevant configuration and data files that were modified after installation)</li>
-<li>Relevant Apache configuration files (virtual hosts)</li>
+<li>Website data and configuration files for the web application. This should NOT include the entire application, just the relevant configuration and data files that were modified after installation. For Docker installations, any information required to recreate the Docker environment, such as a Docker Compose file, should also be included.</li>
+<li>Relevant Apache or Nginx configuration files (virtual hosts, reverse proxy, etc.)</li>
 <li>A complete MySQL server dump of the appropriate MySQL database. It should contain enough information to recreate the database schema and all data.</li>
 <li>Clear, concise instructions in a README file for restoring this backup on a new environment. Assume the systems in that new environment are configured as directed in Lab 5. These instructions would be used by yourself or a system administrator of similar skill and experience to restore this application - that is, you don&rsquo;t have to pedantically spell out how to perform every step, but you should provide enough information to easily reinstall the application and restore the backup with a minimum of effort and research.</li>
 </ol>
@@ -991,16 +991,16 @@ CIS 527 | CC 510<br>System Administration<br><br>
 <ol>
 <li>Create a GitLab repository on the <a href="https://gitlab.cs.ksu.edu/" target="_blank">K-State CS GitLab</a> instance.</li>
 <li>Clone that repository on your own system, and verify that you can make changes, commit them, and push them back to the server.</li>
-<li>Clone that repository into a web directory on your Ubuntu droplet named <strong>FRONTEND</strong>. You can use the default directory first created in Lab 5.</li>
+<li>Clone that repository into a web directory on your Ubuntu droplet named <strong>BACKEND</strong>. You can use the default directory first created in Lab 5 (it should be <code>cis527charlie</code> in your DNS).</li>
 <li>Create a Bash script that will simply use the <code>git pull</code> command to get the latest content from the Git repository in the current directory.</li>
-<li>Install and configure <a href="https://github.com/adnanh/webhook" target="_blank">webhook</a> on your Ubuntu droplet named <strong>FRONTEND</strong>. It should listen for all incoming webhooks from GitLab that match a secret key you choose. When a hook is received, it should run the Bash script created earlier.</li>
+<li>Install and configure <a href="https://github.com/adnanh/webhook" target="_blank">webhook</a> on your Ubuntu droplet named <strong>BACKEND</strong>. It should listen for all incoming webhooks from GitLab that match a secret key you choose. When a hook is received, it should run the Bash script created earlier.</li>
 <li>Configure a webhook in your GitLab repository for all Push events using that same secret key and the URL of webhook on your server. You may need to make sure your domain name has an A record for the default hostname <code>@</code> pointing to your <strong>FRONTEND</strong> server.</li>
 <li>To test this setup, you should be able to push a change to the GitLab repository, and see that change reflected on the website automatically.</li>
 <li>For offline grading, add the instructor and GTA to the repository as maintainers, and submit the repository and URL where the files can be found in your grading packet. Provided the webhook works correctly, they should be able to see a pushed change to the repository update the website.</li>
 </ol>
 <p>Of course, you may need to modify your firewall configuration to allow incoming connections for Webhook! <strong>If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab</strong></p>
 
-<div class="notices tip" ><p>Tip</p><p><em>Since the Webhook process runs as the <code>root</code> user on <strong>FRONTEND</strong>, you&rsquo;ll need to make sure a set of SSH keys exist in the <code>root</code> user&rsquo;s home folder <code>/root/.ssh/</code> and add the public key from that directory to your <a href="https://gitlab.cs.ksu.edu/profile/keys" target="_blank">GitLab account</a>. You should then use the root account (use <code>sudo su -</code> to log in as root) to run <code>git pull</code> from the appropriate directory on <strong>FRONTEND</strong> at least once so you can accept the SSH fingerprint for the GitLab server. This helps ensure that <code>root</code> can properly run the script. &ndash;Russ</em></p>
+<div class="notices tip" ><p>Tip</p><p><em>Since the Webhook process runs as the <code>root</code> user on <strong>BACKEND</strong>, you&rsquo;ll need to make sure a set of SSH keys exist in the <code>root</code> user&rsquo;s home folder <code>/root/.ssh/</code> and add the public key from that directory to your <a href="https://gitlab.cs.ksu.edu/profile/keys" target="_blank">GitLab account</a>. You should then use the root account (use <code>sudo su -</code> to log in as root) to run <code>git pull</code> from the appropriate directory on <strong>BACKEND</strong> at least once so you can accept the SSH fingerprint for the GitLab server. This helps ensure that <code>root</code> can properly run the script. &ndash;Russ</em></p>
 </div>
 
 <h4 id="resources-3">Resources</h4>
@@ -3868,21 +3868,21 @@ CIS 527 | CC 510<br>System Administration<br><br>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/clipboard.min.js?1658161123"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/perfect-scrollbar.min.js?1658161123"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/perfect-scrollbar.jquery.min.js?1658161123"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/jquery.sticky.js?1658161123"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/featherlight.min.js?1658161123"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/highlight.pack.js?1658161123"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/clipboard.min.js?1658411805"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/perfect-scrollbar.min.js?1658411805"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/perfect-scrollbar.jquery.min.js?1658411805"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/jquery.sticky.js?1658411805"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/featherlight.min.js?1658411805"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/highlight.pack.js?1658411805"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/modernizr.custom-3.6.0.js?1658161123"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/learn.js?1658161123"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/hugo-learn.js?1658161123"></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/themer.js?1658161123"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/modernizr.custom-3.6.0.js?1658411805"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/learn.js?1658411805"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/hugo-learn.js?1658411805"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/themer.js?1658411805"></script>
 
     
         
-            <script src="https://ksu-cs-textbooks.github.io/cis527/mermaid/mermaid.js?1658161123"></script>
+            <script src="https://ksu-cs-textbooks.github.io/cis527/mermaid/mermaid.js?1658411805"></script>
         
         <script>
             var mer_theme = localStorage.getItem('theme');
@@ -3897,8 +3897,8 @@ CIS 527 | CC 510<br>System Administration<br><br>
     
 
     
-        <script src="https://ksu-cs-textbooks.github.io/cis527/js/tele-scroll.js?1658161123"></script>
-        <script src="https://ksu-cs-textbooks.github.io/cis527/js/hideyt.js?1658161123"></script>
+        <script src="https://ksu-cs-textbooks.github.io/cis527/js/tele-scroll.js?1658411805"></script>
+        <script src="https://ksu-cs-textbooks.github.io/cis527/js/hideyt.js?1658411805"></script>
     
 
     
