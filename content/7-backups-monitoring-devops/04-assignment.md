@@ -76,8 +76,8 @@ These resources mostly refer to Windows Server 2012 or 2016, but should work for
 
 For this task, you will perform the steps to create a backup of the web application installed on your Ubuntu droplet in Lab 6. To complete this item, prepare an archive file (`.zip`, `.tar`, `.tgz` or equivalent) containing the following items:
 
-1. Website data and configuration files for the web application (this should NOT include the entire application, just the relevant configuration and data files that were modified after installation)
-2. Relevant Apache configuration files (virtual hosts)
+1. Website data and configuration files for the web application. This should NOT include the entire application, just the relevant configuration and data files that were modified after installation. For Docker installations, any information required to recreate the Docker environment, such as a Docker Compose file, should also be included.
+2. Relevant Apache or Nginx configuration files (virtual hosts, reverse proxy, etc.)
 3. A complete MySQL server dump of the appropriate MySQL database. It should contain enough information to recreate the database schema and all data.
 4. Clear, concise instructions in a README file for restoring this backup on a new environment. Assume the systems in that new environment are configured as directed in Lab 5. These instructions would be used by yourself or a system administrator of similar skill and experience to restore this application - that is, you don't have to pedantically spell out how to perform every step, but you should provide enough information to easily reinstall the application and restore the backup with a minimum of effort and research.
 
@@ -119,9 +119,9 @@ Setup an automatically deployed Git repository on your Ubuntu droplet. For this 
 
 1. Create a GitLab repository on the [K-State CS GitLab](https://gitlab.cs.ksu.edu/) instance.
 2. Clone that repository on your own system, and verify that you can make changes, commit them, and push them back to the server.
-3. Clone that repository into a web directory on your Ubuntu droplet named **FRONTEND**. You can use the default directory first created in Lab 5.
+3. Clone that repository into a web directory on your Ubuntu droplet named **BACKEND**. You can use the default directory first created in Lab 5 (it should be `cis527charlie` in your DNS).
 4. Create a Bash script that will simply use the `git pull` command to get the latest content from the Git repository in the current directory.
-5. Install and configure [webhook](https://github.com/adnanh/webhook) on your Ubuntu droplet named **FRONTEND**. It should listen for all incoming webhooks from GitLab that match a secret key you choose. When a hook is received, it should run the Bash script created earlier.
+5. Install and configure [webhook](https://github.com/adnanh/webhook) on your Ubuntu droplet named **BACKEND**. It should listen for all incoming webhooks from GitLab that match a secret key you choose. When a hook is received, it should run the Bash script created earlier.
 6. Configure a webhook in your GitLab repository for all Push events using that same secret key and the URL of webhook on your server. You may need to make sure your domain name has an A record for the default hostname `@` pointing to your **FRONTEND** server.
 7. To test this setup, you should be able to push a change to the GitLab repository, and see that change reflected on the website automatically.
 8. For offline grading, add the instructor and GTA to the repository as maintainers, and submit the repository and URL where the files can be found in your grading packet. Provided the webhook works correctly, they should be able to see a pushed change to the repository update the website. 
@@ -129,7 +129,7 @@ Setup an automatically deployed Git repository on your Ubuntu droplet. For this 
 Of course, you may need to modify your firewall configuration to allow incoming connections for Webhook! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
 {{% notice tip %}}
-_Since the Webhook process runs as the `root` user on **FRONTEND**, you'll need to make sure a set of SSH keys exist in the `root` user's home folder `/root/.ssh/` and add the public key from that directory to your [GitLab account](https://gitlab.cs.ksu.edu/profile/keys). You should then use the root account (use `sudo su -` to log in as root) to run `git pull` from the appropriate directory on **FRONTEND** at least once so you can accept the SSH fingerprint for the GitLab server. This helps ensure that `root` can properly run the script. --Russ_
+_Since the Webhook process runs as the `root` user on **BACKEND**, you'll need to make sure a set of SSH keys exist in the `root` user's home folder `/root/.ssh/` and add the public key from that directory to your [GitLab account](https://gitlab.cs.ksu.edu/profile/keys). You should then use the root account (use `sudo su -` to log in as root) to run `git pull` from the appropriate directory on **BACKEND** at least once so you can accept the SSH fingerprint for the GitLab server. This helps ensure that `root` can properly run the script. --Russ_
 {{% /notice %}}
 
 #### Resources
