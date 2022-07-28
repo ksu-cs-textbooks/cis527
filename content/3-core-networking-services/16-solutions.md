@@ -2,6 +2,7 @@
 title: "Solutions"
 weight: 80
 pre: "16. "
+noprint: true
 ---
 
 {{% encrypt encrypted="true" %}}
