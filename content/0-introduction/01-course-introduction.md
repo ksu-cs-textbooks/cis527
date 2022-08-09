@@ -4,9 +4,11 @@ weight: 5
 pre: "1. "
 ---
 
-{{< youtube 2fyD1QCidbM >}}
 
-<!-- TODO Rerecord Video -->
+
+{{< youtube LtVKQ5IPyUw >}}
+
+<!-- 2fyD1QCidbM -->
 
 <!-- fKqeaX4XBtc -->
 
@@ -23,7 +25,7 @@ pre: "1. "
 
 Welcome to CIS 527 - Enterprise System Administration and CC 510 - Computer Systems Administration. Even though these are two different courses in the catalog, they teach the same content and will use the same Canvas course. So, anywhere you see CIS 527 in this course, you can also mentally substitute CC 510 in its place.
 
-My name is Russell Feldhausen, and I'll be your instructor for this course. My contact information is shown here, and is also listed on the syllabus, and on the home page of the course on K-State Online. My email address is russfeld@ksu.edu, and it is the official method of communication for matters outside of this course, since it allows me to have a record of our conversations and respond when I'm available. However, I'll also be available via the K-State CS Discord server, so you can easily chat with me there. There is a channel already created for this course that I encourage you to make use of throughout this course.
+My name is Russell Feldhausen, and I'll be your instructor for this course. My contact information is shown here, and is also listed on the syllabus, and on the home page of the course on K-State Canvas. My email address is russfeld@ksu.edu, and it is the official method of communication for matters outside of this course, since it allows me to have a record of our conversations and respond when I'm available. However, I'll also be available via the K-State CS Discord server, so you can easily chat with me there. There is a channel already created for this course that I encourage you to make use of throughout this course.
 
 For communication in this course, there are two basic methods that I recommend. For general questions about the course, content, getting help with labs, and any other items relevant to the course, I encourage you to use the course channel on Discord. This allows all of us to communicate in a single space, and it also means that any questions I answer will immediately be available for the whole class. For personal issues, grading questions, or if you have something that is a "to-do" item for me, please email me directly. While I will strive to check Discord often, I've found that sometimes tasks can get lost in the discussion, so having an email in my inbox to prompt me to follow up is very helpful. 
 
