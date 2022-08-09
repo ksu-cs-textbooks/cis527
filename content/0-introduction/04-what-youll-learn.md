@@ -4,13 +4,7 @@ weight: 20
 pre: "4. "
 ---
 
-{{% notice warning warning-1 "Under Construction" %}}
-
-_This video discusses the content present in this course as of Summer 2021. Labs 5 - 7 are being rewritten for Summer 2022, but since they are not available at the beginning of the semester, I went ahead and left this video as-is. So, please be aware that what is shown in this video may not reflect that actual content of the course once updates are published. -Russ_
-
-<!-- TODO Update Video -->
-
-{{% /notice %}}
+<!-- TODO Update Video? -->
 
 {{< youtube vee_MU5qR1o >}}
 
