@@ -1,5 +1,5 @@
 ---
-title: "Fall 2022 Syllabus"
+title: "Summer 2022 Syllabus"
 weight: 25
 pre: "5. "
 ---
