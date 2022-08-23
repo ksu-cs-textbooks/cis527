@@ -973,76 +973,6 @@
 	
 	
 		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
 
 	
 	
@@ -1335,6 +1265,10 @@
     <lastmod>2018-10-22T16:10:33-05:00</lastmod>
   </url>
   <url>
+    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/week01/</loc>
+    <lastmod>2022-08-23T14:14:48-05:00</lastmod>
+  </url>
+  <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/01-introduction/</loc>
     <lastmod>2018-09-04T15:56:01-05:00</lastmod>
   </url>
@@ -1379,8 +1313,8 @@
     <lastmod>2021-08-23T10:38:52-05:00</lastmod>
   </url>
   <url>
-    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/week01/</loc>
-    <lastmod>2022-05-27T14:13:11-05:00</lastmod>
+    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/summer2022/week01/</loc>
+    <lastmod>2022-08-23T14:14:48-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/</loc>
@@ -1431,8 +1365,8 @@
     <lastmod>2021-08-23T10:38:52-05:00</lastmod>
   </url>
   <url>
-    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/week02/</loc>
-    <lastmod>2022-06-13T09:46:31-05:00</lastmod>
+    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/summer2022/week02/</loc>
+    <lastmod>2022-08-23T14:14:48-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/02-the-cloud-overview/</loc>
@@ -1479,8 +1413,8 @@
     <lastmod>2018-09-15T11:03:49-05:00</lastmod>
   </url>
   <url>
-    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/week03/</loc>
-    <lastmod>2022-06-20T10:48:02-05:00</lastmod>
+    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/summer2022/week03/</loc>
+    <lastmod>2022-08-23T14:14:48-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/03-virtualization-vmware/</loc>
@@ -1523,8 +1457,8 @@
     <lastmod>2022-06-21T16:08:32-05:00</lastmod>
   </url>
   <url>
-    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/week04/</loc>
-    <lastmod>2022-06-27T10:18:03-05:00</lastmod>
+    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/summer2022/week04/</loc>
+    <lastmod>2022-08-23T14:14:48-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/04-transport-layer/</loc>
@@ -1579,8 +1513,8 @@
     <lastmod>2022-06-21T16:08:32-05:00</lastmod>
   </url>
   <url>
-    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/week05/</loc>
-    <lastmod>2022-07-05T10:39:40-05:00</lastmod>
+    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/summer2022/week05/</loc>
+    <lastmod>2022-08-23T14:14:48-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/05-windows-overview-installation/</loc>
@@ -1615,8 +1549,8 @@
     <lastmod>2020-05-05T17:07:45-05:00</lastmod>
   </url>
   <url>
-    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/week06/</loc>
-    <lastmod>2022-07-11T11:18:27-05:00</lastmod>
+    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/summer2022/week06/</loc>
+    <lastmod>2022-08-23T14:14:48-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/6-application-servers/06-ubuntu-file-server/</loc>
@@ -1671,8 +1605,8 @@
     <lastmod>2020-05-27T18:23:42-05:00</lastmod>
   </url>
   <url>
-    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/week07/</loc>
-    <lastmod>2022-07-18T11:18:13-05:00</lastmod>
+    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/summer2022/week07/</loc>
+    <lastmod>2022-08-23T14:14:48-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/07-ubuntu-ldap-installation/</loc>
@@ -1719,8 +1653,8 @@
     <lastmod>2022-06-21T16:08:32-05:00</lastmod>
   </url>
   <url>
-    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/week08/</loc>
-    <lastmod>2022-07-25T11:21:34-05:00</lastmod>
+    <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/summer2022/week08/</loc>
+    <lastmod>2022-08-23T14:14:48-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/08-troubleshooting/</loc>
