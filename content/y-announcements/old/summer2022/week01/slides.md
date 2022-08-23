@@ -11,7 +11,7 @@ hidden: true
 	<p>
 	  <i>Pronouns: he/him</i><br>
 		(785) 292-3121 (Call/Text)<br>
-		2213 Engineering Hall<br>
+		2184 Engineering Hall<br>
 		<i>(working remotely)</i><br>
 		<br>
 		<b>russfeld AT ksu DOT edu</b><br>
@@ -23,7 +23,7 @@ hidden: true
 	<h3>The Course</h3>
 	<ul>
 		<li>Gated Modules on Canvas</li>
-		<li>1 Module Every Other Week</li>
+		<li>1 Module Per Week</li>
 		<li><b>Check Due Dates</b></li>
 		<li>Lab Assignment - Live Grading</li>
 		<li>Discussions - Video & Questions</li>
@@ -72,7 +72,10 @@ hidden: true
 	  <li>Discussions on Discord<ul>
 	  <li>https://discordbot.cs.ksu.edu</li>
 	  </ul></li>
-	  <li>"Tea Time" Office Hours</li>
+	  <li>Zoom Discussions</li>
+	  <li>"Tea Time" Office Hours<ul>
+	  <li>Tuesday 3:30 | Friday 10:30</li>
+	  </ul></li>
 	  <li>One-on-One Office Hours</li>
 	</ul>
 </section>
