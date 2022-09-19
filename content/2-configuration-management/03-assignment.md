@@ -35,7 +35,7 @@ Create new Windows 10 and Ubuntu 20.04 virtual machines for this lab. When creat
 After installing the operating system, install **ONLY** the following software:
 
 * Puppet Agent 7 ([Windows](https://downloads.puppetlabs.com/windows/puppet7/) & Ubuntu)
-  * See [Installing Agents](https://puppet.com/docs/puppet/latest/install_agents.html) and [Enable the Puppet Platform on Apt](https://puppet.com/docs/puppet/7.6/install_puppet.html#enable_the_puppet_platform_repository) from Puppet Documentation
+  * See [Installing Agents](https://puppet.com/docs/puppet/latest/install_agents.html) and [Enable the Puppet Platform on Apt](https://puppet.com/docs/puppet/7/install_puppet.html#enable_the_puppet_platform_apt) from Puppet Documentation
   * Recall that Ubuntu 20.04 is codenamed "Focal Fossa", so use the url `https://apt.puppetlabs.com/puppet7-release-focal.deb` to get the correct version on Ubuntu. 
 * VMware Tools (Windows) and either `open-vm-tools-desktop` or VMware Tools (Ubuntu)
 * All System Updates (Windows & Ubuntu)
