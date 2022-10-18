@@ -1003,6 +1003,16 @@
 	
 	
 		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
 
 	
 	
@@ -1294,7 +1304,7 @@
       <link>https://ksu-cs-textbooks.github.io/cis527/x-extras/01-introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/x-extras/01-introduction/</guid>
-      <description>YouTube Video Video Transcript Greetings everyone! This module contains additional materials and helpful information for system administrators. You are not required to view all of these videos, but I encourage you to do so if there are any topics here you find interesting.
+      <description>Video Transcript Greetings everyone! This module contains additional materials and helpful information for system administrators. You are not required to view all of these videos, but I encourage you to do so if there are any topics here you find interesting.
 Also, feel free to suggest any topics you&amp;rsquo;d like to see covered in this section as you go through the course. Any suggestions may be considered toward the extra credit assignment in this course.</description>
     </item>
     <item>
@@ -1302,21 +1312,21 @@ Also, feel free to suggest any topics you&amp;rsquo;d like to see covered in thi
       <link>https://ksu-cs-textbooks.github.io/cis527/x-extras/02-ssh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/x-extras/02-ssh/</guid>
-      <description>YouTube Video Resources How Does SSH Work from Hostinger SSH Essentials: Working with SSH Servers, Clients and Keys from DigitalOcean How to Set Up SSH Keys on Ubuntu 20.04 from DigitalOcean Simplify Your Life With an SSH Config File from Nerderati Video Transcript In this video, I&amp;rsquo;ll discuss how to use the Secure Shell, or SSH, remote server and client. You&amp;rsquo;ll be using it throughout the semester to connect to various computers, and there are a few things you should know that will help make your experience a much more pleasant one.</description>
+      <description>Resources How Does SSH Work from Hostinger SSH Essentials: Working with SSH Servers, Clients and Keys from DigitalOcean How to Set Up SSH Keys on Ubuntu 20.04 from DigitalOcean Simplify Your Life With an SSH Config File from Nerderati Video Transcript In this video, I&amp;rsquo;ll discuss how to use the Secure Shell, or SSH, remote server and client. You&amp;rsquo;ll be using it throughout the semester to connect to various computers, and there are a few things you should know that will help make your experience a much more pleasant one.</description>
     </item>
     <item>
       <title>Bash Scripting</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/x-extras/03-bash-scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/x-extras/03-bash-scripting/</guid>
-      <description>YouTube Video Resources Advanced Bash-Scripting Guide from The Linux Documentation Project (TLDP) Advanced Command Line How To from Ubuntu Beginners / Bash Scripting from Ubuntu Environment Variables from Ubuntu Cron How To from Ubuntu Magic Number on Wikipedia Video Transcript In this video, I&amp;rsquo;ll introduce the concepts for scripting using the Bash shell in Ubuntu Linux. In essence, scripting allows you to automate many common tasks that you would perform using the terminal in Linux.</description>
+      <description>Resources Advanced Bash-Scripting Guide from The Linux Documentation Project (TLDP) Advanced Command Line How To from Ubuntu Beginners / Bash Scripting from Ubuntu Environment Variables from Ubuntu Cron How To from Ubuntu Magic Number on Wikipedia Video Transcript In this video, I&amp;rsquo;ll introduce the concepts for scripting using the Bash shell in Ubuntu Linux. In essence, scripting allows you to automate many common tasks that you would perform using the terminal in Linux.</description>
     </item>
     <item>
       <title>Cron (Linux Scheduled Tasks)</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/x-extras/04-cron-linux-scheduled-tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/x-extras/04-cron-linux-scheduled-tasks/</guid>
-      <description>YouTube Video Resources Cron How To from Ubuntu Linux Cron Guide from LinuxConfig.org Video Transcript This video introduces the Cron tool on Linux, which can be used to run tasks automatically at specific times on your system. It is a very handy piece of software, but a little confusing at first.
+      <description>Resources Cron How To from Ubuntu Linux Cron Guide from LinuxConfig.org Video Transcript This video introduces the Cron tool on Linux, which can be used to run tasks automatically at specific times on your system. It is a very handy piece of software, but a little confusing at first.
 To view the current list of scheduled tasks for your user, use the following command:
 crontab -l Generally, you probably won&amp;rsquo;t see anything there at first.</description>
     </item>
@@ -1325,7 +1335,7 @@ crontab -l Generally, you probably won&amp;rsquo;t see anything there at first.<
       <link>https://ksu-cs-textbooks.github.io/cis527/x-extras/05-powershell-scripting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/x-extras/05-powershell-scripting/</guid>
-      <description>YouTube Video Resources Windows PowerShell: Scripting Crash Course from Microsoft TechNet How to Write and Run Scripts in the Windows PowerShell ISE from Microsoft Windows PowerShell Scripting Tutorial for Beginners from Netwrix Video Transcript This video introduces the Windows PowerShell Integrated Scripting Environment (ISE) and covers the basics for creating and running your own scripts in Windows PowerShell.
+      <description>Resources Windows PowerShell: Scripting Crash Course from Microsoft TechNet How to Write and Run Scripts in the Windows PowerShell ISE from Microsoft Windows PowerShell Scripting Tutorial for Beginners from Netwrix Video Transcript This video introduces the Windows PowerShell Integrated Scripting Environment (ISE) and covers the basics for creating and running your own scripts in Windows PowerShell.
 Before we begin, we must change one system setting to allow unsigned PowerShell scripts to run.</description>
     </item>
     <item>
@@ -1333,14 +1343,14 @@ Before we begin, we must change one system setting to allow unsigned PowerShell 
       <link>https://ksu-cs-textbooks.github.io/cis527/x-extras/06-windows-subsystem-for-linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/x-extras/06-windows-subsystem-for-linux/</guid>
-      <description>YouTube Video Resources Windows 10 WSL Installation Guide from Microsoft Windows Subsystem for Linux Documentation from Microsoft Video Transcript In this video, I will briefly introduce the Windows Subsystem for Linux, or WSL, which was one of the most highly anticipated features added to Windows 10 in the last couple of years. WSL allows you to install a full Linux distribution right inside your Windows 10 OS, giving you terminal access to some of your favorite Linux programs and tools.</description>
+      <description>Resources Windows 10 WSL Installation Guide from Microsoft Windows Subsystem for Linux Documentation from Microsoft Video Transcript In this video, I will briefly introduce the Windows Subsystem for Linux, or WSL, which was one of the most highly anticipated features added to Windows 10 in the last couple of years. WSL allows you to install a full Linux distribution right inside your Windows 10 OS, giving you terminal access to some of your favorite Linux programs and tools.</description>
     </item>
     <item>
       <title>Git</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/x-extras/07-git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/x-extras/07-git/</guid>
-      <description>YouTube Video Resources Resources to Learn Git from GitHub Git Tutorial from Git Documentation Git Homepage Become a Git Guru from Atlassian Git Tutorial from Tutorialspoint Git Tutorial Slides by Russell Feldhausen GitHub Desktop from GitHub Git Kraken from Axosoft Gitignore Documentation from Git Documentation Gitignore Templates from GitHub Video Transcript This video provides a brief introduction to the Git source control program used by many system administrators. While this video is not intended to provide a full introduction to Git as a programmer would use it, it should serve as a quick introduction to the ways that system administrators might come across Git in their workloads.</description>
+      <description>Resources Resources to Learn Git from GitHub Git Tutorial from Git Documentation Git Homepage Become a Git Guru from Atlassian Git Tutorial from Tutorialspoint Git Tutorial Slides by Russell Feldhausen GitHub Desktop from GitHub Git Kraken from Axosoft Gitignore Documentation from Git Documentation Gitignore Templates from GitHub Video Transcript This video provides a brief introduction to the Git source control program used by many system administrators. While this video is not intended to provide a full introduction to Git as a programmer would use it, it should serve as a quick introduction to the ways that system administrators might come across Git in their workloads.</description>
     </item>
   </channel>
 </rss>
