@@ -150,7 +150,7 @@ Install the Docker client, Docker engine, and Docker compose on the droplet name
 #### Resources
 
 * [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/) from Docker
-* [Install Docker Compose Plugin](https://docs.docker.com/compose/install/compose-plugin/) from Docker
+* [Install Docker Compose Plugin](https://docs.docker.com/compose/install/linux/) from Docker
 
 ---
 
