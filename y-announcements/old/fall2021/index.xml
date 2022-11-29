@@ -1033,6 +1033,16 @@
 	
 	
 		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
 
 	
 	
@@ -1318,5 +1328,12 @@
     <description>Recent content in Fall 2021 on CIS 527 Textbook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/fall2021/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fall &#39;21 Week 1</title>
+      <link>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/fall2021/week01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/fall2021/week01/</guid>
+      <description>YouTube Video Resources Slides Video Script Hello, and welcome to the week one announcements video for CC 510 in Fall 2021. My name is Russell Feldhausen, and I&amp;rsquo;ll be your instructor for this semester. My contact information is listed here, and it&amp;rsquo;s also listed on the syllabus, feel free to contact me anytime. Email is my preferred method of communication for this class. But you can also find me on Discord, you can schedule one on one office hours via Calendly.</description>
+    </item>
   </channel>
 </rss>
