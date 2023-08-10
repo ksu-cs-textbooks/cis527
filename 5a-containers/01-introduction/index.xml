@@ -14,26 +14,6 @@
 	
 	
 		
-
-	
-	
-		
-
-	
-	
-		
-		
-
-	
-	
-		
-		
-
-	
-	
-		
-		
-		
 		
 
 	
@@ -53,6 +33,26 @@
 
 	
 	
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
 		
 		
 
@@ -1324,7 +1324,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on CIS 527 Textbook</title>
-    <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/01-introduction/</link>
+    <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/01-introduction/index.html</link>
     <description>Recent content in Introduction on CIS 527 Textbook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://ksu-cs-textbooks.github.io/cis527/5a-containers/01-introduction/index.xml" rel="self" type="application/rss+xml" />

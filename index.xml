@@ -14,26 +14,6 @@
 	
 	
 		
-
-	
-	
-		
-
-	
-	
-		
-		
-
-	
-	
-		
-		
-
-	
-	
-		
-		
-		
 		
 
 	
@@ -53,6 +33,26 @@
 
 	
 	
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
 		
 		
 
@@ -1323,110 +1323,109 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homepage on CIS 527 Textbook</title>
-    <link>https://ksu-cs-textbooks.github.io/cis527/</link>
-    <description>Recent content in Homepage on CIS 527 Textbook</description>
+    <title>CIS 527 Textbook</title>
+    <link>https://ksu-cs-textbooks.github.io/cis527/index.html</link>
+    <description>Recent content on CIS 527 Textbook</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 24 Aug 2018 10:53:05 -0500</lastBuildDate><atom:link href="https://ksu-cs-textbooks.github.io/cis527/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://ksu-cs-textbooks.github.io/cis527/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Course Information</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/0-introduction/</link>
+      <title>Introduction</title>
+      <link>https://ksu-cs-textbooks.github.io/cis527/0-introduction/index.html</link>
       <pubDate>Fri, 24 May 2019 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/0-introduction/</guid>
-      <description>Chapter 0 Introduction Course Introductory Material for CIS 527 Online</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/0-introduction/index.html</guid>
+      <description>Course Introductory Material for CIS 527 Online</description>
     </item>
     <item>
       <title>Secure Workstations</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/</guid>
-      <description>Chapter 1 Secure Workstations Creating secure workstations for an enterprise.</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/index.html</guid>
+      <description>Creating secure workstations for an enterprise.</description>
     </item>
     <item>
       <title>Configuration Management</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/</guid>
-      <description>Chapter 2 Configuration Management Automated provisioning of workstations and servers.</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/index.html</guid>
+      <description>Automated provisioning of workstations and servers.</description>
     </item>
     <item>
       <title>Core Networking Services</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/</guid>
-      <description>Chapter 3 Core Networking Services Getting your enterprise online.</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/index.html</guid>
+      <description>Getting your enterprise online.</description>
     </item>
     <item>
       <title>Directory Services</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/</guid>
-      <description>Chapter 4 Directory Services Consistent usernames across devices.</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/index.html</guid>
+      <description>Consistent usernames across devices.</description>
     </item>
     <item>
       <title>The Cloud</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/</guid>
-      <description>Chapter 5 The Cloud Moving from in-house to online.</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/index.html</guid>
+      <description>Moving from in-house to online.</description>
     </item>
     <item>
       <title>Containers</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/index.html</link>
       <pubDate>Mon, 06 Jun 2022 00:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/</guid>
-      <description>Chapter 5.A Containers All the fun of virtual machines without all the extra baggage!</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/index.html</guid>
+      <description>All the fun of virtual machines without all the extra baggage!</description>
     </item>
     <item>
       <title>Application Servers</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/6-application-servers/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/6-application-servers/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/6-application-servers/</guid>
-      <description>Chapter 6 Application Servers Putting your resources to work.</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/6-application-servers/index.html</guid>
+      <description>Putting your resources to work.</description>
     </item>
     <item>
       <title>Backups, Monitoring &amp; DevOps</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/</guid>
-      <description>Chapter 7 Backups, Monitoring &amp;amp; DevOps Automatic deployment &amp;amp; 99.9999% uptime.</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/index.html</guid>
+      <description>Automatic deployment &amp;amp; 99.9999% uptime.</description>
     </item>
     <item>
       <title>Final Project</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/8-final-project/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/8-final-project/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/8-final-project/</guid>
-      <description>Chapter 8 Final Project Putting it all together.</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/8-final-project/index.html</guid>
+      <description>Putting it all together.</description>
     </item>
     <item>
       <title>Wrap Up</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/9-wrap-up/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/9-wrap-up/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/9-wrap-up/</guid>
-      <description>Chapter 9 Wrap Up Cleaning up the mess.</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/9-wrap-up/index.html</guid>
+      <description>Cleaning up the mess.</description>
     </item>
     <item>
       <title>Extras</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/x-extras/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/x-extras/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/x-extras/</guid>
-      <description>Chapter X Extras Additional helpful material for system administrators.</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/x-extras/index.html</guid>
+      <description>Additional helpful material for system administrators.</description>
     </item>
     <item>
       <title>Announcements</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/y-announcements/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/y-announcements/index.html</link>
       <pubDate>Sun, 19 Apr 2020 00:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/y-announcements/</guid>
-      <description>Chapter Y Announcements Information for Current Students!
-Previous Semesters Are Here</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/y-announcements/index.html</guid>
+      <description>Information for Current Students!
+Previous Semesters Are Here </description>
     </item>
     <item>
       <title>Instructor Resources</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/index.html</link>
       <pubDate>Fri, 24 Aug 2018 10:53:05 -0500</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/</guid>
-      <description>Chapter Z Teacher Only Helpful pages for the instructor</description>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/index.html</guid>
+      <description>Helpful pages for the instructor</description>
     </item>
   </channel>
 </rss>

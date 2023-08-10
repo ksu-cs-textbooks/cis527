@@ -14,26 +14,6 @@
 	
 	
 		
-
-	
-	
-		
-
-	
-	
-		
-		
-
-	
-	
-		
-		
-
-	
-	
-		
-		
-		
 		
 
 	
@@ -53,6 +33,26 @@
 
 	
 	
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
+
+	
+	
+		
+		
 		
 		
 
@@ -1324,113 +1324,113 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Instructor Resources on CIS 527 Textbook</title>
-    <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/</link>
+    <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/index.html</link>
     <description>Recent content in Instructor Resources on CIS 527 Textbook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Aug 2018 10:53:05 -0500</lastBuildDate><atom:link href="https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lab 1 Grading Checklist</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/01-lab-1-grading-checklist/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/01-lab-1-grading-checklist/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/01-lab-1-grading-checklist/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/01-lab-1-grading-checklist/index.html</guid>
       <description>Install VMware (2) Create Windows 10 VM (3) Install VMware (2) RAM 2 GB Configure Windows 10 (10) Computer Name Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser) Groups (Administrators, Users, Files) Software (VMware Tools, Firefox, Thunderbird, Notepad++, BGInfo) Windows Updates Access IIS from Ubuntu (firewall and IIS config) Windows 10 Files (10) Run Get-ChildItem -Recurse | Get-Acl | Format-List Check for groups and user on each folder Create Ubuntu VM (3) RAM 1 or 2 GB Configure Ubuntu (10) Computer Name (terminal) User Accounts (cat /etc/passwd) Groups (cat /etc/group) Software (vm tools, Synaptic, GUFW, ClamAV) Firewall (enabled?</description>
     </item>
     <item>
       <title>Lab 1 Grading Email</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/02-lab-1-grading-email/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/02-lab-1-grading-email/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/02-lab-1-grading-email/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/02-lab-1-grading-email/index.html</guid>
       <description>Greetings! Here is the information you&amp;rsquo;ll need to know to get your lab graded.
 Grading Date/Time: &amp;lt;time&amp;gt; Contact me ASAP if that time will not work for you for any reason and I will work with you to reschedule. Zoom Link: &amp;lt;link&amp;gt; If you haven&amp;rsquo;t used Zoom before, I recommend going to https://ksu.zoom.us/ first to download the Zoom client software. Then, when the time comes, click the link above to join the Zoom session.</description>
     </item>
     <item>
       <title>Lab 2 Grading Checklist</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/03-lab-2-grading-checklist/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/03-lab-2-grading-checklist/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/03-lab-2-grading-checklist/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/03-lab-2-grading-checklist/index.html</guid>
       <description> Windows Manifest (5) Compiles Runs Without Errors Windows Configuration (10) Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser) Groups (Administrators, Users, Files) Software (Firefox, Thunderbird, Notepad++) Windows Files (10) Run Get-ChildItem -Recurse | Get-Acl | Format-List Check for groups and user on each folder Ubuntu Manifest (5) Compiles Runs Without Errors Ubuntu Configuration (10) Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser) Groups (files) Software (Firefox, Thunderbird, Synaptic) Ubuntu Files (10) Run ls -lR Check for groups and user on each folder </description>
     </item>
     <item>
       <title>Lab 2 Grading Email</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/04-lab-2-grading-email/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/04-lab-2-grading-email/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/04-lab-2-grading-email/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/04-lab-2-grading-email/index.html</guid>
       <description>Greetings! Here is the information you&amp;rsquo;ll need to know to get your lab graded.
 Submit Files: Submit your Puppet Manifest Files via Canvas. I will download them and test them on my system for grading. Grading Date/Time: &amp;lt;time&amp;gt; Contact me ASAP if that time will not work for you for any reason and I will work with you to reschedule. Zoom Link: &amp;lt;link&amp;gt; If you haven&amp;rsquo;t used Zoom before, I recommend going to https://ksu.</description>
     </item>
     <item>
       <title>Lab 3 Grading Checklist</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/05-lab-3-grading-checklist/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/05-lab-3-grading-checklist/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/05-lab-3-grading-checklist/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/05-lab-3-grading-checklist/index.html</guid>
       <description>Remote Connections (4) SSH to Linux RDP to Windows Ubuntu Static IP (4) IP &amp;amp; Subnet Default Gateway DNS Ubuntu DNS Server (15) Forward Zone File Reverse Zone File Forwarders ACL Ubuntu DHCP Server (15) Domain Name DNS Servers Routers Range Authoritative Ubuntu SNMP Daemon (4) snmp demonstration 3 Screenshots - before ping, pinging, after ping Ubuntu Firewall (-5 if not enabled or configured) Wireshark (8) DNS query people.cs.ksu.edu DNS Response people.</description>
     </item>
     <item>
       <title>Lab 3 Grading Email</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/06-lab-3-grading-email/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/06-lab-3-grading-email/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/06-lab-3-grading-email/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/06-lab-3-grading-email/index.html</guid>
       <description>Greetings! Here is the information you&amp;rsquo;ll need to know to get your lab graded.
 Grading Date/Time: &amp;lt;time&amp;gt; Contact me ASAP if that time will not work for you for any reason and I will work with you to reschedule. Zoom Link: &amp;lt;link&amp;gt; If you haven&amp;rsquo;t used Zoom before, I recommend going to https://ksu.zoom.us/ first to download the Zoom client software. Then, when the time comes, click the link above to join the Zoom session.</description>
     </item>
     <item>
       <title>Lab 4 Grading Checklist</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/07-lab-4-grading-checklist/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/07-lab-4-grading-checklist/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/07-lab-4-grading-checklist/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/07-lab-4-grading-checklist/index.html</guid>
       <description> Install Windows Server 2019 Standard (3) Static IP DNS server point to itself Install AD DS (10) Domain name: ad.&amp;lt;eID&amp;gt;.cis527.cs.ksu.edu Domain user Windows 10 Client on AD (5) Log in with domain user Install OpenLDAP (15) Domain Name: dc=ldap,dc=&amp;lt;eID&amp;gt;,dc=cis527,dc=cs,dc=ksu,dc=edu Install phpLDAPadmin LDAP OUs: users and groups LDAP groups: admin LDAP user TLS (test client side with ldapwhoami -x -Z ldap.&amp;lt;eID&amp;gt;.cis527.cs.ksu.edu returning anonymous) Ubuntu Client on LDAP (5) Log in with LDAP user Interoperability (10) Add Ubuntu to Windows AD LDAPSearch (2) Screenshots Ubuntu Firewall enabled and configured (-5 if not) </description>
     </item>
     <item>
       <title>Lab 4 Grading Email</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/08-lab-4-grading-email/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/08-lab-4-grading-email/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/08-lab-4-grading-email/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/08-lab-4-grading-email/index.html</guid>
       <description>Greetings! Here is the information you&amp;rsquo;ll need to know to get your lab graded.
 Grading Date/Time: &amp;lt;time&amp;gt; Contact me ASAP if that time will not work for you for any reason and I will work with you to reschedule. Zoom Link: &amp;lt;link&amp;gt; If you haven&amp;rsquo;t used Zoom before, I recommend going to https://ksu.zoom.us/ first to download the Zoom client software. Then, when the time comes, click the link above to join the Zoom session.</description>
     </item>
     <item>
       <title>Lab 5 Grading Checklist</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/09-lab-5-grading-checklist/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/09-lab-5-grading-checklist/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/09-lab-5-grading-checklist/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/09-lab-5-grading-checklist/index.html</guid>
       <description> Create Two Droplets (5) Configure Droplets (5) SSH Port 22123 Timezone date Firewall (22123, 80, 443, backend filter) SSH Configuration (10) Grading Key on Frontend Frontend to Backend via config file SSH config - disable password &amp;amp; root Install Apache (5) Domain Names &amp;amp; DNS (5) 2 A records for frontend and backend Configure Apache Virtual Hosts (10) Apache virtual hosts config on both systems Public Key Certificates (10) Certificate works Redirect Works </description>
     </item>
     <item>
       <title>Lab 5 Grading Email</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/10-lab-5-grading-email/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/10-lab-5-grading-email/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/10-lab-5-grading-email/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/10-lab-5-grading-email/index.html</guid>
       <description>Greetings! Here is the information you&amp;rsquo;ll need to know to get your lab graded.
 Grading Date/Time: &amp;lt;time&amp;gt; Contact me ASAP if that time will not work for you for any reason and I will work with you to reschedule. Zoom Link: &amp;lt;link&amp;gt; If you haven&amp;rsquo;t used Zoom before, I recommend going to https://ksu.zoom.us/ first to download the Zoom client software. Then, when the time comes, click the link above to join the Zoom session.</description>
     </item>
     <item>
       <title>Lab 6 Grading Checklist</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/11-lab-6-grading-checklist/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/11-lab-6-grading-checklist/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/11-lab-6-grading-checklist/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/11-lab-6-grading-checklist/index.html</guid>
       <description> Windows File Server (5) Everyone share Restricted share (permissions) Windows Group Policy (5) GPO for Everyone GPO for Restricted (attached to what?) Ubuntu File Server (5) Everyone share Homes share cis527 user enabled Ubuntu Drive Mapping (5) fstab entry libpam-mount entry Windows Web Application Server (15) App Installed &amp;amp; Working SSL Certificate SSL Redirect Host Header Ubuntu Web Application Server (15) App Installed &amp;amp; Working MySQL on Backend Virtual Host SSL Certificate SSL Redirect Ubuntu firewall (-5 points if not enabled or configured) </description>
     </item>
     <item>
       <title>Lab 6 Grading Email</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/12-lab-6-grading-email/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/12-lab-6-grading-email/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/12-lab-6-grading-email/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/12-lab-6-grading-email/index.html</guid>
       <description>Greetings! Here is the information you&amp;rsquo;ll need to know to get your lab graded.
 Grading Date/Time: &amp;lt;time&amp;gt; Contact me ASAP if that time will not work for you for any reason and I will work with you to reschedule. Zoom Link: &amp;lt;link&amp;gt; If you haven&amp;rsquo;t used Zoom before, I recommend going to https://ksu.zoom.us/ first to download the Zoom client software. Then, when the time comes, click the link above to join the Zoom session.</description>
     </item>
     <item>
       <title>Lab 7 Grading Checklist</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/13-lab-7-grading-checklist/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/13-lab-7-grading-checklist/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/13-lab-7-grading-checklist/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/13-lab-7-grading-checklist/index.html</guid>
       <description> Windows Backup &amp;amp; Restore (15) Screenshot of login Screenshot of fail Screenshot of restore Screenshot of login Ubuntu Backup (15) Website Data Apache Config MySQL Backup README Ubuntu Monitoring (10) Munin or Ganglia Installed Backend added as client DevOps (10) Webhook config GitLab Webhook Push to Git, see change on server </description>
     </item>
     <item>
       <title>Lab 7 Grading Email</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/14-lab-7-grading-email/</link>
+      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/14-lab-7-grading-email/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/14-lab-7-grading-email/</guid>
+      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/14-lab-7-grading-email/index.html</guid>
       <description>Greetings! Here is the information you&amp;rsquo;ll need to know to get your lab graded.
 Grading Date/Time: &amp;lt;time&amp;gt; Contact me ASAP if that time will not work for you for any reason and I will work with you to reschedule. Zoom Link: &amp;lt;link&amp;gt; If you haven&amp;rsquo;t used Zoom before, I recommend going to https://ksu.zoom.us/ first to download the Zoom client software. Then, when the time comes, click the link above to join the Zoom session.</description>
     </item>
