@@ -1,13 +1,11 @@
 +++
-title = "Course Information"
+title = "Introduction"
 date = 2019-05-24T10:53:05-05:00
 weight = 5
-chapter = true
+archetype = "chapter"
+ordinal = "0"
 pre = "<b>0. </b>"
 +++
 
-### Chapter 0
-
-# Introduction
 
 Course Introductory Material for CIS 527 Online
