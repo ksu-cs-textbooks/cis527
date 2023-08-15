@@ -1344,7 +1344,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/01-introduction/index.html</loc>
-    <lastmod>2018-10-04T17:36:57-05:00</lastmod>
+    <lastmod>2023-08-15T14:59:11-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/01-introduction/index.html</loc>
@@ -1528,7 +1528,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/04-installing-puppet/index.html</loc>
-    <lastmod>2021-05-06T16:40:13-05:00</lastmod>
+    <lastmod>2023-08-15T14:59:11-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/5a-containers/04-orchestration/index.html</loc>
@@ -1588,7 +1588,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/05-puppet-resources/index.html</loc>
-    <lastmod>2020-05-05T17:07:45-05:00</lastmod>
+    <lastmod>2023-08-15T14:59:11-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/5a-containers/05-resources/index.html</loc>
@@ -1628,7 +1628,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/06-puppet-manifest-files/index.html</loc>
-    <lastmod>2020-05-05T17:07:45-05:00</lastmod>
+    <lastmod>2023-08-15T14:59:11-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/summer2022/week06/index.html</loc>
@@ -1680,7 +1680,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/07-puppet-resource-ordering/index.html</loc>
-    <lastmod>2020-05-05T17:07:45-05:00</lastmod>
+    <lastmod>2023-08-15T14:59:11-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/07-scaling-high-availability/index.html</loc>
@@ -1776,7 +1776,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/09-windows-processes-services/index.html</loc>
-    <lastmod>2018-09-04T15:56:01-05:00</lastmod>
+    <lastmod>2023-08-15T14:59:11-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/09-windows-backups/index.html</loc>
@@ -1800,7 +1800,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/10-puppet-agent-master-demo/index.html</loc>
-    <lastmod>2020-05-05T17:07:45-05:00</lastmod>
+    <lastmod>2023-08-15T14:59:11-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/10-ubuntu-backups/index.html</loc>
@@ -1828,7 +1828,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/11-hints/index.html</loc>
-    <lastmod>2020-05-05T17:07:45-05:00</lastmod>
+    <lastmod>2023-08-15T14:59:11-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/11-lab-6-grading-checklist/index.html</loc>
@@ -1860,7 +1860,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/12-ubuntu-overview-installation/index.html</loc>
-    <lastmod>2020-05-27T18:23:42-05:00</lastmod>
+    <lastmod>2023-08-15T14:59:11-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/6-application-servers/12-ubuntu-web-application/index.html</loc>
@@ -1912,7 +1912,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/1-secure-workstations/17-ubuntu-software-installation/index.html</loc>
-    <lastmod>2020-05-04T17:00:35-05:00</lastmod>
+    <lastmod>2023-08-15T14:59:11-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/18-lab3-demo/index.html</loc>
