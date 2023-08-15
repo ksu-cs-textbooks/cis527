@@ -1320,11 +1320,6 @@
 	
 		
 		
-
-	
-	
-		
-		
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -1339,7 +1334,7 @@
       <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/01-lab-1-grading-checklist/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/01-lab-1-grading-checklist/index.html</guid>
-      <description>Install VMware (2) Create Windows 10 VM (3) Install VMware (2) RAM 2 GB Configure Windows 10 (10) Computer Name Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser) Groups (Administrators, Users, Files) Software (VMware Tools, Firefox, Thunderbird, Notepad++, BGInfo) Windows Updates Access IIS from Ubuntu (firewall and IIS config) Windows 10 Files (10) Run Get-ChildItem -Recurse | Get-Acl | Format-List Check for groups and user on each folder Create Ubuntu VM (3) RAM 1 or 2 GB Configure Ubuntu (10) Computer Name (terminal) User Accounts (cat /etc/passwd) Groups (cat /etc/group) Software (vm tools, Synaptic, GUFW, ClamAV) Firewall (enabled?</description>
+      <description>Install VMware (2) Create Windows 10 VM (3) HDD 60 GB or more RAM 1 GB or more Configure Windows 10 (10) Computer Name includes eID Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser) Groups (Administrators, Users, Files) Software (VMware Tools, Firefox, Thunderbird, Notepad++, BGInfo) Windows Updates Access IIS from Ubuntu (firewall and IIS config) Windows 10 Files (10) Run Get-ChildItem -Recurse | Get-Acl | Format-List Check for groups and user on each folder (compare with screenshot) Create Ubuntu VM (3) HDD 20 GB or more RAM 1 GB or more Configure Ubuntu (10) Computer Name (terminal) User Accounts (cat /etc/passwd) Groups (cat /etc/group) Software (vm tools, Synaptic, GUFW, ClamAV) Firewall (enabled?</description>
     </item>
     <item>
       <title>Lab 1 Grading Email</title>
@@ -1354,15 +1349,7 @@ Grading Date/Time: &amp;lt;time&amp;gt; Contact me ASAP if that time will not wo
       <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/03-lab-2-grading-checklist/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/03-lab-2-grading-checklist/index.html</guid>
-      <description> Windows Manifest (5) Compiles Runs Without Errors Windows Configuration (10) Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser) Groups (Administrators, Users, Files) Software (Firefox, Thunderbird, Notepad++) Windows Files (10) Run Get-ChildItem -Recurse | Get-Acl | Format-List Check for groups and user on each folder Ubuntu Manifest (5) Compiles Runs Without Errors Ubuntu Configuration (10) Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser) Groups (files) Software (Firefox, Thunderbird, Synaptic) Ubuntu Files (10) Run ls -lR Check for groups and user on each folder </description>
-    </item>
-    <item>
-      <title>Lab 2 Grading Email</title>
-      <link>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/04-lab-2-grading-email/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/04-lab-2-grading-email/index.html</guid>
-      <description>Greetings! Here is the information you&amp;rsquo;ll need to know to get your lab graded.
-Submit Files: Submit your Puppet Manifest Files via Canvas. I will download them and test them on my system for grading. Grading Date/Time: &amp;lt;time&amp;gt; Contact me ASAP if that time will not work for you for any reason and I will work with you to reschedule. Zoom Link: &amp;lt;link&amp;gt; If you haven&amp;rsquo;t used Zoom before, I recommend going to https://ksu.</description>
+      <description> Windows Manifest (5) Compiles Runs Without Errors Comments for any modules to install Windows Configuration (10) Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser) Groups (Administrators, Users, Files) Software (Firefox, Thunderbird, Notepad++) Windows Files (10) Run Get-ChildItem -Recurse | Get-Acl | Format-List Check for groups and user on each folder Ubuntu Manifest (5) Compiles Runs Without Errors Comments for any modules to install Ubuntu Configuration (10) Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser) Groups (files) Software (Firefox, Thunderbird, Synaptic) Ubuntu Files (10) Run ls -lR Check for groups and user on each folder </description>
     </item>
     <item>
       <title>Lab 3 Grading Checklist</title>

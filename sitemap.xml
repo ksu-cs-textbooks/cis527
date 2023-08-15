@@ -1320,11 +1320,6 @@
 	
 		
 		
-
-	
-	
-		
-		
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
@@ -1385,7 +1380,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/01-lab-1-grading-checklist/index.html</loc>
-    <lastmod>2021-08-23T10:38:52-05:00</lastmod>
+    <lastmod>2023-08-15T13:44:09-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/y-announcements/old/summer2022/week01/index.html</loc>
@@ -1429,7 +1424,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/02-lab-1-grading-email/index.html</loc>
-    <lastmod>2021-08-23T10:38:52-05:00</lastmod>
+    <lastmod>2023-08-15T13:44:09-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/0-introduction/02-navigating-canvas-youtube/index.html</loc>
@@ -1489,7 +1484,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/03-lab-2-grading-checklist/index.html</loc>
-    <lastmod>2021-08-23T10:38:52-05:00</lastmod>
+    <lastmod>2023-08-15T13:44:09-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/03-network-layer/index.html</loc>
@@ -1534,10 +1529,6 @@
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/04-installing-puppet/index.html</loc>
     <lastmod>2021-05-06T16:40:13-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/04-lab-2-grading-email/index.html</loc>
-    <lastmod>2021-08-23T10:38:52-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/5a-containers/04-orchestration/index.html</loc>
@@ -1633,7 +1624,7 @@
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/z-instructor-resources/06-lab-3-grading-email/index.html</loc>
-    <lastmod>2021-08-23T10:38:52-05:00</lastmod>
+    <lastmod>2023-08-15T13:44:09-05:00</lastmod>
   </url>
   <url>
     <loc>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/06-puppet-manifest-files/index.html</loc>
