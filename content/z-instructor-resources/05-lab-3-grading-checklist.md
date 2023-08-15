@@ -33,5 +33,5 @@ pre: "3.1 "
   - ICMP Echo
   - SNMP Packet
   - DHCP Offer
-  - HTTP 301: Moved Permanently
+  - HTTP Redirect
   - HTTP Basic Authentication showing username and password

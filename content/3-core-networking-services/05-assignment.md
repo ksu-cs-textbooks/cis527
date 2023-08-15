@@ -26,7 +26,7 @@ This lab may take anywhere from **1 - 6 hours** to complete, depending on your p
 
 ### Task 0: Create 3 VMs
 
-For this lab, you'll need to have **ONE Windows 10 VM**, and **TWO Ubuntu 20.04 VMs** available. You may reuse existing VMs from Lab 1 or Lab 2. In either case, they should have the full expected configuration applied, either manually as in Lab 1 or via the Puppet Manifest files created for Lab 2.
+For this lab, you'll need to have **ONE Windows 10 VM**, and **TWO Ubuntu 22.04 VMs** available. You may reuse existing VMs from Lab 1 or Lab 2. In either case, they should have the full expected configuration applied, either manually as in Lab 1 or via the Puppet Manifest files created for Lab 2.
 
 For the second Ubuntu VM, you may either quickly install and configure a new VM from scratch following the Lab 1 guide or using the Puppet Manifest from Lab 2, or you may choose to create a copy of one of your existing Ubuntu VMs. If you choose to copy one, follow these steps:
 
@@ -62,12 +62,12 @@ _You'll need to edit the registry and reboot the computer to accomplish this tas
 * You'll also need to make sure appropriate firewall rules are in place to accept these incoming connections, and ensure the firewall is properly enabled.
 * You can test your connection from your Linux VM using the **Remmina** program.
 
-**PART B:** On your Ubuntu 20.04 VM labelled **SERVER**, install and activate the **OpenSSH Server** for remote access.
+**PART B:** On your Ubuntu 22.04 VM labelled **SERVER**, install and activate the **OpenSSH Server** for remote access.
 
 * Both the `cis527` and `AdminUser` accounts should be able to access the system remotely.
 * In addition, **change the port** used by the SSH server to 23456.
 * You'll also need to make sure the appropriate firewall rules are in place to accept these incoming connections, and ensure the firewall is properly enabled.
-* You can test your connection from your Windows VM using [PuTTY](http://putty.org) or the Windows Subsystem for Linux, or from the Ubuntu 20.04 VM labelled **CLIENT** using the `ssh` command.
+* You can test your connection from your Windows VM using the `ssh` command in PowerShell, or from the Ubuntu 22.04 VM labelled **CLIENT** using the `ssh` command.
 {{% notice tip %}}
 _See the appropriate pages in the Extras module for more information about WSL and SSH. --Russ_
 {{% /notice %}}
@@ -85,7 +85,7 @@ _See the appropriate pages in the Extras module for more information about WSL a
 
 ### Task 2: Ubuntu Static IP Address
 
-On your Ubuntu 20.04 VM labelled **SERVER**, set up a static IP address. The host part of the IP address should end in `.41`, and the network part should remain the same as the one automatically assigned by VMware.
+On your Ubuntu 22.04 VM labelled **SERVER**, set up a static IP address. The host part of the IP address should end in `.41`, and the network part should remain the same as the one automatically assigned by VMware.
 
 {{% notice note %}}
 So, if your VMware is configured to give IP addresses in the `192.168.138.0/24` network, you'll set the computer to use the `192.168.138.41` address.
@@ -118,16 +118,15 @@ _I personally recommend using the graphical tools in Ubuntu to configure a stati
 
 ### Task 3: DNS Server
 
-For this step, install the `bind9` package on the Ubuntu 20.04 VM labelled **SERVER**, and configure it to act as a **primary master** and **caching nameserver** for your network. You'll need to include the configuration for both types of uses in your config file. In addition, you'll need to configure both the **zone file** and **reverse zone file**, as well as **forwarders**.
+For this step, install the `bind9` package on the Ubuntu 22.04 VM labelled **SERVER**, and configure it to act as a **primary master** and **caching nameserver** for your network. You'll need to include the configuration for both types of uses in your config file. In addition, you'll need to configure both the **zone file** and **reverse zone file**, as well as **forwarders**.
 
 {{% notice tip %}}
-_These instructions were built based on the [How To Configure BIND as a Private Network DNS Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-18-04) guide from DigitalOcean. In general, you can follow the first part of that guide to configure a Primary DNS Server, making the necessary substitutions listed below. The directions are basically the same for Ubuntu 20.04. --Russ_
+_These instructions were built based on the [How To Configure BIND as a Private Network DNS Server on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-22-04) guide from DigitalOcean. In general, you can follow the first part of that guide to configure a Primary DNS Server, making the necessary substitutions listed below. --Russ_
 {{% /notice %}}
 
 In your configuration, include the following items:
 
 * All files:
-  * On Ubuntu 20.04, the location of the default settings file has moved from `/etc/default/bind9` to `/etc/default/named`
   * Since you are not creating a Secondary DNS Server, you can leave out any `allow-transfer` entries from all configuration files.
 * `named.conf.options` file:
   * Create an ACL called `cis527` that includes your entire VM network in CIDR notation. Do not list individual IP addresses.
@@ -151,18 +150,17 @@ Since the at symbol `@` has other uses in the DNS Zone file, the email address u
 _HINT: The DigitalOcean guide does not include an at symbol `@` at the beginning of that record, but I've found that sometimes it is necessary to include it in order to make the `named-checkzone` command happy. See a related post on [ServerFault](https://serverfault.com/questions/802762/reverse-dns-bind-named-checkzone-zone-ns-has-no-address-records-a-or-aaaa-err) for additional ways to solve that common error.--Russ_
 {{% /notice %}}
 * Forward Zone File:
-  * Create an A record for `ns.<your eID>.cis527.cs.ksu.edu` that points to your Ubuntu 20.04 VM labelled **SERVER** using the IP address in your network ending in `41` as described above.
-  * Create an A record for `windows.<your eID>.cis527.cs.ksu.edu` that points to the IP address in your network ending in `42`. _(You'll use that IP address in the next assignment for your Windows server.)_
-  * Create an A record for `ldap.<your eID>.cis527.cs.ksu.edu` that points to your Ubuntu 20.04 VM labelled **SERVER** using the IP address in your network ending in `41` as described above. This record will be for the LDAP server in Lab 4.
+  * Create an A record for `ns.<your eID>.cis527.cs.ksu.edu` that points to your Ubuntu 22.04 VM labelled **SERVER** using the IP address in your network ending in `41` as described above.
   * Create an A record for `ad.<your eID>.cis527.cs.ksu.edu` that points to the IP address in your network ending in `42`. _(You'll use that IP address in the next assignment for your Windows server.)_ This record will be for the Active Directory server in Lab 4
   * Create a CNAME record for `ubuntu.<your eID>.cis527.cs.ksu.edu` that redirects to `ns.<your eID>.cis527.cs.ksu.edu`.
+  * Create a CNAME record for `ldap.<your eID>.cis527.cs.ksu.edu` that redirects to `ns.<your eID>.cis527.cs.ksu.edu`.
+  * Create a CNAME record for `windows.<your eID>.cis527.cs.ksu.edu` that redirects to `ad.<your eID>.cis527.cs.ksu.edu`.
 * Reverse Zone File:
   * Create a PTR record for the IP address ending in `41` that points to `ns.<your eID>.cis527.cs.ksu.edu`.
-  * Create a PTR record for the IP address ending in `42` that points to `windows.<your eID>.cis527.cs.ksu.edu`.
-
+  * Create a PTR record for the IP address ending in `42` that points to `ad.<your eID>.cis527.cs.ksu.edu`.
 
 {{% notice tip %}}
-_HINT: The periods, semicolons, and whitespace in the DNS configuration files are very important! Be very careful about formatting, including the trailing periods after full DNS names such as `win.<your eID>.cis527.ksu.edu.`. --Russ_
+_HINT: The periods, semicolons, and whitespace in the DNS configuration files are very important! Be very careful about formatting, including the trailing periods after full DNS names such as `ad.<your eID>.cis527.ksu.edu.`. --Russ_
 {{% /notice %}}
 
 Once you are done, I recommend checking your configuration using the `named-checkconf` and `named-checkzone` commands. Note that the second argument to the `named-checkzone` command is the full path to your zone file, so you may need to include the file path and not just the name of the file. Example: `named-checkzone russfeld.cis527.cs.ksu.edu /etc/bind/zones/db.russfeld.cis527.cs.ksu.edu`
@@ -177,7 +175,7 @@ See the [Bind Troubleshooting]({{< relref "/3-core-networking-services/17-bind-t
 
 #### Resources
 
-* [How To Configure BIND as a Private Network DNS Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-18-04) from DigitalOcean (works for 20.04 as well)
+* [How To Configure BIND as a Private Network DNS Server on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-22-04) from DigitalOcean
 * [Bind9 Server How-To](https://help.ubuntu.com/community/BIND9ServerHowto) from Ubuntu Community Help Wiki
 * [DNS Configuration](https://ubuntu.com/server/docs/service-domain-name-service-dns) from Ubuntu Server Guide
 * [BIND Manuals](http://www.bind9.net/manuals) from bind9.net
@@ -191,7 +189,7 @@ See the [Bind Troubleshooting]({{< relref "/3-core-networking-services/17-bind-t
 _**IMPORTANT!** Make ABSOLUTELY sure that the VMware virtual network you are using is not a "Bridged" or "Shared" network before continuing. It **MUST** be using "NAT". You can check by going to **Edit > Virtual Network Editor** in VMware Workstation or **VMware Fusion > Preferences > Network** in VMware Fusion and looking for the settings of the network each of your VMs is configured to use. Having your network configured incorrectly while performing this step is a great way to break the network your host computer is currently connected to, and in a worst case scenario will earn you a visit from K-State's IT staff (and they won't be happy)! --Russ_
 {{% /notice %}}
 
-Next, install the `isc-dhcp-server` package on the Ubuntu 20.04 VM labelled **SERVER**, and configure it to act as a DHCP server for your internal VM network.
+Next, install the `isc-dhcp-server` package on the Ubuntu 22.04 VM labelled **SERVER**, and configure it to act as a DHCP server for your internal VM network.
 
 In your configuration, include the following items:
 
@@ -199,7 +197,7 @@ In your configuration, include the following items:
   - You can also look at the network settings received by your Windows 10 VM, which at this point are from VMware's internal router.
 * Use `<your eID>.cis527.cs.ksu.edu` as the domain name. (Example: `russfeld.cis527.cs.ksu.edu`)
 * For the dynamic IP range, use IPs ending in `.100`-`.250` in your network.
-* For DNS servers, enter the **IP address** of your Ubuntu 20.04 VM labelled **SERVER** ending in `.41`. This will direct all DHCP clients to use the DNS server configured in Task 3.
+* For DNS servers, enter the **IP address** of your Ubuntu 22.04 VM labelled **SERVER** ending in `.41`. This will direct all DHCP clients to use the DNS server configured in Task 3.
   - Do not use the domain name of your DNS server in your DHCP config file. While it _can_ work, it depends on your DNS server being properly configured in Task 3. 
   - Alternatively, for testing if your DNS server is not working properly, you can use one of the other DNS options given above in Task 2. However, you must be using the DNS server from Task 3 when graded for full credit.
 
@@ -215,6 +213,7 @@ Once that is complete, you can test the DHCP server using the Windows VM. To do 
 
 #### Resources
 
+* [Install and Configure ISC DHCP Server](https://ubuntu.com/server/docs/how-to-install-and-configure-isc-dhcp-server) from Ubuntu Documentation
 * [Dynamic Host Configuration Protocol (DHCP)](https://ubuntu.com/server/docs/network-dhcp) from Ubuntu Server Guide
 * [How to Install DHCP Server in Ubuntu & Debian](https://tecadmin.net/install-dhcp-server-in-ubuntu/) from TecAdmin.net
 
@@ -222,16 +221,13 @@ Once that is complete, you can test the DHCP server using the Windows VM. To do 
 
 ### Task 5: SNMP Daemon
 
-Install an SNMP Daemon on the Ubuntu 20.04 VM labelled **SERVER**, and connect to it from your Ubuntu 20.04 VM labelled **CLIENT**. The DigitalOcean tutorial linked below is a very good resource to follow for this part of the assignment. In that tutorial, the **agent server** will be your **SERVER** VM, and the **manager server** will be your **CLIENT** VM.
+Install an SNMP Daemon on the Ubuntu 22.04 VM labelled **SERVER**, and connect to it from your Ubuntu 22.04 VM labelled **CLIENT**. The DigitalOcean and Kifarunix tutorials linked below are a very good resource to follow for this part of the assignment. In that tutorial, the **agent server** will be your **SERVER** VM, and the **manager server** will be your **CLIENT** VM.
 
 1. In the tutorial, configure a user `cis527` using the password `cis527_snmp` for both the authentication and encryption passphrases. 
    - This user **should not** be created in the `snmpd.conf` file, and any "bootstrap" users should be removed. 
-
-{{% notice warning %}}
-
-There is currently an issue using the `snmpusm` command to set passwords as shown in the DigitalOcean guide. I believe it is a known and unfixed bug in `snmp` itself. So, you may instead follow the steps in the "Configure SNMP Version 3 on Ubuntu 20.04" portion of the Kifarunix guide linked below to create the `cis527` user. You'll need to install the `libsnmp-dev` package, and make sure you stop the `snmpd` daemon before creating the account using the `net-snmp-create-v3-user` command. Notice that this guide uses different encryption schemes (the `-a` and `-x` parameters) than the DigitalOcean guide, so you will have to adapt one set of commands or the other so they match. 
-
-{{% /notice %}}
+2. The DigitalOcean tutorial includes information for modifying the configuration file to make SNMP listen on all interfaces.
+3. The DigitalOcean method for creating users does not work. Use the method in the Kifarunix tutorial for configuring SNMP version 3 users. 
+4. The DigitalOcean tutorial includes information for downloading the MIBS and configuring a `~/.snmp/snmp.conf` file that can store your user information.
 
 Of course, you may need to update your firewall configuration to allow incoming SNMP requests to this system! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
@@ -249,16 +245,16 @@ _Be prepared to duplicate this activity during the interactive grading process! 
 
 #### Resources
 
-* [How to Install and Configure an SNMP Daemon and Client on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-an-snmp-daemon-and-client-on-ubuntu-18-04) from DigitalOcean (works for 20.04 as well)
-* [Quick Way to Install and Configure SNMP on Ubuntu 20.04](https://kifarunix.com/quick-way-to-install-and-configure-snmp-on-ubuntu-20-04/) from Kifarunix (includes correct command to create user accounts)
-* [How to Use The Net-SNMP Tool Suite to Manage and Monitor Servers](https://www.digitalocean.com/community/tutorials/how-to-use-the-net-snmp-tool-suite-to-manage-and-monitor-servers) from DigitalOcean (works for 20.04)
+* [How to Install and Configure an SNMP Daemon and Client on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-an-snmp-daemon-and-client-on-ubuntu-18-04) from DigitalOcean (works for 22.04 as well)
+* [Install and Configure SNMP on Ubuntu 22.04/Debian 11](https://kifarunix.com/install-and-configure-snmp-on-ubuntu-debian/) from Kifarunix (includes correct command to create user accounts)
+* [How to Use The Net-SNMP Tool Suite to Manage and Monitor Servers](https://www.digitalocean.com/community/tutorials/how-to-use-the-net-snmp-tool-suite-to-manage-and-monitor-servers) from DigitalOcean (works for 22.04)
 * [SNMP Agent](https://help.ubuntu.com/community/SNMPAgent) from Ubuntu Community Help Wiki
 
 ---
 
 ### Task 6: Wireshark
 
-Install Wireshark on the Ubuntu 20.04 VM labelled **SERVER**.  
+Install Wireshark on the Ubuntu 22.04 VM labelled **SERVER**.  
 
 {{% notice warning %}}
 Firefox recently released an update the enables [DNS over HTTPS](https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/) by default. So, in order to use Firefox to request DNS packets that can be captured, you'll need to [disable DNS over HTTPS](https://support.mozilla.org/en-US/kb/firefox-dns-over-https) in Firefox. Alternatively, you can use `dig` to query DNS and capture the desired packets - this seems to be much easier to replicate easily. 
@@ -276,7 +272,7 @@ Then, using Wireshark, create **screenshots** showing that you captured and can 
    * _HINT: Use the commands from Task 5_
 1. A DHCP Offer packet showing the Domain Name of `<your ID>.cis527.cs.ksu.edu`
    * _HINT: Reboot one of your other VMs to force it to request a new IP address, or use the `ipconfig` (Windows) or `dhclient` (Ubuntu) commands to renew the IP address_
-1. An HTTP 301: Moved Permanently redirect response
+1. An HTTP 301: Moved Permanently or HTTP 302: Found redirect response
    * _HINT: Clear the cache in your web browser, then navigate to `http://people.cs.ksu.edu/~sgsax` (without a trailing slash). It should redirect to `http://people.cs.ksu.edu/~sgsax/` (with a trailing slash)._
 1. An HTTP Basic Authentication request, **clearly showing the username and password in plaintext** (expand the entries in the middle pane to find it).
    * *HINT: Visit `http://httpbin.org/basic-auth/testuser/testpass` and use `testuser` | `testpass` to log in*
