@@ -32,18 +32,17 @@ This lab is written with the expectation that most students will be using **VMwa
 If you are using another virtualization platform, you may have to adapt these instructions to fit. If you are unsure about any specification and how it applies to your setup, please contact the instructor.
 
 You will also need installation media for the following operating systems:
-* **Windows 10 Version 21H2** or later - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
-  * Look for **Windows 10 Education, version 21H2 - DVD** on the list of software available on the Azure Dev Tools site.
-  * File Name: `en-us_windows_10_consumer_editions_version_21h2_x64_dvd_6cfdb144.iso`
-  * SHA 256 Hash: `7f6538f0eb33c30f0a5cbbf2f39973d4c8dea0d64f69bd18e406012f17a8234f`
+* **Windows 10 Version 22H2** or later - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
+  * Look for **Windows 10 Education, version 22H2** on the list of software available on the Azure Dev Tools site.
+  * File Name: `en-us_windows_10_consumer_editions_version_22h2_x64_dvd_8da72ab3.iso`
+  * SHA 256 Hash: `f41ba37aa02dcb552dc61cef5c644e55b5d35a8ebdfac346e70f80321343b506`
   * _Your file may vary as Microsoft constantly updates these installers._
   * _You may choose to upgrade to a later version of Windows 10 while installing updates._
   * _You may choose to use Windows 11 for this course. The instructions shown in the course may not exactly match Windows 11 so adaptation may be necessary. Contact the instructor if you have any questions or run into issues._
-* **Ubuntu 20.04 LTS (Focal Fossa)** or later - Download from [Ubuntu](https://ubuntu.com/download) or the [K-State CS Mirror](http://mirror.cs.ksu.edu/ubuntu-releases/focal/)
-  * File Name: `ubuntu-20.04.4-desktop-amd64.iso`
-  * SHA 256 Hash: `f92f7dca5bb6690e1af0052687ead49376281c7b64fbe4179cc44025965b7d1c`
-  * _If a point release is available (ex: 20.04.x.x), feel free to us that version. **Do not upgrade to a newer LTS or non-LTS release** such as Ubuntu 21.04, as those versions may have significant changes that are not covered in these assignments._
-  * _Lab 2 **will not work** with Ubuntu 22.04 LTS (Jammy Jellyfish) at this time. Please use Ubuntu 20.04 LTS for the time being._
+* **Ubuntu 22.04 LTS (Jammy Jellyfish)** or later - Download from [Ubuntu](https://ubuntu.com/download) or the [K-State CS Mirror](https://mirror.cs.ksu.edu/ubuntu-releases/jammy/)
+  * File Name: `ubuntu-22.04.3-desktop-amd64.iso`
+  * SHA 256 Hash: `a435f6f393dda581172490eda9f683c32e495158a780b5a1de422ee77d98e909`
+  * _If a point release is available (ex: 22.04.4), feel free to us that version. **Do not upgrade to a newer LTS or non-LTS release** such as Ubuntu 23.04, as those versions may have significant changes that are not covered in these assignments._
 
 {{% notice note %}}
 The original course materials were developed for Windows 10 Version 1803 and Ubuntu 18.04 LTS. Some course materials may still show the older versions. Students should use the software versions listed in bold above if at all possible, as these assignments have been verified using those versions. If not, please contact the instructor for alternative options. If you find any errors or issues using the updated versions of these systems, please contact the instructor. 
@@ -53,7 +52,7 @@ The original course materials were developed for Windows 10 Version 1803 and Ubu
 
 ### Task 0: Install Virtualization Software
 
-Install the virtualization software platform of your choice. It must support using Windows 10 and Ubuntu 20.04 as a guest OS. In general, you'll need the latest version of the software. 
+Install the virtualization software platform of your choice. It must support using Windows 10 and Ubuntu 22.04 as a guest OS. In general, you'll need the latest version of the software. 
 
 **VMware Workstation** or **VMware Fusion** is recommended and available free of charge on the [VMware Store](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) open to all K-State CS students.
 
@@ -109,7 +108,7 @@ You can test this by accessing the Windows VM IP Address from Firefox running on
 * **Automatic Updates:** Make sure the system is set to download and install security updates automatically.
 
 {{% notice note %}}
-Even though you may have installed a particular version of Windows, such as 21H2, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. 
+Even though you may have installed a particular version of Windows, such as 22H2, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. Keep going until you are sure there are no more updates to be found.
 {{% /notice %}}
 
 ### Task 3: Windows Files & Permissions
@@ -131,27 +130,27 @@ When you create a group and add a user to that group, it does not take effect un
 Use either the `cis527` or `AdminUser` account to create these files, then modify the owner and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the permissions auditing tab. Many students neglect this step, leaving the file owner incorrect.
 {{% /notice %}}
 * **Don't remove the SYSTEM account or the built-in Administrator account's access from any of these files.** Usually this is as simple as not modifying their permissions from the defaults.
-* See [this screenshot](../../images/lab1-image1.png) and [this screenshot](../../images/lab1-image1a.png) for what these permissions should look like in PowerShell. This was created using the command `Run Get-ChildItem -Recurse | Get-Acl | Format-List` in PowerShell
+* See [this screenshot](/images/lab1-image1.png) and [this screenshot](/images/lab1-image1a.png) for what these permissions should look like in PowerShell. This was created using the command `Run Get-ChildItem -Recurse | Get-Acl | Format-List` in PowerShell
 
 ---
 
-### Task 4: Create an Ubuntu 20.04 Virtual Machine
+### Task 4: Create an Ubuntu 22.04 Virtual Machine
 
-Create a new virtual machine for Ubuntu 20.04 Desktop. It should have 30 GB of storage available. If given the option, do not pre-allocate the storage, but do allow it to be separated into multiple files. This will make the VM easier to work with down the road. It should also have at least 2 GB of RAM. You may allocate more RAM if desired. You may also allocate additional CPU cores for better performance if desired. 
+Create a new virtual machine for Ubuntu 22.04 Desktop. It should have 30 GB of storage available. If given the option, do not pre-allocate the storage, but do allow it to be separated into multiple files. This will make the VM easier to work with down the road. It should also have at least 2 GB of RAM. You may allocate more RAM if desired. You may also allocate additional CPU cores for better performance if desired. 
 
 {{% notice note %}}
-_Ubuntu 20.04 seems to be really RAM hungry right now, so I recommend starting with 2 GB of RAM if you have 8 GB or more available on your system. The installer may freeze if you try to install with only 1 GB of RAM allocated. Once you have it installed, you may be able to reduce this at the expense of some performance if you are short on available RAM (as it will use swap space instead). In Ubuntu, swap should be enabled by default after you install it, but you can learn more about it and how to configure it [here](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04). When we get to Module 5 and discuss Ubuntu in the cloud, we'll come back to this and discuss the performance trade-offs in that scenario. --Russ_
+_Ubuntu 22.04 seems to be really RAM hungry right now, so I recommend starting with 2 GB of RAM if you have 8 GB or more available on your system. The installer may freeze if you try to install with only 1 GB of RAM allocated. Once you have it installed, you may be able to reduce this at the expense of some performance if you are short on available RAM (as it will use swap space instead). In Ubuntu, swap should be enabled by default after you install it, but you can learn more about it and how to configure it [here](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04). When we get to Module 5 and discuss Ubuntu in the cloud, we'll come back to this and discuss the performance trade-offs in that scenario. --Russ_
 {{% /notice %}}
 
-Install Ubuntu 20.04 Desktop in that virtual machine to a single partition. You will be asked to create a user account and set the computer name. Use the information given below.
+Install Ubuntu 22.04 Desktop in that virtual machine to a single partition. You may choose to use a minimal install when prompted. You will be asked to create a user account and set the computer name. Use the information given below.
 
 {{% notice tip %}}
 The Ubuntu installation will sometimes hang when rebooting after installation in a VM. If that happens, wait about 30 seconds, then click **VM > Power > Restart Guest** in VMware (or similar) to force a restart. It should not harm the VM.
 {{% /notice %}}
 
-### Task 5: Configure Ubuntu 20.04
+### Task 5: Configure Ubuntu 22.04
 
-Configure the Ubuntu 20.04 Virtual Machine as specified below.
+Configure the Ubuntu 22.04 Virtual Machine as specified below.
 
 * **Computer Name:** `cis527u-<your eID>` (example: `cis527u-russfeld`)
 {{% notice info %}}

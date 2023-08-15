@@ -20,10 +20,16 @@ hidden: true
 	</p>
 </section>
 <section>
+	<h3>Teaching Assistant</h3>
+	<ul>
+		<li>Matt Schwartz - matt00 AT ksu DOT edu</li>
+	</ul>
+</section>
+<section>
 	<h3>Communication</h3>
 	<ul>
 		<li>Discord - Course Questions, Discussions, etc</li>
-		<li>Email - Personal Issues, Grading Questions, To-dos, etc</li>
+		<li>Email - Personal Issues, Grading Questions, To-dos, etc<br>cis527-help@ksuemailprod.onmicrosoft.com</li>
 		<li><i>Email is official, Discord is more flexible</i></li>
 	</ul>
 </section>
@@ -37,7 +43,7 @@ hidden: true
 	<ul>
 		<li>7 Lab Modules + Final Project</li>
 		<li>Gated - Must Complete in Order</li>
-		<li><b>==One Module Due Each Week==</b></li>
+		<li><b>==One Module Due Every 2 Weeks==</b></li>
 		<li>Can Work Ahead At Your Own Pace</li>
 		<li>Interactive Lab Grading</li>
 		<li>Complete by Finals Week</li>

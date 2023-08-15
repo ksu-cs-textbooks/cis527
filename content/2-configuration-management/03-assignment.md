@@ -30,24 +30,24 @@ This lab may take anywhere from **1 - 6 hours** to complete, depending on your p
 
 ### Task 0: Create New Virtual Machines & Snapshots
 
-Create new Windows 10 and Ubuntu 20.04 virtual machines for this lab. When creating the virtual machines and installing the operating system, use the same information from Lab 1. You should create the `cis527` account during installation. **DO NOT PERFORM ANY ADDITIONAL CONFIGURATION AFTER THE INSTALLATION IS COMPLETE EXCEPT WHAT IS LISTED BELOW!**
+Create new Windows 10 and Ubuntu 22.04 virtual machines for this lab. When creating the virtual machines and installing the operating system, use the same information from Lab 1. You should create the `cis527` account during installation. **DO NOT PERFORM ANY ADDITIONAL CONFIGURATION AFTER THE INSTALLATION IS COMPLETE EXCEPT WHAT IS LISTED BELOW!**
 
 After installing the operating system, install **ONLY** the following software:
 
-* Puppet Agent 7 ([Windows](https://downloads.puppetlabs.com/windows/puppet7/) & Ubuntu)
-  * See [Installing Agents](https://puppet.com/docs/puppet/latest/install_agents.html) and [Enable the Puppet Platform on Apt](https://puppet.com/docs/puppet/7/install_puppet.html#enable_the_puppet_platform_apt) from Puppet Documentation
-  * Recall that Ubuntu 20.04 is codenamed "Focal Fossa", so use the url `https://apt.puppetlabs.com/puppet7-release-focal.deb` to get the correct version on Ubuntu. 
+* Puppet Agent 8 ([Windows](https://downloads.puppetlabs.com/windows/puppet8/) & Ubuntu)
+  * See [Installing Agents](https://puppet.com/docs/puppet/latest/install_agents.html) and [Enable the Puppet Platform on Apt](https://www.puppet.com/docs/puppet/8/install_puppet#enable_the_puppet_platform_repository) from Puppet Documentation
+  * Recall that Ubuntu 22.04 is codenamed "Jammy Jellyfish", so use the url `https://apt.puppet.com/puppet8-release-jammy.deb` to get the correct version on Ubuntu. 
 * VMware Tools (Windows) and either `open-vm-tools-desktop` or VMware Tools (Ubuntu)
 * All System Updates (Windows & Ubuntu)
 
 On the Windows virtual machine only, create a folder at `C:\install` and download the following installers. Do not change the name of the installers from the default name provided from the website. You may choose to do this step using the [download_file](https://forge.puppet.com/puppet/download_file) Puppet module instead.  
 
-* [Firefox](https://www.mozilla.org/en-US/firefox/all/) (`Firefox Setup 100.0.2.exe` as of 5/26/2022)
-* [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 91.9.1.exe` as of 5/26/2022)
-* [Notepad++](https://notepad-plus-plus.org/download/) (`npp.8.4.1.Installer.x64.exe` as of 5/26/2022)
+* [Firefox](https://www.mozilla.org/en-US/firefox/all/) (`Firefox Setup 116.0.2.exe` as of 8/15/2023)
+* [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 115.1.0.exe` as of 8/15/2023)
+* [Notepad++](https://notepad-plus-plus.org/download/) (`npp.8.5.6.Installer.x64.exe` as of 8/15/2023)
 
 {{% notice note %}}
-_I have listed sample names of the installers as of this writing; however, you may receive newer versions with slightly different names. That is fine. Just be sure that you don't get the default stub or web-only installers, which is what Firefox typically gives you unless you follow the links above. They will not work properly for this lab. --Russ_
+_I have listed sample names of the installers as of this writing, and these will be the ones that I use for testing; however, you may receive newer versions with slightly different names. That is fine. Just be sure that you don't get the default stub or web-only installers, which is what Firefox typically gives you unless you follow the links above. They will not work properly for this lab. --Russ_
 {{% /notice %}}
 
 Once you have your virtual machines configured, make a snapshot of each called "Puppet Testing" for your use. As you test your Puppet manifest files, you'll reset to this snapshot to undo any changes made by Puppet so you can test on a clean VM. The VMs used for grading will be configured as described here.
