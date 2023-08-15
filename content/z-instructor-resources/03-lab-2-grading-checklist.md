@@ -7,6 +7,7 @@ pre: "2.1 "
 - Windows Manifest (5)
   - Compiles
   - Runs Without Errors
+  - Comments for any modules to install
 - Windows Configuration (10)
   - Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser)
   - Groups (Administrators, Users, Files)
@@ -17,6 +18,7 @@ pre: "2.1 "
 - Ubuntu Manifest (5)
   - Compiles
   - Runs Without Errors
+  - Comments for any modules to install
 - Ubuntu Configuration (10)
   - Users (cis527, AdminUser, NormalUser, GuestUser, EvilUser)
   - Groups (files)
