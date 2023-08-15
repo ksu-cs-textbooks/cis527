@@ -9,7 +9,7 @@ pre: "9. "
 #### Resources
 
 * **[Slides]({{< relref "/1-secure-workstations/09-windows-processes-services-slides.md" >}})**
-* [Understanding and Managing Windows Services](https://www.howtogeek.com/school/using-windows-admin-tools-like-a-pro/lesson8/) from How-To Geek
+* [How to manage services in Windows](https://www.digitalcitizen.life/what-are-windows-services-what-they-do-how-manage-them/) from DigitalCitizen.life
 * [Process Explorer Download](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) from Windows Sysinternals
 * [Process Library](http://www.processlibrary.com/en/) from Uniblue
 

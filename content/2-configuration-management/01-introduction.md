@@ -4,12 +4,17 @@ weight: 5
 pre: "1. "
 ---
 
+{{% notice info "Puppet Learning VM Deprecated" %}}
+
+_As of 2023, the Puppet Learning VM is no longer being maintained. The videos below demonstrate some of the features of Puppet, which can also be done on your Ubuntu VM after installing Puppet Agent. Unfortunately, it is not easily possible to simulate an enterprise Puppet setup without this VM, so I'll keep these videos up for demonstration purposes._ --Russ
+
+{{% /notice %}}
+
 {{< youtube iA1t_NLO0DM >}}
 
 #### Resources
 
 * **[Slides]({{< relref "/2-configuration-management/01-introduction-slides.md" >}})**
-* [Download the Puppet Learning VM](https://puppet.com/download-learning-vm) from Puppet
 
 #### Video Script
 

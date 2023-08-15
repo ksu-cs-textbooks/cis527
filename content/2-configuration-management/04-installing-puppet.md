@@ -6,7 +6,7 @@ pre: "4. "
 
 {{% notice note %}}
 
-The video refers to Puppet version 6, but Puppet 7 is now the latest version. For the lab assignment, you'll want to install Puppet 7 and not Puppet 6. The basic process is the same.
+The video refers to Puppet version 6, but Puppet 8 is now the latest version. For the lab assignment, you'll want to install Puppet 8 and not Puppet 6. This changes the URL used to get the release package - see the assignment page for more information. The basic process is otherwise the same.
 
 {{% /notice %}}
 
@@ -15,7 +15,7 @@ The video refers to Puppet version 6, but Puppet 7 is now the latest version. Fo
 <!-- F12XwpusumA -->
 
 #### Resources
-* [Puppet Agent Windows Downloads](https://downloads.puppetlabs.com/windows/puppet7/) from Puppet (look for puppet-agent-x64-latest.msi)
+* [Puppet Agent Windows Downloads](https://downloads.puppetlabs.com/windows/puppet8/) from Puppet (look for puppet-agent-x64-latest.msi)
 * [About Puppet Platform and Its Packages](https://puppet.com/docs/puppet/latest/puppet_platform.html) from Puppet
 * [Puppet Learning VM](https://puppet.com/download-learning-vm) from Puppet
 * [Puppet System Requirements](https://puppet.com/docs/pe/latest/system_requirements.html) from Puppet

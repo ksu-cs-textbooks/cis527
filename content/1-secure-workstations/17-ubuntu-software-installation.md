@@ -14,7 +14,7 @@ pre: "17. "
 * [Apt-Get How To](https://help.ubuntu.com/community/AptGet/Howto) from Ubuntu
 * [How Software Installation & Package Managers Work on Linux](https://www.howtogeek.com/117579/htg-explains-how-software-installation-package-managers-work-on-linux/) from How-To Geek
 * [Snaps](https://docs.snapcraft.io/snaps/) from Snapcraft.io
-* [Basic Snap Usage](https://tutorials.ubuntu.com/tutorial/basic-snap-usage#0) from Ubuntu Tutorials
+* [Introduction to Snaps](https://ubuntu.com/core/services/guide/snaps-intro) from Ubuntu Tutorials
 
 #### Video Script
 

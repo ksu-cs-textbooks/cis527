@@ -17,7 +17,7 @@ pre: "12. "
 * [Ubuntu Server Guide](https://help.ubuntu.com/lts/serverguide/index.html) from Ubuntu
 * [Switching to Ubuntu](https://help.ubuntu.com/community/SwitchingToUbuntu) from Ubuntu
 * [Know Thy Ubuntu](https://help.ubuntu.com/community/KnowThyUbuntu) from Ubuntu
-* [Ubuntu 20.04 LTS (Focal Fossa) Download](http://mirror.cis.ksu.edu/ubuntu-releases/focal/) from CS Ubuntu Mirror
+* [Ubuntu 22.04 LTS (Jammy Jellyfish) Download](http://mirror.cis.ksu.edu/ubuntu-releases/jammy/) from CS Ubuntu Mirror
 * [Linux Distribution Timeline](https://commons.wikimedia.org/wiki/File:Linux_Distribution_Timeline.svg) from Wikipedia
 * [Desmond Tutu on Ubuntu](https://www.youtube.com/watch?v=ftjdDOfTzbk) from YouTube
 
