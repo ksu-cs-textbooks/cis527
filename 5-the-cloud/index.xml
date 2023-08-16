@@ -978,76 +978,6 @@
 	
 	
 		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
-		
-		
-
-	
-	
-		
-
-	
-	
-		
 
 	
 	
@@ -1197,6 +1127,91 @@
 
 	
 	
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
+		
 		
 
 	
@@ -1334,7 +1349,7 @@
       <link>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/01-introduction/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/01-introduction/index.html</guid>
-      <description>YouTube Video Resources Slides GitHub Student Developer Pack Video Transcript Welcome to Module 5! In this module, we&amp;rsquo;ll learn all about one of the hottest topics in system administration today: the cloud! Many enterprises today are in the process of moving their operations to the cloud, or may have already completely done so. However, some organizations may not find it feasible to use the cloud for their operations, and we&amp;rsquo;ll discuss some of those limitations.</description>
+      <description>Resources Slides GitHub Student Developer Pack Video Transcript Welcome to Module 5! In this module, we&amp;rsquo;ll learn all about one of the hottest topics in system administration today: the cloud! Many enterprises today are in the process of moving their operations to the cloud, or may have already completely done so. However, some organizations may not find it feasible to use the cloud for their operations, and we&amp;rsquo;ll discuss some of those limitations.</description>
     </item>
     <item>
       <title>The Cloud Overview</title>
@@ -1342,7 +1357,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/02-the-cloud-overview/index.html</guid>
       <description>Note TODO As of 2020, both KSIS and HRIS have moved to the cloud, leaving very few K-State resources hosted directly on campus. This video will be updated in future semesters to reflect that change. -Russ
-YouTube Video Resources Slides Cloud Computing on Wikipedia The Cloud/Electric Generator Analogy by Roger Smith from InformationWeek The Big Switch: Rewiring the World from Editson to Google by Nicholas Carr Virtual Private Network on Wikipedia Service Oriented Architecture on Wikipedia Lots of Bits by Jeff Barr on AWS News Blog Animotos Facebook Scale-Up by Thorsten von Eicken from RightScale Thinking Cloud?</description>
+Resources Slides Cloud Computing on Wikipedia The Cloud/Electric Generator Analogy by Roger Smith from InformationWeek The Big Switch: Rewiring the World from Editson to Google by Nicholas Carr Virtual Private Network on Wikipedia Service Oriented Architecture on Wikipedia Lots of Bits by Jeff Barr on AWS News Blog Animotos Facebook Scale-Up by Thorsten von Eicken from RightScale Thinking Cloud?</description>
     </item>
     <item>
       <title>Assignment</title>
@@ -1358,14 +1373,15 @@ If you have any questions about these items or are unsure what they mean, please
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/04-cloud-resource-setup/index.html</guid>
       <description>Note TODO This video was recorded for Ubuntu 18.04, but works for Ubuntu 20.04 as well. When creating a droplet, simply select the newest version of Ubuntu LTS. This video shows an older version of the DigitalOcean UI, but should be similar to what you see today. &amp;ndash;Russ
-YouTube Video Resources Slides Student Developer Pack from GitHub Education Referral Program from DigitalOcean Extras - SSH Extras - Windows Subsystem for Linux How to Create a Droplet from the DigitalOcean Control Panel from DigitalOcean An Introduction to Cloud-Config Scripting from DigitalOcean Initial Server Setup with Ubuntu 20.</description>
+Resources Slides Student Developer Pack from GitHub Education Referral Program from DigitalOcean Extras - SSH Extras - Windows Subsystem for Linux How to Create a Droplet from the DigitalOcean Control Panel from DigitalOcean An Introduction to Cloud-Config Scripting from DigitalOcean Initial Server Setup with Ubuntu 20.</description>
     </item>
     <item>
       <title>Domains &amp; Virtual Hosts</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/05-domains-virtual-hosts/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/05-domains-virtual-hosts/index.html</guid>
-      <description>YouTube Video Resources Slides Core Networking Services - DNS Student Developer Pack from GitHub Education How To Install the Apache Web Server on Ubuntu 20.04 from DigitalOcean DNS Overview from DigitalOcean How to Point to DigitalOcean Nameservers from Common Domain Registrars from DigitalOcean Video Transcript Now that you&amp;rsquo;ve set up and configured your first cloud server, let&amp;rsquo;s discuss how to make that resource easily accessible to you and your organization.</description>
+      <description>Resources Slides Core Networking Services - DNS Student Developer Pack from GitHub Education How To Install the Apache Web Server on Ubuntu 20.04 from DigitalOcean DNS Overview from DigitalOcean How to Point to DigitalOcean Nameservers from Common Domain Registrars from DigitalOcean Video Transcript Now that you&amp;rsquo;ve set up and configured your first cloud server, let&amp;rsquo;s discuss how to make that resource easily accessible to you and your organization.
+In Module 3, we discussed the Domain Name System, or DNS, as the &amp;ldquo;phonebook of the internet.</description>
     </item>
     <item>
       <title>Certificates</title>
@@ -1373,14 +1389,14 @@ YouTube Video Resources Slides Student Developer Pack from GitHub Education Refe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/06-certificates/index.html</guid>
       <description>Note TODO The video below installs certbot from a PPA, but Ubuntu 20.04 includes certbot in the universe repositories. Refer to the instructions on the certbot website for updated instructions. &amp;ndash;Russ
-YouTube Video Resources Slides Core Networking Services - Security Public Key Certificate from Wikipedia Certbot from the Electronic Frontier Foundation (EFF) Certbot: Apache on Ubuntu 20.04 from the Electronic Frontier Foundation (EFF) How To Secure Apache with Let&amp;rsquo;s Encrypt on Ubuntu 20.</description>
+Resources Slides Core Networking Services - Security Public Key Certificate from Wikipedia Certbot from the Electronic Frontier Foundation (EFF) Certbot: Apache on Ubuntu 20.04 from the Electronic Frontier Foundation (EFF) How To Secure Apache with Let&amp;rsquo;s Encrypt on Ubuntu 20.</description>
     </item>
     <item>
       <title>Scaling &amp; High Availability</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/07-scaling-high-availability/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5-the-cloud/07-scaling-high-availability/index.html</guid>
-      <description>YouTube Video Resources Slides An Introduction to Droplet Metadata from DigitalOcean How to Resize Droplets from DigitalOcean How to Automate the Scaling of Your Web Application on DigitalOcean Ubuntu 16.04 Droplets from DigitalOcean Load Balancers from DigitalOcean What is High Availability? from DigitalOcean AWS Auto Scaling from Amazon Web Services Netflix Case Study Netflix: What Happens When You Press Play? from High Scalability Blog Scryer: Netflix&amp;rsquo;s Predictive Auto Scaling Engine from Netflix Technology Blog Completing the Cloud Migration from Netflix DevOps Case Study: Netflix and the Chaos Monkey from DevOps Blog at CMU Software Engineering Institute Chaos Engineering Upgraded from Netflix Technology Blog Video Transcript One of the major selling points of the cloud is its rapid elasticity, or the ability of your cloud resources to grow and shrink as needed to handle your workload.</description>
+      <description>Resources Slides An Introduction to Droplet Metadata from DigitalOcean How to Resize Droplets from DigitalOcean How to Automate the Scaling of Your Web Application on DigitalOcean Ubuntu 16.04 Droplets from DigitalOcean Load Balancers from DigitalOcean What is High Availability? from DigitalOcean AWS Auto Scaling from Amazon Web Services Netflix Case Study Netflix: What Happens When You Press Play? from High Scalability Blog Scryer: Netflix&amp;rsquo;s Predictive Auto Scaling Engine from Netflix Technology Blog Completing the Cloud Migration from Netflix DevOps Case Study: Netflix and the Chaos Monkey from DevOps Blog at CMU Software Engineering Institute Chaos Engineering Upgraded from Netflix Technology Blog Video Transcript One of the major selling points of the cloud is its rapid elasticity, or the ability of your cloud resources to grow and shrink as needed to handle your workload.</description>
     </item>
   </channel>
 </rss>
