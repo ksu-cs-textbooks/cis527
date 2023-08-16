@@ -20,12 +20,6 @@ hidden: true
 	</p>
 </section>
 <section>
-	<h3>Teaching Assistant</h3>
-	<ul>
-		<li>Matt Schwartz - matt00 AT ksu DOT edu</li>
-	</ul>
-</section>
-<section>
 	<h3>The Course</h3>
 	<ul>
 		<li>Gated Modules on Canvas</li>
@@ -40,7 +34,7 @@ hidden: true
 	<h3>Communication</h3>
 	<ul>
 		<li>Discord - Course Questions, Discussions, etc</li>
-		<li>Email - Personal Issues, Grading Questions, To-dos, etc<br>cis527-help@ksuemailprod.onmicrosoft.com</li>
+		<li>Email - Personal Issues, Grading Questions, To-dos, etc</li>
 		<li><i>Email is official, Discord is more flexible</i></li>
 	</ul>
 </section>
@@ -58,7 +52,6 @@ hidden: true
 	<h3>Lab Grading</h3>
 	<ul>
 		<li>Schedule via Calendly</li>
-		<li>Check TA Schedule First</li>
 		<li>Can Schedule Before Complete</li>
 		<li>Requires 4 hours notice</li>
 		<li>Zoom with Screen Share</li>
@@ -68,10 +61,9 @@ hidden: true
 <section>
 	<h3>Discussions</h3>
 	<ul>
-		<li>Respond to Survey Aug 25.</li>
-		<li>Schedule Online via Zoom</li>
-		<li>Submit Questions Before</li>
-		<li>Participate or Write Response</li>
+	  <li>Recorded Summer 2021</li>
+	  <li>Watch Video & Write Reaction</li>
+	  <li>Questions? Email Instructor</li>
 	</ul>
 </section>
 <section>
