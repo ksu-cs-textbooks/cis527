@@ -4,6 +4,12 @@ weight: 5
 pre: ""
 ---
 
+{{% notice note "Ed Discussion" %}}
+
+_This video was recorded before I decided to switch to Ed Discussion instead of using Discord. All discussions of "Discord" can be applied to "Ed Discussion" instead. Sorry for the confusion!_ - Russ
+
+{{% /notice %}}
+
 {{< youtube DED5n-xviFI >}}
 
 #### Resources

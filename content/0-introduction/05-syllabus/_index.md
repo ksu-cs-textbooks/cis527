@@ -27,7 +27,7 @@ _This syllabus covers both courses. They are taught using the same content._
 #### Preferred Methods of Communication:
 
 * **Email**: Email is the official method of communication for this course. Any emails sent to the instructor regarding this course should be answered within one class day. Please use the official course email address: cis527-help@ksuemailprod.onmicrosoft.com
-* **Discord**: For short questions and discussions of course content and assignments, Discord is preferred since questions can be asked once and answered for all students. There is a #cis-527_cc-510 channel on the [K-State CS Discord Server](https://discordbot.cs.ksu.edu) for this course. Students are encouraged to post questions there and use that space for discussion, and the instructor will strive to answer questions there as well.
+* **Ed Discussion**: For short questions and discussions of course content and assignments, Ed Discussion is preferred since questions can be asked once and answered for all students. Students are encouraged to post questions there and use that space for discussion, and the instructor will strive to answer questions there as well.
 * **Phone/Text:** _Emergencies only!_ I will do my best to respond as quickly as I can.
 
 ### Prerequisites
