@@ -22,7 +22,7 @@ _This syllabus covers both courses. They are taught using the same content._
 
 ### Teaching Assistant
 
-* Matt Schwartz (matt00 AT ksu DOT edu)
+* Matt Schwartz (matt00 AT ksu DOT edu) - Office Hours by appointment via [Calendly](https://calendly.com/matt00)
 
 #### Preferred Methods of Communication:
 
