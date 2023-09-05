@@ -1,6 +1,6 @@
 ---
 title: "Fall '23 Week 2"
-weight: 10
+weight: 8
 pre: ""
 ---
 
