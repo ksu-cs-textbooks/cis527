@@ -16,7 +16,7 @@ The video refers to Puppet version 6, but Puppet 8 is now the latest version. Fo
 
 #### Resources
 * [Puppet Agent Windows Downloads](https://downloads.puppetlabs.com/windows/puppet8/) from Puppet (look for puppet-agent-x64-latest.msi)
-* [About Puppet Platform and Its Packages](https://puppet.com/docs/puppet/latest/puppet_platform.html) from Puppet
+* [About Puppet Platform and Its Packages](https://www.puppet.com/docs/puppet/8/platform_components) from Puppet
 * [Puppet Learning VM](https://puppet.com/download-learning-vm) from Puppet
 * [Puppet System Requirements](https://puppet.com/docs/pe/latest/system_requirements.html) from Puppet
 * [Puppet Documentation](https://puppet.com/docs) from Puppet
