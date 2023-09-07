@@ -1369,7 +1369,7 @@
       <link>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/01-introduction/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/01-introduction/index.html</guid>
-      <description>Resources Slides Video Transcript Welcome to Module 4! In this module, we&amp;rsquo;ll discuss how to use directory services to provide consistent user accounts and permissions across a number of systems. Specifically, we&amp;rsquo;ll look at the Active Directory Domain Services for Windows, and the OpenLDAP implementation of the Lightweight Directory Access Protocol (LDAP) for Ubuntu Linux.
+      <description>YouTube Video Resources Slides Video Transcript Welcome to Module 4! In this module, we&amp;rsquo;ll discuss how to use directory services to provide consistent user accounts and permissions across a number of systems. Specifically, we&amp;rsquo;ll look at the Active Directory Domain Services for Windows, and the OpenLDAP implementation of the Lightweight Directory Access Protocol (LDAP) for Ubuntu Linux.
 In addition, we&amp;rsquo;ll see how to configure clients to connect to each of those servers.</description>
     </item>
     <item>
@@ -1377,7 +1377,7 @@ In addition, we&amp;rsquo;ll see how to configure clients to connect to each of 
       <link>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/02-directory-services-overview/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/02-directory-services-overview/index.html</guid>
-      <description>Resources Slides X.500 Standard (http://www.x500standard.com/) - defunct as of May 7, 2020 Active Directory on Wikipedia Lightweight Directory Access Protocol (LDAP) on Wikipedia Samba (Software) on Wikipedia NetIQ eDirectory on Wikipedia (previously Novell Directory Services) Overview of Novell Directory Services from Novell Kerberos (Protocol) on Wikipedia RFC 1510 - Kerberos from IETF Directories, Directory Services, and LDAP from Apache Understanding Workgroups and Domains from eTutorials.org Video Transcript This video presents a brief overview of directory services and related concepts.</description>
+      <description>YouTube Video Resources Slides X.500 Standard (http://www.x500standard.com/) - defunct as of May 7, 2020 Active Directory on Wikipedia Lightweight Directory Access Protocol (LDAP) on Wikipedia Samba (Software) on Wikipedia NetIQ eDirectory on Wikipedia (previously Novell Directory Services) Overview of Novell Directory Services from Novell Kerberos (Protocol) on Wikipedia RFC 1510 - Kerberos from IETF Directories, Directory Services, and LDAP from Apache Understanding Workgroups and Domains from eTutorials.org Video Transcript This video presents a brief overview of directory services and related concepts.</description>
     </item>
     <item>
       <title>Assignment</title>
@@ -1393,14 +1393,14 @@ If you have any questions about these items or are unsure what they mean, please
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/04-windows-active-directory-installation/index.html</guid>
       <description>Note This video uses Windows Server 2016, but the process should be functionally identical in Windows Server 2019. Also make sure you refer to the Lab 4 assignment for the correct root domain name. &amp;ndash;Russ
-Resources Step-By-Step: Setting Up Active Directory in Windows Server 2016 from Microsoft Add User Accounts on Active Directory from Server-World AD DS Installation and Removal Wizard Page Descriptions from Microsoft NetBIOS on Wikipedia Video Transcript In this video, I&amp;rsquo;ll go through some of the process of configuring a Windows Server 2016 VM to act as an Active Directory Domain Controller.</description>
+YouTube Video Resources Step-By-Step: Setting Up Active Directory in Windows Server 2016 from Microsoft Add User Accounts on Active Directory from Server-World AD DS Installation and Removal Wizard Page Descriptions from Microsoft NetBIOS on Wikipedia Video Transcript In this video, I&amp;rsquo;ll go through some of the process of configuring a Windows Server 2016 VM to act as an Active Directory Domain Controller.</description>
     </item>
     <item>
       <title>Windows Client Configuration</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/05-windows-client-configuration/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/05-windows-client-configuration/index.html</guid>
-      <description>Resources Join Windows 10 PC to a Domain from Windows 10 Forums Video Transcript Once you have completely set up your Active Directory Domain, you can begin to add Windows clients to the domain. This video will walk through some of that process, and I&amp;rsquo;ll discuss a few of the steps as we go.
+      <description>YouTube Video Resources Join Windows 10 PC to a Domain from Windows 10 Forums Video Transcript Once you have completely set up your Active Directory Domain, you can begin to add Windows clients to the domain. This video will walk through some of that process, and I&amp;rsquo;ll discuss a few of the steps as we go.
 For this example, I have my Windows 10 VM from the earlier labs. It is on the same network as the domain controller.</description>
     </item>
     <item>
@@ -1408,21 +1408,21 @@ For this example, I have my Windows 10 VM from the earlier labs. It is on the sa
       <link>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/06-windows-group-policy/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/06-windows-group-policy/index.html</guid>
-      <description>Resources Slides Group Policy on Wikipedia Group Policy Processing and Precedence from Microsoft Docs Group Policy Fundamentals in Active Directory by Troy Thompson in Redmond Magazine Tutorial: The Joys of Windows Server&amp;rsquo;s Group Policies by J. Peter Bruzzese on InfoWorld What is Group Policy in Windows from How-To Geek The 10 Windows Group Policy Settings you Need to Get Right from CSO Online In the Trenches: Eight Tips-n-Tricks for Microsoft Windows Group Policy by Mark Mizrahi on Global Knowledge Top 10 Most Important Group Policy Settings for Preventing Security Breaches by Abhishek Rai on Lepide Blog Group Policy Best Practices by Robert Allen on Active Directory Pro Optimizing Group Policy Performance by Darren Mar-Elia on Microsoft TechNet Group Policy Design Best Practices by Darren Mar-Elia on ITPro Today 10 Windows Group Policy Settings you Need to Tweak by Benjamin Roussey on TechGenix Video Transcript One of the major features of Microsoft&amp;rsquo;s Active Directory is the ability to use Group Policy Objects, or GPOs, to enforce specific security settings on any Windows client added to the domain.</description>
+      <description>YouTube Video Resources Slides Group Policy on Wikipedia Group Policy Processing and Precedence from Microsoft Docs Group Policy Fundamentals in Active Directory by Troy Thompson in Redmond Magazine Tutorial: The Joys of Windows Server&amp;rsquo;s Group Policies by J. Peter Bruzzese on InfoWorld What is Group Policy in Windows from How-To Geek The 10 Windows Group Policy Settings you Need to Get Right from CSO Online In the Trenches: Eight Tips-n-Tricks for Microsoft Windows Group Policy by Mark Mizrahi on Global Knowledge Top 10 Most Important Group Policy Settings for Preventing Security Breaches by Abhishek Rai on Lepide Blog Group Policy Best Practices by Robert Allen on Active Directory Pro Optimizing Group Policy Performance by Darren Mar-Elia on Microsoft TechNet Group Policy Design Best Practices by Darren Mar-Elia on ITPro Today 10 Windows Group Policy Settings you Need to Tweak by Benjamin Roussey on TechGenix Video Transcript One of the major features of Microsoft&amp;rsquo;s Active Directory is the ability to use Group Policy Objects, or GPOs, to enforce specific security settings on any Windows client added to the domain.</description>
     </item>
     <item>
       <title>Ubuntu LDAP Installation</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/07-ubuntu-ldap-installation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/07-ubuntu-ldap-installation/index.html</guid>
-      <description>Resources How To Install and Configure OpenLDAP and phpLDAPadmin on Ubuntu 16.04 from DigitalOcean (works for 18.04 and 20.04 as well) Add Organizational Units, Groups and Users from DigitalOcean LDAP &amp;amp; TLS from the Ubuntu Server Guide How Does HTTPS Work from kubucation on YouTube (a good overview of CAs and certificates) Core Networking Services - Security The Cloud - Certificates Video Transcript As we did earlier with setting up Active Directory on Windows, let&amp;rsquo;s take a look at the steps required to install and configure OpenLDAP on Linux.</description>
+      <description>YouTube Video Resources How To Install and Configure OpenLDAP and phpLDAPadmin on Ubuntu 16.04 from DigitalOcean (works for 18.04 and 20.04 as well) Add Organizational Units, Groups and Users from DigitalOcean LDAP &amp;amp; TLS from the Ubuntu Server Guide How Does HTTPS Work from kubucation on YouTube (a good overview of CAs and certificates) Core Networking Services - Security The Cloud - Certificates Video Transcript As we did earlier with setting up Active Directory on Windows, let&amp;rsquo;s take a look at the steps required to install and configure OpenLDAP on Linux.</description>
     </item>
     <item>
       <title>Ubuntu Client Configuration</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/08-ubuntu-client-configuration/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/08-ubuntu-client-configuration/index.html</guid>
-      <description>Resources SSSD on Ubuntu Server Guide (look for the LDAP section) Video Transcript Once we&amp;rsquo;ve set up and configured our OpenLDAP server on Linux, we can configure another VM to act as an LDAP client and use that server for authentication. Thankfully, now that Ubuntu 20.04 uses SSSD, this process is pretty simple.
+      <description>YouTube Video Resources SSSD on Ubuntu Server Guide (look for the LDAP section) Video Transcript Once we&amp;rsquo;ve set up and configured our OpenLDAP server on Linux, we can configure another VM to act as an LDAP client and use that server for authentication. Thankfully, now that Ubuntu 20.04 uses SSSD, this process is pretty simple.
 For the most part, we&amp;rsquo;ll be following the instructions in the Ubuntu Server Guide page linked below this video.</description>
     </item>
     <item>
@@ -1430,7 +1430,7 @@ For the most part, we&amp;rsquo;ll be following the instructions in the Ubuntu S
       <link>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/09-linux-client-on-windows-domain/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/09-linux-client-on-windows-domain/index.html</guid>
-      <description>Resources Join in Active Directory Domain from Server-World How to Join Ubuntu 18.04 / Debian 10 To Active Directory (AD) Domain from Computingforgeeks Video Transcript In the following two videos, we&amp;rsquo;ll look at how to enable interoperability between our Windows- and Linux-based systems. In many organizations today, you&amp;rsquo;ll have a mix of many different operating systems, so it is very helpful to understand how to integrate them together in a single directory service.</description>
+      <description>YouTube Video Resources Join in Active Directory Domain from Server-World How to Join Ubuntu 18.04 / Debian 10 To Active Directory (AD) Domain from Computingforgeeks Video Transcript In the following two videos, we&amp;rsquo;ll look at how to enable interoperability between our Windows- and Linux-based systems. In many organizations today, you&amp;rsquo;ll have a mix of many different operating systems, so it is very helpful to understand how to integrate them together in a single directory service.</description>
     </item>
     <item>
       <title>Windows Client on Linux Domain</title>
@@ -1438,7 +1438,7 @@ For the most part, we&amp;rsquo;ll be following the instructions in the Ubuntu S
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/4-directory-services/10-windows-client-on-linux-domain/index.html</guid>
       <description>Note This portion is no longer part of the Lab 4 assignment, but I left it here because it is interesting to know that it can be done. &amp;ndash;Russ
-Resources How to Configure Ubuntu Linux Server as a Domain Controller with Samba-tool by Jack Wallen on TechRepublic Samba Not Starting on Ubuntu Server 16.10 from StackExchange How to Disable Systemd-resolved in Ubuntu from AskUbuntu Video Transcript In this video, I&amp;rsquo;ll show you how to set up an Ubuntu VM to act as a Windows Active Directory Domain Controller using Samba.</description>
+YouTube Video Resources How to Configure Ubuntu Linux Server as a Domain Controller with Samba-tool by Jack Wallen on TechRepublic Samba Not Starting on Ubuntu Server 16.10 from StackExchange How to Disable Systemd-resolved in Ubuntu from AskUbuntu Video Transcript In this video, I&amp;rsquo;ll show you how to set up an Ubuntu VM to act as a Windows Active Directory Domain Controller using Samba.</description>
     </item>
     <item>
       <title>AD and NETBIOS Names</title>
