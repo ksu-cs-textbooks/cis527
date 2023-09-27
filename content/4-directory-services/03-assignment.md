@@ -33,12 +33,12 @@ _Most students in previous semesters have reported that **this lab is generally 
 For this lab, you'll need the following VMs:
 
 1. A **Windows 10** VM. You may reuse your existing Windows 10 VM from a previous lab.
-2. A **Windows Server 2019 Standard (Updated Sept 2019)** (or newer) VM. See **Task 1** below for configuration details.
-3. An **Ubuntu 20.04** VM labelled **CLIENT**. This should be the existing **CLIENT** VM from Lab 3.
-4. An **Ubuntu 20.04** VM labelled **SERVER**. _You have three options to create this VM:_
+2. A **Windows Server 2019 Standard (Updated Mar 2023)** (or newer) VM. See **Task 1** below for configuration details.
+3. An **Ubuntu 22.04** VM labelled **CLIENT**. This should be the existing **CLIENT** VM from Lab 3.
+4. An **Ubuntu 22.04** VM labelled **SERVER**. _You have three options to create this VM:_
    * You can create a copy of your existing **CLIENT** VM from Lab 3, which does not have DHCP and DNS servers installed. Follow the instructions in the Lab 3 assignment to create a copy of that VM. In this case, you'll need to reconfigure the VMware NAT network to handle DHCP duties. Make sure you label this copy **SERVER** in VMWare. _This is generally the option that is simplest, and causes the least headaches._
    * You may continue to use your exiting **SERVER** VM from Lab 3, with DHCP and DNS servers installed. You may choose to continue to use this server as your primary DNS and DHCP server for your VM network, which would truly mimic what an enterprise network would be like. Remember that you'll need to have this VM running at all times to provide those services to other systems on your network. You may also choose instead to disable them and reconfigure the VMware NAT network to handle DHCP duties. Either approach is fine. _This option is generally a bit closer to an actual enterprise scenario, but can also cause many headaches, especially if your system doesn't have enough power to run several VMs simultaneously._
-   * You may create a new Ubuntu 20.04 VM from scratch, label it **SERVER**, and configure it as defined either in Lab 1 or using the Puppet manifest files from Lab 2. _This is effectively the same as copying your **CLIENT** VM from Lab 3, but you get additional practice installing and configuring an Ubuntu VM, I guess._
+   * You may create a new Ubuntu 22.04 VM from scratch, label it **SERVER**, and configure it as defined either in Lab 1 or using the Puppet manifest files from Lab 2. _This is effectively the same as copying your **CLIENT** VM from Lab 3, but you get additional practice installing and configuring an Ubuntu VM, I guess._
 
 {{% notice warning %}}
 Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4" that you can restore to later if you have any issues. In most cases, it is simpler to restore a snapshot and try again instead of debugging an error when setting up an LDAP or AD server. In addition, Task 6 below will ask you to restore to a snapshot in at least one VM before starting that step.
@@ -48,7 +48,7 @@ Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4"
 
 ### Task 1: Install Windows Server 2019 Standard
 
-Create a new virtual machine for **Windows Server 2019 Standard** using the "Windows Server 2019 Standard (Updated Sept 2019)" installation media (you may choose a newer option if available, but this lab was tested on that specific version). You can download the installation files and obtain a product key from the [Microsoft Azure Student Portal](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) discussed in Module 1. 
+Create a new virtual machine for **Windows Server 2019 Standard** using the "Windows Server 2019 Standard (Updated Mar 2023)" installation media (you may choose a newer option if available, but this lab was tested on that specific version). You can download the installation files and obtain a product key from the [Microsoft Azure Student Portal](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) discussed in Module 1. 
 
 {{% notice tip %}}
 For this system, I recommend giving the VM ample resources, usually at least 2 GB RAM and multiple processor cores if you can spare them. You may need to adjust the VM settings as needed to balance the performance of this VM against the available resources on your system. 
@@ -127,7 +127,7 @@ Install OpenLDAP on your Ubuntu VM labelled **SERVER**. Follow the steps and con
    * **Base DN:** `dc=ldap,dc=<your eID>,dc=cis527,dc=cs,dc=ksu,dc=edu` (example: `dc=ldap,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu`)
    * **Passwords:** Use `cis527_linux` for all passwords
    * You **DO NOT** have to perform the other steps in the guide to configure TLS at this point
-3. Install phpLDAPadmin. See the video in this module for detailed instructions on how to install and configure phpLDAPadmin.
+3. Install LDAP Account Manager (LAM). See the video in this module for detailed instructions on how to install and configure LDAP Account Manager.
 4. Add a User Account to your OpenLDAP Directory
    * Follow the instructions in the guide below to create `ou`s for `users`, `groups`, and create an `admin` group as well.
    * Use your own eID for the username, and `cis527_linux` as the password.
@@ -139,8 +139,8 @@ Of course, you may need to modify your firewall configuration to allow incoming 
 
 #### Resources
 
-* [How To Install and Configure OpenLDAP and phpLDAPadmin on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04) from DigitalOcean (works for 18.04 and 20.04 as well)
-* [Add Organizational Units, Groups and Users](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-a-basic-ldap-server-on-an-ubuntu-12-04-vps#add-organizational-units-groups-and-users) from DigitalOcean
+* [How to Install OpenLDAP on Ubuntu Server 22.04](https://www.techrepublic.com/article/how-to-install-openldap-ubuntu-server-22-04/) from TechRepublic
+* [How To Install and Configure OpenLDAP and phpLDAPadmin on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04) from DigitalOcean (works for 22.04 as well, but PHPLDAPAdmin is not working on PHP 8.1 - use the new LDAP Account Manager instead)
 * [LDAP & TLS](https://ubuntu.com/server/docs/service-ldap-with-tls) from the Ubuntu Server Guide
 
 ---
@@ -152,7 +152,7 @@ On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate agai
 1. First, confirm that you are able to resolve `ldap.<your eID>.cis527.cs.ksu.edu` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Ubuntu VM labelled **SERVER** as configured in Lab 3, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
 1. Next, copy the `mycacert.crt` file from the home directory on your **SERVER** to the `/usr/local/share/ca-certificates/` directory on the **CLIENT**, and then run `sudo update-ca-certificates` to install it. 
    1. If you have configured SSH properly, you can copy the file from one server to another using `scp`. The command may be something like `scp -P 23456 ldap.<your eID>.cis527.cs.ksu.edu:~/mycacert.crt ./`.
-1. Then, make sure that you can connect to the LDAP server using TLS. You can use `ldapwhoami -x -ZZ -h ldap.<your eID>.cis527.cs.ksu.edu` and it should return `anonymous` if it works. 
+1. Then, make sure that you can connect to the LDAP server using TLS. You can use `ldapwhoami -x -ZZ -H ldap://ldap.<your eID>.cis527.cs.ksu.edu` and it should return `anonymous` if it works. 
 1. Before you configure SSSD, make a **snapshot** of this VM. If your SSSD configuration does not work, you can restore this snapshot and try again.
 1. To test your SSSD configuration, use the command `getent passwd <username>` (example: `getent passwd russfeld`) and confirm that it returns an entry for your LDAP user.
 1. To log in as the LDAP user, use the `su <username>` command (example: `su russfeld`).
@@ -181,7 +181,7 @@ If you get errors like "Insufficient permissions to join the domain", you may ne
 
 * [SSSD and Active Directory](https://ubuntu.com/server/docs/service-sssd-ad) from Ubuntu
 * [Join in Active Directory Domain](https://www.server-world.info/en/note?os=Ubuntu_20.04&p=realmd) from Server-World
-* [How to Join Ubuntu 18.04 / Debian 10 To Active Directory (AD) Domain](https://computingforgeeks.com/join-ubuntu-debian-to-active-directory-ad-domain/) from Computingforgeeks (works for 20.04)
+* [How to Join Ubuntu 18.04 / Debian 10 To Active Directory (AD) Domain](https://computingforgeeks.com/join-ubuntu-debian-to-active-directory-ad-domain/) from Computingforgeeks (works for 22.04)
 
 ---
 

@@ -14,7 +14,7 @@ pre: "6. "
 * [Group Policy Fundamentals in Active Directory](https://redmondmag.com/articles/2016/01/12/group-policy-fundamentals.aspx) by Troy Thompson in Redmond Magazine
 * [Tutorial: The Joys of Windows Server's Group Policies](https://www.infoworld.com/article/3117286/windows-server/tutorial-the-joys-of-windows-servers-group-policies.html) by J. Peter Bruzzese on InfoWorld
 * [What is Group Policy in Windows](https://www.howtogeek.com/125171/htg-explains-what-group-policy-is-and-how-you-can-use-it/) from How-To Geek
-* [The 10 Windows Group Policy Settings you Need to Get Right](https://www.csoonline.com/article/3212948/windows/the-10-windows-group-policy-settings-you-need-to-get-right.html) from CSO Online
+* [The 10 Windows Group Policy Settings you Need to Get Right](https://www.csoonline.com/article/562485/the-10-windows-group-policy-settings-you-need-to-get-right-2.html) from CSO Online
 * [In the Trenches: Eight Tips-n-Tricks for Microsoft Windows Group Policy](https://www.globalknowledge.com/us-en/content/articles/in-the-trenches-eight-tips-n-tricks-for-microsoft-windows-group-policy/) by Mark Mizrahi on Global Knowledge
 * [Top 10 Most Important Group Policy Settings for Preventing Security Breaches](https://www.lepide.com/blog/top-10-most-important-group-policy-settings-for-preventing-security-breaches/) by Abhishek Rai on Lepide Blog
 * [Group Policy Best Practices](https://activedirectorypro.com/group-policy-best-practices/) by Robert Allen on Active Directory Pro
