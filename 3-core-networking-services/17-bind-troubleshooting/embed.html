@@ -1381,20 +1381,20 @@
     <link href="https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/17-bind-troubleshooting/tele.html" rel="alternate" type="text/html" title="Bind Troubleshooting :: CIS 527 Textbook">
     
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/fontawesome-all.min.css?1695146685" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis527/css/fontawesome-all.min.css?1695146685" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/nucleus.css?1695146685" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/auto-complete.css?1695146685" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis527/css/auto-complete.css?1695146685" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/perfect-scrollbar.min.css?1695146685" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/fonts.css?1695146685" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis527/css/fonts.css?1695146685" rel="stylesheet"></noscript>
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/theme.css?1695146685" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/fontawesome-all.min.css?1695851667" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis527/css/fontawesome-all.min.css?1695851667" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/nucleus.css?1695851667" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/auto-complete.css?1695851667" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis527/css/auto-complete.css?1695851667" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/perfect-scrollbar.min.css?1695851667" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/fonts.css?1695851667" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="https://ksu-cs-textbooks.github.io/cis527/css/fonts.css?1695851667" rel="stylesheet"></noscript>
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/theme.css?1695851667" rel="stylesheet">
     
     
     
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/theme-light-theme.css?1695146685" rel="stylesheet" id="variant-style">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/variant.css?1695146685" rel="stylesheet">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/print.css?1695146685" rel="stylesheet" media="print">
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/ie.css?1695146685" rel="stylesheet">
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/url.js?1695146685"></script>
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/theme-light-theme.css?1695851667" rel="stylesheet" id="variant-style">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/variant.css?1695851667" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/print.css?1695851667" rel="stylesheet" media="print">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/ie.css?1695851667" rel="stylesheet">
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/url.js?1695851667"></script>
     
     
     
@@ -1416,7 +1416,7 @@
       window.variants && variants.init( [ 'light-theme', 'dark-theme' ] );
     </script>
     
-    <link href="https://ksu-cs-textbooks.github.io/cis527/css/custom.css?1695146685" rel="stylesheet">
+    <link href="https://ksu-cs-textbooks.github.io/cis527/css/custom.css?1695851667" rel="stylesheet">
 
     
   </head>
@@ -1435,55 +1435,55 @@
 <h2 id="incorrect-screenshots">Incorrect Screenshots</h2>
 <h4 id="bad-ptr-response">Bad PTR Response</h4>
 <p>
-<a href="#image-37984ab7def8d6cbcf774792cc2fbcce" class="lightbox-link">
+<a href="#image-1b366f743eede1d6834fb55c4814113c" class="lightbox-link">
 <img src="../../images/lab3-badresponse.png" alt="192.168.40.41 bad" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-37984ab7def8d6cbcf774792cc2fbcce">
+<a href="javascript:history.back();" class="lightbox" id="image-1b366f743eede1d6834fb55c4814113c">
 <img src="../../images/lab3-badresponse.png" alt="192.168.40.41 bad" class="lightbox-image" loading="lazy">
 </a></p>
 <p>In this screenshot, I attempted to do a reverse lookup of <code>192.168.40.41</code>, which should resolve to <code>ns.cis527russfeld.cs.ksu.edu</code>. This test was done from the machine with that IP address. Unfortunately, my server was misconfigured, and the reverse zone file was not properly included (the path in my <code>named.conf.local</code> file had a typo, to be exact). Since that file was not availble, my system returned the response from it&rsquo;s local DNS information, showing that the IP address <code>192.168.40.41</code> belongs to <code>cis527U-russfeld.</code>, which is the name of the actual computer and not its name in the DNS system. This can happen if you try to request information about the local system and the DNS server does not contain the correct information.</p>
 <h4 id="no-ptr-response">No PTR Response</h4>
 <p>
-<a href="#image-01ecb03c8cd06a099ab6582c13882dfe" class="lightbox-link">
+<a href="#image-a71911b2e10a970a8e703f309c199068" class="lightbox-link">
 <img src="../../images/lab3-noresponse.png" alt="192.168.40.42 no response" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-01ecb03c8cd06a099ab6582c13882dfe">
+<a href="javascript:history.back();" class="lightbox" id="image-a71911b2e10a970a8e703f309c199068">
 <img src="../../images/lab3-noresponse.png" alt="192.168.40.42 no response" class="lightbox-image" loading="lazy">
 </a></p>
 <p>With the same misconfiguration as described above, when I query a different system, such as <code>192.168.40.42</code>, I instead get an empty response as shown here. This is the usual situation if the DNS server is misconfigured and the PTR record cannot be found. If the output of <code>dig</code> is missing an answer section, it usually indicates that the lookup failed.</p>
 <h4 id="missing-period">Missing Period</h4>
 <p>
-<a href="#image-d7a3816f845882ef42ee4a4ddd30a18c" class="lightbox-link">
+<a href="#image-1a49de428b48dc4b34e96256fc0b5109" class="lightbox-link">
 <img src="../../images/lab3-reversebad1.png" alt="192.168.40.41 no period" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-d7a3816f845882ef42ee4a4ddd30a18c">
+<a href="javascript:history.back();" class="lightbox" id="image-1a49de428b48dc4b34e96256fc0b5109">
 <img src="../../images/lab3-reversebad1.png" alt="192.168.40.41 no period" class="lightbox-image" loading="lazy">
 </a></p>
 <p>So, I corrected my error and restarted my bind9 server, and once again tried to query one of my reverse lookup addresses. However, in this case, I <em>did</em> get a response from the DNS server, but it was incorrect. The address returned when I queried <code>192.168.40.42</code> as <code>windows.cis527russfeld.cs.ksu.edu.40.168.192.in-addr.arpa</code>, which is not what I wanted. This can happen when you forget to add the <strong>all important period</strong> at the end of an entry in your zone file.</p>
 <p>
-<a href="#image-de0defe287799b63c62b8aae988b9cd7" class="lightbox-link">
+<a href="#image-54282f8d7e83e77f0287b2529777fb9d" class="lightbox-link">
 <img src="../../images/lab3-period.png" alt="Period" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-de0defe287799b63c62b8aae988b9cd7">
+<a href="javascript:history.back();" class="lightbox" id="image-54282f8d7e83e77f0287b2529777fb9d">
 <img src="../../images/lab3-period.png" alt="Period" class="lightbox-image" loading="lazy">
 </a></p>
 <p>That one, right there. If you forget that one, the bind9 DNS server will automatically append a whole bunch of domain information after the address. Sometimes we want that, but in this case, we don&rsquo;t. So, be <em>very</em> careful and don&rsquo;t forget the periods.</p>
 <h4 id="dns-caching">DNS Caching</h4>
 <p>
-<a href="#image-5abe4ab7c6fac3ba7b8a9f195f09e4b0" class="lightbox-link">
+<a href="#image-b5bb10fb4676881881089ec968cf479e" class="lightbox-link">
 <img src="../../images/lab3-flushcache.png" alt="192.168.40.41 fail after fix" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-5abe4ab7c6fac3ba7b8a9f195f09e4b0">
+<a href="javascript:history.back();" class="lightbox" id="image-b5bb10fb4676881881089ec968cf479e">
 <img src="../../images/lab3-flushcache.png" alt="192.168.40.41 fail after fix" class="lightbox-image" loading="lazy">
 </a></p>
 <p>In this screenshot, I had just resolved the error above and restarted my bind9 server to load the newly changed files. Then, I once again used <code>dig</code> to query <code>192.168.40.42</code>, expecting to see the correct output. Instead, I still received the incorrect output as seen in the screenshot above. This is a very common problem!</p>
 <p>There can be a couple of causes of this issue. First, whenever you update a zone file, don&rsquo;t forget to change the serial value to a larger number. The DigitalOcean guide just has you start with 2 and go to 3 and so on. I like to use the date, followed by a serial for that day. So, I would use a serial such as <code>202005061</code> for the first update made on May 6th, 2020 (2020-05-06).</p>
 <p>Secondly, even if you remember to do that, many modern systems employ some form of <em>DNS caching</em> that stores the responses from previous queries. Both Ubuntu and Windows do this automatically. So, you may also have to clear your DNS cache to make sure it is properly querying the server. On Ubuntu, use <code>sudo systemd-resolve --flush-caches</code> and on Windows use <code>ipconfig /flush-dns</code>.</p>
 <p>
-<a href="#image-83e770d7c6cbccbf959c8baf6dad3a41" class="lightbox-link">
+<a href="#image-dd5f32b51212a0f8f69347b04fe7a2c8" class="lightbox-link">
 <img src="../../images/lab3-flushcache2.png" alt="192.168.40.41 fail after fix" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-83e770d7c6cbccbf959c8baf6dad3a41">
+<a href="javascript:history.back();" class="lightbox" id="image-dd5f32b51212a0f8f69347b04fe7a2c8">
 <img src="../../images/lab3-flushcache2.png" alt="192.168.40.41 fail after fix" class="lightbox-image" loading="lazy">
 </a></p>
 <p>Immediately after flushing the DNS cache, I was able to perform the query again and get the correct result.</p>
@@ -1491,41 +1491,41 @@
 <p>Below are screenshots showing correct output for various <code>dig</code> commands. You may use these screenshots to help in your debugging process. To take these screenshots, I updated the static IP address configuration for the Ubuntu Server to use it&rsquo;s own IP address <code>192.168.40.41</code> as the only DNS server.</p>
 <h4 id="correct-a-records">Correct A Records</h4>
 <p>
-<a href="#image-d57d3a0a87b8dd7a39b72b20b2a4b66c" class="lightbox-link">
+<a href="#image-54d1b82356b57729cf398bf036529c57" class="lightbox-link">
 <img src="../../images/lab3-dig1.png" alt="ns.cis527russfeld.cs.ksu.edu" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-d57d3a0a87b8dd7a39b72b20b2a4b66c">
+<a href="javascript:history.back();" class="lightbox" id="image-54d1b82356b57729cf398bf036529c57">
 <img src="../../images/lab3-dig1.png" alt="ns.cis527russfeld.cs.ksu.edu" class="lightbox-image" loading="lazy">
 </a>
 
-<a href="#image-5777e92c8288cef659311e1d59849423" class="lightbox-link">
+<a href="#image-e186cef1c4b3e173ab3316acf017e9b1" class="lightbox-link">
 <img src="../../images/lab3-dig2.png" alt="windows.cis527russfeld.cs.ksu.edu" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-5777e92c8288cef659311e1d59849423">
+<a href="javascript:history.back();" class="lightbox" id="image-e186cef1c4b3e173ab3316acf017e9b1">
 <img src="../../images/lab3-dig2.png" alt="windows.cis527russfeld.cs.ksu.edu" class="lightbox-image" loading="lazy">
 </a></p>
 <h4 id="correct-cname-records">Correct CNAME Records</h4>
 <p>
-<a href="#image-599a434e0b416bdfbfd5af99111767f8" class="lightbox-link">
+<a href="#image-0d5c6a8258581bad42328689f46b02c5" class="lightbox-link">
 <img src="../../images/lab3-dig3.png" alt="ubuntu.cis527russfeld.cs.ksu.edu" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-599a434e0b416bdfbfd5af99111767f8">
+<a href="javascript:history.back();" class="lightbox" id="image-0d5c6a8258581bad42328689f46b02c5">
 <img src="../../images/lab3-dig3.png" alt="ubuntu.cis527russfeld.cs.ksu.edu" class="lightbox-image" loading="lazy">
 </a></p>
 <h4 id="correct-ptr-record">Correct PTR Record</h4>
 <p>
-<a href="#image-af2c90a56ccc38b86c4a4a34f07cc902" class="lightbox-link">
+<a href="#image-02c2cfc9a0e7cfabfac07e482e632e48" class="lightbox-link">
 <img src="../../images/lab3-reverse1.png" alt="192.168.40.41" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-af2c90a56ccc38b86c4a4a34f07cc902">
+<a href="javascript:history.back();" class="lightbox" id="image-02c2cfc9a0e7cfabfac07e482e632e48">
 <img src="../../images/lab3-reverse1.png" alt="192.168.40.41" class="lightbox-image" loading="lazy">
 </a></p>
 <h4 id="correct-recursive-lookup-outside-our-dns-server">Correct Recursive Lookup (Outside our DNS Server)</h4>
 <p>
-<a href="#image-dc9761cbc4e89bc613e918955b888f87" class="lightbox-link">
+<a href="#image-321b172b57c25c68f3df5b4e010d4040" class="lightbox-link">
 <img src="../../images/lab3-recurse.png" alt="Recursive Lookup" style="height: auto; width: auto;" loading="lazy">
 </a>
-<a href="javascript:history.back();" class="lightbox" id="image-dc9761cbc4e89bc613e918955b888f87">
+<a href="javascript:history.back();" class="lightbox" id="image-321b172b57c25c68f3df5b4e010d4040">
 <img src="../../images/lab3-recurse.png" alt="Recursive Lookup" class="lightbox-image" loading="lazy">
 </a></p>
 
@@ -1539,10 +1539,10 @@
     
     
     
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/clipboard.min.js?1695146686" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/perfect-scrollbar.min.js?1695146686" defer></script>
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/theme.js?1695146686" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/clipboard.min.js?1695851668" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/perfect-scrollbar.min.js?1695851668" defer></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/theme.js?1695851668" defer></script>
     
-    <script src="https://ksu-cs-textbooks.github.io/cis527/js/embed-iframe.js?1695146686 defer"></script>
+    <script src="https://ksu-cs-textbooks.github.io/cis527/js/embed-iframe.js?1695851668 defer"></script>
   </body>
 </html>
