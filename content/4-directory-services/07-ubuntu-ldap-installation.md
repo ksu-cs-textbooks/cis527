@@ -10,6 +10,12 @@ pre: "7. "
 
 <!-- BFvknNpAAIM -->
 
+{{% notice note %}}
+
+PHPLDAPAdmin no longer works on Ubuntu 22.04 since it has several incompatibility issues with PHP 8+. The assignment is being updated to use the new LDAP Account Manager (LAM) software instead. The video above will be updated soon to include LAM instead of PHPLDAPAdmin
+
+{{% /notice %}}
+
 #### Resources
 
 * [How to Install OpenLDAP on Ubuntu Server 22.04](https://www.techrepublic.com/article/how-to-install-openldap-ubuntu-server-22-04/) from TechRepublic
