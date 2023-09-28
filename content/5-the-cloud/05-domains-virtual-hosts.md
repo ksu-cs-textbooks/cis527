@@ -11,8 +11,8 @@ pre: "5. "
 * **[Slides]({{< relref "/5-the-cloud/05-domains-virtual-hosts-slides.md" >}})**
 * **[Core Networking Services - DNS]({{< relref "/3-core-networking-services/11-dns" >}})**
 * **[Student Developer Pack](https://education.github.com/pack) from GitHub Education**
-* [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04) from DigitalOcean
-* [DNS Overview](https://www.digitalocean.com/docs/networking/dns/overview/) from DigitalOcean
+* [How To Install the Apache Web Server on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04) from DigitalOcean
+* [DNS Overview](https://docs.digitalocean.com/products/networking/dns/) from DigitalOcean
 * [How to Point to DigitalOcean Nameservers from Common Domain Registrars](https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars#registrar-namecheap) from DigitalOcean
 
 #### Video Transcript

@@ -25,7 +25,7 @@ This lab may take anywhere from **1 - 6 hours** to complete, depending on your p
 {{% notice info %}}
 _This lab involves working with resources on the cloud, and will require you to sign up and pay for those services. In general, your total cost should be low, usually around $20 total. If you haven't already, you can sign up for the [GitHub Student Developer Pack](https://education.github.com/pack) to get discounts on most of these items._
 
-_You can get $100 credit at DigitalOcean using this link: [https://try.digitalocean.com/freetrialoffer/](https://try.digitalocean.com/freetrialoffer/)_
+_You can get $200 credit at DigitalOcean using this link: [https://try.digitalocean.com/freetrialoffer/](https://try.digitalocean.com/freetrialoffer/)_
 
 _You can register a .me domain name for free using Namecheap at this link: [https://nc.me/](https://nc.me/)_
 
@@ -38,7 +38,7 @@ _If you have any concerns about using these services, please contact me to make 
 
 Create **TWO** droplets on DigitalOcean. As you set up your droplets, use the following settings:
 
-* Choose the Ubuntu 20.04 x64 distribution as the droplet image
+* Choose the Ubuntu 22.04 x64 distribution as the droplet image
 * Select the smallest droplet size ($4-6/mo)
 * Select any United States region
 * Enable Virtual Private Cloud (VPC) Networking and Monitoring
@@ -81,9 +81,9 @@ _Many students misconfigure the firewall on the **BACKEND** server to allow SSH 
 
 #### Resources
 
-* [Initial Server Setup with Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04) from DigitalOcean
+* [Initial Server Setup with Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04) from DigitalOcean
 * [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) from DigitalOcean
-* [How To Set Up Time Synchronization on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-18-04) from DigitalOcean (works on Ubuntu 20.04)
+* [How To Set Up Time Synchronization on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-20-04) from DigitalOcean (works on Ubuntu 22.04)
 
 ---
 
@@ -113,7 +113,7 @@ _You may contact me once you have installed the grading SSH key to confirm that 
 * **[Extras - SSH]({{< relref "/X-extras/02-ssh" >}})**
 * [How Does SSH Work](https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work) from Hostinger
 * [SSH Essentials: Working with SSH Servers, Clients and Keys](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) from DigitalOcean
-* [How to Set Up SSH Keys on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04) from DigitalOcean
+* [How to Set Up SSH Keys on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-22-04) from DigitalOcean
 * [Simplify Your Life With an SSH Config File](https://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/) from Nerderati
 
 ---
@@ -139,7 +139,7 @@ To test your system, you should be able to enter the public IP address of your *
 
 #### Resources
 
-* [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04) from DigitalOcean
+* [How To Install the Apache Web Server on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04) from DigitalOcean
 
 ---
 
@@ -177,7 +177,7 @@ To test your new DNS settings, you should be able to enter `http://cis527charlie
 
 #### Resources
 
-* [DNS Overview](https://www.digitalocean.com/docs/networking/dns/overview/) from DigitalOcean
+* [DNS Overview](https://docs.digitalocean.com/products/networking/dns/) from DigitalOcean
 * [How to Point to DigitalOcean Nameservers from Common Domain Registrars](https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars#registrar-namecheap) from DigitalOcean
 
 ---
@@ -190,7 +190,7 @@ Finally, you can test your virtual host configuration using the same URL given i
 
 #### Resources
 
-* [How To Install the Apache Web Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04) from DigitalOcean
+* [How To Install the Apache Web Server on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04) from DigitalOcean
 
 ---
 
@@ -226,7 +226,7 @@ You **DO NOT** have to configure public key certificates on **FRONTEND** using a
 #### Resources
 
 * [Certbot](https://certbot.eff.org/) from the Electronic Frontier Foundation (EFF)
-* [How To Secure Apache with Let's Encrypt on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04) from DigitalOcean
+* [How To Secure Apache with Let's Encrypt on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-22-04) from DigitalOcean
 
 ---
 

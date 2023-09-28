@@ -5,7 +5,7 @@ pre: "4. "
 ---
 
 {{% notice note %}}
-TODO _This video was recorded for Ubuntu 18.04, but works for Ubuntu 20.04 as well. When creating a droplet, simply select the newest version of Ubuntu LTS. This video shows an older version of the DigitalOcean UI, but should be similar to what you see today. --Russ_
+TODO _This video was recorded for Ubuntu 18.04, but works for Ubuntu 22.04 as well. When creating a droplet, simply select the newest version of Ubuntu LTS. This video shows an older version of the DigitalOcean UI, but should be similar to what you see today. --Russ_
 {{% /notice %}}
 
 {{< youtube UfqT889Vp2I >}}
@@ -19,14 +19,14 @@ TODO _This video was recorded for Ubuntu 18.04, but works for Ubuntu 20.04 as we
 * **[Extras - Windows Subsystem for Linux]({{< relref "/X-extras/06-windows-subsystem-for-linux" >}})**
 * [How to Create a Droplet from the DigitalOcean Control Panel](https://www.digitalocean.com/docs/droplets/how-to/create/) from DigitalOcean
 * [An Introduction to Cloud-Config Scripting](https://www.digitalocean.com/community/tutorials/an-introduction-to-cloud-config-scripting) from DigitalOcean
-* [Initial Server Setup with Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04) from DigitalOcean
+* [Initial Server Setup with Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04) from DigitalOcean
 * [Virtual Private Cloud (VPC)](https://www.digitalocean.com/docs/networking/vpc/) from DigitalOcean (replaced private networking)
 * [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) from DigitalOcean
 * [How Does SSH Work](https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work) from Hostinger
 * [SSH Essentials: Working with SSH Servers, Clients and Keys](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) from DigitalOcean
-* [How to Set Up SSH Keys on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04) from DigitalOcean
+* [How to Set Up SSH Keys on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-22-04) from DigitalOcean
 * [Simplify Your Life With an SSH Config File](https://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/) from Nerderati
-* [How To Add Swap Space on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04) from DigitalOcean _(not recommended)_
+* [How To Add Swap Space on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04) from DigitalOcean _(not recommended)_
 
 #### Video Transcript
 
