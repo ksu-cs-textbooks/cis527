@@ -38,7 +38,7 @@ In this screenshot, I had just resolved the error above and restarted my bind9 s
 
 There can be a couple of causes of this issue. First, whenever you update a zone file, don't forget to change the serial value to a larger number. The DigitalOcean guide just has you start with 2 and go to 3 and so on. I like to use the date, followed by a serial for that day. So, I would use a serial such as `202005061` for the first update made on May 6th, 2020 (2020-05-06). 
 
-Secondly, even if you remember to do that, many modern systems employ some form of _DNS caching_ that stores the responses from previous queries. Both Ubuntu and Windows do this automatically. So, you may also have to clear your DNS cache to make sure it is properly querying the server. On Ubuntu, use `sudo systemd-resolve --flush-caches` and on Windows use `ipconfig /flush-dns`. 
+Secondly, even if you remember to do that, many modern systems employ some form of _DNS caching_ that stores the responses from previous queries. Both Ubuntu and Windows do this automatically. So, you may also have to clear your DNS cache to make sure it is properly querying the server. On Ubuntu, use `sudo resolvectl flush-caches` and on Windows use `ipconfig /flush-dns`. 
 
 ![192.168.40.41 fail after fix](../../images/lab3-flushcache2.png)
 
