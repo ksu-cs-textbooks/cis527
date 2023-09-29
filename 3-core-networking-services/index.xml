@@ -1456,8 +1456,8 @@ Resources How to Configure Static IP Address on Ubuntu 20.04 Focal Fossa Desktop
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/11-dns/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/11-dns/index.html</guid>
-      <description>Note The examples in this video are for an old version of Lab 3, but should be instructive enough to be useful. Read the new Lab 3 assignment carefully and follow its instructions when configuring your system for grading. &amp;ndash;Russ
-Resources Slides Domain Name System (DNS) on Wikipedia List of DNS Record Types on Wikipedia Domain Name System (DNS) History from Living Internet BIND on Wikipedia HOSTS.TXT from March 22, 1985 Root Name Server on Wikipedia Root Files from IANA How To Configure BIND as a Private Network DNS Server on Ubuntu 18.</description>
+      <description>Note The examples in this video are for an old version of Lab 3, but should be instructive enough to be useful. Read the new Lab 3 assignment carefully and follow its instructions when configuring your system for grading. Some commands are different - see the transcript below for updated commands &amp;ndash;Russ
+Resources Slides Domain Name System (DNS) on Wikipedia List of DNS Record Types on Wikipedia Domain Name System (DNS) History from Living Internet BIND on Wikipedia HOSTS.</description>
     </item>
     <item>
       <title>SNMP</title>
