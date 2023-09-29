@@ -6,6 +6,8 @@ pre: "5. "
 
 ### Lab 3 - Core Networking Services
 
+<!-- TODO: ISC DHCP Server is EOL - Switch to KEA -->
+
 #### Instructions
 
 Create **three** virtual machines meeting the specifications given below. The best way to accomplish this is to treat this assignment like a checklist and check things off as you complete them.

@@ -5,7 +5,7 @@ pre: "11. "
 ---
 
 {{% notice note %}}
-The examples in this video are for an old version of Lab 3, but should be instructive enough to be useful. Read the new Lab 3 assignment carefully and follow its instructions when configuring your system for grading. --Russ
+The examples in this video are for an old version of Lab 3, but should be instructive enough to be useful. Read the new Lab 3 assignment carefully and follow its instructions when configuring your system for grading. Some commands are different - see the transcript below for updated commands --Russ
 {{% /notice %}}
 
 {{< youtube CN8YPR_X1eU >}}
@@ -56,7 +56,7 @@ First, on my server, I'm going to start Wireshark so we can capture these packet
 On the client, I have already verified that it is configured to use the other Ubuntu VM as a DNS server. You can see the currently configured DNS servers using this command:
 
 ```bash
-systemd-resolve --status
+resolvectl status
 ```
 
 At the bottom of that output, it should show the current DNS server for your ethernet connection. You'll have to press <kbd>Q</kbd> to close the output. To query a DNS record, we can use a couple of different commands. First, we can use the `dig` command to lookup a DNS name:
