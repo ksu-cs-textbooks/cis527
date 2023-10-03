@@ -175,6 +175,12 @@ To test your DNS server, you can set a static DNS address on either your Windows
 See the [Bind Troubleshooting]({{< relref "/3-core-networking-services/17-bind-troubleshooting.md" >}}) page for some helpful screenshots of using `dig` to debug DNS server configuration. 
 {{% /notice %}}
 
+{{% notice warning %}}
+
+As of 2023, the DNS servers on campus do not seem to support DNSSEC, which may cause issues with forwarders. If you are connected to the campus network, I recommend changing the setting in `named.conf.options` to `dnssec-validation no;` to disable DNSSEC validation - that seems to resolve the issue. 
+
+{{% /notice %}}
+
 #### Resources
 
 * [How To Configure BIND as a Private Network DNS Server on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-22-04) from DigitalOcean
