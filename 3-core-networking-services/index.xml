@@ -1018,6 +1018,16 @@
 	
 	
 		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
 
 	
 	
@@ -1389,7 +1399,7 @@
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/01-introduction/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/01-introduction/index.html</guid>
-      <description>YouTube Video Resources Slides Video Transcript Welcome to Module 3! In this module, you&amp;rsquo;ll learn all about how to link your systems up using a variety of networking tools and protocols. First, we&amp;rsquo;ll discuss the OSI 7-Layer Networking Model and how each layer impacts your system. Then, we&amp;rsquo;ll look at how to configure various networking options in both Windows and Linux.
+      <description>Resources Slides Video Transcript Welcome to Module 3! In this module, you&amp;rsquo;ll learn all about how to link your systems up using a variety of networking tools and protocols. First, we&amp;rsquo;ll discuss the OSI 7-Layer Networking Model and how each layer impacts your system. Then, we&amp;rsquo;ll look at how to configure various networking options in both Windows and Linux.
 Following that, you&amp;rsquo;ll learn how to configure a DNS and DHCP server using Ubuntu and connect your VMs to those services to make sure they are working properly.</description>
     </item>
     <item>
@@ -1397,7 +1407,7 @@ Following that, you&amp;rsquo;ll learn how to configure a DNS and DHCP server us
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/02-networking-overview/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/02-networking-overview/index.html</guid>
-      <description>YouTube Video Resources Slides The TCP/IP Guide Packet Switching on Wikipedia Computer Network on Wikipedia Spanning Tree Protocol on Wikipedia Basics of Computer Networking from GeeksforGeeks Video Transcript Before we start working with networking on our virtual machines, let&amp;rsquo;s take a few minutes to discuss some fundamental concepts in computer networking.
+      <description>Resources Slides The TCP/IP Guide Packet Switching on Wikipedia Computer Network on Wikipedia Spanning Tree Protocol on Wikipedia Basics of Computer Networking from GeeksforGeeks Video Transcript Before we start working with networking on our virtual machines, let&amp;rsquo;s take a few minutes to discuss some fundamental concepts in computer networking.
 For most people, a computer network represents a single entity connecting their personal computer to &amp;ldquo;The Internet,&amp;rdquo; and not much thought is given to how it works.</description>
     </item>
     <item>
@@ -1405,7 +1415,7 @@ For most people, a computer network represents a single entity connecting their 
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/03-network-layer/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/03-network-layer/index.html</guid>
-      <description>YouTube Video Resources Slides The TCP/IP Guide Classful Networks on Wikipedia Dot-Decimal Notation on Wikipedia Classless Inter-Domain Routing on Wikipedia IPv6 on Wikipedia Reserved IP Addresses on Wikipedia Video Transcript In this video, I&amp;rsquo;ll discuss how the network layer of the 7-layer OSI model works.
+      <description>Resources Slides The TCP/IP Guide Classful Networks on Wikipedia Dot-Decimal Notation on Wikipedia Classless Inter-Domain Routing on Wikipedia IPv6 on Wikipedia Reserved IP Addresses on Wikipedia Video Transcript In this video, I&amp;rsquo;ll discuss how the network layer of the 7-layer OSI model works.
 The network layer is used to route packets from one host to another via a network. Typically, most modern networks today use the Internet Protocol or IP to perform this task, though there are other protocols available.</description>
     </item>
     <item>
@@ -1413,7 +1423,7 @@ The network layer is used to route packets from one host to another via a networ
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/04-transport-layer/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/04-transport-layer/index.html</guid>
-      <description>YouTube Video Resources Slides The TCP/IP Guide Transmission Control Protocol on Wikipedia User Datagram Protocol on Wikipedia List of TCP and UDP Port Numbers on Wikipedia Video Transcript Now, let&amp;rsquo;s take a look at layer 4 of the OSI model - the transport layer.
+      <description>Resources Slides The TCP/IP Guide Transmission Control Protocol on Wikipedia User Datagram Protocol on Wikipedia List of TCP and UDP Port Numbers on Wikipedia Video Transcript Now, let&amp;rsquo;s take a look at layer 4 of the OSI model - the transport layer.
 The transport layer is responsible for facilitating host-to-host communication between applications on two different hosts. Depending on the protocol used, it may also offer services such as reliability, flow control, sustained connections, and more.</description>
     </item>
     <item>
@@ -1429,7 +1439,7 @@ If you have any questions about these items or are unsure what they mean, please
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/06-windows-network-configuration/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/06-windows-network-configuration/index.html</guid>
-      <description>YouTube Video Resources How to Assign a Static IP Address in Windows 7, 8, 10, XP, or Vista from How-To Geek How to Set a Static IP Address on Windows 10 from Pureinfotech 4 Common Windows Network Utilities Explained from Make Tech Easier TCPView from Windows Sysinternals Video Transcript Now, let&amp;rsquo;s look at how to manage and configure a network connection in Windows 10.
+      <description>Resources How to Assign a Static IP Address in Windows 7, 8, 10, XP, or Vista from How-To Geek How to Set a Static IP Address on Windows 10 from Pureinfotech 4 Common Windows Network Utilities Explained from Make Tech Easier TCPView from Windows Sysinternals Video Transcript Now, let&amp;rsquo;s look at how to manage and configure a network connection in Windows 10.
 To begin, I&amp;rsquo;m working in the Windows 10 VM I created for Lab 2, with the Puppet Manifest files applied.</description>
     </item>
     <item>
@@ -1438,28 +1448,28 @@ To begin, I&amp;rsquo;m working in the Windows 10 VM I created for Lab 2, with t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/07-ubuntu-network-configuration/index.html</guid>
       <description>Note This video was recorded on Ubuntu 18.04, but nothing significant has changed in Ubuntu 20.04. &amp;ndash;Russ
-YouTube Video Resources How to Configure Static IP Address on Ubuntu 20.04 Focal Fossa Desktop/Server from LinuxConfig.org Network Configuration from Ubuntu Server Guide &amp;lsquo;ip&amp;rsquo; Command Cheat Sheet (Command Line Reference) from The Geek Diary ip Command Cheat Sheet from Red Hat Even though it is for Red Hat, most of these commands should also work in Ubuntu, and honestly, it is just a really handy cheat sheet to have!</description>
+Resources How to Configure Static IP Address on Ubuntu 20.04 Focal Fossa Desktop/Server from LinuxConfig.org Network Configuration from Ubuntu Server Guide &amp;lsquo;ip&amp;rsquo; Command Cheat Sheet (Command Line Reference) from The Geek Diary ip Command Cheat Sheet from Red Hat Even though it is for Red Hat, most of these commands should also work in Ubuntu, and honestly, it is just a really handy cheat sheet to have!</description>
     </item>
     <item>
       <title>Troubleshooting</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/08-troubleshooting/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/08-troubleshooting/index.html</guid>
-      <description>YouTube Video Resources Network Hardware Troubleshooting Flowchart from Foner Books Basic Network Troubleshooting from Computer Hope 7 Simple Steps to Diagnose a Network Problem from MakeUseOf Windows Network Troublehshooting Guide from MakeUseOf The Art of Network Troubleshooting by Greg Schaffer on Computerworld Video Transcript When you are working with network connections, you&amp;rsquo;ll inevitably run into issues. Understanding how to perform basic network troubleshooting is a very important skill for any system administrator to have, and it is one that you&amp;rsquo;ll find yourself using time and time again.</description>
+      <description>Resources Network Hardware Troubleshooting Flowchart from Foner Books Basic Network Troubleshooting from Computer Hope 7 Simple Steps to Diagnose a Network Problem from MakeUseOf Windows Network Troublehshooting Guide from MakeUseOf The Art of Network Troubleshooting by Greg Schaffer on Computerworld Video Transcript When you are working with network connections, you&amp;rsquo;ll inevitably run into issues. Understanding how to perform basic network troubleshooting is a very important skill for any system administrator to have, and it is one that you&amp;rsquo;ll find yourself using time and time again.</description>
     </item>
     <item>
       <title>Network Monitoring with Wireshark</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/09-network-monitoring-with-wireshark/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/09-network-monitoring-with-wireshark/index.html</guid>
-      <description>YouTube Video Resources Slides Wireshark Documentation How to User Wireshark to Capture, Filter, and Inspect Packets from How-To Geek Video Transcript Many times when you are working with networks as a system administrator, it is helpful to be able to see the actual traffic being sent across the network. Thankfully, there are many tools available to help you do just that. In this video, I&amp;rsquo;ll introduce one of those tools, named Wireshark.</description>
+      <description>Resources Slides Wireshark Documentation How to User Wireshark to Capture, Filter, and Inspect Packets from How-To Geek Video Transcript Many times when you are working with networks as a system administrator, it is helpful to be able to see the actual traffic being sent across the network. Thankfully, there are many tools available to help you do just that. In this video, I&amp;rsquo;ll introduce one of those tools, named Wireshark.</description>
     </item>
     <item>
       <title>DHCP</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/10-dhcp/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/10-dhcp/index.html</guid>
-      <description>YouTube Video Resources Slides Dynamic Host Configuration Protocol (DHCP) on Wikipedia Bootstrap Protocol (BOOTP) on Wikipedia What is DHCP? (Dynamic Host Configuration Protocol) from Lifewire ISC DHCP Open Source Software for DHCP Servers Dynamic Host Configuration Protocol (RFC 2131) Standard from IETF Link-Local Address on Wikipedia Video Transcript The Dynamic Host Configuration Protocol, or DHCP, is a core part of operating any network today. This video will introduce DHCP and demonstrate how it works.</description>
+      <description>Resources Slides Dynamic Host Configuration Protocol (DHCP) on Wikipedia Bootstrap Protocol (BOOTP) on Wikipedia What is DHCP? (Dynamic Host Configuration Protocol) from Lifewire ISC DHCP Open Source Software for DHCP Servers Dynamic Host Configuration Protocol (RFC 2131) Standard from IETF Link-Local Address on Wikipedia Video Transcript The Dynamic Host Configuration Protocol, or DHCP, is a core part of operating any network today. This video will introduce DHCP and demonstrate how it works.</description>
     </item>
     <item>
       <title>DNS</title>
@@ -1467,21 +1477,21 @@ YouTube Video Resources How to Configure Static IP Address on Ubuntu 20.04 Focal
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/11-dns/index.html</guid>
       <description>Note The examples in this video are for an old version of Lab 3, but should be instructive enough to be useful. Read the new Lab 3 assignment carefully and follow its instructions when configuring your system for grading. Some commands are different - see the transcript below for updated commands &amp;ndash;Russ
-YouTube Video Resources Slides Domain Name System (DNS) on Wikipedia List of DNS Record Types on Wikipedia Domain Name System (DNS) History from Living Internet BIND on Wikipedia HOSTS.</description>
+Resources Slides Domain Name System (DNS) on Wikipedia List of DNS Record Types on Wikipedia Domain Name System (DNS) History from Living Internet BIND on Wikipedia HOSTS.</description>
     </item>
     <item>
       <title>SNMP</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/12-snmp/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/12-snmp/index.html</guid>
-      <description>YouTube Video Resources Slides Simple Network Management Protocol (SNMP) on Wikipedia MIB Reference from SimpleWeb SNMPv2 MIB Reference from Harald T. Alvestrand How to Install and Configure an SNMP Daemon and Client on Ubuntu 18.04 from DigitalOcean (works for 20.04 as well) How to Use The Net-SNMP Tool Suite to Manage and Monitor Servers from DigitalOcean (works for 20.04) SNMP Agent from Ubuntu Community Help Wiki Video Transcript In the next few videos, we&amp;rsquo;ll take a look at few other important networking protocols that you may come across as a system administrator.</description>
+      <description>Resources Slides Simple Network Management Protocol (SNMP) on Wikipedia MIB Reference from SimpleWeb SNMPv2 MIB Reference from Harald T. Alvestrand How to Install and Configure an SNMP Daemon and Client on Ubuntu 18.04 from DigitalOcean (works for 20.04 as well) How to Use The Net-SNMP Tool Suite to Manage and Monitor Servers from DigitalOcean (works for 20.04) SNMP Agent from Ubuntu Community Help Wiki Video Transcript In the next few videos, we&amp;rsquo;ll take a look at few other important networking protocols that you may come across as a system administrator.</description>
     </item>
     <item>
       <title>HTTP</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/13-http/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/13-http/index.html</guid>
-      <description>YouTube Video Resources Slides Hypertext Transfer Protocol (HTTP) on Wikipedia Video Transcript Next, let&amp;rsquo;s review a couple of application layer protocols. One of the most common of those is the Hypertext Transfer Protocol, or HTTP.
+      <description>Resources Slides Hypertext Transfer Protocol (HTTP) on Wikipedia Video Transcript Next, let&amp;rsquo;s review a couple of application layer protocols. One of the most common of those is the Hypertext Transfer Protocol, or HTTP.
 HTTP was developed by Tim Berners-Lee while he worked at CERN in the late 1980s as part of his project to build the World Wide Web. HTTP itself is an application-layer protocol that is built on top of the TCP transport-layer protocol.</description>
     </item>
     <item>
@@ -1489,7 +1499,7 @@ HTTP was developed by Tim Berners-Lee while he worked at CERN in the late 1980s 
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/14-email-protocols/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/14-email-protocols/index.html</guid>
-      <description>YouTube Video Resources Slides Email on Wikipedia Simple Mail Transfer Protocol (SMTP) on Wikipedia Post Office Protocol (POP3) on Wikipedia Internet Message Access Protocol (IMAP) on Wikipedia Why You May Not Want to Run Your Own Mail Server from DigitalOcean Video Transcript In this video, we&amp;rsquo;ll look at one more set of application layer protocols, the ones for sending and receiving electronic mail, or email.
+      <description>Resources Slides Email on Wikipedia Simple Mail Transfer Protocol (SMTP) on Wikipedia Post Office Protocol (POP3) on Wikipedia Internet Message Access Protocol (IMAP) on Wikipedia Why You May Not Want to Run Your Own Mail Server from DigitalOcean Video Transcript In this video, we&amp;rsquo;ll look at one more set of application layer protocols, the ones for sending and receiving electronic mail, or email.
 Email was developed in the early days of the ARPANET, and was originally built as an extension to the existing File Transfer Protocol or FTP.</description>
     </item>
     <item>
@@ -1497,7 +1507,7 @@ Email was developed in the early days of the ARPANET, and was originally built a
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/15-security/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/15-security/index.html</guid>
-      <description>YouTube Video Resources Slides Transport Layer Security (TLS) on Wikipedia Transport Layer Security (TLS) from High Performance Browser Networking on O&amp;rsquo;Reilly Firewall on Ubuntu Server Guide Uncomplicated Firewall on Ubuntu Wiki Fine-tuning Firewall Rules: 10 Best Practices from eSecurity Planet Video Transcript Lastly, it is very important to take a few minutes to discuss some security concerns related to networking. While this isn&amp;rsquo;t a security course, it is vital for system administrators to understand the security tradeoffs of any system they configure.</description>
+      <description>Resources Slides Transport Layer Security (TLS) on Wikipedia Transport Layer Security (TLS) from High Performance Browser Networking on O&amp;rsquo;Reilly Firewall on Ubuntu Server Guide Uncomplicated Firewall on Ubuntu Wiki Fine-tuning Firewall Rules: 10 Best Practices from eSecurity Planet Video Transcript Lastly, it is very important to take a few minutes to discuss some security concerns related to networking. While this isn&amp;rsquo;t a security course, it is vital for system administrators to understand the security tradeoffs of any system they configure.</description>
     </item>
     <item>
       <title>Solutions</title>
@@ -1518,7 +1528,7 @@ Email was developed in the early days of the ARPANET, and was originally built a
       <link>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/18-lab3-demo/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/3-core-networking-services/18-lab3-demo/index.html</guid>
-      <description>YouTube Video Video Transcript Okay, so I&amp;rsquo;m going to try and talk through a model solution version of lab three and give you some advice on how to go about this lab. And also how to verify that you got this lab configured and working properly. So the first thing we&amp;rsquo;re going to do is we&amp;rsquo;re going to look at our IP address. So I&amp;rsquo;m going to go to the Edit menu in VMware and then choose virtual network editor.</description>
+      <description>Video Transcript Okay, so I&amp;rsquo;m going to try and talk through a model solution version of lab three and give you some advice on how to go about this lab. And also how to verify that you got this lab configured and working properly. So the first thing we&amp;rsquo;re going to do is we&amp;rsquo;re going to look at our IP address. So I&amp;rsquo;m going to go to the Edit menu in VMware and then choose virtual network editor.</description>
     </item>
     <item>
       <title>Lab 3 Networking Diagrams</title>
