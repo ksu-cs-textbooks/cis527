@@ -230,6 +230,6 @@ You **DO NOT** have to configure public key certificates on **FRONTEND** using a
 
 ---
 
-### Task 8: Schedule A Grading Time
+### Task 7: Schedule A Grading Time
 
 Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.
