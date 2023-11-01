@@ -1399,63 +1399,63 @@
       <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/01-introduction/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/01-introduction/index.html</guid>
-      <description>YouTube Video Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Video Transcript Welcome to module 5 A - the first new module added to this course in several years. In this module, we&amp;rsquo;re going to explore one of the biggest trends in system administration - containerization. We&amp;rsquo;ll see how containers have quickly overtaken traditional virtual machines for running workloads in the cloud, and how tools such as Docker make using containers quick and easy.</description>
+      <description>Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Video Transcript Welcome to module 5 A - the first new module added to this course in several years. In this module, we&amp;rsquo;re going to explore one of the biggest trends in system administration - containerization. We&amp;rsquo;ll see how containers have quickly overtaken traditional virtual machines for running workloads in the cloud, and how tools such as Docker make using containers quick and easy.</description>
     </item>
     <item>
       <title>Architecture</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/02-architecture/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/02-architecture/index.html</guid>
-      <description>YouTube Video Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Docker Overivew from Docker Container Report from Datadog GitHub Codespaces Overview from GitHub Virtual Machine-Based Features in Codio from Codio Video Transcript Up to this point, we&amp;rsquo;ve been working with traditional virtual machines in our labs. To use a traditional virtual machine, we first install a hypervisor that allows us to run multiple VMs on a single system.</description>
+      <description>Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Docker Overivew from Docker Container Report from Datadog GitHub Codespaces Overview from GitHub Virtual Machine-Based Features in Codio from Codio Video Transcript Up to this point, we&amp;rsquo;ve been working with traditional virtual machines in our labs. To use a traditional virtual machine, we first install a hypervisor that allows us to run multiple VMs on a single system.</description>
     </item>
     <item>
       <title>Docker</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/03-docker/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/03-docker/index.html</guid>
-      <description>YouTube Video Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Docker Manuals from Docker Docker Official Images on DockerHub Docker Hello World on DockerHub Docker Nginx on DockerHub Video Transcript Now that we&amp;rsquo;ve covered the general architecture of containers, let&amp;rsquo;s dive a bit deeper into Docker itself. Docker is by far the most commonly used tool for creating and managing containers on a small scale, and learning how to use it is a super useful skill for just about any one in a system administration or software development field.</description>
+      <description>Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Docker Manuals from Docker Docker Official Images on DockerHub Docker Hello World on DockerHub Docker Nginx on DockerHub Video Transcript Now that we&amp;rsquo;ve covered the general architecture of containers, let&amp;rsquo;s dive a bit deeper into Docker itself. Docker is by far the most commonly used tool for creating and managing containers on a small scale, and learning how to use it is a super useful skill for just about any one in a system administration or software development field.</description>
     </item>
     <item>
       <title>Orchestration</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/04-orchestration/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/04-orchestration/index.html</guid>
-      <description>YouTube Video Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube 16 Best Container Orchestration Tools and Services from DevopsCube Docker Compose from Docker Installing Docker Compose from Docker Compose File Specification from Docker Video Transcript Up to this point, we&amp;rsquo;ve only looked at how we can start and run containers one at a time on a single platform. While that is great for development and testing, we should know by now that manually doing anything in an enterprise situation is not a great idea.</description>
+      <description>Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube 16 Best Container Orchestration Tools and Services from DevopsCube Docker Compose from Docker Installing Docker Compose from Docker Compose File Specification from Docker Video Transcript Up to this point, we&amp;rsquo;ve only looked at how we can start and run containers one at a time on a single platform. While that is great for development and testing, we should know by now that manually doing anything in an enterprise situation is not a great idea.</description>
     </item>
     <item>
       <title>Resources</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/05-resources/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/05-resources/index.html</guid>
-      <description>YouTube Video Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Networking Containers from Docker Docker ARG, ENV, and .env - A Complete Guide by Vladislav Supalov Docker Storage Overview from Docker (contains information about choosing different storage types) Docker Bind Mounts from Docker Docker Volumes from Docker Video Transcript So far we&amp;rsquo;ve learned how to pull Docker images from a repository and instantiate them as containers, and also how to use Docker Compose to achieve the same result, but we really haven&amp;rsquo;t been able to do much with those containers.</description>
+      <description>Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Networking Containers from Docker Docker ARG, ENV, and .env - A Complete Guide by Vladislav Supalov Docker Storage Overview from Docker (contains information about choosing different storage types) Docker Bind Mounts from Docker Docker Volumes from Docker Video Transcript So far we&amp;rsquo;ve learned how to pull Docker images from a repository and instantiate them as containers, and also how to use Docker Compose to achieve the same result, but we really haven&amp;rsquo;t been able to do much with those containers.</description>
     </item>
     <item>
       <title>Building Images</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/06-building/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/06-building/index.html</guid>
-      <description>YouTube Video Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Docker Get Started Tutorial from Docker Docker Sample Node Application from Docker on GitHub Docker Language Specific Guides from Docker GitHub CI Example (the sample site for this textbook&amp;rsquo;s theme) GitLab CI Example (this textbook) Video Transcript So far, we&amp;rsquo;ve explored how to download and use pre-built Docker images in our infrastructure. In many cases, that covers the vast majority of use cases, but what if we want to build our own Docker images?</description>
+      <description>Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Docker Get Started Tutorial from Docker Docker Sample Node Application from Docker on GitHub Docker Language Specific Guides from Docker GitHub CI Example (the sample site for this textbook&amp;rsquo;s theme) GitLab CI Example (this textbook) Video Transcript So far, we&amp;rsquo;ve explored how to download and use pre-built Docker images in our infrastructure. In many cases, that covers the vast majority of use cases, but what if we want to build our own Docker images?</description>
     </item>
     <item>
       <title>Developing with Containers</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/07-developing/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/07-developing/index.html</guid>
-      <description>YouTube Video Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Docker in Visual Studio Code from Visual Studio Code Developing Inside a Container from Visual Studio Code Remote Development in Containers Tutorial from Visual Studio Code GitHub CI Example (the sample site for this textbook&amp;rsquo;s theme) GitLab CI Example (this textbook) Video Transcript Docker is obviously a very useful tool for system administration, as we&amp;rsquo;ve seen throughout this module.</description>
+      <description>Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Docker in Visual Studio Code from Visual Studio Code Developing Inside a Container from Visual Studio Code Remote Development in Containers Tutorial from Visual Studio Code GitHub CI Example (the sample site for this textbook&amp;rsquo;s theme) GitLab CI Example (this textbook) Video Transcript Docker is obviously a very useful tool for system administration, as we&amp;rsquo;ve seen throughout this module.</description>
     </item>
     <item>
       <title>Reverse Proxy</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/08-reverse-proxy/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/08-reverse-proxy/index.html</guid>
-      <description>YouTube Video Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Nginx Reverse Proxy from Phoenix NAP Using Docker to Set up Nginx Reverse Proxy With Auto SSL Generation from Linux Handbook Docker Security from Docker Protect the Docker daemon socket from Docker Docker Security Cheat Sheet from OWASP Traefik Quickstart from Traefik Video Transcript As we&amp;rsquo;ve seen, deploying services using Docker can make things very easy.</description>
+      <description>Resources Slides Docker Tutorial for Beginners by TechWorld with Nana on YouTube Nginx Reverse Proxy from Phoenix NAP Using Docker to Set up Nginx Reverse Proxy With Auto SSL Generation from Linux Handbook Docker Security from Docker Protect the Docker daemon socket from Docker Docker Security Cheat Sheet from OWASP Traefik Quickstart from Traefik Video Transcript As we&amp;rsquo;ve seen, deploying services using Docker can make things very easy. Unfortunately, one major limitation of Docker is that the only way connect a running container to the outside world is by mapping a port on the host system to a port on the container itself.</description>
     </item>
     <item>
       <title>Kubernetes</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/5a-containers/09-kubernetes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/5a-containers/09-kubernetes/index.html</guid>
-      <description>YouTube Video Resources Kubernetes Tutorial for Beginners by TechWorld with Nana on YouTube Video Notes Note Instead of creating and recording my own video overview of Kubernetes, I decided it would be best to just include an existing video that does an excellent job of covering that topic. My video would have been very similar, but probably with fewer graphics and a bit more condensed.
+      <description>Resources Kubernetes Tutorial for Beginners by TechWorld with Nana on YouTube Video Notes Note Instead of creating and recording my own video overview of Kubernetes, I decided it would be best to just include an existing video that does an excellent job of covering that topic. My video would have been very similar, but probably with fewer graphics and a bit more condensed.
 I encourage you to watch the video above through at least the &amp;ldquo;Kubernetes Architecture&amp;rdquo; portion (around 35 minutes) to get a good feel for how Kubernetes builds upon what we&amp;rsquo;ve done in Docker and Docker Compose.</description>
     </item>
   </channel>
