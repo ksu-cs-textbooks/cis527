@@ -67,20 +67,22 @@ _There are NO proposals without several external threats and internal weaknesses
 
 Once you feel you have fully designed and analyzed your proposal and prototype, you will need to create a formal technical paper detailing your work. It should follow the [Standard Technical Paper Template](http://cse.unl.edu/~goddard/WritingResources/) from Dr. Goddard at UNL. Hopefully the content in each section should be pretty self-explanatory. There is no minimum or maximum length specified; it should be long enough to include everything needed to describe your proposal and analysis, but short and succinct enough that it is still worth reading.
 
+{{% notice note %}}
+
+The paper template uses bullets to show what belongs in each section of the paper, but your paper SHOULD NOT consist solely of bullet points.
+
+{{% /notice %}}
+
 ---
 
 ### Step 5: Presentation
 
-Once you are ready, you will present your proposal, prototype, and analysis to your audience. The presentation will be given live, either in-person or via Zoom, to the instructor. It should be **no shorter than 15 minutes**, and **no longer than 30 minutes** for a single presenter. You'll need to clearly explain the relevant background, the proposal, the analysis, and your conclusions based on that analysis. In short, you're trying to sell the audience on this proposal and convince them to consider adopting it, so you'll need to not only focus on presenting the information, but persuading the audience to be in favor of the change. Any slides, graphics, or other elements to make the presentation more persuasive is encouraged.
+Once you are ready, you will present your proposal, prototype, and analysis to your audience. The presentation will be a short video recorded using any tools you prefer. It should be **no shorter than 7 minutes**, and **no longer than 15 minutes** for a single presenter. You'll need to clearly explain the relevant background, the proposal, the analysis, and your conclusions based on that analysis. In short, you're trying to sell the audience on this proposal and convince them to consider adopting it, so you'll need to not only focus on presenting the information, but persuading the audience to be in favor of the change. Any slides, graphics, or other elements to make the presentation more persuasive is encouraged.
 
 ---
 
 ### Step 6: Submit & Schedule
 
-Finally, submit your writeup via Canvas and email the instructor to schedule a time for your presentation.
-
-{{% notice warning %}}
-Do not wait until the last minute! If you try to schedule a presentation on the last day of the course, it may already be too late to get everything done in time!
-{{% /notice %}}
+Finally, submit your writeup and video via Canvas. 
 
 As with any assignment in this course, if you have any questions at all please contact the instructor or post in the course discussion channel.
