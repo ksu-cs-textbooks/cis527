@@ -1,0 +1,20 @@
+---
+title: "Fall '23 Week 12"
+weight: 110
+pre: ""
+---
+
+{{< youtube X7Rg6M7AzAM >}}
+
+#### Resources
+
+* <a href="slides" target="_blank">Slides</a>
+
+#### Video Script
+
+
+Hello and welcome to the Week 12 announcements video for CIS 527 in Fall 2023. As you can tell, I've been a little under the weather, so my voice is a little rough. I apologize for that. This week we've got a discussion three coming up with Sarah Allen. She'll be here next Thursday, so please make sure you mark that on your calendar. You've got until next Wednesday to come up with a couple of questions. You'd like to ask Sarah based on her experience working as a system administrator for McCown -Gordon. After her presentation, you'll have a couple of weeks to work on a response if you weren't able to attend in person. Lab 6, the quizzes are due this week and then Lab 6 is due next week. Lab 6 is kind of one of the big wrap -up labs where we talk about big things like file servers, mapping drives to those file servers, creating application servers, and building some working web applications. It's like three or four different things that we all do in different ways, but this uses all your VMs and your digital ocean droplets as well. 
+
+One thing that's coming up in this class is a final project. The final project is something that you get to propose, either building something or fixing something. The whole idea is you're not actually going to do the project, but instead what I want you to go through is the process of proposing it and scoping out the idea and then doing a SWOT analysis, which is strengths, weaknesses, opportunities, and threats of that idea. Then at the end you'll come to a conclusion whether it's a good idea or not. This is mostly a thought exercise. It doesn't have to be something that you can actually do, but it should be something that is realistic that you can accomplish using your skills. You can build a new network, you can fix a web app, you can develop a new web resource for a startup like a website or a store, you can set up laptops for a school or maybe even a lab at a school, you can design central authentication or a file server for a company, you can discuss using thin clients versus thick clients and labs, you can discuss using on -prem versus in -the -cloud computing, lots and lots of different things. Basically propose a scenario, give me the parameters of your scenario, are you working with a company, a school, your home, whatever, design the idea, do a SWOT analysis. It's very open -ended. It's really anything that you want to do, chat with me if you need help finding ideas. One part of the final project is you need to do some sort of a small demo for the project. Don't spend more than a couple hours on it. I really just want you to get your feet wet with a new idea or a new technology or something we haven't played around with yet as part of your final project. 
+
+So as we're working on stuff, don't forget to look at the GitHub Education Pack. You can go to DigitalOcean for a free trial offer. If you haven't done that yet for Lab 5, there's also Namecheap .me. If you need a domain name, anything like that. Otherwise, hopefully things are going well. Please feel free to keep in touch. We've got discussions. We've got office hours. Watch the deadlines on Canvas. The proposal for your final project is due December 1st. And then the actual final project is due December 15th. What you'll turn in for the final project is a 7 to 15 minute video of you discussing your project and you'll turn in your write -up. That's really all you have to do. It's pretty simple. You can record the video using Zoom or OBS or any other tool that you prefer. I would like to see you on camera as you talk through things. I think that's really important. But if you have any questions or concerns, let me know. Otherwise, we are nearing the end of the semester. We're on week 12 of 16, so hopefully things are going well. We've just got a couple more weeks before Thanksgiving breaks. So keep up the good work, work warily hard on lab six, and let me know if you have any questions. Good luck. 
