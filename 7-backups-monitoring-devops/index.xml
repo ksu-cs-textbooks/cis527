@@ -1028,6 +1028,16 @@
 	
 	
 		
+		
+		
+
+	
+	
+		
+
+	
+	
+		
 
 	
 	
@@ -1399,7 +1409,7 @@
       <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/01-introduction/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/01-introduction/index.html</guid>
-      <description>Resources Slides Video Transcript Welcome to Module 7! In this module, we&amp;rsquo;ll discuss several additional topics related to system administration. Honestly, each of these items probably deserves a module unto themselves, if not an entire course. However, since I am limited in the amount of things I can reasonably cover in a single course, I&amp;rsquo;ve chosen to group these items together into this single module.
+      <description>YouTube Video Resources Slides Video Transcript Welcome to Module 7! In this module, we&amp;rsquo;ll discuss several additional topics related to system administration. Honestly, each of these items probably deserves a module unto themselves, if not an entire course. However, since I am limited in the amount of things I can reasonably cover in a single course, I&amp;rsquo;ve chosen to group these items together into this single module.
 First, we&amp;rsquo;ll discuss DevOps, or development operations, a relatively new field blending the skills of both system administrators and software developers into a single unit.</description>
     </item>
     <item>
@@ -1407,14 +1417,14 @@ First, we&amp;rsquo;ll discuss DevOps, or development operations, a relatively n
       <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/02-devops/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/02-devops/index.html</guid>
-      <description>Resources Slides Extras - Git CS GitLab DevOps on Wikipedia Infrastructure as Code on Wikipedia What is DevOps? from Amazon Web Services What Is DevOps? from The Agile Admin DevOps: Breaking the Development-Operations Barrier from Atlassian Periodic Table of DevOps Tools from XebiaLabs The Ultimate DevOps Tool Chest from XebiaLabs webhook on GitHub webhook Hook Examples on GitHub Webhooks on GitLab Documentation Video Transcript One of the hottest new terms in system administration and software development today is DevOps.</description>
+      <description>YouTube Video Resources Slides Extras - Git CS GitLab DevOps on Wikipedia Infrastructure as Code on Wikipedia What is DevOps? from Amazon Web Services What Is DevOps? from The Agile Admin DevOps: Breaking the Development-Operations Barrier from Atlassian Periodic Table of DevOps Tools from XebiaLabs The Ultimate DevOps Tool Chest from XebiaLabs webhook on GitHub webhook Hook Examples on GitHub Webhooks on GitLab Documentation Video Transcript One of the hottest new terms in system administration and software development today is DevOps.</description>
     </item>
     <item>
       <title>ITIL</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/03-itil/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/03-itil/index.html</guid>
-      <description>Resources Slides ITIL on Wikipedia ITIL from Axelos ISO/IEC 20000 on Wikipedia ISO/IEC 20000-1:2018 from ISO What is IT Service Management (ITSM) from Atlassian What is ITSM? Managing IT to serve business needs from CIO Video Transcript In this video, I&amp;rsquo;ll be taking a detour from all of the technical topics in this class to discuss a more philosophical topic: the art of system administration. Specifically, this video will introduce you to ITIL, one of the core resources for many IT organizations worldwide.</description>
+      <description>YouTube Video Resources Slides ITIL on Wikipedia ITIL from Axelos ISO/IEC 20000 on Wikipedia ISO/IEC 20000-1:2018 from ISO What is IT Service Management (ITSM) from Atlassian What is ITSM? Managing IT to serve business needs from CIO Video Transcript In this video, I&amp;rsquo;ll be taking a detour from all of the technical topics in this class to discuss a more philosophical topic: the art of system administration. Specifically, this video will introduce you to ITIL, one of the core resources for many IT organizations worldwide.</description>
     </item>
     <item>
       <title>Assignment</title>
@@ -1429,35 +1439,35 @@ If you have any questions about these items or are unsure what they mean, please
       <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/05-monitoring/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/05-monitoring/index.html</guid>
-      <description>Resources Slides Best System Monitoring Tools for Windows &amp;amp; Linux (Free &amp;amp; Paid) from Comparitech Beocat System Monitor Video Transcript One major part of any system administrator&amp;rsquo;s job is to monitor the systems within an organization. However, for many groups, monitoring is sometimes seen as an afterthought, since it requires additional time and effort to properly set up and configure a monitoring system. However, there are a few good reasons to consider investing some time and effort into a proper monitoring system.</description>
+      <description>YouTube Video Resources Slides Best System Monitoring Tools for Windows &amp;amp; Linux (Free &amp;amp; Paid) from Comparitech Beocat System Monitor Video Transcript One major part of any system administrator&amp;rsquo;s job is to monitor the systems within an organization. However, for many groups, monitoring is sometimes seen as an afterthought, since it requires additional time and effort to properly set up and configure a monitoring system. However, there are a few good reasons to consider investing some time and effort into a proper monitoring system.</description>
     </item>
     <item>
       <title>Windows Monitoring</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/06-windows-monitoring/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/06-windows-monitoring/index.html</guid>
-      <description>Resources Sysinternals Suite from Microsoft 11 Useful Tools for Windows SysAdmins from Anturis Blog Best System Monitoring Tools for Windows &amp;amp; Linux (Free &amp;amp; Paid) from Comparitech 20 Top Windows SysAdmin Tools You Should Know from Power Admin The Top 20 Free Network Monitoring and Analysis Tools for SysAdmins from GFI Tech Talk Top System Monitoring Tools for Windows Environments from PCWDLD Video Transcript In this video, I&amp;rsquo;m going to review some of the tools you can use to help monitor the health and performance of your Windows systems.</description>
+      <description>YouTube Video Resources Sysinternals Suite from Microsoft 11 Useful Tools for Windows SysAdmins from Anturis Blog Best System Monitoring Tools for Windows &amp;amp; Linux (Free &amp;amp; Paid) from Comparitech 20 Top Windows SysAdmin Tools You Should Know from Power Admin The Top 20 Free Network Monitoring and Analysis Tools for SysAdmins from GFI Tech Talk Top System Monitoring Tools for Windows Environments from PCWDLD Video Transcript In this video, I&amp;rsquo;m going to review some of the tools you can use to help monitor the health and performance of your Windows systems.</description>
     </item>
     <item>
       <title>Ubuntu Monitoring</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/07-ubuntu-monitoring/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/07-ubuntu-monitoring/index.html</guid>
-      <description>Resources 20 Command Line Tools to Monitor Linux Performance from TecMint 80 Linux Monitoring Tools from Server Density Blog System Monitoring Tools for Ubuntu from AskUbuntu Best System Monitoring Tools for Windows &amp;amp; Linux (Free &amp;amp; Paid) from Comparitech The Top 20 Free Network Monitoring and Analysis Tools for SysAdmins from GFI Tech Talk Seamless Infrastructure Monitoring from DigitalOcean Monitoring Quickstart from DigitalOcean How to Set Up Monitoring Alerts from DigitalOcean Video Transcript Ubuntu also has many useful tools for monitoring system resources, performance, and health.</description>
+      <description>YouTube Video Resources 20 Command Line Tools to Monitor Linux Performance from TecMint 80 Linux Monitoring Tools from Server Density Blog System Monitoring Tools for Ubuntu from AskUbuntu Best System Monitoring Tools for Windows &amp;amp; Linux (Free &amp;amp; Paid) from Comparitech The Top 20 Free Network Monitoring and Analysis Tools for SysAdmins from GFI Tech Talk Seamless Infrastructure Monitoring from DigitalOcean Monitoring Quickstart from DigitalOcean How to Set Up Monitoring Alerts from DigitalOcean Video Transcript Ubuntu also has many useful tools for monitoring system resources, performance, and health.</description>
     </item>
     <item>
       <title>Backups</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/08-backups/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/08-backups/index.html</guid>
-      <description>Resources Slides Data Loss on Wikipedia 10 Common Causes of Data Loss from Consolidated Technologies Backup Types Explained: Full, Incremental, Differential, Synthetic, and Forever-Incremental from Nakivo Understanding RPO and RTO from Druva What is High Availability? from DigitalOcean Law Firm Retools its Backup Scenario from Network World Postmortem of Database Outage of January 31 from GitLab Video Transcript Backups are an important part of any system administrator&amp;rsquo;s toolkit. At the end of the day, no amount of planning and design can completely remove the need for high quality, reliable backups of the data that an organization needs to function.</description>
+      <description>YouTube Video Resources Slides Data Loss on Wikipedia 10 Common Causes of Data Loss from Consolidated Technologies Backup Types Explained: Full, Incremental, Differential, Synthetic, and Forever-Incremental from Nakivo Understanding RPO and RTO from Druva What is High Availability? from DigitalOcean Law Firm Retools its Backup Scenario from Network World Postmortem of Database Outage of January 31 from GitLab Video Transcript Backups are an important part of any system administrator&amp;rsquo;s toolkit.</description>
     </item>
     <item>
       <title>Windows Backups</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/09-windows-backups/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/09-windows-backups/index.html</guid>
-      <description>Resources How to Back Up Windows 10 from Tech Advisor How to Use All of Windows 10&amp;rsquo;s Backup and Recovery Tools from HowTo Geek How to Make a Full Backup of your Windows 10 PC from Windows Central These resources mostly refer to Windows Server 2012 or 2016, but should work for 2019 as well.
+      <description>YouTube Video Resources How to Back Up Windows 10 from Tech Advisor How to Use All of Windows 10&amp;rsquo;s Backup and Recovery Tools from HowTo Geek How to Make a Full Backup of your Windows 10 PC from Windows Central These resources mostly refer to Windows Server 2012 or 2016, but should work for 2019 as well.
 AD Forest Recovery - Backing up a full server from Microsoft Windows IT Pro Center How to Backup Active Directory Fully in Windows Server 2016 from Tactig How to perform Authoritative Restore of Active Directory Objects - 2012 R2 from ITIngredients (should work for 2016) Windows Server 2012 - Active Directory - Backup and Restore, Part 1: System State from David M Tech Blog (should work for 2016) Video Transcript Windows includes several tools for performing backups directly within the operating system.</description>
     </item>
     <item>
@@ -1465,7 +1475,7 @@ AD Forest Recovery - Backing up a full server from Microsoft Windows IT Pro Cent
       <link>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/10-ubuntu-backups/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/7-backups-monitoring-devops/10-ubuntu-backups/index.html</guid>
-      <description>Resources Backing Up Files from Ubuntu Documentation Backups from Ubuntu Server Guide How to Backup your Ubuntu Desktop with Déjà Dup from HowToForge Ubuntu 20.04 System Backup and Restore from Linuxconfig.org How to Compress and Extract Files using the tar Command on Linux from How-To Geek How to Import and Export Databases and Reset a Root Password in MySQL from DigitalOcean How To Backup MySQL Databases on an Ubuntu VPS from DigitalOcean (steps should still be valid for 20.</description>
+      <description>YouTube Video Resources Backing Up Files from Ubuntu Documentation Backups from Ubuntu Server Guide How to Backup your Ubuntu Desktop with Déjà Dup from HowToForge Ubuntu 20.04 System Backup and Restore from Linuxconfig.org How to Compress and Extract Files using the tar Command on Linux from How-To Geek How to Import and Export Databases and Reset a Root Password in MySQL from DigitalOcean How To Backup MySQL Databases on an Ubuntu VPS from DigitalOcean (steps should still be valid for 20.</description>
     </item>
   </channel>
 </rss>
