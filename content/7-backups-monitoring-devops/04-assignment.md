@@ -91,14 +91,14 @@ For this task, you will perform the steps to create a backup of the web applicat
 
 ### Task 3: Ubuntu Monitoring Part 1
 
-For this task, you will set up either Munin or Ganglia on your Ubuntu droplets from Lab 6. To complete this item, follow these steps:
+For this task, you will set up Checkmk to monitor your server
 
-1. Configure the Ubuntu droplet named **FRONTEND** as the primary server for either Munin or Ganglia.
-2. Add the Ubuntu droplet named **BACKEND** as a client on either Munin or Ganglia
-3. Send the URL of the Munin or Ganglia server in your grading packet. Make sure that both **FRONTEND** and **BACKEND** are appearing in the data. 
+1. Configure the Ubuntu droplet named **FRONTEND** as the primary host for Checkmk.
+2. Then, add the **FRONTEND** and **BACKEND** droplets as two monitored hosts
+3. Send the URL of the Checkmk dashboard and the password in your grading packet. Make sure that both **FRONTEND** and **BACKEND** are appearing in the data. 
 
 
-Of course, you may need to modify your firewall configuration to allow incoming connections for Munin! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
+Of course, you may need to modify your firewall configuration to allow incoming connections for this to work! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
 {{% notice tip %}}
 _As always, you may have to deal with Apache virtual hosts and firewalls for this setup. In addition, you may want to add a new A record to your domain name for this site, and request an SSL certificate via CertBot. --Russ_
@@ -106,10 +106,7 @@ _As always, you may have to deal with Apache virtual hosts and firewalls for thi
 
 #### Resources
 
-* [Server Monitoring with Munin and Monit on Ubuntu 16.04 LTS (Xenial Xerus)](https://www.howtoforge.com/tutorial/server-monitoring-with-munin-and-monit-on-ubuntu-16-04-lts/) from HowtoForge (should work on 20.04)
-* [How to Install the Munin Monitoring Tool on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-munin-monitoring-tool-on-ubuntu-14-04) from DigitalOcean (should work on 20.04)
-* [How to Install and Configure Ganglia Monitor on Ubuntu 16.04](https://hostpresto.com/community/tutorials/how-to-install-and-configure-ganglia-monitor-on-ubuntu-16-04/) from HostPresto (should work on 20.04)
-* [Introduction to Ganglia on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/introduction-to-ganglia-on-ubuntu-14-04) from DigitalOcean (should work on 20.04)
+* [How to Monitor Server Health with Checkmk on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-monitor-server-health-with-checkmk-on-ubuntu-20-04) (should work for 22.04 as well - make sure you install the correct version)
 
 ---
 
@@ -124,7 +121,7 @@ Setup an automatically deployed Git repository on your Ubuntu droplet. For this 
 5. Install and configure [webhook](https://github.com/adnanh/webhook) on your Ubuntu droplet named **BACKEND**. It should listen for all incoming webhooks from GitLab that match a secret key you choose. When a hook is received, it should run the Bash script created earlier.
 6. Configure a webhook in your GitLab repository for all Push events using that same secret key and the URL of webhook on your server. You may need to make sure your domain name has an A record for the default hostname `@` pointing to your **FRONTEND** server.
 7. To test this setup, you should be able to push a change to the GitLab repository, and see that change reflected on the website automatically.
-8. For offline grading, add the instructor and GTA to the repository as maintainers, and submit the repository and URL where the files can be found in your grading packet. Provided the webhook works correctly, they should be able to see a pushed change to the repository update the website. 
+8. For offline grading, add the instructor and TA to the repository as maintainers, and submit the repository and URL where the files can be found in your grading packet. Provided the webhook works correctly, they should be able to see a pushed change to the repository update the website. 
 
 Of course, you may need to modify your firewall configuration to allow incoming connections for Webhook! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
 
@@ -141,51 +138,19 @@ _Since the Webhook process runs as the `root` user on **BACKEND**, you'll need t
 
 ---
 
-### EXTRA CREDIT TASK: Ubuntu Monitoring Part 2
-
-{{% notice note %}}
-
-This task is worth 10 points extra credit toward your overall lab grade. It can be tricky to perform, since you need to provide significant amounts of RAM to your Ubuntu system for it to work. Don't worry too much if you can't get it to work - I struggle with this one sometimes! -Russ
-
-{{% /notice %}}
-
-For this task, you will install Elasticsearch, Logstash, and Kibana (a.k.a. the Elastic Stack, sometimes known as the ELK stack) on your Ubuntu 20.04 VMs, and configure both Filebeat and Metricbeat to collect information about those hosts. 
-
-1. On the Ubuntu VM you'll be using as the server, make sure you have **at least 4GB of RAM** assigned to the VM. Unfortunately, Elasticsearch and Kibana won't run properly with less than 4GB of RAM available. 
-2. Follow the instructions in the DigitalOcean guide to install the Elastic stack on one of your Ubuntu VMs. 
-    * If you already have Apache installed on this system, I recommend changing the port for nginx to something other than 80, such as 8080. This can be done in the nginx configuration file for the site that is created in the guide.
-3. Install Filebeat on that VM, and configure it to send data through Logstash following the instructions on the DigitalOcean guide. 
-4. Confirm that you can access data from Filebeat/Logstash in Kibana before continuing. 
-5. Using the other DigitalOcean guide, install Metricbeat on both Ubuntu VMs. 
-    * Metricbeat should be configured to directly send data to Elasticsearch, without going through Logstash 
-    * Don't forget to allow the appropriate ports through the firewall
-    * You'll need to configure Elastic Search for [Single-node discovery](https://www.elastic.co/guide/en/elasticsearch/reference/master/bootstrap-checks.html#single-node-discovery) or else it won't start
-6. Verify that you can see metric data such as CPU usage in Kibana (look for the **[Metricbeat System] Overview ECS** dashboard). 
-7. Take a screenshot of the **[Metricbeat System] Overview ECS** and add it to your grading packet. Alternatively, schedule a time for grading to review this part of the lab.
-
-#### Resources
-
-* [How to Install Elasticsearch, Logstash, and Kibana (Elastic Stack) on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-20-04) from DigitalOcean
-* [How to Gather Infrastructure Metrics with Metricbeat on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-gather-infrastructure-metrics-with-metricbeat-on-ubuntu-18-04) from DigitalOcean (should work on 20.04 as well)
-* [Install ELK on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/install-elk-on-ubuntu-20-04-focal-fossa-linux) from Linuxconfig.org
-* [Elasticsearch Boostrap Checks](https://www.elastic.co/guide/en/elasticsearch/reference/master/bootstrap-checks.html#single-node-discovery) from Elastic.co (for configuring single-node discovery)
-
----
-
-### Task 6: Submit Files
+### Task 5: Submit Files
 
 This lab may be graded completely offline. To do this, submit the following items via Canvas:
 
 1. **Task 1**: 4 screenshots clearly showing the system time, showing a successful login before the test user is deleted, an unsuccessful login after the user was deleted, a successful restoration of the AD, and a successful login showing that the user was restored.
 2. **Task 2**: An archive file containing a README document as well as any files or information needed as part of the backup of the Ubuntu web application installed in Lab 6.
-3. **Task 3**: The URL of your Munin or Ganglia instance, clearly showing data from both **FRONTEND** and **BACKEND**. 
-4. **Task 4**: A GitLab repository URL and a URL of the website containing those files. Make sure the instructor and GTA are added to the repository as maintainers. They should be able to push to the repository and automatically see the website get updated. 
-5. **Extra Credit Task**: A screenshot of the **[Metricbeat System] Overview ECS** dashboard showing data from both Ubuntu VMs
+3. **Task 3**: The URL and password of your Checkmk instance, clearly showing data from both **FRONTEND** and **BACKEND**. 
+4. **Task 4**: A GitLab repository URL and a URL of the website containing those files. Make sure the instructor and TA are added to the repository as maintainers. They should be able to push to the repository and automatically see the website get updated. 
 
-If you are able to submit all 5 of the items above, you do not need to schedule a grading time. The instructor or GTA will contact you for clarification if there are any questions on your submission.
+If you are able to submit all 4 of the items above, you do not need to schedule a grading time. The instructor or TA will contact you for clarification if there are any questions on your submission.
 
-For Tasks 3 - 5, you may also choose to do interactive grading, especially if you were unable to complete it and would like to receive partial credit. 
+For Tasks 3 - 4, you may also choose to do interactive grading, especially if you were unable to complete it and would like to receive partial credit. 
 
-### Task 7: Schedule A Grading Time
+### Task 6: Schedule A Grading Time
 
-If you are not able to submit information for all 5 tasks for offline grading, you may contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.
+If you are not able to submit information for all 4 tasks for offline grading, you may contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.
