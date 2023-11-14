@@ -1410,14 +1410,14 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/01-introduction/index.html</guid>
       <description>Puppet Learning VM Deprecated As of 2023, the Puppet Learning VM is no longer being maintained. The videos below demonstrate some of the features of Puppet, which can also be done on your Ubuntu VM after installing Puppet Agent. Unfortunately, it is not easily possible to simulate an enterprise Puppet setup without this VM, so I&amp;rsquo;ll keep these videos up for demonstration purposes. &amp;ndash;Russ
-YouTube Video Resources Slides Video Script Welcome to Module 2!</description>
+Resources Slides Video Script Welcome to Module 2!</description>
     </item>
     <item>
       <title>Configuration Management Overview</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/02-configuration-management-overview/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/02-configuration-management-overview/index.html</guid>
-      <description>YouTube Video Resources Slides Configuration Management on Wikipedia Configuration Management from Puppet Modern Configuration Management: Configuration as Code from Chef Use Case: Configuration Management from Ansible Configuration Management from MITRE Systems Engineering Guide SaltStack Enterprise from SaltStack DevOps on Wikipedia What Is DevOps? From The Agile Admin What is this DevOps Thing, Anyway? From Just Enough Developed Infrastructure (JEDI) Periodic Table of DevOps Tools from XebiaLabs Video Script This module deals with the topic of configuration management.</description>
+      <description>Resources Slides Configuration Management on Wikipedia Configuration Management from Puppet Modern Configuration Management: Configuration as Code from Chef Use Case: Configuration Management from Ansible Configuration Management from MITRE Systems Engineering Guide SaltStack Enterprise from SaltStack DevOps on Wikipedia What Is DevOps? From The Agile Admin What is this DevOps Thing, Anyway? From Just Enough Developed Infrastructure (JEDI) Periodic Table of DevOps Tools from XebiaLabs Video Script This module deals with the topic of configuration management.</description>
     </item>
     <item>
       <title>Assignment</title>
@@ -1433,7 +1433,7 @@ If you have any questions about these items or are unsure what they mean, please
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/04-installing-puppet/index.html</guid>
       <description>Note The video refers to Puppet version 6, but Puppet 8 is now the latest version. For the lab assignment, you&amp;rsquo;ll want to install Puppet 8 and not Puppet 6. This changes the URL used to get the release package - see the assignment page for more information. The basic process is otherwise the same.
-YouTube Video Resources Puppet Agent Windows Downloads from Puppet (look for puppet-agent-x64-latest.msi) About Puppet Platform and Its Packages from Puppet Puppet Learning VM from Puppet Puppet System Requirements from Puppet Puppet Documentation from Puppet Installing Puppet Agent from Puppet Add Executables to your PATH from Puppet Video Script To begin work on Lab 2, you&amp;rsquo;ll need to install Puppet Agent on your new VMs.</description>
+Resources Puppet Agent Windows Downloads from Puppet (look for puppet-agent-x64-latest.msi) About Puppet Platform and Its Packages from Puppet Puppet Learning VM from Puppet Puppet System Requirements from Puppet Puppet Documentation from Puppet Installing Puppet Agent from Puppet Add Executables to your PATH from Puppet Video Script To begin work on Lab 2, you&amp;rsquo;ll need to install Puppet Agent on your new VMs.</description>
     </item>
     <item>
       <title>Puppet Resources</title>
@@ -1441,7 +1441,7 @@ YouTube Video Resources Puppet Agent Windows Downloads from Puppet (look for pup
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/05-puppet-resources/index.html</guid>
       <description>Puppet Learning VM Deprecated As of 2023, the Puppet Learning VM is no longer being maintained. The videos below demonstrate some of the features of Puppet, which can also be done on your Ubuntu VM after installing Puppet Agent. Unfortunately, it is not easily possible to simulate an enterprise Puppet setup without this VM, so I&amp;rsquo;ll keep these videos up for demonstration purposes. &amp;ndash;Russ
-YouTube Video Resources Slides Core Types Cheat Sheet from Puppet Resource Type Reference from Puppet Video Script In this video, we will begin learning how to use Puppet to configure a system.</description>
+Resources Slides Core Types Cheat Sheet from Puppet Resource Type Reference from Puppet Video Script In this video, we will begin learning how to use Puppet to configure a system.</description>
     </item>
     <item>
       <title>Puppet Manifest Files</title>
@@ -1449,7 +1449,7 @@ YouTube Video Resources Slides Core Types Cheat Sheet from Puppet Resource Type 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/06-puppet-manifest-files/index.html</guid>
       <description>Puppet Learning VM Deprecated As of 2023, the Puppet Learning VM is no longer being maintained. The videos below demonstrate some of the features of Puppet, which can also be done on your Ubuntu VM after installing Puppet Agent. Unfortunately, it is not easily possible to simulate an enterprise Puppet setup without this VM, so I&amp;rsquo;ll keep these videos up for demonstration purposes. &amp;ndash;Russ
-YouTube Video Resources Slides Configuration Management 101: Writing Puppet Manifests from DigitalOcean Language: Visual Index from Puppet Language: Basics from Puppet Video Script Now, let&amp;rsquo;s take a look at how we can use Puppet to create defined configurations to be applied to our systems.</description>
+Resources Slides Configuration Management 101: Writing Puppet Manifests from DigitalOcean Language: Visual Index from Puppet Language: Basics from Puppet Video Script Now, let&amp;rsquo;s take a look at how we can use Puppet to create defined configurations to be applied to our systems.</description>
     </item>
     <item>
       <title>Puppet Resource Ordering</title>
@@ -1457,22 +1457,22 @@ YouTube Video Resources Slides Configuration Management 101: Writing Puppet Mani
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/07-puppet-resource-ordering/index.html</guid>
       <description>Puppet Learning VM Deprecated As of 2023, the Puppet Learning VM is no longer being maintained. The videos below demonstrate some of the features of Puppet, which can also be done on your Ubuntu VM after installing Puppet Agent. Unfortunately, it is not easily possible to simulate an enterprise Puppet setup without this VM, so I&amp;rsquo;ll keep these videos up for demonstration purposes. &amp;ndash;Russ
-YouTube Video Resources Language: Relationships and Ordering from Puppet Video Script Now that we&amp;rsquo;ve seen Puppet Manifest files, let&amp;rsquo;s discuss some of the caveats of such a system.</description>
+Resources Language: Relationships and Ordering from Puppet Video Script Now that we&amp;rsquo;ve seen Puppet Manifest files, let&amp;rsquo;s discuss some of the caveats of such a system.</description>
     </item>
     <item>
       <title>Puppet Variables &amp; Facts</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/08-puppet-variables-facts/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/08-puppet-variables-facts/index.html</guid>
-      <description>YouTube Video Resources Language: Variables from Puppet Facter: Core Facts from Puppet Values and Data Types from Puppet Templates from Puppet Video Script In this video, we&amp;rsquo;ll go just a bit deeper into the Puppet language and some additional features of Puppet. You may not need all of this information to complete Lab 2, but it is definitely helpful.
-First, as with any programming language, Puppet allows you to assign variables.</description>
+      <description>Resources Language: Variables from Puppet Facter: Core Facts from Puppet Values and Data Types from Puppet Templates from Puppet Video Script In this video, we&amp;rsquo;ll go just a bit deeper into the Puppet language and some additional features of Puppet. You may not need all of this information to complete Lab 2, but it is definitely helpful.
+First, as with any programming language, Puppet allows you to assign variables. The basic syntax for assigning a variable is:</description>
     </item>
     <item>
       <title>Puppet Programming Constructs &amp; Classes</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/09-puppet-programming-constructs-classes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/09-puppet-programming-constructs-classes/index.html</guid>
-      <description>YouTube Video Resources Conditional Statements and Expressions from Puppet Expressions and Operators from Puppet Classes from Puppet Puppet Labs Standard Library from Puppet Puppet Forge from Puppet Video Script Puppet also has very powerful programming constructs which can be used in your manifest files. One of the most useful is the conditional statement, or &amp;ldquo;if&amp;rdquo; statement. The syntax is very similar to most other languages. For example, here is the sample &amp;ldquo;if&amp;rdquo; statement from the Puppet documentation:</description>
+      <description>Resources Conditional Statements and Expressions from Puppet Expressions and Operators from Puppet Classes from Puppet Puppet Labs Standard Library from Puppet Puppet Forge from Puppet Video Script Puppet also has very powerful programming constructs which can be used in your manifest files. One of the most useful is the conditional statement, or &amp;ldquo;if&amp;rdquo; statement. The syntax is very similar to most other languages. For example, here is the sample &amp;ldquo;if&amp;rdquo; statement from the Puppet documentation:</description>
     </item>
     <item>
       <title>Puppet Agent &amp; Master Demo</title>
@@ -1480,14 +1480,14 @@ First, as with any programming language, Puppet allows you to assign variables.<
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/10-puppet-agent-master-demo/index.html</guid>
       <description>Puppet Learning VM Deprecated As of 2023, the Puppet Learning VM is no longer being maintained. The videos below demonstrate some of the features of Puppet, which can also be done on your Ubuntu VM after installing Puppet Agent. Unfortunately, it is not easily possible to simulate an enterprise Puppet setup without this VM, so I&amp;rsquo;ll keep these videos up for demonstration purposes. &amp;ndash;Russ
-YouTube Video Resources Overview of Puppet&amp;rsquo;s Architecture from Puppet Video Script In this video, I&amp;rsquo;ll give a quick demonstration of what a true enterprise Puppet setup might look like.</description>
+Resources Overview of Puppet&amp;rsquo;s Architecture from Puppet Video Script In this video, I&amp;rsquo;ll give a quick demonstration of what a true enterprise Puppet setup might look like.</description>
     </item>
     <item>
       <title>Hints</title>
       <link>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/11-hints/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ksu-cs-textbooks.github.io/cis527/2-configuration-management/11-hints/index.html</guid>
-      <description>YouTube Video Resources Resource Type: User from Puppet Resource Tips and Examples: Package on Windows from Puppet Managing Windows Configurations from Puppet Puppet on Windows Pack from Puppet Forge Installing and Using Windows Modules from Puppet download_file Module from Puppet Forge Running Puppet&amp;rsquo;s Commands on Windows from Puppet Using User and Group on Windows from Puppet puppetlabs-acl Module on Puppet Forge Video Script Here are a few hints for completing Lab 2, based on the struggles some students have had during previous semesters.</description>
+      <description>Resources Resource Type: User from Puppet Resource Tips and Examples: Package on Windows from Puppet Managing Windows Configurations from Puppet Puppet on Windows Pack from Puppet Forge Installing and Using Windows Modules from Puppet download_file Module from Puppet Forge Running Puppet&amp;rsquo;s Commands on Windows from Puppet Using User and Group on Windows from Puppet puppetlabs-acl Module on Puppet Forge Video Script Here are a few hints for completing Lab 2, based on the struggles some students have had during previous semesters.</description>
     </item>
     <item>
       <title>Solutions</title>
