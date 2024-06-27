@@ -1,59 +1,5 @@
-
-
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title></title>
-
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reset.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reveal.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/theme/black.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/css/reveal-theme.css">
-
-		
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-	<h2>CIS 527</h2><br><br><p>Lab 3 - Email Protocols</p>
-</section>
-<section>
-	<h3>Electronic Mail (email)</h3>
-	<ul>
-		<li>Send Messages Across the Internet</li>
-		<li>Developed in 1970s as Extension to FTP</li>
-		<li>Originally Text Only</li>
-		<li>Extended by Multipurpose Internet Mail Extensions (MIME)</li>
-	</ul>
-</section>
-<section>
-	<h3>Email Protocols</h3>
-	<ul>
-		<li>Simple Mail Transfer Protocol (SMTP)</li>
-		<li>Post Office Protocol (POP3)</li>
-		<li>Internet Message Access Protocol (IMAP)</li>
-		<li>Exchange ActiveSync</li>
-	</ul>
-</section>
-<section>
-	<h3>Email Server Components</h3>
-	<ul>
-		<li>Mail Transfer Agent (MTA)</li>
-		<li>Mail Delivery Agent (MDA)</li>
-		<li>IMAP/POP/Webmail Server</li>
-	</ul>
-</section>
-<section>
-	<img class="stretch plain" src="../../images/email_wiki.svg">
-	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/Email">Wikipedia</a></p>
-</section>
-<section>
-<pre style="font-size: .4em"><code>cis527@cis527russfeldpuppet:~$ telnet mail.servergrove.com 110
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title></title>
+<link rel=stylesheet href=/cis527/reveal/dist/reset.css><link rel=stylesheet href=/cis527/reveal/dist/reveal.css><link rel=stylesheet href=/cis527/reveal/dist/theme/black.css><link rel=stylesheet href=/cis527/css/reveal-theme.css><link rel=stylesheet href=/cis527/reveal/plugin/highlight/monokai.css></head><body><div class=reveal><div class=slides><section><h2>CIS 527</h2><br><br><p>Lab 3 - Email Protocols</p></section><section><h3>Electronic Mail (email)</h3><ul><li>Send Messages Across the Internet</li><li>Developed in 1970s as Extension to FTP</li><li>Originally Text Only</li><li>Extended by Multipurpose Internet Mail Extensions (MIME)</li></ul></section><section><h3>Email Protocols</h3><ul><li>Simple Mail Transfer Protocol (SMTP)</li><li>Post Office Protocol (POP3)</li><li>Internet Message Access Protocol (IMAP)</li><li>Exchange ActiveSync</li></ul></section><section><h3>Email Server Components</h3><ul><li>Mail Transfer Agent (MTA)</li><li>Mail Delivery Agent (MDA)</li><li>IMAP/POP/Webmail Server</li></ul></section><section><img class="stretch plain" src=../../images/email_wiki.svg><p class=imagecredit>Image Source: <a href=https://en.wikipedia.org/wiki/Email>Wikipedia</a></p></section><section><pre style=font-size:.4em><code>cis527@cis527russfeldpuppet:~$ telnet mail.servergrove.com 110
 Trying 69.195.222.232...
 Connected to mail.servergrove.com.
 Escape character is '^]'.
@@ -76,44 +22,4 @@ Received: from mx-mia-1.servergrove.com (69.195.198.246)
 DELE 2
 +OK message 2 deleted
 QUIT
-+OK Bye-bye.</code></pre>
-</section>
-
-			</div>
-		</div>
-
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reveal.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/markdown/markdown.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/highlight/highlight.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/math/math.js"></script>
-		<script>
-			
-			
-			
-			Reveal.initialize({
-				hash: true,
-				controls: false,
-				controlsTutorial:false,
-				progress: false,
-				transition: 'fade',
-				width: 1440,
-				height: 1080,
-				highlight: {
-					escapeHTML: false
-				},
-
-				
-				plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
-			});
-
-			window.addEventListener("mousedown", handleClick, false);
-			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
-
-			function handleClick(e) {
-				e.preventDefault();
-				if(e.button === 0) Reveal.next();
-				if(e.button === 2) Reveal.prev();
-			}
-		</script>
-	</body>
-</html>
++OK Bye-bye.</code></pre></section></div></div><script src=/cis527/reveal/dist/reveal.js></script><script src=/cis527/reveal/plugin/markdown/markdown.js></script><script src=/cis527/reveal/plugin/highlight/highlight.js></script><script src=/cis527/reveal/plugin/math/math.js></script><script>Reveal.initialize({hash:!0,controls:!1,controlsTutorial:!1,progress:!1,transition:"fade",width:1440,height:1080,highlight:{escapeHTML:!1},plugins:[RevealMarkdown,RevealHighlight,RevealMath]}),window.addEventListener("mousedown",handleClick,!1),window.addEventListener("contextmenu",function(e){e.preventDefault()},!1);function handleClick(e){e.preventDefault(),e.button===0&&Reveal.next(),e.button===2&&Reveal.prev()}</script></body></html>

@@ -1,39 +1,5 @@
-
-
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title></title>
-
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reset.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reveal.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/theme/black.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/css/reveal-theme.css">
-
-		
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-	<h2>CIS 527</h2><br><br><p>Lab 5.A - Developing with Containers</p>
-</section>
-<section>
-	<h3>Developing with Containers</h3>
-	<ul>
-		<li>Dockerfile</li>
-		<li>Docker Compose</li>
-		<li>Develop in Docker</li>
-		<li>CI/CD Pipelines</li>
-	</ul>
-</section>
-<section>
-	<h3>Dockerfile</h3>
-	<pre class="stretch"><code style="font-size: 28px; line-height: 40px"># For more information, please refer to https://aka.ms/vscode-docker-python
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title></title>
+<link rel=stylesheet href=/cis527/reveal/dist/reset.css><link rel=stylesheet href=/cis527/reveal/dist/reveal.css><link rel=stylesheet href=/cis527/reveal/dist/theme/black.css><link rel=stylesheet href=/cis527/css/reveal-theme.css><link rel=stylesheet href=/cis527/reveal/plugin/highlight/monokai.css></head><body><div class=reveal><div class=slides><section><h2>CIS 527</h2><br><br><p>Lab 5.A - Developing with Containers</p></section><section><h3>Developing with Containers</h3><ul><li>Dockerfile</li><li>Docker Compose</li><li>Develop in Docker</li><li>CI/CD Pipelines</li></ul></section><section><h3>Dockerfile</h3><pre class=stretch><code style=font-size:28px;line-height:40px># For more information, please refer to https://aka.ms/vscode-docker-python
 FROM python:3.8-slim
 EXPOSE 5000
 # Keeps Python from generating .pyc files in the container
@@ -51,11 +17,7 @@ RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /
 USER appuser
 # During debugging, this entry point will be overridden. For more information, 
 # please refer to https://aka.ms/vscode-docker-python-debug
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]</code></pre>
-</section>
-<section>
-	<h3>Docker Compose</h3>
-	<pre class="stretch"><code style="font-size: 28px; line-height: 40px">services:
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]</code></pre></section><section><h3>Docker Compose</h3><pre class=stretch><code style=font-size:28px;line-height:40px>services:
   mysql:
     image: mysql:5.7
     container_name: mysql
@@ -75,16 +37,7 @@ CMD ["gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]</code></pre>
       - '8080:80'
     environment:
       PMA_ARBITRARY: 1
-	</code></pre>
-</section>
-<section>
-	<h3>Develop in Docker</h3>
-    <img class="stretch plain" src="https://ksu-cs-textbooks.github.io/cis527/images/5a/architecture-containers.png">
-    <p class="imagecredit">Image Source: <a href="https://code.visualstudio.com/docs/remote/containers">Visual Studio Code</a></p>
-</section>
-<section>
-	<h3>CI/CD Pipelines - GitHub</h3>
-	<pre class="stretch"><code style="font-size: 35px; line-height: 39px" class="yml">name: Docker Image CI<br>
+	</code></pre></section><section><h3>Develop in Docker</h3><img class="stretch plain" src=/cis527/images/5a/architecture-containers.png><p class=imagecredit>Image Source: <a href=https://code.visualstudio.com/docs/remote/containers>Visual Studio Code</a></p></section><section><h3>CI/CD Pipelines - GitHub</h3><pre class=stretch><code style=font-size:35px;line-height:39px class=yml>name: Docker Image CI<br>
 jobs:
   build:
     runs-on: ubuntu-latest<br>
@@ -101,11 +54,7 @@ jobs:
       with:
         push: true
         tags: |
-            ghcr.io/${{ github.repository_owner }}/ksucs-hugo:latest</code></pre>
-</section>
-<section>
-	<h3>CI/CD Pipelines - GitLab</h3>
-	<pre class="stretch"><code style="font-size: 30px; line-height: 32px" class="yml">image: docker:20.10.11<br>
+            ghcr.io/${{ github.repository_owner }}/ksucs-hugo:latest</code></pre></section><section><h3>CI/CD Pipelines - GitLab</h3><pre class=stretch><code style=font-size:30px;line-height:32px class=yml>image: docker:20.10.11<br>
 variables:
   DOCKER_HOST: tcp://docker:2375
   DOCKER_TLS_CERTDIR: ""
@@ -127,43 +76,4 @@ build-latest:
       --tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA 
       --tag $CI_REGISTRY_IMAGE:latest .
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
-    - docker push $CI_REGISTRY_IMAGE:latest</code></pre>
-</section>
-			</div>
-		</div>
-
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reveal.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/markdown/markdown.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/highlight/highlight.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/math/math.js"></script>
-		<script>
-			
-			
-			
-			Reveal.initialize({
-				hash: true,
-				controls: false,
-				controlsTutorial:false,
-				progress: false,
-				transition: 'fade',
-				width: 1440,
-				height: 1080,
-				highlight: {
-					escapeHTML: false
-				},
-
-				
-				plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
-			});
-
-			window.addEventListener("mousedown", handleClick, false);
-			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
-
-			function handleClick(e) {
-				e.preventDefault();
-				if(e.button === 0) Reveal.next();
-				if(e.button === 2) Reveal.prev();
-			}
-		</script>
-	</body>
-</html>
+    - docker push $CI_REGISTRY_IMAGE:latest</code></pre></section></div></div><script src=/cis527/reveal/dist/reveal.js></script><script src=/cis527/reveal/plugin/markdown/markdown.js></script><script src=/cis527/reveal/plugin/highlight/highlight.js></script><script src=/cis527/reveal/plugin/math/math.js></script><script>Reveal.initialize({hash:!0,controls:!1,controlsTutorial:!1,progress:!1,transition:"fade",width:1440,height:1080,highlight:{escapeHTML:!1},plugins:[RevealMarkdown,RevealHighlight,RevealMath]}),window.addEventListener("mousedown",handleClick,!1),window.addEventListener("contextmenu",function(e){e.preventDefault()},!1);function handleClick(e){e.preventDefault(),e.button===0&&Reveal.next(),e.button===2&&Reveal.prev()}</script></body></html>

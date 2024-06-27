@@ -1,83 +1,5 @@
-
-
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title></title>
-
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reset.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reveal.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/theme/black.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/css/reveal-theme.css">
-
-		
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-	<h2>CIS 527</h2><br><br><p>Lab 3 - DHCP</p>
-</section>
-<section>
-	<h3>Special Thanks</h3>
-	<br>
-	<p>Much of this information adapted from <a href="https://russfeld.me/assets/oldimpress/images/cis527/dhcp.svg">slides</a> by <a href="http://people.cs.ksu.edu/~sgsax/">Seth Galitzer</a></p>
-</section>
-<section>
-	<h3>History</h3>
-	<ul>
-		<li>1982 - TCP/IP Developed</li>
-		<li>1985 - BOOTP Developed</li>
-		<li>1987 - 20,000 Hosts on Internet</li>
-		<li>1989 - DHC Working Group</li>
-		<li>1993 - DHCP Defined (RFC 1531)</li>
-		<li>1996 - ISC Server Released</li>
-		<li>1997 - DHCP Finalized (RFC 2131)</li>
-		<li>2003 - DHCP for IPv6 (RFC 3315)</li>
-	</ul>
-</section>
-<section>
-	<h3>Dynamic Host Configuration Protocol (DHCP)</h3>
-	<ul>
-		<li>Large Networks Difficult to Manage Manually</li>
-		<li>Computers Are Now Mobile</li>
-		<li>Need to Automatically Configure Network Settings</li>
-	</ul>
-</section>
-<section>
-	<h3>Why DHCP?</h3>
-	<ul>
-		<li>Leasing</li>
-		<li>Renewal</li>
-		<li>Configuration</li>
-		<li>Portability</li>
-		<li>Compatible with Static IP</li>
-	</ul>
-</section>
-<section>
-	<img class="stretch plain" src="../../images/dhcp_fossbytes.jpg">
-	<p class="imagecredit">Image Source: <a href="https://fossbytes.com/dhcp-how-does-it-work/">Fossbytes</a></p>
-</section>
-<section>
-	<img class="stretch plain" src="../../images/dhcp_multiple.png">
-	<p class="imagecredit">Image Source: <a href="http://people.cs.ksu.edu/~russfeld/cis527spring2017/9dhcpdns/images/dhcp.svg">Seth Galitzer</a></p>
-</section>
-<section>
-	<h3>Automatic Private IP Address (APIPA)</h3>
-	<ul>
-		<li>Used when DHCP Fails</li>
-		<li>Assigns a Link-Local IP Address</li>
-		<li>IPv4: 169.254.0.0/16</li>
-		<li>IPv6: fe80::/10</li>
-	</ul>
-</section>
-<section>
-	<h3>Sample Configuration</h3>
-	<pre style="font-size: .5em"><code>default-lease-time 600;  # in seconds
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title></title>
+<link rel=stylesheet href=/cis527/reveal/dist/reset.css><link rel=stylesheet href=/cis527/reveal/dist/reveal.css><link rel=stylesheet href=/cis527/reveal/dist/theme/black.css><link rel=stylesheet href=/cis527/css/reveal-theme.css><link rel=stylesheet href=/cis527/reveal/plugin/highlight/monokai.css></head><body><div class=reveal><div class=slides><section><h2>CIS 527</h2><br><br><p>Lab 3 - DHCP</p></section><section><h3>Special Thanks</h3><br><p>Much of this information adapted from <a href=https://russfeld.me/assets/oldimpress/images/cis527/dhcp.svg>slides</a> by <a href=http://people.cs.ksu.edu/~sgsax/>Seth Galitzer</a></p></section><section><h3>History</h3><ul><li>1982 - TCP/IP Developed</li><li>1985 - BOOTP Developed</li><li>1987 - 20,000 Hosts on Internet</li><li>1989 - DHC Working Group</li><li>1993 - DHCP Defined (RFC 1531)</li><li>1996 - ISC Server Released</li><li>1997 - DHCP Finalized (RFC 2131)</li><li>2003 - DHCP for IPv6 (RFC 3315)</li></ul></section><section><h3>Dynamic Host Configuration Protocol (DHCP)</h3><ul><li>Large Networks Difficult to Manage Manually</li><li>Computers Are Now Mobile</li><li>Need to Automatically Configure Network Settings</li></ul></section><section><h3>Why DHCP?</h3><ul><li>Leasing</li><li>Renewal</li><li>Configuration</li><li>Portability</li><li>Compatible with Static IP</li></ul></section><section><img class="stretch plain" src=../../images/dhcp_fossbytes.jpg><p class=imagecredit>Image Source: <a href=https://fossbytes.com/dhcp-how-does-it-work/>Fossbytes</a></p></section><section><img class="stretch plain" src=../../images/dhcp_multiple.png><p class=imagecredit>Image Source: <a href=http://people.cs.ksu.edu/~russfeld/cis527spring2017/9dhcpdns/images/dhcp.svg>Seth Galitzer</a></p></section><section><h3>Automatic Private IP Address (APIPA)</h3><ul><li>Used when DHCP Fails</li><li>Assigns a Link-Local IP Address</li><li>IPv4: 169.254.0.0/16</li><li>IPv6: fe80::/10</li></ul></section><section><h3>Sample Configuration</h3><pre style=font-size:.5em><code>default-lease-time 600;  # in seconds
 max-lease-time 7200;     # in seconds
 authoritative;           # this server is authoritative
                          #   for this network segment
@@ -87,11 +9,7 @@ option subnet-mask 255.255.254.0;
 option broadcast-address 129.130.11.255;
 option routers 129.130.10.1;
 option smtp-server smtp.cis.ksu.edu;
-</code></pre></p>
-</section>
-<section>
-	<h3>Sample Configuration</h3>
-	<pre style="font-size: .5em"><code>#fixed-address
+</code></pre></p></section><section><h3>Sample Configuration</h3><pre style=font-size:.5em><code>#fixed-address
 host eth0_bronco {
 	option host-name "bronco";
 	hardware ethernet ec:a8:6b:fe:2e:b5;
@@ -103,44 +21,4 @@ range 129.130.10.209 129.130.10.229;
 range 129.130.10.245 129.130.10.255;
 range 129.130.11.201 129.130.11.254
 }
-</code></pre></p>
-</section>
-
-			</div>
-		</div>
-
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reveal.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/markdown/markdown.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/highlight/highlight.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/math/math.js"></script>
-		<script>
-			
-			
-			
-			Reveal.initialize({
-				hash: true,
-				controls: false,
-				controlsTutorial:false,
-				progress: false,
-				transition: 'fade',
-				width: 1440,
-				height: 1080,
-				highlight: {
-					escapeHTML: false
-				},
-
-				
-				plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
-			});
-
-			window.addEventListener("mousedown", handleClick, false);
-			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
-
-			function handleClick(e) {
-				e.preventDefault();
-				if(e.button === 0) Reveal.next();
-				if(e.button === 2) Reveal.prev();
-			}
-		</script>
-	</body>
-</html>
+</code></pre></p></section></div></div><script src=/cis527/reveal/dist/reveal.js></script><script src=/cis527/reveal/plugin/markdown/markdown.js></script><script src=/cis527/reveal/plugin/highlight/highlight.js></script><script src=/cis527/reveal/plugin/math/math.js></script><script>Reveal.initialize({hash:!0,controls:!1,controlsTutorial:!1,progress:!1,transition:"fade",width:1440,height:1080,highlight:{escapeHTML:!1},plugins:[RevealMarkdown,RevealHighlight,RevealMath]}),window.addEventListener("mousedown",handleClick,!1),window.addEventListener("contextmenu",function(e){e.preventDefault()},!1);function handleClick(e){e.preventDefault(),e.button===0&&Reveal.next(),e.button===2&&Reveal.prev()}</script></body></html>

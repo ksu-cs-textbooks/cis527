@@ -1,74 +1,15 @@
-
-
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<title></title>
-
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reset.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reveal.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/theme/black.css">
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/css/reveal-theme.css">
-
-		
-		<link rel="stylesheet" href="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-    <h2>CIS 527</h2><br><br><p>Lab 5.A - Resources</p>
-</section>
-<section>
-    <h3>Container Resources</h3>
-    <ul>
-        <li>Mapped Network Ports</li>
-        <li>Networks</li>
-        <li>Environment Variables</li>
-        <li>Storage Volumes</li>
-    </ul>
-</section>
-<section>
-    <h3>Mapped Ports</h3>
-    <img class="stretch plain" src="https://ksu-cs-textbooks.github.io/cis527/images/5a/docker-ports.png">
-    <p class="imagecredit">Image Source: <a href="https://www.docker.com/blog/understanding-docker-networking-drivers-use-cases/">Docker</a></p>
-</section>
-<section>
-    <h3>Mapped Ports</h3>
-    <pre><code class="bash">docker run -d -p 8080:80 --name nginx1 nginx:alpine</code></pre>
-    <pre><code class="yml">services:
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title></title>
+<link rel=stylesheet href=/cis527/reveal/dist/reset.css><link rel=stylesheet href=/cis527/reveal/dist/reveal.css><link rel=stylesheet href=/cis527/reveal/dist/theme/black.css><link rel=stylesheet href=/cis527/css/reveal-theme.css><link rel=stylesheet href=/cis527/reveal/plugin/highlight/monokai.css></head><body><div class=reveal><div class=slides><section><h2>CIS 527</h2><br><br><p>Lab 5.A - Resources</p></section><section><h3>Container Resources</h3><ul><li>Mapped Network Ports</li><li>Networks</li><li>Environment Variables</li><li>Storage Volumes</li></ul></section><section><h3>Mapped Ports</h3><img class="stretch plain" src=/cis527/images/5a/docker-ports.png><p class=imagecredit>Image Source: <a href=https://www.docker.com/blog/understanding-docker-networking-drivers-use-cases/>Docker</a></p></section><section><h3>Mapped Ports</h3><pre><code class=bash>docker run -d -p 8080:80 --name nginx1 nginx:alpine</code></pre><pre><code class=yml>services:
   nginx:
     image: nginx:alpine
     container_name: nginx1
     ports:
-      - "8080:80"</code></pre>
-    <p><code>curl localhost:8080</code></p>
-</section>
-<section>
-    <h3>Inspecting Ports</h3>
-    <p><code>docker ps</code></p>
-    <pre><code class="bash" style="font-size: 20px; line-height: 22px">CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                   NAMES
+      - "8080:80"</code></pre><p><code>curl localhost:8080</code></p></section><section><h3>Inspecting Ports</h3><p><code>docker ps</code></p><pre><code class=bash style=font-size:20px;line-height:22px>CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                   NAMES
 a1ef8911ce52   nginx:alpine   "/docker-entrypoint.…"   8 minutes ago   Up 8 minutes   0.0.0.0:8080->80/tcp    nginx1
-</code></pre>
-</section>
-<section>
-    <h3>Docker Networks</h3>
-    <img class="stretch plain" src="https://ksu-cs-textbooks.github.io/cis527/images/5a/docker-network.png">
-    <p class="imagecredit">Image Source: <a href="https://docs.docker.com/engine/tutorials/networkingcontainers/">Docker</a></p>
-</section>
-<section>
-    <h3>Docker Networks</h3>
-    <pre><code style="font-size: 35px" class="bash">docker run -d -p 8080:80 --name nginx1 nginx:alpine
+</code></pre></section><section><h3>Docker Networks</h3><img class="stretch plain" src=/cis527/images/5a/docker-network.png><p class=imagecredit>Image Source: <a href=https://docs.docker.com/engine/tutorials/networkingcontainers/>Docker</a></p></section><section><h3>Docker Networks</h3><pre><code style=font-size:35px class=bash>docker run -d -p 8080:80 --name nginx1 nginx:alpine
 docker network create -d bridge --internal redis_network
 docker network connect redis_network nginx1
-docker run -d --name redis1 --network redis_network redis:latest</code></pre>
-</section>
-<section>
-    <h3>Docker Networks</h3>
-    <pre class="stretch"><code style="line-height: 48px" class="yml">services:
+docker run -d --name redis1 --network redis_network redis:latest</code></pre></section><section><h3>Docker Networks</h3><pre class=stretch><code style=line-height:48px class=yml>services:
   nginx:
     image: nginx:alpine
     container_name: nginx1
@@ -85,12 +26,7 @@ docker run -d --name redis1 --network redis_network redis:latest</code></pre>
 networks:
   redis_network:
     internal: true
-    </code></pre>
-</section>
-<section>
-    <h3>Inspecting Networks</h3>
-    <p><code>docker network inspect [network]</code></p>
-    <pre><code style="font-size: 20px; line-height: 22px" class="json">[ {
+    </code></pre></section><section><h3>Inspecting Networks</h3><p><code>docker network inspect [network]</code></p><pre><code style=font-size:20px;line-height:22px class=json>[ {
     "Name": "docker_default",
     ...
     "Containers": {
@@ -100,8 +36,7 @@ networks:
             "MacAddress": "02:42:ac:15:00:02",
             "IPv4Address": "172.21.0.2/16",
             "IPv6Address": ""
-} } } ]</code></pre>
-<pre><code style="font-size: 20px; line-height: 22px" class="json">[ {
+} } } ]</code></pre><pre><code style=font-size:20px;line-height:22px class=json>[ {
     "Name": "docker_redis_network",
     // ...
     "Containers": {
@@ -118,27 +53,14 @@ networks:
             "MacAddress": "02:42:ac:14:00:02",
             "IPv4Address": "172.20.0.2/16",
             "IPv6Address": ""
-} } } ]</code></pre>
-</section>
-<section>
-    <h3>Environment Variables</h3>
-    <img class="stretch plain" src="https://ksu-cs-textbooks.github.io/cis527/images/5a/docker-env.png">
-    <p class="imagecredit">Image Source: <a href="https://vsupalov.com/docker-arg-env-variable-guide/">Vladislav Supalov</a></p>
-</section>
-<section>
-    <h3>Environment Variables</h3>
-    <pre><code style="font-size: 35px" class="bash">docker network create -d bridge --internal mysql_network
+} } } ]</code></pre></section><section><h3>Environment Variables</h3><img class="stretch plain" src=/cis527/images/5a/docker-env.png><p class=imagecredit>Image Source: <a href=https://vsupalov.com/docker-arg-env-variable-guide/>Vladislav Supalov</a></p></section><section><h3>Environment Variables</h3><pre><code style=font-size:35px class=bash>docker network create -d bridge --internal mysql_network
 docker network create -d bridge mysql_default
 docker run -d --name mysql1 --network mysql_network 
         -e MYSQL_ROOT_PASSWORD=password mysql:latest
 docker run -d --name mysqladmin1 --network mysql_default 
         -e PMA_HOST=mysql1 -p 8080:80 phpmyadmin/phpmyadmin:latest
 docker network connect mysql_network mysqladmin1
-</code></pre>
-</section>
-<section>
-    <h3>Environment Variables</h3>
-    <pre class="stretch"><code style="font-size: 35px; line-height: 40px" class="yml">services:
+</code></pre></section><section><h3>Environment Variables</h3><pre class=stretch><code style=font-size:35px;line-height:40px class=yml>services:
   mysql:
     image: mysql:latest
     container_name: mysql1
@@ -158,12 +80,7 @@ docker network connect mysql_network mysqladmin1
       PMA_HOST: mysql1
 networks:
   mysql_network:
-    internal: true</code></pre>
-</section>
-<section>
-    <h3>Inspecting Environments</h3>
-    <p><code>docker inspect [container]</code></p>
-    <pre><code style="font-size: 20px; line-height: 22px" class="json">[ {
+    internal: true</code></pre></section><section><h3>Inspecting Environments</h3><p><code>docker inspect [container]</code></p><pre><code style=font-size:20px;line-height:22px class=json>[ {
     // ... 
     "Name": "/mysql1",
     // ...
@@ -180,30 +97,11 @@ networks:
         "Image": "mysql:latest",
         // ...
     } 
-} ]</code></pre>
-</section>
-<section>
-    <h3>Storage Volumes</h3>
-    <ul>
-        <li>Add something to database</li>
-        <li>Stop using <code>docker compose down</code></li>
-        <li>Restart using <code>docker compose up -d</code></li>
-        <li>Check database again - is it there?</li>
-    </ul>
-</section>
-<section>
-    <h3>Volumes & Mounts</h3>
-    <img class="stretch plain" src="https://ksu-cs-textbooks.github.io/cis527/images/5a/docker-volume.png">
-    <p class="imagecredit">Image Source: <a href="https://docs.docker.com/storage/volumes/">Docker</a></p>
-</section>
-<section>
-    <h3>Bind Mount</h3>
-    <pre><code class="bash">mkdir /home/cis527/mysql
+} ]</code></pre></section><section><h3>Storage Volumes</h3><ul><li>Add something to database</li><li>Stop using <code>docker compose down</code></li><li>Restart using <code>docker compose up -d</code></li><li>Check database again - is it there?</li></ul></section><section><h3>Volumes & Mounts</h3><img class="stretch plain" src=/cis527/images/5a/docker-volume.png><p class=imagecredit>Image Source: <a href=https://docs.docker.com/storage/volumes/>Docker</a></p></section><section><h3>Bind Mount</h3><pre><code class=bash>mkdir /home/cis527/mysql
 docker run -d --name mysql1 --network mysql_network 
         -e MYSQL_ROOT_PASSWORD=password 
         -v /home/cis527/mysql:/var/lib/mysql
-        mysql:latest</code></pre>
-    <pre class="stretch"><code style="font-size: 35px; line-height: 40px" class="yml">services:
+        mysql:latest</code></pre><pre class=stretch><code style=font-size:35px;line-height:40px class=yml>services:
   mysql:
     image: mysql:latest
     container_name: mysql1
@@ -213,16 +111,11 @@ docker run -d --name mysql1 --network mysql_network
       MYSQL_ROOT_PASSWORD: password
     volumes:
       - /home/cis527/mysql:/var/lib/mysql
-  # ...</code></pre>
-</section>
-<section>
-    <h3>Docker Volume</h3>
-    <pre><code class="bash">docker volume create mysql_data
+  # ...</code></pre></section><section><h3>Docker Volume</h3><pre><code class=bash>docker volume create mysql_data
 docker run -d --name mysql1 --network mysql_network 
         -e MYSQL_ROOT_PASSWORD=password 
         -v mysql_data:/var/lib/mysql
-        mysql:latest</code></pre>
-    <pre class="stretch"><code style="font-size: 35px; line-height: 40px" class="yml">services:
+        mysql:latest</code></pre><pre class=stretch><code style=font-size:35px;line-height:40px class=yml>services:
   mysql:
     image: mysql:latest
     container_name: mysql1
@@ -235,12 +128,7 @@ docker run -d --name mysql1 --network mysql_network
   # ...
 volumes:
   mysql_data:    
-</code></pre>
-</section>
-<section>
-    <h3>Inspecting Volumes</h3>
-    <p><code>docker inspect [container]</code></p>
-    <pre class="stretch"><code style="font-size: 35px; line-height: 42px" class="json">[ {
+</code></pre></section><section><h3>Inspecting Volumes</h3><p><code>docker inspect [container]</code></p><pre class=stretch><code style=font-size:35px;line-height:42px class=json>[ {
     // ...
     "Name": "/mysql1",
     // ...
@@ -256,43 +144,4 @@ volumes:
             "Propagation": ""
         }
     ]
-} ]</code></pre>
-</section>
-			</div>
-		</div>
-
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/dist/reveal.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/markdown/markdown.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/highlight/highlight.js"></script>
-		<script src="https://ksu-cs-textbooks.github.io/cis527/reveal/plugin/math/math.js"></script>
-		<script>
-			
-			
-			
-			Reveal.initialize({
-				hash: true,
-				controls: false,
-				controlsTutorial:false,
-				progress: false,
-				transition: 'fade',
-				width: 1440,
-				height: 1080,
-				highlight: {
-					escapeHTML: false
-				},
-
-				
-				plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
-			});
-
-			window.addEventListener("mousedown", handleClick, false);
-			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
-
-			function handleClick(e) {
-				e.preventDefault();
-				if(e.button === 0) Reveal.next();
-				if(e.button === 2) Reveal.prev();
-			}
-		</script>
-	</body>
-</html>
+} ]</code></pre></section></div></div><script src=/cis527/reveal/dist/reveal.js></script><script src=/cis527/reveal/plugin/markdown/markdown.js></script><script src=/cis527/reveal/plugin/highlight/highlight.js></script><script src=/cis527/reveal/plugin/math/math.js></script><script>Reveal.initialize({hash:!0,controls:!1,controlsTutorial:!1,progress:!1,transition:"fade",width:1440,height:1080,highlight:{escapeHTML:!1},plugins:[RevealMarkdown,RevealHighlight,RevealMath]}),window.addEventListener("mousedown",handleClick,!1),window.addEventListener("contextmenu",function(e){e.preventDefault()},!1);function handleClick(e){e.preventDefault(),e.button===0&&Reveal.next(),e.button===2&&Reveal.prev()}</script></body></html>
