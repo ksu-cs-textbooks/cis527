@@ -8,7 +8,7 @@ pre: "8. "
 
 #### Resources
 
-* **[Slides]({{< relref "/7-backups-monitoring-devops/08-backups-slides.md" >}})**
+* **[Slides]({{% relref "/7-backups-monitoring-devops/08-backups-slides.md"  %}})**
 * [Data Loss](https://en.wikipedia.org/wiki/Data_loss) on Wikipedia
 * [10 Common Causes of Data Loss](https://consoltech.com/blog/10-common-causes-of-data-loss/) from Consolidated Technologies
 * [Backup Types Explained: Full, Incremental, Differential, Synthetic, and Forever-Incremental](https://www.nakivo.com/blog/backup-types-explained-full-incremental-differential-synthetic-and-forever-incremental/) from Nakivo

@@ -8,7 +8,7 @@ pre: "1. "
 
 #### Resources
 
-* **[Slides]({{< relref "/7-backups-monitoring-devops/01-introduction-slides.md" >}})**
+* **[Slides]({{% relref "/7-backups-monitoring-devops/01-introduction-slides.md"  %}})**
 
 #### Video Transcript
 

@@ -8,7 +8,7 @@ pre: "9. "
 
 #### Resources
 
-* **[Kubernetes Tutorial for Beginners](X48VuDVv0do)** by TechWorld with Nana on YouTube
+* **[Kubernetes Tutorial for Beginners](https://www.youtube.com/watch?v=X48VuDVv0do)** by TechWorld with Nana on YouTube
 
 #### Video Notes
 

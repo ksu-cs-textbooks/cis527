@@ -8,7 +8,7 @@ pre: "5. "
 
 ## CC 510 - Computer Systems Administration
 
-[Previous Versions]({{<relref "./old">}})
+[Previous Versions]({{% relref "./old" %}})
 
 _This syllabus covers both courses. They are taught using the same content._
 

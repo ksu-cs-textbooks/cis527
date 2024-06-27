@@ -71,7 +71,7 @@ _Pay close attention to how you attach and target these GPOs in the domain. You 
 
 #### Resources
 
-* **[Windows Group Policy]({{< relref "/4-directory-services/06-windows-group-policy" >}})**
+* **[Windows Group Policy]({{% relref "/4-directory-services/06-windows-group-policy"  %}})**
 * [How to Map Network Drives with Group Policy (Complete Guide)](https://activedirectorypro.com/map-network-drives-with-group-policy/) by Robert Allen on Active Directory Pro
 * [How to: Mapping Network Drives/Folders via Group Policy](https://community.spiceworks.com/how_to/79280-mapping-network-drives-folders-via-group-policy) on Spiceworks Community
 

@@ -8,7 +8,7 @@ pre: "4. "
 
 #### Resources
 
-* **[Slides]({{< relref "/1-secure-workstations/04-users-groups-slides.md" >}})**
+* **[Slides]({{% relref "/1-secure-workstations/04-users-groups-slides.md"  %}})**
 
 #### Video Script
 

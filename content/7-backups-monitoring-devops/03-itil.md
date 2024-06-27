@@ -10,7 +10,7 @@ pre: "3. "
 
 #### Resources
 
-* **[Slides]({{< relref "/7-backups-monitoring-devops/03-itil-slides.md" >}})**
+* **[Slides]({{% relref "/7-backups-monitoring-devops/03-itil-slides.md"  %}})**
 * [ITIL](https://en.wikipedia.org/wiki/ITIL) on Wikipedia
 * [ITIL](https://www.axelos.com/best-practice-solutions/itil) from Axelos
 * [ISO/IEC 20000](https://en.wikipedia.org/wiki/ISO/IEC_20000) on Wikipedia

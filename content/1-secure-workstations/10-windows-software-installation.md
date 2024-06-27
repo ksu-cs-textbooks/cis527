@@ -8,7 +8,7 @@ pre: "10. "
 
 #### Resources
 
-* **[Slides]({{< relref "/1-secure-workstations/10-windows-software-installation-slides.md" >}})**
+* **[Slides]({{% relref "/1-secure-workstations/10-windows-software-installation-slides.md"  %}})**
 * [Installation (Computer Programs)](https://en.wikipedia.org/wiki/Installation_(computer_programs)) on Wikipedia
 * [Here's What Happens when you Install the Top 10 Download.com Apps](https://www.howtogeek.com/198622/heres-what-happens-when-you-install-the-top-10-download.com-apps/) from How-To Geek
 * [Process Monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) from Microsoft Sysinternals

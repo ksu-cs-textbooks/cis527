@@ -6,7 +6,7 @@ hidden: true
     <h2>CIS 527</h2><br><br><p>Lab 5.A - Reverse Proxy</p>
 </section>
 <section>
-    <img class="stretch plain" src="/images/5a/reverse-proxy.webp">
+    <img class="stretch plain" src="/cis527/images/5a/reverse-proxy.webp">
     <p class="imagecredit">Image Source: <a href="https://linuxhandbook.com/nginx-reverse-proxy-docker/">Linux Handbook</a></p>
 </section>
 <section>
@@ -72,7 +72,7 @@ server {
 </section>
 <section>
     <h3>Option 1 - Nginx</h3>
-    <img class="stretch plain" src="/images/5a/proxy1.png">
+    <img class="stretch plain" src="/cis527/images/5a/proxy1.png">
 </section>
 <section>
     <h3>Option 2 - Nginx Proxy</h3>
@@ -110,7 +110,7 @@ networks:
 </section>
 <section>
     <h3>Option 2 - Nginx Proxy</h3>
-    <img class="stretch plain" src="/images/5a/proxy2.png">
+    <img class="stretch plain" src="/cis527/images/5a/proxy2.png">
 </section>
 <section>
     <h3>Security Concern</h3>
@@ -125,7 +125,7 @@ networks:
 </section>
 <section>
     <h3>Option 3 - Traefik Proxy</h3>
-    <img class="stretch plain" src="/images/5a/traefik-logo.svg">
+    <img class="stretch plain" src="/cis527/images/5a/traefik-logo.svg">
     <p class="imagecredit">Image Source: <a href="https://doc.traefik.io/traefik/">Traefik</a></p>
 </section>
 <section>
@@ -166,11 +166,11 @@ networks:
 </section>
 <section>
     <h3>Option 3 - Traefik Proxy</h3>
-    <img class="stretch plain" src="/images/5a/proxy3.png"></img>
+    <img class="stretch plain" src="/cis527/images/5a/proxy3.png"></img>
 </section>
 <section>
     <h3>Option 3 - Traefik Proxy</h3>
-    <img class="stretch plain" src="/images/5a/traefik-dashboard.png"></img>
+    <img class="stretch plain" src="/cis527/images/5a/traefik-dashboard.png"></img>
 </section>
 <section>
     <h3>Summary</h3>

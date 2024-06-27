@@ -131,7 +131,7 @@ _Since the Webhook process runs as the `root` user on **BACKEND**, you'll need t
 
 #### Resources
 
-* **[Extras - Git]({{< relref "/X-extras/07-git" >}})**
+* **[Extras - Git]({{% relref "/X-extras/07-git"  %}})**
 * [webhook](https://github.com/adnanh/webhook) on GitHub
 * [webhook Hook Examples](https://github.com/adnanh/webhook/blob/master/docs/Hook-Examples.md) on GitHub
 * [Webhooks](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html) on GitLab Documentation

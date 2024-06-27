@@ -172,7 +172,7 @@ Of course, you may need to update your firewall configuration to allow incoming 
 To test your DNS server, you can set a static DNS address on either your Windows or Ubuntu VM labelled **CLIENT**, and use the `dig` or `nslookup` commands to verify that each DNS name and IP address is resolved properly.
 
 {{% notice note %}}
-See the [Bind Troubleshooting]({{< relref "/3-core-networking-services/17-bind-troubleshooting.md" >}}) page for some helpful screenshots of using `dig` to debug DNS server configuration. 
+See the [Bind Troubleshooting]({{% relref "/3-core-networking-services/17-bind-troubleshooting.md"  %}}) page for some helpful screenshots of using `dig` to debug DNS server configuration. 
 {{% /notice %}}
 
 {{% notice warning %}}
@@ -248,7 +248,7 @@ Then, perform the following quick activity:
 3. Once again, use the SNMP tools from the **CLIENT** VM to query the number of ICMP Echos (pings) that have been received by the **SERVER** VM. It should clearly show that it has increased by the number sent during the previous command. Take a **screenshot** with the command used and the result clearly highlighted in the terminal output. It should match the expected output based on the previous two screenshots.
 
 {{% notice note%}}
-_Be prepared to duplicate this activity during the interactive grading process! If you are unable to duplicate it, you can present the screenshots as proof that it worked before for partial credit. You may preform all three commands in a single screenshot if desired. See [this example](../../images/lab3-hint.png) for an idea of what the output should look like. --Russ_
+_Be prepared to duplicate this activity during the interactive grading process! If you are unable to duplicate it, you can present the screenshots as proof that it worked before for partial credit. You may preform all three commands in a single screenshot if desired. See [this example](images/lab3-hint.png) for an idea of what the output should look like. --Russ_
 {{% /notice %}}
 
 #### Resources

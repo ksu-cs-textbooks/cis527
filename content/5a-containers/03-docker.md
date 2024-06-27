@@ -8,7 +8,7 @@ pre: "3. "
 
 #### Resources
 
-* **[Slides]({{< relref "./03-docker-slides.md" >}})**
+* **[Slides]({{% relref "./03-docker-slides.md"  %}})**
 * **[Docker Tutorial for Beginners](https://www.youtube.com/watch?v=3c-iBn73dDE)** by TechWorld with Nana on YouTube
 * [Docker Manuals](https://docs.docker.com/desktop/) from Docker
 * [Docker Official Images](https://hub.docker.com/search?q=&type=image&image_filter=official) on DockerHub

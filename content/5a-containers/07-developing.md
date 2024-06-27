@@ -8,7 +8,7 @@ pre: "7. "
 
 #### Resources
 
-* **[Slides]({{< relref "./07-developing-slides.md" >}})**
+* **[Slides]({{% relref "./07-developing-slides.md"  %}})**
 * **[Docker Tutorial for Beginners](https://www.youtube.com/watch?v=3c-iBn73dDE)** by TechWorld with Nana on YouTube
 * [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) from Visual Studio Code
 * [Developing Inside a Container](https://code.visualstudio.com/docs/remote/containers) from Visual Studio Code

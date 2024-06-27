@@ -8,7 +8,7 @@ pre: "9. "
 
 #### Resources
 
-* **[Slides]({{< relref "/3-core-networking-services/09-network-monitoring-with-wireshark-slides.md" >}})**
+* **[Slides]({{% relref "/3-core-networking-services/09-network-monitoring-with-wireshark-slides.md"  %}})**
 * [Wireshark Documentation](https://www.wireshark.org/docs/)
 * [How to User Wireshark to Capture, Filter, and Inspect Packets](https://www.howtogeek.com/104278/how-to-use-wireshark-to-capture-filter-and-inspect-packets/) from How-To Geek
 

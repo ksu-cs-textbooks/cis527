@@ -8,7 +8,7 @@ pre: "1. "
 
 #### Resources
 
-* **[Slides]({{< relref "/1-secure-workstations/01-introduction-slides.md" >}})**
+* **[Slides]({{% relref "/1-secure-workstations/01-introduction-slides.md"  %}})**
 * [Operating System](https://en.wikipedia.org/wiki/Operating_system) on Wikipedia
 * [Types of Operating Systems](https://www.geeksforgeeks.org/operating-system-types-operating-systems-awaiting-author/) on Geeks for Geeks
 * [Understanding Operating Systems](https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/) on GCF LearnFree

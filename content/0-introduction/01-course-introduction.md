@@ -24,8 +24,8 @@ _This video was recorded before I decided to switch to Ed Discussion instead of 
 
 #### Resources
 
-* [Slides]({{< relref "/0-introduction/01-course-introduction-slides.md" >}})
-* [Syllabus]({{< relref "/0-introduction/05-syllabus" >}})
+* [Slides]({{% relref "/0-introduction/01-course-introduction-slides.md"  %}})
+* [Syllabus]({{% relref "/0-introduction/05-syllabus"  %}})
 
 #### Video Script
 

@@ -8,7 +8,7 @@ pre: "14. "
 
 #### Resources
 
-* **[Slides]({{< relref "/3-core-networking-services/14-email-protocols-slides.md" >}})**
+* **[Slides]({{% relref "/3-core-networking-services/14-email-protocols-slides.md"  %}})**
 * [Email](https://en.wikipedia.org/wiki/Email) on Wikipedia
 * [Simple Mail Transfer Protocol (SMTP)](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) on Wikipedia
 * [Post Office Protocol (POP3)](https://en.wikipedia.org/wiki/Post_Office_Protocol) on Wikipedia

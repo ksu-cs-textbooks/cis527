@@ -8,7 +8,7 @@ pre: "15. "
 
 #### Resources
 
-* **[Slides]({{< relref "/3-core-networking-services/15-security-slides.md" >}})**
+* **[Slides]({{% relref "/3-core-networking-services/15-security-slides.md"  %}})**
 * [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security) on Wikipedia
 * [Transport Layer Security (TLS)](https://hpbn.co/transport-layer-security-tls/) from High Performance Browser Networking on O'Reilly
 * [Firewall](https://ubuntu.com/server/docs/security-firewall) on Ubuntu Server Guide

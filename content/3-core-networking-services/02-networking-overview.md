@@ -8,7 +8,7 @@ pre: "2. "
 
 #### Resources
 
-* **[Slides]({{< relref "/3-core-networking-services/02-networking-overview-slides.md" >}})**
+* **[Slides]({{% relref "/3-core-networking-services/02-networking-overview-slides.md"  %}})**
 * [The TCP/IP Guide](http://www.tcpipguide.com/free/index.htm)
 * [Packet Switching](https://en.wikipedia.org/wiki/Packet_switching) on Wikipedia
 * [Computer Network](https://en.wikipedia.org/wiki/Computer_network) on Wikipedia

@@ -12,11 +12,11 @@ TODO _This video was recorded for Ubuntu 18.04, but works for Ubuntu 22.04 as we
 
 #### Resources
 
-* **[Slides]({{< relref "/5-the-cloud/04-cloud-resource-setup-slides.md" >}})**
+* **[Slides]({{% relref "/5-the-cloud/04-cloud-resource-setup-slides.md"  %}})**
 * **[Student Developer Pack](https://education.github.com/pack) from GitHub Education**
 * **[Referral Program](https://www.digitalocean.com/referral-program/) from DigitalOcean**
-* **[Extras - SSH]({{< relref "/X-extras/02-ssh" >}})**
-* **[Extras - Windows Subsystem for Linux]({{< relref "/X-extras/06-windows-subsystem-for-linux" >}})**
+* **[Extras - SSH]({{% relref "/X-extras/02-ssh"  %}})**
+* **[Extras - Windows Subsystem for Linux]({{% relref "/X-extras/06-windows-subsystem-for-linux"  %}})**
 * [How to Create a Droplet from the DigitalOcean Control Panel](https://www.digitalocean.com/docs/droplets/how-to/create/) from DigitalOcean
 * [An Introduction to Cloud-Config Scripting](https://www.digitalocean.com/community/tutorials/an-introduction-to-cloud-config-scripting) from DigitalOcean
 * [Initial Server Setup with Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04) from DigitalOcean

@@ -93,7 +93,7 @@ Configure your SSH servers and SSH keys as described here:
 
 1. On your own computer, generate a set of SSH keys if you have not already.
 2. Add the public key from your computer to the cis527 account on **FRONTEND**. This should allow you to log in with that key.
-3. Add the [grading SSH key](../../files/id_rsa_grading.pub) to the cis527 account on **FRONTEND** as well.
+3. Add the [grading SSH key](files/id_rsa_grading.pub) to the cis527 account on **FRONTEND** as well.
 4. On the cis527 account on **FRONTEND**, generate a set of SSH keys with no passphrase.
 5. Add the public key from the cis527 account on **FRONTEND** to the cis527 account on **BACKEND**. This should allow you to log in with that key
 6. On the cis527 account on **FRONTEND**, create an SSH config file such that a user could simply type `ssh backend` to connect to the **BACKEND** droplet.
@@ -110,7 +110,7 @@ _You may contact me once you have installed the grading SSH key to confirm that 
 
 #### Resources
 
-* **[Extras - SSH]({{< relref "/X-extras/02-ssh" >}})**
+* **[Extras - SSH]({{% relref "/X-extras/02-ssh"  %}})**
 * [How Does SSH Work](https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work) from Hostinger
 * [SSH Essentials: Working with SSH Servers, Clients and Keys](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys) from DigitalOcean
 * [How to Set Up SSH Keys on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-22-04) from DigitalOcean
@@ -209,7 +209,7 @@ On **FRONTEND**, create a `docker-compose.yml` file in the home directory of the
 
 #### Resources
 
-* [Reverse Proxy]({{< relref "/5a-containers/08-reverse-proxy" >}})
+* [Reverse Proxy]({{% relref "/5a-containers/08-reverse-proxy"  %}})
 
 ---
 

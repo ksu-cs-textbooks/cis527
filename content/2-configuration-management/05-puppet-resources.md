@@ -14,7 +14,7 @@ _As of 2023, the Puppet Learning VM is no longer being maintained. The videos be
 
 #### Resources
 
-* **[Slides]({{< relref "/2-configuration-management/05-puppet-resources-slides.md" >}})**
+* **[Slides]({{% relref "/2-configuration-management/05-puppet-resources-slides.md"  %}})**
 * [Core Types Cheat Sheet](https://puppet.com/docs/puppet/latest/cheatsheet_core_types.html) from Puppet
 * [Resource Type Reference](https://puppet.com/docs/puppet/latest/type.html) from Puppet
 

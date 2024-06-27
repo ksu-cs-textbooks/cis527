@@ -8,7 +8,7 @@ pre: "2. "
 
 #### Resources
 
-* **[Slides]({{< relref "/6-application-servers/02-application-servers-overview-slides.md" >}})**
+* **[Slides]({{% relref "/6-application-servers/02-application-servers-overview-slides.md"  %}})**
 * [10 Tips for Successfully Implementing Enterprise Software](https://liquid-state.com/successfully-implementing-enterprise-software/) from Liquid State
 * [An Analyst's Guide to Evaluating Enterprise Software](https://www.automationworld.com/article/technologies/erp/analysts-guide-evaluating-enterprise-software) from Automation World
 * [18 Enterprise Software Selection Risks and How to Avoid Them](https://www.cio.com/article/2925639/enterprise-software/18-enterprise-software-selection-risks.html) from CIO.com

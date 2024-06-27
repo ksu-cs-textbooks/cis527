@@ -197,7 +197,7 @@ When you create a group and add a user to that group, it does not take effect un
 {{% notice tip %}}
 Use either the `cis527` or `adminuser` account to create these files, then modify the owner, group, and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the `su` command to become that user in the terminal. Many students neglect this step, leaving the file owner incorrect.
 {{% /notice %}}
-* See [this screenshot](../../images/lab1-image2.png) for what these permissions may look like in Terminal. This was created using the command `ls -lR` in the Linux terminal.
+* See [this screenshot](images/lab1-image2.png) for what these permissions may look like in Terminal. This was created using the command `ls -lR` in the Linux terminal.
 
 ---
 

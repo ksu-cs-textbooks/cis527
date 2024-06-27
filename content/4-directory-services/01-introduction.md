@@ -8,7 +8,7 @@ pre: "1. "
 
 #### Resources
 
-* **[Slides]({{< relref "/4-directory-services/01-introduction-slides.md" >}})**
+* **[Slides]({{% relref "/4-directory-services/01-introduction-slides.md"  %}})**
 
 #### Video Transcript
 

@@ -8,7 +8,7 @@ pre: "1. "
 
 #### Resources
 
-* **[Slides]({{< relref "/5-the-cloud/01-introduction-slides.md" >}})**
+* **[Slides]({{% relref "/5-the-cloud/01-introduction-slides.md"  %}})**
 * **[GitHub Student Developer Pack](https://education.github.com/pack)**
 
 #### Video Transcript

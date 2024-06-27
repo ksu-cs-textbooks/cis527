@@ -16,7 +16,7 @@ hidden: true
 </section>
 <section>
     <h3>Mapped Ports</h3>
-    <img class="stretch plain" src="/images/5a/docker-ports.png">
+    <img class="stretch plain" src="/cis527/images/5a/docker-ports.png">
     <p class="imagecredit">Image Source: <a href="https://www.docker.com/blog/understanding-docker-networking-drivers-use-cases/">Docker</a></p>
 </section>
 <section>
@@ -39,7 +39,7 @@ a1ef8911ce52   nginx:alpine   "/docker-entrypoint.…"   8 minutes ago   Up 8 mi
 </section>
 <section>
     <h3>Docker Networks</h3>
-    <img class="stretch plain" src="/images/5a/docker-network.png">
+    <img class="stretch plain" src="/cis527/images/5a/docker-network.png">
     <p class="imagecredit">Image Source: <a href="https://docs.docker.com/engine/tutorials/networkingcontainers/">Docker</a></p>
 </section>
 <section>
@@ -105,7 +105,7 @@ networks:
 </section>
 <section>
     <h3>Environment Variables</h3>
-    <img class="stretch plain" src="/images/5a/docker-env.png">
+    <img class="stretch plain" src="/cis527/images/5a/docker-env.png">
     <p class="imagecredit">Image Source: <a href="https://vsupalov.com/docker-arg-env-variable-guide/">Vladislav Supalov</a></p>
 </section>
 <section>
@@ -176,7 +176,7 @@ networks:
 </section>
 <section>
     <h3>Volumes & Mounts</h3>
-    <img class="stretch plain" src="/images/5a/docker-volume.png">
+    <img class="stretch plain" src="/cis527/images/5a/docker-volume.png">
     <p class="imagecredit">Image Source: <a href="https://docs.docker.com/storage/volumes/">Docker</a></p>
 </section>
 <section>

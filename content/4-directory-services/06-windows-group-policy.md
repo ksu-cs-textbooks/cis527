@@ -8,7 +8,7 @@ pre: "6. "
 
 #### Resources
 
-* **[Slides]({{< relref "/4-directory-services/06-windows-group-policy-slides.md" >}})**
+* **[Slides]({{% relref "/4-directory-services/06-windows-group-policy-slides.md"  %}})**
 * [Group Policy](https://en.wikipedia.org/wiki/Group_Policy) on Wikipedia
 * [Group Policy Processing and Precedence](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc785665(v=ws.10)) from Microsoft Docs
 * [Group Policy Fundamentals in Active Directory](https://redmondmag.com/articles/2016/01/12/group-policy-fundamentals.aspx) by Troy Thompson in Redmond Magazine

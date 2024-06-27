@@ -8,13 +8,13 @@ Here are some helpful networking diagrams to better explain the desired state be
 
 ### After Lab 3
 
-![After Lab 3](../../images/net-afterlab3.png)
+![After Lab 3](images/net-afterlab3.png)
 
 Once you've completed all of Lab 3, your network diagram should resemble the one shown above. Recall that all systems are currently configured to get DHCP and DNS information from your Ubuntu VM labelled Server, so in general it must be running at all times for this network to function. In addition, the Ubuntu VM labelled Server does not use itself for DNS, but still uses the VMare built-in DNS server, though you may have configured an alternate entry so it can refer to itself for DNS as well. This is the most likely starting point for this lab if you completed Lab 3.
 
 ### Starting Lab 4 with a Working Lab 3 Solution
 
-![Before Lab 4 with Working Lab 3](../../images/net-beforelab4working3.png)
+![Before Lab 4 with Working Lab 3](images/net-beforelab4working3.png)
 
 This diagram shows what an ideal network setup would look like, provided you have a working Lab 3 solution. In Lab 4, most of the changes required to get from the final Lab 3 network to this configuration are spread across multiple tasks. However, here are the major highlights:
 
@@ -29,7 +29,7 @@ This is the ideal setup for a this lab, but it depends on a fully working Lab 3 
 
 #### Lab 4 Alternative Network Setup - Option 1 (Static DNS Entries)
 
-![Before Lab 4 Alternate 1](../../images/net-beforelab4alt1.png)
+![Before Lab 4 Alternate 1](images/net-beforelab4alt1.png)
 
 In this diagram, we are bypassing the DHCP server configured in Lab 3, and reverting our network back to using the VMware DHCP server. In addition, we are avoiding using our own DNS server running on the Ubuntu Server VM unless absolutely necessary. So, the following changes are made to the network from Lab 3:
 
@@ -46,7 +46,7 @@ However, if you are still having issues with your DNS entries or DNS servers not
 
 #### Lab 4 Alternative Network Setup - Option 2 (Hosts File Entries)
 
-![Before Lab 4 Alternate 2](../../images/net-beforelab4alt2.png)
+![Before Lab 4 Alternate 2](images/net-beforelab4alt2.png)
 
 In this diagram, we are bypassing the DHCP server configured in Lab 3, and reverting our network back to using the VMware DHCP server. In addition, we are avoiding using our own DNS server running on the Ubuntu Server VM unless absolutely necessary. Finally, we are adding entries to the `hosts` file on each system to bypass DNS completely, ensuring that we can still complete this lab even if our DNS systems are not working at all. So, the following changes are made to the network from Lab 3:
 

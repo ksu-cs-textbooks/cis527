@@ -8,7 +8,7 @@ pre: "18. "
 
 #### Resources
 
-* **[Slides]({{< relref "/1-secure-workstations/18-ubuntu-security-networking-slides.md" >}})**
+* **[Slides]({{% relref "/1-secure-workstations/18-ubuntu-security-networking-slides.md"  %}})**
 * [Networking, Web & Email](https://help.ubuntu.com/lts/ubuntu-help/net.html) from Ubuntu
 * [Networking](https://help.ubuntu.com/lts/serverguide/networking.html) from Ubuntu Server Guide
 * [Internet and Networking](https://help.ubuntu.com/community/InternetAndNetworking) from Ubuntu

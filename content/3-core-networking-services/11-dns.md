@@ -12,7 +12,7 @@ The examples in this video are for an old version of Lab 3, but should be instru
 
 #### Resources
 
-* **[Slides]({{< relref "/3-core-networking-services/11-dns-slides.md" >}})**
+* **[Slides]({{% relref "/3-core-networking-services/11-dns-slides.md"  %}})**
 * [Domain Name System (DNS)](https://en.wikipedia.org/wiki/Domain_Name_System) on Wikipedia
 * [List of DNS Record Types](https://en.wikipedia.org/wiki/List_of_DNS_record_types) on Wikipedia
 * [Domain Name System (DNS) History](https://www.livinginternet.com/i/iw_dns_history.htm) from Living Internet

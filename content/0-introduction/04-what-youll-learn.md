@@ -10,7 +10,7 @@ pre: "4. "
 
 #### Resources
 
-* [Slides]({{< relref "/0-introduction/04-what-youll-learn-slides.md" >}})
+* [Slides]({{% relref "/0-introduction/04-what-youll-learn-slides.md"  %}})
 * [Why Circuit City Busted, While Best Buy Boomed](http://content.time.com/time/business/article/0,8599,1858079,00.html)
 
 #### Video Script

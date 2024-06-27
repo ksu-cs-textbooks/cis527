@@ -8,7 +8,7 @@ pre: "3. "
 
 #### Resources
 
-* **[Slides]({{< relref "/1-secure-workstations/03-virtualization-vmware-slides.md" >}})**
+* **[Slides]({{% relref "/1-secure-workstations/03-virtualization-vmware-slides.md"  %}})**
 * [Virtualization](https://en.wikipedia.org/wiki/Virtualization) on Wikipedia
 * [Virtualization Whitepaper](https://www.vmware.com/pdf/virtualization.pdf) from VMware
 * [Accessing VMware Software](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) on CS Support

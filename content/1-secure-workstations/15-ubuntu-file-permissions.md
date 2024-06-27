@@ -8,7 +8,7 @@ pre: "15. "
 
 #### Resources
 
-* **[Slides]({{< relref "/1-secure-workstations/15-ubuntu-file-permissions-slides.md" >}})**
+* **[Slides]({{% relref "/1-secure-workstations/15-ubuntu-file-permissions-slides.md"  %}})**
 * [An Introduction to Linux File Permissions](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-permissions) from DigitalOcean
 * [File Permissions](https://help.ubuntu.com/community/FilePermissions) from Ubuntu
 * [Enable Open as Administrator on Ubuntu 18.04](https://websiteforstudents.com/enable-open-as-administrator-on-ubuntu-16-04-17-10-18-04/) from Website for Students

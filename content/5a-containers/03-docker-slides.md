@@ -6,7 +6,7 @@ hidden: true
 	<h2>CIS 527</h2><br><br><p>Lab 5.A - Docker</p>
 </section>
 <section>
-	<img class="stretch plain" src="/images/5a/docker_logo.svg">
+	<img class="stretch plain" src="/cis527/images/5a/docker_logo.svg">
 	<p class="imagecredit">Image Source: <a href="https://en.wikipedia.org/wiki/File:Docker_logo.svg">Wikipedia</a></p>
 </section>
 <section>

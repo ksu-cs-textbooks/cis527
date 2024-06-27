@@ -8,7 +8,7 @@ pre: "1. "
 
 #### Resources
 
-* **[Slides]({{< relref "/3-core-networking-services/01-introduction-slides.md" >}})**
+* **[Slides]({{% relref "/3-core-networking-services/01-introduction-slides.md"  %}})**
 
 #### Video Transcript
 

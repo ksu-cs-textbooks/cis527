@@ -8,7 +8,7 @@ pre: "10. "
 
 #### Resources
 
-* **[Slides]({{< relref "/3-core-networking-services/10-dhcp-slides.md" >}})**
+* **[Slides]({{% relref "/3-core-networking-services/10-dhcp-slides.md"  %}})**
 * [Dynamic Host Configuration Protocol (DHCP)](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) on Wikipedia
 * [Bootstrap Protocol (BOOTP)](https://en.wikipedia.org/wiki/Bootstrap_Protocol) on Wikipedia
 * [What is DHCP? (Dynamic Host Configuration Protocol)](https://www.lifewire.com/what-is-dhcp-2625848) from Lifewire

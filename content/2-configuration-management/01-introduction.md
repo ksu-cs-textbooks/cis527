@@ -14,7 +14,7 @@ _As of 2023, the Puppet Learning VM is no longer being maintained. The videos be
 
 #### Resources
 
-* **[Slides]({{< relref "/2-configuration-management/01-introduction-slides.md" >}})**
+* **[Slides]({{% relref "/2-configuration-management/01-introduction-slides.md"  %}})**
 
 #### Video Script
 

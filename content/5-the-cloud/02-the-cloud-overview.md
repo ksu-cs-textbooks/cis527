@@ -12,7 +12,7 @@ TODO _As of 2020, both KSIS and HRIS have moved to the cloud, leaving very few K
 
 #### Resources
 
-* **[Slides]({{< relref "/5-the-cloud/02-the-cloud-overview-slides.md" >}})**
+* **[Slides]({{% relref "/5-the-cloud/02-the-cloud-overview-slides.md"  %}})**
 * [Cloud Computing](http://en.wikipedia.org/wiki/Cloud_computing) on Wikipedia
 * [The Cloud/Electric Generator Analogy](https://www.informationweek.com/software/information-management/the-cloud-electric-generator-analogy/d/d-id/1075830) by Roger Smith from InformationWeek
 * [The Big Switch: Rewiring the World from Editson to Google](http://www.nicholascarr.com/?page_id=21/) by Nicholas Carr

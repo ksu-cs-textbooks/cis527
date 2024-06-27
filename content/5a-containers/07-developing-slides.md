@@ -62,7 +62,7 @@ CMD ["gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]</code></pre>
 </section>
 <section>
 	<h3>Develop in Docker</h3>
-    <img class="stretch plain" src="/images/5a/architecture-containers.png">
+    <img class="stretch plain" src="/cis527/images/5a/architecture-containers.png">
     <p class="imagecredit">Image Source: <a href="https://code.visualstudio.com/docs/remote/containers">Visual Studio Code</a></p>
 </section>
 <section>

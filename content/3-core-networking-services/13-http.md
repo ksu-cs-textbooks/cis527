@@ -8,7 +8,7 @@ pre: "13. "
 
 #### Resources
 
-* **[Slides]({{< relref "/3-core-networking-services/13-http-slides.md" >}})**
+* **[Slides]({{% relref "/3-core-networking-services/13-http-slides.md"  %}})**
 * [Hypertext Transfer Protocol (HTTP)](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) on Wikipedia
 
 #### Video Transcript

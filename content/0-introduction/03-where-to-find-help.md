@@ -12,9 +12,9 @@ pre: "3. "
 
 #### Resources
 
-* [Slides]({{< relref "/0-introduction/03-where-to-find-help-slides.md" >}})
+* [Slides]({{% relref "/0-introduction/03-where-to-find-help-slides.md"  %}})
 * [K-State IT Help Desk](https://www.k-state.edu/its/helpdesk/) - Email [helpdesk@ksu.edu](mailto:helpdesk@ksu.edu)
-* [Syllabus]({{<ref "0-introduction/05-syllabus">}})
+* [Syllabus]({{% ref "0-introduction/05-syllabus" %}})
 * [K-State Canvas Help](https://canvas.k-state.edu/info/help/)
 * [Instructure Canvas Guides](https://community.canvaslms.com/community/answers/guides)
 * [K-State Libraries](http://www.lib.k-state.edu/)

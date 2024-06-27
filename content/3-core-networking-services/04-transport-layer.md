@@ -8,7 +8,7 @@ pre: "4. "
 
 #### Resources
 
-* **[Slides]({{< relref "/3-core-networking-services/04-transport-layer-slides.md" >}})**
+* **[Slides]({{% relref "/3-core-networking-services/04-transport-layer-slides.md"  %}})**
 * [The TCP/IP Guide](http://www.tcpipguide.com/free/index.htm)
 * [Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) on Wikipedia
 * [User Datagram Protocol](https://en.wikipedia.org/wiki/User_Datagram_Protocol) on Wikipedia

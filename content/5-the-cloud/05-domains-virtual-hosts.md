@@ -8,8 +8,8 @@ pre: "5. "
 
 #### Resources
 
-* **[Slides]({{< relref "/5-the-cloud/05-domains-virtual-hosts-slides.md" >}})**
-* **[Core Networking Services - DNS]({{< relref "/3-core-networking-services/11-dns" >}})**
+* **[Slides]({{% relref "/5-the-cloud/05-domains-virtual-hosts-slides.md"  %}})**
+* **[Core Networking Services - DNS]({{% relref "/3-core-networking-services/11-dns"  %}})**
 * **[Student Developer Pack](https://education.github.com/pack) from GitHub Education**
 * [How To Install the Apache Web Server on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04) from DigitalOcean
 * [DNS Overview](https://docs.digitalocean.com/products/networking/dns/) from DigitalOcean

@@ -61,7 +61,7 @@ docker run -d -p 3000:3000 getting-started</code></pre>
 <section>
 	<h3>Step 6 - Scan Image</h3>
 	<pre><code class="bash">docker scan getting-started</code></pre>
-    <img class="stretch plain" src="/images/5a/docker-vuln.png">
+    <img class="stretch plain" src="/cis527/images/5a/docker-vuln.png">
 </section>
 <section>
 	<h3>Step 7 - Cached Layers</h3>

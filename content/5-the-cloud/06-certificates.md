@@ -14,8 +14,8 @@ TODO _The video below installs certbot from a PPA, but Ubuntu 22.04 includes cer
 
 #### Resources
 
-* **[Slides]({{< relref "/5-the-cloud/06-certificates-slides.md" >}})**
-* **[Core Networking Services - Security]({{< relref "/3-core-networking-services/15-security" >}})**
+* **[Slides]({{% relref "/5-the-cloud/06-certificates-slides.md"  %}})**
+* **[Core Networking Services - Security]({{% relref "/3-core-networking-services/15-security"  %}})**
 * [Public Key Certificate](https://en.wikipedia.org/wiki/Public_key_certificate) from Wikipedia
 * [Certbot](https://certbot.eff.org/) from the Electronic Frontier Foundation (EFF)
 * [How To Secure Apache with Let's Encrypt on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-22-04) from DigitalOcean

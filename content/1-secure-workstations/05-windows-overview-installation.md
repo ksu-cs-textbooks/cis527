@@ -10,7 +10,7 @@ pre: "5. "
 
 #### Resources
 
-* **[Slides]({{< relref "/1-secure-workstations/05-windows-overview-installation-slides.md" >}})**
+* **[Slides]({{% relref "/1-secure-workstations/05-windows-overview-installation-slides.md"  %}})**
 * [How to Get Windows 10](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) from Microsoft Azure Portal via CS Support
 * [How to Install VMware Tools](https://kb.vmware.com/s/article/1014294) from VMware
 * [Windows 10 Overview](https://www.microsoft.com/en-us/windows/features) from Microsoft

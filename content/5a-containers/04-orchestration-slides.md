@@ -15,7 +15,7 @@ hidden: true
 	</ul>
 </section>
 <section>
-	<img class="stretch plain" src="/images/5a/docker-swarm.png.webp">
+	<img class="stretch plain" src="/cis527/images/5a/docker-swarm.png.webp">
 	<p class="imagecredit">Image Source: <a href="https://devopscube.com/docker-container-clustering-tools/">DevopsCube</a></p>
 </section>
 <section>

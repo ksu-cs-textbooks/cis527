@@ -8,7 +8,7 @@ pre: "4. "
 
 #### Resources
 
-* **[Slides]({{< relref "/6-application-servers/04-file-servers-overview-slides.md" >}})**
+* **[Slides]({{% relref "/6-application-servers/04-file-servers-overview-slides.md"  %}})**
 * [Standard RAID Levels](https://en.wikipedia.org/wiki/Standard_RAID_levels) on Wikipedia
 * [Nested RAID Levels](https://en.wikipedia.org/wiki/Nested_RAID_levels)on Wikipedia
 * [Parity](http://crystalclearmaths.com/videos-learning-resources/fun-stuff/parity/) from Crystal Clear Mathematics

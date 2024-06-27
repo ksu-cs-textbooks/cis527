@@ -8,7 +8,7 @@ pre: "8. "
 
 #### Resources
 
-* **[Slides]({{< relref "/6-application-servers/08-database-servers-slides.md" >}})**
+* **[Slides]({{% relref "/6-application-servers/08-database-servers-slides.md"  %}})**
 * [5 Tips for Managing Database Servers in Production](https://blog.cloud66.com/5-tips-for-managing-database-servers-in-production/) from Cloud 66
 * [10 Essential Performance Tips for MySQL](https://www.infoworld.com/article/3210905/sql/10-essential-performance-tips-for-mysql.html) by Baron Schwartz on InfoWorld
 * [10 Easy Tips for Better SQL Server Performance](https://www.itprotoday.com/sql-server/10-easy-tips-better-sql-server-performance) from ITPro Today

@@ -8,7 +8,7 @@ pre: "16. "
 
 #### Resources
 
-* **[Slides]({{< relref "/1-secure-workstations/16-ubuntu-processes-services-slides.md" >}})**
+* **[Slides]({{% relref "/1-secure-workstations/16-ubuntu-processes-services-slides.md"  %}})**
 * [How to Use ps, kill, and nice to Manage Processes in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux) from DigitalOcean
 * [Daemon (Computing)](https://en.wikipedia.org/wiki/Daemon_(computing)) from Wikipedia
 * [How to Manage systemd Services on a Linux System](https://www.howtogeek.com/216454/how-to-manage-systemd-services-on-a-linux-system/) from How-To Geek

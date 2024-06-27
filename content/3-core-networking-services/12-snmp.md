@@ -10,7 +10,7 @@ pre: "12. "
 
 #### Resources
 
-* **[Slides]({{< relref "/3-core-networking-services/12-snmp-slides.md" >}})**
+* **[Slides]({{% relref "/3-core-networking-services/12-snmp-slides.md"  %}})**
 * [Simple Network Management Protocol (SNMP)](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol) on Wikipedia
 * [MIB Reference](http://www.simpleweb.org/ietf/mibs/) from SimpleWeb
 * [SNMPv2 MIB Reference](https://www.alvestrand.no/objectid/1.3.6.1.2.1.html) from Harald T. Alvestrand

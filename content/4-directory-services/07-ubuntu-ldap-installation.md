@@ -22,8 +22,8 @@ PHPLDAPAdmin no longer works on Ubuntu 22.04 since it has several incompatibilit
 * [How To Install and Configure OpenLDAP and phpLDAPadmin on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04) from DigitalOcean (works for 22.04 as well, but PHPLDAPAdmin is not working on PHP 8.1 - use the new LDAP Account Manager instead)
 * [LDAP & TLS](https://ubuntu.com/server/docs/service-ldap-with-tls) from the Ubuntu Server Guide
 * [How Does HTTPS Work](https://www.youtube.com/watch?v=T4Df5_cojAs) from kubucation on YouTube (a good overview of CAs and certificates)
-* **[Core Networking Services - Security]({{< relref "/3-core-networking-services/15-security" >}})**
-* **[The Cloud - Certificates]({{< relref "/5-the-cloud/06-certificates" >}})**
+* **[Core Networking Services - Security]({{% relref "/3-core-networking-services/15-security"  %}})**
+* **[The Cloud - Certificates]({{% relref "/5-the-cloud/06-certificates"  %}})**
 
 #### Video Transcript
 
