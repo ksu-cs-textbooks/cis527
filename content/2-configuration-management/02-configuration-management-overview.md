@@ -13,8 +13,7 @@ pre: "2. "
 * [Configuration Management](https://puppet.com/solutions/configuration-management) from Puppet
 * [Modern Configuration Management: Configuration as Code](https://www.chef.io/configuration-management/) from Chef
 * [Use Case: Configuration Management](https://www.ansible.com/use-cases/configuration-management) from Ansible
-* [Configuration Management](https://www.mitre.org/publications/systems-engineering-guide/acquisition-systems-engineering/configuration-management) from MITRE Systems Engineering Guide
-* [SaltStack Enterprise](https://saltstack.com/saltstack-enterprise/) from SaltStack
+* [Configuration Management](https://www.mitre.org/sites/default/files/2022-09/MITRE-SEG.pdf) from MITRE Systems Engineering Guide
 * [DevOps](https://en.wikipedia.org/wiki/DevOps) on Wikipedia
 * [What Is DevOps?](https://theagileadmin.com/what-is-devops/) From The Agile Admin
 * [What is this DevOps Thing, Anyway?](http://www.jedi.be/blog/2010/02/12/what-is-this-devops-thing-anyway/) From Just Enough Developed Infrastructure (JEDI)
