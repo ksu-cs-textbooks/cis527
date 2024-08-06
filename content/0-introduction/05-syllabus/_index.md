@@ -22,7 +22,7 @@ _This syllabus covers both courses. They are taught using the same content._
 
 ### Teaching Assistant
 
-* Josh Barron (jrbarron AT ksu DOT edu) - Office Hours by appointment
+* Josh Barron (jrbarron AT ksu DOT edu) - Office Hours by appointment. Schedule a meeting at [https://calendly.com/joshbarron2222](https://calendly.com/joshbarron2222)
 
 #### Preferred Methods of Communication:
 

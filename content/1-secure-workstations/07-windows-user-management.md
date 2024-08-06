@@ -9,8 +9,9 @@ pre: "7. "
 #### Resources
 
 * **[Slides]({{% relref "/1-secure-workstations/07-windows-user-management-slides.md"  %}})**
-* [How to Manage Microsoft and User Accounts in Windows 10](https://www.windowscentral.com/how-manage-user-accounts-settings-windows-10) from Windows Central
-* [How to Set Up and Configure User Accounts on Windows 10](https://www.howtogeek.com/224847/how-to-set-up-and-configure-user-accounts-on-windows-10/) from How-To Geek
+* [Manage User Accounts in Windows](https://support.microsoft.com/en-us/windows/manage-user-accounts-in-windows-104dc19f-6430-4b49-6a2b-e4dbd1dcdf32) from Microsoft
+* [How to manage user account settings on Windows 11](https://www.windowscentral.com/software-apps/windows-11/how-to-manage-user-account-settings-on-windows-11) from Windows Central
+* [Understanding and Managing User Accounts in Windows 11](https://geekflare.com/user-accounts-in-windows-11/) from Geekflare
 * [The Geek's Way of Managing User Accounts and Groups in Windows](https://www.digitalcitizen.life/geeks-way-managing-user-accounts-and-groups?utm_source=7tutorials.com&utm_medium=redirect&utm_campaign=7_Tutorials_Redirect) from Digital Citizen
 
 #### Video Script

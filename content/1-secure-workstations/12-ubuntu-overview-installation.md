@@ -14,10 +14,8 @@ pre: "12. "
 * [VMware/Tools](https://help.ubuntu.com/community/VMware/Tools) from Ubuntu
 * [Ubuntu Features](https://www.ubuntu.com/desktop/features) from Ubuntu
 * [Ubuntu Desktop Guide](https://help.ubuntu.com/lts/ubuntu-help/index.html) from Ubuntu
-* [Ubuntu Server Guide](https://help.ubuntu.com/lts/serverguide/index.html) from Ubuntu
+* [Ubuntu Server Guide](https://ubuntu.com/server/docs) from Ubuntu
 * [Switching to Ubuntu](https://help.ubuntu.com/community/SwitchingToUbuntu) from Ubuntu
-* [Know Thy Ubuntu](https://help.ubuntu.com/community/KnowThyUbuntu) from Ubuntu
-* [Ubuntu 22.04 LTS (Jammy Jellyfish) Download](http://mirror.cis.ksu.edu/ubuntu-releases/jammy/) from CS Ubuntu Mirror
 * [Linux Distribution Timeline](https://commons.wikimedia.org/wiki/File:Linux_Distribution_Timeline.svg) from Wikipedia
 * [Desmond Tutu on Ubuntu](https://www.youtube.com/watch?v=ftjdDOfTzbk) from YouTube
 
@@ -50,7 +48,7 @@ The first major release of Ubuntu was known as Ubuntu 4.10 - Warty Warthog. Each
 The most recent version, Focal Fossa, is the current LTS version and the one we'll be using in this class.
 
 {{% notice note %}}
-_Of course, many new Ubuntu versions may have been released since this video was recorded. However, we'll stick with the 20.04 LTS version, Focal Fossa, since it will be maintained for many years. --Russ_
+_Of course, many new Ubuntu versions may have been released since this video was recorded. --Russ_
 {{% /notice %}}
 
 Now, let's go through the process of installing Ubuntu in a virtual machine. At this point, I'm assuming you have already installed VMware Workstation or another virtualization software on your computer. If not, I recommend doing so before continuing.

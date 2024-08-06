@@ -11,8 +11,7 @@ pre: "16. "
 * **[Slides]({{% relref "/1-secure-workstations/16-ubuntu-processes-services-slides.md"  %}})**
 * [How to Use ps, kill, and nice to Manage Processes in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux) from DigitalOcean
 * [Daemon (Computing)](https://en.wikipedia.org/wiki/Daemon_(computing)) from Wikipedia
-* [How to Manage systemd Services on a Linux System](https://www.howtogeek.com/216454/how-to-manage-systemd-services-on-a-linux-system/) from How-To Geek
-* [Systemd for Upstart Users](https://wiki.ubuntu.com/SystemdForUpstartUsers) from Ubuntu
+* [How To Use Systemctl to Manage Systemd Services and Units](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units) from DigitalOcean
 
 #### Video Script
 

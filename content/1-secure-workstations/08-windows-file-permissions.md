@@ -13,7 +13,7 @@ _See the warning in the video script below for a correction that is not present 
 #### Resources
 
 * [File and Folder Permissions](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb727008(v=technet.10)) from Microsoft
-* [How to Understand Those Confusing Windows 7 File/Share Permissions](https://www.howtogeek.com/72718/how-to-understand-those-confusing-windows-7-fileshare-permissions/) from How-To Geek
+* [How to Understand Those Confusing Windows 7 File/Share Permissions](https://www.howtogeek.com/72718/how-to-understand-those-confusing-windows-7-fileshare-permissions/) from How-To Geek (applies to Windows 11)
 * [How to Take Ownership and Change Permissions of Files and Folders](https://www.digitalcitizen.life/take-ownership-and-change-permissions-files-and-folders) from Digital Citizen
 * [Advanced Security Audit Policy Settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/advanced-security-audit-policy-settings) from Microsoft
 

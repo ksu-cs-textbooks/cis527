@@ -11,18 +11,16 @@ pre: "5. "
 #### Resources
 
 * **[Slides]({{% relref "/1-secure-workstations/05-windows-overview-installation-slides.md"  %}})**
-* [How to Get Windows 10](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) from Microsoft Azure Portal via CS Support
+* [How to Get Windows 11](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) from Microsoft Azure Portal via CS Support
 * [How to Install VMware Tools](https://kb.vmware.com/s/article/1014294) from VMware
-* [Windows 10 Overview](https://www.microsoft.com/en-us/windows/features) from Microsoft
+* [Windows 11 Overview](https://www.microsoft.com/en-us/windows/windows-11?r=1) from Microsoft
+* [Windows 11 Overview for System Administrators](https://learn.microsoft.com/en-us/windows/whats-new/windows-11-overview) from Microsoft
 * [Microsoft Windows Version History](https://en.wikipedia.org/wiki/Microsoft_Windows_version_history) from Wikipedia
-* [Windows 10 for Windows 7 Users](https://www.howtogeek.com/219034/here%E2%80%99s-what%E2%80%99s-different-about-windows-10-for-windows-7-users/) from How-To Geek
-* [Windows 10 for Windows 8 Users](https://www.howtogeek.com/219098/heres-whats-different-about-windows-10-for-windows-8-users/) from How-To Geek
-* [Windows 10 Help](https://support.microsoft.com/en-us/products/windows?os=windows-10) from Microsoft
-* [Windows 10 Wiki](https://social.technet.microsoft.com/wiki/contents/articles/31032.windows-10-portal.aspx) from Microsoft TechNet
+* [Windows 11 Help](https://support.microsoft.com/en-us/windows) from Microsoft
 * [Windows 10 Architecture](https://social.technet.microsoft.com/wiki/contents/articles/31048.architecture-of-windows-10.aspx) from Microsoft TechNet
-* [Windows 10 ISO Downloads](https://www.microsoft.com/en-us/software-download/windows10) from Microsoft
+* [Windows 11 ISO Downloads](https://www.microsoft.com/en-us/software-download/windows11) from Microsoft
   - _Warning: May not work with keys from the Microsoft Imagine store! Use the downloads from the store instead._
-* [Operating System Market Share](https://netmarketshare.com/operating-system-market-share.aspx?options=%7B%22filter%22%3A%7B%22%24and%22%3A%5B%7B%22deviceType%22%3A%7B%22%24in%22%3A%5B%22Desktop%2Flaptop%22%5D%7D%7D%5D%7D%2C%22dateLabel%22%3A%22Trend%22%2C%22attributes%22%3A%22share%22%2C%22group%22%3A%22platform%22%2C%22sort%22%3A%7B%22share%22%3A-1%7D%2C%22id%22%3A%22platformsDesktop%22%2C%22dateInterval%22%3A%22Monthly%22%2C%22dateStart%22%3A%222017-08%22%2C%22dateEnd%22%3A%222018-07%22%2C%22segments%22%3A%22-1000%22%7D) from Net Market Share
+* [Operating System Market Share](https://gs.statcounter.com/os-market-share) from Statcounter
 * [How to Add Fast Forward Effect | Davinci Resolve 14 Tutorial](https://www.youtube.com/watch?v=pbiIf44yUMo) from Chris' Tutorials on YouTube
 
 #### Video Script

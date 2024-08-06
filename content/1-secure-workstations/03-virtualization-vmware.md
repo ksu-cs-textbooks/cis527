@@ -10,7 +10,7 @@ pre: "3. "
 
 * **[Slides]({{% relref "/1-secure-workstations/03-virtualization-vmware-slides.md"  %}})**
 * [Virtualization](https://en.wikipedia.org/wiki/Virtualization) on Wikipedia
-* [Virtualization Whitepaper](https://www.vmware.com/pdf/virtualization.pdf) from VMware
+* [Virtualization Whitepaper](https://docs.broadcom.com/doc/12358179) from Broadcom
 * [Accessing VMware Software](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) on CS Support
 
 #### Video Script

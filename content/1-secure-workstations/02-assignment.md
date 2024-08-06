@@ -3,6 +3,7 @@ title: "Assignment"
 weight: 10
 pre: "2. "
 ---
+
 {{% notice warning %}}
 This is the assignment page for Lab 1. It is placed before the rest of the module's content so you may begin working on it as you review the content. Click **Next** below to continue to the rest of the module.
 {{% /notice %}}
@@ -32,19 +33,18 @@ This lab is written with the expectation that most students will be using **VMwa
 If you are using another virtualization platform, you may have to adapt these instructions to fit. If you are unsure about any specification and how it applies to your setup, please contact the instructor.
 
 You will also need installation media for the following operating systems:
-* **Windows 10 Version 22H2** or later - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
-  * Look for **Windows 10 Education, version 22H2** on the list of software available on the Azure Dev Tools site.
-  * File Name: `en-us_windows_10_consumer_editions_version_22h2_x64_dvd_8da72ab3.iso`
-  * SHA 256 Hash: `f41ba37aa02dcb552dc61cef5c644e55b5d35a8ebdfac346e70f80321343b506`
+* **Windows 11 Version 23H2** or later - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
+  * Look for **Windows 11 Education, Version 23H2** on the list of software available on the Azure Dev Tools site.
+  * File Name: `en-us_windows_11_consumer_editions_version_23h2_x64_dvd_8ea907fb.iso`
+  * SHA 256 Hash: `71a7ae6974866603d366a911b0c00eace476e0b49d12205d7529765cc50b4b39`
   * _Your file may vary as Microsoft constantly updates these installers._
-  * _You may choose to upgrade to a later version of Windows 10 while installing updates._
-  * _You may choose to use Windows 11 for this course. The instructions shown in the course may not exactly match Windows 11 so adaptation may be necessary. Contact the instructor if you have any questions or run into issues._
-* **Ubuntu 22.04 LTS (Jammy Jellyfish)** or later - Download from [Ubuntu](https://ubuntu.com/download) or the [K-State CS Mirror](https://mirror.cs.ksu.edu/ubuntu-releases/jammy/)
-  * File Name: `ubuntu-22.04.3-desktop-amd64.iso`
-  * SHA 256 Hash: `a435f6f393dda581172490eda9f683c32e495158a780b5a1de422ee77d98e909`
-  * _If a point release is available (ex: 22.04.4), feel free to us that version. **Do not upgrade to a newer LTS or non-LTS release** such as Ubuntu 23.04, as those versions may have significant changes that are not covered in these assignments._
+  * _You may choose to upgrade to a later version of Windows 11 while installing updates._
+* **Ubuntu 24.04 LTS (Noble Numbat)** or later - Download from [Ubuntu](https://ubuntu.com/download), an official [Ubuntu Mirror](https://launchpad.net/ubuntu/+cdmirrors) (this is usually the fastest option), or the [K-State CS Mirror](https://mirror.cs.ksu.edu/ubuntu-releases/noble/) (this is great if you are on campus).
+  * File Name: `ubuntu-24.04-desktop-amd64.iso`
+  * SHA 256 Hash: `81fae9cc21e2b1e3a9a4526c7dad3131b668e346c580702235ad4d02645d9455`
+  * _If a point release is available (ex: 24.04.1), feel free to us that version. **Do not upgrade to a newer LTS or non-LTS release** such as Ubuntu 24.10, as those versions may have significant changes that are not covered in these assignments._
 
-{{% notice note %}}
+{{% notice note "Prior Versions" %}}
 The original course materials were developed for Windows 10 Version 1803 and Ubuntu 18.04 LTS. Some course materials may still show the older versions. Students should use the software versions listed in bold above if at all possible, as these assignments have been verified using those versions. If not, please contact the instructor for alternative options. If you find any errors or issues using the updated versions of these systems, please contact the instructor. 
 {{% /notice %}}
 
@@ -52,13 +52,13 @@ The original course materials were developed for Windows 10 Version 1803 and Ubu
 
 ### Task 0: Install Virtualization Software
 
-Install the virtualization software platform of your choice. It must support using Windows 10 and Ubuntu 22.04 as a guest OS. In general, you'll need the latest version of the software. 
+Install the virtualization software platform of your choice. It must support using Windows 11 and Ubuntu 24.04 as a guest OS. In general, you'll need the latest version of the software. 
 
 **VMware Workstation** or **VMware Fusion** is recommended and available free of charge on the [VMware Store](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) open to all K-State CS students.
 
 You may need to install the latest version available for download and then update it within the software to get to the absolute latest version that supports the latest guest OS versions.
 
-{{% notice info info-123 "VMWare Licenses" %}}
+{{% notice info "VMWare Licenses" %}}
 
 _Unfortunately, the process for getting VMWare licenses changed in 2022, so we have to manually request access for a class. If you have issues accessing this site and getting a license, it is likely that I forgot to send in that request. Please email me and remind me so I can get that done! - Russ_
 
@@ -66,50 +66,60 @@ _Unfortunately, the process for getting VMWare licenses changed in 2022, so we h
 
 ---
 
-### Task 1: Create a Windows 10 Virtual Machine
+### Task 1: Create a Windows 11 Virtual Machine
 
-Create a new virtual machine for Windows 10. It should have 60 GB of storage available. If given the option, do not pre-allocate the storage, but do allow it to be separated into multiple files. This will make the VM easier to work with down the road. It should also have at least 2 GB of RAM. You may allocate more RAM if desired. You may also allocate additional CPU cores for better performance if desired. 
+Create a new virtual machine for Windows 11. It should have 60 GB of storage available. If given the option, do not pre-allocate the storage, but do allow it to be separated into multiple files. This will make the VM easier to work with down the road. It should also have at least 2 GB of RAM. You may allocate more RAM if desired. You may also allocate additional CPU cores for better performance if desired. 
 
-Install Windows 10 in that virtual machine to a single partition. You may use the express settings when configuring Windows. **Do not use a Microsoft account to sign in!** Instead, create a local (non-Microsoft) account as defined below. You may also be asked to set the computer name, which is given below.
+Install Windows 11 in that virtual machine to a single partition. You may use the express settings when configuring Windows. **Do not use a Microsoft account to sign in!** Instead, create a local (non-Microsoft) account as defined below. You may also be asked to set the computer name, which is given below.
 
 {{% notice note %}}
-Windows 10 Version 1903 has made it more difficult to create a local account when installing. See the video later in this module for instructions or refer to this guide from [How-To Geek](https://www.howtogeek.com/442792/how-to-create-a-local-account-while-setting-up-windows-10/)
+
+Windows 11 has made it **even more** difficult to create a local account when installing. A video in this chapter discusses the process for Windows 10, but an extra step is now needed for Windows 11. Refer to this guide from [Tom's Hardware](https://www.tomshardware.com/how-to/install-windows-11-without-microsoft-account). Notice on that page that the command used in step 3 is `OOBE\BYPASSNRO` (without a space).
+
 {{% /notice %}}
 
-### Task 2: Configure Windows 10
+---
 
-Configure the Windows 10 Virtual Machine as specified below.
+### Task 2: Configure Windows 11
 
-* **Computer Name:** `cis527w-<your eID>` (example: `cis527w-russfeld`)
-{{% notice info %}}
+Configure the Windows 11 Virtual Machine as specified below.
+
+* **Computer Name:** `cis527w-<your eID>` (example: `cis527w-russfeld`) {{% notice info "Don't Forget To Set Computer Name!" %}}
 _This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. A majority of students have missed this step in previous semesters, so don't forget! The computer name must be changed **after** the Windows installation is complete --Russ_
 {{% /notice %}}
-* **Primary User Account:** Username: `cis527` |  Password: `cis527_windows` (Member of Administrators & Users groups)
+
+* **Primary User Account:** 
+  - Username: `cis527` |  Password: `cis527_windows` 
+  - It should be a member of Administrators & Users groups
+
 * **Other User Accounts:**
-  - `AdminUser` | `AdminPassword123` (Administrators & Users group)
-  - `NormalUser` | `NormalPassword123` (Users group)
-  - `GuestUser` | `GuestPassword123` (Guests group only)
-  - `EvilUser` | `EvilPassword123` (Users group)
+  - `AdminAccount` | `AdminPassword123` (Administrators & Users group)
+  - `NormalAccount` | `NormalPassword123` (Users group)
+  - `GuestAccount` | `GuestPassword123` (Guests group only)
+  - `EvilAccount` | `EvilPassword123` (Users group)
+
 * **Install Software**
   - [VMware Tools](https://kb.vmware.com/s/article/1014294)
   - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
   - [Mozilla Thunderbird](https://www.thunderbird.net/en-US/)
   - [IIS Web Server](https://www.howtogeek.com/112455/how-to-install-iis-8-on-windows-8/)
   - [Notepad++](https://notepad-plus-plus.org/)
-  - [BGInfo](https://docs.microsoft.com/en-us/sysinternals/downloads/bginfo) _Download the Bginfo.exe file and place it on the cis527 user's desktop. It does not have an installation program. Run it once to see what it does!_
+  - [BGInfo](https://docs.microsoft.com/en-us/sysinternals/downloads/bginfo) 
+     - _Download the Bginfo.exe file and place it on the cis527 user's desktop. It does not have an installation program. Run it once to see what it does!_
   - Verify Windows Defender is running. It should be installed by default.
+
 * **Configure Firewall**
   - Make sure Windows Firewall is enabled
-  - Allow all incoming connections to port 80 (for IIS)
-  {{% notice tip %}}
+  - Allow all incoming connections to port 80 (for IIS) {{% notice tip %}}
+
 You can test this by accessing the Windows VM IP Address from Firefox running on your Ubuntu VM, provided they are on the same virtual network.
 {{% /notice %}}
-* **Install Windows Updates:** Run Windows Update and reboot as necessary until all available updates are installed.
-* **Automatic Updates:** Make sure the system is set to download and install security updates automatically.
 
-{{% notice note %}}
-Even though you may have installed a particular version of Windows, such as 22H2, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. Keep going until you are sure there are no more updates to be found.
+* **Install Windows Updates:** Run Windows Update and reboot as necessary until all available updates are installed. {{% notice note "Multiple Updates Required!" %}}
+Even though you may have installed a particular version of Windows, such as 23H2, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. Keep going until you are sure there are no more updates to be found.
 {{% /notice %}}
+
+* **Automatic Updates:** Make sure the system is set to download and install security updates automatically.
 
 ### Task 3: Windows Files & Permissions
 
@@ -117,51 +127,59 @@ Even though you may have installed a particular version of Windows, such as 22H2
 _Read the whole task before you start! You have been warned. --Russ_
 {{% /notice %}}
 
-* Create the folder `C:\docs`. It should be owned by the `cis527` account, but make sure all other users can read and write to that folder.
-* Within `C:\docs`, create a folder for each user created during task 2 except for `cis527`, with the folder name matching the user's name.
-* Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
-* - Create a group containing `cis527` and `AdminUser`, and set permissions on `C:\docs` for that group to have full access to each folder created in `C:\docs`.
-{{% notice tip %}}
+* Create the folder `C:\cis527`. It should be owned by the `cis527` account, but make sure all other users can read and write to that folder.
+
+* Within `C:\cis527`, create a folder for each user created during task 2 except for `cis527`, with the folder name matching the user's name. Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
+  - For example, user `AdminAccount` should have a folder `C:\cis527\AdminAccount` and have full ownership and permissions on that folder.
+
+* Create a group named `AdminGroup` containing `cis527` and `AdminAccount`, and set permissions on `C:\cis527` for that group to have full access to each folder created in `C:\cis527`. 
+  - In this example, the folder `AdminAccount` should still be owned by `AdminAccount` and that account should have explicit full access, but the `AdminGroup` group should _also_ have full access to that folder.
+  - No other user should be able to access any other user's folder. For example, `EvilAccount` cannot access `GuestAccount`'s folder, but `AdminAccount` and `cis527` can, as well as `GuestAccount`, who is also the owner of its own folder. {{% notice tip %}}
 When you create a group and add a user to that group, it does not take effect until you reboot the computer.
 {{% /notice %}}
-* No other user should be able to access any other user's folder. For example, `EvilUser` cannot access `GuestUser`'s folder, but `AdminUser` and `cis527` can, as well as `GuestUser`, who is also the owner of its own folder.
-* In each subfolder of `C:\docs`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
-{{% notice tip %}}
-Use either the `cis527` or `AdminUser` account to create these files, then modify the owner and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the permissions auditing tab. Many students neglect this step, leaving the file owner incorrect.
+
+* In each subfolder of `C:\cis527`, create a text file. It should have the same owner and access permissions as the folder it is contained in. The name and contents of the text file are up to you. {{% notice tip %}}
+Use either the `cis527` or `AdminAccount` account to create these files, then modify the owner and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the permissions auditing tab. Many students neglect this step, leaving the file owner incorrect.
 {{% /notice %}}
+
 * **Don't remove the SYSTEM account or the built-in Administrator account's access from any of these files.** Usually this is as simple as not modifying their permissions from the defaults.
-* See [this screenshot](/images/lab1-image1.png) and [this screenshot](/images/lab1-image1a.png) for what these permissions should look like in PowerShell. This was created using the command `Run Get-ChildItem -Recurse | Get-Acl | Format-List` in PowerShell
+
+* See [this screenshot](/images/lab1-image1.png) and [this screenshot](/images/lab1-image1a.png) for what these permissions should look like in PowerShell. This was created using the command `Run Get-ChildItem -Recurse | Get-Acl | Format-List` in PowerShell. These screenshots are from an earlier version of this lab using different paths and usernames, but the permissions structure is the same.
 
 ---
 
-### Task 4: Create an Ubuntu 22.04 Virtual Machine
+### Task 4: Create an Ubuntu 24.04 Virtual Machine
 
-Create a new virtual machine for Ubuntu 22.04 Desktop. It should have 30 GB of storage available. If given the option, do not pre-allocate the storage, but do allow it to be separated into multiple files. This will make the VM easier to work with down the road. It should also have at least 2 GB of RAM. You may allocate more RAM if desired. You may also allocate additional CPU cores for better performance if desired. 
+Create a new virtual machine for Ubuntu 24.04 Desktop. It should have 30 GB of storage available. If given the option, do not pre-allocate the storage, but do allow it to be separated into multiple files. This will make the VM easier to work with down the road. It should also have at least 2 GB of RAM. You may allocate more RAM if desired. You may also allocate additional CPU cores for better performance if desired. 
 
 {{% notice note %}}
-_Ubuntu 22.04 seems to be really RAM hungry right now, so I recommend starting with 2 GB of RAM if you have 8 GB or more available on your system. The installer may freeze if you try to install with only 1 GB of RAM allocated. Once you have it installed, you may be able to reduce this at the expense of some performance if you are short on available RAM (as it will use swap space instead). In Ubuntu, swap should be enabled by default after you install it, but you can learn more about it and how to configure it [here](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04). When we get to Module 5 and discuss Ubuntu in the cloud, we'll come back to this and discuss the performance trade-offs in that scenario. --Russ_
+_Ubuntu 24.04 seems to be really RAM hungry right now, so I recommend starting with 2 GB of RAM if you have 8 GB or more available on your system. The installer may freeze if you try to install with only 1 GB of RAM allocated. Once you have it installed, you may be able to reduce this at the expense of some performance if you are short on available RAM (as it will use swap space instead). In Ubuntu, swap should be enabled by default after you install it, but you can learn more about it and how to configure it [here](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04). When we get to Module 5 and discuss Ubuntu in the cloud, we'll come back to this and discuss the performance trade-offs in that scenario. --Russ_
 {{% /notice %}}
 
-Install Ubuntu 22.04 Desktop in that virtual machine to a single partition. You may choose to use a minimal install when prompted. You will be asked to create a user account and set the computer name. Use the information given below.
+Install Ubuntu 24.04 Desktop in that virtual machine to a single partition. You may choose to use a minimal install when prompted. You will be asked to create a user account and set the computer name. Use the information given below.
 
 {{% notice tip %}}
 The Ubuntu installation will sometimes hang when rebooting after installation in a VM. If that happens, wait about 30 seconds, then click **VM > Power > Restart Guest** in VMware (or similar) to force a restart. It should not harm the VM.
 {{% /notice %}}
 
-### Task 5: Configure Ubuntu 22.04
+### Task 5: Configure Ubuntu 24.04
 
-Configure the Ubuntu 22.04 Virtual Machine as specified below.
+Configure the Ubuntu 24.04 Virtual Machine as specified below.
 
-* **Computer Name:** `cis527u-<your eID>` (example: `cis527u-russfeld`)
-{{% notice info %}}
+* **Computer Name:** `cis527u-<your eID>` (example: `cis527u-russfeld`) {{% notice info "Don't Forget To Set Computer Name!" %}}
 _This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. A majority of students have missed this step in previous semesters, so don't forget! You should be prompted for a computer name as part of the installation process, but it will try to auto-complete it based on the chosen username and must be changed. --Russ_
 {{% /notice %}}
-* **Primary User Account:** Username: `cis527` | Password: `cis527_linux` (Account should have Administrator type or be in the `sudo` group)
+
+* **Primary User Account:** 
+  - Username: `cis527` | Password: `cis527_linux` 
+  - The account should have Administrator type or be in the `sudo` group
+
 * **Other User Accounts:**
-  - `adminuser` | `AdminPassword123` (Administrator type or `sudo` group)
-  - `normaluser` | `NormalPassword123` (Normal type)
-  - `guestuser` | `GuestPassword123` (Normal type)
-  - `eviluser` | `EvilPassword123` (Normal type)
+  - `adminaccount` | `AdminPassword123` (Administrator type or `sudo` group)
+  - `normalaccount` | `NormalPassword123` (Normal type)
+  - `guestaccount` | `GuestPassword123` (Normal type)
+  - `evilaccount` | `EvilPassword123` (Normal type)
+
 * **Install Software**
   - Open VM Tools (`open-vm-tools-desktop`) (recommended) -OR- [VMware Tools](https://kb.vmware.com/s/article/1022525) (do not install both)
   - Mozilla Firefox (`firefox`)
@@ -170,13 +188,15 @@ _This is very important, as it allows us to track your virtual machine on the K-
   - Synaptic Package Manager (`synaptic`)
   - GUFW Firewall Management Utility (`gufw`)
   - ClamAV (`clamav`)
+
 * **Configure Firewall**
   - Make sure Ubuntu Firewall (use `ufw`, not `iptables`) is enabled
-  - Allow all incoming connections to port 80 (for Apache)
-{{% notice tip %}}
+  - Allow all incoming connections to port 80 (for Apache) {{% notice tip %}}
 You can test this by accessing the Ubuntu VM IP Address from Firefox on your Windows VM, provided they are on the same virtual network.
 {{% /notice %}}
+
 * **Install Updates:** Run system updates and reboot as necessary until all available updates are installed.
+
 * **Automatic Updates:** Configure the system to download and install security updates automatically each day.
 
 ### Task 6: Ubuntu Files & Permissions
@@ -185,19 +205,22 @@ You can test this by accessing the Ubuntu VM IP Address from Firefox on your Win
 _Read the whole task before you start! You have been warned. --Russ_
 {{% /notice %}}
 
-* Create a folder `/docs` (**at the root of the system, not in a user's home folder**). Any user may read or write to this folder, and it should be owned by `root:root` (user: `root`; group: `root`).
-* Within `/docs`, create a folder for each user created during task 5 except for `cis527`, with the folder name matching the user's name.
-* Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
-* Create a group and set permissions on each folder using that group to allow both `cis527` and `adminuser` to have full access to each folder created in `/docs`.
-{{% notice tip %}}
+* Create a folder `/cis527` (**at the root of the system, not in a user's home folder**). Any user may read or write to this folder, and it should be owned by `root:root` (user: `root`; group: `root`).
+
+* Within `/cis527`, create a folder for each user created during task 5 except for `cis527`, with the folder name matching the user's name. Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
+  - For example, user `adminaccount` should have a folder `/cis52/adminaccount` and have full ownership and permissions on that folder.
+
+* Create a group named `admingroup` and set permissions on each folder using that group to allow both `cis527` and `adminaccount` to have full access to each folder created in `/cis527`.
+  - In this example, the folder `adminaccount` should still be owned by `adminaccount` and that account should have explicit full access, but the `admingroup` group should _also_ have full access to that folder.
+  - No other user should be able to access any other user's folder. For example, `evilaccount` cannot access `guestaccount`'s folder, but `adminaccount` and `cis527` can, as well as `guestaccount`, who is also the owner of its own folder. {{% notice tip %}}
 When you create a group and add a user to that group, it does not take effect until you reboot the computer.
 {{% /notice %}}
-* No other user should be able to access any other user's folder. For example, `eviluser` cannot access `guestuser`'s folder, but `adminuser` and `cis527` can, as well as `guestuser`, who is also the owner of its own folder.
-* In each subfolder of `/docs`, create a text file. It should have the same access permissions as the folder it is contained in. The name and contents of the text file are up to you.
-{{% notice tip %}}
-Use either the `cis527` or `adminuser` account to create these files, then modify the owner, group, and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the `su` command to become that user in the terminal. Many students neglect this step, leaving the file owner incorrect.
+
+* In each subfolder of `/cis527`, create a text file. It should have the same owner and access permissions as the folder it is contained in. The name and contents of the text file are up to you. {{% notice tip %}}
+Use either the `cis527` or `adminaccount` account to create these files, then modify the owner, group, and permissions as needed. Verify that they can only be accessed by the correct users by logging in as each user and seeing what can and can't be accessed by that user, or by using the `su` command to become that user in the terminal. Many students neglect this step, leaving the file owner incorrect.
 {{% /notice %}}
-* See [this screenshot](images/lab1-image2.png) for what these permissions may look like in Terminal. This was created using the command `ls -lR` in the Linux terminal.
+
+* See [this screenshot](images/lab1-image2.png) for what these permissions may look like in Terminal. This was created using the command `ls -lR` in the Linux terminal. These screenshots are from an earlier version of this lab using different paths and usernames, but the permissions structure is the same.
 
 ---
 

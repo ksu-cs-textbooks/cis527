@@ -10,7 +10,7 @@ pre: "18. "
 
 * **[Slides]({{% relref "/1-secure-workstations/18-ubuntu-security-networking-slides.md"  %}})**
 * [Networking, Web & Email](https://help.ubuntu.com/lts/ubuntu-help/net.html) from Ubuntu
-* [Networking](https://help.ubuntu.com/lts/serverguide/networking.html) from Ubuntu Server Guide
+* [Networking](https://ubuntu.com/server/docs/introduction-to-networking) from Ubuntu Server Guide
 * [Internet and Networking](https://help.ubuntu.com/community/InternetAndNetworking) from Ubuntu
 * [UFW (Uncomplicated Firewall)](https://help.ubuntu.com/community/UFW) from Ubuntu
 * [GUFW (Graphical Interface for UFW)](https://help.ubuntu.com/community/Gufw) from Ubuntu
