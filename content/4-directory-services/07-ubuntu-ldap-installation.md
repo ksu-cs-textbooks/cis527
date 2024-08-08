@@ -12,15 +12,15 @@ pre: "7. "
 
 {{% notice note %}}
 
-PHPLDAPAdmin no longer works on Ubuntu 22.04 since it has several incompatibility issues with PHP 8+. The assignment is being updated to use the new LDAP Account Manager (LAM) software instead. The video above will be updated soon to include LAM instead of PHPLDAPAdmin
+PHPLDAPAdmin no longer works on Ubuntu 24.04 since it has several incompatibility issues with PHP 8+. The assignment has been updated to use the new LDAP Account Manager (LAM) software instead. You may ignore the part of this video showing how to configure PHPLDAPAdmin and instead refer to the guide linked from the assignment page to configure LAM.
 
 {{% /notice %}}
 
 #### Resources
 
-* [How to Install OpenLDAP on Ubuntu Server 22.04](https://www.techrepublic.com/article/how-to-install-openldap-ubuntu-server-22-04/) from TechRepublic
-* [How To Install and Configure OpenLDAP and phpLDAPadmin on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-openldap-and-phpldapadmin-on-ubuntu-16-04) from DigitalOcean (works for 22.04 as well, but PHPLDAPAdmin is not working on PHP 8.1 - use the new LDAP Account Manager instead)
-* [LDAP & TLS](https://ubuntu.com/server/docs/service-ldap-with-tls) from the Ubuntu Server Guide
+* [How to Install OpenLDAP on Ubuntu 22.04](https://www.howtoforge.com/how-to-install-openldap-on-ubuntu-22-04/) from HowToForge (works for Ubuntu 24.04)
+  * Note: In this document, you can skip the steps of manually adding groups and users to LDAP before install LDAP Account Manager. Once LAM is configured, it will automatically add the default OUs for groups and users. 
+* [LDAP & TLS](https://ubuntu.com/server/docs/ldap-and-transport-layer-security-tls) from the Ubuntu Server Guide
 * [How Does HTTPS Work](https://www.youtube.com/watch?v=T4Df5_cojAs) from kubucation on YouTube (a good overview of CAs and certificates)
 * **[Core Networking Services - Security]({{% relref "/3-core-networking-services/15-security"  %}})**
 * **[The Cloud - Certificates]({{% relref "/5-the-cloud/06-certificates"  %}})**
@@ -53,7 +53,7 @@ That should complete the configuration for the OpenLDAP server. For this example
 
 ---
 
-Next, I'm going to configure `phpldapadmin` on this server. It is a useful web interface for managing your OpenLDAP server. We can install it using `apt`:
+<!--Next, I'm going to configure `phpldapadmin` on this server. It is a useful web interface for managing your OpenLDAP server. We can install it using `apt`:
 
 ```bash
 sudo apt install phpldapadmin
@@ -83,7 +83,7 @@ Once we've loaded the interface, we'll need to add a few items to make this serv
 To begin, I'll click on the "ou=users" link on the left, then the "Create a child entry" link on the right. I'll choose the "Generic: User Account" template next. On this page, I'll enter the information for my user account. Note that the "Common Name" field must be unique, so it is a good idea to input the user's username here, instead of the default of their first and last name. I'll leave the home directory as the default, choose the "admin" group, and the Bash login shell. Finally, I'll enter a password, and click the "Create Object" button to create it. Once it is created, I'll edit the UID number to be 10000 instead of 1000. This is very important, because by default accounts on Ubuntu start at UID 1000, so this could create a UID conflict.
 
 
---- 
+--- -->
 
 Finally, let's add some encryption to this server to protect the information shared across the network. This step was not required in previous versions of this lab, but it has always been a good idea. Now that Ubuntu uses SSSD, or System Security Services Daemon, for authentication, it requires us to provide TLS encryption on our LDAP server. So, let's do that now.
 

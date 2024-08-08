@@ -10,8 +10,9 @@ pre: "9. "
 
 #### Resources
 
-* [Join in Active Directory Domain](https://www.server-world.info/en/note?os=Ubuntu_20.04&p=realmd) from Server-World
-* [How to Join Ubuntu 18.04 / Debian 10 To Active Directory (AD) Domain](https://computingforgeeks.com/join-ubuntu-debian-to-active-directory-ad-domain/) from Computingforgeeks
+* [SSSD and Active Directory](https://ubuntu.com/server/docs/how-to-set-up-sssd-with-active-directory) from Ubuntu
+* [Join in Active Directory Domain](https://www.server-world.info/en/note?os=Ubuntu_20.04&p=realmd) from Server-World (works for 24.04)
+* [How to Join Ubuntu 18.04 / Debian 10 To Active Directory (AD) Domain](https://computingforgeeks.com/join-ubuntu-debian-to-active-directory-ad-domain/) from Computingforgeeks (works for 24.04)
 
 #### Video Transcript
 

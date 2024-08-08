@@ -16,7 +16,7 @@ In the video for setting up an AD domain, I used a simplified root domain name `
 
 ![NETBIOS Domain Name](images/adds2.png)
 
-For the lab assignment itself, I give you a more concrete desired **root domain name** of `ad.cis527<your eID>.cs.ksu.edu`. However, I do not specify the **NETBIOS domain name**, which should default to `ad`. However, you can freely change it, and I believe that the video is leading many students to change that value to either `cis527` or `cis527<your eID>`. To be clear, you _should not change_ the **NETBIOS domain name** at this step - whatever is proposed by the configuration wizard is correct. 
+For the lab assignment itself, I give you a more concrete desired **root domain name** such as `ad.cis527<your eID>.cs.ksu.edu`. However, I do not specify the **NETBIOS domain name**, which should default to `ad`. However, you can freely change it, and I believe that the video is leading many students to change that value to either `cis527` or `cis527<your eID>`. To be clear, you _should not change_ the **NETBIOS domain name** at this step - whatever is proposed by the configuration wizard is correct. 
 
 ***If you've changed this, that's fine! You'll just have to adapt a couple of things further down the line.***
 

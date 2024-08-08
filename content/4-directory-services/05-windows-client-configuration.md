@@ -8,7 +8,7 @@ pre: "5. "
 
 #### Resources
 
-* [Join Windows 10 PC to a Domain](https://www.tenforums.com/tutorials/90045-join-windows-10-pc-domain.html) from Windows 10 Forums
+* [Join a Computer to a Domain](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain) from Microsoft Support
 
 #### Video Transcript
 

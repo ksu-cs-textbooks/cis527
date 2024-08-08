@@ -10,7 +10,7 @@ pre: "8. "
 
 #### Resources
 
-* [SSSD](https://ubuntu.com/server/docs/service-sssd) on Ubuntu Server Guide (look for the LDAP section)
+* [SSSD and LDAP](https://ubuntu.com/server/docs/ldap-and-transport-layer-security-tls) on Ubuntu Server Guide
 
 #### Video Transcript
 
