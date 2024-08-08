@@ -20,10 +20,9 @@ The examples in this video are for an old version of Lab 3, but should be instru
 * [HOSTS.TXT](https://jim.rees.org/apollo-archive/hosts.txt) from March 22, 1985
 * [Root Name Server](https://en.wikipedia.org/wiki/Root_name_server) on Wikipedia
 * [Root Files](https://www.iana.org/domains/root/files) from IANA
-* [How To Configure BIND as a Private Network DNS Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-18-04) from DigitalOcean (works for 20.04 as well)
+* [How To Configure BIND as a Private Network DNS Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-20-04) from DigitalOcean (works for 24.04 as well)
 * [Bind9 Server How-To](https://help.ubuntu.com/community/BIND9ServerHowto) from Ubuntu Community Help Wiki
-* [DNS Configuration](https://ubuntu.com/server/docs/service-domain-name-service-dns) from Ubuntu Server Guide
-* [BIND Manuals](http://www.bind9.net/manuals) from bind9.net
+* [DNS Configuration](https://ubuntu.com/server/docs/domain-name-service-dns) from Ubuntu Server Guide
 
 #### Video Transcript
 

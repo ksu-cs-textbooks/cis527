@@ -4,6 +4,12 @@ weight: 90
 pre: "18. "
 ---
 
+{{% notice warning %}}
+
+This is for an older version of Lab 3, but the basic idea is the same. You may have to update some details such as the network IP addresses and hostnames to match the current instructions for Lab 3.
+
+{{% /notice %}}
+
 {{< youtube 1qBSikLyIRE >}}
 
 #### Video Transcript

@@ -8,7 +8,6 @@ pre: "6. "
 
 #### Resources
 
-* [How to Assign a Static IP Address in Windows 7, 8, 10, XP, or Vista](https://www.howtogeek.com/howto/19249/how-to-assign-a-static-ip-address-in-xp-vista-or-windows-7/) from How-To Geek
 * [How to Set a Static IP Address on Windows 10](https://pureinfotech.com/set-static-ip-address-windows-10/) from Pureinfotech
 * [4 Common Windows Network Utilities Explained](https://www.maketecheasier.com/common-windows-network-utilities-explained/) from Make Tech Easier
 * [TCPView](https://docs.microsoft.com/en-us/sysinternals/downloads/tcpview) from Windows Sysinternals

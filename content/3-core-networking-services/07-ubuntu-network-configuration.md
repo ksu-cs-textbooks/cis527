@@ -5,7 +5,7 @@ pre: "7. "
 ---
 
 {{% notice note %}}
-_This video was recorded on Ubuntu 18.04, but nothing significant has changed in Ubuntu 20.04. --Russ_
+_This video was recorded on Ubuntu 18.04, but nothing significant has changed in Ubuntu 24.04. --Russ_
 {{% /notice %}}
 
 {{< youtube pI4kp3R7ZfU >}}
@@ -14,7 +14,6 @@ _This video was recorded on Ubuntu 18.04, but nothing significant has changed in
 
 * [How to Configure Static IP Address on Ubuntu 20.04 Focal Fossa Desktop/Server](https://linuxconfig.org/how-to-configure-static-ip-address-on-ubuntu-20-04-focal-fossa-desktop-server) from LinuxConfig.org
 * [Network Configuration](https://ubuntu.com/server/docs/network-configuration) from Ubuntu Server Guide
-* ['ip' Command Cheat Sheet (Command Line Reference)](https://www.thegeekdiary.com/ip-command-cheat-sheet-command-line-reference/) from The Geek Diary
 * [ip Command Cheat Sheet](https://access.redhat.com/sites/default/files/attachments/rh_ip_command_cheatsheet_1214_jcs_print.pdf) from Red Hat
   - _Even though it is for Red Hat, most of these commands should also work in Ubuntu, and honestly, it is just a really handy cheat sheet to have!_
 * [12 ip Command Examples for Linux Users](https://www.linuxtechi.com/ip-command-examples-for-linux-users/) from Linuxtechi
