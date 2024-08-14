@@ -76,6 +76,8 @@ Install Windows 11 in that virtual machine to a single partition. You may use th
 
 Windows 11 has made it **even more** difficult to create a local account when installing. A video in this chapter discusses the process for Windows 10, but an extra step is now needed for Windows 11. Refer to this guide from [Tom's Hardware](https://www.tomshardware.com/how-to/install-windows-11-without-microsoft-account). Notice on that page that the command used in step 3 is `OOBE\BYPASSNRO` (without a space).
 
+Windows 11 may also require 4 GB of RAM allocated to install. I believe that once you've installed Windows 11 you can reduce the RAM allocated in VMWare to 2 GB and it should work well.
+
 {{% /notice %}}
 
 ---
