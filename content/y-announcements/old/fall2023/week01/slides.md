@@ -22,7 +22,7 @@ hidden: true
 <section>
 	<h3>Teaching Assistant</h3>
 	<ul>
-		<li>Josh Barron - jrbarron22 AT ksu DOT edu</li>
+		<li>Matt Schwartz - matt00 AT ksu DOT edu</li>
 	</ul>
 </section>
 <section>
@@ -39,9 +39,9 @@ hidden: true
 <section>
 	<h3>Communication</h3>
 	<ul>
-		<li>Ed Discussion - Course Questions, Discussions, etc</li>
+		<li>Discord - Course Questions, Discussions, etc</li>
 		<li>Email - Personal Issues, Grading Questions, To-dos, etc<br>cis527-help@ksuemailprod.onmicrosoft.com</li>
-		<li><i>Email is official, Ed Discussion is more flexible</i></li>
+		<li><i>Email is official, Discord is more flexible</i></li>
 	</ul>
 </section>
 <section>
@@ -49,7 +49,6 @@ hidden: true
 	<ul>
 		<li>Growth Mindset</li>
 		<li>Don't just read/watch, <i>engage</i></li>
-		<li>Click the Links!</li>
 		<li>Work Iteratively</li>
 		<li>Save Early & Often</li>
 		<li><i>Ask for Help</i></li>
@@ -69,7 +68,7 @@ hidden: true
 <section>
 	<h3>Discussions</h3>
 	<ul>
-		<li>Respond to Survey</li>
+		<li>Respond to Survey Aug 25.</li>
 		<li>Schedule Online via Zoom</li>
 		<li>Submit Questions Before</li>
 		<li>Participate or Write Response</li>
@@ -78,8 +77,8 @@ hidden: true
 <section>
 	<h3>Keep in Touch!</h3>
 	<ul>
-	  <li>Ed Discusion<ul>
-	  <li>Discord & Teams</li>
+	  <li>Discussions on Discord<ul>
+	  <li>https://discordbot.cs.ksu.edu</li>
 	  </ul></li>
 	  <li>"Tea Time" Office Hours</li>
 	  <li>One-on-One Office Hours</li>

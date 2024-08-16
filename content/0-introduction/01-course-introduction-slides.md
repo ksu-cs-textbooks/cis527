@@ -16,7 +16,7 @@ hidden: true
 		<br>
 		<b>russfeld AT ksu DOT edu</b><br>
 		https://russfeld.me  -  @russfeld<br>
-		<i>Email & Discord Preferred</i>
+		<i>Email & Ed Stem Preferred</i>
 	</p>
 </section>
 <section>
@@ -28,9 +28,9 @@ hidden: true
 <section>
 	<h3>Communication</h3>
 	<ul>
-		<li>Discord - Course Questions, Discussions, etc</li>
+		<li>Ed Discussion - Course Questions, Discussions, etc</li>
 		<li>Email - Personal Issues, Grading Questions, To-dos, etc<br>cis527-help@ksuemailprod.onmicrosoft.com</li>
-		<li><i>Email is official, Discord is more flexible</i></li>
+		<li><i>Email is official, Ed Discussion is more flexible</i></li>
 	</ul>
 </section>
 <section>
