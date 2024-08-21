@@ -18,6 +18,7 @@ pre: "12. "
 * [Switching to Ubuntu](https://help.ubuntu.com/community/SwitchingToUbuntu) from Ubuntu
 * [Linux Distribution Timeline](https://commons.wikimedia.org/wiki/File:Linux_Distribution_Timeline.svg) from Wikipedia
 * [Desmond Tutu on Ubuntu](https://www.youtube.com/watch?v=ftjdDOfTzbk) from YouTube
+* [K-State CS Mirror of Ubuntu Downloads](https://mirror.cs.ksu.edu) (only accessible on campus and via the K-State VPN)
 
 #### Video Script
 
