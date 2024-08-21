@@ -28,7 +28,7 @@ This lab may take anywhere from **1 - 6 hours** to complete, depending on your p
 
 #### Software
 
-This lab is written with the expectation that most students will be using **VMware Workstation** or **VMware Fusion** to complete the assignment. That software is available free of charge on the [VMware Store](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) open to all K-State CS students, and it is highly recommended for students who are new to working with virtual machines, since most of the assignments in this class are tailored to the use of that platform.
+This lab is written with the expectation that most students will be using **VMware Workstation** or **VMware Fusion** to complete the assignment. That software is available free of charge on the [VMware Website](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) and is free for personal and academic us, and it is highly recommended for students who are new to working with virtual machines, since most of the assignments in this class are tailored to the use of that platform.
 
 If you are using another virtualization platform, you may have to adapt these instructions to fit. If you are unsure about any specification and how it applies to your setup, please contact the instructor.
 
@@ -54,13 +54,13 @@ The original course materials were developed for Windows 10 Version 1803 and Ubu
 
 Install the virtualization software platform of your choice. It must support using Windows 11 and Ubuntu 24.04 as a guest OS. In general, you'll need the latest version of the software. 
 
-**VMware Workstation** or **VMware Fusion** is recommended and available free of charge on the [VMware Store](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) open to all K-State CS students.
+**VMware Workstation** or **VMware Fusion** is recommended and available free of charge on the [VMware Website](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) and is free for personal and academic use.
 
 You may need to install the latest version available for download and then update it within the software to get to the absolute latest version that supports the latest guest OS versions.
 
 {{% notice info "VMWare Licenses" %}}
 
-_Unfortunately, the process for getting VMWare licenses changed in 2022, so we have to manually request access for a class. If you have issues accessing this site and getting a license, it is likely that I forgot to send in that request. Please email me and remind me so I can get that done! - Russ_
+_VMWare licenses are now free for personal and academic uses starting in 2024. You should be able to download the latest version and install it without a product key. - Russ_
 
 {{% /notice %}}
 

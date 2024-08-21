@@ -4,6 +4,12 @@ weight: 15
 pre: "3. "
 ---
 
+{{% notice note %}}
+
+As of 2024, VMWare Workstation and VMWare Fusion are free for personal and academic use. You can download them directly from the VMWare website.
+
+{{% /notice %}}
+
 {{< youtube dkVgU6twaXM >}}
 
 #### Resources
@@ -11,7 +17,7 @@ pre: "3. "
 * **[Slides]({{% relref "/1-secure-workstations/03-virtualization-vmware-slides.md"  %}})**
 * [Virtualization](https://en.wikipedia.org/wiki/Virtualization) on Wikipedia
 * [Virtualization Whitepaper](https://docs.broadcom.com/doc/12358179) from Broadcom
-* [Accessing VMware Software](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#VMWare) on CS Support
+* [Download VMWare Software](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
 
 #### Video Script
 
