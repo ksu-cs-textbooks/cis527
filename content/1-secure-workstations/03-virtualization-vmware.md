@@ -17,7 +17,8 @@ As of 2024, VMWare Workstation and VMWare Fusion are free for personal and acade
 * **[Slides]({{% relref "/1-secure-workstations/03-virtualization-vmware-slides.md"  %}})**
 * [Virtualization](https://en.wikipedia.org/wiki/Virtualization) on Wikipedia
 * [Virtualization Whitepaper](https://docs.broadcom.com/doc/12358179) from Broadcom
-* [Download VMWare Software](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
+* [Download Workstation](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro)
+* [Download Fusion](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Fusion)
 
 #### Video Script
 

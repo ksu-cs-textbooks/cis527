@@ -28,7 +28,7 @@ This lab may take anywhere from **1 - 6 hours** to complete, depending on your p
 
 #### Software
 
-This lab is written with the expectation that most students will be using **VMware Workstation** or **VMware Fusion** to complete the assignment. That software is available free of charge on the [VMware Website](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) and is free for personal and academic us, and it is highly recommended for students who are new to working with virtual machines, since most of the assignments in this class are tailored to the use of that platform.
+This lab is written with the expectation that most students will be using **VMware Workstation** or **VMware Fusion** to complete the assignment. That software is available free of charge on the Broadcom Website ( [Download Workstation](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro) and [Download Fusion](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Fusion) ) and is free for personal and academic use, and it is highly recommended for students who are new to working with virtual machines, since most of the assignments in this class are tailored to the use of that platform.
 
 If you are using another virtualization platform, you may have to adapt these instructions to fit. If you are unsure about any specification and how it applies to your setup, please contact the instructor.
 
