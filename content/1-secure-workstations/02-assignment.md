@@ -146,7 +146,7 @@ Use either the `cis527` or `AdminAccount` account to create these files, then mo
 
 * **Don't remove the SYSTEM account or the built-in Administrator account's access from any of these files.** Usually this is as simple as not modifying their permissions from the defaults.
 
-* See [this screenshot](/images/lab1-image1.png) and [this screenshot](/images/lab1-image1a.png) for what these permissions should look like in PowerShell. This was created using the command `Run Get-ChildItem -Recurse | Get-Acl | Format-List` in PowerShell. These screenshots are from an earlier version of this lab using different paths and usernames, but the permissions structure is the same.
+* See [this screenshot](/images/lab1-image1.png) and [this screenshot](/images/lab1-image1a.png) for what these permissions should look like in PowerShell. This was created using the command `Get-ChildItem -Recurse | Get-Acl | Format-List` in PowerShell. These screenshots are from an earlier version of this lab using different paths and usernames, but the permissions structure is the same.
 
 ---
 
