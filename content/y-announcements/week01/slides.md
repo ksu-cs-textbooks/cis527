@@ -78,7 +78,7 @@ hidden: true
 <section>
 	<h3>Keep in Touch!</h3>
 	<ul>
-	  <li>Ed Discusion<ul>
+	  <li>Ed Discussion<ul>
 	  <li>Discord & Teams</li>
 	  </ul></li>
 	  <li>"Tea Time" Office Hours</li>
