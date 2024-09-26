@@ -6,6 +6,20 @@ pre: "17. "
 
 As I was reworking this lab for the Summer 2020 semester, I ran into a few issues getting my own bind9 server to work. In doing so, I ended up taking some great screenshots of common misconfigurations of bind9 and the related output from using the `dig` command to diagnose the issue. I figured it would be helpful to share those screenshots here to give you a nice guide to some common errors you may encounter when working with bind9. 
 
+{{% notice note %}}
+
+When using the `dig` command, you can specify the DNS server it contacts using the `@` symbol followed by the IP address of the server. For example, if my DNS server is at IP address `192.168.40.41`, I can use the following command to query it:
+
+```sh
+dig @192.168.40.41 ns.cis527russfeld.cs.ksu.edu
+```
+
+This can be done from the server with DNS installed, or another system. You **should not** use the localhost address `127.0.01` for this, since Ubuntu installs a local caching DNS server by default that runs on localhost. The bind9 DNS server is typically only accessible via the external IP address.
+
+If an address is not specified, `dig` uses the DNS settings of the operating system. The screenshots below were created on a system that had the DNS configuration updated to point directly at the DNS server created for this lab.
+
+{{% /notice %}}
+
 ## Incorrect Screenshots
 
 #### Bad PTR Response

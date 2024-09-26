@@ -66,6 +66,9 @@ _You'll need to edit the registry and reboot the computer to accomplish this tas
 
 * Both the `cis527` and `AdminUser` accounts should be able to access the system remotely.
 * In addition, **change the port** used by the SSH server to 23456.
+{{% notice tip %}}
+_In the SSH configuration file, the entries starting with a `#` are comments. Typically the default values for each setting are included in the configuration file but commented out. In Ubuntu 24.04, you need to fully reboot the system for changes to the SSH configuration file to take effect! --Russ_
+{{% /notice %}}
 * You'll also need to make sure the appropriate firewall rules are in place to accept these incoming connections, and ensure the firewall is properly enabled.
 * You can test your connection from your Windows VM using the `ssh` command in PowerShell, or from the Ubuntu 24.04 VM labelled **CLIENT** using the `ssh` command. {{% notice tip %}}
 _See the appropriate pages in the Extras module for more information about WSL and SSH. --Russ_
@@ -255,7 +258,7 @@ Then, perform the following quick activity:
 3. Once again, use the SNMP tools from the **CLIENT** VM to query the number of ICMP Echos (pings) that have been received by the **SERVER** VM. It should clearly show that it has increased by the number sent during the previous command. Take a **screenshot** with the command used and the result clearly highlighted in the terminal output. It should match the expected output based on the previous two screenshots.
 
 {{% notice note %}}
-_Be prepared to duplicate this activity during the interactive grading process! If you are unable to duplicate it, you can present the screenshots as proof that it worked before for partial credit. You may preform all three commands in a single screenshot if desired. See [this example](images/lab3-hint.png) for an idea of what the output should look like. --Russ_
+_You will present the screenshots as proof that you performed this activity for grading. You may preform all three commands in a single screenshot if desired. See [this example](images/lab3-hint.png) for an idea of what the output should look like. --Russ_
 {{% /notice %}}
 
 #### Resources
