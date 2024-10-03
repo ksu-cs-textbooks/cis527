@@ -183,7 +183,7 @@ On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate agai
 
 #### Resources
 
-* [SSSD and LDAP](https://ubuntu.com/server/docs/ldap-and-transport-layer-security-tls) on Ubuntu Server Guide
+* [SSSD and LDAP](https://ubuntu.com/server/docs/how-to-set-up-sssd-with-ldap) on Ubuntu Server Guide
 
 ---
 
