@@ -20,7 +20,6 @@ TODO _As of 2020, both KSIS and HRIS have moved to the cloud, leaving very few K
 * [Service Oriented Architecture](http://en.wikipedia.org/wiki/Service-oriented_architecture) on Wikipedia
 * [Lots of Bits](https://aws.amazon.com/blogs/aws/lots-of-bits/) by Jeff Barr on AWS News Blog
 * [Animotos Facebook Scale-Up](http://www.rightscale.com/blog/enterprise-cloud-strategies/animotos-facebook-scale) by Thorsten von Eicken from RightScale
-* [Cloud Forecast 2015: Skills, Security and Public Cloud Infrastructure](http://2ndwatch.com/blog/cloud-forecast-2015-skills-security-and-public-cloud-tools-in-demand/) from 2nd Watch
 
 #### Video Transcript
 

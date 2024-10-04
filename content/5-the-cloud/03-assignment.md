@@ -38,10 +38,10 @@ _If you have any concerns about using these services, please contact me to make 
 
 Create **TWO** droplets on DigitalOcean. As you set up your droplets, use the following settings:
 
-* Choose the Ubuntu 22.04 x64 distribution as the droplet image
-* Select the smallest droplet size ($4-6/mo)
-* Select any United States region
-* Enable Virtual Private Cloud (VPC) Networking and Monitoring
+* Choose the Ubuntu 24.04 x64 distribution as the droplet image
+* Select the smallest droplet size ($4-6/mo - you may have to click around and click an arrow to see the smallest option)
+* Select any United States region - make sure both are in the same region!
+* Enable Virtual Private Cloud (VPC) Networking and Monitoring (this should be the default)
 * You may add any existing SSH keys you've already configured with DigitalOcean during droplet creation
 * Droplet names:
   * `cis527<your eID>-frontend`
@@ -81,7 +81,7 @@ _Many students misconfigure the firewall on the **BACKEND** server to allow SSH 
 
 #### Resources
 
-* [Initial Server Setup with Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04) from DigitalOcean
+* [Initial Server Setup with Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04) from DigitalOcean (works for 24.04)
 * [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) from DigitalOcean
 * [How To Set Up Time Synchronization on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-20-04) from DigitalOcean (works on Ubuntu 22.04)
 
@@ -106,6 +106,14 @@ After doing these steps, you should only be able to access the cis527 account on
 
 {{% notice note %}}
 _You may contact me once you have installed the grading SSH key to confirm that it works correctly. I'd be happy to test it before grading. --Russ_
+{{% /notice %}}
+
+{{% notice note %}}
+If you are working on campus, you will not be able to use SSH to connect to your **FRONTEND** droplet since outgoing SSH is blocked by K-State. The ability to log in via SSH to **FRONTEND** using your key will not be graded, but we'll use the grading key for testing on our end. 
+
+Instead, you can use the Access tab in DigitalOcean to access a virtual console for your droplet. This allows you to connect via SSH through a web browser.
+
+You should ensure that you can access the **BACKEND** server from **FRONTEND** using SSH with the correct SSH keys.
 {{% /notice %}}
 
 #### Resources
