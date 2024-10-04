@@ -222,7 +222,9 @@ If you get errors like "Insufficient permissions to join the domain", you may ne
 
 {{% notice note %}}
 
-If you are working in Azure, you'll need to add a hosts file entry to the Ubuntu client that directs the domain name `ad.<your eID>.cis527.org` to the IP address of the Windows Server (usually of the form `10.0.0.X`). See this resource for details: https://www.ionos.com/digitalguide/server/configuration/hosts-file/
+If you are working in Azure, you'll need to add a hosts file entry to the Ubuntu client that directs the domain name `ad.<your eID>.cis527.org` to the IP address of the Windows Server (usually of the form `10.0.0.X`). See this resource for details: https://www.ionos.com/digitalguide/server/configuration/hosts-file/.
+
+This part can be done completely from the terminal - that is typically the best way to work with Linux in Azure. You can access a Linux system in Azure using SSH easily.
 
 {{% /notice %}}
 
