@@ -81,6 +81,14 @@ Make a **snapshot** of this VM once it is fully configured and updated. You can 
 You can use <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Insert</kbd> to send a <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to your VM in VMware without affecting your host OS.
 {{% /notice %}}
 
+{{% notice note %}}
+
+If you are working in Azure, follow the video instructions at the end of this chapter to install a version of Windows Server for Azure. You do not have to install VMWare Tools but should install Firefox. 
+
+Azure supports some backups and restore point options, but they are not as simple to use as VMWare snapshots. You can learn more about Azure backups here: https://learn.microsoft.com/en-us/azure/virtual-machines/backup-recovery. In general, I have avoided using them in my testing. 
+
+{{% /notice %}}
+
 ---
 
 ### Task 2: Configure an Active Directory Domain Controller
@@ -103,6 +111,12 @@ As of Summer 2021, there was a bug in Windows Server that prevented the built-in
 
 {{% /notice %}}
 
+{{% notice note %}}
+
+If you are working in Azure, do not set a static IP in Windows Server - this is already managed for you by Azure. Your IP address will most likely be of the form `10.0.0.X` - that is the address you'll use to connect other VMs to this Active Directory domain.
+
+{{% /notice %}}
+
 #### Resources
 
 * [Install Active Directory Domain Services (Level 100)](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-) from Microsoft
@@ -120,6 +134,12 @@ Join your Windows 11 VM to the Active Directory Domain created in Task 2. Follow
 2. Join the system to the domain, following the instructions linked in the resources section below.
 
 3. Once the system reboots, you should be able to log in using the user account you created in Task 2.
+
+{{% notice note %}}
+
+If you are working in Azure, you'll need to add a hosts file entry to the Windows 11 client that directs the domain name `ad.<your eID>.cis527.org` to the IP address of the Windows Server (usually of the form `10.0.0.X`). See this resource for details: https://www.ionos.com/digitalguide/server/configuration/hosts-file/
+
+{{% /notice %}}
 
 #### Resources
 
@@ -192,13 +212,19 @@ On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate agai
 1. On your Ubuntu VM labelled **CLIENT**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
 2. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
 3. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to setting it up as an OpenLDAP client.
-4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM. You'll want to confirm that you are able to resolve `ad.<your eID>.cis527.cs.ksu.edu` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Windows server as configured earlier in this lab, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
+4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM. You'll want to confirm that you are able to resolve `ad.<your eID>.cis527.org` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Windows server as configured earlier in this lab, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
 {{% notice warning %}}
 
 If you get errors like "Insufficient permissions to join the domain", you may need to install `krb5-user` and then add `rdns=false` to the `[libdefaults]` section of the `/etc/krb5.conf` file, as described in [this thread](https://access.redhat.com/discussions/3370851). That seemed to fix the error for me.
 
 {{% /notice %}}
 5. Make a **snapshot** labelled "ActiveDirectory" to save your configuration for this task. You can switch between snapshots to have this VM act as a client for either directory service.
+
+{{% notice note %}}
+
+If you are working in Azure, you'll need to add a hosts file entry to the Ubuntu client that directs the domain name `ad.<your eID>.cis527.org` to the IP address of the Windows Server (usually of the form `10.0.0.X`). See this resource for details: https://www.ionos.com/digitalguide/server/configuration/hosts-file/
+
+{{% /notice %}}
 
 #### Resources
 
@@ -217,12 +243,12 @@ Below are example commands from a working solution. You'll need to adapt them to
 * Active Directory Example [Screenshot](images/lab4_win.png) (instructive, but using old data)
 
 ```bash
-ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=ad,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu" -D "ad\Administrator" -w "cis527_windows"
+ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=ad,dc=russfeld,dc=cis527,dc=org" -D "ad\Administrator" -w "cis527_windows"
 ```
 * OpenLDAP Example [Screenshot](images/lab4_ubu.png) (instructive, but using old data)
 
  ```bash
- ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=ldap,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu" -D "cn=admin,dc=ldap,dc=russfeld,dc=cis527,dc=cs,dc=ksu,dc=edu" -w "cis527_linux"
+ ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=ldap,dc=russfeld,dc=cis527,dc=org" -D "cn=admin,dc=ldap,dc=russfeld,dc=cis527,dc=cis527,dc=org" -w "cis527_linux"
  ```   
 
 {{% notice tip%}}
