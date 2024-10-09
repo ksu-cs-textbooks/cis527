@@ -4,6 +4,8 @@ weight: 60
 pre: "12. "
 ---
 
+{{< youtube g1fsWJJaUIM >}}
+
 Here are some helpful networking diagrams to better explain the desired state before and after the end of Lab 4. In all of these diagrams, I am using a sample network with the IP address `192.168.40.0`. You will have to adapt the IPs to match your network configuration. In addition, each network address will need to be updated with your unique eID as directed in the lab assignment. 
 
 ### After Lab 3
