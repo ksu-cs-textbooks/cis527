@@ -250,7 +250,7 @@ ldapsearch -LLL -H ldap://192.168.40.42:389 -b "dc=ad,dc=russfeld,dc=cis527,dc=o
 * OpenLDAP Example [Screenshot](images/lab4_ubu.png) (instructive, but using old data)
 
  ```bash
- ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=ldap,dc=russfeld,dc=cis527,dc=org" -D "cn=admin,dc=ldap,dc=russfeld,dc=cis527,dc=cis527,dc=org" -w "cis527_linux"
+ ldapsearch -LLL -H ldap://192.168.40.41:389 -b "dc=ldap,dc=russfeld,dc=cis527,dc=org" -D "cn=admin,dc=ldap,dc=russfeld,dc=cis527,dc=org" -w "cis527_linux"
  ```   
 
 {{% notice tip%}}
