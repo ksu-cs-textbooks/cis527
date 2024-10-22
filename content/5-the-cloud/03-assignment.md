@@ -64,14 +64,12 @@ Perform these configuration steps on both droplets, unless otherwise noted:
 **DO NOT REUSE THE USUAL PASSWORD ON THIS ACCOUNT!** Any system running in the cloud should have a very secure password on each account. Make sure it is a strong yet memorable password, as you'll need it to run any commands using `sudo`.
 {{% /notice %}}
 1. Install all system updates
-1. Change the SSH port to 54321
 1. Ensure the timezone is set to UTC
 1. Enable the firewall. Configure the firewall on both systems to allow connections to the following:
-   * incoming port 54321 (SSH)
-       * **BACKEND ONLY:** filter connections on port 54321 to only allow SSH connections from **FRONTEND** via its **private networking** IP address. You should still allow connections to port 80 and 443 from any address.
+   * incoming port 22 (SSH)
+       * **BACKEND ONLY:** filter connections on port 22 to only allow SSH connections from **FRONTEND** via its **private networking** IP address. You should still allow connections to port 80 and 443 from any address.
    * incoming port 80 (HTTP)
    * incoming port 443 (HTTP via TLS)
-
 
 {{% notice warning %}}
 
