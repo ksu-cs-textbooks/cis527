@@ -97,7 +97,7 @@ Configure your SSH servers and SSH keys as described here:
 {{% notice tip %}}
 Make sure you use the private networking IP address for **BACKEND** in your config file. Otherwise, it will be blocked by the firewall.
 {{% /notice %}}
-7. Once all of the keys are in place, disable password authentication and root login via SSH on both systems.
+7. Once all of the keys are in place, disable password authentication via SSH on both systems.
 
 After doing these steps, you should only be able to access the cis527 account on **FRONTEND** via SSH using your SSH key or the grading SSH key, and you should only be able to access **BACKEND** using the SSH key present on the cis527 account on **FRONTEND**.
 
