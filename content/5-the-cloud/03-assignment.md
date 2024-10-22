@@ -67,7 +67,6 @@ Perform these configuration steps on both droplets, unless otherwise noted:
 1. Ensure the timezone is set to UTC
 1. Enable the firewall. Configure the firewall on both systems to allow connections to the following:
    * incoming port 22 (SSH)
-       * **BACKEND ONLY:** filter connections on port 22 to only allow SSH connections from **FRONTEND** via its **private networking** IP address. You should still allow connections to port 80 and 443 from any address.
    * incoming port 80 (HTTP)
    * incoming port 443 (HTTP via TLS)
 
