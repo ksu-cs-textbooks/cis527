@@ -6,7 +6,7 @@ pre: "6. "
 
 {{% notice note %}}
 
-TODO _The video below installs certbot from a PPA, but Ubuntu 22.04 includes certbot in the universe repositories. Refer to the instructions on the [certbot website](https://certbot.eff.org/lets-encrypt/ubuntufocal-apache) for updated instructions. --Russ_
+TODO _The video below installs certbot from a PPA, but Ubuntu 22.04 includes certbot in the universe repositories. Refer to the instructions on the [DigitalOcean website](https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu) for updated instructions. --Russ_
 
 {{% /notice %}}
 
