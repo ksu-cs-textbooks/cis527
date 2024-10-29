@@ -70,11 +70,7 @@ Perform these configuration steps on both droplets, unless otherwise noted:
    * incoming port 80 (HTTP)
    * incoming port 443 (HTTP via TLS)
 
-{{% notice warning %}}
-
-_Many students misconfigure the firewall on the **BACKEND** server to allow SSH connections from the wrong IP addresses or ranges, or include a rule to allow connections from any address. I will be picky about this from now on. --Russ_
-
-{{% /notice %}}
+ <!-- TODO: Firewall in DigitalOcean -->
 
 #### Resources
 
@@ -88,18 +84,19 @@ _Many students misconfigure the firewall on the **BACKEND** server to allow SSH 
 
 Configure your SSH servers and SSH keys as described here:
 
-1. On your own computer, generate a set of SSH keys if you have not already.
-2. Add the public key from your computer to the cis527 account on **FRONTEND**. This should allow you to log in with that key.
-3. Add the [grading SSH key](files/id_rsa_grading.pub) to the cis527 account on **FRONTEND** as well.
-4. On the cis527 account on **FRONTEND**, generate a set of SSH keys with no passphrase.
-5. Add the public key from the cis527 account on **FRONTEND** to the cis527 account on **BACKEND**. This should allow you to log in with that key
-6. On the cis527 account on **FRONTEND**, create an SSH config file such that a user could simply type `ssh backend` to connect to the **BACKEND** droplet.
+1. You can access the **FRONTEND** droplet using the virtual terminal in DigitalOcean. If you want to log in via SSH from your local computer (optional):
+   1. On your own computer or a local VM, generate a set of SSH keys if you have not already.
+   2. Add the public key from your computer to the cis527 account on **FRONTEND**. This should allow you to log in with that key.
+2. Add the [grading SSH key](files/id_rsa_grading.pub) to the cis527 account on **FRONTEND**.
+3. On the cis527 account on **FRONTEND**, generate a set of SSH keys with no passphrase.
+4. Add the public key from the cis527 account on **FRONTEND** to the cis527 account on **BACKEND**. This should allow you to log in with that key
+5. On the cis527 account on **FRONTEND**, create an SSH config file such that a user could simply type `ssh backend` to connect to the **BACKEND** droplet.
 {{% notice tip %}}
 Make sure you use the private networking IP address for **BACKEND** in your config file. Otherwise, it will be blocked by the firewall.
 {{% /notice %}}
-7. Once all of the keys are in place, disable password authentication via SSH on both systems.
+6. Once all of the keys are in place, disable password authentication via SSH on both systems.
 
-After doing these steps, you should only be able to access the cis527 account on **FRONTEND** via SSH using your SSH key or the grading SSH key, and you should only be able to access **BACKEND** using the SSH key present on the cis527 account on **FRONTEND**.
+After doing these steps, you be able to access the cis527 account on **FRONTEND** via SSH using your SSH key or the grading SSH key, and you should be able to access **BACKEND** using the SSH key present on the cis527 account on **FRONTEND**.
 
 {{% notice note %}}
 _You may contact me once you have installed the grading SSH key to confirm that it works correctly. I'd be happy to test it before grading. --Russ_
