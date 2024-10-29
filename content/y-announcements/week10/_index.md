@@ -1,6 +1,6 @@
 ---
 title: "Fall '24 Week 10"
-weight: 110
+weight: 30
 pre: ""
 ---
 
