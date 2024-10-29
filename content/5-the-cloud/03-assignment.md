@@ -64,14 +64,11 @@ Perform these configuration steps on both droplets, unless otherwise noted:
 **DO NOT REUSE THE USUAL PASSWORD ON THIS ACCOUNT!** Any system running in the cloud should have a very secure password on each account. Make sure it is a strong yet memorable password, as you'll need it to run any commands using `sudo`.
 {{% /notice %}}
 1. Install all system updates
-1. Change the SSH port to 54321
 1. Ensure the timezone is set to UTC
 1. Enable the firewall. Configure the firewall on both systems to allow connections to the following:
-   * incoming port 54321 (SSH)
-       * **BACKEND ONLY:** filter connections on port 54321 to only allow SSH connections from **FRONTEND** via its **private networking** IP address. You should still allow connections to port 80 and 443 from any address.
+   * incoming port 22 (SSH)
    * incoming port 80 (HTTP)
    * incoming port 443 (HTTP via TLS)
-
 
 {{% notice warning %}}
 
@@ -100,7 +97,7 @@ Configure your SSH servers and SSH keys as described here:
 {{% notice tip %}}
 Make sure you use the private networking IP address for **BACKEND** in your config file. Otherwise, it will be blocked by the firewall.
 {{% /notice %}}
-7. Once all of the keys are in place, disable password authentication and root login via SSH on both systems.
+7. Once all of the keys are in place, disable password authentication via SSH on both systems.
 
 After doing these steps, you should only be able to access the cis527 account on **FRONTEND** via SSH using your SSH key or the grading SSH key, and you should only be able to access **BACKEND** using the SSH key present on the cis527 account on **FRONTEND**.
 
