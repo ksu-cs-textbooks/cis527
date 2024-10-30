@@ -17,12 +17,12 @@ The first part of this video references ASP.NET 4.6, which has been replaced by 
 #### Resources
 
 * **[URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite) from Microsoft**
-* [Add A Website to Windows Server 2016 using Host Headers](https://www.ionos.com/community/server-cloud-infrastructure/windows-server/add-a-website-to-windows-server-2016-using-host-headers/) from Ionos by 1&1
+* [Add A Website to Windows Server 2016 using Host Headers](https://www.ionos.com/digitalguide/hosting/technical-matters/add-a-website-to-windows-server-2016-using-host-headers/) from Ionos by 1&1
 * [How to add DNS Forward Lookup Zone in Windows Server 2019](https://computingforgeeks.com/how-to-add-dns-forward-lookup-zone-in-windows-server/) from Computingforgeeks
 * [How to add DNS A/PTR Record in Windows Server 2019](https://computingforgeeks.com/how-to-add-dns-a-ptr-record-in-windows-server/) from Computingforgeeks
 * [How to Create a Self Signed Certificate in IIS](https://aboutssl.org/how-to-create-a-self-signed-certificate-in-iis/) from AboutSSL
 * [Microsoft Server 2016 - IIS 10 & 10.5 - SSL Installation](https://www.sslsupportdesk.com/microsoft-server-2016-iis-10-10-5-ssl-installation/) from SSLSupportDesk
-* [How to Install a SSL Certificate on IIS 10](https://helpdesk.ssls.com/hc/en-us/articles/115000853911-How-to-install-a-SSL-certificate-on-IIS-10) from SSLs.com
+* [How to Install a SSL Certificate on IIS 10](https://www.thesslstore.com/knowledgebase/ssl-install/microsoft-iis-10-ssl-installation/) from SSLs.com
 * [Setting up an HTTP/HTTPS Redirect in IIS](https://www.namecheap.com/support/knowledgebase/article.aspx/9953/38/setting-up-an-httphttps-redirect-in-iis) from Namecheap
 
 #### Video Transcript

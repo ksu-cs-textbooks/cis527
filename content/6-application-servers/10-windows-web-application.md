@@ -4,11 +4,16 @@ weight: 50
 pre: "10. "
 ---
 
+{{% notice note %}}
+
+Unfortunately the software used in this example is no longer available publicly, so you won't be able to follow along directly with the video.
+
+{{% /notice %}}
+
 {{< youtube eHLxBJgWszs >}}
 
 #### Resources
 
-* [.NET Forum](https://www.jitbit.com/asp-net-forum/) from JitBit
 * [SQL Server 2017 Express Edition](https://www.microsoft.com/en-us/sql-server/sql-server-editions-express) from Microsoft
 
 #### Video Transcript

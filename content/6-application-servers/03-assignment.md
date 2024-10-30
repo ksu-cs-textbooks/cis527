@@ -32,7 +32,7 @@ _This lab involves working with resources on the cloud, and will require you to 
 
 For this lab, you will continue to use the two DigitalOcean droplets from Lab 5, labelled **FRONTEND** and **BACKEND**, respectively. This assignment assumes you have completed all steps in Lab 5 successfully; if not, you should consult with the instructor to resolve any existing issues before continuing.
 
-You will also need a Windows Server 2019 VM configured as an Active Directory Domain Controller, along with a Windows 10 VM added as a client computer on that domain. In general, you may continue to use the resources created in Lab 4, but you may choose to recreate them as directed in Lab 4 if desired.
+You will also need a Windows Server 2022 VM configured as an Active Directory Domain Controller, along with a Windows 11 VM added as a client computer on that domain. In general, you may continue to use the resources created in Lab 4, but you may choose to recreate them as directed in Lab 4 if desired.
 
 In addition, you will need two Ubuntu VMs, one labelled **SERVER** and the other labelled **CLIENT**. You may continue to use the Ubuntu VMs from Labs 3 and 4, or create new VMs for this lab. This lab does not assume any existing setup on these VMs beyond what is specified in Labs 1 and 2. You should also make sure your Ubuntu VM labelled **SERVER** has a static IP address.  
 
@@ -40,7 +40,7 @@ In addition, you will need two Ubuntu VMs, one labelled **SERVER** and the other
 
 ### Task 1: Windows File Server
 
-Configure a file server on your Windows Server 2019 VM. It should have the following features:
+Configure a file server on your Windows Server 2022 VM. It should have the following features:
 
 * A shared folder on the server named `public` and stored at `C:\public` that should be accessible by all users on your domain
 * A shared folder on the server named `admins` and stored at `C:\admins` that should only be accessible to users in the Domain Admins group in your domain
@@ -53,7 +53,7 @@ As of Summer 2021, there was a bug in Windows Server that prevented the built-in
 
 #### Resources
 
-* [How to Share Files and Folders in Windows Server 2016](https://www.tactig.com/share-files-folders-windows-server-2016/) from Tactig (should work for Server 2019)
+* [How to Share Files and Folders in Windows Server 2016](https://www.tactig.com/share-files-folders-windows-server-2016/) from Tactig (should work for Server 2022)
 
 ---
 
@@ -66,7 +66,7 @@ Configure group policy objects (GPOs) on your Windows Active Directory domain to
    * That drive **should not** be mapped for any user that is not a member of the `Domain Admins` group. 
 
 {{% notice tip %}}
-_Pay close attention to how you attach and target these GPOs in the domain. You can use the domain Administrator account and the other domain account created in Lab 4 to test these on your Windows 10 client. --Russ_
+_Pay close attention to how you attach and target these GPOs in the domain. You can use the domain Administrator account and the other domain account created in Lab 4 to test these on your Windows 11 client. --Russ_
 {{% /notice %}}
 
 #### Resources
@@ -90,9 +90,8 @@ Of course, you may need to modify your firewall configuration to allow incoming 
 #### Resources
 
 * [File Server](https://ubuntu.com/server/docs/samba-file-server) from Ubuntu Documentation
-* [Samba Server Guide](https://help.ubuntu.com/community/Samba/SambaServerGuide) from Ubuntu Community Help Wiki
-* [How to Set Up a Samba Share for a Small Organization on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04) from DigitalOcean (works for 20.04)
-* [Access User's Home Folders via Samba on Ubuntu 17.04](https://websiteforstudents.com/access-user-home-folders-via-samba-on-ubuntu-17-04-17-10/) from Website for Students (works for 20.04)
+* [How to Set Up a Samba Share for a Small Organization on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04) from DigitalOcean (works for 24.04)
+* [Access User's Home Folders via Samba on Ubuntu 17.04](https://websiteforstudents.com/access-user-home-folders-via-samba-on-ubuntu-17-04-17-10/) from Website for Students (works for 24.04)
 * [How to Configure Samba Server Share on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/how-to-configure-samba-server-share-on-ubuntu-20-04-focal-fossa-linux) from LinuxConfig.org
 
 ---
@@ -120,7 +119,7 @@ _To be honest, this last part can be pretty tricky. I recommend following the in
 
 ### Task 5: Windows Web Application Server
 
-For this task, you will install and configure a .NET web application for IIS on your Windows Server 2016 VM. First, choose an application to install from the following list:
+For this task, you will install and configure a .NET web application for IIS on your Windows Server 2022 VM. First, choose an application to install from the following list:
 
 * [BlogEngine.NET](https://blogengine.io/docs/get-started/)
   * **NOTE**: If you choose BlogEngine.NET, make sure you read their site carefully. You don't have to sign up for anything on their site to download the software itself, but the download link tends to be hidden in favor of their hosted options. As a sysadmin, you should definitely get into the habit of carefully reading and considering what you find online before you click!
@@ -129,14 +128,14 @@ If you would like to work with an application not listed here, please contact th
 
 Once you have selected your application, perform the following configuration steps:
 
-1. Create two websites in IIS: `blog.<your eID>.cis527.cs.ksu.edu` and `site.<your eID>.cis527.cs.ksu.edu`. They should be stored in `C:\inetpub\blog` and `C:\intepub\site`, respectively. For the `blog` site, make sure you choose the `.NET v4.5` Application Pool!
-2. Add a DNS forward lookup zone for `<your eID>.cis527.cs.ksu.edu` to the Windows DNS server, and then add A records for the two sites described above. They should both point to the Windows Server's IP address ending in `.42`.
-3. Place a static HTML file inside of the `C:\intepub\site` folder and confirm that you can access it using Firefox at `http://site.<your eID>.cis527.cs.ksu.edu`
-4. Follow the instructions to install and configure your chosen application in `C:\inetpub\blog`. Pay special attention to any file permissions required. Use the `IIS_IUSRS` group when adding write permissions to any folders as described in the instructions. You should be able to access it at `http://blog.<your eID>.cis527.cs.ksu.edu` using Firefox. 
+1. Create two websites in IIS: `blog.<your eID>.cis527.org` and `site.<your eID>.cis527.org`. They should be stored in `C:\inetpub\blog` and `C:\intepub\site`, respectively. For the `blog` site, make sure you choose the `.NET v4.5` Application Pool!
+2. Add a DNS forward lookup zone for `<your eID>.cis527.org` to the Windows DNS server, and then add A records for the two sites described above. They should both point to the Windows Server's IP address ending in `.42`.
+3. Place a static HTML file inside of the `C:\intepub\site` folder and confirm that you can access it using Firefox at `http://site.<your eID>.cis527.org`
+4. Follow the instructions to install and configure your chosen application in `C:\inetpub\blog`. Pay special attention to any file permissions required. Use the `IIS_IUSRS` group when adding write permissions to any folders as described in the instructions. You should be able to access it at `http://blog.<your eID>.cis527.org` using Firefox. 
 5. Create a self-signed SSL certificate and attach it to both websites by adding an additional binding for HTTPS. Make sure you can access both websites using `https://`. 
 6. Use the URL Rewrite module to configure URL redirection to automatically direct users from HTTP to HTTPS for both websites.
 
-Once these steps are complete, visiting `http://blog.<your eID>.cis527.cs.ksu.edu` in your web browser should automatically redirect you to `https://blog.<your eID>.cis527.cs.ksu.edu` and it should be secured using your self-signed certificate. You should also be able to demonstrate that the application is working properly by interacting with it in some meaningful way, such as logging in and making a new post on a blog. Finally, if you visit `http://site.<your eID>.cis527.cs.ksu.edu` you should see the static content from that site instead of the blog, and it should also properly redirect to HTTPS.
+Once these steps are complete, visiting `http://blog.<your eID>.cis527.org` in your web browser should automatically redirect you to `https://blog.<your eID>.cis527.org` and it should be secured using your self-signed certificate. You should also be able to demonstrate that the application is working properly by interacting with it in some meaningful way, such as logging in and making a new post on a blog. Finally, if you visit `http://site.<your eID>.cis527.org` you should see the static content from that site instead of the blog, and it should also properly redirect to HTTPS.
 
 {{% notice note %}}
 _I recommend using Firefox for testing. Edge & Internet Explorer on Windows Server are locked-down by default and can be very frustrating to work with. See, I knew you'd appreciate having Firefox installed on your Windows server! --Russ_
@@ -145,19 +144,19 @@ _I recommend using Firefox for testing. Edge & Internet Explorer on Windows Serv
 #### Resources
 
 * **[URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite) from Microsoft**
-* [Add A Website to Windows Server 2016 using Host Headers](https://www.ionos.com/community/server-cloud-infrastructure/windows-server/add-a-website-to-windows-server-2016-using-host-headers/) from Ionos by 1&1
+* [Add A Website to Windows Server 2016 using Host Headers](https://www.ionos.com/digitalguide/hosting/technical-matters/add-a-website-to-windows-server-2016-using-host-headers/) from Ionos by 1&1
 * [How to add DNS Forward Lookup Zone in Windows Server 2019](https://computingforgeeks.com/how-to-add-dns-forward-lookup-zone-in-windows-server/) from Computingforgeeks
 * [How to add DNS A/PTR Record in Windows Server 2019](https://computingforgeeks.com/how-to-add-dns-a-ptr-record-in-windows-server/) from Computingforgeeks
 * [How to Create a Self Signed Certificate in IIS](https://aboutssl.org/how-to-create-a-self-signed-certificate-in-iis/) from AboutSSL
 * [Microsoft Server 2016 - IIS 10 & 10.5 - SSL Installation](https://www.sslsupportdesk.com/microsoft-server-2016-iis-10-10-5-ssl-installation/) from SSLSupportDesk
-* [How to Install a SSL Certificate on IIS 10](https://helpdesk.ssls.com/hc/en-us/articles/115000853911-How-to-install-a-SSL-certificate-on-IIS-10) from SSLs.com
+* [How to Install a SSL Certificate on IIS 10](https://www.thesslstore.com/knowledgebase/ssl-install/microsoft-iis-10-ssl-installation/) from SSLs.com
 * [Setting up an HTTP/HTTPS Redirect in IIS](https://www.namecheap.com/support/knowledgebase/article.aspx/9953/38/setting-up-an-httphttps-redirect-in-iis) from Namecheap
 
 ---
 
 ### Task 6: Ubuntu Web Application Server
 
-For this step, you will install and configure a web application running on Apache in Ubuntu on your DigitalOcean droplets. First, choose an application to install from the following list:
+For this step, you will install and configure a web application running in Ubuntu on your DigitalOcean droplets. First, choose an application to install from the following list:
 
 * [Wordpress](https://wordpress.org/download/)
 
