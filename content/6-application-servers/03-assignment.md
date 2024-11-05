@@ -162,6 +162,14 @@ For this step, you will install and configure a web application running in Ubunt
 
 If you would like to work with an application not listed here, please contact the instructor. The application should have some sort of functionality beyond just displaying static pages, and must support using a MySQL database on a separate host from the web server. In addition, the application must be installed manually - using pre-built images or Apt packages is not allowed here. Any approved application can be added to this list for you to use. **_You are not allowed to use phpBB, as that was demonstrated in the video in this module._**
 
+{{% notice warning %}}
+
+MySQL Version 8 and later requires at least 1 GB of RAM to run properly. I recommend resizing the droplet you will use for MySQL to have at least 1 GB of RAM for this step. [How to Resize Droplets](https://docs.digitalocean.com/products/droplets/how-to/resize/).
+
+Alternatively you can use MySQL 5.7 via Docker in Option 2, or add [swap space on Ubuntu (not recommended)].
+
+{{% /notice %}}
+
 Once you have selected your application, choose **ONE** of the following configuration options:
 
 ##### Option 1: Bare Hardware
