@@ -8,7 +8,7 @@ pre: "6. "
 
 #### Resources
 
-* [File Server](https://ubuntu.com/server/docs/samba-file-server) from Ubuntu Documentation
+* [File Server](https://ubuntu.com/server/docs/samba-as-a-file-server) from Ubuntu Documentation
 * [Samba Server Guide](https://help.ubuntu.com/community/Samba/SambaServerGuide) from Ubuntu Community Help Wiki
 * [How to Set Up a Samba Share for a Small Organization on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04) from DigitalOcean (works for 20.04)
 * [Access User's Home Folders via Samba on Ubuntu 17.04](https://websiteforstudents.com/access-user-home-folders-via-samba-on-ubuntu-17-04-17-10/) from Website for Students (works for 20.04)
