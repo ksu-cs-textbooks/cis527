@@ -166,7 +166,7 @@ If you would like to work with an application not listed here, please contact th
 
 MySQL Version 8 and later requires at least 1 GB of RAM to run properly. I recommend resizing the droplet you will use for MySQL to have at least 1 GB of RAM for this step. [How to Resize Droplets](https://docs.digitalocean.com/products/droplets/how-to/resize/).
 
-Alternatively you can use MySQL 5.7 via Docker in Option 2, or add [swap space on Ubuntu (not recommended)].
+Alternatively you can use MySQL 5.7 via Docker in Option 2, or add [swap space on Ubuntu (not recommended)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04).
 
 {{% /notice %}}
 
