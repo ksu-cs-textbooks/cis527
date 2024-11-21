@@ -53,21 +53,24 @@ For this task, you will perform the steps to create a backup of the web applicat
 
 ### Task 2: Ubuntu Monitoring
 
-For this task, you will set up Checkmk to monitor your servers.
+For this task, you will set up Munin to monitor your servers.
 
-1. Configure the Ubuntu droplet named **FRONTEND** as the primary host for Checkmk.
+1. Configure the Ubuntu droplet named **FRONTEND** as the primary host for Munin.
 2. Then, add the **FRONTEND** and **BACKEND** droplets as two monitored hosts
-3. Send the URL of the Checkmk dashboard and the password in your grading packet. Make sure that both **FRONTEND** and **BACKEND** are appearing in the data. 
+3. Send the URL of the Munin dashboard and the password in your grading packet. Make sure that both **FRONTEND** and **BACKEND** are appearing in the data. 
 
-Of course, you may need to modify your firewall configuration to allow incoming connections for this to work! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
+Of course, you may need to modify your firewall configuration to allow incoming connections on the correct port for this to work! 
 
 {{% notice tip %}}
-_As always, you may have to deal with Apache virtual hosts and firewalls for this setup. In addition, you may want to add a new A record to your domain name for this site, and request an SSL certificate via CertBot. --Russ_
+_By default, Munin only allows access to the Munin dashboard from localhost. You'll need to modify the file `/etc/munin/apache24.conf` to allow access to external clients by removing any references to `Require Local` and adding different permissions instead. This [StackOverflow Answer](https://stackoverflow.com/a/12058057) gives the details._
+
+_Once Munin is working, it may take a while for data to populate in the graphs. I generally check the "Memory usage - by day" graph as it seems to update the most frequently._
 {{% /notice %}}
 
 #### Resources
 
-* [How to Monitor Server Health with Checkmk on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-monitor-server-health-with-checkmk-on-ubuntu-20-04) (should work for 24.04 as well - make sure you install the correct version)
+* [How to install and configure Munin](https://documentation.ubuntu.com/server/how-to/observability/install-munin/)
+* [Fix Munin Permissions (StackOverflow)](https://stackoverflow.com/a/12058057)
 
 ---
 
