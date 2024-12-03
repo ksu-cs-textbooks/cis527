@@ -128,7 +128,7 @@ _Since the Webhook process runs as the `root` user on **BACKEND**, you'll need t
 This lab may be graded completely offline. To do this, submit the following items via Canvas:
 
 2. **Task 1**: An archive file containing a README document as well as any files or information needed as part of the backup of the Ubuntu web application installed in Lab 6.
-3. **Task 2**: The URL and password of your Checkmk instance, clearly showing data from both **FRONTEND** and **BACKEND**. 
+3. **Task 2**: The URL of your Munin instance, clearly showing data from both **FRONTEND** and **BACKEND**. 
 4. **Task 3**: A GitLab/GitHub repository URL and a URL of the website containing those files. Make sure the instructor is added to the repository as maintainers. They should be able to push to the repository and automatically see the website get updated. 
 
 If you are able to submit all 4 of the items above, you do not need to schedule a grading time. The instructor or TA will contact you for clarification if there are any questions on your submission.
