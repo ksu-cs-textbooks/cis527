@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://textbooks.cs.ksu.edu/cis527/5-the-cloud/07-scaling-high-availability-slides/</link><description>CIS 527
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://textbooks.cs.ksu.edu/cis527/5-the-cloud/07-scaling-high-availability-slides/index.html</link><description>CIS 527
 Lab 5 - Scaling &amp; High Availability
 Image Source: Nati Shalom on Stack Overflow
 ScalingHorizontal - Add More Droplets &amp; Load BalancerVertical - Resize Droplet; Requires Downtime or Existing InfrastructureHorizontal ScalingImage Source: DigitalOcean
@@ -7,4 +7,7 @@ High AvailabilityImage Source: DigitalOcean
 Case StudyImage Source: Netflix
 Image Source: Netflix
 Image Source: Netflix Tech Blog
-Image Source: Netflix Tech Blog</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://textbooks.cs.ksu.edu/cis527/5-the-cloud/07-scaling-high-availability-slides/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+Image Source: Netflix Tech Blog
+Image Source: Netflix Tech Blog
+Image Source: High Scalability
+Image Source: Brooks Canavesi</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://textbooks.cs.ksu.edu/cis527/5-the-cloud/07-scaling-high-availability-slides/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

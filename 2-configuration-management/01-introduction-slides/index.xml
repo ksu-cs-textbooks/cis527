@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://textbooks.cs.ksu.edu/cis527/2-configuration-management/01-introduction-slides/</link><description>CIS 527
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://textbooks.cs.ksu.edu/cis527/2-configuration-management/01-introduction-slides/index.html</link><description>CIS 527
 Lab 2 - Introduction
 Module 2 - Configuration ManagementInstall Puppet AgentCreate Puppet ManifestsConfigure Lab 1 VMs AutomaticallyImage Credit: Puppet
 Download Puppethttps://puppet.com/download-learning-vm

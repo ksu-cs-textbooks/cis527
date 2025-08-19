@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://textbooks.cs.ksu.edu/cis527/1-secure-workstations/15-ubuntu-file-permissions-slides/</link><description>CIS 527
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://textbooks.cs.ksu.edu/cis527/1-secure-workstations/15-ubuntu-file-permissions-slides/index.html</link><description>CIS 527
 Lab 1 - Ubuntu File Permissions
 Linux File PermissionsClassesUser - owner of the fileGroup - group assigned to fileOthers - other usersPermissionsRead - read file contentsWrite - change/delete fileExecute - run program or script &amp; list folder contentsFile ListImage Credit: Digital Ocean
 File ModesImage Credit: Digital Ocean
 Octal PermissionsImage Credit: Just Enough Linux
-Common Octal ValuesImage Credit: Linode</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://textbooks.cs.ksu.edu/cis527/1-secure-workstations/15-ubuntu-file-permissions-slides/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+Common Octal ValuesImage Credit: Linode
+Modifying PermissionsFile Browser (Nautilus)Edit as Administrator (Using "nautilus-admin")TerminalTerminal Commandschmod - Change Permissions (Mode)chmod [class][op][mode] &lt;path>chmod [ugoa][+-=][rwx] &lt;path>chmod [octal_mode] &lt;path>chown - Change Ownerchown [user]:[group] &lt;path>chgrp - Change Groupchgrp [group] &lt;path>Must Own FileNext Step!Start Lab 1, Task 6:</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://textbooks.cs.ksu.edu/cis527/1-secure-workstations/15-ubuntu-file-permissions-slides/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

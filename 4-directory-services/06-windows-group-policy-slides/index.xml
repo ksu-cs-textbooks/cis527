@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://textbooks.cs.ksu.edu/cis527/4-directory-services/06-windows-group-policy-slides/</link><description>CIS 527
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title/><link>https://textbooks.cs.ksu.edu/cis527/4-directory-services/06-windows-group-policy-slides/index.html</link><description>CIS 527
 Lab 4 - Windows Group Policy
 Windows Group PolicyConfiguration &amp; Settings for WindowsManaged via Active DirectoryHierarchicalInheritableProcessing OrderLocalSiteDomainOrganizational Unit (OU)ExamplesDrive MappingsPower OptionsFolder RedirectionInternet Explorer SettingsPassword PolicyPrintersSource: Redmond Magazine
 Demo: Password Policy</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://textbooks.cs.ksu.edu/cis527/4-directory-services/06-windows-group-policy-slides/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
