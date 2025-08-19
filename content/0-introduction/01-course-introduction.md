@@ -4,13 +4,9 @@ weight: 5
 pre: "1. "
 ---
 
-{{% notice note "Ed Discussion" %}}
+{{< youtube asdf >}}
 
-_This video was recorded before I decided to switch to Ed Discussion instead of using Discord. All discussions of "Discord" can be applied to "Ed Discussion" instead. Sorry for the confusion!_ - Russ
-
-{{% /notice %}}
-
-{{< youtube WxIB1T6oxTk >}}
+<!-- WxIB1T6oxTk Fall 2024 -->
 
 <!-- 3xg_6bHG3A0 Fall 2023 -->
 
@@ -57,7 +53,7 @@ In addition, due to the flexible online format of this class, there won't be any
 
 What hasn't changed, though, is the basic concept of a college course. You'll still be expected to watch or read about 6 hours of content to complete each module. In addition to that, each lab assignment may require anywhere from 1 to 6 hours of work to complete. If you plan on doing a module every week, that roughly equates to 6 hours of content and 6 hours of homework each week, which is the expected workload from a 3 credit hour college course during the summer.
 
-Also, while some of the quizzes will be graded automatically, much of the grading will still be done directly by me. This includes the lab assignments. For each lab assignment, you'll schedule a time to meet with us either in person or remotely to review your work for that lab. Finally, we'll still be available to meet with you online for virtual office hours as needed. Of course, you can always contact me via email if you have any questions. In fact, since I regularly work from home anyway, I'll probably be easier to contact than some of my fellow faculty!
+Also, while some of the quizzes will be graded automatically, much of the grading will still be done directly by me or my GTA. This includes the lab assignments. For each lab assignment, you'll schedule a time to meet with us either in person or remotely to review your work for that lab. Finally, we'll still be available to meet with you online for virtual office hours as needed. Of course, you can always contact me via email if you have any questions. In fact, since I regularly work from home anyway, I'll probably be easier to contact than some of my fellow faculty!
 
 For this class, each student is required to have access to a personal computer. It should have plenty of RAM and CPU power to host several virtual machines concurrently. In addition, you'll need some virtual machine software, which is available for free to K-State CS students. I'll discuss how to acquire and install that software in the first lab module. Finally, you'll also need access to a high-speed connection capable of web conferencing with video. If you have any concerns about meeting these requirements, please contact me ASAP! We may have options available through some on-campus resources to help you out.
 

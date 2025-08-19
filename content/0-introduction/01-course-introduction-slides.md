@@ -9,14 +9,13 @@ hidden: true
 <section>
 	<h3>Russell Feldhausen</h3>
 	<p>
-	  <i>Pronouns: he/him</i><br>
 		(785) 292-3121 (Call/Text)<br>
 		2213 Engineering Hall<br>
 		<i>(working remotely)</i><br>
 		<br>
 		<b>russfeld AT ksu DOT edu</b><br>
 		https://russfeld.me  -  @russfeld<br>
-		<i>Email & Ed Stem Preferred</i>
+		<i>Email & Ed Discussion Preferred</i>
 	</p>
 </section>
 <section>

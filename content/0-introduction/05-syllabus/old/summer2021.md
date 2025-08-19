@@ -1,6 +1,6 @@
 ---
 title: "Summer 2021 Syllabus"
-weight: 25
+weight: 60
 pre: "5. "
 ---
 

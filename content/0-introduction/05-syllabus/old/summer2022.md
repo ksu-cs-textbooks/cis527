@@ -1,6 +1,6 @@
 ---
 title: "Summer 2022 Syllabus"
-weight: 25
+weight: 45
 pre: "5. "
 ---
 
