@@ -57,6 +57,8 @@ You may develop your prototype using virtual machines, cloud resources, or any o
 
 In addition, you will perform a [SWOT](https://en.wikipedia.org/wiki/SWOT_analysis) (Strengths, Weaknesses, Opportunities, Threats) analysis of your proposed solution and associated prototype. Be very blunt and honest in each section, as you should be able to show the level of depth of your technical expertise, the lessons learned through building the prototypes, and any analysis you have performed.
 
+Each section of the SWOT analysis in your technical writeup should contain multiple items, and each item should consist of several sentences of analysis giving the reasoning behind it and any mitigating factors. Your SWOT analysis in the technical writeup **SHOULD NOT** simply be a set of bullet points with short labels for each item. A simpler version is appropriate for any slides used in your presentation video. _Many students have lost significant points on this assignment by not spending enough time and effort in the SWOT analysis portion of the technical writeup!_
+
 {{% notice tip %}}
 _There are NO proposals without several external threats and internal weaknesses, no matter how good it is. If you can't find any, think harder! :^) --Russ_
 {{% /notice %}}
