@@ -28,21 +28,21 @@ This lab may take anywhere from **1 - 6 hours** to complete, depending on your p
 
 #### Software
 
-This lab is written with the expectation that most students will be using **VMware Workstation** or **VMware Fusion** to complete the assignment. That software is available free of charge on the Broadcom Website ( [Download Workstation](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Workstation+Pro) and [Download Fusion](https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Fusion) ) and is free for personal and academic use, and it is highly recommended for students who are new to working with virtual machines, since most of the assignments in this class are tailored to the use of that platform.
+This lab is written with the expectation that most students will be using **VMware Workstation** or **VMware Fusion** to complete the assignment. That software is available free of charge on the Broadcom Website ( [Download Workstation](https://support.broadcom.com/group/ecx/free-downloads) and [Download Fusion](https://support.broadcom.com/group/ecx/free-downloads) ) and is free for personal and academic use, and it is highly recommended for students who are new to working with virtual machines, since most of the assignments in this class are tailored to the use of that platform.
 
 If you are using another virtualization platform, you may have to adapt these instructions to fit. If you are unsure about any specification and how it applies to your setup, please contact the instructor.
 
 You will also need installation media for the following operating systems:
-* **Windows 11 Version 23H2** or later - See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
-  * Look for **Windows 11 Education, Version 23H2** on the list of software available on the Azure Dev Tools site.
-  * File Name: `en-us_windows_11_consumer_editions_version_23h2_x64_dvd_8ea907fb.iso`
-  * SHA 256 Hash: `71a7ae6974866603d366a911b0c00eace476e0b49d12205d7529765cc50b4b39`
+* **Windows 11 Version 24H2** or later - Visit the [Azure Dev Tools for Teaching](https://azureforeducation.microsoft.com/devtools) page from Microsoft to download this software. See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
+  * Look for **Windows 11 Education, Version 24H2** on the list of software available on the Azure Dev Tools site.
+  * File Name: `en-us_windows_11_consumer_editions_version_24h2_x64_dvd_1d5fcad3.iso`
+  * SHA 256 Hash: `b56b911bf18a2ceaeb3904d87e7c770bdf92d3099599d61ac2497b91bf190b11`
   * _Your file may vary as Microsoft constantly updates these installers._
-  * _You may choose to upgrade to a later version of Windows 11 while installing updates._
+  * _You may choose to upgrade to a later version of Windows 11 if prompted while installing updates, such as 25H1._
 * **Ubuntu 24.04 LTS (Noble Numbat)** or later - Download from [Ubuntu](https://ubuntu.com/download), an official [Ubuntu Mirror](https://launchpad.net/ubuntu/+cdmirrors) (this is usually the fastest option), or the [K-State CS Mirror](https://mirror.cs.ksu.edu/ubuntu-releases/noble/) (this is great if you are on campus).
-  * File Name: `ubuntu-24.04-desktop-amd64.iso`
-  * SHA 256 Hash: `81fae9cc21e2b1e3a9a4526c7dad3131b668e346c580702235ad4d02645d9455`
-  * _If a point release is available (ex: 24.04.1), feel free to us that version. **Do not upgrade to a newer LTS or non-LTS release** such as Ubuntu 24.10, as those versions may have significant changes that are not covered in these assignments._
+  * File Name: `ubuntu-24.04.3-desktop-amd64.iso`
+  * SHA 256 Hash: `faabcf33ae53976d2b8207a001ff32f4e5daae013505ac7188c9ea63988f8328`
+  * _If a point release is available (ex: 24.04.4), feel free to us that version. **Do not upgrade to a newer LTS or non-LTS release** such as Ubuntu 25.04, as those versions may have significant changes that are not covered in these assignments._
 
 {{% notice note "Prior Versions" %}}
 The original course materials were developed for Windows 10 Version 1803 and Ubuntu 18.04 LTS. Some course materials may still show the older versions. Students should use the software versions listed in bold above if at all possible, as these assignments have been verified using those versions. If not, please contact the instructor for alternative options. If you find any errors or issues using the updated versions of these systems, please contact the instructor. 
@@ -54,7 +54,7 @@ The original course materials were developed for Windows 10 Version 1803 and Ubu
 
 Install the virtualization software platform of your choice. It must support using Windows 11 and Ubuntu 24.04 as a guest OS. In general, you'll need the latest version of the software. 
 
-**VMware Workstation** or **VMware Fusion** is recommended and available free of charge on the [VMware Website](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) and is free for personal and academic use.
+**VMware Workstation** or **VMware Fusion** is recommended and available free of charge on the [VMware Website](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) and is free for personal and academic use. [Download Workstation or Fusion Here](https://support.broadcom.com/group/ecx/free-downloads)
 
 You may need to install the latest version available for download and then update it within the software to get to the absolute latest version that supports the latest guest OS versions.
 
@@ -102,7 +102,7 @@ _This is very important, as it allows us to track your virtual machine on the K-
 
 * **Install Software**
   - [VMware Tools](https://kb.vmware.com/s/article/1014294)
-  - [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/)
+  - [Mozilla Firefox](https://www.firefox.com/en-US/)
   - [Mozilla Thunderbird](https://www.thunderbird.net/en-US/)
   - [IIS Web Server](https://www.howtogeek.com/112455/how-to-install-iis-8-on-windows-8/)
   - [Notepad++](https://notepad-plus-plus.org/)
@@ -113,12 +113,11 @@ _This is very important, as it allows us to track your virtual machine on the K-
 * **Configure Firewall**
   - Make sure Windows Firewall is enabled
   - Allow all incoming connections to port 80 (for IIS) {{% notice tip %}}
-
 You can test this by accessing the Windows VM IP Address from Firefox running on your Ubuntu VM, provided they are on the same virtual network.
 {{% /notice %}}
 
 * **Install Windows Updates:** Run Windows Update and reboot as necessary until all available updates are installed. {{% notice note "Multiple Updates Required!" %}}
-Even though you may have installed a particular version of Windows, such as 23H2, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. Keep going until you are sure there are no more updates to be found.
+Even though you may have installed a particular version of Windows, such as 24H2, you should run updates repeatedly until there are no more updates available. You may end up installing at least one major update rollup. Keep going until you are sure there are no more updates to be found.
 {{% /notice %}}
 
 * **Automatic Updates:** Make sure the system is set to download and install security updates automatically.
