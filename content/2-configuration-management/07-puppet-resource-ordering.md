@@ -14,7 +14,7 @@ _As of 2023, the Puppet Learning VM is no longer being maintained. The videos be
 
 #### Resources
 
-* [Language: Relationships and Ordering](https://puppet.com/docs/puppet/latest/lang_relationships.html) from Puppet
+* [Language: Relationships and Ordering](https://help.puppet.com/core//current/Content/PuppetCore/lang_relationships.htm) from Puppet
 
 #### Video Script
 

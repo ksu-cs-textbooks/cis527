@@ -16,12 +16,11 @@ The video refers to Puppet version 6, but Puppet 8 is now the latest version. Fo
 
 #### Resources
 * [Puppet Agent Windows Downloads](https://downloads.puppetlabs.com/windows/puppet8/) from Puppet (look for puppet-agent-x64-latest.msi)
-* [About Puppet Platform and Its Packages](https://www.puppet.com/docs/puppet/8/platform_components) from Puppet
+* [About Puppet Platform and Its Packages](https://help.puppet.com/core/8/Content/PuppetCore/core-platform-components.htm) from Puppet
 * [Puppet Learning](https://www.puppet.com/products/puppet-enterprise/learning-puppet) from Puppet
 * [Puppet System Requirements](https://puppet.com/docs/pe/latest/system_requirements.html) from Puppet
 * [Puppet Documentation](https://puppet.com/docs) from Puppet
-* [Installing Puppet Agent](https://puppet.com/docs/puppet/latest/install_agents.html) from Puppet
-* [Add Executables to your PATH](https://www.puppet.com/docs/puppet/8/install_agents.html#adding_executables_to_your_path) from Puppet
+* [Add Executables to your PATH](https://help.puppet.com/core/8/Content/PuppetCore/adding_executables_to_your_path.htm) from Puppet
 
 #### Video Script
 

@@ -14,7 +14,7 @@ _As of 2023, the Puppet Learning VM is no longer being maintained. The videos be
 
 #### Resources
 
-* [Overview of Puppet's Architecture](https://puppet.com/docs/puppet/latest/architecture.html) from Puppet
+* [Overview of Puppet's Architecture](https://help.puppet.com/core//current/Content/PuppetCore/platform_components.htm) from Puppet
 
 #### Video Script
 

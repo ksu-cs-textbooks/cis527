@@ -37,10 +37,20 @@ Create new Windows 11 and Ubuntu 24.04 virtual machines for this lab. When creat
 After installing the operating system, install **ONLY** the following software:
 
 * **Puppet Agent 8**
-  - Windows: Download and install the latest Puppet Agent from [Puppet Downloads](https://downloads.puppetlabs.com/windows/puppet8/). See the [Installing Agents](https://www.puppet.com/docs/puppet/8/install_agents#install_windows_agents) from Puppet Documentation
-  - Ubuntu: See [Installing Agents](https://puppet.com/docs/puppet/latest/install_agents.html) and [Enable the Puppet Platform on Apt](https://www.puppet.com/docs/puppet/8/install_puppet#enable_the_puppet_platform_repository) from Puppet Documentation
-    - Recall that Ubuntu 24.04 is codenamed "Noble Numbat", so use the url `https://apt.puppet.com/puppet8-release-noble.deb` to get the correct version on Ubuntu. 
+  - Windows: Download and install the latest Puppet Agent from [Puppet Downloads](https://downloads.puppetlabs.com/windows/puppet8/). Look for the file `puppet-agent-x64-latest.msi` in that directory. 
+  - Ubuntu: See the video later in this module for instructions to install Puppet. These instructions are also summarized in the [README](https://apt.puppetlabs.com/README.txt) for the Puppet APT repositories.
+    - Recall that Ubuntu 24.04 is codenamed "Noble Numbat", so use the url `https://apt.puppet.com/puppet8-release-noble.deb` to get the correct version on Ubuntu in the first step. 
     - Follow the instructions in the video later in this lab to add Puppet to the `sudo` path.
+
+{{% notice info "Puppet Changed Security Model in 2025" %}}
+
+In 2025, Puppet was consumed by Perforce, and they limited access to many of the existing downloads and documentation. You can find more information about this change here: [Our Plans for Open Source Puppet in 2025](https://www.puppet.com/blog/open-source-puppet-updates-2025). 
+
+Because of this, much of the existing documentation for Puppet 8 was migrated and updated to reference their new secure setup, and access to newer Puppet versions requires requesting an account and agreeing to an EULA. I have done my best to update the links to accurate documentation, but some content was unfortunately lost.
+
+However, we're going to forge ahead and use the existing older versions of Puppet published in late 2024 for now. I will eventually update this course to use a new tool in place of Puppet since it no longer seems to be as freely available as before.
+
+{{% /notice %}}
 
 * **VMware Tools** (Windows) and either `open-vm-tools-desktop` or **VMware Tools** (Ubuntu)
 
@@ -48,9 +58,9 @@ After installing the operating system, install **ONLY** the following software:
 
 On the Windows virtual machine only, create a folder at `C:\install` and download the following installers. Do not change the name of the installers from the default name provided from the website. You may choose to do this step using the [download_file](https://forge.puppet.com/puppet/download_file) Puppet module instead.  
 
-* [Firefox](https://www.mozilla.org/en-US/firefox/all/) (`Firefox Setup 129.0.exe` as of 8/6/2024)
-* [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 128.0.1esr.exe` as of 8/6/2024)
-* [Notepad++](https://notepad-plus-plus.org/download/) (`npp.8.6.9.Installer.x64.exe` as of 8/6/2024)
+* [Firefox](https://www.firefox.com/en-US/download/all/) (`Firefox Setup 142.0.exe` as of 8/20/2025)
+* [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 142.exe` as of  8/20/2025)
+* [Notepad++](https://notepad-plus-plus.org/download/) (`npp.8.8.5.Installer.x64.exe` as of 8/20/2024)
 
 {{% notice note %}}
 _I have listed sample names of the installers as of this writing, and these will be the ones that I use for testing; however, you may receive newer versions with slightly different names. That is fine. Just be sure that you don't get the default stub or web-only installers, which is what Firefox typically gives you unless you follow the links above. They will not work properly for this lab. --Russ_

@@ -8,10 +8,10 @@ pre: "8. "
 
 #### Resources
 
-* [Language: Variables](https://puppet.com/docs/puppet/latest/lang_variables.html) from Puppet
-* [Facter: Core Facts](https://puppet.com/docs/puppet/latest/core_facts.html) from Puppet
-* [Values and Data Types](https://puppet.com/docs/puppet/latest/lang_data.html) from Puppet
-* [Templates](https://puppet.com/docs/puppet/latest/lang_template.html) from Puppet
+* [Language: Variables](https://help.puppet.com/core//current/Content/PuppetCore/lang_variables.htm) from Puppet
+* [Facter: Core Facts](https://help.puppet.com/core//current/Content/PuppetCore/Markdown/core_facts.htm) from Puppet
+* [Values and Data Types](https://help.puppet.com/core//current/Content/PuppetCore/lang_data.htm) from Puppet
+* [Templates](https://help.puppet.com/core//current/Content/PuppetCore/lang_template.htm) from Puppet
 
 #### Video Script
 

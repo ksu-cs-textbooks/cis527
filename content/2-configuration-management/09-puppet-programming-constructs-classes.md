@@ -8,9 +8,9 @@ pre: "9. "
 
 #### Resources
 
-* [Conditional Statements and Expressions](https://puppet.com/docs/puppet/latest/lang_conditional.html) from Puppet
-* [Expressions and Operators](https://puppet.com/docs/puppet/latest/lang_expressions.html) from Puppet
-* [Classes](https://puppet.com/docs/puppet/latest/lang_classes.html) from Puppet
+* [Conditional Statements and Expressions](https://help.puppet.com/core//current/Content/PuppetCore/lang_conditional.htm) from Puppet
+* [Expressions and Operators](https://help.puppet.com/core//current/Content/PuppetCore/lang_expressions.htm) from Puppet
+* [Classes](https://help.puppet.com/core//current/Content/PuppetCore/lang_classes.htm) from Puppet
 * [Puppet Labs Standard Library](https://forge.puppet.com/puppetlabs/stdlib) from Puppet
 * [Puppet Forge](https://forge.puppet.com/) from Puppet
 

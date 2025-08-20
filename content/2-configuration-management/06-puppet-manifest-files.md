@@ -16,8 +16,8 @@ _As of 2023, the Puppet Learning VM is no longer being maintained. The videos be
 
 * **[Slides]({{% relref "/2-configuration-management/06-puppet-manifest-files-slides.md"  %}})**
 * [Configuration Management 101: Writing Puppet Manifests](https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-puppet-manifests) from DigitalOcean
-* [Language: Visual Index](https://puppet.com/docs/puppet/latest/lang_visual_index.html) from Puppet
-* [Language: Basics](https://puppet.com/docs/puppet/latest/puppet_language.html) from Puppet
+* [Language: Basics](https://help.puppet.com/core//current/Content/PuppetCore/puppet_language.htm#The_Puppet_language) from Puppet
+* [Language: Resource Examples](hhttps://help.puppet.com/core//current/Content/PuppetCore/lang_examples_resource.htm) from Puppet
 
 #### Video Script
 
