@@ -10,8 +10,8 @@ pre: "11. "
 
 * **[Slides]({{% relref "/1-secure-workstations/11-windows-security-networking-slides.md"  %}})**
 * [Adjust Windows 10 Firewall Rules & Settings](https://www.online-tech-tips.com/windows-10/adjust-windows-10-firewall-settings/) from Online Tech Tips
-* [Configuring Virtual Network Adapter Settings](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-C82DCB68-2EFA-460A-A765-37225883337D.html) from VMware
-* [Using the Virtual Network Editor](https://docs.vmware.com/en/VMware-Workstation-Pro/12.0/com.vmware.ws.using.doc/GUID-AC956B17-30BA-45F7-9A39-DCCB96B0A713.html) from VMware
+* [Configuring Virtual Network Adapter Settings](https://techdocs.broadcom.com/us/en/vmware-cis/desktop-hypervisors/workstation-pro/17-0/using-vmware-workstation-pro/configuring-network-connections/understanding-virtual-networking-components.html) from VMware
+* [Using the Virtual Network Editor](https://techdocs.broadcom.com/us/en/vmware-cis/desktop-hypervisors/workstation-pro/17-0/using-vmware-workstation-pro/using-the-virtual-network-editor.html) from VMware
 
 #### Video Script
 
