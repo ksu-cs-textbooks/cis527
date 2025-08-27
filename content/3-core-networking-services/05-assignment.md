@@ -45,7 +45,7 @@ _If you do not follow these instructions carefully, the two VMs may have conflic
 Clearly label your original Ubuntu VM as **CLIENT** and the new Ubuntu VM as **SERVER** in VMware Workstation so you know which is which. For this lab, we'll mostly be using the **SERVER** VM, but will use the **CLIENT** VM for some testing and as part of the SNMP example in Task 5. 
 
 {{% notice note %}}
-**VMware Fusion (Mac) Users** - Before progressing any further, I recommend creating a new NAT virtual network configuration and moving all of your VMs to that network, instead of the default "Share with my Mac" (vmnet8) network. In this lab, you'll need to disable DHCP on the network you are using, which is very difficult to do on the default networks. You can find relevant instructions in [Add a NAT Configuration](https://docs.vmware.com/en/VMware-Fusion/13/com.vmware.fusion.using.doc/GUID-7D8E5A7D-FF0C-4975-A794-FF5A9AE83234.html) and [Connect and Set Up the Network Adapter](https://docs.vmware.com/en/VMware-Fusion/13/com.vmware.fusion.using.doc/GUID-84AC2D7D-4A44-4AB6-BAF8-F12C55E71A2F.html) in the VMware Fusion 13 Documentation.
+**VMware Fusion (Mac) Users** - Before progressing any further, I recommend creating a new NAT virtual network configuration and moving all of your VMs to that network, instead of the default "Share with my Mac" (vmnet8) network. In this lab, you'll need to disable DHCP on the network you are using, which is very difficult to do on the default networks. You can find relevant instructions in [Add a NAT Configuration](https://techdocs.broadcom.com/us/en/vmware-cis/desktop-hypervisors/fusion-pro/13-0/using-vmware-fusion/configuring-vmware-fusion/setting-fusion-preferences/creating-custom-networks/add-a-nat-configuration.html) and [Connect and Set Up the Network Adapter](https://techdocs.broadcom.com/us/en/vmware-cis/desktop-hypervisors/fusion-pro/13-0/using-vmware-fusion/configuring-your-virtual-machines/add-a-device/configuring-the-network-connection/connect-and-set-up-the-network-adapter.html) in the VMware Fusion 13 Documentation.
 {{% /notice %}}
 
 ---
@@ -60,14 +60,14 @@ Clearly label your original Ubuntu VM as **CLIENT** and the new Ubuntu VM as **S
 _You'll need to edit the registry and reboot the computer to accomplish this task. --Russ_
 {{% /notice %}}
 * You'll also need to make sure appropriate firewall rules are in place to accept these incoming connections, and ensure the firewall is properly enabled.
-* You can test your connection from your Linux VM using the **Remmina** program.
+* You can test your connection from your Ubuntu Client VM using the **Remmina** program.
 
 **PART B:** On your Ubuntu 24.04 VM labelled **SERVER**, install and activate the **OpenSSH Server** for remote access.
 
 * Both the `cis527` and `AdminUser` accounts should be able to access the system remotely.
 * In addition, **change the port** used by the SSH server to 23456.
 {{% notice tip %}}
-_In the SSH configuration file, the entries starting with a `#` are comments. Typically the default values for each setting are included in the configuration file but commented out. In Ubuntu 24.04, you need to fully reboot the system for changes to the SSH configuration file to take effect! --Russ_
+_In the SSH configuration file, the entries starting with a `#` are comments. Typically the default values for each setting are included in the configuration file but commented out. In Ubuntu 24.04, you need to fully reload the daemon and the SSH socket for some changes to take effect - read the comment directly above the port setting line in the configuration file! --Russ_
 {{% /notice %}}
 * You'll also need to make sure the appropriate firewall rules are in place to accept these incoming connections, and ensure the firewall is properly enabled.
 * You can test your connection from your Windows VM using the `ssh` command in PowerShell, or from the Ubuntu 24.04 VM labelled **CLIENT** using the `ssh` command. {{% notice tip %}}
@@ -112,7 +112,6 @@ _I personally recommend using the graphical tools in Ubuntu to configure a stati
 #### Resources
 
 * [How to Configure Static IP Address on Ubuntu 20.04 Focal Fossa Desktop/Server](https://linuxconfig.org/how-to-configure-static-ip-address-on-ubuntu-20-04-focal-fossa-desktop-server) from LinuxConfig.org
-* [How to Configure Static IP Address on Ubuntu 18.04](https://linoxide.com/linux-how-to/configure-static-ip-address-ubuntu/) from LinOxide (should work for 20.04 as well)
 * _The Command Line Way: [Network Configuration](https://ubuntu.com/server/docs/network-configuration) from Ubuntu Server Guide._
 
 ---
@@ -265,7 +264,7 @@ _You will present the screenshots as proof that you performed this activity for 
 
 * [How to Install and Configure an SNMP Daemon and Client on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-an-snmp-daemon-and-client-on-ubuntu-18-04) from DigitalOcean (works for 24.04 as well)
 * [Install and Configure SNMP on Ubuntu 22.04/Debian 11](https://kifarunix.com/install-and-configure-snmp-on-ubuntu-debian/) from Kifarunix (includes correct command to create user accounts)
-* [How to Use The Net-SNMP Tool Suite to Manage and Monitor Servers](https://www.digitalocean.com/community/tutorials/how-to-use-the-net-snmp-tool-suite-to-manage-and-monitor-servers) from DigitalOcean (works for 22.04)
+* [How to Use The Net-SNMP Tool Suite to Manage and Monitor Servers](https://www.digitalocean.com/community/tutorials/how-to-use-the-net-snmp-tool-suite-to-manage-and-monitor-servers) from DigitalOcean (works for 24.04)
 * [SNMP Agent](https://help.ubuntu.com/community/SNMPAgent) from Ubuntu Community Help Wiki
 
 ---
