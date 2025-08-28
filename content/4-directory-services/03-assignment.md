@@ -30,10 +30,20 @@ _Most students in previous semesters have reported that **this lab is generally 
 
 ### Task 0: Create 4 VMs
 
+{{% notice warning "Windows Server 2025 Does Not Work" %}}
+
+In Windows Server 2025, there is an unresolved bug preventing Ubuntu clients from joining a Windows Active Directory Domain hosted by that server version. As of 8/28/2025, this is still unresolved.
+
+You can find the discussion of the outstanding bug (here)[https://gitlab.freedesktop.org/realmd/adcli/-/issues/40].
+
+For now, we'll continue to use Windows Server 2022 for this class.
+
+{{% /notice %}}
+
 For this lab, you'll need the following VMs:
 
 1. A **Windows 11** VM. You may reuse your existing Windows 11 VM from a previous lab.
-2. A **Windows Server 2022 Standard (Updated July 2023)** (or newer) VM. See **Task 1** below for configuration details.
+2. A **Windows Server 2022 Standard** (Updated July 2023 or newer) VM. See **Task 1** below for configuration details.
 3. An **Ubuntu 24.04** VM labelled **CLIENT**. This should be the existing **CLIENT** VM from Lab 3.
 4. An **Ubuntu 24.04** VM labelled **SERVER**. _You have three options to create this VM:_
    * You can create a copy of your existing **CLIENT** VM from Lab 3, which does not have DHCP and DNS servers installed. Follow the instructions in the Lab 3 assignment to create a copy of that VM. In this case, you'll need to reconfigure the VMware NAT network to handle DHCP duties. Make sure you label this copy **SERVER** in VMWare. _This is generally the option that is simplest, and causes the least headaches._
@@ -48,7 +58,7 @@ Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4"
 
 ### Task 1: Install Windows Server 2022 Standard
 
-Create a new virtual machine for **Windows Server 2022 Standard** using the "Windows Server 2022 Standard (Updated July 2023)" installation media (you may choose a newer option if available, but this lab was tested on that specific version). You can download the installation files and obtain a product key from the [Microsoft Azure Student Portal](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) discussed in Module 1. 
+Create a new virtual machine for **Windows Server 2022 Standard** using the "Windows Server 2022 Standard" installation media (you may choose a newer option if available, but this lab was tested on that specific version - see the warning above about Server 2025 not working currently). You can download the installation files and obtain a product key from the [Microsoft Azure Student Portal](https://azureforeducation.microsoft.com/devtools) discussed in Module 1. 
 
 * File Name: `en-us_windows_server_2022_updated_july_2023_x64_dvd_541692c3.iso`
 * SHA 256 Hash: `e215493d331ebd57ea294b2dc96f9f0d025bc97b801add56ef46d8868d810053`
@@ -97,8 +107,11 @@ Configure your Windows Server as an Active Directory Domain Controller. Follow t
 
 1. First, set a static IP address on your Windows Server VM. Use the IP address ending in `42` that was reserved for this use in Lab 3. For the static DNS entries, use that same IP address or the localhost IP address (`127.0.0.1`) as the first entry, and then use the IP address of your DNS server (either your Ubuntu Server from Lab 3 or VMware's default gateway address, whichever option you are using) as the second DNS entry. In this way, the server will use itself as a DNS server first, and if that fails then it will use the other server. This is very important when dealing with Active Directory Domains, as the Domain Controller is also a DNS server.
 
+
+
 2. Follow the instructions in the resources section below to install and configure the Active Directory Domain Services role on the server.
    * **Domain Name:** `ad.<your eID>.cis527.org` (example: `ad.russfeld.cis527.org`)
+   * **Forest Functional Level** & **Domain Functional Level**: Windows Server 2016
    * **NETBIOS Domain Name:** `AD` (this should be the default that is presented by the wizard)
    * **Passwords:** Use `cis527_windows` for all passwords
 
