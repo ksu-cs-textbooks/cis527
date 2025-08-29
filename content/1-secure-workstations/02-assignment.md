@@ -209,7 +209,7 @@ _Read the whole task before you start! You have been warned. --Russ_
 * Create a folder `/cis527` (**at the root of the system, not in a user's home folder**). Any user may read or write to this folder, and it should be owned by `root:root` (user: `root`; group: `root`).
 
 * Within `/cis527`, create a folder for each user created during task 5 except for `cis527`, with the folder name matching the user's name. Make sure that each folder is owned by the user of the same name, and that that user has full permissions to its namesake folder.
-  - For example, user `adminaccount` should have a folder `/cis52/adminaccount` and have full ownership and permissions on that folder.
+  - For example, user `adminaccount` should have a folder `/cis527/adminaccount` and have full ownership and permissions on that folder.
 
 * Create a group named `admingroup` and set permissions on each folder using that group to allow both `cis527` and `adminaccount` to have full access to each folder created in `/cis527`.
   - In this example, the folder `adminaccount` should still be owned by `adminaccount` and that account should have explicit full access, but the `admingroup` group should _also_ have full access to that folder.
