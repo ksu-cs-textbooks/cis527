@@ -19,7 +19,7 @@ HTTP was developed by Tim Berners-Lee while he worked at CERN in the late 1980s 
 
 Since HTTP is a text-based protocol, it defines a set of commands and responses to make it easy for the system to understand each packet. The two most common HTTP commands are `GET` and `POST`. `GET` is used to request a webpage from a server, and `POST` is used to submit information back to the server, usually as part of a form on the website. Other commands are defined, but they are generally not used very often.
 
-When the server responds to a command from a client, it sends along a numerical status code for the response. Some of the common status codes are listed here. For example, `200` means that the request was accepted properly, whereas `404` indicates that the requested resource was not fond on the server. You've probably seen some of these error codes in your web browser from time to time.
+When the server responds to a command from a client, it sends along a numerical status code for the response. Some of the common status codes are listed here. For example, `200` means that the request was accepted properly, whereas `404` indicates that the requested resource was not found on the server. You've probably seen some of these error codes in your web browser from time to time.
 
 As I mentioned earlier, HTTP is a text-based protocol. That means, if you are able to type quickly enough, you can use a text-based program such as Telnet to actually send queries directly to a web server. This image shows an HTTP request and response sent using Telnet to the main Wikipedia server.
 
@@ -131,3 +131,4 @@ Congrats! You did it!
 So, even though it looks like the username and password are encrypted, they are easily deciphered using any base64 decoding program. As part of the lab assignment, you'll capture an authentication packet just like this one in Wireshark.
 
 This is just a quick introduction to HTTP. There are many interesting features in the protocol, and they are easy to explore by simply capturing packets with Wireshark while you use a web browser to surf the World Wide Web. I encourage you to do just that to get a bit more experience with HTTP.
+
