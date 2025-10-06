@@ -287,7 +287,7 @@ Then, using Wireshark, create **screenshots** showing that you captured and can 
 1. An ICMP Echo (ping) request
 1. An encrypted SNMP packet showing `cis527` or `bootstrap` as the username (look for the `msgUserName` field)
    * _HINT: Use the commands from Task 5_
-1. A DHCP Offer packet showing the Domain Name of `<your ID>.cis527.cs.ksu.edu`
+1. A DHCP Offer packet showing the Domain Name of `<your ID>.cis527.org`
    * _HINT: Reboot one of your other VMs to force it to request a new IP address, or use the `ipconfig` (Windows) or `dhclient` (Ubuntu) commands to renew the IP address_
 1. An HTTP 301: Moved Permanently or HTTP 302: Found redirect response
    * _HINT: Clear the cache in your web browser, then navigate to `http://people.cs.ksu.edu/~sgsax` (without a trailing slash). It should redirect to `http://people.cs.ksu.edu/~sgsax/` (with a trailing slash)._
@@ -311,3 +311,4 @@ In each of the virtual machines created above, create a snapshot labelled "Lab 3
 ### Task 8: Schedule A Grading Time
 
 Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.
+
