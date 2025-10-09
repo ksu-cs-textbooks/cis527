@@ -64,7 +64,7 @@ _You'll need to edit the registry and reboot the computer to accomplish this tas
 
 **PART B:** On your Ubuntu 24.04 VM labelled **SERVER**, install and activate the **OpenSSH Server** for remote access.
 
-* Both the `cis527` and `AdminUser` accounts should be able to access the system remotely.
+* Both the `cis527` and `adminaccount` accounts should be able to access the system remotely.
 * In addition, **change the port** used by the SSH server to 23456.
 {{% notice tip %}}
 _In the SSH configuration file, the entries starting with a `#` are comments. Typically the default values for each setting are included in the configuration file but commented out. In Ubuntu 24.04, you need to fully reload the daemon and the SSH socket for some changes to take effect - read the comment directly above the port setting line in the configuration file! --Russ_
@@ -311,4 +311,5 @@ In each of the virtual machines created above, create a snapshot labelled "Lab 3
 ### Task 8: Schedule A Grading Time
 
 Contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.
+
 
