@@ -8,6 +8,13 @@ pre: "8. "
 
 <!-- 9aOZ-qy_KKc -->
 
+{{% notice note %}}
+
+See the transcript below for an updated version of the `ldapwhoami` command. 
+
+{{% /notice %}}
+
+
 #### Resources
 
 * [SSSD and LDAP](https://ubuntu.com/server/docs/ldap-and-transport-layer-security-tls) on Ubuntu Server Guide
@@ -111,7 +118,7 @@ Hopefully you were able to get your LDAP server working in the previous lab. If 
 Next, we'll make sure we can access the LDAP server
 
 ```bash
-ldapwhoami -x -h ldap.cis527russfeld.cs.ksu.edu
+ldapwhoami -x -H ldap.cis527russfeld.cs.ksu.edu
 ```
 
 This command should return `anonymous`. If not, your **CLIENT** VM is having trouble contacting your **SERVER** VM or the LDAP server itself. In that case, you may want to check your firewall configuration - did you remember to allow the correct ports for LDAP? 
@@ -119,7 +126,7 @@ This command should return `anonymous`. If not, your **CLIENT** VM is having tro
 Once that command works, we can try it again using TLS by adding `-ZZ` to the command:
 
 ```bash
-ldapwhoami -x -ZZ -h ldap.cis527russfeld.cs.ksu.edu
+ldapwhoami -x -ZZ -H ldap.cis527russfeld.cs.ksu.edu
 ```
 
 Hopefully this command should return `anonymous` just like it did  previously. If not, there is probably a configuration issue with your TLS certificates that you'll need to resolve before moving on.

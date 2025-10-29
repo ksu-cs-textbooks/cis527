@@ -14,6 +14,8 @@ pre: "7. "
 
 PHPLDAPAdmin no longer works on Ubuntu 24.04 since it has several incompatibility issues with PHP 8+. The assignment has been updated to use the new LDAP Account Manager (LAM) software instead. You may ignore the part of this video showing how to configure PHPLDAPAdmin and instead refer to the guide linked from the assignment page to configure LAM.
 
+Also, see the transcript below for an updated version of the `ldapwhoami` command. 
+
 {{% /notice %}}
 
 #### Resources
@@ -210,7 +212,7 @@ sudo ldapmodify -Y EXTERNAL -H ldapi:/// -f certinfo.ldif
 Whew! That was a lot of work! Now, if we did everything correctly, we should be able to query this LDAP server using TLS. The best way to check that is by using the following command:
 
 ```bash
-ldapwhoami -x -ZZ -h ldap.cis527russfeld.cs.ksu.edu
+ldapwhoami -x -ZZ -H ldap.cis527russfeld.cs.ksu.edu
 ```
 
 The `-ZZ` part of that command tells it to use TLS, and if it works correctly it should return `anonymous` as the result. If this step fails, then you may need to do some troubleshooting to see what the problem is. 
