@@ -42,8 +42,8 @@ In addition, you will need two Ubuntu VMs, one labelled **SERVER** and the other
 
 Configure a file server on your Windows Server 2022 VM. It should have the following features:
 
-* A shared folder on the server named `public` and stored at `C:\public` that should be accessible by all users on your domain
-* A shared folder on the server named `admins` and stored at `C:\admins` that should only be accessible to users in the Domain Admins group in your domain
+* A shared folder on the server named `public` and stored at `C:\public` that should be accessible by **all users** on your domain
+* A shared folder on the server named `admins` and stored at `C:\admins` that should only be accessible to users in the **Domain Admins** group in your domain
 
 {{% notice tip %}}
 
@@ -63,7 +63,8 @@ Configure group policy objects (GPOs) on your Windows Active Directory domain to
 
 * All domain users should get the `public` folder automatically mapped to the `Z:\` drive on any system they log into.
 * Users in the ``Domain Admins`` group should also get the `admins` folder automatically mapped to the `Y:\` drive on any system they log into. 
-   * That drive **should not** be mapped for any user that is not a member of the `Domain Admins` group. 
+   * That drive **should not** be mapped for any user that is not a member of the `Domain Admins` group.
+* Make sure you test your drive maps on your Windows 11 Client system using different user accounts (feel free to create more domain accounts as needed) and be prepared to show that the correct drives are mapped for each user after logging in.
 
 {{% notice tip %}}
 _Pay close attention to how you attach and target these GPOs in the domain. You can use the domain Administrator account and the other domain account created in Lab 4 to test these on your Windows 11 client. --Russ_
@@ -83,6 +84,7 @@ Configure a file server using Samba on your Ubuntu VM labelled **SERVER**. It sh
 
 * A shared folder on the server named `public` and stored at `/public` that should be accessible by all Samba users
 * Enable shared home directories in Samba using the default `[homes]` share.
+  * Read the configuration file carefully and make sure you enable the security settings as well, which will prevent other users from accessing a `home` share for a particular user.
 * Enable the `cis527` user in the Samba password database. It should use the same `cis527_linux` password as the actual `cis527` account.
 
 Of course, you may need to modify your firewall configuration to allow incoming connections to the file server! **If your firewall is disabled and/or not configured, there will be a deduction of up to 10% of the total points on this lab**
@@ -111,7 +113,6 @@ _To be honest, this last part can be pretty tricky. I recommend following the in
 
 * [Mount Windows Shares Permanently](https://wiki.ubuntu.com/MountWindowsSharesPermanently) from Ubuntu Wiki
 * [How Do I Access Windows Shares from Bash](https://askubuntu.com/questions/434358/how-do-i-access-windows-shares-from-bash) on Ask Ubuntu Forums
-* [Use of pam-mount to Mount Home from Server](https://ubuntuforums.org/showthread.php?t=1375653) on Ubuntu Forums
 * [pam_mount](http://manpages.ubuntu.com/manpages/bionic/man8/pam_mount.8.html) on Ubuntu Manpages
 * [pam_mount.conf](http://manpages.ubuntu.com/manpages/bionic/man5/pam_mount.conf.5.html) on Ubuntu Manpages
 
@@ -176,7 +177,7 @@ Once you have selected your application, choose **ONE** of the following configu
 
 1. Install MySQL (and optionally phpMyAdmin) on your Ubuntu droplet labelled **BACKEND** and configure an appropriate username and database for your application. You should also enable SSL/TLS encryption on connections to the server if it is not already enabled in MySQL (this should be enabled by default in Ubuntu 20.04). When creating the user account in MySQL, make sure it is set to log in from the private network IP address of **FRONTEND**.
 {{% notice tip %}}
-_You may need to configure MySQL to listen on an external network interface. Make sure you use the private network IP address only - it should not be listening on all network interfaces. In addition, you will also have to open ports on the firewall, and you should restrict access to those ports to only allow connections from the private network IP address of **FRONTEND**, just like the SSH server in Lab 5. Points will be deducted for having a MySQL server open to the internet! --Russ_
+_You may need to configure MySQL to listen on an external network interface. Make sure you use the private network IP address only - it should not be listening on all network interfaces. In addition, you will also have to open ports on the firewall, and you should restrict access to those ports to only allow connections from the private network IP address of **FRONTEND**. Points will be deducted for having a MySQL server open to the internet! --Russ_
 {{% /notice %}}
 2. Install Apache and configure a new virtual host in Apache for your web application on **FRONTEND**. Also, add an appropriate A record to your domain name created in Lab 5 for this virtual host. You may shut down any Docker containers from Lab 5 that interfere with this configuration. 
 3. Install your web application on your Ubuntu droplet labelled **FRONTEND** following the application's installation instructions. When configuring the database for your application, you should have it use the MySQL database on **BACKEND** via the private network IP address. 
@@ -185,6 +186,7 @@ _You may need to configure MySQL to listen on an external network interface. Mak
 ##### Option 2: Docker
 
 1. Create two Docker containers on **FRONTEND**, one containing MySQL and another containing Wordpress. You may optionally add a container running phpMyAdmin if desired. The MySQL container must be isolated on its own internal network that cannot access the outside internet. 
+  1. It is **highly** recommended to use Docker Compose for this, as it allows you to easily replicate an environment and make incremental changes. You might even find some sample configurations in the official Wordpress documentation!
 2. Add an appropriate A record to your domain name created in Lab 5 for this docker container. You will also need to update your reverse proxy to properly route traffic to the Wordpress container. 
 3. Make sure that Wordpress is properly configured via environment variables in Docker.
 
