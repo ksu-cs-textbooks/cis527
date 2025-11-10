@@ -103,7 +103,7 @@ _In the video I use SSH to connect to GitLab, but that is no longer allowed thro
 4. Create a Bash script that will simply use the `git pull` command to get the latest content from the Git repository in the current directory.
 5. Install and configure [webhook](https://github.com/adnanh/webhook) on your Ubuntu droplet named **BACKEND**. It should listen for all incoming webhooks from GitHub that match a secret key you choose. When a hook is received, it should run the Bash script created earlier.
 6. Configure a webhook in your GitHub repository for all Push events using that same secret key and the URL of webhook on your server. You may need to make sure your domain name has an A record for the default hostname `@` pointing to your **BACKEND** server.
-  1. Alternatively, you may configure a GitHub Action to send the webhook. I recommend using [Workflow Webhook Action](https://github.com/marketplace/actions/workflow-webhook-action) or [HTTP Request Action](https://github.com/fjogeleit/http-request-action). 
+    1. Alternatively, you may configure a GitHub Action to send the webhook. I recommend using [Workflow Webhook Action](https://github.com/marketplace/actions/workflow-webhook-action) or [HTTP Request Action](https://github.com/fjogeleit/http-request-action). 
 7. To test this setup, you should be able to push a change to the GitHub repository, and see that change reflected on the website automatically.
 8. For offline grading, add the instructor (@russfeld) to the repository as maintainers, and submit the repository and URL where the files can be found in your grading packet. Provided the webhook works correctly, they should be able to see a pushed change to the repository update the website. 
 
@@ -123,18 +123,91 @@ _Since the Webhook process runs as the `root` user on **BACKEND**, you'll need t
 
 ---
 
-### Task 4: Submit Files
+### Task 4: Logging
+
+{{% notice note %}}
+
+_This activity is new in 2025. There may be some small hiccups as we refine it for use the first time. Please be patient and ask questions if something doesn't make sense! - Russ_
+
+{{% /notice %}}
+
+Set up a [Seq](https://datalust.co/) Log Aggregator and send logs from from both **FRONTEND** and **BACKEND** to the Seq system.
+
+1. Install [Seq](https://datalust.co/docs/getting-started) and [Seq-Input-Syslog](https://datalust.co/docs/syslog) as Docker Containers on **FRONTEND**. 
+   1. See the sample Docker Compose file on [Seq-Input-Syslog](https://datalust.co/docs/syslog) as a good starting point. 
+   2. Read the documentation to figure out what environment variables should be set on both containers to secure the system!
+2. Configure the Seq web dashboard to be accessible at `cis527seq.<yourdomain>.<tld>` either by directly mapping ports from Docker or using a reverse proxy as configured in Lab 5. 
+3. Configure rsyslog on both **FRONTEND** and **BACKEND** to forward the `auth.*` logs to Seq.
+   1. This can be done by simply adding a line `auth.*  @<ip_address>:514` to the bottom of `/etc/rsyslog.conf`.
+   2. Make sure that the [Seq-Input-Syslog](https://datalust.co/docs/syslog) is port-mapped to port 514/UDP on **FRONTEND**. You can confirm by checking the output of `ss -lnup`
+   3. Make sure the firewall on **FRONTEND** is configured to allow incoming connections on port 514/UDP _only_ from the **BACKEND** server (unless you want someone to _really_ spam your system).
+4. Configure rsyslog on **BACKEND** to forward the `apache2` logs to Seq. See below for a sample configuration file.
+
+
+Sample `apache.conf` file to be placed in `/etc/rsyslog.d`:
+
+```conf
+module(load="imfile")
+
+input(type="imfile"
+    File="/var/log/apache2/access.log"
+    Tag="apache_access"
+    Severity="info"
+    Facility="local6")
+
+input(type="imfile"
+    File="/var/log/apache2/error.log"
+    Tag="apache_error"
+    Severity="error"
+    Facility="local6")
+
+local6.* @<ip_address>:514
+```
+
+Remember to restart the `rsyslog` service after making any configuration changes!
+
+{{% notice tip %}}
+
+If you see lots of errors in `/var/log/syslog` about `rsyslogd` being suspended and resumed, it may be due to a missing `ufw.log` file. You can create it by running `sudo touch /var/log/ufw.log` followed by `sudo chown syslog:syslog /var/log/ufw.log` to create that missing log file, then restart `rsyslog` to resovle the error.
+
+{{% /notice %}}
+
+Once you have Seq configured, perform the following exercise:
+
+1. Ensure you are getting the correct logs by performing the following actions and finding them in your logs:
+   1. Log in as `cis527` to **FRONTEND** via SSH or another method
+   2. Log in as `cis527` to **BACKEND** via SSH or another method
+   3. Generate a failed login to both **FRONTEND** and **BACKEND** via SSH using a unique username (that would be easy to find in the logs)
+   4. Successfully access your `cis527charlie` site on **BACKEND** and see the web request in the log
+   5. Generate an Apache 404 error by visiting a unique URL on your `cis527charlie` site (that would be easy to find in the logs). For example, try to visit `https://cis527charlie.<domain>.<tld>/this_is_a_bad_website`
+2. Leave Seq running for at least one hour, and up to a few hours.
+3. Review the contents of the collected logs.
+
+Then, you will submit a **writeup** describing what you see (~1 page or so). What usernames are common in the auth logs? What web URLs seem to be common? Where do you think those are coming from? What might you do to further protect your system? Are these logs telling you anything in particular about what malicious users might be doing to try and access your system. Include some screenshots/images/excerpts of the logs to add to your explanation.
+
+{{% notice note %}}
+_If you are unable to get Seq running, you can still gain most of the points for this section by simply reviewing the logs `/var/log/auth.log`, `/var/log/apache2/access.log` and `/var/log/apache2/error.log` on your systems and writing about what you see.-Russ_
+{{% /notice %}}
+
+{{% notice warning %}}
+There are malicious actors out there on the internet, and one of the things they will try to do is insert interesting looking items in your logs, hopefully enticing you to explore more by visiting any URLs you see in the logs. **DO NOT DO THIS!** For example, when testing Seq I had a malicious log entry appear within about 10 minutes via the unsecured Seq API telling me my system was insecure and I should visit <url> to see how to fix it. That website is _obviously_ not safe to visit.
+{{% /notice %}}
+
+### Task 5: Submit Files
 
 This lab may be graded completely offline. To do this, submit the following items via Canvas:
 
-2. **Task 1**: An archive file containing a README document as well as any files or information needed as part of the backup of the Ubuntu web application installed in Lab 6.
-3. **Task 2**: The URL of your Munin instance, clearly showing data from both **FRONTEND** and **BACKEND**. 
-4. **Task 3**: A GitLab/GitHub repository URL and a URL of the website containing those files. Make sure the instructor is added to the repository as maintainers. They should be able to push to the repository and automatically see the website get updated. 
+1. **Task 1**: An archive file containing a README document as well as any files or information needed as part of the backup of the Ubuntu web application installed in Lab 6.
+2. **Task 2**: The URL of your Munin instance, clearly showing data from both **FRONTEND** and **BACKEND**. 
+3. **Task 3**: A GitLab/GitHub repository URL and a URL of the website containing those files. Make sure the instructor is added to the repository as maintainers. They should be able to push to the repository and automatically see the website get updated. 
+4. **Task 4**: A writeup about what you observed in your system logs on Seq or by directly analyzing them.
 
 If you are able to submit all 4 of the items above, you do not need to schedule a grading time. The instructor or TA will contact you for clarification if there are any questions on your submission.
 
 For Tasks 2 - 3, you may also choose to do interactive grading, especially if you were unable to complete it and would like to receive partial credit. 
 
-### Task 5: Schedule A Grading Time
+---
 
-If you are not able to submit information for all 3 tasks for offline grading, you may contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.
+### Task 6: Schedule A Grading Time
+
+If you are not able to submit information for all 4 tasks for offline grading, you may contact the instructor and schedule a time for interactive grading. You may continue with the next module once grading has been completed.
