@@ -42,12 +42,13 @@ In addition, you will need two Ubuntu VMs, one labelled **SERVER** and the other
 
 Configure a file server on your Windows Server 2022 VM. It should have the following features:
 
+* A new group in the domain called **NetworkAdmins** that has the domain's `Administrator` account added to it (and `Admin` if created - see below), but _not_ your other domain user account
 * A shared folder on the server named `public` and stored at `C:\public` that should be accessible by **all users** on your domain
-* A shared folder on the server named `admins` and stored at `C:\admins` that should only be accessible to users in the **Domain Admins** group in your domain
+* A shared folder on the server named `admins` and stored at `C:\admins` that should only be accessible to users in the **NetworkAdmins** group in your domain
 
 {{% notice tip %}}
 
-As of Summer 2021, there was a bug in Windows Server that prevented the built-in Administrator account from changing some settings, specifically network settings, once the server is promoted to a domain controller. This can make it difficult to fix networking issues in this or future labs. The easy fix for this is to copy the Administrator account in the Active Directory User and Computers tool and give the new copy a different name, such as "Admin", and then use that account to log on to the server. 
+As of Summer 2021, there was a bug in Windows Server that prevented the built-in Administrator account from changing some settings, specifically network settings, once the server is promoted to a domain controller. This can make it difficult to fix networking issues in this or future labs. The easy fix for this is to copy the Administrator account in the Active Directory User and Computers tool and give the new copy a different name, such as `Admin`, and then use that account to log on to the server. 
 
 {{% /notice %}}
 
@@ -62,8 +63,8 @@ As of Summer 2021, there was a bug in Windows Server that prevented the built-in
 Configure group policy objects (GPOs) on your Windows Active Directory domain to perform the following tasks:
 
 * All domain users should get the `public` folder automatically mapped to the `Z:\` drive on any system they log into.
-* Users in the ``Domain Admins`` group should also get the `admins` folder automatically mapped to the `Y:\` drive on any system they log into. 
-   * That drive **should not** be mapped for any user that is not a member of the `Domain Admins` group.
+* Users in the `NetworkAdmins` group should also get the `admins` folder automatically mapped to the `Y:\` drive on any system they log into. 
+   * That drive **should not** be mapped for any user that is not a member of the `NetworkAdmins` group.
 * Make sure you test your drive maps on your Windows 11 Client system using different user accounts (feel free to create more domain accounts as needed) and be prepared to show that the correct drives are mapped for each user after logging in.
 
 {{% notice tip %}}
