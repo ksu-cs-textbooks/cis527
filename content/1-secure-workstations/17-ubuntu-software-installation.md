@@ -13,8 +13,7 @@ pre: "17. "
 * [Use Synaptic for More Advanced Software Management](https://help.ubuntu.com/lts/ubuntu-help/addremove-install-synaptic.html.en) from Ubuntu
 * [Apt-Get How To](https://help.ubuntu.com/community/AptGet/Howto) from Ubuntu
 * [How Software Installation & Package Managers Work on Linux](https://www.howtogeek.com/117579/htg-explains-how-software-installation-package-managers-work-on-linux/) from How-To Geek
-* [Snaps](https://docs.snapcraft.io/snaps/) from Snapcraft.io
-* [Introduction to Snaps](https://ubuntu.com/core/services/guide/snaps-intro) from Ubuntu Tutorials
+* [Snaps](https://snapcraft.io/docs/reference/system-architecture/) from Snapcraft.io
 
 #### Video Script
 

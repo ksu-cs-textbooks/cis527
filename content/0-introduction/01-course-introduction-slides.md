@@ -21,7 +21,7 @@ hidden: true
 <section>
 	<h3>Teaching Assistant</h3>
 	<ul>
-		<li>Josh Barron - jrbarron22 AT ksu DOT edu</li>
+		<li>Sicheng Chen - sicheng AT ksu DOT edu</li>
 	</ul>
 </section>
 <section>

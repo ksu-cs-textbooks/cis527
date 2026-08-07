@@ -11,8 +11,7 @@ pre: "15. "
 * **[Slides]({{% relref "/1-secure-workstations/15-ubuntu-file-permissions-slides.md"  %}})**
 * [An Introduction to Linux File Permissions](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-permissions) from DigitalOcean
 * [File Permissions](https://help.ubuntu.com/community/FilePermissions) from Ubuntu
-* [Enable Open as Administrator on Ubuntu 18.04](https://websiteforstudents.com/enable-open-as-administrator-on-ubuntu-16-04-17-10-18-04/) from Website for Students
-* [chmod](https://leanpub.com/jelinux/read#chmod) on Just Enough Linux
+* [chmod](https://leanpub.com/read/jelinux/leanpub-auto-linux-commands#chmod) on Just Enough Linux
 * [Linux Users and Groups](https://www.linode.com/docs/tools-reference/linux-users-and-groups/) on Linode
 
 #### Video Script

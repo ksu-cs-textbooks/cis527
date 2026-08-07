@@ -11,7 +11,6 @@ pre: "1. "
 * **[Slides]({{% relref "/1-secure-workstations/01-introduction-slides.md"  %}})**
 * [Operating System](https://en.wikipedia.org/wiki/Operating_system) on Wikipedia
 * [Types of Operating Systems](https://www.geeksforgeeks.org/operating-system-types-operating-systems-awaiting-author/) on Geeks for Geeks
-* [Understanding Operating Systems](https://edu.gcfglobal.org/en/computerbasics/understanding-operating-systems/1/) on GCF LearnFree
 * [GNU/Linux Naming Controversy](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy) on Wikipedia
 * [The Great Debate: Is it Linux or GNU/Linux?](https://www.howtogeek.com/139287/the-great-debate-is-it-linux-or-gnulinux/) on How-To Geek
 

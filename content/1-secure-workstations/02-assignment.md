@@ -33,16 +33,16 @@ This lab is written with the expectation that most students will be using **VMwa
 If you are using another virtualization platform, you may have to adapt these instructions to fit. If you are unsure about any specification and how it applies to your setup, please contact the instructor.
 
 You will also need installation media for the following operating systems:
-* **Windows 11 Version 24H2** or later - Visit the [Azure Dev Tools for Teaching](https://azureforeducation.microsoft.com/devtools) page from Microsoft to download this software. See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
-  * Look for **Windows 11 Education, Version 24H2** on the list of software available on the Azure Dev Tools site.
-  * File Name: `en-us_windows_11_consumer_editions_version_24h2_x64_dvd_1d5fcad3.iso`
-  * SHA 256 Hash: `b56b911bf18a2ceaeb3904d87e7c770bdf92d3099599d61ac2497b91bf190b11`
+* **Windows 11 Version 25H2** or later - Visit the [Azure Dev Tools for Teaching](https://azureforeducation.microsoft.com/devtools) page from Microsoft to download this software. See the [Azure Dev Tools](https://support.cs.ksu.edu/CISDocs/wiki/FAQ#MSDNAA) page on the CS Support Wiki for instructions.
+  * Look for **Windows 11 Education, Version 25H2** on the list of software available on the Azure Dev Tools site.
+  * File Name: `en-us_windows_11_consumer_editions_version_25h2_x64_dvd_9934ee4c.iso.iso`
+  * SHA 256 Hash: `d141f6030fed50f75e2b03e1eb2e53646c4b21e5386047cb860af5223f102a32`
   * _Your file may vary as Microsoft constantly updates these installers._
-  * _You may choose to upgrade to a later version of Windows 11 if prompted while installing updates, such as 25H1._
-* **Ubuntu 24.04 LTS (Noble Numbat)** or later - Download from [Ubuntu](https://ubuntu.com/download), an official [Ubuntu Mirror](https://launchpad.net/ubuntu/+cdmirrors) (this is usually the fastest option), or the [K-State CS Mirror](https://mirror.cs.ksu.edu/ubuntu-releases/noble/) (this is great if you are on campus).
-  * File Name: `ubuntu-24.04.3-desktop-amd64.iso`
-  * SHA 256 Hash: `faabcf33ae53976d2b8207a001ff32f4e5daae013505ac7188c9ea63988f8328`
-  * _If a point release is available (ex: 24.04.4), feel free to us that version. **Do not upgrade to a newer LTS or non-LTS release** such as Ubuntu 25.04, as those versions may have significant changes that are not covered in these assignments._
+  * _You may choose to upgrade to a later version of Windows 11 if prompted while installing updates, such as 26H1._
+* **Ubuntu 26.04 LTS (Resolute Raccoon)** or later - Download from [Ubuntu](https://ubuntu.com/download), an official [Ubuntu Mirror](https://launchpad.net/ubuntu/+cdmirrors) (this is usually the fastest option), or the [K-State CS Mirror](https://mirror.cs.ksu.edu/ubuntu-releases/resolute/) (this is great if you are on campus).
+  * File Name: `ubuntu-26.04-desktop-amd64.iso`
+  * SHA 256 Hash: `487f87faaf547ea30e0aba4d5b53346292571256b25333a978db1692bcee9dd2`
+  * _If a point release is available (ex: 26.04.1), feel free to us that version. **Do not upgrade to a newer LTS or non-LTS release** such as Ubuntu 26.10, as those versions may have significant changes that are not covered in these assignments._
 
 {{% notice note "Prior Versions" %}}
 The original course materials were developed for Windows 10 Version 1803 and Ubuntu 18.04 LTS. Some course materials may still show the older versions. Students should use the software versions listed in bold above if at all possible, as these assignments have been verified using those versions. If not, please contact the instructor for alternative options. If you find any errors or issues using the updated versions of these systems, please contact the instructor. 
@@ -52,7 +52,7 @@ The original course materials were developed for Windows 10 Version 1803 and Ubu
 
 ### Task 0: Install Virtualization Software
 
-Install the virtualization software platform of your choice. It must support using Windows 11 and Ubuntu 24.04 as a guest OS. In general, you'll need the latest version of the software. 
+Install the virtualization software platform of your choice. It must support using Windows 11 and Ubuntu 26.04 as a guest OS. In general, you'll need the latest version of the software. 
 
 **VMware Workstation** or **VMware Fusion** is recommended and available free of charge on the [VMware Website](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion) and is free for personal and academic use. [Download Workstation or Fusion Here](https://support.broadcom.com/group/ecx/free-downloads)
 
@@ -149,23 +149,23 @@ Use either the `cis527` or `AdminAccount` account to create these files, then mo
 
 ---
 
-### Task 4: Create an Ubuntu 24.04 Virtual Machine
+### Task 4: Create an Ubuntu 26.04 Virtual Machine
 
-Create a new virtual machine for Ubuntu 24.04 Desktop. It should have 30 GB of storage available. If given the option, do not pre-allocate the storage, but do allow it to be separated into multiple files. This will make the VM easier to work with down the road. It should also have at least 2 GB of RAM. You may allocate more RAM if desired. You may also allocate additional CPU cores for better performance if desired. 
+Create a new virtual machine for Ubuntu 26.04 Desktop. It should have 30 GB of storage available. If given the option, do not pre-allocate the storage, but do allow it to be separated into multiple files. This will make the VM easier to work with down the road. It should also have at least 2 GB of RAM. You may allocate more RAM if desired. You may also allocate additional CPU cores for better performance if desired. 
 
 {{% notice note %}}
-_Ubuntu 24.04 seems to be really RAM hungry right now, so I recommend starting with 2 GB of RAM if you have 8 GB or more available on your system. The installer may freeze if you try to install with only 1 GB of RAM allocated. Once you have it installed, you may be able to reduce this at the expense of some performance if you are short on available RAM (as it will use swap space instead). In Ubuntu, swap should be enabled by default after you install it, but you can learn more about it and how to configure it [here](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04). When we get to Module 5 and discuss Ubuntu in the cloud, we'll come back to this and discuss the performance trade-offs in that scenario. --Russ_
+_Ubuntu 26.04 seems to be really RAM hungry right now, so I recommend starting with 2 GB of RAM if you have 8 GB or more available on your system. The installer may freeze if you try to install with only 1 GB of RAM allocated. Once you have it installed, you may be able to reduce this at the expense of some performance if you are short on available RAM (as it will use swap space instead). In Ubuntu, swap should be enabled by default after you install it, but you can learn more about it and how to configure it [here](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04). When we get to Module 5 and discuss Ubuntu in the cloud, we'll come back to this and discuss the performance trade-offs in that scenario. --Russ_
 {{% /notice %}}
 
-Install Ubuntu 24.04 Desktop in that virtual machine to a single partition. You may choose to use a minimal install when prompted. You will be asked to create a user account and set the computer name. Use the information given below.
+Install Ubuntu 26.04 Desktop in that virtual machine to a single partition. You may choose to use a minimal install when prompted. You will be asked to create a user account and set the computer name. Use the information given below.
 
 {{% notice tip %}}
 The Ubuntu installation will sometimes hang when rebooting after installation in a VM. If that happens, wait about 30 seconds, then click **VM > Power > Restart Guest** in VMware (or similar) to force a restart. It should not harm the VM.
 {{% /notice %}}
 
-### Task 5: Configure Ubuntu 24.04
+### Task 5: Configure Ubuntu 26.04
 
-Configure the Ubuntu 24.04 Virtual Machine as specified below.
+Configure the Ubuntu 26.04 Virtual Machine as specified below.
 
 * **Computer Name:** `cis527u-<your eID>` (example: `cis527u-russfeld`) {{% notice info "Don't Forget To Set Computer Name!" %}}
 _This is very important, as it allows us to track your virtual machine on the K-State network in case something goes wrong in a later lab. By including both the class and your eID, support staff will know who to contact. A majority of students have missed this step in previous semesters, so don't forget! You should be prompted for a computer name as part of the installation process, but it will try to auto-complete it based on the chosen username and must be changed. --Russ_

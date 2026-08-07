@@ -11,7 +11,6 @@ pre: "1. "
 #### Resources
 
 * **[How to Write a Proposal](https://www.wikihow.com/Write-a-Proposal) from wikiHow**
-* **[Standard Technical Paper Template](http://cse.unl.edu/~goddard/WritingResources/) from Dr. Goddard at University of Nebraska - Lincoln (via Dr. Andresen)**
 * **[SWOT Analysis](https://en.wikipedia.org/wiki/SWOT_analysis) on Wikipedia**
 * [How to Write a Technical Paper](https://homes.cs.washington.edu/~mernst/advice/write-technical-paper.html) by Dr. Ernst at University of Washington
 * [Tips for Writing Technical Papers](https://cs.stanford.edu/people/widom/paper-writing.html) by Dr. Widom at Stanford University
@@ -19,7 +18,6 @@ pre: "1. "
 * [SWOT Analysis](https://www.investopedia.com/terms/s/swot.asp) from Investopedia
 * [How to Do a SWOT Analysis for Your Small Business](https://www.wordstream.com/blog/ws/2017/12/20/swot-analysis) from WordStream
 * [A Detailed SWOT Analysis Example (Applicable to All Industries)](https://www.clearpointstrategy.com/swot-analysis-examples/) from ClearPoint Strategy
-* [How to Plan a Technical Presentation](http://wittcom.com/how-to-plan-a-technical-presentation/) from Witt Communications
 * [5 Tips for Giving Effective Technical Presentations](https://www.linkedin.com/pulse/20140904170930-15291682-5-tips-for-giving-effective-technical-presentations/) by Patrick Fuller on LinkedIn
 
 #### Video Transcript

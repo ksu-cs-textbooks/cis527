@@ -67,7 +67,7 @@ _There are NO proposals without several external threats and internal weaknesses
 
 ### Step 4: Technical Writeup
 
-Once you feel you have fully designed and analyzed your proposal and prototype, you will need to create a formal technical paper detailing your work. It should follow the [Standard Technical Paper Template](http://cse.unl.edu/~goddard/WritingResources/) from Dr. Goddard at UNL. Hopefully the content in each section should be pretty self-explanatory. There is no minimum or maximum length specified; it should be long enough to include everything needed to describe your proposal and analysis, but short and succinct enough that it is still worth reading.
+Once you feel you have fully designed and analyzed your proposal and prototype, you will need to create a formal technical paper detailing your work. There is no minimum or maximum length specified; it should be long enough to include everything needed to describe your proposal and analysis, but short and succinct enough that it is still worth reading.
 
 {{% notice note %}}
 
@@ -83,7 +83,7 @@ Once you are ready, you will present your proposal, prototype, and analysis to y
 
 ---
 
-### Step 6: Submit & Schedule
+### Step 6: Submit
 
 Finally, submit your writeup and video via Canvas. 
 
