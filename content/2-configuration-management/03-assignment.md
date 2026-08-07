@@ -30,25 +30,21 @@ This lab may take anywhere from **1 - 6 hours** to complete, depending on your p
 
 ### Task 0: Create New Virtual Machines & Snapshots
 
-Create new Windows 11 and Ubuntu 24.04 virtual machines for this lab. When creating the virtual machines and installing the operating system, use the same information from Lab 1. You should create the `cis527` account during installation. 
+Create new Windows 11 and Ubuntu 26.04 virtual machines for this lab. When creating the virtual machines and installing the operating system, use the same information from Lab 1. You should create the `cis527` account during installation. 
 
 **DO NOT PERFORM ANY ADDITIONAL CONFIGURATION AFTER THE INSTALLATION IS COMPLETE EXCEPT WHAT IS LISTED BELOW!**
 
 After installing the operating system, install **ONLY** the following software:
 
-* **Puppet Agent 8**
-  - Windows: Download and install the latest Puppet Agent from [Puppet Downloads](https://downloads.puppetlabs.com/windows/puppet8/). Look for the file `puppet-agent-x64-latest.msi` in that directory. 
-  - Ubuntu: See the video later in this module for instructions to install Puppet. These instructions are also summarized in the [README](https://apt.puppetlabs.com/README.txt) for the Puppet APT repositories.
-    - Recall that Ubuntu 24.04 is codenamed "Noble Numbat", so use the url `https://apt.puppet.com/puppet8-release-noble.deb` to get the correct version on Ubuntu in the first step. 
-    - Follow the instructions in the video later in this lab to add Puppet to the `sudo` path.
+* **OpenVox Agent 8**
+  - Windows: Download and install the latest OpenVox Agent 8 from [OpenVox Downloads](https://downloads.voxpupuli.org/windows/openvox8/). Look for the file `openvox-agent-<version>-x64.msi` that is most recent. 
+  - Ubuntu: See the video later in this module for instructions to install Puppet. These instructions are also summarized in the [Installing OpenVox Agent: Linux](https://docs.openvoxproject.org/openvox/latest/install_linux.html) guide.
+    - Recall that Ubuntu 26.04 is codenamed "Resolute Raccoon", so use the url `https://apt.voxpupuli.org/openvox8-release-ubuntu26.04.deb` to get the correct version on Ubuntu in the first step. 
+    - Follow the instructions in the video later in this lab to add Puppet to the `sudo` path. The path for OpenVox is the same as Puppet.
 
-{{% notice info "Puppet Changed Security Model in 2025" %}}
+{{% notice note "OpenVox vs. Puppet" %}}
 
-In 2025, Puppet was consumed by Perforce, and they limited access to many of the existing downloads and documentation. You can find more information about this change here: [Our Plans for Open Source Puppet in 2025](https://www.puppet.com/blog/open-source-puppet-updates-2025). 
-
-Because of this, much of the existing documentation for Puppet 8 was migrated and updated to reference their new secure setup, and access to newer Puppet versions requires requesting an account and agreeing to an EULA. I have done my best to update the links to accurate documentation, but some content was unfortunately lost.
-
-However, we're going to forge ahead and use the existing older versions of Puppet published in late 2024 for now. I will eventually update this course to use a new tool in place of Puppet since it no longer seems to be as freely available as before.
+In 2025, Puppet moved to a different licensing model. Because of that, access to some of their software and tools became much more difficult. OpenVox is an open source fork of Puppet that aims to be 100% compatible with Puppet itself. So, we'll be building upon Puppet's language and framework, but using OpenVox as our actual agent tool. 
 
 {{% /notice %}}
 
@@ -58,9 +54,9 @@ However, we're going to forge ahead and use the existing older versions of Puppe
 
 On the Windows virtual machine only, create a folder at `C:\install` and download the following installers. Do not change the name of the installers from the default name provided from the website. You may choose to do this step using the [download_file](https://forge.puppet.com/puppet/download_file) Puppet module instead.  
 
-* [Firefox](https://www.firefox.com/en-US/download/all/) (`Firefox Setup 142.0.exe` as of 8/20/2025)
-* [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 142.exe` as of  8/20/2025)
-* [Notepad++](https://notepad-plus-plus.org/download/) (`npp.8.8.5.Installer.x64.exe` as of 8/20/2024)
+* [Firefox](https://www.firefox.com/en-US/download/all/) (`Firefox Setup 153.0.3.exe` as of 8/27/2026)
+* [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 153.0.2.exe` as of  8/27/2026)
+* [Notepad++](https://notepad-plus-plus.org/downloads/) (`npp.8.9.7.Installer.x64.exe` as of  8/27/2026)
 
 {{% notice note %}}
 _I have listed sample names of the installers as of this writing, and these will be the ones that I use for testing; however, you may receive newer versions with slightly different names. That is fine. Just be sure that you don't get the default stub or web-only installers, which is what Firefox typically gives you unless you follow the links above. They will not work properly for this lab. --Russ_
@@ -76,7 +72,7 @@ When you reset back to a snapshot, any new or modified files on the VM will be l
 
 ### Task 1: Puppet Manifest File for Ubuntu
 
-Create a Puppet Manifest File for Ubuntu 24.04 that defines the following configuration. This configuration is very similar to, but not exactly the same as, Lab 1, so read through it carefully. Assume that the machine you are applying the manifest file on is configured as described above in Task 0.
+Create a Puppet Manifest File for Ubuntu 26.04 that defines the following configuration. This configuration is very similar to, but not exactly the same as, Lab 1, so read through it carefully. Assume that the machine you are applying the manifest file on is configured as described above in Task 0.
 
 * **Users (Same as Lab 1)**
   - `adminaccount` | `AdminPassword123` (Administrator type or `sudo` group)

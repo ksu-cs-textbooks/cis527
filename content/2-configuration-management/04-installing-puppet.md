@@ -6,7 +6,7 @@ pre: "4. "
 
 {{% notice note %}}
 
-The video refers to Puppet version 6, but Puppet 8 is now the latest version. For the lab assignment, you'll want to install Puppet 8 and not Puppet 6. This changes the URL used to get the release package - see the assignment page for more information. The basic process is otherwise the same.
+The video refers to Puppet version 6, but we'll be using OpenVox 8. For the lab assignment, you'll want to install OpenVox 8 and not Puppet 6. This changes the URL used to get the release package and some of the commands - see the assignment page for more information. The basic process is otherwise mostly the same.
 
 {{% /notice %}}
 
@@ -15,12 +15,12 @@ The video refers to Puppet version 6, but Puppet 8 is now the latest version. Fo
 <!-- F12XwpusumA -->
 
 #### Resources
-* [Puppet Agent Windows Downloads](https://downloads.puppetlabs.com/windows/puppet8/) from Puppet (look for puppet-agent-x64-latest.msi)
-* [About Puppet Platform and Its Packages](https://help.puppet.com/core/8/Content/PuppetCore/core-platform-components.htm) from Puppet
-* [Puppet Learning](https://www.puppet.com/products/puppet-enterprise/learning-puppet) from Puppet
-* [Puppet System Requirements](https://puppet.com/docs/pe/latest/system_requirements.html) from Puppet
-* [Puppet Documentation](https://puppet.com/docs) from Puppet
-* [Add Executables to your PATH](https://help.puppet.com/core/8/Content/PuppetCore/adding_executables_to_your_path.htm) from Puppet
+* [Installing OpenVox on Linux](https://docs.openvoxproject.org/openvox/latest/install_linux.html)
+* [Installing OpenVox on Windows](https://docs.openvoxproject.org/openvox/latest/install_windows.html)
+* [About OpenVox](https://docs.openvoxproject.org/ecosystem/latest/)
+* [OpenVox Getting Started](https://docs.openvoxproject.org/ecosystem/latest/getting_started/index.html)
+* [OpenVox System Requirements](https://docs.openvoxproject.org/openvox/latest/system_requirements.html)
+* [OpenVox Documentation](https://docs.openvoxproject.org/openvox/latest/)
 
 #### Video Script
 

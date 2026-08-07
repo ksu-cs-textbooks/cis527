@@ -15,7 +15,7 @@ _As of 2023, the Puppet Learning VM is no longer being maintained. The videos be
 #### Resources
 
 * **[Slides]({{% relref "/2-configuration-management/05-puppet-resources-slides.md"  %}})**
-* [Resource Type Reference](https://help.puppet.com/core//current/Content/PuppetCore/Markdown/type.htm) from Puppet
+* [Resource Type Reference](https://docs.openvoxproject.org/openvox/latest/lang_resources.html) from OpenVox
 
 #### Video Script
 

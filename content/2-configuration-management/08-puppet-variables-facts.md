@@ -8,10 +8,10 @@ pre: "8. "
 
 #### Resources
 
-* [Language: Variables](https://help.puppet.com/core//current/Content/PuppetCore/lang_variables.htm) from Puppet
-* [Facter: Core Facts](https://help.puppet.com/core//current/Content/PuppetCore/Markdown/core_facts.htm) from Puppet
-* [Values and Data Types](https://help.puppet.com/core//current/Content/PuppetCore/lang_data.htm) from Puppet
-* [Templates](https://help.puppet.com/core//current/Content/PuppetCore/lang_template.htm) from Puppet
+* [Language: Variables](https://docs.openvoxproject.org/openvox/latest/lang_variables.html) from OpenVox
+* [Facter: Core Facts](https://docs.openvoxproject.org/openfact/latest/core_facts.html) from OpenVox
+* [Values and Data Types](https://docs.openvoxproject.org/openvox/latest/lang_data.html) from OpenVox
+* [Templates](https://docs.openvoxproject.org/openvox/latest/lang_template.html) from OpenVox
 
 #### Video Script
 

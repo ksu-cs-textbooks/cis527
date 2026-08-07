@@ -8,9 +8,9 @@ pre: "9. "
 
 #### Resources
 
-* [Conditional Statements and Expressions](https://help.puppet.com/core//current/Content/PuppetCore/lang_conditional.htm) from Puppet
-* [Expressions and Operators](https://help.puppet.com/core//current/Content/PuppetCore/lang_expressions.htm) from Puppet
-* [Classes](https://help.puppet.com/core//current/Content/PuppetCore/lang_classes.htm) from Puppet
+* [Conditional Statements and Expressions](https://docs.openvoxproject.org/openvox/latest/lang_conditional.html) from OpenVox
+* [Expressions and Operators](https://docs.openvoxproject.org/openvox/latest/lang_expressions.html) from OpenVox
+* [Classes](https://docs.openvoxproject.org/openvox/latest/lang_classes.html) from OpenVox
 * [Puppet Labs Standard Library](https://forge.puppet.com/puppetlabs/stdlib) from Puppet
 * [Puppet Forge](https://forge.puppet.com/) from Puppet
 
