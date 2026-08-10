@@ -17,7 +17,7 @@ The examples in this video are for an old version of Lab 3, but should be instru
 * [List of DNS Record Types](https://en.wikipedia.org/wiki/List_of_DNS_record_types) on Wikipedia
 * [Domain Name System (DNS) History](https://www.livinginternet.com/i/iw_dns_history.htm) from Living Internet
 * [BIND](https://en.wikipedia.org/wiki/BIND) on Wikipedia
-* [HOSTS.TXT](https://jim.rees.org/apollo-archive/hosts.txt) from March 22, 1985
+* [HOSTS.TXT](https://github.com/ttkzw/hosts.txt/blob/master/pub/hosts/19850322/HOSTS.TXT) from March 22, 1985
 * [Root Name Server](https://en.wikipedia.org/wiki/Root_name_server) on Wikipedia
 * [Root Files](https://www.iana.org/domains/root/files) from IANA
 * [How To Configure BIND as a Private Network DNS Server on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-20-04) from DigitalOcean (works for 24.04 as well)
