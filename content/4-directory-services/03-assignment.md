@@ -30,25 +30,15 @@ _Most students in previous semesters have reported that **this lab is generally 
 
 ### Task 0: Create 4 VMs
 
-{{% notice warning "Windows Server 2025 Does Not Work" %}}
-
-In Windows Server 2025, there is an unresolved bug preventing Ubuntu clients from joining a Windows Active Directory Domain hosted by that server version. As of 8/28/2025, this is still unresolved.
-
-You can find the discussion of the outstanding bug (here)[https://gitlab.freedesktop.org/realmd/adcli/-/issues/40].
-
-For now, we'll continue to use Windows Server 2022 for this class.
-
-{{% /notice %}}
-
 For this lab, you'll need the following VMs:
 
 1. A **Windows 11** VM. You may reuse your existing Windows 11 VM from a previous lab.
-2. A **Windows Server 2022 Standard** (Updated July 2023 or newer) VM. See **Task 1** below for configuration details.
-3. An **Ubuntu 24.04** VM labelled **CLIENT**. This should be the existing **CLIENT** VM from Lab 3.
-4. An **Ubuntu 24.04** VM labelled **SERVER**. _You have three options to create this VM:_
+2. A **Windows Server 2025 Standard** VM. See **Task 1** below for configuration details.
+3. An **Ubuntu 26.04** VM labelled **CLIENT**. This should be the existing **CLIENT** VM from Lab 3.
+4. An **Ubuntu 26.04** VM labelled **SERVER**. _You have three options to create this VM:_
    * You can create a copy of your existing **CLIENT** VM from Lab 3, which does not have DHCP and DNS servers installed. Follow the instructions in the Lab 3 assignment to create a copy of that VM. In this case, you'll need to reconfigure the VMware NAT network to handle DHCP duties. Make sure you label this copy **SERVER** in VMWare. _This is generally the option that is simplest, and causes the least headaches._
    * You may continue to use your exiting **SERVER** VM from Lab 3, with DHCP and DNS servers installed. You may choose to continue to use this server as your primary DNS and DHCP server for your VM network, which would truly mimic what an enterprise network would be like. Remember that you'll need to have this VM running at all times to provide those services to other systems on your network. You may also choose instead to disable them and reconfigure the VMware NAT network to handle DHCP duties. Either approach is fine. _This option is generally a bit closer to an actual enterprise scenario, but can also cause many headaches, especially if your system doesn't have enough power to run several VMs simultaneously._
-   * You may create a new Ubuntu 24.04 VM from scratch, label it **SERVER**, and configure it as defined either in Lab 1 or using the Puppet manifest files from Lab 2. _This is effectively the same as copying your **CLIENT** VM from Lab 3, but you get additional practice installing and configuring an Ubuntu VM, I guess._
+   * You may create a new Ubuntu 26.04 VM from scratch, label it **SERVER**, and configure it as defined either in Lab 1 or using the Puppet manifest files from Lab 2. _This is effectively the same as copying your **CLIENT** VM from Lab 3, but you get additional practice installing and configuring an Ubuntu VM, I guess._
 
 {{% notice warning %}}
 Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4" that you can restore to later if you have any issues. In most cases, it is simpler to restore a snapshot and try again instead of debugging an error when setting up an LDAP or AD server. In addition, Task 6 below will ask you to restore to a snapshot in at least one VM before starting that step.
@@ -56,12 +46,12 @@ Before starting this lab, make a **snapshot** in each VM labelled "Before Lab 4"
 
 ---
 
-### Task 1: Install Windows Server 2022 Standard
+### Task 1: Install Windows Server 2025 Standard
 
-Create a new virtual machine for **Windows Server 2022 Standard** using the "Windows Server 2022 Standard" installation media (you may choose a newer option if available, but this lab was tested on that specific version - see the warning above about Server 2025 not working currently). You can download the installation files and obtain a product key from the [Microsoft Azure Student Portal](https://azureforeducation.microsoft.com/devtools) discussed in Module 1. 
+Create a new virtual machine for **Windows Server 2025 Standard** using the "Windows Server 2025 Standard" installation media (you may choose a newer option if available, but this lab was tested on that specific version). You can download the installation files and obtain a product key from the [Microsoft Azure Student Portal](https://azureforeducation.microsoft.com/devtools) discussed in Module 1. 
 
-* File Name: `en-us_windows_server_2022_updated_july_2023_x64_dvd_541692c3.iso`
-* SHA 256 Hash: `e215493d331ebd57ea294b2dc96f9f0d025bc97b801add56ef46d8868d810053`
+* File Name: `en-us_windows_server_2025_x64_dvd_b7ec10f3.iso`
+* SHA 256 Hash: `854109e1f215a29fc3541188297a6ca97c8a8f0f8c4dd6236b78dfdf845bf75e`
 
 {{% notice tip %}}
 For this system, I recommend giving the VM ample resources, usually at least 2 GB RAM and multiple processor cores if you can spare them. You may need to adjust the VM settings as needed to balance the performance of this VM against the available resources on your system. 
@@ -142,7 +132,7 @@ If you are working in Azure, do not set a static IP in Windows Server - this is 
 
 Join your Windows 11 VM to the Active Directory Domain created in Task 2. Follow the steps and configuration details below:
 
-1. First, set static DNS entries on your Windows 11 VM. You **SHOULD NOT** set a static IP, just static DNS entries. Use the Windows Server IP address ending in `42` as the first entry, and the second entry should be the same one used on the server earlier (either your Ubuntu Server from Lab 3 or VMware's default gateway, whichever option you are using).
+1. First, set static DNS entries on your Windows 11 VM. You **SHOULD NOT** set a static IP, just static DNS entries. Use the Windows Server IP address ending in `42` as the first entry, and the second entry should be the same one used on the server earlier (either your Ubuntu Server from Lab 3, VMware's default gateway, or a public DNS server, whichever option you are using).
 
 2. Join the system to the domain, following the instructions linked in the resources section below.
 
@@ -188,7 +178,7 @@ Of course, you may need to modify your firewall configuration to allow incoming 
 
 #### Resources
 
-* [How to Install OpenLDAP on Ubuntu 22.04](https://www.howtoforge.com/how-to-install-openldap-on-ubuntu-22-04/) from HowToForge (works for Ubuntu 24.04)
+* [How to Install OpenLDAP on Ubuntu 22.04](https://www.howtoforge.com/how-to-install-openldap-on-ubuntu-22-04/) from HowToForge (works for Ubuntu 26.04)
   * Note: In this document, you can skip the steps of manually adding groups and users to LDAP before install LDAP Account Manager. Once LAM is configured, it will automatically add the default OUs for groups and users. 
 * [LDAP & TLS](https://ubuntu.com/server/docs/ldap-and-transport-layer-security-tls) from the Ubuntu Server Guide
 
@@ -225,10 +215,11 @@ On your Ubuntu VM labelled **CLIENT**, configure the system to authenticate agai
 1. On your Ubuntu VM labelled **CLIENT**, make a **snapshot** labelled "OpenLDAP" to save your configuration you performed for Task 5.
 2. Open the Snapshot Manager (VM > Snapshot > Snapshot Manager) for that VM
 3. Restore the "Before Lab 4" Snapshot. This should take you back to the state of this VM prior to setting it up as an OpenLDAP client.
-4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM. You'll want to confirm that you are able to resolve `ad.<your eID>.cis527.org` using `dig` on your client VM. If that doesn't work, you may need to set a static DNS entry to point to your Windows server as configured earlier in this lab, or add a manual entry to your [hosts file](https://www.ionos.com/digitalguide/server/configuration/hosts-file/). 
+4. Next, set static DNS entries on your Ubuntu VM labelled **CLIENT**. You **SHOULD NOT** set a static IP, just static DNS entries. Use the Windows Server IP address ending in `42` as the first entry, and the second entry should be the same one used on the server earlier (either your Ubuntu Server from Lab 3, VMware's default gateway, or a public DNS server, whichever option you are using).
+4. Follow the instructions in the video in this module to join your Windows Active Directory Domain with your Ubuntu VM. \
 {{% notice warning %}}
 
-If you get errors like "Insufficient permissions to join the domain", you may need to install `krb5-user` and then add `rdns=false` to the `[libdefaults]` section of the `/etc/krb5.conf` file, as described in [this thread](https://access.redhat.com/discussions/3370851). That seemed to fix the error for me.
+If you get errors like "Insufficient permissions to join the domain" in your system log, you may need to install `krb5-user` and then add `rdns=false` to the `[libdefaults]` section of the `/etc/krb5.conf` file. That seemed to fix the error for me.
 
 {{% /notice %}}
 5. Make a **snapshot** labelled "ActiveDirectory" to save your configuration for this task. You can switch between snapshots to have this VM act as a client for either directory service.
@@ -244,8 +235,8 @@ This part can be done completely from the terminal - that is typically the best 
 #### Resources
 
 * [SSSD and Active Directory](https://ubuntu.com/server/docs/how-to-set-up-sssd-with-active-directory) from Ubuntu
-* [Join in Active Directory Domain](https://www.server-world.info/en/note?os=Ubuntu_20.04&p=realmd) from Server-World (works for 24.04)
-* [How to Join Ubuntu 18.04 / Debian 10 To Active Directory (AD) Domain](https://computingforgeeks.com/join-ubuntu-debian-to-active-directory-ad-domain/) from Computingforgeeks (works for 24.04)
+* [Join in Active Directory Domain](https://www.server-world.info/en/note?os=Ubuntu_20.04&p=realmd) from Server-World (works for 26.04)
+* [How to Join Ubuntu 18.04 / Debian 10 To Active Directory (AD) Domain](https://computingforgeeks.com/join-ubuntu-debian-to-active-directory-ad-domain/) from Computingforgeeks (works for 26.04)
 
 ---
 

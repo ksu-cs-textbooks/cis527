@@ -17,7 +17,6 @@ pre: "2. "
 * [Kerberos (Protocol)](https://en.wikipedia.org/wiki/Kerberos_(protocol)) on Wikipedia
   * [RFC 1510 - Kerberos](https://tools.ietf.org/html/rfc1510) from IETF
 * [Directories, Directory Services, and LDAP](https://directory.apache.org/apacheds/basic-ug/1.2-some-background.html) from Apache
-* [Understanding Workgroups and Domains](http://etutorials.org/Microsoft+Products/microsoft+windows+xp+professional+training+kit/Chapter+1+-+Introduction+to+Windows+XP+Professional/Lesson+3nbspUnderstanding+Workgroups+and+Domains/) from eTutorials.org
 
 #### Video Transcript
 
