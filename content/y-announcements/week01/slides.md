@@ -68,11 +68,36 @@ hidden: true
 <section>
 	<h3>Discussions</h3>
 	<ul>
-		<li>Respond to Survey</li>
 		<li>Schedule Online via Zoom</li>
 		<li>Submit Questions Before</li>
 		<li>Participate or Write Response</li>
 	</ul>
+</section>
+<section>
+	<h3>Generative Artificial Intelligence (GenAI)</h3>
+	<div style="float: left; width: 20%">
+		<img class="stretch" src="/cis527/images/0/stoplight_all.png">
+	</div>
+	<div style="float: right; width: 80%">
+		<br>
+		<ul>
+			<li><span style="background: red">RED:</span> Prohibited</li>
+			<br>
+			<li><span style="background: gold">YELLOW:</span> Limited</li>
+			<br>
+			<li><span style="background: lime;">GREEN:</span> Encouraged</li>
+		</ul>
+	</div>
+</section>
+<section>
+	<h3>GenAI Disclosure</h3>
+	<ul>
+		<li><span style="background: red">RED:</span> Grading</li>
+		<li><span style="background: red">RED:</span> Student Communication</li>
+		<li><span style="background: gold">YELLOW:</span> Code Review & Feedback</li>
+		<li><span style="background: gold">YELLOW:</span> Lesson & Learning Content</li>
+	<ul>
+	<p>As of August 2026, no GenAI Content exists in this course!</p>
 </section>
 <section>
 	<h3>Keep in Touch!</h3>
