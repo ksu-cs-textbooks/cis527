@@ -4,9 +4,30 @@ weight: 15
 pre: "3. "
 ---
 
-### Lab 5 - The Cloud
+## Lab 5 - The Cloud
 
-#### Instructions
+### Generative Artificial Intelligence Policy
+
+{{% notice color="orange" %}}
+
+<div style="display: block">
+<div style="float: left; padding-right: 10px">
+<img src="/cis527/images/0/stoplight_yellow.png" height="120px">
+</div>
+<div>
+{{% badge style="orange" %}}YELLOW: Limited GenAI Usage Allowed {{% /badge %}} For your lab assignments, you may make limited use of GenAI tools to help with answering questions or debugging issues. These tools may also be helpful to understand dense documentation or search for answers online, but you <b>must review all AI results for accuracy</b>! Your submitted and graded lab must be your own work done entirely by you.
+</div>
+</div>
+<div style="clear: both"></div>
+
+* **Citations Required:** Any usage of GenAI must be noted and cited directly in the work. 
+* **No Direct AI Results:** For this assignment, you **may not** include the GenAI results directly in your submission - this includes configuration files. You must write them yourself and adapt them to your specific setup, not just copy them from AI output. 
+* **Understand Your Work:** You may be asked to explain your work in detail as part of this project. Failure to do so may be considered a violation of this policy.
+* **Policy Violations:** Violations may result in a grade of 0 for the assignment and other sanctions approved through the K-State Honor Council.
+
+{{% /notice %}}
+
+### Instructions
 
 Create **two** cloud systems meeting the specifications given below. The best way to accomplish this is to treat this assignment like a checklist and check things off as you complete them.
 

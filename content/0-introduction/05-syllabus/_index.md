@@ -1,5 +1,5 @@
 ---
-title: "Fall 2026 Syllabus"
+title: "Fall 2026 Info"
 weight: 25
 pre: "5. "
 ---
@@ -9,7 +9,7 @@ pre: "5. "
 
 [Previous Versions]({{% relref "./old" %}})
 
-{{% notice warning "Unofficial Syllabus" %}}
+{{% notice warning "Not Authoritative" %}}
 
 Starting with the Fall 2026 semester, official K-State syllabi can be found in [Coursedog](https://www.k-state.edu/curriculum/). 
 
@@ -17,7 +17,7 @@ _This syllabus is no longer the official version, but it may still contain usefu
 
 {{% /notice %}}
 
-_This syllabus covers both courses. They are taught using the same content._
+_This information covers both courses. They are taught using the same content._
 
 ### Instructor Contact Information
 

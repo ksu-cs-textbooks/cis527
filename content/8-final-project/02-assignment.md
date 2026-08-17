@@ -4,9 +4,32 @@ weight: 10
 pre: "2. "
 ---
 
-### Final Project
+## Final Project
 
-#### Instructions
+### Generative Artificial Intelligence Policy
+
+{{% notice color="orange" %}}
+
+<div style="display: block">
+<div style="float: left; padding-right: 10px">
+<img src="/cis527/images/0/stoplight_yellow.png" height="120px">
+</div>
+<div>
+{{% badge style="orange" %}}YELLOW: Limited GenAI Usage Allowed {{% /badge %}} For your reports and presentations, you may make limited use of GenAI tools to help with slide design and graphics. These tools may also be helpful to create initial design diagrams and UI mockups, but you <b>must review them for accuracy</b>! Your submitted report and presentation must be your own work in your own words.
+</div>
+</div>
+<div style="clear: both"></div>
+
+* **Citations Required:** Any usage of GenAI must be noted and cited directly in the work. 
+* **No Direct AI Results:** For this assignment, you **may not** include the GenAI results directly in your submission, with the exception of slide design, graphics or layouts. 
+* **Understand Your Work:** You may be asked to explain your work in detail as part of this project. Failure to do so may be considered a violation of this policy.
+* **Policy Violations:** Violations may result in a grade of 0 for the assignment and other sanctions approved through the K-State Honor Council.
+
+{{% /notice %}}
+
+{{% /notice %}}
+
+### Instructions
 
 The final project in this course is to demonstrate your knowledge and experience in a variety of areas of system administration. In addition, you'll gain experience communicating about those areas with non-technical users.
 

@@ -10,12 +10,11 @@ pre: "8. "
 
 * **[Slides]({{% relref "/7-backups-monitoring-devops/08-backups-slides.md"  %}})**
 * [Data Loss](https://en.wikipedia.org/wiki/Data_loss) on Wikipedia
-* [10 Common Causes of Data Loss](https://consoltech.com/blog/10-common-causes-of-data-loss/) from Consolidated Technologies
 * [Backup Types Explained: Full, Incremental, Differential, Synthetic, and Forever-Incremental](https://www.nakivo.com/blog/backup-types-explained-full-incremental-differential-synthetic-and-forever-incremental/) from Nakivo
 * [Understanding RPO and RTO](https://www.druva.com/blog/understanding-rpo-and-rto/) from Druva
 * [What is High Availability?](https://www.digitalocean.com/community/tutorials/what-is-high-availability) from DigitalOcean
 * [Law Firm Retools its Backup Scenario](https://www.networkworld.com/article/2305096/data-center/law-firm-retools-its-backup-scenario.html) from Network World
-* [Postmortem of Database Outage of January 31](https://about.gitlab.com/2017/02/10/postmortem-of-database-outage-of-january-31/) from GitLab
+* [Postmortem of Database Outage of January 31](https://about.gitlab.com/blog/postmortem-of-database-outage-of-january-31/) from GitLab
 
 #### Video Transcript
 
