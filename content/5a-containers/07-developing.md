@@ -14,7 +14,6 @@ pre: "7. "
 * [Developing Inside a Container](https://code.visualstudio.com/docs/remote/containers) from Visual Studio Code
 * [Remote Development in Containers Tutorial](https://code.visualstudio.com/docs/remote/containers-tutorial) from Visual Studio Code
 * [GitHub CI Example](https://github.com/russfeld/ksucs-hugo) (the sample site for this textbook's theme)
-* [GitLab CI Example](https://gitlab.cs.ksu.edu/cis-527) (this textbook)
 
 #### Video Transcript
 

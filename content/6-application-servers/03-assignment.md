@@ -32,7 +32,7 @@ _This lab involves working with resources on the cloud, and will require you to 
 
 For this lab, you will continue to use the two DigitalOcean droplets from Lab 5, labelled **FRONTEND** and **BACKEND**, respectively. This assignment assumes you have completed all steps in Lab 5 successfully; if not, you should consult with the instructor to resolve any existing issues before continuing.
 
-You will also need a Windows Server 2022 VM configured as an Active Directory Domain Controller, along with a Windows 11 VM added as a client computer on that domain. In general, you may continue to use the resources created in Lab 4, but you may choose to recreate them as directed in Lab 4 if desired.
+You will also need a Windows Server 2025 VM configured as an Active Directory Domain Controller, along with a Windows 11 VM added as a client computer on that domain. In general, you may continue to use the resources created in Lab 4, but you may choose to recreate them as directed in Lab 4 if desired.
 
 In addition, you will need two Ubuntu VMs, one labelled **SERVER** and the other labelled **CLIENT**. You may continue to use the Ubuntu VMs from Labs 3 and 4, or create new VMs for this lab. This lab does not assume any existing setup on these VMs beyond what is specified in Labs 1 and 2. You should also make sure your Ubuntu VM labelled **SERVER** has a static IP address.  
 
@@ -40,7 +40,7 @@ In addition, you will need two Ubuntu VMs, one labelled **SERVER** and the other
 
 ### Task 1: Windows File Server
 
-Configure a file server on your Windows Server 2022 VM. It should have the following features:
+Configure a file server on your Windows Server 2025 VM. It should have the following features:
 
 * A new group in the domain called **NetworkAdmins** that has the domain's `Administrator` account added to it (and `Admin` if created - see below), but _not_ your other domain user account
 * A shared folder on the server named `public` and stored at `C:\public` that should be accessible by **all users** on your domain
@@ -54,7 +54,7 @@ As of Summer 2021, there was a bug in Windows Server that prevented the built-in
 
 #### Resources
 
-* [How to Share Files and Folders in Windows Server 2016](https://www.tactig.com/share-files-folders-windows-server-2016/) from Tactig (should work for Server 2022)
+* [How to Share Files and Folders in Windows Server 2016](https://www.tactig.com/share-files-folders-windows-server-2016/) from Tactig (should work for Server 2025)
 
 ---
 
@@ -93,8 +93,8 @@ Of course, you may need to modify your firewall configuration to allow incoming 
 #### Resources
 
 * [File Server](https://ubuntu.com/server/docs/samba-file-server) from Ubuntu Documentation
-* [How to Set Up a Samba Share for a Small Organization on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04) from DigitalOcean (works for 24.04)
-* [Access User's Home Folders via Samba on Ubuntu 17.04](https://websiteforstudents.com/access-user-home-folders-via-samba-on-ubuntu-17-04-17-10/) from Website for Students (works for 24.04)
+* [How to Set Up a Samba Share for a Small Organization on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-samba-share-for-a-small-organization-on-ubuntu-16-04) from DigitalOcean (works for 26.04)
+* [How to Set Up Samba File Server on Ubuntu for Windows Sharing](https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-samba-file-server-on-ubuntu-for-windows-sharing/view) from OneUptime
 * [How to Configure Samba Server Share on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/how-to-configure-samba-server-share-on-ubuntu-20-04-focal-fossa-linux) from LinuxConfig.org
 
 ---
@@ -121,7 +121,7 @@ _To be honest, this last part can be pretty tricky. I recommend following the in
 
 ### Task 5: Windows Web Application Server
 
-For this task, you will install and configure a .NET web application for IIS on your Windows Server 2022 VM. First, choose an application to install from the following list:
+For this task, you will install and configure a .NET web application for IIS on your Windows Server 2025 VM. First, choose an application to install from the following list:
 
 * [BlogEngine.NET](https://blogengine.io/docs/get-started/)
   * **NOTE**: If you choose BlogEngine.NET, make sure you read their site carefully. You don't have to sign up for anything on their site to download the software itself, but the download link tends to be hidden in favor of their hosted options. As a sysadmin, you should definitely get into the habit of carefully reading and considering what you find online before you click!

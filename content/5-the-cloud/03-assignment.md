@@ -38,8 +38,8 @@ _If you have any concerns about using these services, please contact me to make 
 
 Create **TWO** droplets on DigitalOcean. As you set up your droplets, use the following settings:
 
-* Choose the Ubuntu 24.04 x64 distribution as the droplet image
-* Select the smallest droplet size ($4-6/mo - you may have to click around and click an arrow to see the smallest option)
+* Choose the Ubuntu 26.04 x64 distribution as the droplet image
+* Select the Basic -> Regular CPU droplet size with 1 GB of RAM ($6/mo - you may have to click around and click an arrow to see the smallest option)
 * Select any United States region - make sure both are in the same region!
 * Enable Virtual Private Cloud (VPC) Networking and Monitoring (this should be the default)
 * You may add any existing SSH keys you've already configured with DigitalOcean during droplet creation
@@ -74,7 +74,7 @@ Perform these configuration steps on both droplets, unless otherwise noted:
 
 #### Resources
 
-* [Initial Server Setup with Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04) from DigitalOcean (works for 24.04)
+* [Initial Server Setup with Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-22-04) from DigitalOcean (works for 26.04)
 * [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) from DigitalOcean
 * [How To Set Up Time Synchronization on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-time-synchronization-on-ubuntu-20-04) from DigitalOcean (works on Ubuntu 22.04)
 

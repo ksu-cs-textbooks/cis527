@@ -14,7 +14,6 @@ pre: "4. "
 * [Parity](http://crystalclearmaths.com/videos-learning-resources/fun-stuff/parity/) from Crystal Clear Mathematics
 * [What are the Different Types of Storage: Block, Object and File?](https://blog.ubuntu.com/2015/05/18/what-are-the-different-types-of-storage-block-object-and-file) on Ubuntu Blog
 * [NAS vs. SAN vs. DAS: Which is Right for You?](https://blog.seagate.com/business/nas-vs-san-vs-das-which-is-right-for-you/) from Seagate Blog
-* [Getting Started with Storage: Understanding SAN vs NAS vs DAS](https://vanillavideo.com/blog/2014/started-storage-understanding-san-nas-das) from Vanilla Video
 
 #### Video Transcript
 

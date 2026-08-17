@@ -14,7 +14,6 @@ pre: "6. "
 * [Docker Sample Node Application](https://github.com/docker/getting-started/tree/master/app) from Docker on GitHub
 * [Docker Language Specific Guides](https://docs.docker.com/language/) from Docker
 * [GitHub CI Example](https://github.com/russfeld/ksucs-hugo) (the sample site for this textbook's theme)
-* [GitLab CI Example](https://gitlab.cs.ksu.edu/cis-527) (this textbook)
 
 #### Video Transcript
 
