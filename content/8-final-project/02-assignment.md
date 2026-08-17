@@ -27,8 +27,6 @@ pre: "2. "
 
 {{% /notice %}}
 
-{{% /notice %}}
-
 ### Instructions
 
 The final project in this course is to demonstrate your knowledge and experience in a variety of areas of system administration. In addition, you'll gain experience communicating about those areas with non-technical users.
