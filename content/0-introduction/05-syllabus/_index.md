@@ -239,8 +239,7 @@ Unless otherwise noted in writing on a signed [Incomplete Agreement Form](https:
 
 ### Recommended Texts & Supplies
 
-To participate in this course, students must have access to a modern web browser and broadband internet connection. All course materials will be provided via Canvas. Modules may also contain links to external resources for 
-additional information, such as programming language documentation.
+To participate in this course, students must have access to a modern web browser and broadband internet connection. All course materials will be provided via Canvas. Modules may also contain links to external resources for additional information, such as programming language documentation.
 
 The online textbook for this course can be found at [https://textbooks.cs.ksu.edu/cis527/](https://textbooks.cs.ksu.edu/cis527/). All relevant pages from the textbook are also embedded into the appropriate Canvas modules.
 
