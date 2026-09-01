@@ -25,7 +25,7 @@ _This information covers both courses. They are taught using the same content._
 * **Office:** DUE 2213, but I mostly work remotely from Kansas City, MO
 * **Phone:** (785) 292-3121 (Call/Text)
 * **Website:** https://russfeld.me
-* **Virtual Office Hours:** By appointment via [Zoom](https://ksu.zoom.us/). [Book time to meet with me](https://outlook.office.com/bookwithme/user/352f01b060fd4854b105dd9afc625e8b@ksu.edu?anonymous&ismsaljsauthenabled&ep=bwmEmailSignature)
+* **Virtual Office Hours:** By appointment via [Zoom](https://ksu.zoom.us/). Schedule via [Calendly](https://calendly.com/russfeld)!
 
 ### Teaching Assistant
 
