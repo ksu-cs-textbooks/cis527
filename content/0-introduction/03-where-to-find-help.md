@@ -4,11 +4,19 @@ weight: 15
 pre: "3. "
 ---
 
+<!-- TODO RERECORD -->
+
 {{< youtube Jtze_-lKAGM >}}
 
 <!-- M2VvH6i66RM -->
 
 <!-- Mrww7wwkExg -->
+
+{{% notice note "Use Ed Discussion" %}}
+
+We no longer use Discord for course communication. Please use the Ed Discussion board instead - it is linked in the Canvas menu for the course.
+
+{{% /notice %}}
 
 #### Resources
 
