@@ -73,7 +73,7 @@ In 2025, Puppet moved to a different licensing model. Because of that, access to
 
 * **All System Updates** (Windows & Ubuntu)
 
-On the Windows virtual machine only, create a folder at `C:\install` and download the following installers. Do not change the name of the installers from the default name provided from the website. You may choose to do this step using the [download_file](https://forge.puppet.com/puppet/download_file) Puppet module instead.  
+On the Windows virtual machine only, create a folder at `C:\install` and download the following installers. Do not change the name of the installers from the default name provided from the website. You may choose to do this step using the [archive](https://forge.puppet.com/modules/puppet/archive) Puppet module instead.  
 
 * [Firefox](https://www.firefox.com/en-US/download/all/) (`Firefox Setup 153.0.3.exe` as of 8/27/2026)
 * [Thunderbird](https://www.thunderbird.net/en-US/thunderbird/all/) (`Thunderbird Setup 153.0.2.exe` as of  8/27/2026)
