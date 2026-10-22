@@ -10,6 +10,12 @@ I failed to mention in the video that you cannot use the Remote Desktop Connecti
 
 {{% /notice %}}
 
+{{% notice info %}}
+
+As of Fall 2026, you must now select Availability Zone 3 to get access to the `Standard_B1s` virtual machine size. You can also select a `Standard_B1ms` size for a bit more RAM to make your VMs feel a bit snappier.
+
+{{% /notice %}}
+
 {{< youtube EKhxgns0Gjg >}}
 
 ## Edited Transcript
